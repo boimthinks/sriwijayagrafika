@@ -93,7 +93,7 @@ body {
   list-style: decimal;
 }
 .prose-article li + li {
-  margin-top: 0.4rem;
+  margin-top: 0.125rem;
 }
 .prose-article a {
   color: #224da8;
@@ -109,7 +109,7 @@ body {
 }
 .prose-article blockquote {
   border-left: 4px solid #224da8;
-  padding: 0.75rem 1rem;
+  padding: 1.25rem 1rem;
   background: #f5f5f5;
   border-radius: 0 0.5rem 0.5rem 0;
   font-style: italic;
@@ -117,11 +117,13 @@ body {
   margin-top: 1.5rem;
 }
 .prose-article code {
-  background: #f5f5f5;
+  background: #1f2937;
+  color: #f5f5f5;
   padding: 0.1rem 0.4rem;
   border-radius: 0.25rem;
   font-family: var(--font-mono);
   font-size: 0.85em;
+  margin: 0.1rem 0.125rem;
 }
 .prose-article pre {
   background: #1f2937;

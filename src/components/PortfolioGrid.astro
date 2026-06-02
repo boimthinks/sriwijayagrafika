@@ -64,7 +64,7 @@ const { items, categories, whatsappHref, whatsappDisplay } = Astro.props;
           alt={item.caption}
           loading="lazy"
           decoding="async"
-          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          class="w-full h-full object-cover transition-transform duration-800 group-hover:scale-115"
         />
         <div
           class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 sm:p-3"
@@ -175,19 +175,19 @@ const { items, categories, whatsappHref, whatsappDisplay } = Astro.props;
     <div class="relative max-w-full max-h-full">
       <img
         id="pf-lightbox-img"
-        class="max-w-full max-h-full w-auto h-auto object-contain block"
+        class="max-w-full max-h-full w-auto h-auto object-contain sm:rounded-none md:rounded-md lg:rounded-lg block"
         alt=""
       />
       <div
-        class="absolute top-2.5 left-2.5 md:top-5 md:left-5 max-w-[calc(100%-1.25rem)] md:max-w-[calc(100%-2.5rem)] bg-black p-2 md:p-3 rounded-sm pointer-events-none"
+        class="absolute top-2.5 left-2.5 md:top-5 md:left-5 max-w-[calc(100%-1.25rem)] md:max-w-[calc(100%-2.5rem)] bg-black p-2 md:p-3 rounded-md pointer-events-none"
       >
         <span
           id="pf-lightbox-category"
-          class="block text-[10px] sm:text-xs font-mono uppercase tracking-widest text-[#ff6634]"
+          class="block text-[10px] sm:text-xs font-mono font-bold uppercase tracking-widest text-[#ff6634]"
         ></span>
         <h3
           id="pf-lightbox-caption"
-          class="block text-sm sm:text-base md:text-lg font-extrabold leading-tight text-white mt-0.5"
+          class="block text-xs sm:text-sm md:text-base lg:text-base font-bold leading-tight text-white mt-0.5"
         ></h3>
       </div>
 

@@ -46,7 +46,7 @@ const SUBCAT_INITIALS = data.subcategory
   data-category={data.category}
   data-subcategory={data.subcategory}
 >
-  <span class="absolute top-0 left-0 w-1.5 h-full bg-[#ff6634] scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top z-20" aria-hidden="true"></span>
+  <span class="absolute top-0 left-0 w-0.5 h-full bg-[#ff6634] scale-y-0 group-hover:scale-y-100 transition-transform duration-800 origin-top z-20" aria-hidden="true"></span>
 
   <div class="relative aspect-[16/10] w-full overflow-hidden bg-neutral-100">
     {data.imageUrl ? (
@@ -54,7 +54,7 @@ const SUBCAT_INITIALS = data.subcategory
         src={data.imageUrl}
         alt={data.name}
         loading="lazy"
-        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        class="w-full h-full object-cover transition-transform duration-800 group-hover:scale-115"
       />
     ) : (
       <div class={`w-full h-full bg-gradient-to-br ${gradient} flex items-center justify-center relative`}>
@@ -83,7 +83,7 @@ const SUBCAT_INITIALS = data.subcategory
         </span>
       </div>
 
-      <h3 class="text-base font-extrabold text-[#224da8] group-hover:text-[#ff6634] transition-colors leading-snug">
+      <h3 class="text-base font-extrabold text-neutral-800 leading-snug">
         {data.name}
       </h3>
       <p class="text-xs text-neutral-500 mt-2.5 leading-relaxed line-clamp-3">
