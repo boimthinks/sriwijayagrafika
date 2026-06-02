@@ -18,6 +18,27 @@ npm run check      # astro check (typecheck + a11y hints). 142 pre-existing erro
 
 `lint` script is an alias for `check`. No separate ESLint/Prettier config — formatting is convention-only.
 
+## Git & GitHub
+
+- **Active remote**: `https://github.com/boimthinks/sriwijayagrafika.git` (akun `boimthinks`, BUKAN akun default `jaguarjack7777` yang dipakai di repo lain).
+- **Local commit identity** (only applies to THIS repo, stored in `.git/config`, not global):
+  - `user.name = boimthinks`
+  - `user.email = boimthinks@users.noreply.github.com` (privacy email default GitHub; ganti ke email biasa via `git config user.email "..."` jika perlu)
+- **Auth flow**: Windows Credential Manager menyimpan token `git:https://github.com`. Push pertama trigger browser popup untuk login `boimthinks`; token di-generate & di-store otomatis. Tidak perlu PAT manual.
+- **Kalau 403 / `Permission denied to jaguarjack7777`**: credential lama masih tersimpan. Hapus lalu push ulang:
+  ```bash
+  cmdkey /delete:git:https://github.com
+  git push -u origin main
+  ```
+  Pop-up browser akan muncul lagi untuk akun `boimthinks`.
+- **Fallback kalau browser popup tidak muncul** (embed PAT di URL — token akan tersimpan di Windows Credential Manager):
+  ```bash
+  git remote set-url origin https://boimthinks:ghp_xxxxxxxxxxxx@github.com/boimthinks/sriwijayagrafika.git
+  git push -u origin main
+  ```
+  Generate PAT di https://github.com/settings/tokens (scope: `repo`).
+- **Tip**: cek auth aktif sebelum push kalau ragu: `git config --get user.name && git config --get user.email && git remote -v`.
+
 ## Layout (source of truth)
 
 ```
