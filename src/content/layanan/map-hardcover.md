@@ -10,6 +10,7 @@ features:
   - "Kantong mika bening untuk dokumen"
   - "Embos emas / silver"
   - "Custom logo & nama"
+imageUrl: "/img/layanan/map-hardcover.webp"
 hasCalculator: false
 order: 28
 ---

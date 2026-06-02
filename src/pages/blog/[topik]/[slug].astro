@@ -1,0 +1,223 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Navbar from '@components/Navbar.astro';
+import Footer from '@components/Footer.astro';
+import BlogCard from '@components/BlogCard.astro';
+import SidebarCTA from '@components/SidebarCTA.astro';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import { BUSINESS_INFO } from '@lib/data';
+import { AUTHOR_NAME, TOPIK_LABELS, calcReadingTime, parseIndonesianDate, toIsoDate } from '@lib/blog';
+import { Calendar, Clock, User } from 'lucide-react';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => data.published);
+  return posts.map((post) => ({
+    params: { topik: post.data.topik, slug: post.id },
+    props: { post },
+  }));
+}
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const data = post.data;
+
+const allPosts = (await getCollection('blog', ({ data }) => data.published)).sort(
+  (a, b) => parseIndonesianDate(b.data.date).getTime() - parseIndonesianDate(a.data.date).getTime()
+);
+
+const relatedPosts = allPosts
+  .filter((p) => p.id !== post.id && p.data.topik === data.topik)
+  .slice(0, 3)
+  .map((p) => ({ post: p, readingTime: calcReadingTime(p.data.pengantar, p.body ?? '', p.data.kesimpulan) }));
+
+const readingTime = calcReadingTime(data.pengantar, post.body ?? '', data.kesimpulan);
+const imgAlt = data.imgalt || data.titleSeo;
+const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://sriwijayagrafika.co.id').toString();
+const absImageUrl = new URL(data.imgurl, Astro.site ?? 'https://sriwijayagrafika.co.id').toString();
+const isoDate = toIsoDate(parseIndonesianDate(data.date));
+
+const waMessage = `Halo Sriwijaya Grafika, saya tertarik dengan artikel *${data.title}* di blog Anda.\n\nMohon informasi lebih lanjut. Terima kasih!`;
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': pageUrl + '#article',
+  headline: data.titleSeo,
+  description: data.excerpt,
+  image: [absImageUrl],
+  datePublished: isoDate,
+  dateModified: isoDate,
+  inLanguage: 'id-ID',
+  articleSection: TOPIK_LABELS[data.topik],
+  wordCount: readingTime * 200,
+  author: {
+    '@type': 'Organization',
+    name: AUTHOR_NAME,
+    url: 'https://sriwijayagrafika.co.id',
+  },
+  publisher: {
+    '@type': 'LocalBusiness',
+    '@id': 'https://sriwijayagrafika.co.id/#business',
+    name: BUSINESS_INFO.name,
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://sriwijayagrafika.co.id/favicon.svg',
+    },
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': pageUrl,
+  },
+  isPartOf: {
+    '@type': 'CollectionPage',
+    '@id': 'https://sriwijayagrafika.co.id/blog#collection',
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Beranda', item: 'https://sriwijayagrafika.co.id' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://sriwijayagrafika.co.id/blog' },
+    { '@type': 'ListItem', position: 3, name: TOPIK_LABELS[data.topik], item: `https://sriwijayagrafika.co.id/blog/${data.topik}` },
+    { '@type': 'ListItem', position: 4, name: data.title, item: pageUrl },
+  ],
+};
+---
+
+<Layout
+  title={data.titleSeo}
+  description={data.excerpt}
+  keywords={[
+    data.title,
+    data.titleSeo,
+    TOPIK_LABELS[data.topik],
+    'Blog Advertising Palembang',
+    'Sriwijaya Grafika',
+  ]}
+  ogImage={data.imgurl}
+  ogType="article"
+  structuredData={articleSchema}
+>
+  <Navbar current="blog" />
+
+  <main class="flex-1">
+    <section class="bg-gradient-to-br from-[#224da8] to-[#10285a] text-white py-24 md:py-28">
+      <div class="max-w-4xl mx-auto px-8 sm:px-6 lg:px-8 text-center space-y-4">
+        <div class="flex flex-wrap items-center justify-center gap-2">
+          <nav aria-label="Breadcrumb" class="mb-4">
+            <ol class="flex flex-wrap items-center gap-1.5 text-xs text-white/80 font-mono">
+              <li><a href="/" class="hover:text-white transition-colors">Beranda</a></li>
+              <li aria-hidden="true">/</li>
+              <li><a href="/blog" class="hover:text-white transition-colors">Blog</a></li>
+              <li aria-hidden="true">/</li>
+              <li><a href={`/blog/${data.topik}`} class="hover:text-white transition-colors">{TOPIK_LABELS[data.topik]}</a></li>
+              <li aria-hidden="true">/</li>
+              <li title={data.titleSeo}>{data.title}</li>
+            </ol>
+          </nav>
+        </div>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+          {data.titleSeo}
+        </h1>
+        <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 pt-2 text-xs text-white/80 font-mono">
+          <span class="inline-flex items-center gap-1.5">
+            <User className="w-3.5 h-3.5" />
+            {AUTHOR_NAME}
+          </span>
+          <span class="inline-flex items-center gap-1.5">
+            <Calendar className="w-3.5 h-3.5" />
+            {data.date}
+          </span>
+          <span class="inline-flex items-center gap-1.5">
+            <Clock className="w-3.5 h-3.5" />
+            {readingTime} menit baca
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section id="konten" class="pt-8 md:py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <aside class="lg:col-span-1 lg:sticky lg:top-24 lg:self-start space-y-6">
+            <SidebarCTA
+              title="Butuh Konsultasi Proyek?"
+              description="Tim kami siap membantu via WhatsApp. Respon cepat, konsultasi gratis, dan mockup 3D untuk material signage pilihan Anda."
+              whatsappMessage={waMessage}
+              variant="light"
+              ctaLabel="Konsultasi via WhatsApp"
+            />
+          </aside>
+
+          <div class="lg:col-span-2">
+            <div class="relative aspect-[16/9] w-full overflow-hidden rounded-2xl border border-neutral-100 shadow-lg bg-neutral-100 mb-6">
+              <span class="absolute top-2.5 left-2.5 md:top-5 md:left-5 z-10 px-2.5 py-1 text-[10px] font-bold font-mono uppercase tracking-wide bg-[#ff6634] text-white rounded-md shadow-md">
+                {TOPIK_LABELS[data.topik]}
+              </span>
+              <img
+                src={data.imgurl}
+                alt={imgAlt}
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <article class="prose-article max-w-none">
+              <h2>{data.title}</h2>
+              <p>
+                {data.pengantar}
+              </p>
+              <Content />
+              <p class="lg:pt-8">
+                {data.kesimpulan}
+              </p>
+            </article>
+
+            <div class="mt-12 mb-8 pt-8 border-t border-neutral-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div>
+                <h3 class="text-lg font-extrabold text-neutral-800">Baca artikel lain</h3>
+                <p class="text-xs text-neutral-500 mt-1">Jelajahi tips, studi kasus, dan panduan advertising Palembang.</p>
+              </div>
+              <a
+                href={`/blog/${data.topik}`}
+                class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white border border-neutral-200 hover:bg-neutral-50 text-neutral-700 text-sm font-bold transition-all"
+              >
+                {TOPIK_LABELS[data.topik]} Lainnya
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {relatedPosts.length > 0 && (
+      <section class="py-12 md:py-16 bg-neutral-50/50 border-t border-neutral-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="mb-8 space-y-2">
+            <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-[#ff6634]">
+              {TOPIK_LABELS[data.topik]} Lainnya
+            </span>
+            <h2 class="text-2xl md:text-3xl font-extrabold text-neutral-800 tracking-tight">Artikel Terkait</h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {relatedPosts.map(({ post: r, readingTime: rt }) => (
+              <BlogCard post={r} readingTime={rt} />
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </main>
+
+  <Footer />
+</Layout>

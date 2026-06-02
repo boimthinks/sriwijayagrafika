@@ -10,6 +10,7 @@ features:
   - "Laminating doff / glossy"
   - "Cetak full color 2 sisi"
   - "Finishing emboss / spot UV opsional"
+imageUrl: "/img/layanan/kartu-nama.webp"
 hasCalculator: false
 order: 20
 ---

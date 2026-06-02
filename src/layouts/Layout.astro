@@ -119,9 +119,10 @@ if (structuredData) allSchemas.push(structuredData);
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    {allSchemas.map((schema) => (
-      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
-    ))}
+    <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+    {structuredData && (
+      <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+    )}
   </head>
   <body class="min-h-[100dvh] bg-neutral-50/20 text-neutral-800 font-sans flex flex-col">
     <slot />

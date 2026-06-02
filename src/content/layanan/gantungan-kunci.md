@@ -10,6 +10,7 @@ features:
   - "Print 2 sisi / cor custom"
   - "Tahan gores & tahan lama"
   - "Berbagai bentuk (bulat, kotak, custom)"
+imageUrl: "/img/layanan/gantungan-kunci.webp"
 hasCalculator: false
 order: 22
 ---

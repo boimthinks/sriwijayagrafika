@@ -10,6 +10,7 @@ features:
   - "Cetak 1-2 warna"
   - "Perekat kupas-tempel"
   - "Kertas kraft putih / buffalo"
+imageUrl: "/img/layanan/cetak-amplop.webp"
 hasCalculator: false
 order: 14
 ---

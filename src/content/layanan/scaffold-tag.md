@@ -10,6 +10,7 @@ features:
   - "Tahan panas & hujan"
   - "Tag inspeksi scaffolding"
   - "Standard K3 konstruksi"
+imageUrl: "/img/layanan/scaffold-tag.webp"
 hasCalculator: false
 order: 30
 ---

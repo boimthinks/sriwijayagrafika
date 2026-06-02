@@ -1,6 +1,6 @@
 ---
-name: "Papan Nama Sekolah / Kelas"
-description: "Plang nama sekolah gantung akrilik ornamen hiasan maupun papan putih penunjuk kelas."
+name: "Papan Nama Sekolah / Institusi"
+description: "Plang nama sekolah gantung akrilik, cetak banner, ornamen hiasan maupun papan putih penunjuk kelas."
 category: "secondary"
 subcategory: "Alat Peraga"
 basePrice: 120000
@@ -10,6 +10,7 @@ features:
   - "Laser cut presisi"
   - "Custom logo & nama kelas"
   - "Ornamen / dekorasi tambahan"
+imageUrl: "/img/layanan/papan-nama.webp"
 hasCalculator: false
 order: 29
 ---

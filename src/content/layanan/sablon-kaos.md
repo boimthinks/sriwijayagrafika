@@ -10,6 +10,7 @@ features:
   - "Sablon rubber / plastisol / DTG"
   - "Custom logo & desain"
   - "Berbagai warna & ukuran"
+imageUrl: "/img/layanan/sablon-kaos.webp"
 hasCalculator: false
 order: 18
 ---

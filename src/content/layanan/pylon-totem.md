@@ -15,6 +15,7 @@ materials:
   - "ACP"
   - "Plat Stainless"
   - "Akrilik LED"
+imageUrl: "/img/layanan/pylon-totem.webp"
 hasCalculator: false
 order: 4
 ---

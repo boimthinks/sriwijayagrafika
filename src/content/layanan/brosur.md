@@ -10,6 +10,7 @@ features:
   - "Full color dua sisi"
   - "Finishing glossy / doff laminating"
   - "Cocok untuk promosi & event"
+imageUrl: "/img/layanan/brosur.webp"
 hasCalculator: false
 order: 17
 ---

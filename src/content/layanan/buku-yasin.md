@@ -10,6 +10,7 @@ features:
   - "Finishing gold emboss"
   - "Halaman custom foto almarhum"
   - "Kertas HVS / Bookpaper premium"
+imageUrl: "/img/layanan/buku-yasin.webp"
 hasCalculator: false
 order: 16
 ---

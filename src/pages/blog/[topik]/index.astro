@@ -1,0 +1,168 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Navbar from '@components/Navbar.astro';
+import Footer from '@components/Footer.astro';
+import BlogCard from '@components/BlogCard.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import { BUSINESS_INFO } from '@lib/data';
+import { calcReadingTime, parseIndonesianDate, TOPIK_LABELS, TOPIKS } from '@lib/blog';
+
+export async function getStaticPaths() {
+  return TOPIKS.map((topik) => ({ params: { topik } }));
+}
+
+interface Props {
+  post?: never;
+}
+
+const { topik } = Astro.params as { topik: keyof typeof TOPIK_LABELS };
+
+if (!(TOPIKS as readonly string[]).includes(topik)) {
+  return Astro.redirect('/404');
+}
+
+const allPostsForTopik = (await getCollection('blog', ({ data }) => data.published && data.topik === topik)).sort(
+  (a, b) => parseIndonesianDate(b.data.date).getTime() - parseIndonesianDate(a.data.date).getTime()
+);
+
+const postsWithMeta = allPostsForTopik.map((post) => ({
+  post,
+  readingTime: calcReadingTime(post.data.pengantar, post.body ?? '', post.data.kesimpulan),
+}));
+
+const topikLabel = TOPIK_LABELS[topik];
+const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://sriwijayagrafika.co.id').toString();
+
+const topicSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': pageUrl + '#collection',
+  name: `Blog ${topikLabel} | Sriwijaya Grafika Palembang`,
+  description: `Kumpulan artikel ${topikLabel.toLowerCase()} seputar advertising, reklame, huruf timbul, neon box, dan percetakan di Palembang.`,
+  url: pageUrl,
+  inLanguage: 'id-ID',
+  isPartOf: { '@id': 'https://sriwijayagrafika.co.id/blog#collection' },
+  hasPart: postsWithMeta.map(({ post, readingTime }) => ({
+    '@type': 'Article',
+    headline: post.data.titleSeo,
+    url: `https://sriwijayagrafika.co.id/blog/${topik}/${post.id}`,
+    datePublished: parseIndonesianDate(post.data.date).toISOString(),
+    image: new URL(post.data.imgurl, Astro.site ?? 'https://sriwijayagrafika.co.id').toString(),
+    articleSection: topikLabel,
+    wordCount: readingTime * 200,
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Beranda', item: 'https://sriwijayagrafika.co.id' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://sriwijayagrafika.co.id/blog' },
+    { '@type': 'ListItem', position: 3, name: topikLabel, item: pageUrl },
+  ],
+};
+---
+
+<Layout
+  title={`Blog ${topikLabel} | Sriwijaya Grafika Palembang`}
+  description={`Kumpulan artikel ${topikLabel.toLowerCase()} seputar signage, reklame, dan percetakan di Palembang. Insight dari tim produksi Sriwijaya Grafika.`}
+  keywords={[
+    `Blog ${topikLabel}`,
+    `Blog ${topikLabel} Palembang`,
+    'Blog Advertising Palembang',
+    'Sriwijaya Grafika',
+  ]}
+  structuredData={topicSchema}
+>
+  <Navbar current="blog" />
+
+  <main class="flex-1">
+    <section class="bg-gradient-to-br from-[#224da8] to-[#10285a] text-white py-14 md:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+        <nav aria-label="Breadcrumb" class="text-xs text-white/70 font-mono">
+          <ol class="flex flex-wrap items-center justify-center gap-1.5">
+            <li><a href="/" class="hover:text-white transition-colors">Beranda</a></li>
+            <li aria-hidden="true">/</li>
+            <li><a href="/blog" class="hover:text-white transition-colors">Blog</a></li>
+            <li aria-hidden="true">/</li>
+            <li class="text-white">{topikLabel}</li>
+          </ol>
+        </nav>
+        <span class="text-xs font-bold text-[#ff6634] uppercase tracking-widest block">KATEGORI</span>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
+          Blog {topikLabel}
+        </h1>
+        <p class="text-sm sm:text-base text-white/80 max-w-2xl mx-auto leading-relaxed">
+          {postsWithMeta.length > 0
+            ? `${postsWithMeta.length} artikel ${topikLabel.toLowerCase()} dari tim Sriwijaya Grafika.`
+            : `Belum ada artikel ${topikLabel.toLowerCase()} yang dipublikasikan.`}
+        </p>
+      </div>
+    </section>
+
+    {postsWithMeta.length === 0 ? (
+      <div class="bg-white py-20 border-y border-neutral-100">
+        <div class="max-w-md mx-auto px-4 text-center space-y-3">
+          <p class="text-base font-bold text-neutral-700">Belum ada artikel di kategori ini.</p>
+          <p class="text-xs text-neutral-500 leading-relaxed">
+            Silakan kembali ke <a href="/blog" class="text-[#224da8] font-bold hover:underline">halaman blog</a> untuk melihat topik lain.
+          </p>
+          <a
+            href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya ingin berkonsultasi mengenai kebutuhan signage.')}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white text-xs font-bold shadow-md transition-all"
+          >
+            Tanya via WhatsApp
+          </a>
+        </div>
+      </div>
+    ) : (
+      <section class="py-12 md:py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {postsWithMeta.map(({ post, readingTime }) => (
+              <BlogCard post={post} readingTime={readingTime} />
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <section class="py-12 md:py-16 bg-neutral-50/50 border-t border-neutral-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-neutral-800 tracking-tight">
+          Lihat Topik Lainnya
+        </h2>
+        <p class="text-sm text-neutral-500 max-w-2xl mx-auto leading-relaxed">
+          Jelajahi artikel berdasarkan kategori yang paling sesuai dengan kebutuhan Anda.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-2 pt-2">
+          {TOPIKS.map((t) => (
+            <a
+              href={`/blog/${t}`}
+              class={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
+                t === topik
+                  ? 'bg-[#ff6634] text-white shadow-md'
+                  : 'bg-white border border-neutral-200 hover:bg-neutral-50 text-neutral-700'
+              }`}
+            >
+              {TOPIK_LABELS[t]}
+            </a>
+          ))}
+        </div>
+        <a
+          href="/blog"
+          class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#224da8] hover:bg-[#1a3d87] text-white text-xs font-bold shadow-md transition-all"
+        >
+          Kembali ke Blog
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+</Layout>

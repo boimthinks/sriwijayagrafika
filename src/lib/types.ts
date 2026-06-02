@@ -13,16 +13,6 @@ export interface CatalogProduct {
   imageUrl?: string;
 }
 
-export interface PortfolioItem {
-  id: string;
-  title: string;
-  description: string;
-  category: string;
-  imagePlaceholder: string;
-  originalPath: string;
-  imageSrc?: string;
-}
-
 export interface OrderItem {
   id: string;
   productName: string;

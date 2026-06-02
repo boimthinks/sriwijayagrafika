@@ -14,6 +14,7 @@ materials:
   - "Akrilik & Backlit Vinyl"
   - "Duratrans"
   - "Rangka Besi Holo"
+imageUrl: "/img/layanan/neon-box.webp"
 hasCalculator: true
 calculatorType: "neon_box"
 order: 2

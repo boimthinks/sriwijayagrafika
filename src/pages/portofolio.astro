@@ -2,15 +2,24 @@
 import Layout from '@layouts/Layout.astro';
 import Navbar from '@components/Navbar.astro';
 import Footer from '@components/Footer.astro';
-import PortfolioGallery from '@components/PortfolioGallery';
-import { PORTFOLIOS } from '@lib/data';
+import PortfolioGrid from '@components/PortfolioGrid.astro';
+import { PORTFOLIO_ITEMS, getPortfolioCategories } from '@lib/portfolio';
+import { BUSINESS_INFO } from '@lib/data';
+
+const items = PORTFOLIO_ITEMS;
+const categories = getPortfolioCategories();
+
+const whatsappHref = `https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya ingin berkonsultasi mengenai portofolio Anda.')}`;
+const whatsappDisplay = BUSINESS_INFO.phone1.replace(/(\d{4})(\d{4})(\d{4})/, '$1-$2-$3');
 
 const portfolioSchema = {
   '@context': 'https://schema.org',
   '@type': 'ImageGallery',
   '@id': 'https://sriwijayagrafika.co.id/portofolio#gallery',
   name: 'Portofolio Sriwijaya Grafika Palembang',
-  description: 'Galeri hasil pekerjaan reklame, huruf timbul, neon box, totem sign, dan rambu K3 Sriwijaya Grafika Palembang.',
+  description:
+    'Galeri hasil pekerjaan reklame, huruf timbul, neon box, totem sign, dan rambu K3 Sriwijaya Grafika Palembang.',
+  image: items.map((i) => `https://sriwijayagrafika.co.id${i.src}`),
 };
 ---
 
@@ -30,8 +39,186 @@ const portfolioSchema = {
   <Navbar current="portfolio" />
 
   <main class="flex-1">
-    <PortfolioGallery client:load items={PORTFOLIOS} />
+    <section class="bg-gradient-to-br from-[#224da8] to-[#10285a] text-white py-12 md:py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
+        <span class="text-xs font-bold text-[#ff6634] uppercase tracking-widest block">
+          Galeri Hasil Kerja Nyata
+        </span>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
+          Portofolio Unggulan Bergaransi
+        </h1>
+        <p class="text-sm sm:text-base text-white/80 max-w-2xl mx-auto leading-relaxed">
+          Hasil pengerjaan papan nama reklame, huruf LED timbul akrilik, totem sign instansi, dan rambu
+          bersertifikasi K3 di gedung pemerintahan serta tenant ritel Palembang.
+        </p>
+        <p class="pt-2 text-[11px] font-mono text-white/60">
+          {items.length} karya • klik thumbnail untuk pratinjau
+        </p>
+      </div>
+    </section>
+
+    {items.length === 0 ? (
+      <div class="bg-white py-20">
+        <div class="max-w-md mx-auto px-4 text-center space-y-3">
+          <p class="text-base font-bold text-neutral-700">Belum ada portofolio yang dipublikasikan.</p>
+          <p class="text-xs text-neutral-500 leading-relaxed">
+            Tambahkan item di <code class="px-1.5 py-0.5 rounded bg-neutral-100">src/data/portfolio.md</code>.
+          </p>
+          <a
+            href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya ingin berkonsultasi mengenai portofolio Anda.')}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white text-xs font-bold shadow-md transition-all"
+          >
+            Tanya via WhatsApp
+          </a>
+        </div>
+      </div>
+    ) : (
+      <PortfolioGrid
+        items={items}
+        categories={categories}
+        whatsappHref={whatsappHref}
+        whatsappDisplay={whatsappDisplay}
+      />
+    )}
+
+    <section class="py-12 md:py-16 bg-white border-t border-neutral-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-neutral-800 tracking-tight">
+          Tertarik dengan Hasil Seperti Ini?
+        </h2>
+        <p class="text-sm text-neutral-500 max-w-2xl mx-auto leading-relaxed">
+          Konsultasikan kebutuhan signage, reklame, atau percetakan Anda. Semua pekerjaan dilengkapi garansi
+          instalasi 1 tahun.
+        </p>
+        <a
+          href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya tertarik membuat proyek signage/reklame/percetakan.')}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white text-sm font-bold shadow-md transition-all"
+        >
+          Konsultasi via WhatsApp
+        </a>
+      </div>
+    </section>
   </main>
 
   <Footer />
 </Layout>
+
+<script>
+  const grid = document.getElementById('portfolio-grid');
+  const emptyState = document.getElementById('portfolio-empty');
+  const dialog = document.getElementById('portfolio-lightbox') as HTMLDialogElement | null;
+  const img = document.getElementById('pf-lightbox-img') as HTMLImageElement | null;
+  const catEl = document.getElementById('pf-lightbox-category');
+  const capEl = document.getElementById('pf-lightbox-caption');
+  const prevBtn = document.getElementById('pf-prev');
+  const nextBtn = document.getElementById('pf-next');
+
+  let currentIndex = -1;
+  let visibleItems: HTMLElement[] = [];
+
+  const collectVisible = () => {
+    if (!grid) return [];
+    return Array.from(grid.querySelectorAll<HTMLElement>('[data-category]')).filter(
+      (el) => !el.classList.contains('hidden')
+    );
+  };
+
+  const renderLightbox = (btn: HTMLElement) => {
+    if (!dialog || !img || !catEl || !capEl) return;
+    visibleItems = collectVisible();
+    currentIndex = visibleItems.indexOf(btn);
+
+    img.src = btn.dataset.imageSrc ?? '';
+    img.alt = btn.dataset.caption ?? '';
+    catEl.textContent = btn.dataset.categoryLabel ?? '';
+    capEl.textContent = btn.dataset.caption ?? '';
+
+    dialog.showModal();
+  };
+
+  const navigate = (delta: number) => {
+    if (!visibleItems.length) return;
+    const newIndex = (currentIndex + delta + visibleItems.length) % visibleItems.length;
+    const next = visibleItems[newIndex];
+    if (next) {
+      currentIndex = newIndex;
+      if (img && catEl && capEl) {
+        img.src = next.dataset.imageSrc ?? '';
+        img.alt = next.dataset.caption ?? '';
+        catEl.textContent = next.dataset.categoryLabel ?? '';
+        capEl.textContent = next.dataset.caption ?? '';
+      }
+    }
+  };
+
+  (window as unknown as { __pfOpenLightbox: (btn: HTMLElement) => void }).__pfOpenLightbox = renderLightbox;
+  (window as unknown as { __pfCloseLightbox: () => void }).__pfCloseLightbox = () => dialog?.close();
+  prevBtn?.addEventListener('click', () => navigate(-1));
+  nextBtn?.addEventListener('click', () => navigate(1));
+
+  dialog?.addEventListener('click', (e) => {
+    if (e.target === dialog) dialog.close();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (!dialog?.open) return;
+    if (e.key === 'ArrowLeft') navigate(-1);
+    if (e.key === 'ArrowRight') navigate(1);
+  });
+
+  const observer = new MutationObserver(() => {
+    document.body.style.overflow = dialog?.open ? 'hidden' : '';
+  });
+  if (dialog) observer.observe(dialog, { attributes: true, attributeFilter: ['open'] });
+
+  const filterButtons = document.querySelectorAll<HTMLButtonElement>('[data-filter]');
+
+  const applyFilter = (filter: string) => {
+    if (!grid) return;
+    const items = grid.querySelectorAll<HTMLElement>('[data-category]');
+    let visibleCount = 0;
+
+    items.forEach((item) => {
+      const match = filter === 'all' || item.dataset.category === filter;
+      item.classList.toggle('hidden', !match);
+      if (match) visibleCount++;
+    });
+
+    if (emptyState) emptyState.classList.toggle('hidden', visibleCount > 0);
+
+    filterButtons.forEach((btn) => {
+      const isActive = btn.dataset.filter === filter;
+      btn.setAttribute('aria-selected', String(isActive));
+      btn.classList.toggle('bg-neutral-800', isActive);
+      btn.classList.toggle('text-white', isActive);
+      btn.classList.toggle('shadow-sm', isActive);
+      btn.classList.toggle('bg-neutral-50', !isActive);
+      btn.classList.toggle('border', !isActive);
+      btn.classList.toggle('border-neutral-100', !isActive);
+      btn.classList.toggle('text-neutral-600', !isActive);
+      btn.classList.toggle('hover:bg-neutral-100', !isActive);
+    });
+
+    if (typeof window !== 'undefined' && window.history && window.history.replaceState) {
+      const url = filter === 'all'
+        ? window.location.pathname
+        : `${window.location.pathname}?category=${encodeURIComponent(filter)}`;
+      window.history.replaceState({}, '', url);
+    }
+  };
+
+  filterButtons.forEach((btn) => {
+    btn.addEventListener('click', () => applyFilter(btn.dataset.filter ?? 'all'));
+  });
+
+  const params = new URLSearchParams(window.location.search);
+  const initialFilter = params.get('category');
+  if (initialFilter) {
+    const known = Array.from(filterButtons).some((b) => b.dataset.filter === initialFilter);
+    if (known) applyFilter(initialFilter);
+  }
+</script>

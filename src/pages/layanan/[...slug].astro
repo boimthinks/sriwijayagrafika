@@ -3,9 +3,10 @@ import Layout from '@layouts/Layout.astro';
 import Navbar from '@components/Navbar.astro';
 import Footer from '@components/Footer.astro';
 import ServiceCard from '@components/ServiceCard.astro';
+import SidebarCTA from '@components/SidebarCTA.astro';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import { BUSINESS_INFO } from '@lib/data';
-import { Calculator, Phone, Check, ArrowLeft, MessageCircle, Package } from 'lucide-react';
+import { Calculator, Phone, ArrowLeft, MessageCircle, Check, Package, Megaphone, ShieldAlert, Layers, PenTool, FileText, Printer, BookOpen, Gift, LayoutIcon, Calendar, Boxes } from 'lucide-react';
 
 export async function getStaticPaths() {
   const services = await getCollection('layanan', ({ data }) => data.published);
@@ -35,11 +36,45 @@ const waUrl = `https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURICompone
 
 const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://sriwijayagrafika.co.id').toString();
 
+const SUBCATEGORY_ICONS: Record<string, typeof Megaphone> = {
+  'Advertising & Reklame': Megaphone,
+  'Rambu & Keamanan': ShieldAlert,
+  'Acrylic Custom': Layers,
+  'Event & Display': PenTool,
+  'Percetakan Kantor': FileText,
+  'Digital Printing': Printer,
+  'Buku & Jilid': BookOpen,
+  'Garmen & Souvenir': Gift,
+  'Alat Peraga': LayoutIcon,
+  'Acara & Seremoni': Calendar,
+};
+const PlaceholderIcon = SUBCATEGORY_ICONS[data.subcategory] ?? Boxes;
+
+const CATEGORY_GRADIENTS: Record<string, string> = {
+  utama: 'from-[#224da8] via-[#3c5a98] to-[#10285a]',
+  secondary: 'from-[#ff6634] via-[#ff8a5e] to-[#c2410c]',
+};
+const gradient = CATEGORY_GRADIENTS[data.category] ?? 'from-neutral-700 to-neutral-900';
+
+const SUBCAT_INITIALS = data.subcategory
+  .split(/[\s&]+/)
+  .filter((w) => w.length > 0)
+  .slice(0, 2)
+  .map((w) => w[0]?.toUpperCase() ?? '')
+  .join('');
+
+const imageUrl = data.imageUrl
+  ? new URL(data.imageUrl, Astro.site ?? 'https://sriwijayagrafika.co.id').toString()
+  : null;
+
+const jasaWord = data.category === 'utama' ? 'Jasa Pembuatan' : 'Jasa';
+const seoH1 = `${jasaWord} ${data.name} Murah di Palembang`;
+
 const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   '@id': pageUrl + '#service',
-  name: data.name,
+  name: seoH1,
   description: data.description,
   serviceType: data.subcategory,
   provider: {
@@ -59,37 +94,37 @@ const serviceSchema = {
       referenceUnit: data.priceUnit,
     },
   },
+  ...(imageUrl ? { image: imageUrl } : {}),
 };
 ---
 
 <Layout
-  title={`${data.name} | Sriwijaya Grafika Palembang`}
+  title={seoH1}
   description={data.description}
-  keywords={[data.name, data.subcategory, 'Advertising Palembang', 'Sriwijaya Grafika']}
+  keywords={[
+    `${jasaWord} ${data.name}`,
+    `${data.name} Murah`,
+    `${data.name} Palembang`,
+    data.subcategory,
+    data.category === 'utama' ? 'Advertising Palembang' : 'Percetakan Palembang',
+    'Sriwijaya Grafika',
+  ]}
   structuredData={serviceSchema}
 >
   <Navbar current="services" />
 
   <main class="flex-1">
-    <section class="bg-gradient-to-br from-[#224da8] to-[#10285a] text-white py-10 md:py-14">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <a
-          href="/layanan"
-          class="inline-flex items-center gap-1.5 text-xs font-bold text-white/70 hover:text-white mb-6 transition-colors"
-        >
-          <ArrowLeft className="w-3.5 h-3.5" />
-          <span>Kembali ke Daftar Layanan</span>
-        </a>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-          <div class="lg:col-span-2 space-y-4">
+    <section class="bg-gradient-to-br from-[#224da8] to-[#10285a] text-white py-14 md:py-30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div class="space-y-4">
             <div class="flex flex-wrap items-center gap-2">
               <span class="px-2.5 py-1 text-[10px] font-bold font-mono uppercase tracking-wide bg-white/10 backdrop-blur rounded-md">
                 {data.subcategory}
               </span>
             </div>
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
-              {data.name}
+              {seoH1}
             </h1>
             <p class="text-sm md:text-base text-white/80 leading-relaxed max-w-2xl">
               {data.description}
@@ -107,77 +142,111 @@ const serviceSchema = {
             </div>
           </div>
 
-          <aside class="bg-white text-neutral-800 rounded-3xl p-5 md:p-6 shadow-xl border border-neutral-100 space-y-5">
-            <div>
-              <span class="block text-[10px] uppercase tracking-wider font-bold text-neutral-400 font-mono">Harga Mulai Dari</span>
-              <div class="mt-1 flex items-baseline gap-1">
-                <span class="text-2xl md:text-3xl font-extrabold text-[#224da8] font-mono">
-                  Rp {data.basePrice.toLocaleString('id-ID')}
-                </span>
+        <div
+          class="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/20 shadow-2xl bg-white/10"
+        >
+          {data.imageUrl ? (
+            <img
+              src={data.imageUrl}
+              alt={data.name}
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+              class="w-full h-full object-cover"
+            />
+          ) : (
+            <div
+              class={`w-full h-full bg-gradient-to-br ${gradient} flex items-center justify-center relative`}
+            >
+              <div
+                class="absolute inset-0 opacity-[0.08]"
+                style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 20px 20px;"
+              >
               </div>
-              <span class="text-xs text-neutral-500">per {data.priceUnit}</span>
-            </div>
+              <div class="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-white/10 blur-2xl">
+              </div>
+              <div class="absolute -bottom-10 -left-10 w-40 h-40 rounded-full bg-white/5 blur-2xl">
+              </div>
 
-            {data.materials && data.materials.length > 0 && (
-              <div class="pt-4 border-t border-dashed border-neutral-100">
-                <span class="block text-[10px] uppercase tracking-wider font-bold text-neutral-400 font-mono mb-2">Material Utama</span>
-                <ul class="space-y-1.5 text-xs text-neutral-600">
-                  {data.materials.slice(0, 4).map((mat) => (
-                    <li class="flex items-start gap-1.5">
-                      <Package className="w-3.5 h-3.5 text-[#ff6634] flex-shrink-0 mt-0.5" />
-                      <span>{mat}</span>
+              <PlaceholderIcon
+                className="w-20 h-20 md:w-24 md:h-24 text-white/40"
+                strokeWidth={1.25}
+              />
+
+              <span
+                class="absolute top-4 right-4 text-[10px] font-bold font-mono uppercase tracking-wider text-white/80 bg-white/15 backdrop-blur px-2.5 py-1 rounded-md"
+              >
+                Placeholder
+              </span>
+
+              <span
+                class="absolute bottom-4 left-4 text-xs md:text-sm font-mono font-extrabold tracking-wider text-white/70"
+              >
+                {SUBCAT_INITIALS}
+              </span>
+            </div>
+          )}
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="konten" class="py-12 md:py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <aside class="lg:col-span-1 lg:sticky lg:top-24 lg:self-start space-y-6">
+            {data.features && data.features.length > 0 && (
+              <div class="bg-neutral-50 rounded-2xl p-5 border border-neutral-100">
+                <h3 class="text-[10px] font-mono font-bold uppercase tracking-widest text-[#ff6634] mb-3">Fitur</h3>
+                <ul class="space-y-2 text-xs text-neutral-700">
+                  {data.features.map((f) => (
+                    <li class="flex items-start gap-2">
+                      <Check className="w-3.5 h-3.5 text-emerald-500 flex-shrink-0 mt-0.5" />
+                      <span>{f}</span>
                     </li>
                   ))}
                 </ul>
               </div>
             )}
 
-            <div class="pt-4 border-t border-dashed border-neutral-100 space-y-2 text-xs text-neutral-500">
-              <div class="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-emerald-500" />
-                <span>Garansi 1 tahun (reklame luar)</span>
+            {data.materials && data.materials.length > 0 && (
+              <div class="bg-neutral-50 rounded-2xl p-5 border border-neutral-100">
+                <h3 class="text-[10px] font-mono font-bold uppercase tracking-widest text-[#ff6634] mb-3">Material</h3>
+                <ul class="space-y-2 text-xs text-neutral-700">
+                  {data.materials.map((m) => (
+                    <li class="flex items-start gap-2">
+                      <Package className="w-3.5 h-3.5 text-[#ff6634] flex-shrink-0 mt-0.5" />
+                      <span>{m}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <div class="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-emerald-500" />
-                <span>Konsultasi desain gratis</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-emerald-500" />
-                <span>Pemasangan area Palembang</span>
-              </div>
-            </div>
+            )}
+
+            <SidebarCTA
+              title="Tertarik dengan layanan ini?"
+              description="Konsultasikan kebutuhan spesifik Anda dengan tim marketing kami."
+              whatsappMessage={waMessage}
+            />
           </aside>
-        </div>
-      </div>
-    </section>
 
-    <section id="konten" class="py-12 md:py-16 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <article class="prose-article max-w-none">
-          <Content />
-        </article>
+          <div class="lg:col-span-2">
+            <article class="prose-article max-w-none">
+              <Content />
+            </article>
 
-        <div class="mt-12 pt-8 border-t border-neutral-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div>
-            <h3 class="text-lg font-extrabold text-neutral-800">Tertarik dengan layanan ini?</h3>
-            <p class="text-xs text-neutral-500 mt-1">Konsultasikan kebutuhan spesifik Anda dengan tim marketing kami.</p>
-          </div>
-          <div class="flex gap-2">
-            <a
-              href={waUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white text-sm font-bold shadow-md transition-all"
-            >
-              <Phone className="w-4 h-4" />
-              <span>WhatsApp Admin</span>
-            </a>
-            <a
-              href="/layanan"
-              class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white border border-neutral-200 hover:bg-neutral-50 text-neutral-700 text-sm font-bold transition-all"
-            >
-              Lihat Layanan Lain
-            </a>
+            <div class="mt-12 pt-8 border-t border-neutral-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div>
+                <h3 class="text-lg font-extrabold text-neutral-800">Butuh layanan lain?</h3>
+                <p class="text-xs text-neutral-500 mt-1">Lihat katalog lengkap kami untuk produk signage, reklame, dan percetakan.</p>
+              </div>
+              <a
+                href="/layanan"
+                class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white border border-neutral-200 hover:bg-neutral-50 text-neutral-700 text-sm font-bold transition-all"
+              >
+                Lihat Layanan Lain
+              </a>
+            </div>
           </div>
         </div>
       </div>

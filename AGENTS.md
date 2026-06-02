@@ -63,7 +63,7 @@ src/
 ## Layanan content collection
 
 - 31 files in `src/content/layanan/*.md`. Filename = slug = URL segment (`huruf-timbul.md` → `/layanan/huruf-timbul`).
-- Frontmatter schema (see `src/content.config.ts`): `name`, `description`, `category: 'utama'|'secondary'`, `subcategory`, `basePrice`, `priceUnit`, `features[]`, `materials[]`, `hasCalculator`, `calculatorType?`, `imageUrl?` (use `/img/services/<id>.jpg`), `order`, `published`.
+- Frontmatter schema (see `src/content.config.ts`): `name`, `description`, `category: 'utama'|'secondary'`, `subcategory`, `basePrice`, `priceUnit`, `features[]`, `materials[]`, `hasCalculator`, `calculatorType?`, `imageUrl?` (use `/img/layanan/<id>.webp`), `order`, `published`.
 - Markdown body sections: Tentang, Keunggulan, Material/Tabel (primary), Aplikasi, Proses, FAQ. Body is in **Bahasa Indonesia**.
 - To add a new service: copy any existing md, change frontmatter + filename + body. List/detail/related all auto-update.
 
@@ -82,9 +82,9 @@ src/
 
 ## Adding images to a layanan
 
-1. Drop file at `public/img/services/<service-id>.<ext>` (e.g. `huruf-timbul.jpg`).
-2. Add `imageUrl: "/img/services/huruf-timbul.jpg"` to the md frontmatter.
-3. `ServiceCard.astro` auto-renders `<img object-cover>` (aspect 16:10); without `imageUrl` it shows the gradient+icon placeholder (per-subcategory icon map in the component).
+1. Drop file at `public/img/layanan/<service-id>.<ext>` (e.g. `huruf-timbul.webp`).
+2. Add `imageUrl: "/img/layanan/huruf-timbul.webp"` to the md frontmatter.
+3. `ServiceCard.astro` and detail page hero auto-render `<img object-cover>` (aspect 16:10); without `imageUrl` they show the gradient+icon placeholder (per-subcategory icon map in the component). All 31 existing services already have real `.webp` images at this path.
 
 ## Deployment
 
@@ -97,7 +97,8 @@ Static-only. Any host that serves `dist/` works. Build = `npm run build`, output
 - **ServiceCard.astro refactored** as reusable card, used in: `index.astro` (featured), `layanan/index.astro` (listing), `layanan/[...slug].astro` (related services).
 - **Filter tabs added** on `/layanan`: Semua / Advertising & Reklame / Percetakan & Penunjang, with sticky bar, count badge, empty state. Pure vanilla TS inline script, no React island.
 - **Kalkulator UI removed** from detail page hero (badge + button) and from ServiceCard. `CalculatorModal.tsx` still exists in components but is not imported anywhere.
-- **Image placeholders** in ServiceCard: gradient + lucide icon per subcategory, dot pattern, "Placeholder" badge, initials corner mark. Real images via `imageUrl` frontmatter → `public/img/services/<id>.<ext>`, aspect 16:10.
+- **Image placeholders** in ServiceCard: gradient + lucide icon per subcategory, dot pattern, "Placeholder" badge, initials corner mark. Real images via `imageUrl` frontmatter → `public/img/layanan/<id>.webp`, aspect 16:10.
+- **Hero image on detail page** (`src/pages/layanan/[...slug].astro`): section between hero and content, same `data.imageUrl` + placeholder pattern, `max-w-6xl`, `aspect-[16/10]`, rounded + shadow. Image (when present) also added to JSON-LD `Service` schema as `image` field.
 - **Detail page sidebar** shows price + material list + trust signals; JSON-LD `Service` schema auto-generated per page.
 - **Global prose styles** added to `src/styles/global.css` (`.prose-article`) as alternative to `@tailwindcss/typography` plugin (which is not installed).
 
@@ -120,13 +121,37 @@ All planned single-page sections will follow the **same pattern as layanan**. Wh
 - Reuse existing `MEDIA_COVERAGES`, `VIDEOS`, `FULL_ARTICLES` from `src/lib/data.ts` as seed data — migrate into md frontmatter, then delete arrays.
 - `AboutAndMediaIsland.tsx` (current media page React island) can be slimmed down or replaced with static Astro markup.
 
-### Blog → new feature
-- New collection: `src/content/blog/*.md` (one md per article). Long-form SEO content for organic traffic.
-- Schema: `title`, `excerpt`, `author` (default: M. Edy Munandar / Tim Sriwijaya Grafika), `date` (ISO), `category` (e.g. `tips`, `studi-kasus`, `berita`, `panduan`, `press-release`), `tags?[]`, `imageUrl?` (hero), `featured?`, `readingTime?` (auto-calc-able, optional), `published` (default `false` — drafts should not render).
-- Pages: `src/pages/blog/index.astro` (article cards + filter by category/tags) and `src/pages/blog/[...slug].astro` (article: hero image, meta bar author/date/reading time, full markdown body, "Artikel terkait" by category/tags, share buttons opsional).
-- New reusable card: `src/components/BlogCard.astro` (horizontal or vertical layout, aspect 16:9 cover, category pill, title, excerpt, date).
-- New `dist/blog/rss.xml` opsional via `@astrojs/rss` integration if added to `astro.config.mjs`.
-- Consider `published: false` default so drafts don't ship to production by accident.
+### Blog — IMPLEMENTED (long-form SEO content)
+
+- **Collection**: `src/content/blog/*.md` (filename = slug = URL segment, e.g. `5-tips-huruf-timbul.md` → `/blog/5-tips-huruf-timbul`).
+- **Schema** (see `src/content.config.ts`, validated with Zod):
+  - `title` (string, **max 5 kata** via `.refine()`) — short display title, dipakai di card heading
+  - `titleSeo` (string, **max 12 kata**) — dipakai di `<h1>`, `<title>`, og:title, JSON-LD `headline`
+  - `excerpt` (string, 20–300 char) — card excerpt + meta description
+  - `date` (**string format Indonesia "DD NamaBulan YYYY"**, contoh `"12 Desember 2025"`, validated dengan regex) — di-parse oleh `parseIndonesianDate()` di `src/lib/blog.ts` untuk sort
+  - `topik` (enum: `tips` | `studi-kasus` | `berita` | `panduan` | `press-release`) — label Indonesia via `TOPIK_LABELS`
+  - `imgurl` (**WAJIB**) — feature image, og:image, JSON-LD Article `image`. Convention: `public/img/blog/<id>.<ext>`
+  - `imgalt` (string, optional) — fallback ke `titleSeo` kalau kosong
+  - `pengantar` (string, 50–500 char) — lead paragraph dirender sebelum body, plain style
+  - `kesimpulan` (string, 50–500 char) — closing paragraph dirender setelah body, plain style
+  - `published` (boolean, default `true`) — `getStaticPaths` di `[...slug].astro` filter `published: true` (draft TIDAK di-generate)
+- **Author**: hard-coded `AUTHOR_NAME = 'Tim Sriwijaya Grafika'` di `src/lib/blog.ts` (tidak ada field `author` di frontmatter, tapi `Article` JSON-LD sertakan sebagai `author: { @type: 'Organization', name: 'Tim Sriwijaya Grafika' }`).
+- **Reading time**: auto-calc via `calcReadingTime(pengantar, body, kesimpulan)` — strip markdown, count words, bagi 200 wpm. Ditampilkan di BlogCard footer + slug page meta bar.
+- **Body structure**: HANYA berisi H2 sections (`## Judul Section`) + sub-content. **TIDAK boleh** ada `#` H1 (sudah di `titleSeo`), paragraph pembuka/penutup (sudah di `pengantar`/`kesimpulan`), atau tags/image di body.
+- **Pages**:
+  - `src/pages/blog/index.astro` — hero gradient blue + sticky filter bar (`?topik=` deep link) + 3-col grid (sort by `date` desc, newest first) + bottom CTA
+  - `src/pages/blog/[...slug].astro` — hero (topik pill + h1 = titleSeo + meta bar) + hero image 16/9 + content grid 1/3 sidebar (ShareButtons + SidebarCTA variant light) + 2/3 article (pengantar → Content → kesimpulan) + related (by topik, exclude current)
+- **Components**:
+  - `src/components/BlogCard.astro` — aspect 16/9 cover, topik pill, title (line-clamp-2), excerpt (line-clamp-3), date + reading time footer
+  - `src/components/ShareButtons.astro` — WA + FB + X + Copy Link (vanilla TS untuk clipboard, with toast feedback)
+- **RSS**: `src/pages/blog/rss.xml.ts` — `@astrojs/rss` endpoint, items di-sort newest first, pubDate dari `parseIndonesianDate(date)`, language `id-ID`.
+- **JSON-LD**:
+  - Index: `CollectionPage` (per jawaban user) dengan `hasPart: Article[]`
+  - Slug: `Article` lengkap (headline, image, datePublished ISO, wordCount, author Organization, publisher LocalBusiness mirror `#business`, articleSection, mainEntityOfPage, isPartOf) + `BreadcrumbList` terpisah
+- **Helpers** (`src/lib/blog.ts`): `parseIndonesianDate`, `toIsoDate`, `stripMarkdown`, `calcReadingTime`, `TOPIK_LABELS`, `AUTHOR_NAME`.
+- **Navbar**: item `{ id: 'blog', label: 'Blog & Tips', href: '/blog' }` di posisi **setelah Galeri Portofolio**. Union `Props.current` extend ke `'blog'`.
+- **Sitemap**: entry `/blog` + link RSS `/blog/rss.xml` di `src/pages/sitemap.astro`.
+- **Sample data**: 4 MD (3 published: tips/studi-kasus/panduan, 1 draft `published: false` untuk verify filter — TIDAK di-render ke `dist/`).
 
 ### Conventions to copy when implementing any new collection
 

@@ -10,6 +10,7 @@ features:
   - "2 ply / 3 ply / 4 ply"
   - "Custom logo & nomorator"
   - "Jilid rapi per 50/100 set"
+imageUrl: "/img/layanan/cetak-nota.webp"
 hasCalculator: true
 calculatorType: "printing_standard"
 order: 11

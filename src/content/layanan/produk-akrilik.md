@@ -14,6 +14,7 @@ materials:
   - "Akrilik Bening"
   - "Akrilik Warna Solid"
   - "Akrilik Mirror (Gold/Silver)"
+imageUrl: "/img/layanan/produk-akrilik.webp"
 hasCalculator: false
 order: 8
 ---

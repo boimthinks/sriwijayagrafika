@@ -10,6 +10,7 @@ features:
   - "Print sublimasi full color"
   - "Tahan lama, anti luntur"
   - "Cocok untuk souvenir pernikahan/kantor"
+imageUrl: "/img/layanan/mug-custom.webp"
 hasCalculator: false
 order: 19
 ---

@@ -14,6 +14,7 @@ materials:
   - "Neon Flex TPU"
   - "Akrilik Laser Cut"
   - "Adaptor DC 12V"
+imageUrl: "/img/layanan/neon-flex.webp"
 hasCalculator: false
 order: 7
 ---

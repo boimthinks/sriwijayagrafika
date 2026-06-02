@@ -14,6 +14,7 @@ materials:
   - "LED Module"
   - "Sisi Stainless/Galvanis"
   - "Depan Akrilik"
+imageUrl: "/img/layanan/gantry-huruf-led.webp"
 hasCalculator: true
 calculatorType: "huruf_timbul"
 order: 10

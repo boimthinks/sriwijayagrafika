@@ -10,6 +10,7 @@ features:
   - "Sablon 1-2 warna logo"
   - "Berbagai warna tas"
   - "Ramah lingkungan, reusable"
+imageUrl: "/img/layanan/goodie-bag.webp"
 hasCalculator: false
 order: 31
 ---

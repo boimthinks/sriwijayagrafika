@@ -3,7 +3,7 @@ import { Phone, Menu, X, ShieldCheck } from 'lucide-react';
 import { BUSINESS_INFO } from '@lib/data';
 
 interface Props {
-  current?: 'home' | 'services' | 'portfolio' | 'media';
+  current?: 'home' | 'services' | 'portfolio' | 'media' | 'blog';
 }
 
 const { current = 'home' } = Astro.props;
@@ -13,6 +13,7 @@ const menuItems = [
   { id: 'services', label: 'Layanan', href: '/layanan' },
   { id: 'portfolio', label: 'Galeri Portofolio', href: '/portofolio' },
   { id: 'media', label: 'Liputan Media', href: '/media' },
+  { id: 'blog', label: 'Blog & Tips', href: '/blog' },
 ] as const;
 
 const isActive = (id: string) => current === id;
@@ -79,7 +80,7 @@ const isActive = (id: string) => current === id;
           id="cta-whatsapp-nav"
         >
           <Phone className="w-4 h-4 fill-white" />
-          <span>WhatsApp Admin</span>
+          <span>WhatsApp</span>
         </a>
       </div>
 
@@ -115,18 +116,14 @@ const isActive = (id: string) => current === id;
         </a>
       ))}
       <div class="pt-4 pb-2 border-t border-neutral-100 px-4 space-y-3">
-        <div class="flex items-center gap-2 text-xs text-neutral-500">
-          <ShieldCheck className="w-4 h-4 text-emerald-600" />
-          <span>Pekerjaan luar ruang dilindungi garansi 1 tahun</span>
-        </div>
-        <a
+          <a
           href={`https://wa.me/${BUSINESS_INFO.phone1Intl}`}
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-[#224da8] hover:bg-[#183c84] text-white text-sm font-semibold shadow-md"
         >
           <Phone className="w-4 h-4" />
-          <span>WhatsApp Admin ({BUSINESS_INFO.phone1})</span>
+          <span>WhatsApp</span>
         </a>
       </div>
     </div>

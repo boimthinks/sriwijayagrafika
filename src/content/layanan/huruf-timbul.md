@@ -15,6 +15,7 @@ materials:
   - "Akrilik"
   - "Kuningan"
   - "Galvanil"
+imageUrl: "/img/layanan/huruf-timbul.webp"
 hasCalculator: true
 calculatorType: "huruf_timbul"
 order: 1

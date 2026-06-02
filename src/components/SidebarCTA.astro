@@ -1,0 +1,60 @@
+---
+import { Phone, MessageCircle } from 'lucide-react';
+import { BUSINESS_INFO } from '@lib/data';
+
+interface Props {
+  title?: string;
+  description?: string;
+  whatsappMessage?: string;
+  phoneDisplay?: string;
+  variant?: 'gradient' | 'light';
+  class?: string;
+  ctaLabel?: string;
+}
+
+const {
+  title = 'Konsultasikan Kebutuhan Anda',
+  description = 'Tim marketing kami siap membantu via WhatsApp. Respon cepat dan konsultasi gratis.',
+  whatsappMessage,
+  phoneDisplay = BUSINESS_INFO.phone1,
+  variant = 'gradient',
+  class: className = '',
+  ctaLabel = 'Tanya via WhatsApp',
+} = Astro.props;
+
+const formattedPhone = phoneDisplay.replace(/(\d{4})(\d{4})(\d{4})/, '$1-$2-$3');
+const waUrl = `https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent(
+  whatsappMessage ?? 'Halo Sriwijaya Grafika, saya ingin berkonsultasi.'
+)}`;
+---
+
+<div
+  class:list={[
+    'rounded-2xl p-5 shadow-lg',
+    variant === 'gradient' && 'bg-gradient-to-br from-[#224da8] to-[#10285a] text-white',
+    variant === 'light' && 'bg-white border border-neutral-200 text-neutral-800',
+    className,
+  ]}
+>
+  <h3 class="text-base font-extrabold tracking-tight">
+    {title}
+  </h3>
+  <p
+    class:list={[
+      'text-xs leading-relaxed mt-1.5',
+      variant === 'gradient' ? 'text-white/80' : 'text-neutral-500',
+    ]}
+  >
+    {description}
+  </p>
+  <a
+    href={waUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="mt-4 inline-flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white text-xs font-bold shadow-md transition-all"
+  >
+    <MessageCircle className="w-3.5 h-3.5" />
+    <span>{ctaLabel}</span>
+  </a>
+
+</div>

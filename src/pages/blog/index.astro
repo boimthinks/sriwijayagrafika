@@ -1,0 +1,185 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Navbar from '@components/Navbar.astro';
+import Footer from '@components/Footer.astro';
+import BlogCard from '@components/BlogCard.astro';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import { BUSINESS_INFO } from '@lib/data';
+import { calcReadingTime, parseIndonesianDate, TOPIK_LABELS } from '@lib/blog';
+
+const allPosts = (await getCollection('blog', ({ data }) => data.published)).sort(
+  (a, b) => parseIndonesianDate(b.data.date).getTime() - parseIndonesianDate(a.data.date).getTime()
+);
+
+const postsWithMeta = await Promise.all(
+  allPosts.map(async (post) => {
+    const { Content: _ignore } = await render(post);
+    return {
+      post,
+      readingTime: calcReadingTime(post.data.pengantar, post.body ?? '', post.data.kesimpulan),
+    };
+  })
+);
+
+const counts: Record<string, number> = {};
+for (const { post } of postsWithMeta) {
+  counts[post.data.topik] = (counts[post.data.topik] ?? 0) + 1;
+}
+const topikOrder = ['tips', 'studi-kasus', 'berita', 'panduan', 'press-release'] as const;
+const availableTopiks = topikOrder.filter((t) => (counts[t] ?? 0) > 0);
+
+const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://sriwijayagrafika.co.id').toString();
+
+const blogSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': pageUrl + '#collection',
+  name: 'Blog Sriwijaya Grafika Palembang',
+  description:
+    'Tips, studi kasus, berita, panduan, dan press release seputar advertising, reklame, huruf timbul, neon box, dan percetakan di Palembang.',
+  url: pageUrl,
+  inLanguage: 'id-ID',
+  isPartOf: { '@id': 'https://sriwijayagrafika.co.id/#website' },
+  hasPart: postsWithMeta.map(({ post, readingTime }) => ({
+    '@type': 'Article',
+    headline: post.data.titleSeo,
+    url: `https://sriwijayagrafika.co.id/blog/${post.data.topik}/${post.id}`,
+    datePublished: parseIndonesianDate(post.data.date).toISOString(),
+    image: new URL(post.data.imgurl, Astro.site ?? 'https://sriwijayagrafika.co.id').toString(),
+    articleSection: TOPIK_LABELS[post.data.topik],
+    wordCount: readingTime * 200,
+  })),
+};
+---
+
+<Layout
+  title="Blog & Tips Advertising Palembang | Sriwijaya Grafika"
+  description="Tips, studi kasus, berita, dan panduan seputar huruf timbul, neon box, papan nama, rambu K3, dan percetakan Palembang. Update mingguan dari tim Sriwijaya Grafika."
+  keywords={[
+    'Blog Advertising Palembang',
+    'Tips Huruf Timbul',
+    'Panduan Neon Box',
+    'Studi Kasus Reklame',
+    'Berita Percetakan Palembang',
+    'Sriwijaya Grafika',
+  ]}
+  structuredData={blogSchema}
+>
+  <Navbar current="blog" />
+
+  <main class="flex-1">
+    <section class="bg-gradient-to-br from-[#224da8] to-[#10285a] text-white py-14 md:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+        <span class="text-xs font-bold text-[#ff6634] uppercase tracking-widest block">BLOG & TIPS</span>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
+          Tips, Studi Kasus &amp; Berita Advertising Palembang
+        </h1>
+        <p class="text-sm sm:text-base text-white/80 max-w-2xl mx-auto leading-relaxed">
+          Wawasan teknis seputar signage, reklame, dan percetakan langsung dari tim produksi Sriwijaya
+          Grafika. Pelajari cara memilih material, membaca harga, dan menghindari kesalahan umum saat
+          memesan.
+        </p>
+        <div class="pt-2 flex flex-wrap items-center justify-center gap-2 text-[11px] font-bold">
+          {topikOrder.map((t) => {
+            const c = counts[t] ?? 0;
+            if (c === 0) return null;
+            return (
+              <span class="px-3 py-1.5 rounded-full bg-white/10 backdrop-blur">
+                {c} {TOPIK_LABELS[t]}
+              </span>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    {allPosts.length === 0 ? (
+      <div class="bg-white py-20 border-y border-neutral-100">
+        <div class="max-w-md mx-auto px-4 text-center space-y-3">
+          <p class="text-base font-bold text-neutral-700">Belum ada artikel yang dipublikasikan.</p>
+          <p class="text-xs text-neutral-500 leading-relaxed">
+            Tambahkan artikel di <code class="px-1.5 py-0.5 rounded bg-neutral-100">src/content/blog/</code>
+            dengan <code class="px-1.5 py-0.5 rounded bg-neutral-100">published: true</code>.
+          </p>
+          <a
+            href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya ingin berkonsultasi mengenai kebutuhan signage.')}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white text-xs font-bold shadow-md transition-all"
+          >
+            Tanya via WhatsApp
+          </a>
+        </div>
+      </div>
+    ) : (
+      <>
+        <section class="sticky top-20 z-30 bg-white/95 backdrop-blur-md border-b border-neutral-100 shadow-sm">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+              <nav class="flex bg-neutral-100 p-1 rounded-xl w-full md:w-auto overflow-x-auto" aria-label="Filter topik blog">
+                <a
+                  href="/blog"
+                  aria-current="page"
+                  class="flex-1 md:flex-initial px-4 md:px-5 py-2.5 rounded-lg text-xs font-bold transition-all duration-200 bg-white text-[#224da8] shadow-sm whitespace-nowrap"
+                >
+                  Semua ({allPosts.length})
+                </a>
+                {availableTopiks.map((t) => (
+                  <a
+                    href={`/blog/${t}`}
+                    class="flex-1 md:flex-initial px-4 md:px-5 py-2.5 rounded-lg text-xs font-bold transition-all duration-200 text-neutral-500 hover:text-neutral-800 whitespace-nowrap"
+                  >
+                    {TOPIK_LABELS[t]} ({counts[t]})
+                  </a>
+                ))}
+              </nav>
+
+              <div class="hidden md:flex items-center gap-2 text-[11px] text-neutral-500">
+                <span class="font-mono font-bold">Total:</span>
+                <span class="font-extrabold text-[#224da8]">{allPosts.length}</span>
+                <span>artikel</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-12 md:py-16 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {postsWithMeta.map(({ post, readingTime }) => (
+                <BlogCard post={post} readingTime={readingTime} />
+              ))}
+            </div>
+          </div>
+        </section>
+      </>
+    )}
+
+    <section class="py-12 md:py-16 bg-neutral-50/50 border-t border-neutral-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-neutral-800 tracking-tight">
+          Punya Pertanyaan Proyek Signage?
+        </h2>
+        <p class="text-sm text-neutral-500 max-w-2xl mx-auto leading-relaxed">
+          Artikel ini belum menjawab kebutuhan Anda? Tim marketing kami siap konsultasi gratis via WhatsApp
+          untuk rekomendasi material, desain, dan estimasi harga.
+        </p>
+        <a
+          href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya ingin berkonsultasi mengenai kebutuhan signage/reklame.')}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white text-sm font-bold shadow-md transition-all"
+        >
+          Konsultasi via WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<script>
+  // Filter pills are now real links to topic pages (/blog/[topik]/).
+  // No client-side filter script needed.
+</script>

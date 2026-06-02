@@ -10,6 +10,7 @@ features:
   - "Cetak full color"
   - "Custom logo & alamat"
   - "Cocok untuk kop surat resmi"
+imageUrl: "/img/layanan/kop-surat.webp"
 hasCalculator: false
 order: 13
 ---

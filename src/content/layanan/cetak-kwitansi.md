@@ -10,6 +10,7 @@ features:
   - "Rangkap 2 (putih & kuning)"
   - "Custom logo perusahaan"
   - "Jilid rapi, kertas HVS/AP"
+imageUrl: "/img/layanan/cetak-kwitansi.webp"
 hasCalculator: true
 calculatorType: "printing_standard"
 order: 12

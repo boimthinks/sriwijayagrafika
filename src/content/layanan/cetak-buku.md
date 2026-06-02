@@ -10,6 +10,7 @@ features:
   - "Cover ArtCarton / Ivory"
   - "Isi full color / B&W"
   - "Cocok untuk buku, modul, majalah"
+imageUrl: "/img/layanan/cetak-buku.webp"
 hasCalculator: false
 order: 23
 ---

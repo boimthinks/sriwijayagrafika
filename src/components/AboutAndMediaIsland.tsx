@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Newspaper, Video, Globe, Award, ShieldCheck, Heart, Check, Play, ExternalLink } from 'lucide-react';
-import type { PortfolioItem } from '@lib/types';
 import { BUSINESS_INFO } from '@lib/data';
 
 interface Props {

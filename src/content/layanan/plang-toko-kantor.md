@@ -14,6 +14,7 @@ materials:
   - "Hollow Galvalum"
   - "Plat Aluminium"
   - "Sticker Vinyl / Transparant"
+imageUrl: "/img/layanan/plang-toko-kantor.webp"
 hasCalculator: false
 order: 6
 ---

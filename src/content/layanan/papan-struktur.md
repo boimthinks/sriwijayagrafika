@@ -10,6 +10,7 @@ features:
   - "Cetak nama & jabatan tajam"
   - "Background ACP / vinil"
   - "Multi-level struktur"
+imageUrl: "/img/layanan/papan-struktur.webp"
 hasCalculator: false
 order: 21
 ---

@@ -13,6 +13,7 @@ features:
 materials:
   - "Besi Siku & Pipa"
   - "Visual Backlit / Banner Tarpaulin"
+imageUrl: "/img/layanan/billboard.webp"
 hasCalculator: false
 order: 5
 ---

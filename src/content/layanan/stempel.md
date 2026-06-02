@@ -10,6 +10,7 @@ features:
   - "Bisa 2-3 warna sekaligus"
   - "Tanpa bantalan, langsung pakai"
   - "Selesai 15 menit (express)"
+imageUrl: "/img/layanan/stempel.webp"
 hasCalculator: false
 order: 24
 ---

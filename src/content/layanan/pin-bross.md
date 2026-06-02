@@ -10,6 +10,7 @@ features:
   - "Ukuran 44mm / 58mm"
   - "Finishing glossy / doff"
   - "Custom logo & desain"
+imageUrl: "/img/layanan/pin-bross.webp"
 hasCalculator: false
 order: 25
 ---

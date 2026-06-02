@@ -14,6 +14,7 @@ materials:
   - "Rangka PVC"
   - "Rangka Aluminium"
   - "Visual Vinyl Sticker Glossy Laminating"
+imageUrl: "/img/layanan/booth-event-desk.webp"
 hasCalculator: false
 order: 9
 ---

@@ -1,0 +1,90 @@
+---
+import { Share2, MessageCircle, Facebook, Twitter, Link2, Check } from 'lucide-react';
+
+interface Props {
+  url: string;
+  title: string;
+}
+
+const { url, title } = Astro.props;
+const encodedUrl = encodeURIComponent(url);
+const encodedTitle = encodeURIComponent(title);
+const waShare = `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`;
+const fbShare = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
+const xShare = `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`;
+---
+
+<div
+  class="bg-neutral-50 rounded-2xl p-5 border border-neutral-100"
+  id="share-buttons"
+>
+  <h3 class="text-[10px] font-mono font-bold uppercase tracking-widest text-[#ff6634] mb-3 flex items-center gap-1.5">
+    <Share2 className="w-3.5 h-3.5" />
+    Bagikan
+  </h3>
+  <div class="grid grid-cols-2 gap-2">
+    <a
+      href={waShare}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-[#25D366] hover:bg-[#1ebe57] text-white text-xs font-bold transition-colors"
+      aria-label="Bagikan via WhatsApp"
+    >
+      <MessageCircle className="w-3.5 h-3.5" />
+      WhatsApp
+    </a>
+    <a
+      href={fbShare}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-[#1877F2] hover:bg-[#0e65d4] text-white text-xs font-bold transition-colors"
+      aria-label="Bagikan via Facebook"
+    >
+      <Facebook className="w-3.5 h-3.5" />
+      Facebook
+    </a>
+    <a
+      href={xShare}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-black hover:bg-neutral-800 text-white text-xs font-bold transition-colors"
+      aria-label="Bagikan via X"
+    >
+      <Twitter className="w-3.5 h-3.5" />
+      X
+    </a>
+    <button
+      type="button"
+      data-share-url={url}
+      class="js-copy-link inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-white border border-neutral-200 hover:bg-neutral-50 text-neutral-700 text-xs font-bold transition-colors"
+      aria-label="Salin tautan"
+    >
+      <Link2 className="w-3.5 h-3.5" />
+      <span data-copy-label>Salin</span>
+    </button>
+  </div>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.js-copy-link');
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const url = btn.dataset.shareUrl ?? '';
+      const label = btn.querySelector<HTMLSpanElement>('[data-copy-label]');
+      try {
+        await navigator.clipboard.writeText(url);
+        if (label) {
+          const original = label.textContent;
+          label.textContent = 'Tersalin!';
+          btn.classList.add('!bg-emerald-50', '!border-emerald-200', '!text-emerald-700');
+          setTimeout(() => {
+            if (label) label.textContent = original;
+            btn.classList.remove('!bg-emerald-50', '!border-emerald-200', '!text-emerald-700');
+          }, 1800);
+        }
+      } catch (err) {
+        if (label) label.textContent = 'Gagal';
+      }
+    });
+  });
+</script>

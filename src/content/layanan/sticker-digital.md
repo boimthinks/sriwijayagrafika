@@ -10,6 +10,7 @@ features:
   - "Cetak resolusi tinggi"
   - "Cutting custom sesuai desain"
   - "Tahan air & UV"
+imageUrl: "/img/layanan/sticker-digital.webp"
 hasCalculator: false
 order: 15
 ---

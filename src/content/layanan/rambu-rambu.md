@@ -15,6 +15,7 @@ materials:
   - "ACP"
   - "Acrylic"
   - "Stiker Reflective"
+imageUrl: "/img/layanan/rambu-rambu.webp"
 hasCalculator: true
 calculatorType: "rambu"
 order: 3
