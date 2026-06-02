@@ -1,0 +1,37 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Navbar from '@components/Navbar.astro';
+import Footer from '@components/Footer.astro';
+import PortfolioGallery from '@components/PortfolioGallery';
+import { PORTFOLIOS } from '@lib/data';
+
+const portfolioSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ImageGallery',
+  '@id': 'https://sriwijayagrafika.co.id/portofolio#gallery',
+  name: 'Portofolio Sriwijaya Grafika Palembang',
+  description: 'Galeri hasil pekerjaan reklame, huruf timbul, neon box, totem sign, dan rambu K3 Sriwijaya Grafika Palembang.',
+};
+---
+
+<Layout
+  title="Galeri Portofolio | Hasil Karya Reklame & Huruf Timbul Palembang"
+  description="Lihat portofolio lengkap Sriwijaya Grafika: huruf timbul stainless, akrilik LED, neon box, pylon sign, rambu K3, dan booth event dari berbagai brand ternama di Palembang."
+  keywords={[
+    'Portofolio Advertising Palembang',
+    'Huruf Timbul Stainless',
+    'Neon Box Cafe',
+    'Pylon Sign',
+    'Rambu K3 Pabrik',
+    'Contoh Reklame Palembang',
+  ]}
+  structuredData={portfolioSchema}
+>
+  <Navbar current="portfolio" />
+
+  <main class="flex-1">
+    <PortfolioGallery client:load items={PORTFOLIOS} />
+  </main>
+
+  <Footer />
+</Layout>

@@ -1,0 +1,39 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Navbar from '@components/Navbar.astro';
+import Footer from '@components/Footer.astro';
+---
+
+<Layout
+  title="Sitemap | Sriwijaya Grafika Palembang"
+  description="Daftar lengkap halaman dan tautan penting Sriwijaya Grafika Palembang."
+  noindex={true}
+>
+  <Navbar current="home" />
+
+  <main class="flex-1 max-w-4xl mx-auto px-4 sm:px-6 py-12">
+    <h1 class="text-3xl font-extrabold text-neutral-800 mb-2">Sitemap</h1>
+    <p class="text-sm text-neutral-500 mb-8">Halaman-halaman utama Sriwijaya Grafika Palembang.</p>
+
+    <ul class="space-y-3 text-sm">
+      <li>
+        <a class="text-[#224da8] font-bold hover:underline" href="/">/ &mdash; Beranda</a>
+      </li>
+      <li>
+        <a class="text-[#224da8] font-bold hover:underline" href="/layanan">/layanan &mdash; Layanan</a>
+      </li>
+      <li>
+        <a class="text-[#224da8] font-bold hover:underline" href="/portofolio">/portofolio &mdash; Galeri Portofolio</a>
+      </li>
+      <li>
+        <a class="text-[#224da8] font-bold hover:underline" href="/media">/media &mdash; Liputan Media & Profil</a>
+      </li>
+    </ul>
+
+    <p class="text-xs text-neutral-400 mt-12 font-mono">
+      XML Sitemap tersedia di <a class="text-[#224da8] hover:underline" href="/sitemap-index.xml">/sitemap-index.xml</a>
+    </p>
+  </main>
+
+  <Footer />
+</Layout>

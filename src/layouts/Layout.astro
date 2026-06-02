@@ -1,0 +1,129 @@
+---
+import '@/styles/global.css';
+import { BUSINESS_INFO } from '@lib/data';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  ogType?: string;
+  canonicalUrl?: string;
+  keywords?: string[];
+  noindex?: boolean;
+  structuredData?: object;
+}
+
+const {
+  title,
+  description,
+  ogImage = '/og-default.svg',
+  ogType = 'website',
+  canonicalUrl,
+  keywords = [
+    'Advertising Palembang',
+    'Huruf Timbul Palembang',
+    'Neon Box',
+    'Papan Nama Toko',
+    'Percetakan Palembang',
+    'Reklame Palembang',
+  ],
+  noindex = false,
+  structuredData,
+} = Astro.props;
+
+const siteUrl = Astro.site?.toString() || import.meta.env.APP_URL || 'https://sriwijayagrafika.co.id';
+const canonical = canonicalUrl || new URL(Astro.url.pathname, siteUrl).toString();
+const fullOgImage = ogImage.startsWith('http') ? ogImage : new URL(ogImage, siteUrl).toString();
+
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  '@id': `${siteUrl}#business`,
+  name: BUSINESS_INFO.name,
+  description: description,
+  url: siteUrl,
+  telephone: `+62${BUSINESS_INFO.phone1.substring(1)}`,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: BUSINESS_INFO.address,
+    addressLocality: 'Palembang',
+    addressRegion: 'Sumatera Selatan',
+    postalCode: '30155',
+    addressCountry: 'ID',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: -2.922115,
+    longitude: 104.685934,
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      opens: '08:00',
+      closes: '17:00',
+    },
+  ],
+  priceRange: '$$',
+  image: fullOgImage,
+  sameAs: [
+    BUSINESS_INFO.socials.instagram,
+    BUSINESS_INFO.socials.facebookUtama,
+    BUSINESS_INFO.socials.tiktok,
+    BUSINESS_INFO.socials.shopee,
+  ],
+};
+
+const allSchemas = [localBusinessSchema];
+if (structuredData) allSchemas.push(structuredData);
+---
+
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#3c5a98" />
+    <meta name="geo.region" content="ID-SS" />
+    <meta name="geo.placename" content="Palembang" />
+    <meta name="geo.position" content="-2.922115;104.685934" />
+    <meta name="ICBM" content="-2.922115, 104.685934" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <meta name="keywords" content={keywords.join(', ')} />
+    <meta name="author" content={BUSINESS_INFO.name} />
+    <link rel="canonical" href={canonical} />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={fullOgImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:site_name" content={BUSINESS_INFO.name} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonical} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={fullOgImage} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    {allSchemas.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))}
+  </head>
+  <body class="min-h-[100dvh] bg-neutral-50/20 text-neutral-800 font-sans flex flex-col">
+    <slot />
+  </body>
+</html>

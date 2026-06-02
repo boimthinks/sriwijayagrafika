@@ -1,0 +1,42 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Navbar from '@components/Navbar.astro';
+import Footer from '@components/Footer.astro';
+import { Home, Search } from 'lucide-react';
+---
+
+<Layout
+  title="Halaman Tidak Ditemukan | Sriwijaya Grafika"
+  description="Halaman yang Anda cari tidak tersedia. Kembali ke beranda Sriwijaya Grafika atau jelajahi layanan kami."
+  noindex={true}
+>
+  <Navbar current="home" />
+
+  <main class="flex-1 flex items-center justify-center py-24 px-4">
+    <div class="text-center max-w-xl space-y-6">
+      <div class="text-7xl font-black text-[#224da8] tracking-tighter">404</div>
+      <h1 class="text-2xl md:text-3xl font-extrabold text-neutral-800">Halaman Tidak Ditemukan</h1>
+      <p class="text-sm text-neutral-500 leading-relaxed">
+        Maaf, halaman yang Anda cari mungkin telah dipindahkan atau tidak tersedia. Kembali ke beranda atau lihat layanan kami.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+        <a
+          href="/"
+          class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#224da8] hover:bg-[#183c84] text-white text-sm font-semibold shadow-md"
+        >
+          <Home className="w-4 h-4" />
+          <span>Kembali ke Beranda</span>
+        </a>
+        <a
+          href="/layanan"
+          class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white border border-neutral-200 hover:bg-neutral-50 text-neutral-700 text-sm font-semibold"
+        >
+          <Search className="w-4 h-4" />
+          <span>Lihat Layanan</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

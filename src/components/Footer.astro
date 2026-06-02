@@ -1,0 +1,140 @@
+---
+import { Phone, MapPin, Instagram, Facebook, Globe, ShoppingBag, ArrowRight, ShieldCheck } from 'lucide-react';
+import { BUSINESS_INFO } from '@lib/data';
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-neutral-900 text-white border-t border-neutral-800" id="main-footer">
+  <div class="bg-gradient-to-r from-[#224da8] to-[#10285a] py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="space-y-1 text-center md:text-left">
+        <h4 class="text-sm font-extrabold tracking-widest uppercase text-[#ff6634] font-mono">
+          SASARAN LOKAL PALEMBANG
+        </h4>
+        <p class="text-xs text-neutral-200">
+          Spesialis Advertising terjangkau di Sukarami, Alang-Alang Lebar, Sako, Kemuning, Plaju, Bukit, hingga Jakabaring.
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-2 justify-center">
+        {['Advertising Palembang', 'Neon Box', 'Huruf Timbul LED', 'Rambu-Rambu K3', 'Pylon Sign', 'Percetakan Palembang'].map((tag) => (
+          <span class="px-2.5 py-1 rounded bg-white/10 text-[9px] font-mono tracking-wider font-bold text-white whitespace-nowrap">
+            #{tag}
+          </span>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+      <div class="lg:col-span-4 space-y-5">
+        <div class="space-y-3">
+          <a href="/" class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1073 935" class="w-8 h-8 flex-shrink-0" aria-hidden="true">
+              <path fill-rule="evenodd" fill="rgb(255, 102, 52)"
+                d="M1040.1,662 C1030.5,679 1016.4,702.4 1009,709.1 L1008.1,858.1 C1008.1,901 974.97,935 932.1,935 L138,935 C96.03,935 62,901 62,858.1 L62,823.4 C56.06,821 44.36,816.4 33,812 C16.63,805.7 0,797 0,797 L58,711 L26,783 L62,796.7 L62,796.55 C108.33,814.29 201.25,843.34 336,854.1 C433.43,863.43 615.86,856.02 757,810 C886.95,768.25 984.28,697.64 1008.92,678.77 C1015.96,671.16 1029.45,656.19 1041,640 C1058.4,618.85 1072,594.1 1072,594.1 C1072,594.1 1060.09,631.01 1040.1,662 ZM574.1,746.1 C370.56,780.02 108,662 108,662 L62,731 L62,450.19 C81.63,477.86 137.73,536.54 224,549 C341.63,565.99 416,547.1 416,547.1 L677,500.1 C677,500.1 869.29,458.16 914.1,527.1 C960.71,597.84 779.44,713.98 574.1,746.1 Z" />
+              <path fill-rule="evenodd" fill="rgb(34, 77, 168)"
+                d="M886,437 C806.09,423.17 698.1,434 698.1,434 C698.1,434 755.05,413.69 799,387 C835.94,364.56 861.1,335 861.1,335 L749.1,242 C749.1,242 766.51,316.55 657.1,360 C518.54,415.84 240.15,422.54 219.1,337 C178.76,161.93 689.1,125.1 689.1,125.1 C689.1,125.1 461.19,111.26 259,172.1 C153.1,205.34 79.47,281.16 61.1,300.46 L61.1,75.1 C61.1,34.03 96.03,0 138,0 L932.1,0 C974.97,0 1009,34.03 1009,75.1 L1009,486.53 C999.15,479.47 953.11,448.62 886,437 Z" />
+            </svg>
+            <span class="block text-xl font-extrabold tracking-tight text-[#ff6634]">
+              SRIWIJAYA <span class="text-white">GRAFIKA</span>
+            </span>
+          </a>
+          <p class="text-xs text-neutral-400 leading-relaxed font-normal">
+            Sriwijaya Grafika adalah pilihan tepat untuk usaha Anda. Media periklanan outdoor &amp; indoor tepercaya dengan jaminan mutu dan kedekatan emosional semenjak 2008.
+          </p>
+        </div>
+
+        <div class="space-y-3.5 text-xs">
+          <div class="flex items-start gap-2.5 text-neutral-300">
+            <MapPin className="w-5 h-5 text-[#ff6634] flex-shrink-0 mt-0.5" />
+            <span class="leading-relaxed">
+              {BUSINESS_INFO.address}
+            </span>
+          </div>
+          <div class="flex items-center gap-2.5 text-neutral-300 font-bold font-mono">
+            <Phone className="w-5 h-5 text-[#ff6634] flex-shrink-0" />
+            <span>WA 1: {BUSINESS_INFO.phone1} | WA 2: {BUSINESS_INFO.phone2}</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <span class="text-[10px] text-neutral-500 uppercase font-mono block font-bold">Koneksi Sosial Media</span>
+          <div class="flex items-center gap-3">
+            <a href={BUSINESS_INFO.socials.instagram} target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-neutral-800 hover:bg-[#ff6634] hover:text-white transition-colors text-neutral-300" title="Instagram" aria-label="Instagram">
+              <Instagram className="w-4 h-4" />
+            </a>
+            <a href={BUSINESS_INFO.socials.facebookUtama} target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-neutral-800 hover:bg-[#224da8] hover:text-white transition-colors text-neutral-300" title="Facebook" aria-label="Facebook">
+              <Facebook className="w-4 h-4" />
+            </a>
+            <a href={BUSINESS_INFO.socials.tiktok} target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-neutral-800 hover:bg-neutral-700 hover:text-white transition-colors text-neutral-300" title="TikTok" aria-label="TikTok">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.59 4.23.95 1.2 2.27 2 3.76 2.37v3.59c-1.75-.17-3.41-.88-4.75-2.02-.13-.11-.27-.23-.42-.36-.02.1-.04.18-.04.26v6.94c.03 2.14-1 4.19-2.78 5.37-1.78 1.18-4.08 1.41-6.07.61-2-1-3.39-2.95-3.69-5.18-.3-2.22.68-4.43 2.5-5.69 1.83-1.26 4.28-1.42 6.27-.41v3.54c-.95-.49-2.09-.54-3.08-.13-.99.41-1.72 1.25-1.97 2.29-.25 1.04-.02 2.15.62 3 .64.85 1.63 1.39 2.7 1.45 1.07.06 2.12-.34 2.82-1.15.7-.8 1-1.89.97-2.97V.02z" />
+              </svg>
+            </a>
+            <a href={BUSINESS_INFO.socials.shopee} target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-neutral-800 hover:bg-orange-600 hover:text-white transition-colors text-neutral-300" title="Shopee" aria-label="Shopee">
+              <ShoppingBag className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-4 space-y-4">
+        <span class="text-xs uppercase font-mono text-[#ff6634] tracking-widest block font-bold">
+          Jejaring Website Aktif
+        </span>
+        <ul class="space-y-2 text-xs" id="footer-active-sites">
+          {BUSINESS_INFO.activeWebsites.map((site) => (
+            <li>
+              <a
+                href={site.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-1.5 text-neutral-400 hover:text-white transition-colors"
+              >
+                <Globe className="w-3.5 h-3.5 text-[#224da8] flex-shrink-0" />
+                <span class="truncate">{site.title}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <div class="pt-2">
+          <span class="text-[10px] text-neutral-600 block uppercase font-mono font-bold">GARANSI PENUH</span>
+          <div class="flex gap-1.5 items-center mt-1 text-emerald-500 font-bold text-xs">
+            <ShieldCheck className="w-4 h-4" />
+            <span>12 Bulan Jaminan outdoor</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-4 space-y-4">
+        <span class="text-xs uppercase font-mono text-[#ff6634] tracking-widest block font-bold">
+          Lokasi Bengkel Kerja
+        </span>
+        <div class="rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-950 p-1 h-44 relative">
+          <iframe
+            title="Peta Bengkel Sriwijaya Grafika"
+            src={BUSINESS_INFO.googleMapsEmbed}
+            class="w-full h-full border-0 rounded-xl filter grayscale contrast-125 opacity-80"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="absolute bottom-2 left-2 right-2 p-2 rounded-lg bg-neutral-900/90 backdrop-blur-md border border-neutral-800 text-[10px] text-[#ff6634] font-bold text-center">
+            <a href={BUSINESS_INFO.googleMapsUrl} target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1 hover:underline">
+              <span>Petunjuk Jalan Google Maps</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-neutral-800 text-center text-xs text-neutral-500 space-y-2">
+      <p>&copy; {currentYear} <strong>Sriwijaya Grafika Palembang</strong>. Semua Hak Cipta Dilindungi Undang-Undang.</p>
+      <p class="text-[10px] text-neutral-600 font-mono tracking-wider font-semibold">
+        TALANG JAMBE, SUKARAMI, PALEMBANG &bull; GARANSI OUTDOOR SIGNAGE UTAMA 1 TAHUN &bull; SOCIO-BUSINESS EMPLOYEES
+      </p>
+    </div>
+  </div>
+</footer>

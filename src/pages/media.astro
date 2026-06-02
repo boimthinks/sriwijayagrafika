@@ -1,0 +1,43 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Navbar from '@components/Navbar.astro';
+import Footer from '@components/Footer.astro';
+import AboutAndMediaIsland from '@components/AboutAndMediaIsland';
+import { MEDIA_COVERAGES, VIDEOS, FULL_ARTICLES, GENERAL_DESCRIPTION } from '@lib/data';
+
+const mediaSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Profil & Liputan Media Sriwijaya Grafika Palembang',
+  description: GENERAL_DESCRIPTION.slice(0, 160),
+  author: { '@type': 'Organization', name: 'Sriwijaya Grafika' },
+  publisher: { '@type': 'Organization', name: 'Sriwijaya Grafika' },
+};
+---
+
+<Layout
+  title="Profil Perusahaan & Liputan Media | Sriwijaya Grafika Palembang"
+  description="Profil lengkap Sriwijaya Grafika Palembang: 16+ tahun pengalaman, garansi 1 tahun, pemberdayaan disabilitas, dan liputan media Sriwijaya Post & Berita Sumsel."
+  keywords={[
+    'Profil Sriwijaya Grafika',
+    'Liputan Media Palembang',
+    'Advertising Palembang',
+    'Pemberdayaan Disabilitas',
+    'Sriwijaya Post',
+  ]}
+  structuredData={mediaSchema}
+>
+  <Navbar current="media" />
+
+  <main class="flex-1">
+    <AboutAndMediaIsland
+      client:load
+      mediaCoverages={MEDIA_COVERAGES}
+      videos={VIDEOS}
+      fullArticles={FULL_ARTICLES}
+      generalDescription={GENERAL_DESCRIPTION}
+    />
+  </main>
+
+  <Footer />
+</Layout>
