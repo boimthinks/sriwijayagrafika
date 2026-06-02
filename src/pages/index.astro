@@ -6,15 +6,28 @@ import Hero from '@components/Hero.astro';
 import Credentials from '@components/Credentials.astro';
 import OrderHistory from '@components/OrderHistory';
 import ServiceCard from '@components/ServiceCard.astro';
-import { ArrowRight } from 'lucide-react';
+import BlogCard from '@components/BlogCard.astro';
+import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { getCollection } from 'astro:content';
 import { BUSINESS_INFO, GENERAL_DESCRIPTION } from '@lib/data';
+import { PORTFOLIO_ITEMS } from '@lib/portfolio';
+import { calcReadingTime, parseIndonesianDate } from '@lib/blog';
 
 const allServices = (await getCollection('layanan', ({ data }) => data.published)).sort(
   (a, b) => a.data.order - b.data.order
 );
 const primaryFeatured = allServices.filter((s) => s.data.category === 'utama').slice(0, 6);
 const totalServices = allServices.length;
+
+const portfolioSlide = PORTFOLIO_ITEMS.slice(0, 8);
+
+const allBlogPosts = (await getCollection('blog', ({ data }) => data.published)).sort(
+  (a, b) => parseIndonesianDate(b.data.date).getTime() - parseIndonesianDate(a.data.date).getTime()
+);
+const blogFeatured = allBlogPosts.slice(0, 3).map((post) => ({
+  post,
+  readingTime: calcReadingTime(post.data.pengantar, post.body ?? '', post.data.kesimpulan),
+}));
 
 const homeSchema = {
   '@context': 'https://schema.org',
@@ -55,7 +68,7 @@ const breadcrumbs = {
   <main class="flex-1">
     <Hero />
     <Credentials />
-    <section class="bg-white py-12">
+    <section class="bg-white py-12 mb-12">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
           <div class="space-y-1">
@@ -77,10 +90,210 @@ const breadcrumbs = {
       </div>
     </section>
 
-    
+    <section class="bg-neutral-100 py-14 md:py-20 text-neutral-800" id="home-portfolio">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+          <div class="space-y-2">
+            <span class="text-xs uppercase font-mono font-bold text-[#ff6634] tracking-widest block">HASIL KERJA NYATA</span>
+            <h3 class="text-2xl md:text-3xl font-extrabold tracking-tight">Portofolio Pilihan Klien Kami</h3>
+            <p class="text-sm text-neutral-500 max-w-xl leading-relaxed">
+              Cuplikan proyek huruf timbul, neon box, neon flex, dan rambu K3 yang sudah kami selesaikan untuk brand lokal hingga nasional di Palembang.
+            </p>
+          </div>
+          <a
+            href="/portofolio"
+            class="text-xs font-bold text-[#ff6634] inline-flex items-center gap-1 hover:underline whitespace-nowrap"
+          >
+            <span>Lihat Galeri Lengkap</span>
+            <ArrowRight className="w-3 h-3" />
+          </a>
+        </div>
+
+        <div class="relative" id="portfolio-slider">
+          <div class="overflow-hidden rounded-2xl">
+            <div
+              class="flex transition-transform duration-500 ease-out"
+              id="portfolio-track"
+              style="will-change: transform;"
+            >
+              {portfolioSlide.map((item) => (
+                <div
+                  class="portfolio-slide shrink-0 w-full md:w-1/2 px-2"
+                  data-slide
+                >
+                  <div class="relative aspect-[4/3] overflow-hidden rounded-xl bg-neutral-800 group">
+                    <img
+                      src={item.src}
+                      alt={item.caption}
+                      loading="lazy"
+                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-5">
+                      <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-[#ff6634] block mb-1">
+                        {item.categoryLabel}
+                      </span>
+                      <p class="text-sm md:text-base font-extrabold leading-snug line-clamp-2 text-white">
+                        {item.caption}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <button
+            type="button"
+            id="portfolio-prev"
+            aria-label="Slide sebelumnya"
+            class="absolute top-1/2 -translate-y-1/2 left-0 md:-left-4 z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white hover:bg-neutral-50 text-neutral-900 shadow-lg flex items-center justify-center transition-all hover:scale-105"
+          >
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+          <button
+            type="button"
+            id="portfolio-next"
+            aria-label="Slide berikutnya"
+            class="absolute top-1/2 -translate-y-1/2 right-0 md:-right-4 z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white hover:bg-neutral-50 text-neutral-900 shadow-lg flex items-center justify-center transition-all hover:scale-105"
+          >
+            <ChevronRight className="w-5 h-5" />
+          </button>
+
+          <div class="flex items-center justify-center gap-1.5 mt-6" id="portfolio-dots" aria-label="Navigasi slide">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {blogFeatured.length > 0 && (
+      <section class="bg-white py-14 md:py-20" id="home-blog">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+            <div class="space-y-2">
+              <span class="text-xs uppercase font-mono font-bold text-[#ff6634] tracking-widest block">WAWASAN TIM PRODUKSI</span>
+              <h3 class="text-2xl md:text-3xl font-extrabold text-neutral-800 tracking-tight">Tips, Studi Kasus &amp; Panduan Terbaru</h3>
+              <p class="text-sm text-neutral-500 max-w-xl leading-relaxed">
+                Pelajari cara memilih material, membaca harga, dan menghindari kesalahan umum saat memesan signage — langsung dari praktisi.
+              </p>
+            </div>
+            <a
+              href="/blog"
+              class="text-xs font-bold text-[#224da8] inline-flex items-center gap-1 hover:underline whitespace-nowrap"
+            >
+              <span>Lihat Semua Artikel</span>
+              <ArrowRight className="w-3 h-3" />
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {blogFeatured.map(({ post, readingTime }) => (
+              <BlogCard post={post} readingTime={readingTime} />
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
 
     <OrderHistory client:load />
   </main>
 
   <Footer />
 </Layout>
+
+<script>
+  const slider = document.getElementById('portfolio-slider');
+  if (slider) {
+    const track = document.getElementById('portfolio-track') as HTMLElement | null;
+    const slides = slider.querySelectorAll<HTMLElement>('[data-slide]');
+    const prevBtn = document.getElementById('portfolio-prev') as HTMLButtonElement | null;
+    const nextBtn = document.getElementById('portfolio-next') as HTMLButtonElement | null;
+    const dotsContainer = document.getElementById('portfolio-dots');
+
+    if (track && slides.length > 0 && prevBtn && nextBtn && dotsContainer) {
+      let currentIndex = 0;
+      let autoplayId: number | undefined;
+      const totalSlides = slides.length;
+      const slidesPerView = () => (window.innerWidth >= 768 ? 2 : 1);
+      const maxIndex = () => Math.max(0, totalSlides - slidesPerView());
+
+      const renderDots = () => {
+        dotsContainer.innerHTML = '';
+        const max = maxIndex();
+        for (let i = 0; i <= max; i++) {
+          const dot = document.createElement('button');
+          dot.type = 'button';
+          dot.setAttribute('aria-label', `Slide ${i + 1}`);
+          dot.className = `h-1.5 rounded-full transition-all duration-300 ${
+            i === currentIndex ? 'w-8 bg-[#ff6634]' : 'w-1.5 bg-neutral-300 hover:bg-neutral-400'
+          }`;
+          dot.addEventListener('click', () => goTo(i));
+          dotsContainer.appendChild(dot);
+        }
+      };
+
+      const update = () => {
+        const slideWidth = slides[0].getBoundingClientRect().width;
+        const offset = currentIndex * slideWidth;
+        track.style.transform = `translateX(-${offset}px)`;
+        renderDots();
+      };
+
+      const goTo = (i: number) => {
+        const max = maxIndex();
+        currentIndex = Math.max(0, Math.min(i, max));
+        update();
+      };
+
+      const next = () => {
+        const max = maxIndex();
+        currentIndex = currentIndex >= max ? 0 : currentIndex + 1;
+        update();
+      };
+
+      const prev = () => {
+        const max = maxIndex();
+        currentIndex = currentIndex <= 0 ? max : currentIndex - 1;
+        update();
+      };
+
+      const startAutoplay = () => {
+        stopAutoplay();
+        autoplayId = window.setInterval(next, 5000);
+      };
+
+      const stopAutoplay = () => {
+        if (autoplayId !== undefined) {
+          window.clearInterval(autoplayId);
+          autoplayId = undefined;
+        }
+      };
+
+      nextBtn.addEventListener('click', () => { next(); startAutoplay(); });
+      prevBtn.addEventListener('click', () => { prev(); startAutoplay(); });
+      slider.addEventListener('mouseenter', stopAutoplay);
+      slider.addEventListener('mouseleave', startAutoplay);
+
+      let touchStartX = 0;
+      let touchEndX = 0;
+      track.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; stopAutoplay(); }, { passive: true });
+      track.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > 50) {
+          if (diff > 0) next(); else prev();
+        }
+        startAutoplay();
+      }, { passive: true });
+
+      window.addEventListener('resize', () => {
+        const max = maxIndex();
+        if (currentIndex > max) currentIndex = max;
+        update();
+      });
+
+      update();
+      startAutoplay();
+    }
+  }
+</script>
