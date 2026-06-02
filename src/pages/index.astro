@@ -24,7 +24,7 @@ const portfolioSlide = PORTFOLIO_ITEMS.slice(0, 8);
 const allBlogPosts = (await getCollection('blog', ({ data }) => data.published)).sort(
   (a, b) => parseIndonesianDate(b.data.date).getTime() - parseIndonesianDate(a.data.date).getTime()
 );
-const blogFeatured = allBlogPosts.slice(0, 3).map((post) => ({
+const blogFeatured = allBlogPosts.slice(0, 9).map((post) => ({
   post,
   readingTime: calcReadingTime(post.data.pengantar, post.body ?? '', post.data.kesimpulan),
 }));

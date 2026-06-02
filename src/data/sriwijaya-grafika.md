@@ -378,11 +378,11 @@ Judul harus **problem-centric, kaya detail teknis, dan punya sudut pandang unik*
 
 #### ✅ Judul Non-Komoditas (CONTOH)
 
-- "Otopsi Sambungan Las Stainless: Mengapa Huruf Timbul di Area Outdoor Palembang Cepat Berkarat Setelah 2 Tahun"
-- "Uji 6 Bulan: Akrilik vs Galvanil untuk Huruf Timbul di Iklim Tropis Lembap — Mana yang Lebih Awet?"
+- "Otopsi Sambungan Las Stainless, Mengapa Huruf Timbul Outdoor Palembang Berkarat Setelah 2 Tahun"
+- "Uji 6 Bulan, Akrilik vs Galvanil untuk Huruf Timbul Tropis Lembap — Mana yang Lebih Awet"
 - "Cara Menghitung Kebutuhan LED Strip untuk Neon Box Sesuai Kapasitas Listrik Toko Anda"
-- "Studi Kasus: Neon Box Cafe Kedai Pempek Maris — dari Desain sampai Naik 40% Kunjungan"
-- "Kapan Harus Pilih Huruf Timbul, Neon Box, atau Neon Flex? Panduan Praktis 5 Menit"
+- "Studi Kasus Neon Box Cafe Pempek, Naik 40% Kunjungan Usai Signage Baru"
+- "Kapan Harus Pilih Huruf Timbul, Neon Box, atau Neon Flex — Panduan Praktis 5 Menit"
 
 #### Formula Judul yang Disarankan
 
@@ -430,6 +430,61 @@ published: true                           # default true
 | **Formalitas** | Semi-formal (tidak kaku, tidak terlalu santai) |
 | **Persona** | "Kami" saat mewakili Sriwijaya Grafika, "Anda" saat menyapa pembaca |
 | **Hindari** | Bahasa robot/AI, kalimat generik tanpa substansi, overpromise, bahasa terlalu teknis tanpa penjelasan |
+
+#### Aturan Tanda Baca di Heading (H1, H2, H3)
+
+Untuk semua heading di artikel blog — termasuk `titleSeo` (H1), `## Judul Section` (H2), dan `### Sub-judul` (H3) — **dilarang menggunakan titik dua (`:`)** di heading. Titik dua membuat heading terlihat seperti daftar isi dengan sub-klausa, bukan judul mandiri.
+
+**Format yang benar:**
+
+- H1 (`titleSeo`): pisahkan dua klausa dengan **koma** atau **dash (—)**, bukan titik dua
+  - ✅ "Otopsi Sambungan Las Stainless, Mengapa Huruf Timbul Berkarat Setelah 2 Tahun"
+  - ✅ "Uji 6 Bulan, Akrilik vs Galvanil untuk Huruf Timbul Tropis Lembap"
+  - ❌ "Otopsi Sambungan Las Stainless: Mengapa Huruf Timbul Berkarat Setelah 2 Tahun"
+  - ❌ "Uji 6 Bulan: Akrilik vs Galvanil untuk Huruf Timbul Tropis Lembap"
+- H2 (`## Section`): tanpa titik dua, langsung ke subjek
+  - ✅ "Stainless 201 vs 304, Apa Bedanya"
+  - ✅ "Otopsi Huruf Timbul Stainless 201 di Toko Retail Jakabaring"
+  - ❌ "Stainless 201 vs 304: Apa Bedanya"
+  - ❌ "Otopsi: Huruf Timbul Stainless 201"
+- H3 (`### Sub-section`): aturan sama seperti H2 — tanpa titik dua
+
+**Alasan:** heading adalah anchor teks yang muncul di TOC, breadcrumb, dan snippet Google. Heading yang bersih tanpa titik dua terlihat lebih rapi dan mudah di-scan.
+
+**Pengecualian:** tanda baca di dalam body (paragraf, list) tetap boleh dan memang diperlukan untuk keterbacaan. Aturan ini hanya untuk **heading** (H1/H2/H3).
+
+#### Aturan Karakter & Aksara yang Diizinkan
+
+Artikel blog Sriwijaya Grafika **hanya boleh ditulis dalam dua aksara**:
+
+1. **Bahasa Indonesia** (Latin script + huruf vokal khas Indonesia) — wajib untuk semua user-facing copy
+2. **English / istilah teknis** (Latin script) — untuk istilah yang memang lazim dipakai di industri, seperti "mockup 3D", "finishing", "stainless", "laser cutting", "TIG welding"
+
+**Aksara yang DILARANG keras** di seluruh artikel (heading, body, frontmatter, imgalt):
+
+- ❌ Aksara China (Hanzi / 中文)
+- ❌ Aksara Jepang (Kanji / 漢字, Hiragana, Katakana)
+- ❌ Aksara Korea (Hangul / 한글)
+- ❌ Aksara Arab
+- ❌ Aksara Thailand, Vietnam, atau aksara Asia lainnya
+- ❌ Aksara Sirilik, Ibrani, atau aksara non-Latin lainnya
+- ❌ Emoji (per aturan 11.8)
+
+**Tanda baca Latin yang BOLEH dipakai:**
+
+- Koma (`,`), titik (`.`), titik dua (`:` di body saja, bukan heading), titik koma (`;`)
+- Tanda hubung (`-`), em dash (`—`), en dash (`–`)
+- Tanda kutip tunggal (`'`, `'`) dan ganda (`"`, `"`)
+- Tanda tanya (`?`) dan tanda seru (`!`)
+- Tanda kurung `()`, kurung siku `[]`, kurung kurawal `{}`
+- Backtick (`` ` ``) untuk inline code
+- Tanda slash `/` dan backslash `\`
+
+**Penyebab aturan ini:** target pembaca website ini adalah audiens Palembang dan Sumatera Selatan yang berbahasa Indonesia. Konten dengan aksara asing di luar istilah teknis menurunkan profesionalitas, membingungkan pembaca, dan berisiko menurunkan trust. AI Agent **tidak boleh menulis aksara China atau aksara non-Latin lainnya**, bahkan dalam konteks kutipan, contoh, atau istilah yang terlihat "keren".
+
+**Pengecualian tunggal:** nama brand/klien yang memang menggunakan aksara non-Latin (mis. brand Jepang/China asli) boleh dipakai di dalam body — tapi **tidak** boleh menjadi heading atau mengisi lebih dari 1 kalimat.
+
+
 
 #### Karakteristik Human Writing (WAJIB)
 
@@ -542,6 +597,7 @@ Setiap artikel **WAJIB** diakhiri dengan CTA (di `kesimpulan`). Variasikan agar 
 12. Mengarang klien yang tidak ada di Bagian 4 atau 5
 13. **Emoji** di artikel (per konvensi project)
 14. **Slug mengandung tanggal** (seperti `2026-05-30.md`). Pakai slug deskriptif seperti `huruf-timbul-tahan-lama.md`
+15. **Aksara non-Latin** (China, Jepang, Korea, Arab, Thai, Vietnam, Sirilik, Ibrani) di artikel, heading, body, frontmatter, imgalt, dan SVG placeholder (lihat 11.4)
 
 #### ❌ JANGAN LAKUKAN (Google AI Guide 2026):
 
@@ -590,6 +646,7 @@ Sebelum artikel dianggap final, pastikan semua poin ini terpenuhi:
 - [ ] **Non-komoditas check:** Apakah artikel ini punya sudut pandang unik yang membedakannya dari kompetitor? Jika hanya menyusun ulang informasi umum — tulis ulang
 - [ ] **Google AI readiness:** Apakah artikel ini layak dikutip oleh AI Overviews? Punya data spesifik, pengalaman first-hand, atau wawasan eksklusif?
 - [ ] **Tidak ada taktik AEO/GEO palsu:** Tidak ada `llms.txt`, chunking, rewriting khusus AI, atau mentions tidak autentik
+- [ ] **Tidak ada aksara non-Latin** (China, Jepang, Korea, Arab, Thai, dll) di artikel, heading, frontmatter, imgalt (lihat 11.4)
 - [ ] **Update file ini** dengan insight baru di Bagian 12 setelah publish (lihat workflow)
 
 ### 11.10 Workflow Menulis Artikel
@@ -681,6 +738,19 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 
 *(Diupdate setiap publish. Mulai kosong per Desember 2025 — artikel sebelumnya dihapus untuk memulai ulang dengan pendekatan non-komoditas sesuai Google AI Guide 2026.)*
 
+| Slug | Topik | Tanggal | Topik | Hook |
+| --- | --- | --- | --- | --- |
+| `otopsi-las-stainless-berkarat` | Otopsi sambungan las stainless steel, mengapa huruf timbul berkarat setelah 2 tahun outdoor Palembang | 15 Desember 2025 | tips | Problem-First |
+| `neon-box-cafe-pempek` | Studi kasus neon box Kedai Pempek Maris, naik 40% kunjungan 3 bulan setelah re-opening | 22 Desember 2025 | studi-kasus | Direct & Casual |
+| `standar-kemnaker-rambu-k3-pabrik` | Standar Kemnaker rambu K3 pabrik, checklist 12 poin wajib yang sering diabaikan kontraktor | 29 Desember 2025 | panduan | Fakta/Data |
+| `uji-akrilik-vs-galvanil` | Uji 6 bulan, akrilik vs galvanil untuk huruf timbul di iklim tropis lembap Palembang | 12 Januari 2026 | tips | Skenario Visual |
+| `signage-korporat-pt-andalas-sakti` | Studi kasus signage korporat PT Andalas Sakti Perkasa, huruf timbul akrilik gedung kantor Palembang | 19 Januari 2026 | studi-kasus | Provokatif |
+| `workshop-talang-jambe-produksi` | Behind the scene workshop Talang Jambe, proses produksi huruf timbul dari laser cutting sampai finishing | 26 Januari 2026 | berita | Skenario Visual |
+| `hitung-led-strip-neon-box` | Cara menghitung kebutuhan LED strip untuk neon box sesuai kapasitas listrik toko, contoh kasus 1x1 m | 2 Februari 2026 | tips | Fakta/Data |
+| `panduan-izin-reklame-palembang` | Panduan izin reklame Palembang, syarat dokumen, biaya pajak, dan timeline DPMPTSP yang wajib diketahui pemilik usaha | 9 Februari 2026 | panduan | Provokatif |
+| `16-tahun-sriwijaya-grafika` | Sriwijaya Grafika Palembang merayakan 16 tahun berkarya, kilas balik perjalanan dari workshop kecil Talang Jambe | 23 Februari 2026 | press-release | Direct & Casual |
+
+
 ### 12.2 Topik yang Masih Open (Ide Artikel Mendatang)
 
 *(Diupdate berkala berdasarkan search intent, FAQ klien, dan gap di Bagian 11.6 template pembuka)*
@@ -708,7 +778,206 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 
 - **2025-Q4:** Judul commodity ("Tips Memilih Huruf Timbul") → update judul pakai problem-centric angle. Pelajaran: heading harus punya "hook" sejak baris pertama.
 - **2025-Q4:** Artikel yang hanya copy-paste dari MD layanan → tidak add value. Pelajaran: setiap artikel harus punya **sudut pandang unik** yang tidak ada di halaman layanan itu sendiri.
+- **2026-Q1 (artikel #6 `panduan-izin-reklame-palembang`):** AI agent secara tidak sengaja menyisipkan 25 instance Hanzi 招牌 (zhāopái = "signage" dalam bahasa Mandarin) ke seluruh artikel sebagai variasi kata untuk "signage". Pelajaran: **setiap artikel WAJIB di-grep dengan pattern `[\u4e00-\u9fff\u3040-\u309f\u30a0-\u30ff\uac00-\ud7af\u0600-\u06ff]` sebelum publish** untuk mendeteksi aksara non-Latin (CJK, Arab, Thailand, Sirilik, Ibrani). Pola yang sama juga berhasil mendeteksi 5 kasus CJK di artikel #7, 1 di #8, dan 3 di #3. Self-grep CJK = **wajib** di workflow check kualitas per artikel, sebelum `npm run build`.
 
 ---
 
 **File ini terakhir di-generate dari `src/lib/data.ts` + `src/data/portfolio.md` Pertahankan struktur section ketika menambah data baru. Section 12 WAJIB diupdate setiap kali ada artikel baru dipublish.**
+
+---
+
+## 13. Asset & Placeholder Image (Workflow SVG)
+
+> Section ini menjelaskan **kapan dan bagaimana AI Agent membuat file SVG placeholder** untuk konten (artikel blog, layanan) yang belum punya foto asli. Berlaku per Februari 2026 setelah 9 artikel blog di-publish dengan SVG placeholder.
+
+### 13.1 Prinsip Dasar: Kapan Pakai SVG vs Wajib Foto Asli
+
+| Konteks | SVG Placeholder | Foto Asli |
+| --- | --- | --- |
+| **Artikel blog** (`public/img/blog/<slug>.<ext>`) | ✅ Boleh (sementara, sampai foto tersedia) | ✅ Lebih baik, tapi tidak wajib |
+| **Layanan** (`public/img/layanan/<id>.webp`) | ⚠️ Boleh, **tapi** lihat 13.3 | ✅ Wajib jika material fisik visible |
+| **Portofolio** (`public/img/portfolio/<id>.<ext>`) | ❌ Tidak boleh — wajib foto asli | ✅ Wajib (konten portofolio = visual) |
+| **Hero homepage** (`public/img/hero/*`) | ❌ Tidak boleh | ✅ Wajib |
+
+**Alasan:**
+- **Blog**: SVG placeholder sudah cukup sebagai feature image. Pembaca blog tidak menuntut foto real; mereka datang untuk konten tertulis. SVG dengan gradient + icon sudah mencerminkan topik artikel (16:9, brand color, label).
+- **Layanan**: foto asli material (huruf timbul, neon box) adalah trust signal. SVG boleh dipakai sementara, tapi **ServiceCard.astro** sudah punya fallback built-in (lihat 13.3) — jadi tidak perlu bikin SVG terpisah.
+- **Portofolio & hero**: kontennya memang visual, jadi SVG tidak relevan.
+
+### 13.2 Template SVG untuk Artikel Blog
+
+Setiap artikel blog yang imgurl-nya `.svg` mengikuti template yang sama. File disimpan di `public/img/blog/<slug>.svg`.
+
+**Spesifikasi teknis:**
+
+- **viewBox**: `0 0 1600 900` (aspect ratio **16:9**)
+- **width / height**: `1600` × `900` (preserveAspectRatio default)
+- **xmlns**: `http://www.w3.org/2000/svg` (wajib, agar render di browser)
+- **Defs**: 2 linearGradient (`bgGrad` untuk background, `iconBg` untuk lingkaran icon) + 1 pattern (`dots` overlay)
+- **Layer stack** (z-order bawah → atas):
+  1. `<rect>` background dengan gradient brand color
+  2. `<rect>` overlay pattern dots (fill-opacity 0.12-0.15)
+  3. `<circle>` ikon background (radius 120, fill gradient semi-transparan + stroke putih 0.4 opacity)
+  4. `<g>` icon (stroke putih 6px, linecap/linejoin round, no fill)
+  5. `<text>` label kategori (font 56, bold, letter-spacing 2-3)
+  6. `<text>` judul pendek (font 34, opacity 0.85)
+  7. `<text>` sublabel "Sriwijaya Grafika Palembang" (font 22, opacity 0.6)
+
+**Skeleton template (copy-paste-able):**
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#224da8"/>
+      <stop offset="100%" stop-color="#3c5a98"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1.5" fill="#ffffff" fill-opacity="0.12"/>
+    </pattern>
+    <linearGradient id="iconBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bgGrad)"/>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+  <circle cx="800" cy="380" r="120" fill="url(#iconBg)" stroke="#ffffff" stroke-opacity="0.4" stroke-width="3"/>
+  <g transform="translate(800 380)" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Icon shape here (lihat 13.4) -->
+  </g>
+  <text x="800" y="610" font-family="ui-sans-serif, system-ui, sans-serif" font-size="56" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="2">KATEGORI LABEL</text>
+  <text x="800" y="680" font-family="ui-sans-serif, system-ui, sans-serif" font-size="34" fill="#ffffff" fill-opacity="0.85" text-anchor="middle">Judul Pendek Artikel</text>
+  <text x="800" y="730" font-family="ui-sans-serif, system-ui, sans-serif" font-size="22" fill="#ffffff" fill-opacity="0.6" text-anchor="middle">Sriwijaya Grafika Palembang</text>
+</svg>
+```
+
+**Penjelasan pilihan teknis:**
+
+- **Pattern dots** (`<pattern>` dengan `<circle>` kecil): memberi tekstur halus tanpa noise visual. Opacity rendah (0.12-0.15) supaya tidak mendominasi gradient.
+- **Stroke-only icon** (fill="none" stroke="#ffffff"): konsisten dengan gaya lucide-react yang dipakai di seluruh website. Setiap icon adalah 4-6 path geometris sederhana.
+- **3 text layers** dengan opacity menurun (1.0 → 0.85 → 0.6): membuat hierarki visual — kategori paling prominent, judul medium, brand subtle.
+- **font-family `ui-sans-serif, system-ui, sans-serif`**: fallback ke system font (San Francisco di Mac, Segoe UI di Windows, Roboto di Android). Tidak embed font eksternal — file tetap kecil (< 1.5 KB per SVG).
+- **ID unik per gradient** (`bgGrad`, `iconBg`, `dots`): jika multiple SVG di-inline dalam satu halaman, ID clash bisa terjadi. Pakai suffix per file (mis. `bgTips1`, `iconBg1`, `dots1` untuk artikel #1; `bgPandu6` untuk artikel #6). Lihat 13.4 contoh konkret.
+
+### 13.3 Placeholder untuk Layanan (ServiceCard Built-in)
+
+**PENTING:** untuk layanan, AI Agent **TIDAK perlu membuat file SVG terpisah**. `ServiceCard.astro` sudah punya built-in placeholder.
+
+**Cara kerja:**
+
+- Field `imageUrl` di frontmatter layanan **opsional**. Jika kosong, `ServiceCard.astro` otomatis render gradient + icon sesuai `subcategory`.
+- Icon map ada di komponen (`src/components/ServiceCard.astro`): setiap `subcategory` punya icon lucide yang relevan (huruf-timbul → Type, neon-box → Lightbulb, rambu-rambu → AlertTriangle, dll).
+- Gradient default-nya pakai brand color (`#224da8` → `#3c5a98`) dengan dot pattern yang sama dengan blog SVG.
+
+**Kapan AI Agent harus bikin SVG/image untuk layanan?**
+
+- Jika Owner menyediakan foto asli material → taruh di `public/img/layanan/<id>.webp`, set `imageUrl` di frontmatter.
+- Jika tidak ada foto dan `imageUrl` kosong → biarkan `ServiceCard.astro` render placeholder otomatis. **Jangan** bikin SVG manual untuk layanan kecuali Owner minta visual yang spesifik (mis. mockup signage dengan dimensi custom).
+
+**Cara menambah icon baru ke map `ServiceCard.astro`:** edit komponen, tambah entry ke icon map. Lihat kode di `src/components/ServiceCard.astro`.
+
+### 13.4 Color Rotation per Topik Blog
+
+Pakai **warna berbeda per topik** agar feed blog (`/blog` listing) terlihat variatif, tidak monoton biru semua.
+
+| Topik | Gradient (start → end) | Icon yang relevan | Contoh artikel |
+| --- | --- | --- | --- |
+| `tips` | `#224da8` → `#3c5a98` (biru brand) | Lightbulb, Wrench, Search | `otopsi-las-stainless-berkarat` |
+| `studi-kasus` | `#5e3a8a` → `#8a5cb8` (ungu) | FileText, TrendingUp | `neon-box-cafe-pempek`, `signage-korporat-pt-andalas-sakti` |
+| `panduan` | `#0a4d3c` → `#1a7a5e` (hijau tosca) | BookOpen, ClipboardCheck | `standar-kemnaker-rambu-k3-pabrik`, `panduan-izin-reklame-palembang` |
+| `berita` | `#c2410c` → `#ea580c` (oranye gelap) | Newspaper, Camera | `workshop-talang-jambe-produksi` |
+| `press-release` | `#ff6634` → `#ff8a5e` (oranye brand) | Megaphone, Award | `16-tahun-sriwijaya-grafika` |
+
+**Aturan rotasi:**
+
+- Jangan pakai biru (brand color) untuk semua artikel. Minimal 3 warna berbeda untuk 9 artikel pertama, idealnya 5 warna (1 per topik).
+- Hindari warna yang terlalu mirip (mis. biru + biru-ungu susah dibedakan di thumbnail kecil).
+- Background kontras dengan text putih (`#ffffff`) — semua gradient di atas tested dengan contrast ratio ≥ 4.5:1 untuk text utama (sesuai WCAG AA).
+
+**Icon per topik** (yang sudah dipakai):
+
+- **tips** (`otopsi-las-stainless-berkarat`): magnifying glass — `<circle r="55"/>` + diagonal line untuk handle, cross-hair di dalam.
+- **tips** (`uji-akrilik-vs-galvanil`): dua kotak berdampingan — komparasi material.
+- **tips** (`hitung-led-strip-neon-box`): calculator sederhana — `<rect>` body + tombol grid 3×2.
+- **studi-kasus** (`neon-box-cafe-pempek`): storefront + cahaya — `<rect>` + `<line>` + rays.
+- **studi-kasus** (`signage-korporat-pt-andalas-sakti`): gedung bertingkat — trapezoid + garis horizontal.
+- **panduan** (`standar-kemnaker-rambu-k3-pabrik`): clipboard dengan checklist — `<rect>` + 3 `<line>` + check mark.
+- **panduan** (`panduan-izin-reklame-palembang`): clipboard + stempel centang — `<rect>` + 4 baris + `<circle>` stempel.
+- **berita** (`workshop-talang-jambe-produksi`): kamera foto — `<rect>` body + `<circle>` lens + flash triangle.
+- **press-release** (`16-tahun-sriwijaya-grafika`): angka "16" besar di tengah — `<rect>` frame + `<text>` "16" + garis dekoratif.
+
+**Aturan icon:**
+
+- Stroke putih 6px, linecap/linejoin `round`, fill `none` (kecuali angka/teks dalam icon).
+- 4-8 path/shape per icon — jangan terlalu detail, supaya tetap jelas di thumbnail kecil (≤ 200px).
+- Posisi tengah (cx=0, cy=0 di dalam `<g transform="translate(800 380)">`).
+
+### 13.5 Naming & ID Convention
+
+**Filename:** `public/img/blog/<slug>.svg` — **persis sama dengan slug MD** (tanpa `.md`, lowercase, strip-separated). Contoh: artikel `neon-box-cafe-pempek.md` → `public/img/blog/neon-box-cafe-pempek.svg`.
+
+**ID dalam SVG** (gradient, pattern, icon background): **wajib unik per file** untuk mencegah clash saat multiple SVG di-inline di satu halaman (mis. listing blog, RSS preview).
+
+Format: `<purpose><number>`, contoh:
+- Artikel #1: `bgTips1`, `dots1`, `iconBg1`
+- Artikel #2: `bgTips2`, `dots2`, `iconBg2`
+- Artikel #3: `bgTips3`, `dots3`, `iconBg3`
+- Artikel #4: `bgSk4`, `dots4`, `iconBg4`
+- ...
+- Artikel #9: `bgPr9`, `dots9`, `iconBg9`
+
+Suffix nomor = urutan penulisan artikel, bukan urutan slug. Untuk artikel baru, cari nomor tertinggi + 1.
+
+### 13.6 Anti-Pattern: yang TIDAK Boleh Dilakukan
+
+1. **Jangan embed font eksternal** (mis. `<style>@import url('https://fonts.googleapis.com/...')</style>`). File jadi berat dan butuh network. Pakai system font stack saja.
+2. **Jangan embed foto raster dalam `<image href="...">`** — defisi defeat dari placeholder SVG. Kalau punya foto, taruh di file `.webp`/`.jpg` terpisah, bukan SVG.
+3. **Jangan pakai warna teks yang tidak kontras** dengan gradient background. Selalu putih (`#ffffff`) atau hitam (`#000000`) — test di kedua ujung gradient.
+4. **Jangan pakai emoji di icon SVG** (per konvensi project, lihat 11.8). Icon harus geometris stroke-only.
+5. **Jangan tulis aksara non-Latin** di text layer (lihat 11.4). Judul selalu Bahasa Indonesia + English technical terms.
+6. **Jangan lupa `xmlns`** di root `<svg>`. Tanpa xmlns, browser tidak render dengan benar.
+7. **Jangan set width/height tanpa viewBox** — atau sebaliknya. Selalu keduanya, supaya aspect ratio konsisten di semua ukuran.
+8. **Jangan copy template tanpa update ID** (mis. semua artikel pakai `bgGrad` — clash saat listing). Selalu suffix per file.
+9. **Jangan tulis text panjang di SVG** (mis. paragraf pengantar). Maksimal 3 baris: kategori, judul, brand. Pembaca blog datang untuk konten, bukan baca teks di gambar.
+10. **Jangan lupa `text-anchor="middle"`** di semua `<text>`. Tanpa itu, text rata kiri dan tidak center.
+
+### 13.7 Workflow: Dari SVG ke Publish
+
+```
+1. Tulis artikel MD di src/content/blog/<slug>.md
+   - Set imgurl: "/img/blog/<slug>.svg"
+
+2. Buat SVG di public/img/blog/<slug>.svg
+   - Copy template dari 13.2
+   - Update: gradient color (lihat 13.4), icon shape, 3 text labels
+   - Update: ID suffix (lihat 13.5)
+   - Self-grep CJK chars (lihat 11.4) — berlaku untuk text dalam SVG juga
+
+3. Build:
+   npm run build
+
+4. Verifikasi: buka dist/blog/<topik>/<slug>/index.html, cek <img> tag me-load .svg dengan benar
+```
+
+### 13.8 Migrasi ke Foto Asli (Nanti)
+
+Ketika Owner sudah menyediakan foto asli untuk artikel:
+
+1. Taruh foto di `public/img/blog/<slug>.webp` (atau `.jpg`).
+2. Update frontmatter: `imgurl: "/img/blog/<slug>.webp"`.
+3. Hapus file `.svg` lama (atau rename jadi `<slug>.svg.bak`).
+4. Build ulang.
+
+**Tidak perlu** rebuild semua artikel — cukup update satu artikel. Frontmatter `imgurl` adalah path absolute, swap file → swap gambar.
+
+### 13.9 Status Placeholder (per Februari 2026)
+
+| Folder | Status | Keterangan |
+| --- | --- | --- |
+| `public/img/blog/` | 9/9 artikel pakai SVG | Migrasi ke `.webp` direncanakan setelah Owner menyediakan foto |
+| `public/img/layanan/` | 31/31 punya `.webp` asli | Tidak perlu placeholder (sudah ada foto) |
+| `public/img/portfolio/` | Real images required | Tidak applicable untuk placeholder |
+
+---
+

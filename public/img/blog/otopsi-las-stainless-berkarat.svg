@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="bgTips1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#224da8"/>
+      <stop offset="100%" stop-color="#3c5a98"/>
+    </linearGradient>
+    <pattern id="dots1" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1.5" fill="#ffffff" fill-opacity="0.12"/>
+    </pattern>
+    <linearGradient id="iconBg1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bgTips1)"/>
+  <rect width="1600" height="900" fill="url(#dots1)"/>
+  <circle cx="800" cy="380" r="120" fill="url(#iconBg1)" stroke="#ffffff" stroke-opacity="0.4" stroke-width="3"/>
+  <g transform="translate(800 380)" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="0" cy="0" r="55"/>
+    <line x1="35" y1="35" x2="80" y2="80"/>
+    <circle cx="0" cy="0" r="35" stroke-opacity="0.6"/>
+    <line x1="-30" y1="0" x2="30" y2="0" stroke-opacity="0.5"/>
+    <line x1="0" y1="-30" x2="0" y2="30" stroke-opacity="0.5"/>
+  </g>
+  <text x="800" y="610" font-family="ui-sans-serif, system-ui, sans-serif" font-size="56" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="2">TIPS &amp; TRIK</text>
+  <text x="800" y="680" font-family="ui-sans-serif, system-ui, sans-serif" font-size="34" fill="#ffffff" fill-opacity="0.85" text-anchor="middle">Otopsi Las Stainless Berkarat</text>
+  <text x="800" y="730" font-family="ui-sans-serif, system-ui, sans-serif" font-size="22" fill="#ffffff" fill-opacity="0.6" text-anchor="middle">Sriwijaya Grafika Palembang</text>
+</svg>

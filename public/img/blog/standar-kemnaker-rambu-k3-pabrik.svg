@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#224da8"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="rgba(255,255,255,0.08)"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+  <g transform="translate(800, 380)">
+    <polygon points="0,-120 104,-60 104,60 0,120 -104,60 -104,-60" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="6" stroke-linejoin="round"/>
+    <polygon points="0,-90 78,-45 78,45 0,90 -78,45 -78,-45" fill="rgba(255,255,255,0.10)" stroke="none"/>
+    <text x="0" y="14" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="800" fill="rgba(255,255,255,0.95)">K3</text>
+    <circle cx="-60" cy="-50" r="6" fill="#ff6634"/>
+    <circle cx="60" cy="50" r="4" fill="rgba(255,102,52,0.6)"/>
+  </g>
+  <text x="800" y="600" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="40" font-weight="700" fill="rgba(255,255,255,0.95)">Standar Kemnaker Rambu K3 Pabrik</text>
+  <text x="800" y="650" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="500" fill="rgba(255,255,255,0.75)">Checklist 12 Poin · Sriwijaya Grafika</text>
+</svg>

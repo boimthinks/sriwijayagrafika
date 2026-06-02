@@ -50,7 +50,7 @@ src/
 │   │   ├── huruf-timbul.md
 │   │   ├── neon-box.md
 │   │   └── ... (29 lainnya)
-│   └── blog/                            # 0 file MD (artikel baru per workflow)
+│   └── blog/                            # 9 artikel published (struktur flat, lihat catatan di §4)
 ├── data/                                # Static data, di-parse saat build
 │   ├── data.ts                          # BUSINESS_INFO, dll
 │   ├── portfolio.md                     # Daftar portofolio (gray-matter)
@@ -177,7 +177,9 @@ Kategori baru? Tambahkan ke `KNOWN_CATEGORIES` di `src/lib/portfolio.ts` agar la
 
 ### 3. Blog (`src/content/blog/*.md`)
 
-Sistem **artikel long-form SEO** dengan URL nested per topik. Saat ini folder kosong — workflow penulisan ada di `src/data/sriwijaya-grafika.md` bagian 11.
+Sistem **artikel long-form SEO** dengan URL nested per topik. **9 artikel published** per Februari 2026 (lihat `src/data/sriwijaya-grafika.md` bagian 12.1 untuk daftar). Workflow penulisan ada di bagian 11 knowledge base.
+
+**Struktur file: flat, tanpa subfolder.** Semua MD disimpan langsung di `src/content/blog/<slug>.md` — field `topik` di frontmatter yang menentukan segmen URL, bukan struktur folder. Subfolder `src/content/blog/<topik>/<slug>.md` pernah dicoba tapi menyebabkan **ID conflict** di `getStaticPaths` (`Astro` membuat ID jadi `<topik>/<slug>`, lalu route `/blog/[topik]/[slug]` bentrok dengan path itu sendiri). Pakai flat, topik dari frontmatter.
 
 **URL pattern:**
 
@@ -245,7 +247,7 @@ Paragraph...
 1. Buka `src/data/sriwijaya-grafika.md` bagian 11 — baca 11.1 sampai 11.11.
 2. Tulis artikel sesuai aturan (cek 22-poin checklist di 11.9).
 3. Taruh gambar di `public/img/blog/<id>.<ext>`.
-4. Simpan MD di `src/content/blog/<topik>/<slug>.md` — atau langsung di `src/content/blog/<slug>.md` lalu pindahkan (folder disusun manual; loader pakai `glob`).
+4. Simpan MD langsung di `src/content/blog/<slug>.md` (**flat, tanpa subfolder** — lihat catatan struktur di atas).
 5. Set `published: false` dulu untuk review, lalu `true` saat publish.
 6. Update Section 12.1 (topik yang sudah ditulis) di knowledge base.
 
