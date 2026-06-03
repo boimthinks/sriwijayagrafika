@@ -116,6 +116,7 @@ body {
   font-style: italic;
   color: #404040;
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .prose-article code {
   background: #1f2937;

@@ -2,15 +2,19 @@
 import { ShieldCheck, Award, Users, ArrowRight, Sparkles } from 'lucide-react';
 ---
 
-<section class="relative overflow-hidden py-16 md:py-24" id="hero-section">
-  <div class="absolute inset-0 -z-20">
+<section class="relative overflow-hidden pt-10 pb-20 md:py-24" id="hero-section">
+<div class="absolute inset-0 -z-20">
+  <picture>
+    <source media="(max-width: 767px)" srcset="/img/hero/hero_mobile.webp" />
+    <source media="(min-width: 768px)" srcset="/img/hero/hero.webp" />
     <img
       src="/img/hero/hero.webp"
       alt=""
       aria-hidden="true"
       class="w-full h-full object-cover"
     />
-  </div>
+  </picture>
+</div>
 
   <div class="absolute inset-0 -z-10">
     <div class="absolute inset-0 bg-gradient-to-b from-white/95 via-white/80 to-transparent lg:bg-gradient-to-r lg:from-white/95 lg:via-white/80 lg:to-transparent"></div>
@@ -21,7 +25,7 @@ import { ShieldCheck, Award, Users, ArrowRight, Sparkles } from 'lucide-react';
       <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
         <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#224da8]/10 text-[#224da8] text-xs font-semibold tracking-wide">
           <Sparkles className="w-3.5 h-3.5 text-[#ff6634] fill-[#ff6634]" />
-          <span>Solusi Jasa Advertising Termurah di Kota Palembang</span>
+          <span>Jasa Advertising Termurah di Kota Palembang</span>
         </div>
 
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-neutral-900 leading-[1.1]" id="hero-title">
@@ -29,23 +33,23 @@ import { ShieldCheck, Award, Users, ArrowRight, Sparkles } from 'lucide-react';
         </h1>
 
         <p class="text-base sm:text-lg text-neutral-600 leading-relaxed font-normal max-w-2xl mx-auto lg:mx-0">
-          Cetak media promosi impian Anda dan jadilah bisnis paling elegan di Kota Palembang. Kami melayani pembuatan
+          Cetak media promosi Anda dan jadilah bisnis paling elegan di Kota Palembang. Kami melayani pembuatan
           <strong> Huruf Timbul LED</strong>, <strong>Neon Box</strong>, <strong>Papan Nama Toko</strong>, serta
           aneka kebutuhan percetakan kantor terlengkap sejak tahun 2008.
         </p>
 
-        <div class="grid grid-cols-3 gap-4 py-2 text-center max-w-md mx-auto lg:mx-0">
+        <div class="grid grid-cols-3 gap-2 py-2 text-center max-w-md mx-auto lg:mx-0">
           <div class="border border-neutral-100 rounded-xl bg-white p-3 shadow-sm">
-            <span class="block text-2xl font-extrabold text-[#224da8]">16+</span>
-            <span class="block text-[10px] font-mono tracking-wider font-semibold text-neutral-400 uppercase">Tahun Dedikasi</span>
+            <span class="block text-xl font-extrabold text-[#224da8]">16+</span>
+            <span class="block text-[10px] font-mono tracking-wider font-semibold text-neutral-400 uppercase">Tahun<br />Dedikasi</span>
           </div>
           <div class="border border-neutral-100 rounded-xl bg-white p-3 shadow-sm">
-            <span class="block text-2xl font-extrabold text-[#ff6634]">1 Thn</span>
-            <span class="block text-[10px] font-mono tracking-wider font-semibold text-neutral-400 uppercase">Garansi Penuh</span>
+            <span class="block text-xl font-extrabold text-[#ff6634]">1 Thn</span>
+            <span class="block text-[10px] font-mono tracking-wider font-semibold text-neutral-400 uppercase">Garansi<br />Penuh</span>
           </div>
           <div class="border border-neutral-100 rounded-xl bg-white p-3 shadow-sm">
-            <span class="block text-2xl font-extrabold text-indigo-600">Free</span>
-            <span class="block text-[10px] font-mono tracking-wider font-semibold text-neutral-400 uppercase">Biaya Desain*</span>
+            <span class="block text-xl font-extrabold text-indigo-600">Free</span>
+            <span class="block text-[10px] font-mono tracking-wider font-semibold text-neutral-400 uppercase">Biaya<br />Desain</span>
           </div>
         </div>
 

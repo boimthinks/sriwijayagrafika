@@ -16,89 +16,99 @@ const { items, categories, whatsappHref, whatsappDisplay } = Astro.props;
     class="sticky top-20 z-30 bg-white/95 backdrop-blur-md border-b border-neutral-100 shadow-sm"
     id="portfolio-filter-bar"
   >
-    <div class="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
       <div
-        class="flex items-center gap-2 overflow-x-auto pb-1 -mx-1 px-1"
-        role="tablist"
-        aria-label="Filter kategori portofolio"
+        class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"
       >
-        <button
-          type="button"
-          data-filter="all"
-          role="tab"
-          aria-selected="true"
-          class="filter-btn shrink-0 px-4 py-2 rounded-lg text-xs font-bold transition-all duration-200 bg-neutral-800 text-white shadow-sm"
+        <div
+          class="flex bg-neutral-100 p-1 rounded-xl w-full md:w-auto overflow-x-auto scrollbar-none"
+          role="tablist"
+          aria-label="Filter kategori portofolio"
         >
-          Semua ({items.length})
-        </button>
-        {categories.map((cat) => (
-          <button
-            type="button"
-            data-filter={cat.id}
-            role="tab"
-            aria-selected="false"
-            class="filter-btn shrink-0 px-4 py-2 rounded-lg text-xs font-bold transition-all duration-200 bg-neutral-50 border border-neutral-100 text-neutral-600 hover:bg-neutral-100"
-          >
-            {cat.label} ({cat.count})
-          </button>
-        ))}
+<button
+  type="button"
+  data-filter="all"
+  role="tab"
+  aria-selected="true"
+  class="flex-1 md:flex-initial px-4 md:px-5 py-2.5 rounded-lg text-xs font-bold transition-all duration-200 bg-white text-[#224da8] shadow-sm whitespace-nowrap"
+>
+  Semua
+</button>
+{categories.map((cat) => (
+  <button
+    type="button"
+    data-filter={cat.id}
+    role="tab"
+    aria-selected="false"
+    class="flex-1 md:flex-initial px-4 md:px-5 py-2.5 rounded-lg text-xs font-bold transition-all duration-200 text-neutral-500 hover:text-neutral-800 whitespace-nowrap"
+  >
+    {cat.label}
+  </button>
+))}
+        </div>
+
+        <div class="hidden md:flex items-center gap-2 text-[11px] text-neutral-500">
+          <span class="font-mono font-bold">Tampil:</span>
+          <span id="filter-count" class="font-extrabold text-[#224da8]">{items.length}</span>
+          <span>dari {items.length} portofolio</span>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="lg:max-w-7xl lg:mx-auto lg:px-8 xl:px-10 grid grid-cols-3 gap-0.5 sm:gap-1 lg:gap-1" id="portfolio-grid">
-    {items.map((item) => (
-      <button
-        type="button"
-        data-id={item.id}
-        data-category={item.category}
-        data-image-src={item.src}
-        data-caption={item.caption}
-        data-category-label={item.categoryLabel}
-        onclick="window.__pfOpenLightbox && window.__pfOpenLightbox(this)"
-        aria-label={`Lihat detail: ${item.caption}`}
-        class="group relative aspect-square overflow-hidden bg-neutral-100 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#ff6634] focus:ring-offset-1"
-      >
-        <img
-          src={item.src}
-          alt={item.caption}
-          loading="lazy"
-          decoding="async"
-          class="w-full h-full object-cover transition-transform duration-800 group-hover:scale-115"
-        />
-        <div
-          class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 sm:p-3"
-        >
-          <div class="text-white min-w-0 w-full">
-            <span
-              class="block text-[8px] sm:text-[9px] font-mono uppercase tracking-widest opacity-90 truncate"
-            >
-              {item.categoryLabel}
-            </span>
-            <span
-              class="block text-[10px] sm:text-xs font-bold leading-tight line-clamp-2 mt-0.5"
-            >
-              {item.caption}
-            </span>
-          </div>
-        </div>
-      </button>
-    ))}
-  </div>
-
-  <div id="portfolio-empty" class="hidden bg-white py-16">
-    <div class="max-w-md mx-auto px-4 text-center space-y-3">
-      <p class="text-sm font-bold text-neutral-700">Belum ada portofolio di kategori ini.</p>
-      <button
-        type="button"
-        data-filter="all"
-        class="filter-btn inline-flex items-center gap-1.5 text-xs font-bold text-[#224da8] hover:underline"
-      >
-        Tampilkan semua kategori
-      </button>
-    </div>
-  </div>
 </section>
+
+<div class="lg:max-w-7xl lg:mx-auto lg:px-8 xl:px-10 grid grid-cols-3 gap-0.5 sm:gap-1 lg:gap-1" id="portfolio-grid">
+  {items.map((item) => (
+    <button
+      type="button"
+      data-id={item.id}
+      data-category={item.category}
+      data-image-src={item.src}
+      data-caption={item.caption}
+      data-category-label={item.categoryLabel}
+      onclick="window.__pfOpenLightbox && window.__pfOpenLightbox(this)"
+      aria-label={`Lihat detail: ${item.caption}`}
+      class="group relative aspect-square overflow-hidden bg-neutral-100 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#ff6634] focus:ring-offset-1"
+    >
+      <img
+        src={item.src}
+        alt={item.caption}
+        loading="lazy"
+        decoding="async"
+        class="w-full h-full object-cover transition-transform duration-800 group-hover:scale-115"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 sm:p-3"
+      >
+        <div class="text-white min-w-0 w-full">
+          <span
+            class="block text-[8px] sm:text-[9px] font-mono uppercase tracking-widest opacity-90 truncate"
+          >
+            {item.categoryLabel}
+          </span>
+          <span
+            class="block text-[10px] sm:text-xs font-bold leading-tight line-clamp-2 mt-0.5"
+          >
+            {item.caption}
+          </span>
+        </div>
+      </div>
+    </button>
+  ))}
+</div>
+
+<div id="portfolio-empty" class="hidden bg-white py-16">
+  <div class="max-w-md mx-auto px-4 text-center space-y-3">
+    <p class="text-sm font-bold text-neutral-700">Belum ada portofolio di kategori ini.</p>
+    <button
+      type="button"
+      data-filter="all"
+      class="filter-btn inline-flex items-center gap-1.5 text-xs font-bold text-[#224da8] hover:underline"
+    >
+      Tampilkan semua kategori
+    </button>
+  </div>
+</div>
 
 <dialog
   id="portfolio-lightbox"
