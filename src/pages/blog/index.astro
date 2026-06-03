@@ -180,10 +180,10 @@ const blogSchema = {
     const grid = document.getElementById('blog-grid');
     if (!grid) return;
 
-    const filterButtons = document.querySelectorAll('[data-filter]');
+    const filterButtons = document.querySelectorAll<HTMLButtonElement>('[data-filter]');
 
-    const applyFilter = (filter) => {
-      const items = grid.querySelectorAll('[data-topik]');
+    const applyFilter = (filter: string) => {
+      const items = grid.querySelectorAll<HTMLElement>('[data-topik]');
       let visibleCount = 0;
 
       items.forEach((item) => {
@@ -193,7 +193,7 @@ const blogSchema = {
       });
 
       // Update URL
-      const url = new URL(window.location);
+      const url = new URL(window.location.href);
       if (filter === 'all') {
         url.searchParams.delete('topik');
       } else {
@@ -220,7 +220,7 @@ const blogSchema = {
     // Add event listeners to buttons
     filterButtons.forEach((button) => {
       button.addEventListener('click', () => {
-        applyFilter(button.dataset.filter);
+        applyFilter(button.dataset.filter ?? 'all');
       });
     });
   });
