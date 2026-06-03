@@ -36,9 +36,15 @@ items:
   - src: public\img\portfolio\vape-store-barangan.webp
     category: papan-nama
     caption: "Papan Nama Vape Store Barangan"
+  - src: public\img\portfolio\rambu-k3-jalur-evakuasi.webp
+    category: rambu-k3
+    caption: "Rambu Jalur Evakuasi"
   - src: public\img\portfolio\riyadh-regency-3.webp
     category: huruf-timbul
     caption: "Huruf Timbul Galvanis Riyadh Regency 3"
+  - src: public\img\portfolio\neon-box-kedai-temon.webp
+    category: neon-box
+    caption: "Neon Box Kedai Temon"
   - src: public\img\portfolio\dprd-oki.webp
     category: huruf-timbul
     caption: "Huruf Timbul Cutting Akrilik DPRD OKI"

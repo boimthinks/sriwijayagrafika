@@ -4,7 +4,7 @@ titleSeo: "Studi Kasus Signage Korporat PT Andalas Sakti, Huruf Timbul Akrilik G
 excerpt: "Studi kasus signage korporat PT Andalas Sakti Perkasa, huruf timbul akrilik untuk gedung kantor, dari brief sampai instalasi 14 hari."
 date: "19 Januari 2026"
 topik: "studi-kasus"
-imgurl: "/img/blog/signage-korporat-pt-andalas-sakti.svg"
+imgurl: "/img/blog/signage-korporat-pt-andalas-sakti.webp"
 imgalt: "Huruf timbul akrilik PT Andalas Sakti Perkasa di gedung kantor Palembang"
 pengantar: "Anda pikir signage korporat itu hanya soal logo besar di depan gedung? Coba tanya ke tim procurement yang sudah tiga kali ganti vendor dalam dua tahun — huruf berkarat, LED mati sebagian, finishing mengelupas, vendor tidak responsif saat klaim garansi. Artikel ini cerita dari klien korporat kami yang akhirnya memutuskan pindah ke workshop dengan pendekatan berbeda. Hasilnya bukan hanya signage yang terlihat bagus, tapi sistem yang bisa di-maintain dan dipertanggungjawabkan ke manajemen."
 kesimpulan: "Signage korporat adalah investasi yang harus dipikirkan serius. Untuk gedung kantor, showroom, atau fasilitas publik, pemilihan material dan kualitas pengerjaan adalah faktor penentu umur pakai dan citra perusahaan. Kalau Anda pertimbangkan signage untuk gedung korporat, halaman [huruf timbul](/layanan/huruf-timbul) kami punya rincian material. Mau diskusi kebutuhan signage korporat? Tim kami via WhatsApp 0851-0088-8748 — survey lokasi untuk area Palembang."

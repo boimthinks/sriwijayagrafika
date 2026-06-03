@@ -4,7 +4,7 @@ titleSeo: "Panduan Izin Reklame Palembang, Syarat, Biaya, dan Timeline yang Waji
 excerpt: "Syarat, biaya, dan timeline izin reklame di Palembang. Panduan lengkap agarsignage Anda tidak kena bongkar Satpol PP."
 date: "9 Februari 2026"
 topik: "panduan"
-imgurl: "/img/blog/panduan-izin-reklame-palembang.svg"
+imgurl: "/img/blog/panduan-izin-reklame-palembang.webp"
 imgalt: "Contoh neon box dan signage toko di Palembang dengan izin reklame yang lengkap"
 pengantar: "Anda sudah pesan neon box keren dari vendor, material dipilih, desain disetujui, produksi selesai. Lalu di hari instalasi, tim vendor datang dengan wajah bingung — mereka baru ingat belum ada izin reklame dari pemerintah kota. Hasilnya? Neon box jadi tidak bisa dipasang, atau kalau nekat dipasang, kena sidak Satpol PP dan harus bongkar. Artikel ini membahas izin reklame di Palembang, supaya signage Anda aman dan legal."
 kesimpulan: "Izin reklame bukan hambatan, tapi perlindungan agar tidak kena sidak atau bongkar paksa. Prosesnya tidak serumit yang dibayangkan, asal dokumen lengkap dan vendor Anda paham regulasinya. Kami biasa membantu klien menyiapkan dokumen teknis yang diminta DPMPTSP. Untuk konsultasi gratis area Palembang dan Sumatera Selatan, hubungi WhatsApp 0851-0088-8748."

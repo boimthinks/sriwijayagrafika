@@ -4,7 +4,7 @@ titleSeo: "Uji 6 Bulan, Akrilik vs Galvanil untuk Huruf Timbul Tropis Lembap Pal
 excerpt: "Aki vs galvanil untuk huruf timbul, mana yang lebih awet 5 tahun di iklim Palembang? Uji 6 bulan dari workshop kami."
 date: "12 Januari 2026"
 topik: "tips"
-imgurl: "/img/blog/uji-akrilik-vs-galvanil.svg"
+imgurl: "/img/blog/akrilik-galvanil.webp"
 imgalt: "Perbandingan huruf timbul akrilik dan galvanil setelah 6 bulan di outdoor Palembang"
 pengantar: "Bayangkan Anda memesan huruf timbul untuk toko. Vendor menawarkan dua pilihan — akrilik atau galvanil. Keduanya terlihat oke di mockup, harganya pun berselisih tipis. Enam bulan kemudian, Anda berdiri di depan toko Anda dan mulai melihat perbedaan. Yang satu masih kinclong, yang satu sudah kusam dan berjamur. Artikel ini adalah cerita dan data tentang kenapa material itu penting — terutama di iklim tropis Palembang yang lembap dan punya curah hujan tinggi sepanjang tahun."
 kesimpulan: "Akrilik dan galvanil bukan lawan yang saling mengalahkan — masing-masing punya tempat. Pilih berdasarkan exposure, budget, dan ekspektasi umur pakai. Untuk UMKM di Palembang, galvanil dengan finishing cat yang tepat masih paling efisien. Untuk klien yang mau tampilan premium dan siap investasi lebih, akrilik LED lebih menguntungkan. Mau diskusi material yang pas untuk signage Anda? Tim kami via WhatsApp 0851-0088-8748 — konsultasi gratis dan mockup 3D untuk area Palembang."

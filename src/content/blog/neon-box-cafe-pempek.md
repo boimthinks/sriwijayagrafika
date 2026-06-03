@@ -4,7 +4,7 @@ titleSeo: "Studi Kasus Neon Box Cafe Pempek, Naik 40% Kunjungan Usai Signage Bar
 excerpt: "Kedai Pempek Maris naik 40% kunjungan 3 bulan setelah ganti neon box baru. Studi kasus signage UMKM yang bekerja."
 date: "22 Desember 2025"
 topik: "studi-kasus"
-imgurl: "/img/blog/neon-box-cafe-pempek.svg"
+imgurl: "/img/portfolio/neon-box-kedai-temon.webp"
 imgalt: "Neon box Kedai Pempek Maris Palembang hasil produksi Sriwijaya Grafika"
 pengantar: "Kalau Anda pegang bisnis kuliner di Palembang dan sedang cari contoh signage yang benar-benar bekerja untuk meningkatkan kunjungan, artikel ini pas untuk Anda. Di bawah ini kami buka studi kasus Kedai Pempek Maris — neon box sederhana yang ikut mendongkrak 40% kunjungan setelah re-opening outlet kedua mereka. Bukan sekadar testimoni, tapi rincian brief, solusi, dan hasil yang bisa Anda pelajari untuk bisnis Anda sendiri."
 kesimpulan: "Signage yang menyala 24 jam adalah marketing yang tidak pernah tidur. Untuk Kedai Pempek Maris, investasi neon box kembali berkali-kali lipat dalam 3 bulan pertama. Kalau Anda pertimbangkan neon box untuk cafe, restoran, atau toko retail, halaman [neon box](/layanan/neon-box) kami punya rincian material, harga, dan proses produksi. Mau diskusi desain atau butuh survey lokasi? Tim kami siap via WhatsApp 0851-0088-8748 — konsultasi gratis, mockup 3D, dan survey area Palembang."

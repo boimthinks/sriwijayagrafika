@@ -4,7 +4,7 @@ titleSeo: "Behind the Scene Workshop Talang Jambe, Proses Produksi Huruf Timbul 
 excerpt: "Masuk ke dalam workshop Sriwijaya Grafika Talang Jambe. Proses produksi huruf timbul dari laser cutting sampai finishing, dijelaskan langkah demi langkah."
 date: "26 Januari 2026"
 topik: "berita"
-imgurl: "/img/blog/workshop-talang-jambe-produksi.svg"
+imgurl: "/img/blog/workshop-talang-jambe-produksi.webp"
 imgalt: "Suasana workshop Sriwijaya Grafika di Talang Jambe dengan mesin laser cutting dan huruf timbul yang sedang diproduksi"
 pengantar: "Suara mesin cutting laser berdenyit pelan di sudut workshop. Bau tipis akrilik yang dipotong bercampur dengan wangi cat duco yang baru kering. Di Talang Jambe, inilah rutinitas pagi yang jarang dilihat klien. Tapi di balik storefront cafe atau gedung perkantoran yang mereka lihat setiap hari, ada proses panjang dari bahan mentah menjadi signage jadi. Artikel ini mengajak Anda masuk ke dalam workshop kami — untuk melihat bagaimana signage kami diproduksi dari awal sampai siap dipasang."
 kesimpulan: "Workshop kami di Talang Jambe adalah jantung dari semua yang kami kerjakan. Di sinilah ide klien berubah menjadi signage yang Anda lihat setiap hari di Palembang. Kami memproduksi sendiri, bukan reseller. Semua proses dari desain sampai quality control ada di tangan tim internal kami. Kalau Anda ingin lihat langsung workshop kami atau diskusi project signage, silakan datang ke lokasi atau hubungi WhatsApp 0851-0088-8748 untuk appointment."
@@ -16,6 +16,8 @@ published: true
 Workshop Sriwijaya Grafika berlokasi di Talang Jambe, Palembang — sekitar 20 menit dari pusat kota. Lokasinya bukan di kawasan industri besar, tapi di area pemukiman dengan beberapa tetangga yang juga punya usaha kecil. Ini sesuai dengan nilai kami untuk memberdayakan ekonomi lokal, dan memberi kami akses dekat ke komunitas yang juga menjadi klien kami.
 
 Begitu masuk ke area workshop, yang pertama terlihat adalah area produksi utama. Di sini ada beberapa mesin utama — laser cutting CO2 untuk akrilik dan kayu, fiber laser untuk stainless dan galvanil, CNC router untuk material yang lebih tebal, dan beberapa workstation perakitan. Layout workshop sengaja diatur alur produksi linear dari material mentah di sisi utara, ke area perakitan di tengah, sampai area quality control dan packing di sisi selatan.
+
+![Area Kantor Sriwijaya Grafika](/img/blog/kantor-sriwijaya-grafika-paalembang.webp)
 
 Di bagian belakang, ada ruang kantor kecil untuk administrasi dan diskusi klien. Ada juga area showroom sederhana yang memajang beberapa contoh produk, sertifikasi material, dan dokumentasi proyek-proyek sebelumnya. Klien yang datang untuk konsultasi biasanya kami ajak tur singkat dulu sebelum masuk ke diskusi teknis.
 

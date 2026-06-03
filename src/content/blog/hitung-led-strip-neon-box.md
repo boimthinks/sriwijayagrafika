@@ -4,7 +4,7 @@ titleSeo: "Cara Menghitung Kebutuhan LED Strip untuk Neon Box Sesuai Kapasitas L
 excerpt: "Cara hitung kebutuhan LED strip untuk neon box agar cahaya merata dan listrik tidak bengkak. Rumus + contoh kasus 1x1 meter."
 date: "2 Februari 2026"
 topik: "tips"
-imgurl: "/img/blog/hitung-led-strip-neon-box.svg"
+imgurl: "/img/portfolio/neon-box-super-indo.webp"
 imgalt: "Perhitungan kebutuhan LED strip untuk neon box ukuran 1x1 meter"
 pengantar: "Dari ratusan neon box yang kami produksi di Palembang sejak 2008, 6 dari 10 kasus ketidakpuasan klien bermula dari LED yang dipilih tanpa perhitungan matang. LED terlalu sedikit membuat cahaya tidak merata, huruf terlihat belang. LED terlalu banyak bikin listrik bengkak dan panas berlebih, umur LED lebih pendek. Artikel ini membahas cara menghitung kebutuhan LED yang benar untuk neon box Anda, lengkap dengan contoh kasus untuk ukuran standar 1x1 meter yang bisa Anda adopsi untuk ukuran lain."
 kesimpulan: "Menghitung kebutuhan LED untuk neon box sebenarnya tidak rumit kalau Anda tahu variabelnya: ukuran area, jenis LED, dan jarak antar-modul. Dengan rumus sederhana di atas, Anda bisa estimasi kebutuhan sebelum konsultasi vendor. Untuk hasil terbaik, produksi di workshop terpercaya dengan garansi jelas. Mau diskusi kebutuhan LED untuk neon box Anda? Tim kami via WhatsApp 0851-0088-8748 — konsultasi gratis dan hitung kebutuhan LED untuk area Palembang."

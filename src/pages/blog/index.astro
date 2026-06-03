@@ -115,24 +115,24 @@ const blogSchema = {
       <>
         <section class="sticky top-20 z-30 bg-white/95 backdrop-blur-md border-b border-neutral-100 shadow-sm">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-              <nav class="flex bg-neutral-100 p-1 rounded-xl w-full md:w-auto overflow-x-auto" aria-label="Filter topik blog">
-                <a
-                  href="/blog"
-                  aria-current="page"
-                  class="flex-1 md:flex-initial px-4 md:px-5 py-2.5 rounded-lg text-xs font-bold transition-all duration-200 bg-white text-[#224da8] shadow-sm whitespace-nowrap"
-                >
-                  Semua ({allPosts.length})
-                </a>
-                {availableTopiks.map((t) => (
-                  <a
-                    href={`/blog/${t}`}
-                    class="flex-1 md:flex-initial px-4 md:px-5 py-2.5 rounded-lg text-xs font-bold transition-all duration-200 text-neutral-500 hover:text-neutral-800 whitespace-nowrap"
-                  >
-                    {TOPIK_LABELS[t]} ({counts[t]})
-                  </a>
-                ))}
-              </nav>
+             <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+               <nav class="flex bg-neutral-100 p-1 rounded-xl w-full md:w-auto overflow-x-auto" aria-label="Filter topik blog">
+                 <button
+                   data-filter="all"
+                   aria-current="page"
+                   class="flex-1 md:flex-initial px-4 md:px-5 py-2.5 rounded-lg text-xs font-bold transition-all duration-200 bg-white text-[#224da8] shadow-sm whitespace-nowrap"
+                 >
+                   Semua ({allPosts.length})
+                 </button>
+                 {availableTopiks.map((t) => (
+                   <button
+                     data-filter={t}
+                     class="flex-1 md:flex-initial px-4 md:px-5 py-2.5 rounded-lg text-xs font-bold transition-all duration-200 text-neutral-500 hover:text-neutral-800 whitespace-nowrap"
+                   >
+                     {TOPIK_LABELS[t]} ({counts[t]})
+                   </button>
+                 ))}
+               </nav>
 
               <div class="hidden md:flex items-center gap-2 text-[11px] text-neutral-500">
                 <span class="font-mono font-bold">Total:</span>
@@ -143,15 +143,17 @@ const blogSchema = {
           </div>
         </section>
 
-        <section class="py-12 md:py-16 bg-white">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {postsWithMeta.map(({ post, readingTime }) => (
-                <BlogCard post={post} readingTime={readingTime} />
-              ))}
-            </div>
-          </div>
-        </section>
+         <section class="py-12 md:py-16 bg-white">
+           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="blog-grid">
+               {postsWithMeta.map(({ post, readingTime }) => (
+                 <div data-topik={post.data.topik}>
+                   <BlogCard post={post} readingTime={readingTime} />
+                 </div>
+               ))}
+             </div>
+           </div>
+         </section>
       </>
     )}
 
@@ -180,6 +182,52 @@ const blogSchema = {
 </Layout>
 
 <script>
-  // Filter pills are now real links to topic pages (/blog/[topik]/).
-  // No client-side filter script needed.
+  document.addEventListener('DOMContentLoaded', () => {
+    const grid = document.getElementById('blog-grid');
+    if (!grid) return;
+
+    const filterButtons = document.querySelectorAll('[data-filter]');
+
+    const applyFilter = (filter) => {
+      const items = grid.querySelectorAll('[data-topik]');
+      let visibleCount = 0;
+
+      items.forEach((item) => {
+        const match = filter === 'all' || item.dataset.topik === filter;
+        item.classList.toggle('hidden', !match);
+        if (match) visibleCount++;
+      });
+
+      // Update URL
+      const url = new URL(window.location);
+      if (filter === 'all') {
+        url.searchParams.delete('topik');
+      } else {
+        url.searchParams.set('topik', filter);
+      }
+      window.history.replaceState({}, '', url);
+
+      // Update button active states
+      filterButtons.forEach((btn) => {
+        const isActive = btn.dataset.filter === filter;
+        btn.classList.toggle('bg-white', isActive);
+        btn.classList.toggle('text-[#224da8]', isActive);
+        btn.classList.toggle('shadow-sm', isActive);
+        btn.classList.toggle('text-neutral-500', !isActive);
+        btn.classList.toggle('hover:text-neutral-800', !isActive);
+      });
+    };
+
+    // Set initial filter from URL
+    const params = new URLSearchParams(window.location.search);
+    const initialFilter = params.get('topik') || 'all';
+    applyFilter(initialFilter);
+
+    // Add event listeners to buttons
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        applyFilter(button.dataset.filter);
+      });
+    });
+  });
 </script>
