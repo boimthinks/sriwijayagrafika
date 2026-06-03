@@ -1,5 +1,8 @@
 ---
 items:
+  - src: /img/portfolio/kumori-pancake.webp
+    category: huruf-timbul
+    caption: "Huruf Timbul Akrilik Kumore Pancake"
   - src: /img/portfolio/huruf-timbul-akrilik-gemini.webp
     category: huruf-timbul
     caption: "Huruf Timbul Akrilik LED Gemini"
