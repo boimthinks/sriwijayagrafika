@@ -83,6 +83,49 @@ src/
 ├── styles/
 │   └── global.css                       # Tailwind v4 + .prose-article + custom
 └── env.d.ts
+```
+
+Catatan: Halaman media (`src/pages/media.astro`) tidak disertakan dalam navigasi navbar untuk menjaga fokus pada layanan utama, namun tetap dapat diakses secara langsung melalui URL `/media` dan dapat dimodifikasi kapan saja jika diperlukan.
+src/
+├── content.config.ts                    # Zod schema: layanan, blog
+├── content/
+│   ├── layanan/                         # 31 file MD, satu per layanan
+│   │   ├── huruf-timbul.md
+│   │   ├── neon-box.md
+│   │   └── ... (29 lainnya)
+│   └── blog/                            # 9 artikel published (struktur flat, lihat catatan di §4)
+├── data/                                # Static data, di-parse saat build
+│   ├── data.ts                          # BUSINESS_INFO, dll
+│   ├── portfolio.md                     # Daftar portofolio (gray-matter)
+│   └── sriwijaya-grafika.md             # Knowledge base untuk AI Agent
+├── components/
+│   ├── *.astro                          # Server-rendered: Navbar, Footer, Hero, ServiceCard, BlogCard, dll
+│   └── *.tsx                            # React islands: AboutAndMediaIsland, OrderHistory, dll
+├── layouts/
+│   └── Layout.astro                     # <head> + JSON-LD LocalBusiness base
+├── lib/
+│   ├── data.ts                          # Static business data
+│   ├── portfolio.ts                     # Parse portfolio.md → PortfolioItem[]
+│   ├── blog.ts                          # parseIndonesianDate, TOPIKS, AUTHOR_NAME, dll
+│   └── types.ts                         # Shared TypeScript types
+├── pages/
+│   ├── index.astro                      # Beranda
+│   ├── portofolio.astro                 # Galeri + lightbox
+│   ├── media.astro                      # Profil + liputan
+│   ├── sitemap.astro                    # Sitemap HTML manusia
+│   ├── 404.astro
+│   ├── layanan/
+│   │   ├── index.astro                  # Listing + filter
+│   │   └── [...slug].astro              # Detail layanan (dynamic)
+│   └── blog/
+│       ├── index.astro                  # Listing semua artikel
+│       ├── rss.xml.ts                   # RSS feed
+│       ├── [topik]/
+│       │   ├── index.astro              # Arsip per topik
+│       │   └── [slug].astro             # Detail artikel
+├── styles/
+│   └── global.css                       # Tailwind v4 + .prose-article + custom
+└── env.d.ts
 
 public/
 ├── favicon.svg

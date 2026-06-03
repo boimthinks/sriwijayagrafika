@@ -13,23 +13,23 @@ interface Props {
   structuredData?: object;
 }
 
-const {
-  title,
-  description,
-  ogImage = '/og-default.svg',
-  ogType = 'website',
-  canonicalUrl,
-  keywords = [
-    'Advertising Palembang',
-    'Huruf Timbul Palembang',
-    'Neon Box',
-    'Papan Nama Toko',
-    'Percetakan Palembang',
-    'Reklame Palembang',
-  ],
-  noindex = false,
-  structuredData,
-} = Astro.props;
+  const {
+    title,
+    description,
+    ogImage = '/img/hero/hero.webp',
+    ogType = 'website',
+    canonicalUrl,
+    keywords = [
+      'Advertising Palembang',
+      'Huruf Timbul Palembang',
+      'Neon Box',
+      'Papan Nama Toko',
+      'Percetakan Palembang',
+      'Reklame Palembang',
+    ],
+    noindex = false,
+    structuredData,
+  } = Astro.props;
 
 const siteUrl = Astro.site?.toString() || import.meta.env.APP_URL || 'https://sriwijayagrafika.co.id';
 const canonical = canonicalUrl || new URL(Astro.url.pathname, siteUrl).toString();
@@ -74,7 +74,7 @@ const localBusinessSchema = {
   ],
 };
 
-const allSchemas = [localBusinessSchema];
+const allSchemas: object[] = [localBusinessSchema];
 if (structuredData) allSchemas.push(structuredData);
 ---
 
