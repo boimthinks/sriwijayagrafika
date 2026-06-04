@@ -12,7 +12,7 @@ export async function GET(context: { site: URL | undefined }) {
     title: `${BUSINESS_INFO.name} — Blog & Tips Advertising Palembang`,
     description:
       'Tips, studi kasus, berita, dan panduan seputar huruf timbul, neon box, papan nama, rambu K3, dan percetakan di Palembang.',
-    site: context.site ?? 'https://sriwijayagrafika.co.id',
+    site: context.site ?? 'https://sriwijayagrafika.com',
     items: posts.map((post) => ({
       title: post.data.titleSeo,
       description: post.data.excerpt,

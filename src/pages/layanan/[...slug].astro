@@ -34,7 +34,7 @@ const relatedServices = allServices
 const waMessage = `Halo Sriwijaya Grafika, saya tertarik dengan layanan *${data.name}* (${data.subcategory}).\n\nMohon informasi ketersediaan, opsi bahan, dan estimasi harga. Terima kasih!`;
 const waUrl = `https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent(waMessage)}`;
 
-const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://sriwijayagrafika.co.id').toString();
+const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://sriwijayagrafika.com').toString();
 
 const SUBCATEGORY_ICONS: Record<string, typeof Megaphone> = {
   'Advertising & Reklame': Megaphone,
@@ -64,7 +64,7 @@ const SUBCAT_INITIALS = data.subcategory
   .join('');
 
 const imageUrl = data.imageUrl
-  ? new URL(data.imageUrl, Astro.site ?? 'https://sriwijayagrafika.co.id').toString()
+  ? new URL(data.imageUrl, Astro.site ?? 'https://sriwijayagrafika.com').toString()
   : null;
 
 const jasaWord = data.category === 'utama' ? 'Jasa Pembuatan' : 'Jasa';
@@ -79,7 +79,7 @@ const serviceSchema = {
   serviceType: data.subcategory,
   provider: {
     '@type': 'LocalBusiness',
-    '@id': 'https://sriwijayagrafika.co.id/#business',
+    '@id': 'https://sriwijayagrafika.com/#business',
     name: BUSINESS_INFO.name,
   },
   areaServed: { '@type': 'City', name: 'Palembang' },

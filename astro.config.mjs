@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://sriwijayagrafika.co.id',
+  site: 'https://sriwijayagrafika.com',
   output: 'static',
   integrations: [react(), sitemap()],
   vite: {

@@ -20,7 +20,7 @@ Rewrite dari stack React + Vite + Express ke **Astro Static Site Generation (SSG
 | Icon | `lucide-react` (di-import dari file `.astro` maupun `.tsx`) |
 | Markdown parsing | `gray-matter` untuk file MD di `src/data/` |
 
-Site URL di-hardcode di `astro.config.mjs:8` — `https://sriwijayagrafika.co.id`. Tidak perlu `.env` untuk production swap.
+Site URL di-hardcode di `astro.config.mjs:8` — `https://sriwijayagrafika.com`. Tidak perlu `.env` untuk production swap.
 
 ## Quick Start
 

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://sriwijayagrafika.co.id/sitemap-index.xml
+Sitemap: https://sriwijayagrafika.com/sitemap-index.xml

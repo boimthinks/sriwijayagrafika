@@ -36,8 +36,8 @@ const relatedPosts = allPosts
 
 const readingTime = calcReadingTime(data.pengantar, post.body ?? '', data.kesimpulan);
 const imgAlt = data.imgalt || data.titleSeo;
-const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://sriwijayagrafika.co.id').toString();
-const absImageUrl = new URL(data.imgurl, Astro.site ?? 'https://sriwijayagrafika.co.id').toString();
+const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://sriwijayagrafika.com').toString();
+const absImageUrl = new URL(data.imgurl, Astro.site ?? 'https://sriwijayagrafika.com').toString();
 const isoDate = toIsoDate(parseIndonesianDate(data.date));
 
 const waMessage = `Halo Sriwijaya Grafika, saya tertarik dengan artikel *${data.title}* di blog Anda.\n\nMohon informasi lebih lanjut. Terima kasih!`;
@@ -57,15 +57,15 @@ const articleSchema = {
   author: {
     '@type': 'Organization',
     name: AUTHOR_NAME,
-    url: 'https://sriwijayagrafika.co.id',
+    url: 'https://sriwijayagrafika.com',
   },
   publisher: {
     '@type': 'LocalBusiness',
-    '@id': 'https://sriwijayagrafika.co.id/#business',
+    '@id': 'https://sriwijayagrafika.com/#business',
     name: BUSINESS_INFO.name,
     logo: {
       '@type': 'ImageObject',
-      url: 'https://sriwijayagrafika.co.id/favicon.svg',
+      url: 'https://sriwijayagrafika.com/favicon.svg',
     },
   },
   mainEntityOfPage: {
@@ -74,7 +74,7 @@ const articleSchema = {
   },
   isPartOf: {
     '@type': 'CollectionPage',
-    '@id': 'https://sriwijayagrafika.co.id/blog#collection',
+    '@id': 'https://sriwijayagrafika.com/blog#collection',
   },
 };
 
@@ -82,9 +82,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Beranda', item: 'https://sriwijayagrafika.co.id' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://sriwijayagrafika.co.id/blog' },
-    { '@type': 'ListItem', position: 3, name: TOPIK_LABELS[data.topik], item: `https://sriwijayagrafika.co.id/blog/${data.topik}` },
+    { '@type': 'ListItem', position: 1, name: 'Beranda', item: 'https://sriwijayagrafika.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://sriwijayagrafika.com/blog' },
+    { '@type': 'ListItem', position: 3, name: TOPIK_LABELS[data.topik], item: `https://sriwijayagrafika.com/blog/${data.topik}` },
     { '@type': 'ListItem', position: 4, name: data.title, item: pageUrl },
   ],
 };
