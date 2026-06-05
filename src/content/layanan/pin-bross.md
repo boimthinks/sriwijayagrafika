@@ -27,6 +27,15 @@ Pin dan bros custom adalah aksesoris personal yang populer untuk komunitas, bran
 - **Desain tajam** — Detail kecil dan gradient tetap jelas
 - **Berbagai aplikasi** — Pin komunitas, pin brand, pin event
 
+## Proses Pengerjaan
+
+1. Persiapan desain logo atau ilustrasi dalam format vector (CDR/AI) untuk hasil maksimal.
+2. Proses cetak desain pada kertas art paper dengan resolusi tinggi.
+3. Pemotongan bulat sesuai ukuran menggunakan mesin potong presisi.
+4. Pressing komponen pin dengan mesin khusus untuk menyatukan desain, lapisan pelindung, dan mekanisme.
+5. Finishing glossy, doff, atau epoxy coating sesuai permintaan.
+6. Pengecekan mekanisme peniti atau magnet dan pengemasan rapi.
+
 ## Aplikasi Umum
 
 - Pin komunitas dan fandom
@@ -47,3 +56,12 @@ Standar 50 pcs. Untuk order kecil, harga lebih tinggi.
 
 **Berapa ukuran paling populer?**
 44mm adalah ukuran paling serbaguna untuk logo dan ilustrasi.
+
+**Apakah bisa cetak foto?**
+Bisa. Kirim file foto resolusi tinggi, kami proses dengan teknik cetak detail.
+
+**Bagaimana cara kirim desain?**
+Kirim via WhatsApp atau email dalam format JPG, PNG, PDF, CDR, atau AI.
+
+**Apakah ada contoh produk jadi yang bisa dilihat?**
+Ada. Silakan minta foto contoh via WhatsApp atau kunjungi workshop kami di Talang Jambe.

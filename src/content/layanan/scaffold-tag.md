@@ -27,6 +27,15 @@ Scaffold tag adalah label penandaan untuk scaffolding di area konstruksi. Fungsi
 - **Dilengkapi gantungan** — Praktis dipasang di scaffolding
 - **Tahan lama** — Warna tidak mudah pudar
 
+## Proses Pengerjaan
+
+1. Konsultasi kebutuhan tag sesuai standar K3 proyek konstruksi klien.
+2. Persiapan desain layout informasi yang akan dicantumkan pada tag.
+3. Cetak digital pada bahan PVC heavy duty dengan tinta tahan UV.
+4. Proses cutting sesuai ukuran standar atau custom yang diminta.
+5. Pelubangan dan pemasangan gantungan kabel atau ring plastik.
+6. Pengecekan ketahanan bahan dan kejelasan teks sebelum packing.
+
 ## Aplikasi Umum
 
 - Proyek konstruksi gedung
@@ -48,3 +57,12 @@ Scaffold tag adalah label penandaan untuk scaffolding di area konstruksi. Fungsi
 
 **Berapa ukuran standar?**
 Standar 20×30 cm atau 25×35 cm. Custom size tersedia.
+
+**Apakah bisa custom teks dan kolom isian?**
+Bisa. Kami sesuaikan format kolom inspeksi sesuai prosedur K3 perusahaan Anda.
+
+**Berapa minimal order untuk custom desain?**
+Standar 10 pcs untuk desain custom. Untuk desain standar minimal 1 pcs.
+
+**Apakah tag ini tahan dipakai di luar ruangan?**
+Ya. Bahan PVC heavy duty tahan terhadap panas, hujan, dan sinar UV langsung.

@@ -27,6 +27,15 @@ Papan struktur organisasi adalah alat informasi yang menampilkan hierarki dan ja
 - **Multi-level** — Mendukung struktur bertingkat (direksi, manajer, staff)
 - **Konsultasi layout** — Tim kami membantu desain hierarki
 
+## Proses Pengerjaan
+
+1. Pengumpulan data personil dan struktur organisasi yang akan ditampilkan.
+2. Konsultasi layout hierarki dan desain papan secara keseluruhan.
+3. Persiapan background menggunakan bahan ACP atau vinil berkualitas tinggi.
+4. Pemotongan dan pembuatan slot akrilik bongkar pasang dengan laser cut presisi.
+5. Cetak nama dan jabatan pada kertas atau kartu khusus untuk setiap slot.
+6. Perakitan akhir dan pengecekan ulang kesesuaian data personil sebelum dikirim.
+
 ## Aplikasi Umum
 
 - Kantor perusahaan dan korporat
@@ -46,3 +55,12 @@ Bisa. Karena sistem bongkar pasang, cukup cetak ulang kartu nama slot-nya saja.
 
 **Berapa ukuran standar?**
 Disesuaikan dengan jumlah personil dan layout. Standar 100×150 cm, 120×200 cm, atau custom.
+
+**Berapa lama proses pengerjaan?**
+Standar 5–10 hari kerja tergantung jumlah personil. Untuk revisi data biasanya 1–2 hari.
+
+**Apakah bisa ditambah logo perusahaan?**
+Bisa. Logo perusahaan dapat dicetak di background atau di setiap kartu slot akrilik.
+
+**Apakah ada garansi untuk slot akrilik?**
+Ada. Slot akrilik kami bergaransi terhadap retak atau pecah selama pemakaian normal.

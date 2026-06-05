@@ -53,10 +53,19 @@ Layanan ini cocok untuk toko retail, kantor cabang, klinik, apotek, salon, bengk
 ## FAQ
 
 **Apakah ada minimum order?**
-Tidak. Kami melayani pesanan 1 unit papan nama untuk店家 kecil.
+Tidak. Kami melayani pesanan 1 unit papan nama untuk toko kecil.
 
 **Berapa lama proses pengerjaan?**
 Standar 3–5 hari kerja setelah desain disetujui.
 
 **Apakah bisa cetak logo custom?**
 Bisa. Cukup kirim logo dalam format CDR/AI/PNG resolusi tinggi.
+
+**Apakah harga sudah termasuk pemasangan?**
+Untuk area Kota Palembang, pemasangan gratis. Untuk luar kota Palembang, ada biaya tambahan transportasi dan akomodasi tim teknisi.
+
+**Apakah bisa dipasang di tembok yang tidak rata atau bertekstur?**
+Bisa. Kami sesuaikan bracket dan sistem pemasangan dengan kondisi dinding. Tim survey akan mengecek lokasi sebelum produksi untuk memastikan hasil pemasangan rapi.
+
+**Apakah bisa dicat ulang atau diganti visualnya nanti?**
+Bisa. Visual sticker bisa diganti tanpa membongkar frame. Untuk plat yang dicat langsung, bisa dicat ulang dengan cat besi/alkyd.

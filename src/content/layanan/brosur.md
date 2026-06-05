@@ -36,6 +36,15 @@ Brosur atau flyer adalah media promosi cetak yang sangat efektif untuk berbagai 
 - Brosur edukasi dan kesehatan
 - Brosur wedding dan acara keluarga
 
+## Proses Pengerjaan
+
+1. **Konsultasi desain** — Tentukan ukuran, model lipatan, dan jenis finishing brosur
+2. **Desain layout** — Tim desainer menyusun tata letak sesuai brand Anda
+3. **Proofing** — Konfirmasi desain final sebelum masuk produksi
+4. **Cetak** — Proses cetak digital dengan mesin presisi tinggi
+5. **Finishing** — Laminating glossy/doff, lipat, dan potong rapi
+6. **QC** — Pengecekan kualitas cetak dan hasil akhir sebelum packing
+
 ## FAQ
 
 **Berapa minimal order?**
@@ -47,3 +56,12 @@ A4, A5, dan A6. Custom size juga tersedia.
 **Berapa perbedaan glossy dan doff?**
 - **Glossy** — Mengkilap, warna lebih pop, kesan modern
 - **Doff** — Elegan, tidak silau, kesan premium
+
+**Apakah harga sudah termasuk desain?**
+Untuk order di atas 500 pcs, desain gratis. Untuk jumlah kecil, ada biaya desain terpisah.
+
+**Bagaimana cara order cetak brosur?**
+Kirim file desain dalam format PDF, CDR, atau AI via WhatsApp. Tim kami akan konfirmasi dan proses.
+
+**Apakah bisa dikirim ke luar kota?**
+Bisa. Kami mengirim via jasa ekspedisi ke seluruh Sumatera Selatan dan luar pulau.

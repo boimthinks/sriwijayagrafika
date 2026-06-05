@@ -15,9 +15,8 @@ const href = `/blog/${data.topik}/${post.id}`;
 const TOPIK_ICONS: Record<string, typeof Megaphone> = {
   'tips': Lightbulb,
   'studi-kasus': FileText,
-  'berita': Newspaper,
   'panduan': BookOpen,
-  'press-release': Megaphone,
+  'kabar': Megaphone,
 };
 const TopikIcon = TOPIK_ICONS[data.topik] ?? Tag;
 

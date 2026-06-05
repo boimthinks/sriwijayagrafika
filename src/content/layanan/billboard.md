@@ -61,3 +61,12 @@ Standar 2–3 tahun untuk outdoor premium, tergantung cuaca dan kualitas cetak.
 
 **Apakah melayani ganti visual?**
 Ya. Kami melayani cetak ulang dan pemasangan visual baru untuk billboard existing.
+
+**Bagaimana cara order pembuatan billboard?**
+Hubungi kami via WhatsApp untuk konsultasi lokasi dan desain. Tim kami akan survei titik lokasi dan memberikan proposal harga.
+
+**Apakah bisa dipasang di luar kota Palembang?**
+Bisa. Kami melayani pemasangan billboard di berbagai kota Sumatera Selatan seperti Prabumulih, Lubuklinggau, Baturaja, dan Muara Enim.
+
+**Berapa lama proses pembuatan billboard baru?**
+Untuk billboard baru dengan pondasi, standar 2-3 minggu tergantung kondisi lapangan dan cuaca.

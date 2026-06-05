@@ -27,6 +27,14 @@ Kop surat adalah kepala surat resmi yang menampilkan logo, nama perusahaan/insta
 - **Pengiriman rapi** — Dikemas per rim (500 lembar)
 - **Cocok untuk semua industri** — Instansi, korporat, UMKM, yayasan
 
+## Proses Pengerjaan
+
+1. Konsultasi desain dan layout kop surat sesuai identitas perusahaan atau instansi.
+2. Persiapan file cetak dengan format CMYK resolusi 300 DPI untuk hasil tajam.
+3. Proses cetak menggunakan mesin digital press pada kertas HVS atau Concorde premium.
+4. Pemeriksaan kualitas cetak meliputi ketajaman logo, kesesuaian warna, dan kebersihan kertas.
+5. Packing per rim dengan plastik wrap agar rapi dan siap dikirim ke seluruh Palembang dan Sumatera Selatan.
+
 ## Aplikasi Umum
 
 - Kantor perusahaan dan korporat
@@ -46,3 +54,12 @@ Ya. Tim desainer internal kami siap membantu layout kop surat profesional.
 
 **Berapa minimal order?**
 1 rim. Untuk korporat, biasanya 5–10 rim sekaligus.
+
+**Apakah bisa cetak dengan kertas berwarna?**
+Bisa. Kami menyediakan kertas Concorde berbagai warna untuk tampilan kop surat yang lebih eksklusif.
+
+**Bagaimana cara kirim desain?**
+Anda bisa kirim file melalui WhatsApp atau email dalam format PDF, CDR, atau AI.
+
+**Apakah harga sudah termasuk desain?**
+Untuk revisi kecil sudah termasuk. Untuk pembuatan desain baru dari awal ada biaya tambahan sesuai kerumitan.

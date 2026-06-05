@@ -37,6 +37,15 @@ Kwitansi adalah bukti pembayaran resmi yang dikeluarkan penjual kepada pembeli. 
 - Properti (untuk sewa, jual-beli)
 - Donasi dan yayasan sosial
 
+## Proses Pengerjaan
+
+1. **Konsultasi format** — Tentukan ukuran, jumlah rangkap, dan nomor urut
+2. **Kirim logo & kop** — Siapkan logo perusahaan dan format kop kwitansi
+3. **Desain layout** — Layout format kwitansi sesuai kebutuhan operasional
+4. **Proofing** — Konfirmasi desain dan nomorator sebelum produksi
+5. **Cetak** — Proses cetak dengan perforasi nomor urut otomatis
+6. **Finishing** — Jilid rapi, potong presisi, dan QC
+
 ## FAQ
 
 **Berapa isi per buku?**
@@ -47,3 +56,12 @@ Bisa. Kami melayani custom ukuran sesuai kebutuhan.
 
 **Berapa minimal order?**
 10 buku per order.
+
+**Apakah bisa kwitansi rangkap 3?**
+Bisa. Tersedia pilihan rangkap 2 (putih-kuning) atau rangkap 3 (putih-kuning-merah muda).
+
+**Apakah nomor urut bisa disesuaikan?**
+Bisa. Nomor awal dapat disesuaikan dengan kebutuhan pencatatan Anda.
+
+**Bagaimana cara order?**
+Hubungi via WhatsApp, kirim contoh format atau logo. Tim kami akan proses.

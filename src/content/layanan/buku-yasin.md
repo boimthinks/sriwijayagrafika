@@ -35,6 +35,15 @@ Buku Yasin adalah bacaan yang umum dibaca saat tahlilan atau haul. Buku Yasin cu
 - Peringatan kematian kantor/instansi
 - Souvenir haul tokoh masyarakat
 
+## Proses Pengerjaan
+
+1. **Konsultasi** — Diskusi kebutuhan: jumlah buku, jenis kertas, dan desain cover
+2. **Kirim data** — Foto almarhum, biodata, dan teks yang ingin ditampilkan
+3. **Desain layout** — Tim desainer menyusun halaman custom termasuk foto dan teks
+4. **Proofing** — Review desain sebelum masuk produksi
+5. **Cetak & jilid** — Proses cetak isi buku dan jilid hard cover bludru
+6. **Finishing** — Gold emboss nama, laminasi, QC, dan packing
+
 ## FAQ
 
 **Berapa minimal order?**
@@ -45,3 +54,12 @@ Standar 5–10 hari kerja, tergantung jumlah dan tingkat kustomisasi.
 
 **Apakah bisa tambah pesan/biodata almarhum?**
 Bisa. Silakan kirim detailnya dan tim kami akan desain layout-nya.
+
+**Apakah harga sudah termasuk desain cover?**
+Ya, harga sudah termasuk desain cover, layout halaman custom, dan gold emboss.
+
+**Bagaimana cara mengirim foto untuk halaman custom?**
+Kirim foto via WhatsApp dengan resolusi tinggi agar hasil cetak maksimal.
+
+**Apakah bisa dikirim ke luar Palembang?**
+Bisa. Kami kirim via ekspedisi ke seluruh Sumatera Selatan dan luar daerah.

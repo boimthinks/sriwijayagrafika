@@ -61,3 +61,12 @@ LED hemat energi. Contoh: neon box 1×1 m konsumsi sekitar 30–50 watt.
 
 **Berapa lama umur LED?**
 LED Samsung yang kami pakai rata-rata 30.000–50.000 jam pemakaian (8–10 tahun pemakaian normal).
+
+**Apakah harga sudah termasuk biaya instalasi?**
+Harga material dihitung per meter persegi. Biaya instalasi terpisah dan disesuaikan dengan lokasi serta tinggi pemasangan. Kami akan berikan quote lengkap setelah survey.
+
+**Berapa lama estimasi pengerjaan neon box?**
+Standar 5–10 hari kerja tergantung ukuran dan kompleksitas desain. Untuk neon box dengan bentuk custom atau ukuran besar, estimasi bisa 7–14 hari.
+
+**Apakah bisa mengganti visual setelah neon box jadi?**
+Bisa. Untuk neon box dengan sistem front cutting sticker, visual bisa diganti dengan membuka cover akrilik dan merekatkan stiker baru. Untuk backlit vinyl, perlu cetak ulang dan ganti cover.

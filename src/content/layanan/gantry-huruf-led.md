@@ -64,3 +64,12 @@ Modul LED hemat energi. Contoh: huruf 30cm konsumsi sekitar 5–10 watt per huru
 
 **Apakah huruf LED bisa RGB?**
 Bisa. Kami melayani LED RGB dengan controller untuk pergantian warna dinamis.
+
+**Apakah harga sudah termasuk biaya instalasi?**
+Harga per cm tinggi belum termasuk instalasi. Biaya pasang dihitung berdasarkan tinggi pemasangan dan akses lokasi. Tim kami akan survey dan berikan rincian biaya instalasi.
+
+**Berapa lama estimasi pengerjaan huruf LED?**
+Standar 7–14 hari kerja tergantung jumlah huruf, varian pencahayaan, dan tingkat kerumitan. Untuk proyek dengan banyak huruf atau RGB, bisa lebih lama.
+
+**Apakah huruf LED bisa dipasang di dinding bata, granit, atau kaca?**
+Bisa. Kami sediakan bracket dan sistem mounting yang disesuaikan dengan jenis dinding. Untuk dinding kaca, kami gunakan bracket transparan atau sistem drilled hole tanpa merusak estetika.

@@ -35,6 +35,14 @@ Layanan ini banyak dipakai oleh toko retail, kantor, hotel, restoran, bank, dan 
 - **Desain gratis** — Tim desainer internal membantu visualisasi mockup sebelum produksi
 - **Pemasangan profesional** — Tim teknisi bersertifikat untuk area Palembang & Sumatera Selatan
 
+## Aplikasi & Penggunaan
+
+- Branding fasad hotel dan restoran di sepanjang Jalan Sudirman dan Jalan Basuki Rahmat Palembang
+- Plang nama toko retail di mal seperti Palembang Square, Palembang Icon, dan PIM
+- Identitas instansi pemerintah: Gedung Walikota Palembang, Kejati Sumsel, dan kantor dinas
+- Signage lobby kantor korporasi dan perbankan di kawasan Jakabaring dan Demang Lebar Daun
+- Nama tenant food court, cafe, dan co-working space dengan aksen LED backlit
+
 ## Pilihan Material
 
 | Material       | Karakteristik                              | Cocok Untuk                  |
@@ -62,7 +70,16 @@ Standar 5–10 hari kerja setelah desain disetujui, tergantung kompleksitas dan 
 Bisa. Kami melayani huruf timbul non-LED (studi) maupun LED (frontlit/backlit).
 
 **Berapa minimum order?**
-Tanpa minimum. Kami melayani pesanan 1 huruf untuk店家 kecil.
+Tanpa minimum. Kami melayani pesanan 1 huruf untuk toko kecil.
 
 **Bagaimana cara order?**
 Gunakan kalkulator di halaman ini untuk estimasi instan, atau hubungi WhatsApp admin untuk konsultasi desain.
+
+**Apakah harga sudah termasuk biaya instalasi?**
+Harga material terpisah dari biaya instalasi. Kami akan berikan rincian biaya instalasi setelah survey lokasi. Untuk area Palembang, tim kami siap pasang dalam 1-2 hari setelah produksi selesai.
+
+**Apakah bisa custom font atau tulisan sesuai logo?**
+Bisa. Kami menerima file desain dalam format CDR, AI, atau PDF. Tim desainer juga siap membantu menyesuaikan font sesuai identitas brand Anda.
+
+**Bagaimana cara pemesanan untuk luar kota Palembang?**
+Kami melayani pemesanan dari seluruh Sumatera Selatan. Proses konsultasi dan desain bisa dilakukan via WhatsApp. Produk dikirim melalui ekspedisi, dan instalasi bisa diatur dengan tim kami jika diperlukan.

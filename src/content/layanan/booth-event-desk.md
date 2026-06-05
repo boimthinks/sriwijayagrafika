@@ -30,7 +30,7 @@ Kami melayani produksi booth custom sesuai kebutuhan event Anda.
 - **Portable & ringan** — Satu set booth bisa dibawa oleh 1 orang
 - **Mudah dirakit** — Knock-down system, rata-rata <5 menit setup
 - **Custom branding** — Visual full-color dengan finishing glossy laminating
-- **Header atas** — Tambahan panel atas untuk招牌/headline
+- **Header atas** — Tambahan panel atas untuk papan nama/headline
 - **Tas jinjing** — Semua booth dilengkapi tas kanvas untuk mobilitas
 
 ## Aplikasi Umum
@@ -65,3 +65,12 @@ Dengan perawatan baik, rangka PVC/aluminium bisa dipakai 50–100 kali event.
 
 **Apakah melayani desain booth custom?**
 Ya. Tim desainer internal kami siap membantu layout dan visual sesuai brief.
+
+**Berapa lama waktu produksi booth?**
+Standar 3–7 hari kerja tergantung jumlah unit dan kompleksitas desain. Untuk pesanan banyak, kami bisa atur jadwal produksi bertahap.
+
+**Apakah bisa pesan dalam jumlah banyak untuk event besar?**
+Bisa. Kami melayani produksi hingga puluhan set untuk event expo, bazaar, atau peluncuran produk. Semakin banyak jumlah, semakin hemat biaya per unit.
+
+**Apakah tersedia aksesori tambahan seperti rak display atau lampu?**
+Kami bisa menambahkan rak display lipat, lampu LED strip, atau laci kecil sesuai kebutuhan. Konsultasikan kebutuhan aksesori Anda saat pemesanan.

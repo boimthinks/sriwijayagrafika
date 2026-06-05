@@ -41,7 +41,7 @@ Dengan teknologi laser cutting presisi, hasil akhir produk kami rapi, halus, dan
 - Plakat penghargaan dan trophy
 - Gantungan kunci custom
 - Podium pidato dan mimbar
-- Name tag,展位 signage, dan label
+- Name tag, booth signage, dan label
 - Rak display dan box penyimpanan
 - Partisi acrylic dan sneeze guard
 
@@ -58,10 +58,19 @@ Dengan teknologi laser cutting presisi, hasil akhir produk kami rapi, halus, dan
 ## FAQ
 
 **Berapa minimum order?**
-Tidak ada minimum. Kami melayani pesanan 1 pcs untuk店家 kecil.
+Tidak ada minimum. Kami melayani pesanan 1 pcs untuk toko kecil.
 
 **Format desain yang dibutuhkan?**
 File CDR/AI vector untuk hasil terbaik. PNG resolusi tinggi juga bisa.
 
 **Berapa ketebalan akrilik tersedia?**
 Standar 2mm, 3mm, 5mm, 8mm, 10mm. Custom hingga 20mm.
+
+**Apakah bisa grafir logo di permukaan akrilik?**
+Bisa. Kami menggunakan mesin grafir komputer untuk mengukir logo, tulisan, atau pola di permukaan akrilik. Hasil grafir rapi dan presisi. Tersedia grafir isi warna untuk hasil lebih kontras.
+
+**Berapa lama waktu produksi produk akrilik?**
+Tergantung jenis produk. Untuk nomor meja atau gantungan kunci, estimasi 2–4 hari kerja. Untuk produk besar seperti podium atau display counter, 7–14 hari kerja.
+
+**Apakah produk akrilik mudah perawatannya?**
+Sangat mudah. Cukup lap dengan kain lembut dan pembersih kaca. Akrilik tidak mudah berkarat atau berjamur, cocok untuk penggunaan indoor jangka panjang.

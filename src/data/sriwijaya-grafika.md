@@ -295,7 +295,7 @@ Cuplikan proyek yang sering dikutip di media & website:
    - `pengantar` (50–500 char) → paragraf pembuka plain style
    - `body` → hanya H2 sections (`## Judul`) + sub-konten. **JANGAN** tulis H1, paragraf pembuka, atau paragraf penutup di body — itu sudah di `titleSeo` & `pengantar`/`kesimpulan`.
    - `kesimpulan` (50–500 char) → paragraf penutup plain style, biasanya dengan CTA WhatsApp
-   - `topik` → enum: `tips | studi-kasus | berita | panduan | press-release`
+   - `topik` → enum: `tips | studi-kasus | panduan | kabar`
    - `imgurl` (WAJIB) → path ke `public/img/blog/<id>.<ext>`
    - `imgalt` (opsional, fallback ke `titleSeo`)
    - `date` → format Indonesia "DD NamaBulan YYYY" (e.g. `"12 Desember 2025"`)
@@ -406,7 +406,7 @@ titleSeo: "Judul SEO Maks 12 Kata"        # untuk H1 + og:title + JSON-LD headli
 slug: "huruf-kecil-dengan-strip"          # nama file MD
 excerpt: "20-300 char untuk meta description"   # 20-300 char
 date: "12 Desember 2025"                  # format "DD NamaBulan YYYY"
-topik: "tips"                             # enum: tips | studi-kasus | berita | panduan | press-release
+topik: "tips"                             # enum: tips | studi-kasus | panduan | kabar
 imgurl: "/img/blog/huruf-timbul-tahan-lama.webp"   # WAJIB
 imgalt: "Alt text untuk SEO & a11y"       # opsional, fallback ke titleSeo
 pengantar: "50-500 char paragraf pembuka"  # plain style, TANPA heading
@@ -547,7 +547,7 @@ Agar tulisan 100% terasa ditulis manusia DAN layak dikutip AI Overviews Google:
 
 ### 11.6 Template Pembuka Artikel (Variasi)
 
-Agar setiap artikel terasa fresh, **variasikan hook pembuka** dengan 5 tipe berikut secara bergantian:
+Agar setiap artikel terasa fresh, **variasikan hook pembuka** dengan 6 tipe berikut secara bergantian:
 
 #### Tipe 1: Pertanyaan Provokatif
 
@@ -568,6 +568,10 @@ Agar setiap artikel terasa fresh, **variasikan hook pembuka** dengan 5 tipe beri
 #### Tipe 5: Direct & Casual
 
 > "Kalau Anda sedang baca artikel ini, kemungkinan besar Anda sedang cari material signage yang tepat untuk bisnis di Palembang. Kabar baiknya, Anda datang ke tempat yang tepat."
+
+#### Tipe 6: Ajakan Bersama
+
+> "Mari kita bahas bagaimana cara merawat neon box yang benar, langkah-langkah rutin, dan tanda awal kerusakan yang harus diwaspadai."
 
 ### 11.7 Panduan CTA (Call-to-Action)
 
@@ -745,10 +749,11 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `standar-kemnaker-rambu-k3-pabrik` | Standar Kemnaker rambu K3 pabrik, checklist 12 poin wajib yang sering diabaikan kontraktor | 29 Desember 2025 | panduan | Fakta/Data |
 | `uji-akrilik-vs-galvanil` | Uji 6 bulan, akrilik vs galvanil untuk huruf timbul di iklim tropis lembap Palembang | 12 Januari 2026 | tips | Skenario Visual |
 | `signage-korporat-pt-andalas-sakti` | Studi kasus signage korporat PT Andalas Sakti Perkasa, huruf timbul akrilik gedung kantor Palembang | 19 Januari 2026 | studi-kasus | Provokatif |
-| `workshop-talang-jambe-produksi` | Behind the scene workshop Talang Jambe, proses produksi huruf timbul dari laser cutting sampai finishing | 26 Januari 2026 | berita | Skenario Visual |
+| `workshop-talang-jambe-produksi` | Behind the scene workshop Talang Jambe, proses produksi huruf timbul dari laser cutting sampai finishing | 26 Januari 2026 | kabar | Skenario Visual |
 | `hitung-led-strip-neon-box` | Cara menghitung kebutuhan LED strip untuk neon box sesuai kapasitas listrik toko, contoh kasus 1x1 m | 2 Februari 2026 | tips | Fakta/Data |
 | `panduan-izin-reklame-palembang` | Panduan izin reklame Palembang, syarat dokumen, biaya pajak, dan timeline DPMPTSP yang wajib diketahui pemilik usaha | 9 Februari 2026 | panduan | Provokatif |
-| `16-tahun-sriwijaya-grafika` | Sriwijaya Grafika Palembang merayakan 16 tahun berkarya, kilas balik perjalanan dari workshop kecil Talang Jambe | 23 Februari 2026 | press-release | Direct & Casual |
+| `16-tahun-sriwijaya-grafika` | Sriwijaya Grafika Palembang merayakan 16 tahun berkarya, kilas balik perjalanan dari workshop kecil Talang Jambe | 23 Februari 2026 | kabar | Direct & Casual |
+| `rawat-neon-box-agar-awet` | Cara merawat neon box agar awet 5 tahun, tips dari produsen, membersihkan debu, cek driver, dan tanda-tanda kerusakan dini | 5 Juni 2026 | tips | Pertanyaan Provokatif |
 
 
 ### 12.2 Topik yang Masih Open (Ide Artikel Mendatang)
@@ -779,6 +784,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 - **2025-Q4:** Judul commodity ("Tips Memilih Huruf Timbul") → update judul pakai problem-centric angle. Pelajaran: heading harus punya "hook" sejak baris pertama.
 - **2025-Q4:** Artikel yang hanya copy-paste dari MD layanan → tidak add value. Pelajaran: setiap artikel harus punya **sudut pandang unik** yang tidak ada di halaman layanan itu sendiri.
 - **2026-Q1 (artikel #6 `panduan-izin-reklame-palembang`):** AI agent secara tidak sengaja menyisipkan 25 instance Hanzi 招牌 (zhāopái = "signage" dalam bahasa Mandarin) ke seluruh artikel sebagai variasi kata untuk "signage". Pelajaran: **setiap artikel WAJIB di-grep dengan pattern `[\u4e00-\u9fff\u3040-\u309f\u30a0-\u30ff\uac00-\ud7af\u0600-\u06ff]` sebelum publish** untuk mendeteksi aksara non-Latin (CJK, Arab, Thailand, Sirilik, Ibrani). Pola yang sama juga berhasil mendeteksi 5 kasus CJK di artikel #7, 1 di #8, dan 3 di #3. Self-grep CJK = **wajib** di workflow check kualitas per artikel, sebelum `npm run build`.
+- **2026-Q2 (artikel #10 `rawat-neon-box-agar-awet`):** Artikel perawatan neon box adalah pertama yang menyasar topik "after-sales" — bukan sebelum beli, tapi setelah instalasi. Pelajaran: ada celah konten yang belum digarap sama sekali, yaitu edukasi pasca-pembelian. Topik perawatan, troubleshooting, dan garansi bisa jadi seri tersendiri. Artikel ini juga menggunakan referensi portofolio neon box (Super Indo, SPBU Pertamina, Kedai Pempek Maris) sebagai social proof yang relevan dengan topik.
 
 ---
 
@@ -886,8 +892,7 @@ Pakai **warna berbeda per topik** agar feed blog (`/blog` listing) terlihat vari
 | `tips` | `#224da8` → `#3c5a98` (biru brand) | Lightbulb, Wrench, Search | `otopsi-las-stainless-berkarat` |
 | `studi-kasus` | `#5e3a8a` → `#8a5cb8` (ungu) | FileText, TrendingUp | `neon-box-cafe-pempek`, `signage-korporat-pt-andalas-sakti` |
 | `panduan` | `#0a4d3c` → `#1a7a5e` (hijau tosca) | BookOpen, ClipboardCheck | `standar-kemnaker-rambu-k3-pabrik`, `panduan-izin-reklame-palembang` |
-| `berita` | `#c2410c` → `#ea580c` (oranye gelap) | Newspaper, Camera | `workshop-talang-jambe-produksi` |
-| `press-release` | `#ff6634` → `#ff8a5e` (oranye brand) | Megaphone, Award | `16-tahun-sriwijaya-grafika` |
+| `kabar` | `#ff6634` → `#ff8a5e` (oranye brand) | Megaphone, Award, Camera | `workshop-talang-jambe-produksi`, `16-tahun-sriwijaya-grafika` |
 
 **Aturan rotasi:**
 
@@ -904,8 +909,8 @@ Pakai **warna berbeda per topik** agar feed blog (`/blog` listing) terlihat vari
 - **studi-kasus** (`signage-korporat-pt-andalas-sakti`): gedung bertingkat — trapezoid + garis horizontal.
 - **panduan** (`standar-kemnaker-rambu-k3-pabrik`): clipboard dengan checklist — `<rect>` + 3 `<line>` + check mark.
 - **panduan** (`panduan-izin-reklame-palembang`): clipboard + stempel centang — `<rect>` + 4 baris + `<circle>` stempel.
-- **berita** (`workshop-talang-jambe-produksi`): kamera foto — `<rect>` body + `<circle>` lens + flash triangle.
-- **press-release** (`16-tahun-sriwijaya-grafika`): angka "16" besar di tengah — `<rect>` frame + `<text>` "16" + garis dekoratif.
+- **kabar** (`workshop-talang-jambe-produksi`): kamera foto — `<rect>` body + `<circle>` lens + flash triangle.
+- **kabar** (`16-tahun-sriwijaya-grafika`): angka "16" besar di tengah — `<rect>` frame + `<text>` "16" + garis dekoratif.
 
 **Aturan icon:**
 

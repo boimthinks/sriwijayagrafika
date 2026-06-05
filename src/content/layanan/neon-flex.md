@@ -62,3 +62,12 @@ Standar 30.000–50.000 jam pemakaian (5–10 tahun pemakaian normal).
 
 **Apakah bisa custom tulisan tangan?**
 Bisa. Cukup kirim contoh tulisan (foto/ilustrasi) dan kami buatkan layout-nya.
+
+**Apakah harga sudah termasuk adaptor dan instalasi?**
+Harga per cm panjang sudah termasuk adaptor DC 12V standar. Instalasi di lokasi dikenakan biaya terpisah, namun untuk pemasangan sederhana bisa dilakukan sendiri karena sistem plug-and-play.
+
+**Berapa lama waktu produksi neon flex?**
+Standar 3–7 hari kerja setelah desain disetujui. Untuk tulisan/logo dengan bentuk rumit, estimasi 5–10 hari kerja.
+
+**Apakah neon flex bisa dimatikan sebagian atau efek running text?**
+Untuk efek running text atau animasi, kami gunakan controller RGB yang bisa diprogram. Untuk efek mati-hidup bergantian, bisa diatur per segmen. Silakan konsultasikan efek yang diinginkan saat pemesanan.

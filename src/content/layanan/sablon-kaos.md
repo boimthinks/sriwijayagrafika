@@ -27,6 +27,15 @@ Kaos sablon custom adalah media branding paling populer untuk seragam event, kom
 - **Ukuran lengkap** — S, M, L, XL, XXL, atau custom size
 - **Tinta awet** — Tidak mudah luntur, tahan cuci berulang
 
+## Proses Pengerjaan
+
+1. Konsultasi bahan kaos, teknik sablon, dan jumlah warna desain dengan klien.
+2. Persiapan kaos polos sesuai ukuran S hingga XXL dan warna yang dipesan.
+3. Pembuatan screen atau film untuk masing-masing warna desain sablon.
+4. Proses sablon menggunakan teknik rubber, plastisol, DTG, atau sesuai permintaan.
+5. Pengeringan tinta dengan conveyor dryer agar tahan lama dan tidak luntur saat dicuci.
+6. Quality control hasil sablon dan pemeriksaan kebersihan kaos sebelum packing.
+
 ## Aplikasi Umum
 
 - Seragam kantor dan corporate
@@ -47,3 +56,12 @@ Kaos sablon custom adalah media branding paling populer untuk seragam event, kom
 
 **Berapa lama proses?**
 Standar 7–14 hari kerja, tergantung jumlah dan teknik sablon.
+
+**Apakah harga sudah termasuk kaos?**
+Ya, harga sudah termasuk kaos polos dan sablon. Jika bawa kaos sendiri, ada potongan harga.
+
+**Apakah bisa sablon untuk warna kaos gelap?**
+Bisa. Untuk kaos gelap kami menggunakan sablon rubber dengan base putih agar warna desain tetap cerah.
+
+**Apakah ada contoh hasil sablon yang bisa dilihat?**
+Ada. Kami punya portofolio hasil sablon yang bisa dikirim via WhatsApp atau dilihat di workshop.

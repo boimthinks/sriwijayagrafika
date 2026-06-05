@@ -113,14 +113,19 @@ const servicesSchema = {
     {primary.length > 0 && (
       <section id="layanan-utama" data-section="utama" class="py-12 md:py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="mb-8 space-y-2">
+          <div class="mb-8">
             <h2 class="text-2xl md:text-3xl font-extrabold text-neutral-800 tracking-tight">Advertising &amp; Reklame</h2>
-            <p class="text-sm text-neutral-500 max-w-2xl">
-              Produk unggulan signage 3D, papan reklame, dan media promosi luar ruang untuk meningkatkan visibilitas bisnis Anda.
-            </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-section-grid="utama">
             {primary.map((service) => <ServiceCard service={service} />)}
+          </div>
+          <div class="mt-10 space-y-2">
+            <p class="text-sm text-neutral-600 max-w-7xl leading-relaxed">
+              Kategori ini mencakup 10 layanan unggulan untuk storefront, signage outdoor, dan media promosi visual. Produk flagship kami adalah <strong>huruf timbul LED</strong> dengan pilihan bahan stainless, akrilik, atau galvanil — cocok untuk nama toko, brand gedung, hingga instansi pemerintah seperti Gedung Walikota Palembang dan Kejati Sumsel yang telah menggunakan jasa instalasi kami dengan garansi 1 tahun. Selain huruf timbul, kami memproduksi <strong>neon box custom</strong> untuk brand retail dan SPBU Pertamina, <strong>pylon totem</strong> untuk jalan utama, <strong>neon flex</strong> untuk huruf melengkung, <strong>gantry huruf LED</strong> untuk area parkir dan drop zone, <strong>booth event</strong> untuk pameran, <strong>plang toko</strong> untuk kantor dan ruko, serta <strong>rambu K3</strong> standar Kemnaker untuk keselamatan kerja di pabrik dan gudang. Tersedia juga <strong>produk akrilik custom</strong> seperti display, name tag, dan trophy.
+            </p>
+            <p class="text-sm text-neutral-500 max-w-7xl leading-relaxed mt-2">
+              Semua produk reklame produksi sendiri di workshop Talang Jambe dengan material berkualitas. Setiap instalasi dilindungi garansi 1 tahun penuh — termasuk untuk proyek korporat skala besar.
+            </p>
           </div>
         </div>
       </section>
@@ -129,14 +134,19 @@ const servicesSchema = {
     {secondary.length > 0 && (
       <section id="layanan-secondary" data-section="secondary" class="py-12 md:py-16 bg-neutral-50/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="mb-8 space-y-2">
+          <div class="mb-8">
             <h2 class="text-2xl md:text-3xl font-extrabold text-neutral-800 tracking-tight">Percetakan &amp; Penunjang</h2>
-            <p class="text-sm text-neutral-500 max-w-2xl">
-              Percetakan kantor, digital printing, souvenir, dan alat peraga untuk kebutuhan operasional dan promosi massal.
-            </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-section-grid="secondary">
             {secondary.map((service) => <ServiceCard service={service} />)}
+          </div>
+          <div class="mt-10 space-y-2">
+            <p class="text-sm text-neutral-600 max-w-7xl leading-relaxed">
+              Meliputi 21 layanan percetakan dan penunjang untuk kebutuhan operasional kantor hingga promosi massal. Mulai dari cetak nota, kwitansi, kop surat, kartu nama, stempel, amplop, brosur, buku yasin, map hardcover, undangan, dan papan struktur organisasi. Untuk kebutuhan digital printing, kami melayani cetak stiker cutting dan digital, spanduk, banner, dan poster dengan hasil tajam dan warna akurat.
+            </p>
+            <p class="text-sm text-neutral-600 max-w-7xl leading-relaxed mt-2">
+              Tersedia juga souvenir dan merchandise custom: mug keramik, goodie bag, pin, gantungan kunci, dan pena promosi untuk acara perusahaan atau kampanye brand. Untuk kebutuhan garmen, kami melayani sablon kaos dengan desain custom. Semua produk dikerjakan dengan mesin modern di workshop Talang Jambe dengan hasil rapi, harga bersaing, dan estimasi pengerjaan yang jelas.
+            </p>
           </div>
         </div>
       </section>
@@ -150,6 +160,58 @@ const servicesSchema = {
         </button>
       </div>
     </div>
+
+    <!-- Section D: Trust & Social Proof -->
+    <section class="py-14 md:py-18 bg-neutral-50/50 border-t border-neutral-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10 space-y-2">
+          <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-[#ff6634]">Keunggulan</span>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-neutral-800 tracking-tight">
+            Mengapa Ribuan Klien Memilih Sriwijaya Grafika
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div class="bg-white rounded-2xl p-6 border border-neutral-100 shadow-sm space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-[#224da8]/10 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#224da8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 class="text-sm font-extrabold text-neutral-800">Produksi Sendiri, Bukan Makloon</h3>
+            <p class="text-xs text-neutral-500 leading-relaxed">
+              Semua produk signage, reklame, dan percetakan dikerjakan di workshop Talang Jambe. Kami tidak menjadi perantara — dari desain, produksi, hingga instalasi, semuanya dalam satu tangan. Ini yang membuat kualitas dan estimasi waktu lebih terkontrol.
+            </p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 border border-neutral-100 shadow-sm space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-[#ff6634]/10 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ff6634" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 class="text-sm font-extrabold text-neutral-800">Garansi 1 Tahun Semua Instalasi</h3>
+            <p class="text-xs text-neutral-500 leading-relaxed">
+              Setiap instalasi huruf timbul, neon box, dan reklame outdoor kami beri garansi 1 tahun penuh. Termasuk untuk proyek besar seperti Gedung Walikota Palembang, Kejati Sumsel, dan mall di Palembang. Kalau ada kerusakan karena material atau pemasangan, kami perbaiki gratis.
+            </p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 border border-neutral-100 shadow-sm space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 class="text-sm font-extrabold text-neutral-800">Konsultasi Gratis + Mockup 3D</h3>
+            <p class="text-xs text-neutral-500 leading-relaxed">
+              Konsultasi tanpa biaya, termasuk mockup 3D desain signage sebelum produksi. Anda bisa lihat hasil akhirnya terlebih dulu, baru memutuskan. Respon WhatsApp cepat dengan sentuhan personal — tanpa template robot.
+            </p>
+          </div>
+        </div>
+        <div class="text-center mt-10 space-y-3">
+          <p class="text-sm md:text-sm text-neutral-600 leading-relaxed">
+            Dipercaya oleh Gedung Walikota Palembang, Kejati Sumsel, SPBU Pertamina, Super Indo, DPRD OKI, SMP Islam Bina Insani, Riyadh Regency 3, dan puluhan brand lokal di Palembang. Liputan media: Sriwijaya Post (Tribun Sumsel), Berita Sumsel, PAL-TV, dan kanal YouTube WhatsApp Business Official.
+          </p>
+          <p class="text-sm md:text-sm text-neutral-600 leading-relaxed">
+            Sejak 2008, Sriwijaya Grafika telah melayani ribuan klien di Palembang dan Sumatera Selatan untuk kebutuhan advertising, reklame, dan percetakan. Mulai dari huruf timbul LED stainless untuk storefront premium, neon box custom untuk brand retail dan SPBU, hingga rambu K3 standar Kemnaker untuk area pabrik — semua diproduksi sendiri di workshop Talang Jambe dengan garansi 1 tahun penuh. Kami juga melayani percetakan kantor: kartu nama, nota, kop surat, stempel, brosur, buku yasin, mug custom, goodie bag, dan souvenir promosi. Setiap layanan bisa dikonsultasikan gratis, termasuk mockup 3D sebelum produksi.
+          </p>
+          <p class="text-sm md:text-sm text-neutral-600 leading-relaxed">
+            Tidak seperti vendor yang hanya menjadi perantara, kami memproduksi langsung di workshop sendiri. Tim produksi yang memberdayakan tenaga lokal — termasuk penyandang Tuna Rungu yang terampil — memastikan setiap produk signage dan cetakan dikerjakan dengan standar kualitas yang konsisten. Dengan pengalaman belasan tahun menangani proyek dari skala satu huruf timbul hingga signage korporat gedung pemerintah, kami paham bahwa setiap bisnis punya kebutuhan yang unik.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <section class="py-12 md:py-16 bg-white border-t border-neutral-100">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">

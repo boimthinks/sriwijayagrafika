@@ -36,6 +36,15 @@ Amplop custom dengan logo dan alamat perusahaan memberikan kesan profesional pad
 - Yayasan dan komunitas
 - Toko online (untuk korespondensi)
 
+## Proses Pengerjaan
+
+1. **Konsultasi ukuran** — Tentukan ukuran amplop dan jumlah warna cetak
+2. **Kirim logo** — Siapkan file logo dalam format PNG, AI, atau CDR
+3. **Desain layout** — Tim desainer menata letak logo, alamat, dan elemen lainnya
+4. **Proofing** — Approval desain sebelum produksi
+5. **Cetak** — Proses cetak sesuai spesifikasi warna yang disepakati
+6. **Finishing** — Lem perekat kupas-tempel, potong, packing, dan QC
+
 ## FAQ
 
 **Berapa minimal order?**
@@ -46,3 +55,12 @@ Bisa. Kami melayani cetak alamat lengkap (logo, nama, alamat, telepon) di pojok 
 
 **Berapa ukuran paling umum?**
 Folio (26×38 cm) dan A4 (22×30 cm) paling banyak dipakai untuk korespondensi.
+
+**Apakah bisa cetak full color?**
+Bisa. Selain cetak 1-2 warna, kami juga melayani cetak full color CMYK untuk amplop premium.
+
+**Berapa lama proses cetak amplop?**
+Standar 5-7 hari kerja untuk 1-5 kotak. Untuk jumlah besar bisa menyesuaikan.
+
+**Bagaimana cara order?**
+Hubungi kami via WhatsApp dengan menyertakan ukuran, jumlah, dan file logo.

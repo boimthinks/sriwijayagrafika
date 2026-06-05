@@ -56,7 +56,7 @@ src/
 │   ├── portfolio.md                     # Daftar portofolio (gray-matter)
 │   └── sriwijaya-grafika.md             # Knowledge base untuk AI Agent
 ├── components/
-│   ├── *.astro                          # Server-rendered: Navbar, Footer, Hero, ServiceCard, BlogCard, dll
+│   ├── *.astro                          # Server-rendered: Navbar, Footer, Hero, ServiceCard, BlogCard, FloatingWhatsApp, dll
 │   └── *.tsx                            # React islands: AboutAndMediaIsland, OrderHistory, dll
 ├── layouts/
 │   └── Layout.astro                     # <head> + JSON-LD LocalBusiness base
@@ -84,48 +84,6 @@ src/
 │   └── global.css                       # Tailwind v4 + .prose-article + custom
 └── env.d.ts
 ```
-
-Catatan: Halaman media (`src/pages/media.astro`) tidak disertakan dalam navigasi navbar untuk menjaga fokus pada layanan utama, namun tetap dapat diakses secara langsung melalui URL `/media` dan dapat dimodifikasi kapan saja jika diperlukan.
-src/
-├── content.config.ts                    # Zod schema: layanan, blog
-├── content/
-│   ├── layanan/                         # 31 file MD, satu per layanan
-│   │   ├── huruf-timbul.md
-│   │   ├── neon-box.md
-│   │   └── ... (29 lainnya)
-│   └── blog/                            # 9 artikel published (struktur flat, lihat catatan di §4)
-├── data/                                # Static data, di-parse saat build
-│   ├── data.ts                          # BUSINESS_INFO, dll
-│   ├── portfolio.md                     # Daftar portofolio (gray-matter)
-│   └── sriwijaya-grafika.md             # Knowledge base untuk AI Agent
-├── components/
-│   ├── *.astro                          # Server-rendered: Navbar, Footer, Hero, ServiceCard, BlogCard, dll
-│   └── *.tsx                            # React islands: AboutAndMediaIsland, OrderHistory, dll
-├── layouts/
-│   └── Layout.astro                     # <head> + JSON-LD LocalBusiness base
-├── lib/
-│   ├── data.ts                          # Static business data
-│   ├── portfolio.ts                     # Parse portfolio.md → PortfolioItem[]
-│   ├── blog.ts                          # parseIndonesianDate, TOPIKS, AUTHOR_NAME, dll
-│   └── types.ts                         # Shared TypeScript types
-├── pages/
-│   ├── index.astro                      # Beranda
-│   ├── portofolio.astro                 # Galeri + lightbox
-│   ├── media.astro                      # Profil + liputan
-│   ├── sitemap.astro                    # Sitemap HTML manusia
-│   ├── 404.astro
-│   ├── layanan/
-│   │   ├── index.astro                  # Listing + filter
-│   │   └── [...slug].astro              # Detail layanan (dynamic)
-│   └── blog/
-│       ├── index.astro                  # Listing semua artikel
-│       ├── rss.xml.ts                   # RSS feed
-│       ├── [topik]/
-│       │   ├── index.astro              # Arsip per topik
-│       │   └── [slug].astro             # Detail artikel
-├── styles/
-│   └── global.css                       # Tailwind v4 + .prose-article + custom
-└── env.d.ts
 
 public/
 ├── favicon.svg
@@ -163,7 +121,7 @@ Website punya **3 sistem konten** yang terpisah. Masing-masing punya workflow be
 | `order` | number | tidak | Default `99`. Sort ascending. |
 | `published` | boolean | tidak | Default `true`. Filter unpublished di listing. |
 
-**Body markdown** (Bahasa Indonesia): section `## Tentang`, `## Keunggulan`, `## Material/Tabel`, `## Aplikasi`, `## Proses`, `## FAQ`.
+**Body markdown** (Bahasa Indonesia): section `## Tentang`, `## Keunggulan`, `## Material/Tabel`, `## Aplikasi & Penggunaan`, `## Proses Pengerjaan`, `## FAQ`. Semua file telah diperkaya (Juni 2026) dengan Aplikasi & Penggunaan untuk layanan utama dan Proses Pengerjaan untuk layanan secondary, plus penambahan FAQ.
 
 **Cara menambah layanan baru:**
 
@@ -371,3 +329,54 @@ Tidak perlu Node.js runtime di server, tidak ada env var, tidak ada database.
 ## Lisensi
 
 Proprietary — © Sriwijaya Grafika Palembang. Semua Hak Cipta Dilindungi.
+
+## Floating WhatsApp Widget
+
+Komponen `src/components/FloatingWhatsApp.astro` menambahkan tombol WhatsApp mengambang di pojok kanan bawah semua halaman (di-include via `Layout.astro`). Muncul setelah 5 detik dengan bubble teks ajakan bertindak yang berotasi.
+
+### Perilaku
+
+1. Setelah 5 detik, bubble muncul dari icon WhatsApp (animasi scale 0.15 -> 1, 1s).
+2. Teks bertahan selama 4 detik.
+3. Bubble mengecil ke icon (animasi scale 1 -> 0.1, 0.6s).
+4. Jeda 3 detik (bubble tidak tampak).
+5. Bubble berikutnya muncul dengan teks acak dari 20 pilihan.
+6. Siklus berulang terus.
+
+### Mengubah teks bubble
+
+Buka `src/components/FloatingWhatsApp.astro`. Ada dua array `CTAS` (satu di frontmatter `---` untuk type safety, satu di `<script>` untuk runtime):
+
+```astro
+---
+const CTAS = [
+  'Butuh rekomendasi signage untuk toko baru? Konsultasi gratis, yuk!',
+  'Mau lihat contoh huruf timbul LED? Kami punya portofolio lengkap.',
+  // ... tambah/edit teks di sini
+];
+---
+```
+
+```js
+<script>
+  const CTAS = [
+    // ... array yang SAMA, ubah di sini juga
+  ];
+</script>
+```
+
+**Kedua array harus sinkron.** Editor yang baik (VS Code) bisa split-pane untuk edit bersamaan. Jumlah teks bisa >20 atau <20 — tidak ada batasan.
+
+## Changelog
+
+### 2026-06-05 — Konten layanan diperkaya + Floating WhatsApp
+
+- **Konten halaman layanan (`index.astro`)**:
+  - Section A (intro SEO), B (deskripsi advertising), C (deskripsi percetakan), D (trust & social proof).
+  - Urutan section diubah: heading -> card grid -> paragraf, agar user lihat layanan dulu sebelum teks.
+  - Section A dipindah ke bawah cards (sebelum trust section).
+- **31 file MD layanan diperkaya**:
+  - 9 utama: tambah section "Aplikasi & Penggunaan" + 3 FAQ.
+  - 22 secondary: tambah section "Proses Pengerjaan" + 3 FAQ.
+  - Fix karakter CJK di beberapa file.
+- **Floating WhatsApp widget**: komponen baru di semua halaman, 20 teks ajakan berotasi, animasi masuk/keluar dari icon, jeda 3 detik antar bubble.

@@ -51,12 +51,11 @@ export function calcReadingTime(pengantar: string, body: string, kesimpulan: str
 export const TOPIK_LABELS: Record<string, string> = {
   'tips': 'Tips & Trik',
   'studi-kasus': 'Studi Kasus',
-  'berita': 'Berita',
   'panduan': 'Panduan',
-  'press-release': 'Press Release',
+  'kabar': 'Kabar',
 };
 
-export const TOPIKS = ['tips', 'studi-kasus', 'berita', 'panduan', 'press-release'] as const;
+export const TOPIKS = ['tips', 'studi-kasus', 'panduan', 'kabar'] as const;
 
 export type Topik = (typeof TOPIKS)[number];
 

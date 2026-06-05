@@ -36,6 +36,15 @@ Tas spunbond atau goodie bag adalah tas belanja ramah lingkungan yang menjadi so
 - Souvenir ulang tahun
 - Tas seminar kampus
 
+## Proses Pengerjaan
+
+1. **Konsultasi** — Tentukan ukuran, warna tas, dan jumlah warna sablon
+2. **Kirim logo** — File logo dalam format AI, CDR, atau PNG
+3. **Desain layout** — Penataan ukuran dan posisi logo pada tas
+4. **Proofing** — Approval desain sebelum masuk produksi
+5. **Sablon** — Proses sablon manual atau digital press sesuai jumlah warna
+6. **Finishing** — Jahit, pasang tali, QC, dan packing
+
 ## FAQ
 
 **Berapa minimal order?**
@@ -47,3 +56,12 @@ Standar 100 pcs. Untuk order kecil, harga lebih tinggi.
 
 **Berapa ukuran standar?**
 Standar 25×35 cm, 30×40 cm, atau custom sesuai kebutuhan.
+
+**Apakah bisa sablon full color?**
+Bisa. Untuk sablon full color, kami menggunakan teknik digital print transfer yang hasilnya detail.
+
+**Berapa lama proses pengerjaan?**
+Standar 7-10 hari kerja tergantung jumlah pesanan dan tingkat kerumitan sablon.
+
+**Apakah ada pilihan bahan selain spunbond?**
+Ada. Tersedia tas kanvas (blacu), tas polyester, dan tas semi-woven untuk variasi kebutuhan.

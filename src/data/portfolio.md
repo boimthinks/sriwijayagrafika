@@ -1,5 +1,8 @@
 ---
 items:
+  - src: /img/portfolio/graha-cindua-mato.webp
+    category: huruf-timbul
+    caption: "Huruf Timbul Galvanis Graha Cindua Mato"
   - src: /img/portfolio/kumori-pancake.webp
     category: huruf-timbul
     caption: "Huruf Timbul Akrilik Kumore Pancake"

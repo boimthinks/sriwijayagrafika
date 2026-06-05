@@ -36,6 +36,15 @@ Gantungan kunci custom adalah souvenir favorit untuk berbagai acara: pernikahan,
 - Merchandise coffee shop
 - Souvenir ulang tahun
 
+## Proses Pengerjaan
+
+1. **Konsultasi desain** — Tentukan bentuk, ukuran, dan jumlah pesanan
+2. **Kirim artwork** — File desain dalam format AI, CDR, atau PDF
+3. **Desain & layout** — Penyesuaian desain untuk cetak akrilik dua sisi
+4. **Proofing** — Konfirmasi desain final sebelum produksi
+5. **Produksi** — Cetak, potong laser, dan lubang akrilik
+6. **Finishing** — Pasang rantai atau ring, QC, dan packing rapi
+
 ## FAQ
 
 **Berapa minimal order?**
@@ -46,3 +55,12 @@ Bisa. Kirim desain dalam format CDR/AI, kami proses.
 
 **Berapa ukuran standar?**
 Standar 4×4 cm, 5×5 cm, atau 6×4 cm. Custom size tersedia.
+
+**Apakah bisa gantungan kunci dua sisi berbeda desain?**
+Bisa. Kami melayani print dua sisi dengan desain yang bisa berbeda antara depan dan belakang.
+
+**Bagaimana cara kirim file desain?**
+Kirim via WhatsApp atau email dalam format AI, CDR, PDF, atau PNG resolusi tinggi.
+
+**Apakah ada aksesoris tambahan selain rantai?**
+Ada. Tersedia ring metal, tali kulit, atau tali karet sesuai selera.

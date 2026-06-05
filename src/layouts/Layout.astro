@@ -1,5 +1,6 @@
 ---
 import '@/styles/global.css';
+import FloatingWhatsApp from '@components/FloatingWhatsApp.astro';
 import { BUSINESS_INFO } from '@lib/data';
 
 interface Props {
@@ -126,5 +127,6 @@ if (structuredData) allSchemas.push(structuredData);
   </head>
   <body class="min-h-[100dvh] bg-neutral-50/20 text-neutral-800 font-sans flex flex-col">
     <slot />
+    <FloatingWhatsApp />
   </body>
 </html>

@@ -25,7 +25,7 @@ const counts: Record<string, number> = {};
 for (const { post } of postsWithMeta) {
   counts[post.data.topik] = (counts[post.data.topik] ?? 0) + 1;
 }
-const topikOrder = ['tips', 'studi-kasus', 'berita', 'panduan', 'press-release'] as const;
+const topikOrder = ['tips', 'studi-kasus', 'panduan', 'kabar'] as const;
 const availableTopiks = topikOrder.filter((t) => (counts[t] ?? 0) > 0);
 
 const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://sriwijayagrafika.com').toString();
@@ -36,7 +36,7 @@ const blogSchema = {
   '@id': pageUrl + '#collection',
   name: 'Blog Sriwijaya Grafika Palembang',
   description:
-    'Tips, studi kasus, berita, panduan, dan press release seputar advertising, reklame, huruf timbul, neon box, dan percetakan di Palembang.',
+    'Tips, studi kasus, sorotan, panduan, dan kabar seputar advertising, reklame, huruf timbul, neon box, dan percetakan di Palembang.',
   url: pageUrl,
   inLanguage: 'id-ID',
   isPartOf: { '@id': 'https://sriwijayagrafika.com/#website' },
@@ -54,13 +54,13 @@ const blogSchema = {
 
 <Layout
   title="Blog & Tips Advertising Palembang | Sriwijaya Grafika"
-  description="Tips, studi kasus, berita, dan panduan seputar huruf timbul, neon box, papan nama, rambu K3, dan percetakan Palembang. Update mingguan dari tim Sriwijaya Grafika."
+  description="Tips, studi kasus, sorotan, dan panduan seputar huruf timbul, neon box, papan nama, rambu K3, dan percetakan Palembang. Update mingguan dari tim Sriwijaya Grafika."
   keywords={[
     'Blog Advertising Palembang',
     'Tips Huruf Timbul',
     'Panduan Neon Box',
     'Studi Kasus Reklame',
-    'Berita Percetakan Palembang',
+    'Sorotan Percetakan Palembang',
     'Sriwijaya Grafika',
   ]}
   structuredData={blogSchema}
@@ -74,7 +74,7 @@ const blogSchema = {
           Artikel &amp; Tips Advertising
         </h1>
         <p class="text-sm sm:text-base text-white/80 max-w-2xl mx-auto leading-relaxed">
-          Wawasan teknis seputar signage, reklame, dan percetakan langsung dari tim produksi Sriwijaya Grafika. Pelajari cara memilih material, membaca harga, dan menghindari kesalahan umum saat memesan.
+          Wawasan teknis seputar huruf timbul, reklame, dan percetakan langsung dari tim produksi Sriwijaya Grafika Palembang.
         </p>
         <a
           href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya ingin berkonsultasi mengenai kebutuhan signage/reklame/percetakan custom.')}`}

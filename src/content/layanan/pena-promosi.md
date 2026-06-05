@@ -27,6 +27,15 @@ Pena promosi custom adalah souvenir murah namun efektif untuk seminar, gathering
 - **Tinta awet** — Biru atau hitam, refillable
 - **Harga ekonomis** — Cocok untuk order massal
 
+## Proses Pengerjaan
+
+1. Pemilihan model pena dan warna badan pena sesuai keinginan klien.
+2. Persiapan desain logo untuk proses sablon melingkar di badan pena.
+3. Pembuatan screen sablon untuk masing-masing warna logo.
+4. Proses sablon manual atau semi-otomatis pada badan pena secara presisi.
+5. Pengeringan tinta dengan oven agar tahan lama dan tidak mudah luntur.
+6. Quality control hasil sablon dan pengemasan dalam kotak atau plastik per paket.
+
 ## Aplikasi Umum
 
 - Seminar dan workshop
@@ -46,3 +55,12 @@ Bisa, hingga 2-3 warna untuk hasil terbaik.
 
 **Berapa lama proses?**
 Standar 7–14 hari kerja, tergantung jumlah.
+
+**Apakah bisa sablon di kedua sisi pena?**
+Bisa, dengan biaya tambahan per sisi sablon.
+
+**Apakah ada pilihan warna tinta?**
+Standar tersedia tinta biru dan hitam. Warna lain bisa custom dengan minimal order tertentu.
+
+**Bagaimana cara order?**
+Hubungi kami via WhatsApp dengan menyertakan logo dan jumlah yang diinginkan.

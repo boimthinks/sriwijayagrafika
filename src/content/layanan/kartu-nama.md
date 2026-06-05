@@ -36,6 +36,15 @@ Kartu nama adalah representasi profesional pertama Anda. Kartu nama dengan desai
 - Owner bisnis dan direksi
 - Networking event
 
+## Proses Pengerjaan
+
+1. **Konsultasi** — Tentukan jenis kertas, finishing, dan jumlah pesanan
+2. **Kirim data** — Nama, jabatan, logo perusahaan, kontak, dan alamat
+3. **Desain layout** — Tim desainer menyusun tata letak profesional dua sisi
+4. **Proofing** — Review desain sebelum masuk cetak
+5. **Cetak** — Proses cetak full color dengan presisi tinggi
+6. **Finishing** — Potong, laminating doff/glossy, QC, dan packing
+
 ## FAQ
 
 **Berapa minimal order?**
@@ -48,3 +57,12 @@ Kartu nama adalah representasi profesional pertama Anda. Kartu nama dengan desai
 
 **Berapa ukuran standar?**
 Standar 9×5.5 cm. Custom size juga tersedia (square, mini, dsb).
+
+**Apakah bisa cetak kartu nama dengan bentuk custom?**
+Bisa. Kami melayani cutting custom untuk kartu nama bentuk unik seperti square atau rounded corner.
+
+**Apakah ada tambahan box atau packaging premium?**
+Ada. Tersedia box akrilik, box kertas premium, atau case kartu nama eksklusif.
+
+**Bagaimana cara order?**
+Kirim data diri dan logo via WhatsApp. Tim desain kami siap membantu layout.

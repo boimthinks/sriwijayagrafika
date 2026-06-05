@@ -27,6 +27,15 @@ Stempel flash atau stempel self-inking adalah stempel praktis tanpa bantalan ter
 - **Custom bentuk** — Bulat, kotak, oval, atau sesuai logo
 - **Tinta awet** — Ribuan cetakan sebelum perlu refill
 
+## Proses Pengerjaan
+
+1. Penerimaan desain atau data yang akan dibuat stempel (logo, teks, nomor).
+2. Persiapan file dengan software khusus untuk pembuatan plat stempel flash.
+3. Proses pembuatan plat stempel menggunakan teknologi exposure cahaya.
+4. Perakitan stempel dengan rumah stempel dan mekanisme self-inking.
+5. Pengisian tinta ke dalam rumah stempel sesuai warna yang diminta (1-3 warna).
+6. Uji coba hasil cap dan pengecekan ketajaman sebelum diserahkan ke pelanggan.
+
 ## Aplikasi Umum
 
 - Stempel perusahaan dan kantor
@@ -46,3 +55,12 @@ Bisa 1-3 warna sekaligus dalam satu stempel.
 
 **Berapa ukuran populer?**
 Standar 3×6 cm, 4×6 cm, bulat 30mm, atau custom sesuai logo.
+
+**Apakah bisa refill tinta stempel?**
+Bisa. Tinta refill stempel flash tersedia di tempat kami dengan beberapa pilihan warna.
+
+**Apakah bisa stempel dengan logo full color?**
+Bisa. Kami bisa membuat stempel dengan logo perusahaan multi-warna untuk hasil profesional.
+
+**Apakah stempel bisa selesai dalam 15 menit?**
+Ya. Untuk stempel standar tanpa logo rumit, layanan express selesai dalam 15 menit di workshop Talang Jambe.

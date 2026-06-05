@@ -63,3 +63,12 @@ Tergantung paket. Kami menyediakan paket lengkap dengan pondasi atau hanya fabri
 
 **Berapa lama pengerjaan total?**
 Standar 14–30 hari kerja, termasuk pengeringan pondasi beton.
+
+**Apakah perlu izin pemasangan pylon sign?**
+Untuk pylon sign di atas 4 meter atau yang berdiri di lahan publik, biasanya diperlukan izin reklame dari pemerintah daerah. Tim kami siap membantu mengurus perizinan jika dibutuhkan.
+
+**Apakah tiang pylon bisa dibongkar pasang?**
+Kami desain pylon dengan sistem pondasi cor tetap. Untuk kebutuhan sementara, bisa menggunakan sistem knock-down dengan pondasi blok beton tanpa cor.
+
+**Apakah ada garansi untuk struktur pylon?**
+Kami berikan garansi 1 tahun untuk struktur, kelistrikan, dan instalasi. Untuk kondisi cuaca ekstrim, struktur dirancang dengan faktor keamanan tambahan.

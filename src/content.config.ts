@@ -39,7 +39,7 @@ const blog = defineCollection({
     date: z.string().regex(DATE_PATTERN, {
       message: 'date harus format "DD NamaBulan YYYY", contoh "12 Desember 2025"',
     }),
-    topik: z.enum(['tips', 'studi-kasus', 'berita', 'panduan', 'press-release']),
+    topik: z.enum(['tips', 'studi-kasus', 'panduan', 'kabar']),
     imgurl: z.string().min(1, { message: 'imgurl wajib (feature image + og:image)' }),
     imgalt: z.string().optional(),
     pengantar: z.string().min(50).max(500),

@@ -27,6 +27,15 @@ Sticker atau stiker digital printing adalah solusi branding untuk berbagai kebut
 - **Tahan air & UV** — Cocok untuk indoor dan outdoor
 - **Finishing opsional** — Laminating glossy, doff, atau spot UV
 
+## Proses Pengerjaan
+
+1. Persiapan file desain dalam format CMYK resolusi tinggi untuk hasil cetak maksimal.
+2. Proses cetak digital pada bahan stiker pilihan (ritrama, camel, atau transparan).
+3. Laminasi glossy atau doff untuk perlindungan tambahan terhadap gores dan air.
+4. Cutting atau pemotongan sesuai bentuk desain dengan mesin cutting plotter presisi.
+5. Pembuangan sisa bahan untuk stiker dengan bentuk rumit atau detail kecil.
+6. Pengecekan hasil cetak dan ketepatan cutting sebelum packing.
+
 ## Aplikasi Umum
 
 - Label produk makanan & minuman
@@ -49,3 +58,12 @@ Bisa. Kami melayani cetak CMYK full color untuk desain foto atau gradient.
 - **Ritrama** — Stiker vinyl putih, paling umum, tahan lama
 - **Camel** — Stiker metalized silver/gold, kesan premium
 - **Transparan** — Stiker bening, cocok untuk kaca/display
+
+**Apakah bisa cetak stiker untuk botol atau permukaan lengkung?**
+Bisa. Kami sesuaikan bahan dan ukuran untuk aplikasi di permukaan lengkung.
+
+**Berapa lama proses pengerjaan?**
+Standar 2–5 hari kerja tergantung jumlah dan kerumitan desain.
+
+**Apakah bisa kirim file desain via WhatsApp?**
+Bisa. Kirim file ke nomor kami, tim akan konfirmasi kelayakan cetak sebelum produksi.
