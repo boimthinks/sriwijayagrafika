@@ -3,7 +3,7 @@ import { Phone, Menu, X, ShieldCheck } from 'lucide-react';
 import { BUSINESS_INFO } from '@lib/data';
 
 interface Props {
-   current?: 'home' | 'services' | 'portfolio' | 'blog';
+   current?: 'home' | 'services' | 'portfolio' | 'blog' | 'contact';
  }
 
 const { current = 'home' } = Astro.props;
@@ -12,8 +12,9 @@ const menuItems = [
    { id: 'home', label: 'Beranda', href: '/' },
    { id: 'services', label: 'Layanan', href: '/layanan' },
    { id: 'portfolio', label: 'Galeri Portofolio', href: '/portofolio' },
-   { id: 'blog', label: 'Blog & Tips', href: '/blog' },
- ] as const;
+    { id: 'blog', label: 'Blog & Tips', href: '/blog' },
+    { id: 'contact', label: 'Kontak', href: '/kontak' },
+  ] as const;
 
 const isActive = (id: string) => current === id;
 ---

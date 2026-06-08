@@ -7,7 +7,7 @@ topik: "tips"
 imgurl: "/img/portfolio/neon-box-super-indo.webp"
 imgalt: "Perhitungan kebutuhan LED strip untuk neon box ukuran 1x1 meter"
 pengantar: "Dari ratusan neon box yang kami produksi di Palembang sejak 2008, 6 dari 10 kasus ketidakpuasan klien bermula dari LED yang dipilih tanpa perhitungan matang. LED terlalu sedikit membuat cahaya tidak merata, huruf terlihat belang. LED terlalu banyak bikin listrik bengkak dan panas berlebih, umur LED lebih pendek. Artikel ini membahas cara menghitung kebutuhan LED yang benar untuk neon box Anda, lengkap dengan contoh kasus untuk ukuran standar 1x1 meter yang bisa Anda adopsi untuk ukuran lain."
-kesimpulan: "Menghitung kebutuhan LED untuk neon box sebenarnya tidak rumit kalau Anda tahu variabelnya: ukuran area, jenis LED, dan jarak antar-modul. Dengan rumus sederhana di atas, Anda bisa estimasi kebutuhan sebelum konsultasi vendor. Untuk hasil terbaik, produksi di workshop terpercaya dengan garansi jelas. Mau diskusi kebutuhan LED untuk neon box Anda? Tim kami via WhatsApp 0851-0088-8748 — konsultasi gratis dan hitung kebutuhan LED untuk area Palembang."
+kesimpulan: "Menghitung kebutuhan LED untuk neon box sebenarnya tidak rumit kalau Anda tahu variabelnya: ukuran area, jenis LED, dan jarak antar-modul. Dengan rumus sederhana di atas, Anda bisa estimasi kebutuhan sebelum konsultasi vendor. Untuk hasil terbaik, produksi di workshop terpercaya dengan garansi jelas. Mau diskusi kebutuhan LED untuk neon box Anda? Tim kami via WhatsApp 0852-1511-1125 — konsultasi gratis dan hitung kebutuhan LED untuk area Palembang."
 published: true
 ---
 
@@ -97,4 +97,4 @@ Perhitungan LED di atas cocok untuk ukuran standar dan kebutuhan normal. Tapi ad
 
 **Klien korporat dengan standar tertentu.** Brand guideline korporat biasanya menentukan brightness level dan konsistensi warna. Ini butuh LED dengan color temperature spesifik (mis. 6500K untuk cool white, 3000K untuk warm white).
 
-Kalau Anda mau diskusi kebutuhan LED untuk neon box custom Anda, atau butuh hitung cepat untuk ukuran tertentu, tim workshop kami terbuka untuk konsultasi gratis via WhatsApp 0851-0088-8748. Anda bisa kirim ukuran box dan preferensi, dan kami kasih estimasi kebutuhan LED, driver, dan budget-nya.
+Kalau Anda mau diskusi kebutuhan LED untuk neon box custom Anda, atau butuh hitung cepat untuk ukuran tertentu, tim workshop kami terbuka untuk konsultasi gratis via WhatsApp 0852-1511-1125. Anda bisa kirim ukuran box dan preferensi, dan kami kasih estimasi kebutuhan LED, driver, dan budget-nya.

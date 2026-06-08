@@ -7,7 +7,7 @@ topik: "tips"
 imgurl: "/img/blog/akrilik-galvanil.webp"
 imgalt: "Perbandingan huruf timbul akrilik dan galvanil setelah 6 bulan di outdoor Palembang"
 pengantar: "Bayangkan Anda memesan huruf timbul untuk toko. Vendor menawarkan dua pilihan — akrilik atau galvanil. Keduanya terlihat oke di mockup, harganya pun berselisih tipis. Enam bulan kemudian, Anda berdiri di depan toko Anda dan mulai melihat perbedaan. Yang satu masih kinclong, yang satu sudah kusam dan berjamur. Artikel ini adalah cerita dan data tentang kenapa material itu penting — terutama di iklim tropis Palembang yang lembap dan punya curah hujan tinggi sepanjang tahun."
-kesimpulan: "Akrilik dan galvanil bukan lawan yang saling mengalahkan — masing-masing punya tempat. Pilih berdasarkan exposure, budget, dan ekspektasi umur pakai. Untuk UMKM di Palembang, galvanil dengan finishing cat yang tepat masih paling efisien. Untuk klien yang mau tampilan premium dan siap investasi lebih, akrilik LED lebih menguntungkan. Mau diskusi material yang pas untuk signage Anda? Tim kami via WhatsApp 0851-0088-8748 — konsultasi gratis dan mockup 3D untuk area Palembang."
+kesimpulan: "Akrilik dan galvanil bukan lawan yang saling mengalahkan — masing-masing punya tempat. Pilih berdasarkan exposure, budget, dan ekspektasi umur pakai. Untuk UMKM di Palembang, galvanil dengan finishing cat yang tepat masih paling efisien. Untuk klien yang mau tampilan premium dan siap investasi lebih, akrilik LED lebih menguntungkan. Mau diskusi material yang pas untuk signage Anda? Tim kami via WhatsApp 0852-1511-1125 — konsultasi gratis dan mockup 3D untuk area Palembang."
 published: true
 ---
 
@@ -99,4 +99,4 @@ Untuk referensi, berikut range harga di workshop Sriwijaya Grafika per Januari 2
 
 Harga di atas belum termasuk instalasi di lokasi tinggi, bracket struktural khusus, atau pengiriman ke luar Palembang. Untuk project spesifik, kami biasanya kirim quotation detail setelah diskusi desain dan survey lokasi.
 
-Detail lengkap material, finishing, dan FAQ huruf timbul bisa Anda cek di [halaman huruf timbul](/layanan/huruf-timbul) kami. Atau langsung diskusi dengan tim kami via WhatsApp 0851-0088-8748 — kami terbuka untuk diskusi material dan budget untuk signage Anda.
+Detail lengkap material, finishing, dan FAQ huruf timbul bisa Anda cek di [halaman huruf timbul](/layanan/huruf-timbul) kami. Atau langsung diskusi dengan tim kami via WhatsApp 0852-1511-1125 — kami terbuka untuk diskusi material dan budget untuk signage Anda.

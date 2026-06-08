@@ -7,7 +7,7 @@ topik: "tips"
 imgurl: "/img/blog/otopsi-las-stainless-berkarat.webp"
 imgalt: "Perbandingan huruf timbul stainless 201 vs 304 setelah 2 tahun outdoor Palembang"
 pengantar: "Membangun signage toko itu gampang-gampang susah. Anda ingin tampil storefront yang elegan, tapi budget terbatas. Klaim vendor \"harga paling murah\" sering berujung kerusakan di tahun kedua — huruf berkarat, sambungan las menghitam, dan biaya perbaikan membengkak. Di artikel ini, kami buka kasus nyata yang sering kami temui di workshop kami di Talang Jambe: kenapa sambungan las stainless bisa gagal di outdoor Palembang, dan apa yang bisa Anda lakukan untuk mencegahnya sejak awal."
-kesimpulan: "Singkatnya, sambungan las adalah titik kritis yang menentukan apakah huruf timbul Anda bertahan 2 tahun atau 10 tahun. Stainless 304 dengan las TIG plus argon sudah teruji di iklim Palembang. Di Sriwijaya Grafika, kami produksi sendiri di workshop Talang Jambe — Anda bisa cek standar pengelasan kami langsung. Mau konsultasi material signage untuk toko Anda? Tim kami siap via WhatsApp 0851-0088-8748 — respon cepat, konsultasi gratis, dan mockup 3D untuk material pilihan Anda."
+kesimpulan: "Singkatnya, sambungan las adalah titik kritis yang menentukan apakah huruf timbul Anda bertahan 2 tahun atau 10 tahun. Stainless 304 dengan las TIG plus argon sudah teruji di iklim Palembang. Di Sriwijaya Grafika, kami produksi sendiri di workshop Talang Jambe — Anda bisa cek standar pengelasan kami langsung. Mau konsultasi material signage untuk toko Anda? Tim kami siap via WhatsApp 0852-1511-1125 — respon cepat, konsultasi gratis, dan mockup 3D untuk material pilihan Anda."
 published: true
 ---
 

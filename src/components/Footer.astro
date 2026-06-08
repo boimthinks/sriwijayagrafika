@@ -1,5 +1,5 @@
 ---
-import { Phone, MapPin, Instagram, Facebook, Globe, ShoppingBag, ArrowRight, ShieldCheck } from 'lucide-react';
+import { Phone, MapPin, Instagram, Facebook, ShoppingBag, ArrowRight, ShieldCheck, Layout, FileText, Mail, Scale } from 'lucide-react';
 import { BUSINESS_INFO } from '@lib/data';
 
 const currentYear = new Date().getFullYear();
@@ -37,7 +37,7 @@ const currentYear = new Date().getFullYear();
           </div>
           <div class="flex items-center gap-2.5 text-neutral-300 font-bold font-mono">
             <Phone className="w-5 h-5 text-[#ff6634] flex-shrink-0" />
-            <span>WA 1: {BUSINESS_INFO.phone1} | WA 2: {BUSINESS_INFO.phone2}</span>
+            <span>WA: 0852-1511-1125</span>
           </div>
         </div>
 
@@ -64,22 +64,51 @@ const currentYear = new Date().getFullYear();
 
       <div class="lg:col-span-4 space-y-4">
         <span class="text-xs uppercase font-mono text-[#ff6634] tracking-widest block font-bold">
-          Jejaring Website Aktif
+          Menu Penting
         </span>
-        <ul class="space-y-2 text-xs" id="footer-active-sites">
-          {BUSINESS_INFO.activeWebsites.map((site) => (
-            <li>
-              <a
-                href={site.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-center gap-1.5 text-neutral-400 hover:text-white transition-colors"
-              >
-                <Globe className="w-3.5 h-3.5 text-neutral-400 flex-shrink-0" />
-                <span class="truncate">{site.title}</span>
-              </a>
-            </li>
-          ))}
+        <ul class="space-y-2.5 text-xs">
+          <li>
+            <a href="/layanan" class="flex items-center gap-2 text-neutral-400 hover:text-white transition-colors">
+              <Layout className="w-3.5 h-3.5 text-neutral-500 flex-shrink-0" />
+              <span>Layanan</span>
+            </a>
+          </li>
+          <li>
+            <a href="/portofolio" class="flex items-center gap-2 text-neutral-400 hover:text-white transition-colors">
+              <span class="w-3.5 h-3.5 flex-shrink-0 flex items-center justify-center">
+                <svg class="w-3.5 h-3.5 fill-neutral-500" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 3h2l2 3h10a1 1 0 0 1 1 1v1H5a1 1 0 0 0-1 1v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-6.586l-2.707-2.707A1 1 0 0 0 10 3H4z" />
+                </svg>
+              </span>
+              <span>Galeri Portofolio</span>
+            </a>
+          </li>
+          <li>
+            <a href="/blog" class="flex items-center gap-2 text-neutral-400 hover:text-white transition-colors">
+              <svg class="w-3.5 h-3.5 fill-neutral-500 flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4zm1-5h14v-2H5v2zm0-4h14v-2H5v2zm0-6v2h14V7H5z" />
+              </svg>
+              <span>Blog & Tips</span>
+            </a>
+          </li>
+          <li>
+            <a href="/kontak" class="flex items-center gap-2 text-neutral-400 hover:text-white transition-colors">
+              <Mail className="w-3.5 h-3.5 text-neutral-500 flex-shrink-0" />
+              <span>Kontak</span>
+            </a>
+          </li>
+          <li>
+            <a href="/syarat-ketentuan" class="flex items-center gap-2 text-neutral-400 hover:text-white transition-colors">
+              <Scale className="w-3.5 h-3.5 text-neutral-500 flex-shrink-0" />
+              <span>Syarat & Ketentuan</span>
+            </a>
+          </li>
+          <li>
+            <a href="/kebijakan-privasi" class="flex items-center gap-2 text-neutral-400 hover:text-white transition-colors">
+              <FileText className="w-3.5 h-3.5 text-neutral-500 flex-shrink-0" />
+              <span>Kebijakan Privasi</span>
+            </a>
+          </li>
         </ul>
         <div class="pt-2">
           <span class="text-[10px] text-neutral-600 block uppercase font-mono font-bold">GARANSI PENUH</span>
@@ -112,8 +141,9 @@ const currentYear = new Date().getFullYear();
       </div>
     </div>
 
-    <div class="mt-12 pt-8 border-t border-neutral-800 text-center text-xs text-neutral-500 space-y-2">
+    <div class="mt-12 pt-8 border-t border-neutral-800 text-center text-xs text-neutral-500 space-y-3">
       <p>&copy; {currentYear} <strong>Sriwijaya Grafika Palembang</strong>. Semua Hak Cipta Dilindungi Undang-Undang.</p>
+      
       <p class="text-[10px] text-neutral-600 font-mono tracking-wider font-semibold">
         TALANG JAMBE, SUKARAMI, PALEMBANG &bull; GARANSI OUTDOOR SIGNAGE UTAMA 1 TAHUN &bull; SOCIO-BUSINESS EMPLOYEES
       </p>

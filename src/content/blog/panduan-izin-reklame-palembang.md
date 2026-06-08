@@ -7,7 +7,7 @@ topik: "panduan"
 imgurl: "/img/blog/panduan-izin-reklame-palembang.webp"
 imgalt: "Contoh neon box dan signage toko di Palembang dengan izin reklame yang lengkap"
 pengantar: "Anda sudah pesan neon box keren dari vendor, material dipilih, desain disetujui, produksi selesai. Lalu di hari instalasi, tim vendor datang dengan wajah bingung — mereka baru ingat belum ada izin reklame dari pemerintah kota. Hasilnya? Neon box jadi tidak bisa dipasang, atau kalau nekat dipasang, kena sidak Satpol PP dan harus bongkar. Artikel ini membahas izin reklame di Palembang, supaya signage Anda aman dan legal."
-kesimpulan: "Izin reklame bukan hambatan, tapi perlindungan agar tidak kena sidak atau bongkar paksa. Prosesnya tidak serumit yang dibayangkan, asal dokumen lengkap dan vendor Anda paham regulasinya. Kami biasa membantu klien menyiapkan dokumen teknis yang diminta DPMPTSP. Untuk konsultasi gratis area Palembang dan Sumatera Selatan, hubungi WhatsApp 0851-0088-8748."
+kesimpulan: "Izin reklame bukan hambatan, tapi perlindungan agar tidak kena sidak atau bongkar paksa. Prosesnya tidak serumit yang dibayangkan, asal dokumen lengkap dan vendor Anda paham regulasinya. Kami biasa membantu klien menyiapkan dokumen teknis yang diminta DPMPTSP. Untuk konsultasi gratis area Palembang dan Sumatera Selatan, hubungi WhatsApp 0852-1511-1125."
 published: true
 ---
 
@@ -101,4 +101,4 @@ Di Sriwijaya Grafika, kami biasa membantu klien dalam beberapa hal terkait izin.
 
 Yang kami tidak lakukan adalah menjadi calo atau mengurus izin atas nama klien — itu wewenang klien sebagai pemiliksignage. Tapi kami pastikansignage yang kami produksi memenuhi regulasi yang berlaku, sehingga proses izin di sisi klien menjadi lebih lancar.
 
-Kalau Anda sedang pertimbangkansignage untuk usaha di Palembang dan butuh panduan lebih lanjut soal izin reklame, tim kami terbuka untuk konsultasi. Hubungi WhatsApp 0851-0088-8748 untuk diskusi. Untuk informasi resmi dan terkini soal prosedur izin, selalu cek langsung ke DPMPTSP Palembang atau website resmi mereka.
+Kalau Anda sedang pertimbangkansignage untuk usaha di Palembang dan butuh panduan lebih lanjut soal izin reklame, tim kami terbuka untuk konsultasi. Hubungi WhatsApp 0852-1511-1125 untuk diskusi. Untuk informasi resmi dan terkini soal prosedur izin, selalu cek langsung ke DPMPTSP Palembang atau website resmi mereka.

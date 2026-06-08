@@ -7,7 +7,7 @@ topik: "tips"
 imgurl: "/img/blog/rawat-neon-box-agar-awet.webp"
 imgalt: "Ilustrasi perawatan neon box agar awet 5 tahun, tips dari produsen signage Palembang"
 pengantar: "Pernahkah Anda pasang neon box baru yang terang, lalu dalam 2 tahun cahayanya redup dan LED banyak yang mati? Mungkin Anda pikir ini soal kualitas produk. Padahal dari pengalaman kami sejak 2008, 7 dari 10 kasus neon box rusak bukan karena produksi yang jelek. Penyebabnya adalah perawatan yang salah — atau tidak dirawat sama sekali. Mari kita bahas bagaimana cara merawat neon box yang benar, langkah-langkah rutin, dan tanda awal kerusakan yang harus diwaspadai."
-kesimpulan: "Neon box yang dirawat dengan baik bisa bertahan 5-8 tahun. Kuncinya sederhana: bersihkan rutin, pastikan ventilasi driver tidak tertutup, dan periksa komponen kelistrikan setahun sekali. Punya pertanyaan soal perawatan neon box atau butuh cek kondisi signage toko Anda? Tim Sriwijaya Grafika siap membantu via WhatsApp 0851-0088-8748. Kami melayani survey dan perbaikan untuk area Palembang dan Sumatera Selatan."
+kesimpulan: "Neon box yang dirawat dengan baik bisa bertahan 5-8 tahun. Kuncinya sederhana: bersihkan rutin, pastikan ventilasi driver tidak tertutup, dan periksa komponen kelistrikan setahun sekali. Punya pertanyaan soal perawatan neon box atau butuh cek kondisi signage toko Anda? Tim Sriwijaya Grafika siap membantu via WhatsApp 0852-1511-1125. Kami melayani survey dan perbaikan untuk area Palembang dan Sumatera Selatan."
 published: true
 ---
 

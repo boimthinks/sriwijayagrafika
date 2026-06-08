@@ -1,0 +1,141 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Navbar from '@components/Navbar.astro';
+import Footer from '@components/Footer.astro';
+import { ShieldCheck, Lock } from 'lucide-react';
+import { BUSINESS_INFO } from '@lib/data';
+---
+
+<Layout
+  title="Kebijakan Privasi | Sriwijaya Grafika Palembang"
+  description="Kebijakan privasi Sriwijaya Grafika Palembang mencakup pengumpulan data, penggunaan informasi, keamanan data pelanggan, dan hak Anda."
+  noindex={true}
+>
+  <Navbar current="home" />
+
+  <main class="flex-1">
+    <section class="bg-gradient-to-br from-[#224da8] via-[#1a3d8f] to-[#10285a] text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">
+            <Lock className="w-5 h-5" />
+          </div>
+          <span class="text-xs font-mono uppercase tracking-widest text-white/60 font-bold">Privasi</span>
+        </div>
+        <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight leading-[1.1] mb-4">
+          Kebijakan <span class="text-[#ff6634]">Privasi</span>
+        </h1>
+        <p class="text-white/70 text-sm">
+          Berlaku sejak 1 Januari 2025 &mdash; Komitmen kami melindungi data pribadi Anda.
+        </p>
+      </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="prose-article max-w-none space-y-10">
+        <div>
+          <h2>1. Informasi yang Kami Kumpulkan</h2>
+          <p>
+            Saat Anda menghubungi Sriwijaya Grafika melalui WhatsApp, telepon, formulir kontak, atau datang langsung ke workshop, kami dapat mengumpulkan informasi berikut:
+          </p>
+          <ul>
+            <li>Nama lengkap</li>
+            <li>Nomor telepon / WhatsApp</li>
+            <li>Alamat email (jika diberikan)</li>
+            <li>Alamat pengiriman / instalasi</li>
+            <li>Detail proyek dan spesifikasi produk yang dipesan</li>
+            <li>Riwayat komunikasi dan pemesanan sebelumnya</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>2. Cara Informasi Digunakan</h2>
+          <p>Informasi yang kami kumpulkan digunakan untuk:</p>
+          <ul>
+            <li>Memproses dan mengonfirmasi pemesanan Anda</li>
+            <li>Memberikan konsultasi desain dan estimasi harga</li>
+            <li>Mengirimkan mockup 3D dan proposal</li>
+            <li>Mengatur pengiriman dan instalasi</li>
+            <li>Memberikan dukungan purna jual dan layanan garansi</li>
+            <li>Mengirimkan informasi promosi hanya jika Anda memberikan izin</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>3. Perlindungan Data</h2>
+          <p>
+            Kami menjaga keamanan data pribadi Anda dengan langkah-langkah berikut:
+          </p>
+          <ul>
+            <li>Data tersimpan di sistem internal yang aman</li>
+            <li>Akses terbatas hanya untuk tim yang membutuhkan</li>
+            <li>Riwayat chat WhatsApp tidak dibagikan ke pihak ketiga</li>
+            <li>Data pembayaran ditangani oleh penyedia jasa pembayaran yang terpercaya</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>4. Pengungkapan ke Pihak Ketiga</h2>
+          <p>
+            Kami tidak menjual, menukar, atau menyewakan data pribadi Anda ke pihak ketiga. Namun, kami dapat membagikan informasi jika:
+          </p>
+          <ul>
+            <li>Diperlukan untuk memproses pesanan (mis. jasa pengiriman)</li>
+            <li>Diwajibkan oleh hukum atau peraturan yang berlaku</li>
+            <li>Mendapat izin eksplisit dari Anda</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>5. Media Sosial & Komunikasi</h2>
+          <p>
+            Komunikasi melalui WhatsApp, Instagram, Facebook, dan TikTok tunduk pada kebijakan privasi masing-masing platform. Kami merekomendasikan untuk tidak mengirimkan informasi sensitif (seperti PIN kartu kredit) melalui media sosial.
+          </p>
+        </div>
+
+        <div>
+          <h2>6. Data Analytics Website</h2>
+          <p>
+            Website ini tidak menggunakan cookie pelacakan atau analytics dari pihak ketiga. Kami tidak mengumpulkan data penjelajahan pengunjung secara otomatis.
+          </p>
+        </div>
+
+        <div>
+          <h2>7. Hak Anda</h2>
+          <p>Anda berhak untuk:</p>
+          <ul>
+            <li>Meminta akses ke data pribadi yang kami simpan</li>
+            <li>Meminta koreksi jika data tidak akurat</li>
+            <li>Meminta penghapusan data (kecuali data yang wajib disimpan untuk keperluan hukum)</li>
+            <li>Menolak penerimaan komunikasi promosi</li>
+          </ul>
+          <p>
+            Untuk menggunakan hak-hak di atas, hubungi kami melalui WhatsApp di nomor yang tercantum di halaman Kontak.
+          </p>
+        </div>
+
+        <div>
+          <h2>8. Retensi Data</h2>
+          <p>
+            Data pemesanan disimpan selama diperlukan untuk keperluan garansi dan layanan purna jual. Data komunikasi non-transaksional dapat dihapus setelah 2 tahun tanpa interaksi.
+          </p>
+        </div>
+
+        <div>
+          <h2>9. Perubahan Kebijakan Privasi</h2>
+          <p>
+            Kebijakan privasi ini dapat diperbarui sewaktu-waktu. Perubahan akan diinformasikan melalui halaman ini. Dengan terus menggunakan layanan kami setelah perubahan, Anda menyetujui kebijakan yang diperbarui.
+          </p>
+        </div>
+
+        <div class="bg-neutral-50 rounded-2xl p-6 border border-neutral-200 mt-8">
+          <p class="text-sm text-neutral-600">
+            <strong>Ada pertanyaan tentang privasi?</strong> Hubungi kami via WhatsApp di <a href={`https://wa.me/${BUSINESS_INFO.phone1Intl}`} class="text-[#224da8] font-bold hover:underline" target="_blank" rel="noopener noreferrer">0852-1511-1125</a> atau kunjungi workshop kami di Talang Jambe, Sukarami, Palembang.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

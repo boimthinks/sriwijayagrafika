@@ -151,6 +151,13 @@ const breadcrumbSchema = {
               variant="light"
               ctaLabel="Konsultasi via WhatsApp"
             />
+
+            <div id="toc-container" class="hidden lg:block bg-white rounded-2xl p-5 shadow-sm border border-neutral-100">
+              <h3 class="text-xs font-bold font-mono uppercase tracking-widest text-neutral-400 mb-3">Daftar Isi</h3>
+              <nav id="toc-nav" aria-label="Daftar isi artikel">
+                <ul id="toc-list" class="space-y-1.5"></ul>
+              </nav>
+            </div>
           </aside>
 
           <div class="lg:col-span-2">
@@ -217,6 +224,55 @@ const breadcrumbSchema = {
     )}
 
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+    <script>
+      const article = document.querySelector('.prose-article');
+      const tocList = document.getElementById('toc-list');
+      const tocContainer = document.getElementById('toc-container');
+
+      if (article && tocList && tocContainer) {
+        const headings = article.querySelectorAll('h2');
+        if (headings.length > 0) {
+          headings.forEach((h2, i) => {
+            if (!h2.id) {
+              h2.id = 'toc-' + i;
+            }
+            const li = document.createElement('li');
+            li.innerHTML =
+              '<a href="#' +
+              h2.id +
+              '" class="block text-xs text-neutral-500 hover:text-[#224da8] font-medium transition-colors py-1 border-l-2 border-transparent hover:border-[#224da8] pl-3 -ml-1">' +
+              h2.textContent +
+              '</a>';
+            tocList.appendChild(li);
+          });
+
+          const links = tocList.querySelectorAll('a');
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  links.forEach((l) => {
+                    l.classList.remove('text-[#224da8]', 'border-[#224da8]');
+                    l.classList.add('text-neutral-500', 'border-transparent');
+                  });
+                  const active = tocList.querySelector('a[href="#' + entry.target.id + '"]');
+                  if (active) {
+                    active.classList.remove('text-neutral-500', 'border-transparent');
+                    active.classList.add('text-[#224da8]', 'border-[#224da8]');
+                  }
+                }
+              });
+            },
+            { rootMargin: '-80px 0px -60% 0px' }
+          );
+
+          headings.forEach((h2) => observer.observe(h2));
+        } else {
+          tocContainer.remove();
+        }
+      }
+    </script>
   </main>
 
   <Footer />

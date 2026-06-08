@@ -7,7 +7,7 @@ topik: "panduan"
 imgurl: "/img/portfolio/rambu-k3-jalur-evakuasi.webp"
 imgalt: "Contoh rambu K3 standar Kemnaker untuk area pabrik, hasil produksi Sriwijaya Grafika"
 pengantar: "Dari puluhan pabrik dan gudang yang kami tangani rambu K3-nya di Palembang, lebih dari separuh punya masalah yang sama — rambu sudah terpasang tapi tidak memenuhi standar Kemnaker. Bukan karena vendor lamban, tapi banyak kontraktor dan bagian HSE internal yang tidak tahu 12 poin wajib yang diminta regulasi. Artikel ini merangkum poin-poin tersebut dari pengalaman workshop kami — supaya Anda tidak kena tilang auditor atau, lebih buruk, mengalami kecelakaan karena rambu yang menyesatkan."
-kesimpulan: "Singkatnya, rambu K3 yang sesuai standar bukan sekadar formalitas — ini soal keselamatan pekerja dan perlindungan hukum perusahaan. Semua rambu K3 dari workshop kami sudah dicek terhadap 12 poin Kemnaker. Kalau Anda butuh rambu untuk area pabrik, gudang, atau proyek konstruksi, halaman [rambu K3](/layanan/rambu-rambu) kami punya rincian material. Mau diskusi kebutuhan rambu untuk site Anda? Tim kami siap via WhatsApp 0851-0088-8748 — survey lokasi dan konsultasi gratis untuk area Palembang."
+kesimpulan: "Singkatnya, rambu K3 yang sesuai standar bukan sekadar formalitas — ini soal keselamatan pekerja dan perlindungan hukum perusahaan. Semua rambu K3 dari workshop kami sudah dicek terhadap 12 poin Kemnaker. Kalau Anda butuh rambu untuk area pabrik, gudang, atau proyek konstruksi, halaman [rambu K3](/layanan/rambu-rambu) kami punya rincian material. Mau diskusi kebutuhan rambu untuk site Anda? Tim kami siap via WhatsApp 0852-1511-1125 — survey lokasi dan konsultasi gratis untuk area Palembang."
 published: true
 ---
 
@@ -103,4 +103,4 @@ Untuk memesan rambu K3 yang sesuai standar, ada beberapa hal yang sebaiknya Anda
 
 - **Kebutuhan dokumentasi.** Untuk klien korporat yang akan diaudit, minta vendor sertakan dokumentasi rambu — termasuk sertifikat material, layout peta rambu di area Anda, dan jadwal inspeksi ulang.
 
-Di workshop kami, semua order rambu K3 sudah include konsultasi layout dan opsional survei lokasi untuk area Palembang dan Sumatera Selatan. Hubungi kami via WhatsApp 0851-0088-8748 untuk diskusi kebutuhan rambu site Anda.
+Di workshop kami, semua order rambu K3 sudah include konsultasi layout dan opsional survei lokasi untuk area Palembang dan Sumatera Selatan. Hubungi kami via WhatsApp 0852-1511-1125 untuk diskusi kebutuhan rambu site Anda.

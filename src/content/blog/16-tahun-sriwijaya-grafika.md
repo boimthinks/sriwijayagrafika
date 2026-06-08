@@ -7,7 +7,7 @@ topik: "kabar"
 imgurl: "/img/blog/16-tahun-sriwijaya-grafika.webp"
 imgalt: "Sriwijaya Grafika Palembang merayakan 16 tahun berkarya di industri signage dan advertising"
 pengantar: "Enam belas tahun bukan waktu yang singkat untuk bisnis apa pun, apalagi di industri signage yang penuh fluktuasi. Artikel ini bukan press release formal yang penuh jargon, tapi ungkapan terima kasih kami kepada semua klien, tim, dan partner yang sudah percaya selama 16 tahun. Kilas balik singkat, kondisi workshop hari ini, dan komitmen kami untuk 16 tahun ke depan."
-kesimpulan: "16 tahun adalah perjalanan panjang, dan kami tahu ini bukan akhir. Masih banyak UMKM, hotel, dan korporat di Palembang dan Sumatera Selatan yang butuh signage jujur, harga jelas, dan purna jual yang bisa diandalkan. Workshop kami di Talang Jambe tetap buka untuk diskusi, survey lokasi, dan konsultasi gratis. Hubungi WhatsApp 0851-0088-8748 untuk appointment. Terima kasih untuk 16 tahun kepercayaan Anda."
+kesimpulan: "16 tahun adalah perjalanan panjang, dan kami tahu ini bukan akhir. Masih banyak UMKM, hotel, dan korporat di Palembang dan Sumatera Selatan yang butuh signage jujur, harga jelas, dan purna jual yang bisa diandalkan. Workshop kami di Talang Jambe tetap buka untuk diskusi, survey lokasi, dan konsultasi gratis. Hubungi WhatsApp 0852-1511-1125 untuk appointment. Terima kasih untuk 16 tahun kepercayaan Anda."
 ---
 
 ## Palembang, 16 Tahun Lalu
@@ -64,7 +64,7 @@ Kami tidak akan berubah jadi perusahaan besar yang birokratis. Justru sebaliknya
 
 Untuk Anda yang sedang membaca ini, ada beberapa cara untuk terlibat dengan Sriwijaya Grafika, terlepas dari apakah Anda butuh signage atau tidak:
 
-- **Kalau Anda butuh signage**, silakan hubungi WhatsApp 0851-0088-8748 atau 0812-2233-923 untuk diskusi. Konsultasi gratis, survey lokasi area Palembang dan Sumatera Selatan tidak dipungut biaya.
+- **Kalau Anda butuh signage**, silakan hubungi WhatsApp 0852-1511-1125 untuk diskusi. Konsultasi gratis, survey lokasi area Palembang dan Sumatera Selatan tidak dipungut biaya.
 - **Kalau Anda punya UMKM**, kami terbuka untuk diskusi package signage yang sesuai budget. Tidak perlu pesan huruf timbul stainless kalau signage akrilik sudah cukup untuk skala bisnis Anda.
 - **Kalau Anda event organizer**, kami biasa handle booth event, backdrop, dan signage event dengan deadline ketat. Diskusi dari H-2 minggu biasanya masih bisa, dari H-1 minggu sudah mepet tapi masih memungkinkan.
 - **Kalau Anda hanya ingin mampir**, workshop kami di Talang Jambe terbuka untuk kunjungan. Lihat langsung proses produksi, diskusi langsung dengan tim, dan ambil keputusan yang lebih yakin.

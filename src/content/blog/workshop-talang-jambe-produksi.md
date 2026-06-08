@@ -7,7 +7,7 @@ topik: "kabar"
 imgurl: "/img/blog/workshop-talang-jambe-produksi.webp"
 imgalt: "Suasana workshop Sriwijaya Grafika di Talang Jambe dengan mesin laser cutting dan huruf timbul yang sedang diproduksi"
 pengantar: "Suara mesin cutting laser berdenyit pelan di sudut workshop. Bau tipis akrilik yang dipotong bercampur dengan wangi cat duco yang baru kering. Di Talang Jambe, inilah rutinitas pagi yang jarang dilihat klien. Tapi di balik storefront cafe atau gedung perkantoran yang mereka lihat setiap hari, ada proses panjang dari bahan mentah menjadi signage jadi. Artikel ini mengajak Anda masuk ke dalam workshop kami — untuk melihat bagaimana signage kami diproduksi dari awal sampai siap dipasang."
-kesimpulan: "Workshop kami di Talang Jambe adalah jantung dari semua yang kami kerjakan. Di sinilah ide klien berubah menjadi signage yang Anda lihat setiap hari di Palembang. Kami memproduksi sendiri, bukan reseller. Semua proses dari desain sampai quality control ada di tangan tim internal kami. Kalau Anda ingin lihat langsung workshop kami atau diskusi project signage, silakan datang ke lokasi atau hubungi WhatsApp 0851-0088-8748 untuk appointment."
+kesimpulan: "Workshop kami di Talang Jambe adalah jantung dari semua yang kami kerjakan. Di sinilah ide klien berubah menjadi signage yang Anda lihat setiap hari di Palembang. Kami memproduksi sendiri, bukan reseller. Semua proses dari desain sampai quality control ada di tangan tim internal kami. Kalau Anda ingin lihat langsung workshop kami atau diskusi project signage, silakan datang ke lokasi atau hubungi WhatsApp 0852-1511-1125 untuk appointment."
 published: true
 ---
 
@@ -71,4 +71,4 @@ Kami juga punya komitmen untuk memberdayakan komunitas lokal. Beberapa karyawan 
 
 Nilai-nilai yang kami pegang sejak 2008: produksi sendiri, bukan reseller. Workshop tetap, bukan vendor musiman. Garansi yang dijaga, bukan hanya dijanjikan. Konsultasi gratis, mockup 3D sebelum deal. Ini yang membuat klien kami kembali — bukan hanya karena harga, tapi karena mereka tahu apa yang mereka dapat.
 
-Workshop kami terbuka untuk kunjungan klien yang ingin lihat langsung produksi. Hubungi WhatsApp 0851-0088-8748 untuk appointment, dan kami dengan senang hati akan ajak Anda tur singkat.
+Workshop kami terbuka untuk kunjungan klien yang ingin lihat langsung produksi. Hubungi WhatsApp 0852-1511-1125 untuk appointment, dan kami dengan senang hati akan ajak Anda tur singkat.

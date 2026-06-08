@@ -1,5 +1,8 @@
 ---
 items:
+  - src: /img/portfolio/neon_box_penginapan_aba.webp
+    category: neon-box
+    caption: "Neon Box Penginapan dan Kost ABA"
   - src: /img/portfolio/graha-cindua-mato.webp
     category: huruf-timbul
     caption: "Huruf Timbul Galvanis Graha Cindua Mato"

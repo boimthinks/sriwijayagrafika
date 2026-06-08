@@ -28,8 +28,7 @@
 | Bidang usaha | Jasa advertising, reklame, dan percetakan |
 | Alamat workshop | Jl. AMD Jl. Pertanian No.105, RT.029/RW.005, Talang Jambe, Kec. Sukarami, Kota Palembang, Sumatera Selatan 30155 |
 | Google Maps | https://maps.app.goo.gl/aCQkXuc5nS9Toju38 |
-| Telepon 1 (WhatsApp utama) | 0851-0088-8748 (intl: 6285100888748) |
-| Telepon 2 | 0812-2233-923 |
+| Telepon (WhatsApp) | 0852-1511-1125 (intl: 6285215111125) |
 | Warna brand primer | Biru `#3c5a98` / `#224da8` |
 | Warna brand aksen | Oranye `#ff6634` |
 | Bahasa konten | Bahasa Indonesia (utama), istilah teknis boleh Inggris |
@@ -348,6 +347,62 @@ Cuplikan proyek yang sering dikutip di media & website:
 [Owner] → review mingguan: validasi insight baru, fix klaim yang terlalu berani
 ```
 
+### Keyword Groups untuk SEO (Target Pencarian Utama)
+
+Gunakan keyword di bawah ini secara natural di artikel, heading, meta description, dan alt text. Jangan keyword stuffing. Setiap grup mewakili niche pencarian utama Sriwijaya Grafika.
+
+**Grup 1: Advertising Palembang**
+- jasa advertising palembang
+- jasa reklame palembang
+- perusahaan advertising palembang
+- pasang reklame palembang
+- biaya advertising palembang
+
+**Grup 2: Huruf Timbul Palembang**
+- huruf timbul palembang
+- harga huruf timbul palembang
+- huruf timbul stainless palembang
+- huruf timbul akrilik palembang
+- pembuat huruf timbul palembang
+
+**Grup 3: Reklame Palembang**
+- reklame palembang
+- neon box palembang
+- harga neon box palembang
+- papan nama toko palembang
+- izin reklame palembang
+
+**Grup 4: Rambu Palembang**
+- rambu k3 palembang
+- rambu keselamatan palembang
+- safety sign palembang
+- harga rambu k3 palembang
+- rambu evakuasi palembang
+
+### Daftar Judul Artikel yang Disarankan (dari Keyword Groups)
+
+Berikut judul artikel yang dirancang problem-centric per grup keyword. Nomor mengacu pada urutan rekomendasi untuk AI Agent.
+
+**Advertising Palembang**
+1. "Anggaran Advertising Palembang" — titleSeo: "Panduan Anggaran Jasa Advertising Palembang untuk Pemilik Usaha Baru"
+2. "Bingung Pilih Vendor Advertising?" — titleSeo: "Pilih Jasa Advertising Palembang, Hal yang Sering Terlewat Pemilik Toko"
+
+**Huruf Timbul Palembang**
+3. "Harga Huruf Timbul Palembang" — titleSeo: "Rincian Harga Huruf Timbul Palembang per Meter, Stainless vs Akrilik"
+4. "Huruf Timbul Palembang Karat" — titleSeo: "Kenapa Huruf Timbul Palembang Cepat Berkarat dan Solusinya"
+
+**Reklame Palembang**
+5. "Izin Reklame Palembang Gagal" — titleSeo: "5 Alasan Pengajuan Izin Reklame Palembang Ditolak DPMPTSP"
+6. "Biaya Pajak Reklame Palembang" — titleSeo: "Cara Menghitung Biaya Pajak Reklame Palembang, Studi Kasus Neon Box"
+7. "Reklame Murah vs Premium" — titleSeo: "Selisih Harga Reklame Palembang Murah vs Premium, Apakah Setimpal"
+8. "Reklame Palembang untuk Cafe" — titleSeo: "Panduan Reklame Palembang untuk Cafe, Ide Desain Neon Box dan Signage"
+
+**Rambu Palembang**
+9. "Rambu Palembang K3 Pabrik" — titleSeo: "Denda Tilang Rambu K3 Pabrik di Palembang, Potensi Kerugian 50 Juta"
+10. "Rambu Palembang Tidak Standar" — titleSeo: "Rambu Palembang Tidak Sesuai Standar Kemnaker, Siapa yang Bertanggung Jawab"
+11. "Estimasi Biaya Rambu Palembang" — titleSeo: "Estimasi Biaya Pengadaan Rambu Palembang untuk Gudang dan Area Publik"
+12. "Rambu Palembang Tahan Karat" — titleSeo: "Rambu Palembang untuk Lingkungan Lembap, Pilih Bahan yang Tidak Mudah Rusak"
+
 ---
 
 ## 11. Aturan Menulis Judul & Artikel (Google AI Optimization Guide 2026)
@@ -578,10 +633,10 @@ Agar setiap artikel terasa fresh, **variasikan hook pembuka** dengan 6 tipe beri
 Setiap artikel **WAJIB** diakhiri dengan CTA (di `kesimpulan`). Variasikan agar tidak monoton:
 
 - **Variasi 1:** "Butuh konsultasi material signage untuk bisnis Anda? Tim Sriwijaya Grafika siap membantu via WhatsApp. Respon cepat, konsultasi gratis, dan mockup 3D untuk material pilihan Anda."
-- **Variasi 2:** "Mau diskusi desain signage atau estimasi harga? Hubungi kami langsung di WhatsApp 0851-0088-8748. Kami juga melayani survey gratis untuk area Palembang dan Sumatera Selatan."
+- **Variasi 2:** "Mau diskusi desain signage atau estimasi harga? Hubungi kami langsung di WhatsApp 0852-1511-1125. Kami juga melayani survey gratis untuk area Palembang dan Sumatera Selatan."
 - **Variasi 3:** "Punya pertanyaan teknis soal material, instalasi, atau garansi? Langsung saja chat tim kami — tanpa biaya, tanpa komitmen."
 
-**Format CTA:** sebutkan benefit (konsultasi gratis, mockup 3D, respon cepat) + kontak (WhatsApp 0851-0088-8748) + area layanan (Palembang, Sumatera Selatan).
+**Format CTA:** sebutkan benefit (konsultasi gratis, mockup 3D, respon cepat) + kontak (WhatsApp 0852-1511-1125) + area layanan (Palembang, Sumatera Selatan).
 
 ### 11.8 Larangan & Batasan (Berdasarkan Google AI Guide 2026 + Konvensi Project)
 
@@ -646,7 +701,7 @@ Sebelum artikel dianggap final, pastikan semua poin ini terpenuhi:
 - [ ] Tone konsisten (profesional, hangat, solutif)
 - [ ] Tidak ada emoji
 - [ ] Tidak ada paragraf > 5 kalimat
-- [ ] Informasi kontak akurat (0851-0088-8748)
+- [ ] Informasi kontak akurat (0852-1511-1125)
 - [ ] **Non-komoditas check:** Apakah artikel ini punya sudut pandang unik yang membedakannya dari kompetitor? Jika hanya menyusun ulang informasi umum — tulis ulang
 - [ ] **Google AI readiness:** Apakah artikel ini layak dikutip oleh AI Overviews? Punya data spesifik, pengalaman first-hand, atau wawasan eksklusif?
 - [ ] **Tidak ada taktik AEO/GEO palsu:** Tidak ada `llms.txt`, chunking, rewriting khusus AI, atau mentions tidak autentik
@@ -754,6 +809,9 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `panduan-izin-reklame-palembang` | Panduan izin reklame Palembang, syarat dokumen, biaya pajak, dan timeline DPMPTSP yang wajib diketahui pemilik usaha | 9 Februari 2026 | panduan | Provokatif |
 | `16-tahun-sriwijaya-grafika` | Sriwijaya Grafika Palembang merayakan 16 tahun berkarya, kilas balik perjalanan dari workshop kecil Talang Jambe | 23 Februari 2026 | kabar | Direct & Casual |
 | `rawat-neon-box-agar-awet` | Cara merawat neon box agar awet 5 tahun, tips dari produsen, membersihkan debu, cek driver, dan tanda-tanda kerusakan dini | 5 Juni 2026 | tips | Pertanyaan Provokatif |
+| `pilih-vendor-advertising-palembang` | Tips memilih vendor advertising Palembang, hal yang sering terlewat seperti workshop, garansi, dan mockup 3D | 6 Juni 2026 | tips | Problem-First |
+| `selisih-harga-reklame-murah-vs-premium` | Perbandingan reklame murah vs premium di Palembang, selisih material, LED, frame, dan biaya perawatan 5 tahun | 7 Juni 2026 | panduan | Pertanyaan Provokatif |
+| `estimasi-biaya-rambu-palembang` | Estimasi biaya pengadaan rambu Palembang untuk gudang dan area publik, per jenis, ukuran, dan material | 8 Juni 2026 | panduan | Fakta/Data |
 
 
 ### 12.2 Topik yang Masih Open (Ide Artikel Mendatang)
@@ -770,6 +828,8 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 - [ ] **Proses produksi** — Behind the scene produksi huruf timbul dari cutting laser sampai finishing
 - [ ] **Garansi 1 tahun** — Apa saja yang dicakup, apa yang tidak, dan mengapa penting
 - [ ] **Mitra Tuna Rungu** — Cerita di balik pemberdayaan SDM lokal (human interest piece)
+- [ ] **Cara bedakan LED asli Samsung vs palsu** — Teknis verifikasi LED untuk neon box (dari artikel reklame murah vs premium)
+- [ ] **Total cost of ownership signage** — Template spreadsheet hitung biaya 5 tahun untuk berbagai jenis signage (dari artikel estimasi biaya)
 
 ### 12.3 FAQ dari Klien (Untuk Dijadikan Topik Artikel Baru)
 
