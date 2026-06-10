@@ -7,6 +7,7 @@ import SidebarCTA from '@components/SidebarCTA.astro';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import { BUSINESS_INFO } from '@lib/data';
 import { AUTHOR_NAME, TOPIK_LABELS, calcReadingTime, parseIndonesianDate, toIsoDate } from '@lib/blog';
+import { getKeywordEntries } from '@lib/auto-link';
 import { Calendar, Clock, User } from 'lucide-react';
 
 export async function getStaticPaths() {
@@ -39,6 +40,8 @@ const imgAlt = data.imgalt || data.titleSeo;
 const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://sriwijayagrafika.com').toString();
 const absImageUrl = new URL(data.imgurl, Astro.site ?? 'https://sriwijayagrafika.com').toString();
 const isoDate = toIsoDate(parseIndonesianDate(data.date));
+
+const kataKunci = getKeywordEntries();
 
 const waMessage = `Halo Sriwijaya Grafika, saya tertarik dengan artikel *${data.title}* di blog Anda.\n\nMohon informasi lebih lanjut. Terima kasih!`;
 
@@ -180,7 +183,9 @@ const breadcrumbSchema = {
               <p>
                 {data.pengantar}
               </p>
-              <Content />
+              <div id="konten-body" data-kata-kunci={JSON.stringify(kataKunci)}>
+                <Content />
+              </div>
               
               <p>
                 {data.kesimpulan}
@@ -271,6 +276,39 @@ const breadcrumbSchema = {
         } else {
           tocContainer.remove();
         }
+      }
+    </script>
+
+    <script>
+      const kontenBody = document.getElementById('konten-body');
+      if (kontenBody) {
+        const raw = kontenBody.getAttribute('data-kata-kunci');
+        if (raw) {
+          try {
+            const entries = JSON.parse(raw);
+            if (Array.isArray(entries) && entries.length > 0) {
+              entries.sort((a, b) => b.keyword.length - a.keyword.length);
+              const used = new Set();
+              const paragraphs = kontenBody.querySelectorAll('p');
+              paragraphs.forEach((p) => {
+                let html = p.innerHTML;
+                for (const { keyword, url } of entries) {
+                  if (used.has(keyword.toLowerCase())) continue;
+                  const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                  const regex = new RegExp(`\\b${escaped}\\b`, 'i');
+                  if (regex.test(html)) {
+                    html = html.replace(regex, (m) => `<a href="${url}" class="text-[#224da8] hover:text-[#ff6634] underline underline-offset-2 transition-colors">${m}</a>`);
+                    used.add(keyword.toLowerCase());
+                  }
+                }
+                if (html !== p.innerHTML) {
+                  p.innerHTML = html;
+                }
+              });
+            }
+          } catch (_) {}
+        }
+        kontenBody.removeAttribute('data-kata-kunci');
       }
     </script>
   </main>

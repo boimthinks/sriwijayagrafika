@@ -812,6 +812,8 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `pilih-vendor-advertising-palembang` | Tips memilih vendor advertising Palembang, hal yang sering terlewat seperti workshop, garansi, dan mockup 3D | 6 Juni 2026 | tips | Problem-First |
 | `selisih-harga-reklame-murah-vs-premium` | Perbandingan reklame murah vs premium di Palembang, selisih material, LED, frame, dan biaya perawatan 5 tahun | 7 Juni 2026 | panduan | Pertanyaan Provokatif |
 | `estimasi-biaya-rambu-palembang` | Estimasi biaya pengadaan rambu Palembang untuk gudang dan area publik, per jenis, ukuran, dan material | 8 Juni 2026 | panduan | Fakta/Data |
+| `beda-led-samsung-vs-palsu` | Cara membedakan LED Samsung asli vs palsu untuk neon box, cek chip, voltase, sertifikasi, dan biaya per tahun | 10 Juni 2026 | tips | Pertanyaan Provokatif |
+| `fungsi-signage-bisnis` | 5 fungsi signage untuk bisnis, identitas, informasi, promosi, branding, dan wayfinding, contoh proyek nyata di Palembang | 10 Juni 2026 | panduan | Fakta/Data |
 
 
 ### 12.2 Topik yang Masih Open (Ide Artikel Mendatang)
@@ -828,7 +830,8 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 - [ ] **Proses produksi** — Behind the scene produksi huruf timbul dari cutting laser sampai finishing
 - [ ] **Garansi 1 tahun** — Apa saja yang dicakup, apa yang tidak, dan mengapa penting
 - [ ] **Mitra Tuna Rungu** — Cerita di balik pemberdayaan SDM lokal (human interest piece)
-- [ ] **Cara bedakan LED asli Samsung vs palsu** — Teknis verifikasi LED untuk neon box (dari artikel reklame murah vs premium)
+- [x] **Cara bedakan LED asli Samsung vs palsu** — Teknis verifikasi LED untuk neon box. Artikel #14 `beda-led-samsung-vs-palsu` sudah terbit 10 Juni 2026
+- [ ] **Apa itu signage dan fungsinya untuk bisnis** — Edukasi dasar signage bagi pemilik UMKM yang belum familier dengan istilah signage. Artikel #15 `fungsi-signage-bisnis` sudah terbit 10 Juni 2026
 - [ ] **Total cost of ownership signage** — Template spreadsheet hitung biaya 5 tahun untuk berbagai jenis signage (dari artikel estimasi biaya)
 
 ### 12.3 FAQ dari Klien (Untuk Dijadikan Topik Artikel Baru)
@@ -848,9 +851,44 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 
 ---
 
-**File ini terakhir di-generate dari `src/lib/data.ts` + `src/data/portfolio.md` Pertahankan struktur section ketika menambah data baru. Section 12 WAJIB diupdate setiap kali ada artikel baru dipublish.**
+## 14. Auto Link Internal (Keyword → URL Mapping)
 
----
+> **Auto link** secara otomatis mengubah keyword tertentu di body blog menjadi link internal. Dikelola via satu file konfigurasi.
+
+### 14.1 File Konfigurasi
+
+`src/data/auto-link.md` — format `keyword: /url/tujuan`:
+
+```yaml
+huruf timbul: /layanan/huruf-timbul
+neon box: /layanan/neon-box
+papan nama toko: /layanan/plang-toko-kantor
+```
+
+- Case-insensitive
+- Abaikan baris kosong dan baris `#` komentar
+- Keyword lebih panjang diproses lebih dulu (cegah partial match)
+
+### 14.2 Cara Kerja
+
+- **SSR**: `applyToPlainText()` di `src/lib/auto-link.ts` — untuk pengantar/kesimpulan (tidak dipakai saat ini).
+- **Client-side**: `<div id="konten-body">` di `[slug].astro` — vanilla JS querySelectorAll('p') hanya di dalam div ini.
+- **Global rule**: setiap keyword hanya di-link **1 kali** per artikel (bukan per paragraf).
+- **Tidak menyentuh**: heading (h2), pengantar, kesimpulan.
+
+### 14.3 Menambah Keyword Baru
+
+1. Buka `src/data/auto-link.md`.
+2. Tambah baris `keyword: /url/tujuan`.
+3. Build ulang (`npm run build`).
+
+### 14.4 File Terkait
+
+| File | Peran |
+|---|---|
+| `src/data/auto-link.md` | Mapping keyword → URL |
+| `src/lib/auto-link.ts` | Parser + `getKeywordEntries()` |
+| `src/pages/blog/[topik]/[slug].astro` | Integrasi client script di `<div id="konten-body">` |
 
 ## 13. Asset & Placeholder Image (Workflow SVG)
 

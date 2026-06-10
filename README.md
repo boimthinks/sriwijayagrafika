@@ -271,6 +271,22 @@ Paragraph...
 
 Section 11 dan 12 adalah yang paling sering di-update — baca dulu sebelum nulis artikel baru.
 
+## Auto Link Internal
+
+Auto link otomatis mengubah keyword tertentu di **body blog** (bukan pengantar/kesimpulan/heading) menjadi link internal. Setiap keyword hanya di-link **1 kali** per artikel.
+
+**Konfigurasi:** `src/data/auto-link.md` — format `keyword: /url/tujuan`.
+
+**Cara kerja:** Client-side vanilla JS di `<div id="konten-body">` pada halaman detail blog (`[slug].astro`). Keyword dari `auto-link.md` di-embed sebagai JSON, lalu diproses oleh script yang mencari `<p>` pertama yang mengandung keyword tersebut dan mengubahnya menjadi `<a>`.
+
+**Menambah keyword baru:** edit `src/data/auto-link.md`, tambah baris, `npm run build`.
+
+| File | Peran |
+|---|---|
+| `src/data/auto-link.md` | Mapping keyword → URL |
+| `src/lib/auto-link.ts` | Parser + export `getKeywordEntries()` |
+| `src/pages/blog/[topik]/[slug].astro` | Integrasi client script |
+
 ## Image Convention
 
 | Path | Aspect | Format |

@@ -13,7 +13,7 @@ published: true
 
 ## Kisaran Harga Berdasarkan Jenis Rambu
 
-Harga rambu sangat bervariasi tergantung jenis dan fungsinya. Berdasarkan pengalaman produksi kami, berikut kisaran harga untuk jenis rambu yang paling sering dipesan klien.
+Harga rambu palembang sangat bervariasi tergantung jenis dan fungsinya. Berdasarkan pengalaman produksi kami, berikut kisaran harga untuk jenis rambu yang paling sering dipesan klien.
 
 Rambu peringatan standar (ukuran 30x40 cm, plat aluminium 2 mm, stiker reflektif) mulai Rp 125.000-175.000 per pcs untuk pemesanan satuan. Untuk pemesanan 20-50 pcs, harga turun ke Rp 100.000-125.000 per pcs.
 
