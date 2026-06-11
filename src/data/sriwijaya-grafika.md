@@ -814,7 +814,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `estimasi-biaya-rambu-palembang` | Estimasi biaya pengadaan rambu Palembang untuk gudang dan area publik, per jenis, ukuran, dan material | 8 Juni 2026 | panduan | Fakta/Data |
 | `beda-led-samsung-vs-palsu` | Cara membedakan LED Samsung asli vs palsu untuk neon box, cek chip, voltase, sertifikasi, dan biaya per tahun | 10 Juni 2026 | tips | Pertanyaan Provokatif |
 | `fungsi-signage-bisnis` | 5 fungsi signage untuk bisnis, identitas, informasi, promosi, branding, dan wayfinding, contoh proyek nyata di Palembang | 10 Juni 2026 | panduan | Fakta/Data |
-
+| `bahan-huruf-timbul-outdoor` | Panduan memilih bahan huruf timbul outdoor Palembang, perbandingan stainless 304 vs galvanil vs akrilik untuk iklim tropis | 11 Juni 2026 | panduan | Skenario Visual |
 
 ### 12.2 Topik yang Masih Open (Ide Artikel Mendatang)
 
@@ -823,7 +823,8 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 - [ ] **Otopsi material** — Mengapa stainless 201 berkarat di outdoor Palembang (dengan foto perbandingan 6 bulan)
 - [ ] **Studi kasus korporat** — Signage gedung Walikota Palembang, Kejati Sumsel (jika ada foto & detail)
 - [ ] **Kalkulator LED** — Cara menghitung kebutuhan LED strip untuk neon box sesuai kapasitas listrik toko
-- [ ] **Perbandingan material** — Akrilik vs galvanil untuk huruf timbul di iklim tropis lembap
+- [x] **Perbandingan material** — Akrilik vs galvanil untuk huruf timbul di iklim tropis lembap. Artikel #5 `uji-akrilik-vs-galvanil` sudah terbit 12 Januari 2026
+- [x] **Panduan tiga bahan huruf timbul outdoor** — Stainless 304 vs galvanil vs akrilik, perbandingan komprehensif untuk iklim Palembang. Artikel #16 `bahan-huruf-timbul-outdoor` sudah terbit 11 Juni 2026
 - [ ] **Panduan rambu K3** — Standar Kemnaker untuk area pabrik (versi lebih dalam dari yang sudah ada)
 - [ ] **Studi kasus SPBU Pertamina** — Detail neon box SPBU (jika ada foto close-up & spesifikasi)
 - [ ] **ROI signage** — Cara menghitung pengembalian investasi signage toko dalam 1 tahun

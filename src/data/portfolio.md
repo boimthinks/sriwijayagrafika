@@ -1,5 +1,8 @@
 ---
 items:
+  - src: /img/portfolio/huruf_timbul_acrylic_indah_cake_bakery.webp
+    category: huruf-timbul
+    caption: "Huruf Timbul Indah Cake & Bakery"
   - src: /img/portfolio/neon_box_penginapan_aba.webp
     category: neon-box
     caption: "Neon Box Penginapan dan Kost ABA"
