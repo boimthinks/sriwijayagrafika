@@ -806,7 +806,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `signage-korporat-pt-andalas-sakti` | Studi kasus signage korporat PT Andalas Sakti Perkasa, huruf timbul akrilik gedung kantor Palembang | 19 Januari 2026 | studi-kasus | Provokatif |
 | `workshop-talang-jambe-produksi` | Behind the scene workshop Talang Jambe, proses produksi huruf timbul dari laser cutting sampai finishing | 26 Januari 2026 | kabar | Skenario Visual |
 | `hitung-led-strip-neon-box` | Cara menghitung kebutuhan LED strip untuk neon box sesuai kapasitas listrik toko, contoh kasus 1x1 m | 2 Februari 2026 | tips | Fakta/Data |
-| `panduan-izin-reklame-palembang` | Panduan izin reklame Palembang, syarat dokumen, biaya pajak, dan timeline DPMPTSP yang wajib diketahui pemilik usaha | 9 Februari 2026 | panduan | Provokatif |
+| `pylon-sign-vs-neon-box` | Pylon Sign vs Neon Box, mana yang lebih menjual untuk lokasi pinggir jalan raya | 13 Juni 2026 | tips | Skenario Visual |
 | `16-tahun-sriwijaya-grafika` | Sriwijaya Grafika Palembang merayakan 16 tahun berkarya, kilas balik perjalanan dari workshop kecil Talang Jambe | 23 Februari 2026 | kabar | Direct & Casual |
 | `rawat-neon-box-agar-awet` | Cara merawat neon box agar awet 5 tahun, tips dari produsen, membersihkan debu, cek driver, dan tanda-tanda kerusakan dini | 5 Juni 2026 | tips | Pertanyaan Provokatif |
 | `pilih-vendor-advertising-palembang` | Tips memilih vendor advertising Palembang, hal yang sering terlewat seperti workshop, garansi, dan mockup 3D | 6 Juni 2026 | tips | Problem-First |

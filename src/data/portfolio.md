@@ -1,5 +1,8 @@
 ---
 items:
+  - src: /img/portfolio/cutting-akrilik-rakha-dental.webp
+    category: huruf-timbul
+    caption: "Huruf Timbul Cutting Akrilik Rakha Dental"
   - src: /img/portfolio/huruf_timbul_acrylic_indah_cake_bakery.webp
     category: huruf-timbul
     caption: "Huruf Timbul Indah Cake & Bakery"
