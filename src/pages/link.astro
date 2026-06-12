@@ -1,0 +1,173 @@
+---
+import '@/styles/global.css';
+import { BUSINESS_INFO } from '@lib/data';
+import { Instagram, Facebook, MessageCircle, MapPin, Globe, ExternalLink, Mail, Phone, ShoppingBag } from 'lucide-react';
+
+const title = "Link Bio & Kontak - Sriwijaya Grafika Palembang";
+const description = "Hubungi Sriwijaya Grafika Palembang via WhatsApp, Instagram, Facebook, atau kunjungi website resmi kami untuk jasa advertising dan percetakan.";
+
+const links = [
+  {
+    title: 'Konsultasi via WhatsApp',
+    subtitle: 'Respon Cepat & Tanya Harga',
+    url: `https://wa.me/${BUSINESS_INFO.phone1Intl}`,
+    icon: MessageCircle,
+    color: 'bg-green-500',
+    primary: true
+  },
+  {
+    title: 'Website Utama',
+    subtitle: 'Katalog Layanan & Portofolio',
+    url: '/',
+    icon: Globe,
+    color: 'bg-[#224da8]'
+  },
+  {
+    title: 'Instagram Resmi',
+    subtitle: '@sriwijayagrafika',
+    url: BUSINESS_INFO.socials.instagram,
+    icon: Instagram,
+    color: 'bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500'
+  },
+  {
+    title: 'Facebook Page',
+    subtitle: 'Sriwijaya Grafika',
+    url: BUSINESS_INFO.socials.facebookUtama,
+    icon: Facebook,
+    color: 'bg-blue-600'
+  },
+  {
+    title: 'Toko Shopee',
+    subtitle: 'Belanja Produk Akrilik & Custom',
+    url: BUSINESS_INFO.socials.shopee,
+    icon: ShoppingBag,
+    color: 'bg-orange-500'
+  },
+  {
+    title: 'Toko Tokopedia',
+    subtitle: 'Rambu K3 & Custom Reklame',
+    url: 'https://www.tokopedia.com/ramburambumurah',
+    icon: ShoppingBag,
+    color: 'bg-[#42b549]'
+  },
+  {
+    title: 'Lokasi Workshop',
+    subtitle: 'Talang Jambe, Palembang',
+    url: BUSINESS_INFO.googleMapsUrl,
+    icon: MapPin,
+    color: 'bg-red-500'
+  }
+];
+
+const secondaryLinks = [
+  { title: 'Blog & Tips', url: '/blog' },
+  { title: 'Portofolio', url: '/portofolio' },
+  { title: 'Tentang Kami', url: '/#about' }
+];
+---
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    
+    <style>
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-up {
+        animation: fadeUp 0.6s ease-out forwards;
+        opacity: 0;
+      }
+      .stagger-1 { animation-delay: 0.1s; }
+      .stagger-2 { animation-delay: 0.2s; }
+      .stagger-3 { animation-delay: 0.3s; }
+      .stagger-4 { animation-delay: 0.4s; }
+      .stagger-5 { animation-delay: 0.5s; }
+      .stagger-6 { animation-delay: 0.6s; }
+      .stagger-7 { animation-delay: 0.7s; }
+    </style>
+  </head>
+  <body class="bg-neutral-50 text-neutral-900 font-sans selection:bg-[#224da8] selection:text-white">
+    <!-- Background elements -->
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+      <div class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] rounded-full bg-[#224da8]/5 blur-[100px]"></div>
+      <div class="absolute bottom-[10%] -right-[10%] w-[40%] h-[40%] rounded-full bg-[#ff6634]/5 blur-[100px]"></div>
+    </div>
+
+    <main class="max-w-md mx-auto px-6 py-12 flex flex-col items-center min-h-screen">
+      <!-- Profile -->
+      <header class="text-center mb-10 animate-fade-up">
+        <div class="relative inline-block mb-4">
+          <div class="w-24 h-24 rounded-full bg-white shadow-xl border-4 border-white overflow-hidden p-2 flex items-center justify-center">
+            <img src="/favicon.svg" alt="Logo Sriwijaya Grafika" class="w-16 h-16 object-contain" />
+          </div>
+          <div class="absolute bottom-1 right-1 w-6 h-6 bg-green-500 border-4 border-neutral-50 rounded-full"></div>
+        </div>
+        <h1 class="text-xl font-black text-[#224da8] mb-1">Sriwijaya Grafika</h1>
+        <p class="text-sm text-neutral-500 font-medium">{BUSINESS_INFO.tagline}</p>
+      </header>
+
+      <!-- Links -->
+      <div class="w-full space-y-4 mb-12">
+        {links.map((link, index) => (
+          <a
+            href={link.url}
+            target={link.url.startsWith('http') ? "_blank" : "_self"}
+            rel={link.url.startsWith('http') ? "noopener noreferrer" : ""}
+            class={`animate-fade-up stagger-${index + 1} group relative flex items-center p-4 w-full bg-white rounded-2xl border border-neutral-100 shadow-sm hover:shadow-md hover:scale-[1.02] hover:border-[#224da8]/20 transition-all duration-300 overflow-hidden`}
+          >
+            {link.primary && (
+              <div class="absolute inset-0 bg-green-500/5 group-hover:bg-green-500/10 transition-colors"></div>
+            )}
+            <div class={`flex-shrink-0 w-12 h-12 rounded-xl ${link.color} flex items-center justify-center text-white shadow-lg`}>
+              <link.icon size={24} />
+            </div>
+            <div class="ml-4 flex-grow">
+              <h2 class={`text-sm font-bold ${link.primary ? 'text-green-700' : 'text-neutral-800'}`}>
+                {link.title}
+              </h2>
+              <p class="text-[11px] text-neutral-500 font-medium">
+                {link.subtitle}
+              </p>
+            </div>
+            <ExternalLink size={16} className="text-neutral-300 group-hover:text-[#224da8] transition-colors" />
+          </a>
+        ))}
+      </div>
+
+      <!-- Secondary Links -->
+      <div class="animate-fade-up stagger-7 w-full flex flex-wrap justify-center gap-x-6 gap-y-3 mb-12">
+        {secondaryLinks.map((link) => (
+          <a href={link.url} class="text-xs font-bold text-[#224da8] hover:text-[#ff6634] transition-colors">
+            {link.title}
+          </a>
+        ))}
+      </div>
+
+      <!-- Footer -->
+      <footer class="mt-auto pt-8 text-center animate-fade-up stagger-7">
+        <p class="text-[10px] text-neutral-400 font-bold uppercase tracking-widest mb-4">
+          © 2026 Sriwijaya Grafika Palembang
+        </p>
+        <div class="flex justify-center gap-4">
+          <a href={`tel:${BUSINESS_INFO.phone1}`} class="p-2 bg-white rounded-full shadow-sm text-neutral-400 hover:text-[#224da8] transition-colors">
+            <Phone size={18} />
+          </a>
+          <a href={`mailto:sriwijayagrafika@gmail.com`} class="p-2 bg-white rounded-full shadow-sm text-neutral-400 hover:text-[#224da8] transition-colors">
+            <Mail size={18} />
+          </a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
