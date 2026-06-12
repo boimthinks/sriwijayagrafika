@@ -16,4 +16,6 @@ kartu nama: /layanan/kartu-nama
 brosur: /layanan/brosur
 stempel: /layanan/stempel
 signage: /blog/panduan/fungsi-signage-bisnis
+Pylon sign: /layanan/pylon-totem
+Sriwijaya Grafika: /
 
