@@ -1,5 +1,8 @@
 ---
 items:
+  - src: /img/portfolio/papan-nama-toko-pusat-plafon-pvc.webp
+    category: papan-nama
+    caption: "Papan Nama Toko Pusat Plafon PVC"
   - src: /img/portfolio/cutting-akrilik-rakha-dental.webp
     category: huruf-timbul
     caption: "Huruf Timbul Cutting Akrilik Rakha Dental"
