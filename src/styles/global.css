@@ -89,9 +89,11 @@ body {
 }
 .prose-article ul {
   list-style: disc;
+  margin-bottom: 1.25rem;
 }
 .prose-article ol {
   list-style: decimal;
+  margin-bottom: 1.25rem;
 }
 .prose-article li + li {
   margin-top: 0.125rem;
