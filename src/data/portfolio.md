@@ -1,5 +1,8 @@
 ---
 items:
+  - src: /img/portfolio/huruf-timbul-akrilik-we-love-ma2ppi.webp
+    category: huruf-timbul
+    caption: "Huruf Timbul Akrilik We Love MA2PPI"
   - src: /img/portfolio/papan-nama-toko-pusat-plafon-pvc.webp
     category: papan-nama
     caption: "Papan Nama Toko Pusat Plafon PVC"
