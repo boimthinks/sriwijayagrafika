@@ -1,5 +1,8 @@
 ---
 items:
+  - src: /img/portfolio/totem-sign-pupuk-sriwijaya.webp
+    category: pylon-totem
+    caption: "Totem Signage PT Pupuk Sriwijaya"
   - src: /img/portfolio/huruf-timbul-akrilik-we-love-ma2ppi.webp
     category: huruf-timbul
     caption: "Huruf Timbul Akrilik We Love MA2PPI"
