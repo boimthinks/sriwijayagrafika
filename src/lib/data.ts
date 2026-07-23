@@ -1,6 +1,6 @@
 export const BUSINESS_INFO = {
   name: 'Sriwijaya Grafika',
-  tagline: 'Solusi Jasa Advertising Termurah di Kota Palembang',
+  tagline: 'Solusi Jasa Advertising Terpercaya di Kota Palembang',
   phone1: '085215111125',
   phone2: '',
   phone1Intl: '6285215111125',
@@ -33,7 +33,7 @@ export const CORE_TAGLINES = [
   'Produk unggulan kami di bidang advertising / reklame adalah huruf timbul atau tulisan timbul lampu LED dengan bahan stainless, akrilik kuningan, dll. Kami juga menjual rambu-rambu keselamatan (safety sign), rambu evakuasi, rambu K3, merek toko seperti neon box, papan nama toko (PNT).',
   'Kami juga menerima ornamen motif custom bahan semen, jasa cutting stiker, cutting laser plat, acrylic, plywood dan cutting ACP.',
   'Sriwijaya Grafika juga menerima pesanan produk akrilik custom dan berbagai produk-produk lainnya yang berhubungan dengan reklame dan jasa advertising.',
-  'Jasa Advertising Termurah di Kota Palembang',
+  'Jasa Advertising Terpercaya di Kota Palembang',
   'Sriwijaya Grafika pilihan tepat untuk usaha Anda',
   'Jasa Advertising Palembang Aman dan Terpercaya',
   'Kami membantu Anda mengembangkan ide-ide brilian media promosi untuk bisnis Anda',
