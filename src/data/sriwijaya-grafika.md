@@ -23,7 +23,7 @@
 | Field | Value |
 |---|---|
 | Nama usaha | **Sriwijaya Grafika** |
-| Tagline utama | Solusi Jasa Advertising Terpercaya di Kota Palembang |
+| Tagline utama | Spesialis Signage & Advertising di Palembang |
 | Owner | M. Edy Munandar |
 | Bidang usaha | Jasa advertising, reklame, dan percetakan |
 | Alamat workshop | Jl. AMD Jl. Pertanian No.105, RT.029/RW.005, Talang Jambe, Kec. Sukarami, Kota Palembang, Sumatera Selatan 30155 |
@@ -84,7 +84,7 @@ Tagline di bawah ini siap copy-paste untuk heading, CTA, atau caption media sosi
 2. Produk unggulan kami di bidang advertising / reklame adalah huruf timbul atau tulisan timbul lampu LED dengan bahan stainless, akrilik kuningan, dll. Kami juga menjual rambu-rambu keselamatan (safety sign), rambu evakuasi, rambu K3, merek toko seperti neon box, papan nama toko (PNT).
 3. Kami juga menerima ornamen motif custom bahan semen, jasa cutting stiker, cutting laser plat, acrylic, plywood dan cutting ACP.
 4. Sriwijaya Grafika juga menerima pesanan produk akrilik custom dan berbagai produk-produk lainnya yang berhubungan dengan reklame dan jasa advertising.
-5. **Jasa Advertising Terpercaya di Kota Palembang**
+5. **Spesialis Signage & Advertising di Palembang**
 6. **Sriwijaya Grafika pilihan tepat untuk usaha Anda**
 7. **Jasa Advertising Palembang Aman dan Terpercaya**
 8. Kami membantu Anda mengembangkan ide-ide brilian media promosi untuk bisnis Anda.
