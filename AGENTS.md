@@ -43,8 +43,9 @@ npm run check      # astro check (typecheck + a11y hints). 142 pre-existing erro
 
 ```
 src/
-├── content.config.ts            # Zod schema for "layanan" collection
-├── content/layanan/*.md         # 31 service files, one per layanan
+├── content.config.ts            # Zod schema untuk "layanan", "blog", dan "blogger" collections
+├── content/layanan/*.md         # 9 service files, one per layanan
+├── content/blogger/*.html.md    # ±80 arsip artikel dari era Blogspot (URL lama /YYYY/MM/<slug>.html)
 ├── components/                  # .astro = static, .tsx = client island
 │   ├── ServiceCard.astro        # REUSABLE — used in /layanan listing, / (featured), and related-services on detail
 │   ├── Navbar.astro, Footer.astro, Hero.astro, Credentials.astro, AboutAndMediaIsland.tsx
@@ -66,6 +67,16 @@ src/
 - Frontmatter schema (see `src/content.config.ts`): `name`, `description`, `category: 'utama'|'secondary'`, `subcategory`, `basePrice`, `priceUnit`, `features[]`, `materials[]`, `hasCalculator`, `calculatorType?`, `imageUrl?` (use `/img/layanan/<id>.webp`), `order`, `published`.
 - Markdown body sections: Tentang, Keunggulan, Material/Tabel (primary), Aplikasi, Proses, FAQ. Body is in **Bahasa Indonesia**.
 - To add a new service: copy any existing md, change frontmatter + filename + body. List/detail/related all auto-update.
+
+## Blogger arsip (content collection "blogger")
+
+- 80 file di `src/content/blogger/*.html.md` — hasil export dari Blogspot lama. Filename punya awalan tanggal (`2016-01-cetak-gelas-mug-dipalembang.html.md`) tapi **URL lama aslinya** adalah `/YYYY/MM/<slug>.html` (prefix dipisah jadi folder tahun/bulan).
+- Frontmatter: `title`, `date` (ISO string — di-parse YAML jadi `Date`, schema pakai `z.coerce.string()`), `labels[]`, `slug`, `metaDescription?`, `published` (default true).
+- 3 file `*-blog-post.html.md` (judul kosong) TIDAK ikut di-render — filter `data.title.trim().length > 0`.
+- Helper di `src/lib/blogger.ts`: `parseBloggerSlug` (regex `^(\d{4})-(\d{2})-(.+)\.html$`), `bloggerOldPath`, `bloggerDateLabel`, `bloggerIsoDate`, `isUsableBloggerPost`, `sortBloggerPosts`.
+- **Detail page**: `src/pages/[year]/[month]/[slug].html.astro` — `getStaticPaths` dari collection, slug param TANPA suffix `.html` (suffix `.html` adalah literal bagian route filename, penting: kalau pakai `[slug].astro` + slug ber-.html, dev server 404 karena Astro strip `.html` di pathname). Output `dist/YYYY/MM/<slug>.html/index.html`, Netlify serve di `/YYYY/MM/<slug>.html` (200). Ada banner "Arsip Artikel Lama" + CTA WhatsApp/beranda/layanan di bawah konten. Canonical = URL lama itu sendiri (penting untuk SEO, JANGAN ubah jadi noindex).
+- **Index page**: `/arsip` (`src/pages/arsip/index.astro`) — daftar semua artikel dikelompokkan per tahun. Link ada di Footer ("Arsip Artikel") dan `sitemap.astro`.
+- `@astrojs/sitemap` otomatis meng-include semua URL arsip + `/arsip`.
 
 ## Gotchas
 
@@ -92,6 +103,7 @@ Static-only. Any host that serves `dist/` works. Build = `npm run build`, output
 
 ## Progress (recent session work)
 
+- **Blogger arsip dihidupkan kembali di URL lama**: `blogger` content collection ter-register di `content.config.ts` (80 artikel aktif, dump dari Blogspot lama). Detail di `/2016/01/...html` → `/2020/05/...html` via `src/pages/[year]/[month]/[slug].html.astro` + helper `src/lib/blogger.ts`. Halaman index di `/arsip` (grup per tahun), ter-link di Footer & sitemap. Tujuan: Google masih meng-index URL lama `/YYYY/MM/<slug>.html` sejak era Blogspot; sekarang URL itu serve 200 (bukan 404) + tagline "Arsip Artikel Lama" + CTA. File cache tidak perlu dikonfigurasi, validasi sudah lewat `astro check` dan build.
 - **katalog → layanan rename**: file `katalog.astro` → `layanan.astro`; title/schema/navbar/current state updated (`current: 'services'`). URL is now `/layanan`.
 - **Layanan migrated to content collection**: 31 service files in `src/content/layanan/*.md` (10 `category: utama` + 21 `secondary`); schema in `src/content.config.ts`; listing + detail pages in `src/pages/layanan/`. `PRIMARY_SERVICES` / `SECONDARY_SERVICES` / `ALL_PRODUCTS` exports removed from `src/lib/data.ts`.
 - **ServiceCard.astro refactored** as reusable card, used in: `index.astro` (featured), `layanan/index.astro` (listing), `layanan/[...slug].astro` (related services).

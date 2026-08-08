@@ -7,6 +7,18 @@ const DATE_PATTERN = /^(\d{1,2})\s+(Januari|Februari|Maret|April|Mei|Juni|Juli|A
 
 const wordCount = (s: string) => s.trim().split(/\s+/).filter(Boolean).length;
 
+const blogger = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/blogger' }),
+  schema: z.object({
+    title: z.string().default(''),
+    date: z.coerce.string(),
+    labels: z.array(z.string()).default([]),
+    slug: z.string(),
+    metaDescription: z.string().default(''),
+    published: z.boolean().default(true),
+  }),
+});
+
 const layanan = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/layanan' }),
   schema: z.object({
@@ -48,4 +60,4 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { layanan, blog };
+export const collections = { layanan, blog, blogger };

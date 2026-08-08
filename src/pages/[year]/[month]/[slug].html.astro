@@ -1,0 +1,191 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Navbar from '@components/Navbar.astro';
+import Footer from '@components/Footer.astro';
+import SidebarCTA from '@components/SidebarCTA.astro';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import { BUSINESS_INFO } from '@lib/data';
+import { parseBloggerSlug, bloggerOldPath, bloggerDateLabel, bloggerIsoDate } from '@lib/blogger';
+import { Archive, Calendar, MessageCircle, ArrowLeft, ArrowRight, Home } from 'lucide-react';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blogger', ({ data }) => data.published);
+  return posts
+    .filter((post) => post.data.title.trim().length > 0)
+    .flatMap((post) => {
+      const parsed = parseBloggerSlug(post.data.slug);
+      if (!parsed) return [];
+      return [
+        {
+          params: { year: parsed.year, month: parsed.month, slug: parsed.rest },
+          props: { post },
+        },
+      ];
+    });
+}
+
+interface Props {
+  post: CollectionEntry<'blogger'>;
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const data = post.data;
+
+const dateLabel = bloggerDateLabel(data.date);
+const isoDate = bloggerIsoDate(data.date);
+const oldPath = bloggerOldPath(post);
+const pageUrl = new URL(oldPath, Astro.site ?? 'https://sriwijayagrafika.com').toString();
+const description = data.metaDescription.trim() || `Arsip artikel ${data.title} — Sriwijaya Grafika Palembang.`;
+
+const waMessage = `Halo Sriwijaya Grafika, saya menemukan artikel *${data.title}* di halaman arsip Anda. Saya ingin bertanya lebih lanjut. Terima kasih!`;
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': pageUrl + '#article',
+  headline: data.title,
+  description: description,
+  datePublished: isoDate,
+  dateModified: isoDate,
+  inLanguage: 'id-ID',
+  author: {
+    '@type': 'Organization',
+    name: BUSINESS_INFO.name,
+    url: 'https://sriwijayagrafika.com',
+  },
+  publisher: {
+    '@type': 'LocalBusiness',
+    '@id': 'https://sriwijayagrafika.com/#business',
+    name: BUSINESS_INFO.name,
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://sriwijayagrafika.com/favicon.svg',
+    },
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': pageUrl,
+  },
+};
+---
+
+<Layout
+  title={`${data.title} (Arsip)`}
+  description={description}
+  canonicalUrl={pageUrl}
+  keywords={[...data.labels, 'Arsip Sriwijaya Grafika', 'Advertising Palembang']}
+  structuredData={articleSchema}
+>
+  <Navbar current="home" />
+
+  <main class="flex-1">
+    <section class="bg-gradient-to-br from-[#224da8] to-[#10285a] text-white py-14 md:py-20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 text-center">
+        <div class="flex flex-wrap items-center justify-center gap-2">
+          <nav aria-label="Breadcrumb" class="mb-4">
+            <ol class="flex flex-wrap items-center gap-1.5 text-xs text-white/80 font-mono">
+              <li><a href="/" class="hover:text-white transition-colors">Beranda</a></li>
+              <li aria-hidden="true">/</li>
+              <li><a href="/arsip" class="hover:text-white transition-colors">Arsip</a></li>
+              <li aria-hidden="true">/</li>
+              <li class="text-white">{dateLabel}</li>
+            </ol>
+          </nav>
+        </div>
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 text-[10px] font-bold font-mono uppercase tracking-wide bg-[#ff6634] text-white rounded-md shadow-md">
+          <Archive className="w-3 h-3" />
+          Arsip Artikel Lama
+        </span>
+        <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight leading-tight pt-2">
+          {data.title}
+        </h1>
+        <p class="flex items-center justify-center gap-2 text-xs text-white/80 font-mono">
+          <Calendar className="w-3.5 h-3.5" />
+          Dipublikasikan {dateLabel}
+        </p>
+      </div>
+    </section>
+
+    <section class="py-10 md:py-14 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <aside class="lg:col-span-1 lg:sticky lg:top-24 lg:self-start space-y-6">
+            <SidebarCTA
+              title="Butuh Info Terkini?"
+              description="Artikel ini arsip lama. Hubungi tim kami untuk info harga, material, dan penawaran terbaru via WhatsApp."
+              whatsappMessage={waMessage}
+              variant="light"
+              ctaLabel="Hubungi via WhatsApp"
+            />
+          </aside>
+
+          <div class="lg:col-span-2">
+            <article class="prose-article max-w-none">
+              <Content />
+            </article>
+
+            <div class="mt-10 rounded-2xl bg-gradient-to-br from-[#224da8]/5 to-[#ff6634]/10 border border-[#224da8]/10 p-6 md:p-8">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-[#10285a] flex items-center justify-center text-white shadow-md">
+                  <Archive className="w-5 h-5" />
+                </div>
+                <div class="flex-1 space-y-3">
+                  <h2 class="text-base font-extrabold text-neutral-800">Arsip Artikel Lama</h2>
+                  <p class="text-sm text-neutral-600 leading-relaxed">
+                    Ini merupakan arsip artikel dari website lama Sriwijaya Grafika. Harga, stok, dan detail layanan
+                    mungkin sudah berubah. Hubungi kami untuk informasi terbaru atau lihat beranda kami.
+                  </p>
+                  <div class="flex flex-wrap gap-3 pt-2">
+                    <a
+                      href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent(waMessage)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white text-sm font-bold shadow-md transition-all"
+                    >
+                      <MessageCircle className="w-4 h-4" />
+                      Hubungi via WhatsApp
+                    </a>
+                    <a
+                      href="/"
+                      class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white border border-neutral-200 hover:bg-neutral-50 text-neutral-700 text-sm font-bold transition-all"
+                    >
+                      <Home className="w-4 h-4" />
+                      Kembali ke Beranda
+                    </a>
+                    <a
+                      href="/layanan"
+                      class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white border border-neutral-200 hover:bg-neutral-50 text-neutral-700 text-sm font-bold transition-all"
+                    >
+                      <ArrowRight className="w-4 h-4" />
+                      Lihat Layanan Terbaru
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-neutral-100 flex items-center justify-between">
+              <a
+                href="/arsip"
+                class="inline-flex items-center gap-2 text-sm font-bold text-[#224da8] hover:text-[#ff6634] transition-colors"
+              >
+                <ArrowLeft className="w-4 h-4" />
+                Semua Arsip Artikel
+              </a>
+              <a
+                href="/blog"
+                class="inline-flex items-center gap-2 text-sm font-bold text-[#224da8] hover:text-[#ff6634] transition-colors"
+              >
+                Artikel Modern di Blog
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
