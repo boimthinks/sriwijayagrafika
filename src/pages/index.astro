@@ -50,13 +50,12 @@ const breadcrumbs = {
 
 <Layout
   title="Sriwijaya Grafika Palembang | Jasa Huruf Timbul, Neon Box & Reklame Termurah"
-  description="Sriwijaya Grafika Palembang - Jasa advertising, huruf timbul LED, neon box, papan nama toko, rambu K3, dan percetakan. Garansi resmi 1 tahun. Hubungi WhatsApp 0852-1511-1125."
+  description="Sriwijaya Grafika Palembang - Jasa advertising, huruf timbul LED, neon box, papan nama toko, dan rambu K3. Garansi resmi 1 tahun. Hubungi WhatsApp 0852-1511-1125."
   keywords={[
     'Advertising Palembang',
     'Huruf Timbul Palembang',
     'Neon Box Palembang',
     'Papan Nama Toko',
-    'Percetakan Palembang',
     'Rambu K3',
     'Reklame Palembang',
     'Sriwijaya Grafika',
@@ -72,7 +71,7 @@ const breadcrumbs = {
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
           <div class="space-y-1">
-            <span class="text-xs uppercase font-mono font-bold text-[#ff6634] tracking-widest block">PILIHAN PRIORITAS KONSUMEN</span>
+            <span class="text-xs uppercase font-mono font-bold text-[#c2410c] tracking-widest block">PILIHAN PRIORITAS KONSUMEN</span>
             <h3 class="text-2xl font-extrabold text-neutral-800 tracking-tight">Layanan Utama &amp; Terlaris</h3>
           </div>
           <a
@@ -94,7 +93,7 @@ const breadcrumbs = {
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
           <div class="space-y-2">
-            <span class="text-xs uppercase font-mono font-bold text-[#ff6634] tracking-widest block">HASIL KERJA NYATA</span>
+            <span class="text-xs uppercase font-mono font-bold text-[#c2410c] tracking-widest block">HASIL KERJA NYATA</span>
             <h3 class="text-2xl md:text-3xl font-extrabold tracking-tight">Portofolio Pilihan Klien Kami</h3>
             <p class="text-sm text-neutral-500 max-w-xl leading-relaxed">
               Cuplikan proyek huruf timbul, neon box, neon flex, dan rambu K3 yang sudah kami selesaikan untuk brand lokal hingga nasional di Palembang.
@@ -102,7 +101,7 @@ const breadcrumbs = {
           </div>
           <a
             href="/portofolio"
-            class="text-xs font-bold text-[#ff6634] inline-flex items-center gap-1 hover:underline whitespace-nowrap"
+            class="text-xs font-bold text-[#c2410c] inline-flex items-center gap-1 hover:underline whitespace-nowrap"
           >
             <span>Lihat Galeri Lengkap</span>
             <ArrowRight className="w-3 h-3" />
@@ -171,9 +170,9 @@ const breadcrumbs = {
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
             <div class="space-y-2">
-              <span class="text-xs uppercase font-mono font-bold text-[#ff6634] tracking-widest block">WAWASAN TIM PRODUKSI</span>
+              <span class="text-xs uppercase font-mono font-bold text-[#c2410c] tracking-widest block">WAWASAN TIM PRODUKSI</span>
               <h3 class="text-2xl md:text-3xl font-extrabold text-neutral-800 tracking-tight">Tips, Studi Kasus &amp; Panduan Terbaru</h3>
-              <p class="text-sm text-neutral-500 max-w-xl leading-relaxed">
+<p class="text-sm text-neutral-600 max-w-xl leading-relaxed">
                 Pelajari cara memilih material, membaca harga, dan menghindari kesalahan umum saat memesan signage — langsung dari praktisi.
               </p>
             </div>
@@ -221,14 +220,13 @@ const breadcrumbs = {
         dotsContainer.innerHTML = '';
         const max = maxIndex();
         for (let i = 0; i <= max; i++) {
-          const dot = document.createElement('button');
-          dot.type = 'button';
-          dot.setAttribute('aria-label', `Slide ${i + 1}`);
-          dot.className = `h-1.5 rounded-full transition-all duration-300 ${
-            i === currentIndex ? 'w-8 bg-[#ff6634]' : 'w-1.5 bg-neutral-300 hover:bg-neutral-400'
-          }`;
-          dot.addEventListener('click', () => goTo(i));
-          dotsContainer.appendChild(dot);
+          const dotBtn = document.createElement('button');
+          dotBtn.type = 'button';
+          dotBtn.setAttribute('aria-label', `Slide ${i + 1}`);
+          dotBtn.className = 'flex h-8 w-8 items-center justify-center rounded-full transition-all duration-300';
+          dotBtn.innerHTML = `<span class="h-1.5 rounded-full transition-all duration-300 ${i === currentIndex ? 'w-8 bg-[#c2410c]' : 'w-1.5 bg-neutral-400'}"></span>`;
+          dotBtn.addEventListener('click', () => goTo(i));
+          dotsContainer.appendChild(dotBtn);
         }
       };
 

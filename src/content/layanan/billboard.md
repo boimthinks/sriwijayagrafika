@@ -20,53 +20,59 @@ order: 5
 
 ## Tentang Billboard
 
-Billboard adalah papan reklame berukuran besar yang dipasang di lokasi-lokasi strategis pinggir jalan raya, persimpangan, atau area dengan traffic tinggi. Digunakan untuk iklan brand, pengumuman proyek, atau kampanye politik. Ukurannya bervariasi dari 4×8 meter hingga 10×20 meter.
+Billboard adalah papan reklame raksasa yang dipasang di titik-titik ramai seperti pinggir jalan tol, persimpangan, atau area dengan kepadatan lalu lintas tinggi. Fungsinya untuk iklan brand, pengumuman proyek, atau kampanye politik. Ukurannya mulai dari 4x8 meter sampai 10x20 meter.
 
-Kami melayani produksi billboard full-service termasuk pondasi, struktur, visual cetak, dan instalasi lampu sorot.
+Kami melayani produksi billboard menyeluruh, dari pondasi, struktur besi, cetak visual, sampai pasang lampu sorot.
 
 ## Keunggulan Layanan Kami
 
-- **Struktur kokoh** — Pipa besi tebal dengan pondasi cakar ayam tahan gempa
-- **Visual premium** — Cetak digital high resolution pada backlit vinyl atau frontlite
-- **Pencahayaan optimal** — Lampu sorot LED hemat energi untuk visibility malam
-- **Lokasi strategis** — Kami dapat membantu konsultasi pemilihan titik reklame
-- **Perawatan & ganti visual** — Layanan maintenance dan ganti konten berkala
+- Struktur kokoh pakai pipa besi tebal dan pondasi cakar ayam anti gempa.
+- Visual tajam high resolution pakai bahan backlit vinyl atau frontlite.
+- Lampu sorot LED irit listrik supaya malam tetap kelihatan.
+- Kami bantu konsultasi titik lokasi yang ramai.
+- Ada layanan maintenance dan ganti konten secara berkala.
 
 ## Aplikasi Umum
 
-- Billboard pinggir jalan tol dan nasional
-- Billboard persimpangan kota
-- Papan reklame kawasan industri
-- Signage promosi developer & property
-- Billboard kampanye politik & sosial
-- Reklame toko ritel dan franchise besar
+- Billboard pinggir jalan tol dan jalan nasional.
+- Billboard persimpangan kota.
+- Papan reklame kawasan industri.
+- Signage promosi developer properti.
+- Billboard kampanye politik dan sosial.
+- Reklame toko retail dan franchise besar.
 
 ## Proses Pengerjaan
 
-1. **Survey & izin** — Pengecekan titik lokasi dan pengurusan izin reklame (bila dibutuhkan)
-2. **Desain visual** — Layout visual cetak sesuai ukuran
-3. **Pondasi** — Galian dan pengecoran cakar ayam
-4. **Konstruksi tiang** — Pipa besi utama & struktur
-5. **Pemasangan frame** — Frame visual + cetak banner
-6. **Instalasi lampu** — Lampu sorot & wiring
-7. **Finishing** — QC dan serah terima
+1. Survey dan perizinan, cek lokasi dan urus izin reklame bila perlu.
+2. Desain visual sesuai ukuran.
+3. Pondasi, gali dan cor cakar ayam.
+4. Konstruksi tiang pakai pipa besi utama.
+5. Pasang frame dan cetak banner visual.
+6. Instalasi lampu sorot dan sambungan listrik.
+7. Finishing, QC, dan serah terima.
 
 ## FAQ
 
 **Apakah perlu izin reklame?**
-Untuk billboard di jalan raya atau milik pemerintah daerah, biasanya butuh izin. Kami dapat membantu prosesnya.
 
-**Berapa lama visual bertahan?**
-Standar 2–3 tahun untuk outdoor premium, tergantung cuaca dan kualitas cetak.
+Biasanya perlu untuk billboard di pinggir jalan umum atau milik pemerintah daerah. Kami bisa bantu urus.
+
+**Berapa lama visual bisa bertahan?**
+
+Bahan outdoor premium rata-rata tahan 2-3 tahun, tergantung cuaca dan kualitas cetakan.
 
 **Apakah melayani ganti visual?**
-Ya. Kami melayani cetak ulang dan pemasangan visual baru untuk billboard existing.
 
-**Bagaimana cara order pembuatan billboard?**
-Hubungi kami via WhatsApp untuk konsultasi lokasi dan desain. Tim kami akan survei titik lokasi dan memberikan proposal harga.
+Ya. Kami bisa cetak ulang dan pasang konten baru di billboard yang sudah ada.
 
-**Apakah bisa dipasang di luar kota Palembang?**
-Bisa. Kami melayani pemasangan billboard di berbagai kota Sumatera Selatan seperti Prabumulih, Lubuklinggau, Baturaja, dan Muara Enim.
+**Bagaimana cara pesan pembuatan billboard?**
 
-**Berapa lama proses pembuatan billboard baru?**
-Untuk billboard baru dengan pondasi, standar 2-3 minggu tergantung kondisi lapangan dan cuaca.
+Hubungi via WhatsApp untuk diskusi lokasi dan desain. Tim akan survey lokasi dulu baru berikan proposal harga.
+
+**Bisa pasang di luar kota Palembang?**
+
+Bisa. Kami melayani pemasangan di berbagai kota Sumatera Selatan seperti Prabumulih, Lubuklinggau, Baturaja, dan Muara Enim.
+
+**Berapa lama pengerjaan billboard baru?**
+
+Standar 2-3 minggu, tergantung kondisi tanah di lokasi dan cuaca.

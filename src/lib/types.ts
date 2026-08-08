@@ -2,7 +2,7 @@ export interface CatalogProduct {
   id: string;
   name: string;
   description: string;
-  category: 'utama' | 'secondary';
+  category: 'utama';
   subcategory: string;
   basePrice: number;
   priceUnit: string;

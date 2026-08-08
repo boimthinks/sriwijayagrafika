@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import { ArrowRight, ImageOff, Megaphone, ShieldAlert, FileText, Printer, BookOpen, Gift, Layout, Calendar, Sparkles, Package, MessageSquare, FileBadge, Tag, Boxes, Layers, PenTool } from 'lucide-react';
+import { ArrowRight, ImageOff, Megaphone, ShieldAlert, PenTool, Boxes } from 'lucide-react';
 
 interface Props {
   service: CollectionEntry<'layanan'>;
@@ -14,22 +14,11 @@ const href = `/layanan/${service.id}`;
 const SUBCATEGORY_ICONS: Record<string, typeof Megaphone> = {
   'Advertising & Reklame': Megaphone,
   'Rambu & Keamanan': ShieldAlert,
-  'Acrylic Custom': Layers,
   'Event & Display': PenTool,
-  'Percetakan Kantor': FileText,
-  'Digital Printing': Printer,
-  'Buku & Jilid': BookOpen,
-  'Garmen & Souvenir': Gift,
-  'Alat Peraga': Layout,
-  'Acara & Seremoni': Calendar,
 };
 const PlaceholderIcon = SUBCATEGORY_ICONS[data.subcategory] ?? Boxes;
 
-const CATEGORY_GRADIENTS: Record<string, string> = {
-  utama: 'from-[#224da8] via-[#3c5a98] to-[#10285a]',
-  secondary: 'from-[#ff6634] via-[#ff8a5e] to-[#c2410c]',
-};
-const gradient = CATEGORY_GRADIENTS[data.category] ?? 'from-neutral-700 to-neutral-900';
+const gradient = 'from-[#224da8] via-[#3c5a98] to-[#10285a]';
 
 const SUBCAT_INITIALS = data.subcategory
   .split(/[\s&]+/)
@@ -92,7 +81,7 @@ const SUBCAT_INITIALS = data.subcategory
 
       {data.features && data.features.length > 0 && (
         <div class="mt-4 pt-4 border-t border-dashed border-neutral-100 space-y-2">
-          <span class="text-[10px] uppercase font-mono tracking-wider font-bold text-neutral-400">Keunggulan</span>
+          <span class="text-[10px] uppercase font-mono tracking-wider font-bold text-neutral-600">Keunggulan</span>
           <div class="space-y-1 text-xs">
             {data.features.slice(0, 3).map((feat) => (
               <div class="flex items-start gap-1.5 text-neutral-600 font-medium">

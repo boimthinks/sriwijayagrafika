@@ -296,7 +296,7 @@ export default function CalculatorModal({ product, onClose }: Props) {
 
               {product.calculatorType === 'printing_standard' && (
                 <div className="space-y-4 p-4 rounded-2xl bg-neutral-50 border border-neutral-100">
-                  <span className="text-xs font-bold text-neutral-700 block">Setting Buku Percetakan</span>
+                  <span className="text-xs font-bold text-neutral-700 block">Setting Buku Reklame</span>
                   <div className="grid grid-cols-2 gap-3">
                     <div>
                       <label className="block text-xs font-semibold text-neutral-600 mb-1">Model Buku NCR</label>

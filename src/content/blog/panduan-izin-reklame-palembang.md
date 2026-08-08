@@ -6,99 +6,82 @@ date: "9 Februari 2026"
 topik: "panduan"
 imgurl: "/img/blog/panduan-izin-reklame-palembang.webp"
 imgalt: "Contoh neon box dan signage toko di Palembang dengan izin reklame yang lengkap"
-pengantar: "Anda sudah pesan neon box keren dari vendor, material dipilih, desain disetujui, produksi selesai. Lalu di hari instalasi, tim vendor datang dengan wajah bingung — mereka baru ingat belum ada izin reklame dari pemerintah kota. Hasilnya? Neon box jadi tidak bisa dipasang, atau kalau nekat dipasang, kena sidak Satpol PP dan harus bongkar. Artikel ini membahas izin reklame di Palembang, supaya signage Anda aman dan legal."
+pengantar: "Anda sudah pesan neon box keren dari vendor, material dipilih, desain disetujui, produksi selesai. Lalu di hari instalasi, tim vendor datang dengan wajah bingung, mereka baru ingat belum ada izin reklame dari pemerintah kota. Hasilnya? Neon box jadi tidak bisa dipasang, atau kalau nekat dipasang, kena sidak Satpol PP dan harus bongkar. Artikel ini membahas izin reklame di Palembang, supaya signage Anda aman dan legal."
 kesimpulan: "Izin reklame bukan hambatan, tapi perlindungan agar tidak kena sidak atau bongkar paksa. Prosesnya tidak serumit yang dibayangkan, asal dokumen lengkap dan vendor Anda paham regulasinya. Kami biasa membantu klien menyiapkan dokumen teknis yang diminta DPMPTSP. Untuk konsultasi gratis area Palembang dan Sumatera Selatan, hubungi WhatsApp 0852-1511-1125."
 published: true
 ---
 
 ## Mengapa Izin Reklame Wajib di Palembang
 
-Izin reklame di Palembang bukan formalitas belaka. Ini adalah regulasi yang diawasi ketat oleh DPMPTSP (Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu) bersama Satpol PP. Tujuannya adalah untuk mengatur tata ruang kota, memastikan signage tidak menghalangi jalan atau mengganggu pejalan kaki, dan menjadi sumber Pendapatan Asli Daerah (PAD) melalui pajak reklame.
+Izin reklame di Palembang bukan sekadar formalitas. Ini adalah regulasi yang diawasi ketat oleh DPMPTSP (Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu) bersama Satpol PP. Tujuannya adalah mengatur tata ruang kota, memastikan signage tidak menghalangi jalan atau mengganggu pejalan kaki, sekaligus menjadi sumber Pendapatan Asli Daerah (PAD) melalui pajak reklame.
 
-Untuk pemilik usaha, izin ini adalah bentuk perlindungan. Tanpa izin, signage Anda bisa kena sidak sewaktu-waktu dan harus dibongkar dengan biaya Anda sendiri. Lebih parah lagi, kalausignage Anda menyebabkan kecelakaan (misalnya jatuh ke jalan atau menghalangi rambu lalu lintas), Anda bisa kena tanggung jawab hukum.
+Bagi pemilik usaha, izin ini adalah bentuk perlindungan. Tanpa izin, signage Anda bisa kena sidak sewaktu-waktu dan harus dibongkar dengan biaya sendiri. Lebih parah lagi, kalau signage menyebabkan kecelakaan (misalnya jatuh ke jalan atau menghalangi rambu lalu lintas), Anda yang harus menanggung jawab hukumnya.
 
-Yang sering jadi masalah, banyak pemilik usaha memesan signage dulu, produksi selesai, baru ingat belum urus izin. Atau lebih buruk, vendor yang dipilih tidak mengingatkan soal izin. Hasilnya:signage jadi tidak bisa dipasang, atau dipasang tanpa izin dan harap-harap tidak kena sidak.
+Masalah yang sering terjadi adalah pemilik usaha memesan signage, produksi selesai, baru ingat belum urus izin. Atau lebih buruk lagi, vendor yang dipilih tidak mengingatkan soal aturan izin. Hasilnya, signage jadi tidak bisa dipasang, atau malah dipasang ilegal dan menunggu waktu saja sampai kena sidak.
 
 ## Jenis Izin dan Klasifikasi Reklame
 
-Di Palembang, izin reklame dibagi berdasarkan beberapa kategori yang mempengaruhi besaran pajak dan prosedur pengurusannya.
+Di Palembang, izin reklame dibagi menjadi beberapa kategori yang menentukan besaran pajak dan prosedurnya.
 
-**Reklame permanen.** Ini adalahsignage yang sifatnya menetap, biasanya terpasang di bangunan atau tiang sendiri. Neon box, huruf timbul, pylon sign, dan baliho masuk kategori ini. Pajak dihitung berdasarkan luas, tinggi, lokasi, dan lama pemasangan (biasanya per tahun).
+*   **Reklame Permanen:** Signage yang sifatnya menetap, biasanya terpasang di bangunan atau tiang sendiri. Neon box, huruf timbul, pylon sign, dan baliho masuk kategori ini. Pajak dihitung berdasarkan luas, tinggi, lokasi, dan lama pemasangan (biasanya per tahun).
+*   **Reklame Non-permanen:** Banner, spanduk, umbul-umbul, dan standing banner yang dipasang sementara untuk acara tertentu. Pajak dihitung per periode pemasangan, biasanya mingguan atau bulanan.
+*   **Reklame Video atau LED:** Papan reklame digital atau videotron memiliki kategori khusus karena dianggap memiliki dampak visual lebih besar bagi pengguna jalan. Aturannya lebih ketat dan biasanya butuh izin tambahan dari dinas Perhubungan.
 
-**Reklame non-permanen.** Termasuk banner, spanduk, umbul-umbul, dan standing banner yang dipasang sementara untuk event tertentu. Pajak dihitung per periode pemasangan, biasanya per minggu atau per bulan.
+Palembang juga membagi lokasi signage menjadi beberapa kelas yang menentukan tarif pajak.
+*   Kelas A: Jalan protokol dan kawasan premium (misalnya Sudirman, Demang, dan sebagian Ilir).
+*   Kelas B: Jalan utama, tapi bukan jalan protokol.
+*   Kelas C: Jalan lingkungan.
 
-**Reklame video/LED.** Papan reklame digital atau videotron masuk kategori khusus karena dinilai punya dampak visual lebih besar terhadap pengguna jalan. Pajak dan aturannya lebih ketat, biasanya butuh izin tambahan dari dinas Perhubungan.
-
-**Klasifikasi lokasi.** Palembang membagi lokasisignage menjadi beberapa kelas yang mempengaruhi tarif pajak. Kelas A (jalan protokol dan kawasan premium seperti Sudirman, Demang, dan sebagian Ilir), Kelas B (jalan utama tapi bukan protokol), dan Kelas C (jalan lingkungan). Makin premium lokasi, makin tinggi pajaknya.
-
-Untuk usaha kecil dan UMKM, signage yang dipasang di depan toko sendiri dengan ukuran sedang biasanya masuk kelas B atau C, dengan pajak yang relatif terjangkau.
+Semakin premium lokasinya, semakin tinggi pajaknya. Untuk usaha kecil atau UMKM yang memasang signage di depan toko sendiri dengan ukuran sedang, biasanya mereka masuk kelas B atau C dengan pajak yang relatif terjangkau.
 
 ## Dokumen yang Harus Disiapkan
 
-Sebelum mengurus izin, Anda perlu menyiapkan beberapa dokumen utama. Ini berlaku untuk izin reklame permanen jenis neon box atau huruf timbul.
+Sebelum mengurus izin, siapkan beberapa dokumen utama. Ini berlaku untuk izin reklame permanen seperti neon box atau huruf timbul.
 
-**Identitas pemilik usaha.** KTP untuk usaha perseorangan, atau Akta Pendirian Perusahaan untuk badan usaha. NPWP juga wajib disiapkan.
+*   Identitas pemilik usaha (KTP untuk perseorangan, atau Akta Pendirian untuk badan usaha). NPWP juga wajib disiapkan.
+*   Surat Izin Usaha, bisa berupa NIB (Nomor Induk Berusaha) dari sistem OSS, atau Surat Izin Tempat Usaha dari kelurahan.
+*   Surat keterangan tempat atau lokasi, seperti fotokopi sertifikat tanah, kontrak sewa, atau surat izin pemilik bangunan tempat signage dipasang.
+*   Desain signage yang akan dipasang, berupa gambar teknis dengan ukuran, dimensi, dan material yang digunakan. Vendor signage biasanya bisa menyiapkan ini.
+*   Surat pernyataan bahwa signage tidak akan mengganggu ketertiban umum, lalu lintas, atau keindahan kota.
+*   Izin tetangga jika signage berukuran cukup besar (misalnya di atas 4 m²), beberapa kelurahan meminta surat persetujuan tetangga atau RT/RW setempat.
 
-**Surat Izin Usaha.** Bisa berupa NIB (Nomor Induk Berusaha) yang sekarang bisa diurus via OSS, atau Surat Izin Tempat Usaha dari kelurahan.
-
-**Surat keterangan tempat/lokasi.** Bisa berupa fotokopi sertifikat tanah, kontrak sewa, atau surat izin pemilik bangunan untuk pemasangansignage di lokasi tersebut.
-
-**Desainsignage yang akan dipasang.** Ini biasanya dalam bentuk gambar teknis dengan ukuran, dimensi, dan materialsignage. Vendor signage Anda biasanya bisa siapkan dokumen ini.
-
-**Surat pernyataan.** Beberapa jenis izin butuh surat pernyataan bahwasignage tidak akan mengganggu ketertiban umum, lalu lintas, atau keindahan kota.
-
-**Izin tetangga (untuk signage besar).** Untuksignage dengan ukuran signifikan (misalnya lebih dari 4 m²), beberapa kelurahan minta surat persetujuan tetangga atau RT/RW setempat.
-
-Dokumen tambahan yang kadang diminta: izin dari pemilik bangunan (kalau bukan milik sendiri), rekomendasi dari asosiasi bisnis (untuk signage di kawasan bisnis tertentu), atau analisis dampak lalu lintas (untuk signage besar di jalan protokol).
+Kadang, dinas juga meminta dokumen tambahan seperti izin dari pemilik bangunan, rekomendasi asosiasi bisnis, atau analisis dampak lalu lintas untuk signage besar di jalan protokol.
 
 ## Timeline dan Estimasi Biaya
 
-Timeline pengurusan izin reklame di Palembang bervariasi tergantung kelengkapan dokumen dan kompleksitassignage.
+Waktu pengurusan izin di Palembang berbeda-beda tergantung kelengkapan dokumen dan kompleksitas signage.
 
-**Estimasi timeline normal.** Untuksignage standar dengan dokumen lengkap, proses izin memakan 14-21 hari kerja. Ini termasuk waktu verifikasi berkas, survey lokasi oleh tim DPMPTSP, dan penerbitan izin.
+*   **Timeline normal:** Untuk signage standar dengan dokumen lengkap, prosesnya memakan waktu 14-21 hari kerja. Ini mencakup verifikasi berkas, survei lokasi oleh tim DPMPTSP, hingga penerbitan izin.
+*   **Timeline ekspres:** Beberapa penyedia jasa bisa mempercepat hingga 7-10 hari kerja dengan biaya tambahan.
 
-**Estimasi timeline ekspres.** Beberapa calo atau jasa pengurusan izin bisa mempercepat sampai 7-10 hari kerja, tentu dengan biaya tambahan.
+Ada tiga komponen biaya utama. Pertama, biaya administrasi (relatif kecil, biasanya di bawah Rp 500.000). Kedua, pajak reklame yang dihitung per tahun, biasanya 10-25% dari NJOP (Nilai Jual Objek Pajak) reklame. Ketiga, biaya materai dan legalisir dokumen.
 
-**Komponen biaya izin reklame.** Ada tiga komponen biaya utama. Pertama, biaya administrasi pengurusan izin (relatif kecil, biasanya di bawah Rp 500.000). Kedua, pajak reklame yang dihitung per tahun, biasanya 10-25% dari NJOP (Nilai Jual Objek Pajak) reklame. Ketiga, biaya materai dan legalisir dokumen.
-
-**Estimasi pajaksignage UMKM.** Untuk neon box 1x1 meter di lokasi kelas B (jalan utama), pajak reklame per tahun sekitar Rp 200.000-500.000. Untuksignage 2x1 meter di kelas A (jalan protokol), pajak bisa Rp 800.000-1.500.000 per tahun. Angka ini bervariasi, sebaiknya konfirmasi ke DPMPTSP Palembang untuk angka terkini.
-
-**Biaya calo (jika digunakan).** Kalau Anda tidak mau repot, banyak calo yang bisa urus izin reklame dengan biaya jasa Rp 500.000-1.500.000 per izin, tergantung kompleksitas. Tapi pastikan calo yang Anda pakai terpercaya dan tidak asal jadi.
+Sebagai gambaran pajak untuk UMKM, neon box ukuran 1x1 meter di lokasi kelas B biasanya kena pajak sekitar Rp 200.000-500.000 per tahun. Untuk signage 2x1 meter di kelas A, pajaknya bisa mencapai Rp 800.000-1.500.000 per tahun. Angka ini bisa berubah, jadi pastikan konfirmasi ke DPMPTSP Palembang untuk angka terkini. Jika memakai jasa pengurusan izin (pihak ketiga), mereka biasanya mematok biaya jasa Rp 500.000-1.500.000 per izin.
 
 ## Kesalahan yang Sering Menghambat Proses
 
-Dari pengalaman kami membantu klien mengurus izin, ada beberapa kesalahan yang sering terjadi.
+Berdasarkan pengalaman kami membantu klien, beberapa kesalahan berikut sering terjadi:
 
-**Dokumen tidak lengkap.** Ini penyebab utama izin molor. Pastikan semua dokumen disiapkan sebelum mendaftar. Vendor signage yang berpengalaman biasanya punya checklist dokumen yang diminta DPMPTSP.
-
-**Desainsignage tidak sesuai regulasi.** Misalnyasignage terlalu besar menutupi jendela bangunan, signage menyala terlalu terang mengganggu pengguna jalan, atausignage melebihi garis sempadan bangunan. Semua ini bisa jadi alasan penolakan.
-
-**Lokasi masuk kawasan terlarang.** Tidak semua lokasi boleh dipasangsignage. Kawasan cagar budaya, depan rumah ibadah, dan area steril tertentu tidak boleh adasignage komersial. Sebelum pesan, cek dulu apakah lokasi Anda termasuk kawasan yang diizinkan.
-
-**Salah hitung pajak.** Beberapa pemilik usaha coba hitung sendiri pajaknya dan ternyata meleset jauh. Lebih baik minta DPMPTSP yang hitung resmi untuk menghindari koreksi di kemudian hari.
-
-**Tidak perpanjang izin tepat waktu.** Izin reklame biasanya berlaku 1 tahun dan harus diperpanjang. Banyak yang lupa sampai kena peringatan atau bahkan sidak. Set reminder 1 bulan sebelum jatuh tempo.
+*   **Dokumen tidak lengkap.** Ini penyebab utama izin molor. Pastikan semuanya siap sebelum mendaftar.
+*   **Desain tidak sesuai regulasi.** Misalnya signage menutupi jendela bangunan, terlalu terang sehingga mengganggu, atau melewati garis sempadan bangunan. Ini alasan umum penolakan.
+*   **Lokasi terlarang.** Tidak semua tempat boleh dipasang signage. Contohnya di kawasan cagar budaya, depan rumah ibadah, atau area steril komersial lainnya. Cek dulu lokasi Anda.
+*   **Salah hitung pajak.** Hindari menghitung sendiri pajaknya. Minta DPMPTSP menghitung secara resmi agar tidak ada koreksi di kemudian hari.
+*   **Lupa perpanjang.** Izin biasanya berlaku 1 tahun. Pasang pengingat 1 bulan sebelum jatuh tempo agar tidak kena teguran atau sidak.
 
 ## Tips Praktis agar Izin Cepat Keluar
 
-Beberapa hal yang bisa mempercepat proses izin reklame Anda.
+Beberapa hal bisa membantu mempercepat proses perizinan Anda:
 
-**Pilih vendorsignage yang paham regulasi.** Vendor yang baik akan mengingatkan Anda soal izin dan membantu menyiapkan dokumen teknis yang diminta. Ini menghemat banyak waktu dan mengurangi risiko dokumen ditolak.
-
-**Ajukan izin sebelum produksisignage.** Idealnya, izin sudah selesai sebelum Anda pesansignage. Dengan begitu, kalau ada revisi desain yang diminta DPMPTSP, signage Anda bisa langsung disesuaikan tanpa kerugian material.
-
-**Datang langsung ke DPMPTSP untuk konsultasi awal.** Sebelum daftar resmi, biasanya ada loket konsultasi gratis di DPMPTSP. Manfaatkan untuk klarifikasi dokumen dan prosedur terbaru.
-
-**Siapkan dokumen dalam format digital.** Saat ini DPMPTSP sudah menerima pendaftaran online, tapi dokumen fisik tetap dibutuhkan. Siapkan soft copy semua dokumen untuk mempercepat proses.
-
-**Pantau status izin secara berkala.** Jangan hanya daftar lalu menunggu. Hubungi DPMPTSP setiap minggu untuk update progress. Ini membantu Anda tahu kalau ada dokumen yang perlu dilampirkan tambahan.
+*   Pilih vendor signage yang paham regulasi. Mereka bisa membantu menyiapkan dokumen teknis dan memberi masukan desain yang sesuai aturan.
+*   Ajukan izin sebelum memproduksi signage. Idealnya, izin sudah selesai sebelum mulai produksi. Kalau ada revisi desain, Anda bisa langsung menyesuaikan tanpa rugi material.
+*   Datangi loket konsultasi gratis di DPMPTSP sebelum mendaftar resmi untuk memastikan prosedur terbaru.
+*   Siapkan soft copy semua dokumen karena sistem sudah mulai beralih ke pendaftaran online.
+*   Pantau status izin secara berkala. Hubungi DPMPTSP setiap minggu untuk mengetahui apakah ada berkas tambahan yang diminta.
 
 ## Bagaimana Vendor Signage Bisa Membantu
 
-Vendorsignage yang berpengalaman biasanya tidak hanya produksi dan pasang, tapi juga bisa membantu proses perizinan. Ini nilai tambah yang tidak semua vendor tawarkan.
+Vendor signage yang berpengalaman tidak hanya memproduksi dan memasang, tetapi juga membantu proses perizinan.
 
-Di Sriwijaya Grafika, kami biasa membantu klien dalam beberapa hal terkait izin. Pertama, menyiapkan gambar teknissignage yang diminta DPMPTSP. Kedua, menyesuaikan desainsignage dengan regulasi yang ada (misalnya mengatur posisi agar tidak menutupi jendela atau mengganggu jalan). Ketiga, memberikan informasi pajak estimasi berdasarkan ukuran dan lokasisignage.
+Di Sriwijaya Grafika, kami membantu klien menyiapkan gambar teknis signage yang diminta DPMPTSP, memastikan desain sesuai regulasi agar tidak menutupi jendela atau mengganggu jalan, serta memberikan estimasi pajak. Kami memang tidak berperan menjadi calo atau mengurus izin atas nama klien, karena itu adalah wewenang Anda sebagai pemilik signage. Namun, kami menjamin signage yang kami buat memenuhi regulasi, sehingga proses izin menjadi lebih lancar.
 
-Yang kami tidak lakukan adalah menjadi calo atau mengurus izin atas nama klien — itu wewenang klien sebagai pemiliksignage. Tapi kami pastikansignage yang kami produksi memenuhi regulasi yang berlaku, sehingga proses izin di sisi klien menjadi lebih lancar.
-
-Kalau Anda sedang pertimbangkansignage untuk usaha di Palembang dan butuh panduan lebih lanjut soal izin reklame, tim kami terbuka untuk konsultasi. Hubungi WhatsApp 0852-1511-1125 untuk diskusi. Untuk informasi resmi dan terkini soal prosedur izin, selalu cek langsung ke DPMPTSP Palembang atau website resmi mereka.
+Jika Anda sedang mempertimbangkan signage untuk usaha di Palembang dan butuh panduan, silakan hubungi kami di WhatsApp 0852-1511-1125. Untuk informasi resmi prosedur izin, selalu cek langsung ke DPMPTSP Palembang atau website resmi mereka.

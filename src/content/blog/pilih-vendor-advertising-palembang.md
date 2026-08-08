@@ -13,23 +13,23 @@ published: true
 
 ## Harga Murah, Apa yang Tidak Terlihat
 
-Wajar kalau Anda tertarik dengan vendor yang menawarkan harga murah. Anggaran terbatas, kebutuhan mendesak, dan godaan "diskonya hari ini" memang sulit ditolak. Tapi dari pengalaman kami menangani puluhan klien yang datang dengan signage rusak dari vendor sebelumnya, ada pola yang berulang.
+Wajar kalau Anda tertarik dengan vendor yang menawarkan harga murah. Anggaran terbatas, kebutuhan mendesak, dan godaan "diskonnya hari ini" memang sulit ditolak. Tapi dari pengalaman kami menangani puluhan klien yang datang dengan signage rusak dari vendor sebelumnya, ada pola yang berulang.
 
-Vendor dengan harga jauh di bawah rata-rata biasanya mengambil jalan pintas di tiga titik. Pertama, material grade bawah — stainless 201 bukan 304, akrilik 2 mm bukan 5 mm, LED tanpa merek bukan Samsung waterproof. Kedua, proses produksi yang dipercepat — las tanpa gas argon, finishing tanpa pasivasi, cutting yang tidak presisi. Ketiga, tidak ada garansi atau garansi yang sulit diklaim.
+Vendor dengan harga jauh di bawah rata-rata biasanya mengambil jalan pintas di tiga titik. Pertama, material grade bawah: stainless 201 bukan 304, akrilik 2 mm bukan 5 mm, LED tanpa merek bukan Samsung waterproof. Kedua, proses produksi yang dipercepat: las tanpa gas argon, finishing tanpa pasivasi, cutting yang tidak presisi. Ketiga, tidak ada garansi atau garansi yang sulit diklaim.
 
-Selisih harga Rp 500.000 sampai Rp 1.000.000 di awal terlihat menghemat. Tapi ketika huruf timbul mulai berkarat di tahun kedua dan Anda harus bayar Rp 4-5 juta untuk perbaikan, penghematan itu terasa sia-sia.
+Selisih harga Rp 500.000 sampai Rp 1.000.000 di awal terlihat menghemat. Ketika huruf timbul mulai berkarat di tahun kedua dan Anda harus bayar Rp 4-5 juta untuk perbaikan, penghematan itu terasa sia-sia.
 
-Kami tidak mengatakan semua vendor murah jelek. Ada vendor dengan harga kompetitif yang tetap menjaga kualitas. Bedanya, mereka transparan soal material, mau ditanya detail bahan yang dipakai, dan memberikan garansi tanpa syarat yang berbelit-belit.
+Kami tidak mengatakan semua vendor murah jelek. Ada vendor dengan harga kompetitif yang tetap menjaga kualitas. Bedanya, mereka transparan soal material, mau ditanya detail bahan yang dipakai, dan memberikan garansi tanpa syarat yang berbelit.
 
 ## Workshop dan Proses Produksi, Indikator Paling Jelas
 
-Ini hal paling sederhana yang sering terlewat. Anda pesan signage, terima foto hasil jadi, bayar, dan selesai. Tapi pernahkah Anda tanya di mana signage itu dibuat? Siapa yang mengerjakannya? Bagaimana proses produksinya?
+Ini hal paling sederhana yang sering terlewat. Anda pesan signage, terima foto hasil jadi, bayar, selesai. Tapi pernahkah Anda tanya di mana signage itu dibuat, siapa yang mengerjakannya, dan bagaimana proses produksinya?
 
 Vendor yang punya workshop sendiri biasanya bisa menunjukkan foto atau video proses produksi. Mereka bisa cerita bagaimana material dipotong, dilas, dirakit, dan di-finishing. Kalau perlu, Anda bisa mampir langsung untuk melihat prosesnya.
 
 Di sisi lain, vendor yang hanya menjadi makelar (tidak produksi sendiri) biasanya tidak bisa menjawab detail teknis. Mereka hanya menyampaikan pesanan ke bengkel pihak ketiga, dan kualitasnya tergantung siapa yang kebetulan mengerjakan hari itu.
 
-Ciri vendor yang produksi sendiri: mereka bisa tunjukkin foto proses las, cutting, dan assembling. Mereka juga punya stok material di workshop — bukan hanya foto produk jadi dari internet.
+Ciri vendor yang produksi sendiri adalah bisa menunjukkan foto proses las, cutting, dan assembling. Mereka juga punya stok material di workshop, bukan hanya foto produk jadi dari internet.
 
 ## Garansi sebagai Batas Antara Vendor Serius dan Tidak
 
@@ -43,34 +43,34 @@ Di Sriwijaya Grafika, kami memberikan garansi 1 tahun untuk semua instalasi huru
 
 ## Mockup 3D Gratis, Pertanda Vendor Paham Visualisasi
 
-Tidak semua vendor memberikan mockup 3D sebelum produksi. Padahal, mockup adalah alat yang sangat membantu Anda membayangkan hasil akhir signage di lokasi toko — termasuk ukuran proporsional, warna, pencahayaan, dan posisi.
+Tidak semua vendor memberikan mockup 3D sebelum produksi. Padahal, mockup adalah alat yang sangat membantu Anda membayangkan hasil akhir signage di lokasi toko, termasuk ukuran proporsional, warna, pencahayaan, dan posisi.
 
 Vendor yang menyediakan mockup 3D gratis menunjukkan dua hal. Pertama, mereka punya kemampuan desain dan visualisasi yang memadai. Kedua, mereka serius membantu klien membuat keputusan yang tepat, bukan sekadar menjual produk.
 
-Tanpa mockup, Anda hanya bisa membayangkan hasil akhir berdasarkan gambar 2D atau referensi dari foto作品 orang lain. Risikonya, signage yang sudah jadi ternyata tidak proporsional dengan fasad toko, warnanya tidak cocok dengan cat dinding, atau ukurannya terlalu besar atau kecil.
+Tanpa mockup, Anda hanya bisa membayangkan hasil akhir berdasarkan gambar 2D atau referensi dari foto karya orang lain. Risikonya, signage yang sudah jadi ternyata tidak proporsional dengan fasad toko, warnanya tidak cocok dengan cat dinding, atau ukurannya terlalu besar atau kecil.
 
 Di workshop kami, konsultasi desain dan mockup 3D adalah layanan standar yang kami berikan sebelum produksi. Klien bisa request revisi sampai desain sesuai keinginan, tanpa biaya tambahan.
 
 ## Konsultasi Sebelum Produksi, Ciri Vendor yang Mendengarkan
 
-Vendor yang baik tidak langsung menerima order begitu saja. Mereka akan tanya detail — di mana signage akan dipasang, apakah lokasi outdoor atau indoor, apa warna cat dinding toko, apakah ada pencahayaan sekitar, berapa tinggi pemasangan.
+Vendor yang baik tidak langsung menerima order begitu saja. Mereka akan tanya detail, seperti di mana signage akan dipasang, apakah lokasi outdoor atau indoor, apa warna cat dinding toko, apakah ada pencahayaan sekitar, dan berapa tinggi pemasangan.
 
-Pertanyaan-pertanyaan ini menunjukkan bahwa vendor ingin memastikan produk yang mereka buat sesuai dengan kondisi nyata di lapangan. Tanpa informasi ini, signage yang dihasilkan mungkin tidak optimal — LED terlalu redup untuk outdoor, ukuran terlalu kecil untuk jarak pandang jalan, atau material tidak sesuai dengan iklim Palembang yang lembap.
+Pertanyaan-pertanyaan ini menunjukkan bahwa vendor ingin memastikan produk yang mereka buat sesuai dengan kondisi nyata di lapangan. Tanpa informasi ini, signage yang dihasilkan mungkin tidak optimal. LED bisa terlalu redup untuk outdoor, ukuran terlalu kecil untuk jarak pandang jalan, atau material tidak sesuai dengan iklim Palembang yang lembap.
 
-Vendor yang asal terima order biasanya tidak bertanya apa-apa. Mereka hanya minta ukuran dan desain, lalu produksi. Hasilnya? Seringkali klien kecewa dan harus revisi dengan biaya tambahan.
+Vendor yang asal terima order biasanya tidak bertanya apa-apa. Mereka hanya minta ukuran dan desain, lalu produksi. Hasilnya seringkali klien kecewa dan harus revisi dengan biaya tambahan.
 
 Kalau Anda menghubungi vendor dan mereka langsung kirim penawaran tanpa bertanya detail lokasi dan kebutuhan, sebaiknya curiga.
 
 ## Cara Cek Kredibilitas Vendor Sebelum Deal
 
-Ada beberapa langkah sederhana yang bisa Anda lakukan untuk memverifikasi vendor advertising sebelum memutuskan.
+Beberapa langkah sederhana bisa dilakukan untuk memverifikasi vendor advertising sebelum memutuskan.
 
 Pertama, minta portofolio proyek yang sudah dikerjakan, khususnya di Palembang dan Sumatera Selatan. Portofolio yang lengkap mencakup foto sebelum dan sesudah, bukan hanya foto hasil jadi yang diambil dari angle terbaik.
 
 Kedua, tanya soal material secara spesifik. Misalnya, "stainless grade berapa yang dipakai?", "LED merek apa?", "berapa tebal akriliknya?". Vendor yang bisa menjawab dengan percaya diri menunjukkan mereka paham produknya. Vendor yang jawabannya mengambang biasanya tidak yakin.
 
-Ketiga, cek testimoni atau review dari klien sebelumnya. Kalau memungkinkan, minta kontak salah satu klien untuk references. Vendor yang memiliki klien puas biasanya tidak keberatan memberikan referensi.
+Ketiga, cek testimoni atau review dari klien sebelumnya. Kalau memungkinkan, minta kontak salah satu klien untuk referensi. Vendor yang memiliki klien puas biasanya tidak keberatan memberikan referensi.
 
 Keempat, tanya apakah ada survey lokasi gratis. Vendor yang serius akan melakukan survey untuk mengukur, mengecek kondisi dinding, dan memastikan instalasi berjalan lancar. Survey gratis adalah indikator bahwa vendor paham pentingnya persiapan.
 
-Kelima, minta rincian harga yang transparan — berapa biaya material, berapa biaya jasa, berapa biaya instalasi. Penawaran yang hanya menyebut harga total tanpa rincian patut dicurigai.
+Kelima, minta rincian harga yang transparan, berapa biaya material, berapa biaya jasa, dan berapa biaya instalasi. Penawaran yang hanya menyebut harga total tanpa rincian patut dicurigai.

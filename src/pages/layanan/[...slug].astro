@@ -6,7 +6,7 @@ import ServiceCard from '@components/ServiceCard.astro';
 import SidebarCTA from '@components/SidebarCTA.astro';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import { BUSINESS_INFO } from '@lib/data';
-import { Calculator, Phone, ArrowLeft, MessageCircle, Check, Package, Megaphone, ShieldAlert, Layers, PenTool, FileText, Printer, BookOpen, Gift, LayoutIcon, Calendar, Boxes } from 'lucide-react';
+import { Calculator, Phone, ArrowLeft, MessageCircle, Check, Package, Megaphone, ShieldAlert, PenTool, Boxes } from 'lucide-react';
 
 export async function getStaticPaths() {
   const services = await getCollection('layanan', ({ data }) => data.published);
@@ -39,22 +39,11 @@ const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://sriwijayagraf
 const SUBCATEGORY_ICONS: Record<string, typeof Megaphone> = {
   'Advertising & Reklame': Megaphone,
   'Rambu & Keamanan': ShieldAlert,
-  'Acrylic Custom': Layers,
   'Event & Display': PenTool,
-  'Percetakan Kantor': FileText,
-  'Digital Printing': Printer,
-  'Buku & Jilid': BookOpen,
-  'Garmen & Souvenir': Gift,
-  'Alat Peraga': LayoutIcon,
-  'Acara & Seremoni': Calendar,
 };
 const PlaceholderIcon = SUBCATEGORY_ICONS[data.subcategory] ?? Boxes;
 
-const CATEGORY_GRADIENTS: Record<string, string> = {
-  utama: 'from-[#224da8] via-[#3c5a98] to-[#10285a]',
-  secondary: 'from-[#ff6634] via-[#ff8a5e] to-[#c2410c]',
-};
-const gradient = CATEGORY_GRADIENTS[data.category] ?? 'from-neutral-700 to-neutral-900';
+const gradient = 'from-[#224da8] via-[#3c5a98] to-[#10285a]';
 
 const SUBCAT_INITIALS = data.subcategory
   .split(/[\s&]+/)
@@ -67,7 +56,7 @@ const imageUrl = data.imageUrl
   ? new URL(data.imageUrl, Astro.site ?? 'https://sriwijayagrafika.com').toString()
   : null;
 
-const jasaWord = data.category === 'utama' ? 'Jasa Pembuatan' : 'Jasa';
+const jasaWord = 'Jasa Pembuatan';
 const seoH1 = `${jasaWord} ${data.name} Murah di Palembang`;
 
 const serviceSchema = {
@@ -106,7 +95,7 @@ const serviceSchema = {
     `${data.name} Murah`,
     `${data.name} Palembang`,
     data.subcategory,
-    data.category === 'utama' ? 'Advertising Palembang' : 'Percetakan Palembang',
+    'Advertising Palembang',
     'Sriwijaya Grafika',
   ]}
   structuredData={serviceSchema}
@@ -238,7 +227,7 @@ const serviceSchema = {
             <div class="mt-12 pt-8 border-t border-neutral-100 flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
                 <h3 class="text-lg font-extrabold text-neutral-800">Butuh layanan lain?</h3>
-                <p class="text-xs text-neutral-500 mt-1">Lihat katalog lengkap kami untuk produk signage, reklame, dan percetakan.</p>
+                <p class="text-xs text-neutral-500 mt-1">Lihat katalog lengkap kami untuk produk signage dan reklame.</p>
               </div>
               <a
                 href="/layanan"

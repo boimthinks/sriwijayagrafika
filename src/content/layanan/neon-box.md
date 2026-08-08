@@ -22,51 +22,57 @@ order: 2
 
 ## Tentang Neon Box
 
-Neon box adalah papan reklame menyala dengan pencahayaan internal LED, biasa dipasang di depan toko, restoran, atau gedung komersial. Visual grafisnya dicetak dengan kualitas tinggi pada bahan backlit vinyl atau sticker cutting, kemudian diterangi dari dalam oleh lampu LED agar tampak menyala merata di malam hari.
+Neon box adalah papan reklame yang menyala dari dalam. Di dalamnya ada rangkaian LED, sementara bagian luarnya cover akrilik susu atau bahan backlit vinyl yang digambari visual kedai. Karena diterangi dari belakang, tampaknya menyala merata di malam hari. Halaman depan toko, restoran, atau gedung komersial adalah tempat paling umum dipasang.
 
-Layanan kami mencakup desain, produksi, dan instalasi neon box custom sesuai ukuran dan kebutuhan bisnis Anda.
+Pekerjaan kami meliputi desain, produksi, sampai instalasi neon box custom sesuai ukuran dan kebutuhan Anda.
 
 ## Keunggulan Layanan Kami
 
-- **LED Samsung waterproof** — Hemat energi, tahan hujan, umur lampu panjang
-- **Cahaya merata** — Distribusi LED didesain agar tidak ada bagian gelap
-- **Desain custom** — Cutting sticker presisi atau printing full-color
-- **Frame kokoh** — Aluminium atau stainless steel tahan karat
-- **Instalasi cepat** — Pemasangan oleh tim profesional
+- LED Samsung waterproof, hemat listrik, tahan hujan, dan umurnya panjang.
+- Cahaya disebar merata, tidak ada bagian yang tampak gelap.
+- Visual bisa pakai cutting sticker presisi atau printing warna penuh.
+- Frame aluminium atau stainless steel yang tidak gampang berkarat.
+- Pemasangan oleh tim yang sudah terbiasa.
 
 ## Aplikasi Umum
 
-- Neon box toko retail (Indomaret, Alfamart, dan franchise lokal)
-- Neon box restoran & cafe
-- Papan nama hotel, bank, dan gedung perkantoran
-- Signage SPBU, apotek, klinik, dan fasilitas umum
-- Neon box bulat/totem untuk jalan utama kota
+- Neon box toko retail seperti Indomaret, Alfamart, dan franchise lokal.
+- Neon box restoran dan cafe.
+- Papan nama hotel, bank, dan gedung perkantoran.
+- Signage SPBU, apotek, klinik, dan fasilitas umum.
+- Neon box bulat atau totem untuk pinggir jalan utama.
 
 ## Proses Pengerjaan
 
-1. **Konsultasi desain** — Diskusi ukuran, bentuk, dan visual yang diinginkan
-2. **Mockup digital** — Preview 2D/3D posisi dan tampak neon box
-3. **Produksi** — Cetak, fabrikasi box, dan instalasi LED
-4. **Quality control** — Tes pencahayaan 24 jam dan kekuatan struktural
-5. **Instalasi** — Pemasangan di lokasi dengan bracket tanam atau gantung
-6. **Garansi** — 1 tahun garansi kelistrikan & instalasi
+1. Konsultasi desain, diskusikan ukuran, bentuk, dan visual yang diinginkan.
+2. Mockup digital, lihat tampak neon box dalam dua dan tiga dimensi dulu.
+3. Produksi, cetak visual, buat frame, lalu pasang LED.
+4. Quality control, tes nyala 24 jam dan kekuatan rangka.
+5. Instalasi di lokasi, mau ditanam bracket atau digantung.
+6. Garansi satu tahun untuk kelistrikan dan instalasi.
 
 ## FAQ
 
-**Apakah bisa pesan bentuk bulat atau custom shape?**
-Bisa. Kami melayani neon box kotak, bulat, oval, dan custom shape sesuai desain.
+**Bisa pesan bentuk bulat atau custom?**
 
-**Berapa konsumsi listrik neon box?**
-LED hemat energi. Contoh: neon box 1×1 m konsumsi sekitar 30–50 watt.
+Bisa. Ada pilihan kotak, bulat, oval, dan bentuk lainnya sesuai permintaan.
+
+**Berapa konsumsi listriknya?**
+
+LED lumayan hemat. Neon box ukuran 1x1 m kira-kira menghabiskan 30-50 watt.
 
 **Berapa lama umur LED?**
-LED Samsung yang kami pakai rata-rata 30.000–50.000 jam pemakaian (8–10 tahun pemakaian normal).
+
+LED Samsung yang kami pakai rata-rata 30.000-50.000 jam, atau sekitar 8-10 tahun pemakaian normal.
 
 **Apakah harga sudah termasuk biaya instalasi?**
-Harga material dihitung per meter persegi. Biaya instalasi terpisah dan disesuaikan dengan lokasi serta tinggi pemasangan. Kami akan berikan quote lengkap setelah survey.
 
-**Berapa lama estimasi pengerjaan neon box?**
-Standar 5–10 hari kerja tergantung ukuran dan kompleksitas desain. Untuk neon box dengan bentuk custom atau ukuran besar, estimasi bisa 7–14 hari.
+Harga material dihitung per meter persegi. Biaya pasang terpisah, disesuaikan lokasi dan tinggi. Setelah survey, kami kasih rinciannya.
 
-**Apakah bisa mengganti visual setelah neon box jadi?**
-Bisa. Untuk neon box dengan sistem front cutting sticker, visual bisa diganti dengan membuka cover akrilik dan merekatkan stiker baru. Untuk backlit vinyl, perlu cetak ulang dan ganti cover.
+**Berapa lama estimasi pengerjaan?**
+
+Standar 5-10 hari kerja, tergantung ukuran dan kompleksitas. Neon box bentuk aneh atau ukuran besar bisa melewati 7-14 hari.
+
+**Apakah visualnya bisa diganti setelah jadi?**
+
+Bisa. Untuk model cutting sticker di depan, cukup buka cover akrilik dan tempel yang baru. Untuk backlit vinyl, harus cetak ulang lalu ganti cover-nya.

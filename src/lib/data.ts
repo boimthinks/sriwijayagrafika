@@ -29,10 +29,9 @@ export const BUSINESS_INFO = {
 } as const;
 
 export const CORE_TAGLINES = [
-  'Sriwijaya Grafika adalah perusahaan di Palembang yang bergerak di bidang jasa percetakan dan reklame / advertising. Kami menerima pesanan produk percetakan seperti nota, kwitansi dan sejenisnya.',
+  'Sriwijaya Grafika adalah perusahaan di Palembang yang bergerak di bidang jasa advertising dan reklame.',
   'Produk unggulan kami di bidang advertising / reklame adalah huruf timbul atau tulisan timbul lampu LED dengan bahan stainless, akrilik kuningan, dll. Kami juga menjual rambu-rambu keselamatan (safety sign), rambu evakuasi, rambu K3, merek toko seperti neon box, papan nama toko (PNT).',
-  'Kami juga menerima ornamen motif custom bahan semen, jasa cutting stiker, cutting laser plat, acrylic, plywood dan cutting ACP.',
-  'Sriwijaya Grafika juga menerima pesanan produk akrilik custom dan berbagai produk-produk lainnya yang berhubungan dengan reklame dan jasa advertising.',
+  'Kami juga menerima ornamen motif custom bahan semen, akrilik display, dan berbagai produk-produk lainnya yang berhubungan dengan reklame dan jasa advertising.',
   'Spesialis Signage & Advertising di Palembang',
   'Sriwijaya Grafika pilihan tepat untuk usaha Anda',
   'Jasa Advertising Palembang Aman dan Terpercaya',
@@ -45,7 +44,7 @@ export const CORE_TAGLINES = [
 ];
 
 export const GENERAL_DESCRIPTION =
-  'Sriwijaya Grafika adalah perusahaan di Palembang yang bergerak di bidang jasa percetakan dan reklame / advertising. Kami menerima pesanan produk percetakan seperti nota, kwitansi dan sejenisnya. Produk unggulan kami di bidang advertising / reklame adalah huruf timbul atau tulisan timbul lampu LED dengan bahan stainless, akrilik kuningan, dll. Kami juga menjual rambu-rambu keselamatan (safety sign), rambu evakuasi, rambu K3, merek toko seperti neon box, papan nama toko (PNT), ornamen motif custom bahan semen, jasa cutting stiker, cutting laser plat, acrylic, plywood dan cutting ACP. Sriwijaya Grafika juga menerima pesanan produk akrilik custom dan berbagai produk-produk lainnya yang berhubungan dengan reklame dan jasa advertising.';
+  'Sriwijaya Grafika adalah perusahaan di Palembang yang bergerak di bidang jasa advertising dan reklame. Produk unggulan kami di bidang advertising / reklame adalah huruf timbul atau tulisan timbul lampu LED dengan bahan stainless, akrilik kuningan, dll. Kami juga menjual rambu-rambu keselamatan (safety sign), rambu evakuasi, rambu K3, merek toko seperti neon box, papan nama toko (PNT), akrilik display, dan berbagai produk-produk lainnya yang berhubungan dengan reklame dan jasa advertising.';
 
 export const MEDIA_COVERAGES = [
   {

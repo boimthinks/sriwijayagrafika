@@ -11,7 +11,6 @@ const services = (await getCollection('layanan', ({ data }) => data.published)).
 );
 
 const primary = services.filter((s) => s.data.category === 'utama');
-const secondary = services.filter((s) => s.data.category === 'secondary');
 
 const servicesSchema = {
   '@context': 'https://schema.org',
@@ -19,7 +18,7 @@ const servicesSchema = {
   '@id': 'https://sriwijayagrafika.com/layanan#items',
   name: 'Layanan Sriwijaya Grafika',
   description:
-    'Daftar lengkap layanan advertising, reklame, dan percetakan Sriwijaya Grafika Palembang.',
+    'Daftar lengkap layanan advertising dan reklame Sriwijaya Grafika Palembang.',
   numberOfItems: services.length,
   itemListElement: services.map((s, idx) => ({
     '@type': 'ListItem',
@@ -32,17 +31,15 @@ const servicesSchema = {
 ---
 
 <Layout
-  title="Daftar Layanan Lengkap | Advertising, Reklame & Percetakan Palembang"
-  description="Daftar lengkap layanan advertising Palembang: huruf timbul LED, neon box, papan nama toko, rambu K3, billboard, neon flex, hingga percetakan kantor. Setiap layanan punya halaman detail."
+title="Daftar Layanan | Advertising & Reklame Palembang"
+  description="Daftar lengkap layanan advertising Palembang: huruf timbul LED, neon box, papan nama toko, rambu K3, billboard, neon flex, pylon totem. Setiap layanan punya halaman detail."
   keywords={[
     'Layanan Advertising Palembang',
     'Harga Huruf Timbul',
     'Neon Box Custom',
     'Papan Nama Toko',
     'Rambu K3',
-    'Percetakan Kantor',
     'Booth Event',
-    'Produk Akrilik',
   ]}
   structuredData={servicesSchema}
 >
@@ -55,10 +52,10 @@ const servicesSchema = {
           Pilih &amp; Rancang Media Promosi Bisnis Anda
         </h1>
         <p class="text-sm sm:text-base text-white/80 max-w-2xl mx-auto leading-relaxed">
-          Dari plang nama toko hingga brosur sebaran, rancang perkiraan harga secara transparan. Pemasangan reklame luar ruangan dilindungi garansi 1 tahun resmi.
+          Dari plang nama toko hingga billboard raksasa, rancang perkiraan harga secara transparan. Pemasangan reklame luar ruangan dilindungi garansi 1 tahun resmi.
         </p>
         <a
-          href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya ingin berkonsultasi mengenai kebutuhan signage/reklame/percetakan custom.')}`}
+          href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya ingin berkonsultasi mengenai kebutuhan signage/reklame custom.')}`}
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white text-sm font-bold shadow-md transition-all"
@@ -68,60 +65,17 @@ const servicesSchema = {
       </div>
     </section>
 
-    <section class="sticky top-20 z-30 bg-white/95 backdrop-blur-md border-b border-neutral-100 shadow-sm" id="layanan-filter-bar">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-          <div class="flex bg-neutral-100 p-1 rounded-xl w-full md:w-auto overflow-x-auto scrollbar-none" role="tablist" aria-label="Filter kategori layanan">
-            <button
-              type="button"
-              data-filter="all"
-              role="tab"
-              aria-selected="true"
-              class="filter-btn flex-1 md:flex-initial px-4 md:px-5 py-2.5 rounded-lg text-xs font-bold transition-all duration-200 bg-white text-[#224da8] shadow-sm whitespace-nowrap"
-            >
-              Semua
-            </button>
-            <button
-              type="button"
-              data-filter="utama"
-              role="tab"
-              aria-selected="false"
-              class="filter-btn flex-1 md:flex-initial px-4 md:px-5 py-2.5 rounded-lg text-xs font-bold transition-all duration-200 text-neutral-500 hover:text-neutral-800 whitespace-nowrap"
-            >
-              Advertising &amp; Reklame
-            </button>
-            <button
-              type="button"
-              data-filter="secondary"
-              role="tab"
-              aria-selected="false"
-              class="filter-btn flex-1 md:flex-initial px-4 md:px-5 py-2.5 rounded-lg text-xs font-bold transition-all duration-200 text-neutral-500 hover:text-neutral-800 whitespace-nowrap"
-            >
-              Percetakan &amp; Penunjang
-            </button>
-          </div>
-
-          <div class="hidden md:flex items-center gap-2 text-[11px] text-neutral-500">
-            <span class="font-mono font-bold">Tampil:</span>
-            <span id="filter-count" class="font-extrabold text-[#224da8]">{services.length}</span>
-            <span>dari {services.length} layanan</span>
-          </div>
+    <section class="py-12 md:py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-8">
+          <h2 class="text-2xl md:text-3xl font-extrabold text-neutral-800 tracking-tight">Advertising &amp; Reklame</h2>
         </div>
-      </div>
-    </section>
-
-    {primary.length > 0 && (
-      <section id="layanan-utama" data-section="utama" class="py-12 md:py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="mb-8">
-            <h2 class="text-2xl md:text-3xl font-extrabold text-neutral-800 tracking-tight">Advertising &amp; Reklame</h2>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-section-grid="utama">
-            {primary.map((service) => <ServiceCard service={service} />)}
-          </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {primary.map((service) => <ServiceCard service={service} />)}
+        </div>
           <div class="mt-10 space-y-2">
             <p class="text-sm text-neutral-600 max-w-7xl leading-relaxed">
-              Kategori ini mencakup 10 layanan unggulan untuk storefront, signage outdoor, dan media promosi visual. Produk flagship kami adalah <strong>huruf timbul LED</strong> dengan pilihan bahan stainless, akrilik, atau galvanil — cocok untuk nama toko, brand gedung, hingga instansi pemerintah seperti Gedung Walikota Palembang dan Kejati Sumsel yang telah menggunakan jasa instalasi kami dengan garansi 1 tahun. Selain huruf timbul, kami memproduksi <strong>neon box custom</strong> untuk brand retail dan SPBU Pertamina, <strong>pylon totem</strong> untuk jalan utama, <strong>neon flex</strong> untuk huruf melengkung, <strong>gantry huruf LED</strong> untuk area parkir dan drop zone, <strong>booth event</strong> untuk pameran, <strong>plang toko</strong> untuk kantor dan ruko, serta <strong>rambu K3</strong> standar Kemnaker untuk keselamatan kerja di pabrik dan gudang. Tersedia juga <strong>produk akrilik custom</strong> seperti display, name tag, dan trophy.
+              Kategori ini mencakup 9 layanan unggulan untuk storefront, signage outdoor, dan media promosi visual. Produk flagship kami adalah <strong>huruf timbul LED</strong> dengan pilihan bahan stainless, akrilik, atau galvanil — cocok untuk nama toko, brand gedung, hingga instansi pemerintah seperti Gedung Walikota Palembang dan Kejati Sumsel yang telah menggunakan jasa instalasi kami dengan garansi 1 tahun. Selain huruf timbul, kami memproduksi <strong>neon box custom</strong> untuk brand retail dan SPBU Pertamina, <strong>pylon totem</strong> untuk jalan utama, <strong>neon flex</strong> untuk huruf melengkung, <strong>gantry huruf LED</strong> untuk area parkir dan drop zone, <strong>booth event</strong> untuk pameran, <strong>plang toko</strong> untuk kantor dan ruko, serta <strong>rambu K3</strong> standar Kemnaker untuk keselamatan kerja di pabrik dan gudang.
             </p>
             <p class="text-sm text-neutral-500 max-w-7xl leading-relaxed mt-2">
               Semua produk reklame produksi sendiri di workshop Talang Jambe dengan material berkualitas. Setiap instalasi dilindungi garansi 1 tahun penuh — termasuk untuk proyek korporat skala besar.
@@ -129,37 +83,6 @@ const servicesSchema = {
           </div>
         </div>
       </section>
-    )}
-
-    {secondary.length > 0 && (
-      <section id="layanan-secondary" data-section="secondary" class="py-12 md:py-16 bg-neutral-50/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="mb-8">
-            <h2 class="text-2xl md:text-3xl font-extrabold text-neutral-800 tracking-tight">Percetakan &amp; Penunjang</h2>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-section-grid="secondary">
-            {secondary.map((service) => <ServiceCard service={service} />)}
-          </div>
-          <div class="mt-10 space-y-2">
-            <p class="text-sm text-neutral-600 max-w-7xl leading-relaxed">
-              Meliputi 21 layanan percetakan dan penunjang untuk kebutuhan operasional kantor hingga promosi massal. Mulai dari cetak nota, kwitansi, kop surat, kartu nama, stempel, amplop, brosur, buku yasin, map hardcover, undangan, dan papan struktur organisasi. Untuk kebutuhan digital printing, kami melayani cetak stiker cutting dan digital, spanduk, banner, dan poster dengan hasil tajam dan warna akurat.
-            </p>
-            <p class="text-sm text-neutral-600 max-w-7xl leading-relaxed mt-2">
-              Tersedia juga souvenir dan merchandise custom: mug keramik, goodie bag, pin, gantungan kunci, dan pena promosi untuk acara perusahaan atau kampanye brand. Untuk kebutuhan garmen, kami melayani sablon kaos dengan desain custom. Semua produk dikerjakan dengan mesin modern di workshop Talang Jambe dengan hasil rapi, harga bersaing, dan estimasi pengerjaan yang jelas.
-            </p>
-          </div>
-        </div>
-      </section>
-    )}
-
-    <div id="layanan-empty" class="hidden bg-white py-16 border-t border-neutral-100">
-      <div class="max-w-md mx-auto px-4 text-center space-y-3">
-        <p class="text-sm font-bold text-neutral-700">Tidak ada layanan di kategori ini.</p>
-        <button type="button" data-filter="all" class="filter-btn inline-flex items-center gap-1.5 text-xs font-bold text-[#224da8] hover:underline">
-          Tampilkan semua layanan
-        </button>
-      </div>
-    </div>
 
     <!-- Section D: Trust & Social Proof -->
     <section class="py-14 md:py-18 bg-neutral-50/50 border-t border-neutral-100">
@@ -177,7 +100,7 @@ const servicesSchema = {
             </div>
             <h3 class="text-sm font-extrabold text-neutral-800">Produksi Sendiri, Bukan Makloon</h3>
             <p class="text-xs text-neutral-500 leading-relaxed">
-              Semua produk signage, reklame, dan percetakan dikerjakan di workshop Talang Jambe. Kami tidak menjadi perantara — dari desain, produksi, hingga instalasi, semuanya dalam satu tangan. Ini yang membuat kualitas dan estimasi waktu lebih terkontrol.
+              Semua produk signage dan reklame dikerjakan di workshop Talang Jambe. Kami tidak menjadi perantara — dari desain, produksi, hingga instalasi, semuanya dalam satu tangan. Ini yang membuat kualitas dan estimasi waktu lebih terkontrol.
             </p>
           </div>
           <div class="bg-white rounded-2xl p-6 border border-neutral-100 shadow-sm space-y-3">
@@ -204,7 +127,7 @@ const servicesSchema = {
             Dipercaya oleh Gedung Walikota Palembang, Kejati Sumsel, SPBU Pertamina, Super Indo, DPRD OKI, SMP Islam Bina Insani, Riyadh Regency 3, dan puluhan brand lokal di Palembang. Liputan media: Sriwijaya Post (Tribun Sumsel), Berita Sumsel, PAL-TV, dan kanal YouTube WhatsApp Business Official.
           </p>
           <p class="text-sm md:text-sm text-neutral-600 leading-relaxed">
-            Sejak 2008, Sriwijaya Grafika telah melayani ribuan klien di Palembang dan Sumatera Selatan untuk kebutuhan advertising, reklame, dan percetakan. Mulai dari huruf timbul LED stainless untuk storefront premium, neon box custom untuk brand retail dan SPBU, hingga rambu K3 standar Kemnaker untuk area pabrik — semua diproduksi sendiri di workshop Talang Jambe dengan garansi 1 tahun penuh. Kami juga melayani percetakan kantor: kartu nama, nota, kop surat, stempel, brosur, buku yasin, mug custom, goodie bag, dan souvenir promosi. Setiap layanan bisa dikonsultasikan gratis, termasuk mockup 3D sebelum produksi.
+            Sejak 2008, Sriwijaya Grafika telah melayani ribuan klien di Palembang dan Sumatera Selatan untuk kebutuhan advertising dan reklame. Mulai dari huruf timbul LED stainless untuk storefront premium, neon box custom untuk brand retail dan SPBU, hingga rambu K3 standar Kemnaker untuk area pabrik — semua diproduksi sendiri di workshop Talang Jambe dengan garansi 1 tahun penuh. Setiap layanan bisa dikonsultasikan gratis, termasuk mockup 3D sebelum produksi.
           </p>
           <p class="text-sm md:text-sm text-neutral-600 leading-relaxed">
             Tidak seperti vendor yang hanya menjadi perantara, kami memproduksi langsung di workshop sendiri. Tim produksi yang memberdayakan tenaga lokal — termasuk penyandang Tuna Rungu yang terampil — memastikan setiap produk signage dan cetakan dikerjakan dengan standar kualitas yang konsisten. Dengan pengalaman belasan tahun menangani proyek dari skala satu huruf timbul hingga signage korporat gedung pemerintah, kami paham bahwa setiap bisnis punya kebutuhan yang unik.
@@ -222,7 +145,7 @@ const servicesSchema = {
           Kami menerima pesanan custom sesuai kebutuhan spesifik bisnis Anda. Konsultasikan kebutuhan Anda langsung dengan tim marketing kami.
         </p>
         <a
-          href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya ingin berkonsultasi mengenai kebutuhan signage/reklame/percetakan custom.')}`}
+          href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya ingin berkonsultasi mengenai kebutuhan signage/reklame custom.')}`}
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white text-sm font-bold shadow-md transition-all"
@@ -235,45 +158,3 @@ const servicesSchema = {
 
   <Footer />
 </Layout>
-
-<script>
-  const buttons = document.querySelectorAll<HTMLButtonElement>('[data-filter]');
-  const sections = document.querySelectorAll<HTMLElement>('[data-section]');
-  const emptyState = document.getElementById('layanan-empty');
-  const counter = document.getElementById('filter-count');
-
-  const applyFilter = (filter: string) => {
-    let visibleCount = 0;
-
-    sections.forEach((section) => {
-      const sectionCategory = section.dataset.section;
-      const isVisible = filter === 'all' || sectionCategory === filter;
-      section.classList.toggle('hidden', !isVisible);
-      if (isVisible) {
-        const grid = section.querySelector<HTMLElement>('[data-section-grid]');
-        const count = grid?.children.length ?? 0;
-        visibleCount += count;
-      }
-    });
-
-    buttons.forEach((btn) => {
-      const isActive = btn.dataset.filter === filter;
-      btn.setAttribute('aria-selected', String(isActive));
-      btn.classList.toggle('bg-white', isActive);
-      btn.classList.toggle('text-[#224da8]', isActive);
-      btn.classList.toggle('shadow-sm', isActive);
-      btn.classList.toggle('text-neutral-500', !isActive);
-      btn.classList.toggle('hover:text-neutral-800', !isActive);
-    });
-
-    if (emptyState) emptyState.classList.toggle('hidden', visibleCount > 0);
-    if (counter) counter.textContent = String(visibleCount);
-  };
-
-  buttons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const filter = btn.dataset.filter ?? 'all';
-      applyFilter(filter);
-    });
-  });
-</script>

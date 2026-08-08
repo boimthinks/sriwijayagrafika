@@ -12,7 +12,7 @@ const layanan = defineCollection({
   schema: z.object({
     name: z.string(),
     description: z.string(),
-    category: z.enum(['utama', 'secondary']),
+    category: z.enum(['utama']),
     subcategory: z.string(),
     basePrice: z.number(),
     priceUnit: z.string(),

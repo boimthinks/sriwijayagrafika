@@ -21,51 +21,57 @@ order: 6
 
 ## Tentang Plang Toko & Kantor
 
-Plang nama toko (PNT) atau papan nama kantor adalah signage dasar yang wajib dimiliki setiap usaha. Fungsinya untuk memperkenalkan brand, menampilkan logo, dan menarik perhatian calon pelanggan yang melintas. Kami memproduksi PNT dengan material tahan lama dan finishing rapi untuk kesan profesional.
+Plang nama toko atau papan nama kantor adalah signage paling dasar yang wajib dimiliki tiap usaha. Fungsinya sederhana, memperkenalkan brand, memajang logo, dan menarik pandangan orang yang lewat. Karena itu rapi, bukan mewah, yang lebih penting.
 
-Layanan ini cocok untuk toko retail, kantor cabang, klinik, apotek, salon, bengkel, dan usaha kecil-menengah.
+Cocok untuk toko retail, kantor cabang, klinik, apotek, salon, bengkel, dan usaha kecil menengah.
 
 ## Keunggulan Layanan Kami
 
-- **Harga ekonomis** — Solusi signage berkualitas tanpa harus mahal
-- **Tahan lama** — Frame hollow galvanis & plat aluminium anti karat
-- **Visual tajam** — Sticker cutting presisi atau printing full-color
-- **Pemasangan gratis** — Free pasang untuk area Kota Palembang
-- **Custom ukuran** — Disesuaikan dengan kebutuhan dan fasad bangunan
+- Harganya terjangkau, signage berkualitas tanpa harus merogoh kocek dalam.
+- Frame hollow galvanis dan plat aluminium yang awet anti karat.
+- Visual bisa cutting sticker atau printing warna penuh, hasilnya tajam.
+- Gratis pasang untuk area Kota Palembang.
+- Ukuran menyesuaikan kebutuhan dan lebar fasad bangunan.
 
 ## Aplikasi Umum
 
-- Papan nama toko retail (warung, minimarket, apotek)
-- Signage kantor cabang dan kantor layanan
-- Papan nama klinik, puskesmas, dan praktik dokter
-- Papan bengkel, salon, dan service center
-- Plang yayasan, komunitas, dan organisasi
+- Papan nama toko retail, mulai warung, minimarket, sampai apotek.
+- Signage kantor cabang dan kantor layanan.
+- Papan nama klinik, puskesmas, dan praktik dokter.
+- Papan bengkel, salon, dan service center.
+- Plang yayasan, komunitas, dan organisasi.
 
 ## Proses Pengerjaan
 
-1. **Konsultasi** — Diskusi ukuran, desain, dan lokasi pemasangan
-2. **Desain visual** — Layout grafis dan pemilihan font
-3. **Produksi** — Cutting plat, sticker, atau printing visual
-4. **Perakitan** — Instalasi frame dan visual
-5. **Pemasangan** — Instalasi di lokasi (free area Palembang)
-6. **Garansi** — Garansi material & instalasi
+1. Konsultasi, diskusikan ukuran, desain, dan lokasi pasang.
+2. Desain visual, atur layout grafis dan pilih font.
+3. Produksi, potong plat, stiker, atau cetak visual.
+4. Perakitan, rangkai frame dan pasang visual.
+5. Pemasangan di lokasi, gratis untuk area Palembang.
+6. Garansi material dan instalasi.
 
 ## FAQ
 
 **Apakah ada minimum order?**
-Tidak. Kami melayani pesanan 1 unit papan nama untuk toko kecil.
 
-**Berapa lama proses pengerjaan?**
-Standar 3–5 hari kerja setelah desain disetujui.
+Tidak. Satu unit papan nama untuk toko kecil pun kami kerjakan.
 
-**Apakah bisa cetak logo custom?**
-Bisa. Cukup kirim logo dalam format CDR/AI/PNG resolusi tinggi.
+**Berapa lama pengerjaannya?**
+
+Standar 3-5 hari kerja setelah desain disetujui.
+
+**Bisa ukir logo custom?**
+
+Bisa. Kirim logo dalam format CDR, AI, atau PNG resolusi tinggi.
 
 **Apakah harga sudah termasuk pemasangan?**
-Untuk area Kota Palembang, pemasangan gratis. Untuk luar kota Palembang, ada biaya tambahan transportasi dan akomodasi tim teknisi.
 
-**Apakah bisa dipasang di tembok yang tidak rata atau bertekstur?**
-Bisa. Kami sesuaikan bracket dan sistem pemasangan dengan kondisi dinding. Tim survey akan mengecek lokasi sebelum produksi untuk memastikan hasil pemasangan rapi.
+Untuk area Kota Palembang gratis. Di luar kota, ada tambahan biaya transportasi dan penginapan tim.
 
-**Apakah bisa dicat ulang atau diganti visualnya nanti?**
-Bisa. Visual sticker bisa diganti tanpa membongkar frame. Untuk plat yang dicat langsung, bisa dicat ulang dengan cat besi/alkyd.
+**Bisa dipasang di tembok yang tidak rata?**
+
+Bisa. Bracket dan sistem pemasangan disesuaikan dengan kondisi dinding. Tim survey cek lokasi sebelum produksi supaya hasilnya rapi.
+
+**Bisa dicat ulang atau diganti visualnya?**
+
+Bisa. Stiker bisa diganti tanpa membongkar frame. Kalau permukaannya plat cat, tinggal dicat ulang pakai cat besi.

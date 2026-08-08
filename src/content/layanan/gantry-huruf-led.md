@@ -22,54 +22,60 @@ order: 10
 
 ## Tentang Huruf LED / Channel Letter
 
-Huruf LED atau channel letter adalah huruf timbul yang memancarkan cahaya dari dalam. Terdapat tiga varian: **frontlit** (cahaya keluar dari depan), **backlit** (cahaya keluar dari belakang/reverse channel), dan **front-back** (kedua sisi memancarkan cahaya). Semua varian menggunakan LED modul Samsung waterproof yang hemat energi dan tahan lama.
+Huruf LED adalah huruf timbul yang menyala dari dalam. Ada tiga versi: frontlit yang terang dari depan, backlit yang memancar dari belakang, dan front-back yang menyala di dua sisi. Semuanya memakai LED modul Samsung waterproof yang irit listrik.
 
-Layanan ini ideal untuk bisnis yang ingin signage-nya terlihat jelas baik siang maupun malam dengan kontras visual tinggi.
+Pas untuk bisnis yang mau signage-nya terbaca jelas siang malam dengan kontras yang khas.
 
 ## Keunggulan Layanan Kami
 
-- **LED Samsung waterproof** — Tahan hujan, umur panjang, hemat energi
-- **Tiga varian pencahayaan** — Frontlit, backlit, dan front-back
-- **Sensor LDR opsional** — Lampu otomatis menyala saat gelap
-- **Warna RGB opsional** — Bisa multi-warna atau single color
-- **Instalasi rapi** — Konektor kabel tersembunyi dan aman
+- Modul LED Samsung waterproof, tahan hujan dan umurnya panjang.
+- Pilihan pencahayaan frontlit, back, atau front-back.
+- Sensor cahaya LDR opsional, lampu otomatis nyala saat gelap.
+- Warna RGB opsional, bisa satu warna atau berubah-ubah.
+- Kabel dirapikan dan disembunyikan biar aman.
 
 ## Aplikasi Umum
 
-- Signage toko retail dan franchise
-- Logo cafe, resto, dan bar
-- Branding hotel dan resort
-- Papan nama bank dan institusi keuangan
-- Signage mal, ruko, dan kantor
-- Huruf LED untuk wall decoration
+- Signage toko retail dan franchise.
+- Logo cafe, restoran, dan bar.
+- Branding hotel dan resort.
+- Papan nama bank dan lembaga keuangan.
+- Signage mall, ruko, dan kantor.
+- Huruf LED sebagai hiasan dinding.
 
 ## Proses Pengerjaan
 
-1. **Brief desain** — Diskusi ukuran, font, dan varian pencahayaan
-2. **Mockup visual** — Preview tampak siang & malam
-3. **Fabrikasi** — Cutting stainless/galvanis + akrilik
-4. **Instalasi LED** — Modul LED dirangkai mengikuti outline huruf
-5. **Wiring** — Koneksi power supply dan controller (jika RGB)
-6. **Testing 24 jam** — QC kelistrikan dan pencahayaan
-7. **Instalasi di lokasi** — Pemasangan dengan bracket tanam
-8. **Garansi 1 tahun** — Garansi kelistrikan & fisik instalasi
+1. Brief desain, tentukan ukuran, font, dan versi pencahayaan.
+2. Mockup visual, lihat tampilan siang dan malam.
+3. Fabrikasi, potong stainless atau galvanis dan akrilik.
+4. Instalasi LED, modul disusun mengikuti outline huruf.
+5. Wiring, sambungkan power supply dan controller untuk versi RGB.
+6. Testing 24 jam, cek kelistrikan dan cahaya.
+7. Instalasi di lokasi, pasang dengan bracket tanam.
+8. Garansi satu tahun untuk kelistrikan dan fisik instalasi.
 
 ## FAQ
 
 **Apa beda frontlit dan backlit?**
-Frontlit: cahaya keluar dari depan huruf (wajah akrilik menyala). Backlit (reverse): cahaya keluar dari belakang, dinding di belakang huruf yang menyala (cocok untuk fasad gelap/bertekstur).
 
-**Berapa konsumsi listrik?**
-Modul LED hemat energi. Contoh: huruf 30cm konsumsi sekitar 5–10 watt per huruf.
+Frontlit cahayanya keluar dari bagian depan huruf, jadi wajah akriliknya yang menyala. Backlit atau reverse memancar dari belakang, bagian dinding di belakang huruf yang terang, cocok untuk fasad gelap.
 
-**Apakah huruf LED bisa RGB?**
-Bisa. Kami melayani LED RGB dengan controller untuk pergantian warna dinamis.
+**Berapa konsumsi listriknya?**
 
-**Apakah harga sudah termasuk biaya instalasi?**
-Harga per cm tinggi belum termasuk instalasi. Biaya pasang dihitung berdasarkan tinggi pemasangan dan akses lokasi. Tim kami akan survey dan berikan rincian biaya instalasi.
+Modul LED hemat. Contoh huruf setinggi 30 cm butuh sekitar 5-10 watt per huruf.
 
-**Berapa lama estimasi pengerjaan huruf LED?**
-Standar 7–14 hari kerja tergantung jumlah huruf, varian pencahayaan, dan tingkat kerumitan. Untuk proyek dengan banyak huruf atau RGB, bisa lebih lama.
+**Bisa RGB?**
 
-**Apakah huruf LED bisa dipasang di dinding bata, granit, atau kaca?**
-Bisa. Kami sediakan bracket dan sistem mounting yang disesuaikan dengan jenis dinding. Untuk dinding kaca, kami gunakan bracket transparan atau sistem drilled hole tanpa merusak estetika.
+Bisa. LED RGB dengan controller untuk warna yang berubah-ubah sesuai program.
+
+**Apakah harga sudah termasuk instalasi?**
+
+Harga per cm tinggi belum termasuk. Biaya pasang dihitung dari tinggi pemasangan dan susahnya akses lokasi. Tim survey dulu lalu kasih rinciannya.
+
+**Berapa lama pengerjaannya?**
+
+Standar 7-14 hari kerja tergantung jumlah huruf, versi pencahayaan, dan kerumitan. Kalau hurufnya banyak atau pakai RGB, bisa lebih lama.
+
+**Bisa dipasang di dinding bata, granit, atau kaca?**
+
+Bisa. Ada bracket dan sistem mounting yang disesuaikan jenis dinding. Untuk kaca, pakai bracket transparan atau sistem drilled hole biar tidak merusak tampilan.

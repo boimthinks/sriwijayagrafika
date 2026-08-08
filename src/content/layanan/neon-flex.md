@@ -21,53 +21,59 @@ order: 7
 
 ## Tentang Neon Flex
 
-Neon Flex adalah evolusi modern dari lampu neon tabung tradisional. Berbentuk pita lentur dengan LED chip di dalamnya, Neon Flex bisa dibentuk mengikuti outline tulisan tangan, logo, atau bentuk custom apapun. Tampilan akhirnya mirip neon klasik tapi lebih aman, hemat energi, dan tahan lama.
+Neon Flex adalah generasi baru dari lampu neon tabung. Bentuknya pita yang lentur dengan LED di dalamnya, jadi bisa dibengkokkan mengikuti outline tulisan tangan, logo, atau bentuk apa pun. Hasil akhirnya menyerupai neon klasik, tapi lebih aman, hemat listrik, dan tidak panas.
 
-Layanan kami mencakup desain tulisan/logo, fabrikasi base akrilik, dan instalasi Neon Flex sesuai permintaan.
+Kami kerjakan dari desain tulisan atau logo, fabrikasi base akrilik, sampai instalasi Neon Flex di lokasi.
 
 ## Keunggulan Layanan Kami
 
-- **Custom bentuk** — Bebas bentuk tulisan tangan, logo, atau ornamen apapun
-- **Hemat energi** — Konsumsi listrik jauh lebih rendah dari neon konvensional
-- **Aman & tidak panas** — LED Neon Flex tidak membuat permukaan panas
-- **Mudah dipasang** — Ringan, bisa tempel/digantung/diikat
-- **Warna lengkap** — Merah, biru, kuning, hijau, pink, warm white, RGB, dan banyak lagi
+- Bentuk bebas, bisa nulis tulisan tangan, logo, atau ornamen apa saja.
+- Konsumsi listrik jauh di bawah neon model lama.
+- LED Neon Flex tidak bikin permukaan jadi panas.
+- Ringan, gampang ditempel, digantung, atau diikat.
+- Warna lengkap: merah, biru, kuning, hijau, pink, warm white, RGB, dan lainnya.
 
 ## Aplikasi Umum
 
-- Signage cafe, resto, dan bar
-- Dekorasi interior toko retail dan butik
-- Wall decoration kamar, lobby, dan kantor
-- Booth event dan wedding decoration
-- Photo backdrop studio
-- Quotes wall dan neon art
+- Signage cafe, resto, dan bar.
+- Dekorasi interior toko retail dan butik.
+- Wall decoration kamar, lobby, dan kantor.
+- Booth event dan dekorasi pesta pernikahan.
+- Backdrop foto di studio.
+- Quotes wall dan seni neon.
 
 ## Proses Pengerjaan
 
-1. **Brief desain** — Diskusi tulisan/logo, ukuran, dan warna
-2. **Mockup** — Preview visual Neon Flex di layout ruangan
-3. **Fabrikasi base** — Laser cutting akrilik bening sesuai outline
-4. **Instalasi LED** — Penempelan Neon Flex mengikuti pola
-5. **Wiring** — Koneksi ke adaptor DC 12V
-6. **Instalasi di lokasi** — Pengeboran atau tempel dinding
-7. **Testing & garansi** — QC pencahayaan & garansi instalasi
+1. Brief desain, diskusikan tulisan atau logo, ukuran, dan warna.
+2. Mockup, lihat dulu seperti apa di layout ruangan.
+3. Fabrikasi base, laser cut akrilik bening mengikuti outline.
+4. Instalasi LED, tempel Neon Flex mengikuti pola.
+5. Wiring, sambungkan ke adaptor DC 12V.
+6. Instalasi di lokasi, bor atau tempel di dinding.
+7. Testing dan garansi, QC pencahayaan dan garansi instalasi.
 
 ## FAQ
 
-**Apakah Neon Flex tahan air?**
-Tersedia varian waterproof (IP65) untuk outdoor atau area lembab. Untuk indoor, IP20/IP44 sudah cukup.
+**Apakah tahan air?**
 
-**Berapa daya tahan LED Neon Flex?**
-Standar 30.000–50.000 jam pemakaian (5–10 tahun pemakaian normal).
+Ada varian waterproof IP65 untuk outdoor atau area lembap. Untuk indoor, IP20 atau IP44 sudah cukup.
 
-**Apakah bisa custom tulisan tangan?**
-Bisa. Cukup kirim contoh tulisan (foto/ilustrasi) dan kami buatkan layout-nya.
+**Berapa umur pakainya?**
 
-**Apakah harga sudah termasuk adaptor dan instalasi?**
-Harga per cm panjang sudah termasuk adaptor DC 12V standar. Instalasi di lokasi dikenakan biaya terpisah, namun untuk pemasangan sederhana bisa dilakukan sendiri karena sistem plug-and-play.
+Standar 30.000-50.000 jam, sekitar 5-10 tahun pemakaian normal.
 
-**Berapa lama waktu produksi neon flex?**
-Standar 3–7 hari kerja setelah desain disetujui. Untuk tulisan/logo dengan bentuk rumit, estimasi 5–10 hari kerja.
+**Bisa custom tulisan tangan?**
 
-**Apakah neon flex bisa dimatikan sebagian atau efek running text?**
-Untuk efek running text atau animasi, kami gunakan controller RGB yang bisa diprogram. Untuk efek mati-hidup bergantian, bisa diatur per segmen. Silakan konsultasikan efek yang diinginkan saat pemesanan.
+Bisa. Cukup kirim contoh tulisan berupa foto atau gambar, kami buatkan layout-nya.
+
+**Apakah harga termasuk adaptor dan pemasangan?**
+
+Harga per cm panjang sudah termasuk adaptor DC 12V standar. Instalasi di lokasi dipungut terpisah. Untuk pemasangan sederhana, bisa Anda pasang sendiri karena sistemnya plug and play.
+
+**Berapa lama produksinya?**
+
+Standar 3-7 hari setelah desain disetujui. Kalau bentuknya rumit, 5-10 hari kerja.
+
+**Bisa menyala sebagian atau efek running text?**
+
+Untuk efek berjalan atau animasi, kami pasang controller RGB yang bisa diprogram. Mati-hidup bergantian bisa diatur per segmen. Efek apa pun yang diinginkan, konsultasikan saat memesan.
