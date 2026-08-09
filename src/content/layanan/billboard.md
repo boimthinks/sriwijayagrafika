@@ -14,6 +14,24 @@ materials:
   - "Besi Siku & Pipa"
   - "Visual Backlit / Banner Tarpaulin"
 imageUrl: "/img/layanan/billboard.webp"
+heroAlt: "Billboard reklame besar di pinggir jalan raya Palembang"
+titleSeo: "Jasa Pembuatan Billboard Palembang, Izin & Pemasangan"
+metaDescription: "Jasa pembuatan billboard Palembang lengkap: pondasi, struktur besi, lampu sorot, cetak visual. Konsultasi lokasi & izin. Melayani se-Sumatera Selatan."
+faqs:
+  - question: "Apakah perlu izin reklame?"
+    answer: "Biasanya perlu untuk billboard di pinggir jalan umum atau milik pemerintah daerah. Kami bisa membantu proses pengurusan izinnya."
+  - question: "Berapa lama visual bisa bertahan?"
+    answer: "Bahan outdoor premium rata-rata tahan 2-3 tahun, tergantung cuaca dan kualitas cetakan."
+  - question: "Apakah melayani ganti visual?"
+    answer: "Ya. Kami bisa cetak ulang dan pasang konten baru di billboard yang sudah ada."
+  - question: "Bagaimana cara pesan pembuatan billboard?"
+    answer: "Hubungi via WhatsApp untuk diskusi lokasi dan desain. Tim akan survei lokasi dulu sebelum memberikan proposal harga."
+  - question: "Bisa pasang di luar kota Palembang?"
+    answer: "Bisa. Kami melayani pemasangan di seluruh kota Sumatera Selatan seperti Prabumulih, Lubuklinggau, Baturaja, dan Muaraenim."
+  - question: "Berapa lama pengerjaan billboard baru?"
+    answer: "Standar 2-3 minggu, tergantung kondisi tanah lokasi dan cuaca."
+  - question: "Berapa harga billboard?"
+    answer: "Mulai dari Rp 5.000.000/m² tergantung struktur dan lokasi. Biaya final dihitung setelah survei kondisi lahan."
 hasCalculator: false
 order: 5
 ---
@@ -51,28 +69,4 @@ Kami melayani produksi billboard menyeluruh, dari pondasi, struktur besi, cetak 
 6. Instalasi lampu sorot dan sambungan listrik.
 7. Finishing, QC, dan serah terima.
 
-## FAQ
-
-**Apakah perlu izin reklame?**
-
-Biasanya perlu untuk billboard di pinggir jalan umum atau milik pemerintah daerah. Kami bisa bantu urus.
-
-**Berapa lama visual bisa bertahan?**
-
-Bahan outdoor premium rata-rata tahan 2-3 tahun, tergantung cuaca dan kualitas cetakan.
-
-**Apakah melayani ganti visual?**
-
-Ya. Kami bisa cetak ulang dan pasang konten baru di billboard yang sudah ada.
-
-**Bagaimana cara pesan pembuatan billboard?**
-
-Hubungi via WhatsApp untuk diskusi lokasi dan desain. Tim akan survey lokasi dulu baru berikan proposal harga.
-
-**Bisa pasang di luar kota Palembang?**
-
-Bisa. Kami melayani pemasangan di berbagai kota Sumatera Selatan seperti Prabumulih, Lubuklinggau, Baturaja, dan Muara Enim.
-
-**Berapa lama pengerjaan billboard baru?**
-
-Standar 2-3 minggu, tergantung kondisi tanah di lokasi dan cuaca.
+Untuk media luar ruang berukuran sedang, [pylon sign](/layanan/pylon-totem) atau [neon box](/layanan/neon-box) bisa jadi alternatif yang lebih hemat. Syarat dan alur izin billboard dijelaskan di [panduan izin reklame Palembang](/blog/panduan/panduan-izin-reklame-palembang), dan perbandingan harga murah vs premium ada di artikel [selisih harga reklame](/blog/panduan/selisih-harga-reklame-murah-vs-premium).

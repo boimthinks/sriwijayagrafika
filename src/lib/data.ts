@@ -80,6 +80,13 @@ export const VIDEOS = [
     description: 'Video profil resmi pemanfaatan WhatsApp Business oleh WhatsApp global dalam mendukung akselerasi bisnis lokal Sriwijaya Grafika Palembang.',
   },
   {
+    id: 'whatsapp-story-sriwijaya-grafika',
+    title: 'WhatsApp Business: Kisah Sriwijaya Grafika',
+    url: 'https://www.whatsapp.com/stories/business/Indonesia/sriwijaya-grafika?lang=id',
+    channel: 'WhatsApp Stories',
+    description: 'Kisah sukses Sriwijaya Grafika dalam mengoptimalkan layanan pelanggan dan memperluas jangkauan bisnis melalui WhatsApp Business di Palembang.',
+  },
+  {
     id: 'w4mrCS2pKMo',
     title: 'Eksklusif Advertising Palembang Sriwijaya Grafika',
     url: 'https://www.youtube.com/watch?v=w4mrCS2pKMo',

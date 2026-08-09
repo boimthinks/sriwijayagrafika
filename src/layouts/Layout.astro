@@ -11,7 +11,7 @@ interface Props {
   canonicalUrl?: string;
   keywords?: string[];
   noindex?: boolean;
-  structuredData?: object;
+  structuredData?: object | object[];
 }
 
   const {
@@ -74,8 +74,11 @@ const localBusinessSchema = {
   ],
 };
 
-const allSchemas: object[] = [localBusinessSchema];
-if (structuredData) allSchemas.push(structuredData);
+const schemas: object[] = [localBusinessSchema];
+if (structuredData) {
+  if (Array.isArray(structuredData)) schemas.push(...structuredData);
+  else schemas.push(structuredData);
+}
 ---
 
 <!doctype html>
@@ -131,10 +134,9 @@ if (structuredData) allSchemas.push(structuredData);
       />
     </noscript>
 
-    <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
-    {structuredData && (
-      <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
-    )}
+    {schemas.map((s) => (
+      <script type="application/ld+json" set:html={JSON.stringify(s)} />
+    ))}
   </head>
   <body class="min-h-[100dvh] bg-neutral-50/20 text-neutral-800 font-sans flex flex-col">
     <slot />

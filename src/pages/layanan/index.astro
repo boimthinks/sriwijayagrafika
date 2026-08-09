@@ -4,7 +4,8 @@ import Navbar from '@components/Navbar.astro';
 import Footer from '@components/Footer.astro';
 import ServiceCard from '@components/ServiceCard.astro';
 import { getCollection } from 'astro:content';
-import { BUSINESS_INFO } from '@lib/data';
+import { BUSINESS_INFO, MEDIA_COVERAGES, VIDEOS } from '@lib/data';
+import { Factory, ShieldCheck, PenTool, CheckCircle, Users, BadgeCheck, Newspaper, ExternalLink } from 'lucide-react';
 
 const services = (await getCollection('layanan', ({ data }) => data.published)).sort(
   (a, b) => a.data.order - b.data.order
@@ -28,6 +29,13 @@ const servicesSchema = {
     description: s.data.description,
   })),
 };
+
+const mediaLinks = [
+  { label: 'Sriwijaya Post (Tribun Sumsel)', href: MEDIA_COVERAGES.find((c) => c.publisher.includes('Sriwijaya Post'))?.url ?? '#' },
+  { label: 'Berita Sumsel', href: MEDIA_COVERAGES.find((c) => c.publisher.includes('Berita'))?.url ?? '#' },
+  { label: 'PAL-TV', href: VIDEOS.find((v) => v.id === 'oeo9x8j1yK0')?.url ?? '#' },
+  { label: 'WhatsApp Business Official', href: VIDEOS.find((v) => v.id === 'oJ5VBoOWlMw')?.url ?? '#' },
+];
 ---
 
 <Layout
@@ -84,54 +92,117 @@ title="Daftar Layanan | Advertising & Reklame Palembang"
         </div>
       </section>
 
-    <!-- Section D: Trust & Social Proof -->
+<!-- Section D: Trust & Social Proof -->
     <section class="py-14 md:py-18 bg-neutral-50/50 border-t border-neutral-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-10 space-y-2">
-          <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-[#ff6634]">Keunggulan</span>
+        <!-- Header -->
+        <div class="max-w-2xl mx-auto text-center mb-12 space-y-3">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#ff6634]/10 text-[#ff6634] text-[10px] font-mono font-bold uppercase tracking-widest">
+            <CheckCircle className="w-3 h-3" />
+            Trust &amp; Social Proof
+          </span>
           <h2 class="text-2xl md:text-3xl font-extrabold text-neutral-800 tracking-tight">
-            Mengapa Ribuan Klien Memilih Sriwijaya Grafika
+            Mengapa Ribuan Klien di Palembang Memilih Kami
           </h2>
+          <p class="text-sm text-neutral-500 leading-relaxed">
+            Bukan klaim kosong. Angka, nama institusi, dan liputan media di bawah ini bisa Anda cek langsung.
+          </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          <div class="bg-white rounded-2xl p-6 border border-neutral-100 shadow-sm space-y-3">
-            <div class="w-10 h-10 rounded-xl bg-[#224da8]/10 flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#224da8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+
+        <!-- Stats band -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-px bg-neutral-200 rounded-3xl overflow-hidden border border-neutral-200 shadow-sm mb-12">
+          <div class="bg-white p-6 md:p-8 text-center">
+            <p class="font-display text-3xl md:text-4xl font-bold text-[#224da8]">2008</p>
+            <p class="mt-1 text-[10px] font-mono uppercase tracking-widest text-neutral-400">sejak mulai melayani</p>
+          </div>
+          <div class="bg-white p-6 md:p-8 text-center">
+            <p class="font-display text-3xl md:text-4xl font-bold text-[#224da8]">1.000+</p>
+            <p class="mt-1 text-[10px] font-mono uppercase tracking-widest text-neutral-400">klien Palembang &amp; Sumsel</p>
+          </div>
+          <div class="bg-white p-6 md:p-8 text-center">
+            <p class="font-display text-3xl md:text-4xl font-bold text-[#224da8]">100%</p>
+            <p class="mt-1 text-[10px] font-mono uppercase tracking-widest text-neutral-400">produksi di workshop sendiri</p>
+          </div>
+          <div class="bg-white p-6 md:p-8 text-center">
+            <p class="font-display text-3xl md:text-4xl font-bold text-[#224da8]">1 Thn</p>
+            <p class="mt-1 text-[10px] font-mono uppercase tracking-widest text-neutral-400">garansi resmi instalasi</p>
+          </div>
+        </div>
+
+        <!-- USP cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div class="bg-white rounded-2xl p-6 border border-neutral-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#224da8]/25 to-[#224da8]/5 flex items-center justify-center mb-4">
+              <Factory className="w-5 h-5 text-[#224da8]" strokeWidth={1.75} />
             </div>
             <h3 class="text-sm font-extrabold text-neutral-800">Produksi Sendiri, Bukan Makloon</h3>
-            <p class="text-xs text-neutral-500 leading-relaxed">
-              Semua produk signage dan reklame dikerjakan di workshop Talang Jambe. Kami tidak menjadi perantara — dari desain, produksi, hingga instalasi, semuanya dalam satu tangan. Ini yang membuat kualitas dan estimasi waktu lebih terkontrol.
+            <p class="text-xs text-neutral-500 leading-relaxed mt-2">
+              Semua produk dikerjakan di workshop Talang Jambe: desain, laser cutting, fabrikasi, sampai instalasi satu tangan. Kualitas dan jadwal jadi lebih terkontrol.
             </p>
           </div>
-          <div class="bg-white rounded-2xl p-6 border border-neutral-100 shadow-sm space-y-3">
-            <div class="w-10 h-10 rounded-xl bg-[#ff6634]/10 flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ff6634" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div class="bg-white rounded-2xl p-6 border border-neutral-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#ff6634]/25 to-[#ff6634]/5 flex items-center justify-center mb-4">
+              <ShieldCheck className="w-5 h-5 text-[#ff6634]" strokeWidth={1.75} />
             </div>
             <h3 class="text-sm font-extrabold text-neutral-800">Garansi 1 Tahun Semua Instalasi</h3>
-            <p class="text-xs text-neutral-500 leading-relaxed">
-              Setiap instalasi huruf timbul, neon box, dan reklame outdoor kami beri garansi 1 tahun penuh. Termasuk untuk proyek besar seperti Gedung Walikota Palembang, Kejati Sumsel, dan mall di Palembang. Kalau ada kerusakan karena material atau pemasangan, kami perbaiki gratis.
+            <p class="text-xs text-neutral-500 leading-relaxed mt-2">
+              Setiap instalasi huruf timbul, neon box, dan reklame outdoor bergaransi 1 tahun penuh, termasuk proyek Gedung Walikota Palembang dan Kejati Sumsel.
             </p>
           </div>
-          <div class="bg-white rounded-2xl p-6 border border-neutral-100 shadow-sm space-y-3">
-            <div class="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div class="bg-white rounded-2xl p-6 border border-neutral-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-emerald-500/25 to-emerald-500/5 flex items-center justify-center mb-4">
+              <PenTool className="w-5 h-5 text-emerald-600" strokeWidth={1.75} />
             </div>
             <h3 class="text-sm font-extrabold text-neutral-800">Konsultasi Gratis + Mockup 3D</h3>
-            <p class="text-xs text-neutral-500 leading-relaxed">
-              Konsultasi tanpa biaya, termasuk mockup 3D desain signage sebelum produksi. Anda bisa lihat hasil akhirnya terlebih dulu, baru memutuskan. Respon WhatsApp cepat dengan sentuhan personal — tanpa template robot.
+            <p class="text-xs text-neutral-500 leading-relaxed mt-2">
+              Desain cuma-cuma sampai preview mockup 3D sebelum produksi. Anda melihat hasilnya dulu, baru memutuskan, dengan respon WhatsApp yang cepat.
             </p>
           </div>
         </div>
-        <div class="text-center mt-10 space-y-3">
-          <p class="text-sm md:text-sm text-neutral-600 leading-relaxed">
-            Dipercaya oleh Gedung Walikota Palembang, Kejati Sumsel, SPBU Pertamina, Super Indo, DPRD OKI, SMP Islam Bina Insani, Riyadh Regency 3, dan puluhan brand lokal di Palembang. Liputan media: Sriwijaya Post (Tribun Sumsel), Berita Sumsel, PAL-TV, dan kanal YouTube WhatsApp Business Official.
+
+        <!-- Dipercaya oleh -->
+        <div class="space-y-4">
+          <p class="text-center text-[10px] font-mono font-bold uppercase tracking-widest text-neutral-400">
+            <Users className="inline w-3.5 h-3.5 -mt-0.5 mr-1" /> Dipercaya oleh
           </p>
-          <p class="text-sm md:text-sm text-neutral-600 leading-relaxed">
-            Sejak 2008, Sriwijaya Grafika telah melayani ribuan klien di Palembang dan Sumatera Selatan untuk kebutuhan advertising dan reklame. Mulai dari huruf timbul LED stainless untuk storefront premium, neon box custom untuk brand retail dan SPBU, hingga rambu K3 standar Kemnaker untuk area pabrik — semua diproduksi sendiri di workshop Talang Jambe dengan garansi 1 tahun penuh. Setiap layanan bisa dikonsultasikan gratis, termasuk mockup 3D sebelum produksi.
+          <div class="flex flex-wrap justify-center gap-2.5">
+            {[
+              'Gedung Walikota Palembang',
+              'Kejati Sumsel',
+              'SPBU Pertamina',
+              'Super Indo',
+              'DPRD OKI',
+              'SMP Islam Bina Insani',
+              'Riyadh Regency 3',
+            ].map((name) => (
+              <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white border border-neutral-200 text-xs font-semibold text-neutral-700 shadow-sm">
+                <BadgeCheck className="w-3.5 h-3.5 text-emerald-500" strokeWidth={2} />
+                {name}
+              </span>
+            ))}
+            <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-gradient-to-br from-[#224da8] to-[#10285a] text-white text-xs font-bold shadow-sm">
+              + puluhan brand lokal
+            </span>
+          </div>
+        </div>
+
+        <!-- Liputan media -->
+        <div class="mt-10 pt-8 border-t border-neutral-200 flex flex-wrap items-center justify-center gap-3">
+          <p class="text-[10px] font-mono font-bold uppercase tracking-widest text-neutral-400 mr-1">
+            <Newspaper className="inline w-3.5 h-3.5 -mt-0.5 mr-1" /> Liputan media
           </p>
-          <p class="text-sm md:text-sm text-neutral-600 leading-relaxed">
-            Tidak seperti vendor yang hanya menjadi perantara, kami memproduksi langsung di workshop sendiri. Tim produksi yang memberdayakan tenaga lokal — termasuk penyandang Tuna Rungu yang terampil — memastikan setiap produk signage dan cetakan dikerjakan dengan standar kualitas yang konsisten. Dengan pengalaman belasan tahun menangani proyek dari skala satu huruf timbul hingga signage korporat gedung pemerintah, kami paham bahwa setiap bisnis punya kebutuhan yang unik.
-          </p>
+          {mediaLinks.map((m) => (
+            <a
+              href={m.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-md bg-white border border-neutral-200 text-xs font-bold text-neutral-600 hover:border-[#224da8] hover:text-[#224da8] hover:shadow-sm transition-all"
+            >
+              <span class="w-1.5 h-1.5 rounded-full bg-[#ff6634]" />
+              {m.label}
+              <ExternalLink className="w-3 h-3 text-neutral-400" />
+            </a>
+          ))}
         </div>
       </div>
     </section>

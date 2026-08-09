@@ -15,6 +15,24 @@ materials:
   - "Sisi Stainless/Galvanis"
   - "Depan Akrilik"
 imageUrl: "/img/layanan/gantry-huruf-led.webp"
+heroAlt: "Huruf LED channel letter menyala di fasad toko Palembang"
+titleSeo: "Jasa Pembuatan Huruf LED Channel Letter Palembang"
+metaDescription: "Jasa pembuatan huruf LED channel letter Palembang: frontlit, backlit, RGB. Modul Samsung waterproof, garansi 1 tahun. Mulai Rp 15.000/cm tinggi."
+faqs:
+  - question: "Apa beda frontlit dan backlit?"
+    answer: "Frontlit cahayanya keluar dari bagian depan huruf, jadi wajah akriliknya yang menyala. Backlit atau reverse memancar dari belakang, bagian dinding di belakang huruf yang terang, cocok untuk fasad gelap."
+  - question: "Berapa konsumsi listriknya?"
+    answer: "Modul LED hemat. Contoh huruf setinggi 30 cm butuh sekitar 5-10 watt per huruf."
+  - question: "Bisa RGB?"
+    answer: "Bisa. LED RGB dengan controller untuk warna yang berubah-ubah sesuai program."
+  - question: "Apakah harga sudah termasuk instalasi?"
+    answer: "Harga per cm tinggi belum termasuk biaya pasang. Biaya instalasi dihitung dari tinggi pemasangan dan akses lokasi, disurvei dulu sebelum diberi rincian."
+  - question: "Berapa lama pengerjaannya?"
+    answer: "Standar 7-14 hari kerja tergantung jumlah huruf, versi pencahayaan, dan kerumitan. Kalau hurufnya banyak atau pakai RGB, bisa lebih lama."
+  - question: "Bisa dipasang di dinding bata, granit, atau kaca?"
+    answer: "Bisa. Ada bracket dan sistem mounting yang disesuaikan jenis dinding. Untuk kaca, pakai bracket transparan atau sistem drilled hole biar tidak merusak tampilan."
+  - question: "Apakah melayani pemasangan luar kota?"
+    answer: "Ya, seluruh Sumatera Selatan termasuk Inderalaya, Sekayu, Muaraenim, Kayuagung, dan Baturaja, dengan survei lokasi terlebih dahulu."
 hasCalculator: true
 calculatorType: "huruf_timbul"
 order: 10
@@ -43,6 +61,8 @@ Pas untuk bisnis yang mau signage-nya terbaca jelas siang malam dengan kontras y
 - Signage mall, ruko, dan kantor.
 - Huruf LED sebagai hiasan dinding.
 
+Pengerjaan channel letter ini kami lakukan di workshop Talang Jambe dengan standar material yang sama seperti [huruf timbul biasa](/layanan/huruf-timbul). Panduan memilih ukuran ada di [tips ukuran huruf timbul](/blog/panduan/ukuran-huruf-timbul-palembang-terbaca-jelas) dan kualitas LED dibahas di [beda LED Samsung vs palsu](/blog/tips/beda-led-samsung-vs-palsu).
+
 ## Proses Pengerjaan
 
 1. Brief desain, tentukan ukuran, font, dan versi pencahayaan.
@@ -53,29 +73,3 @@ Pas untuk bisnis yang mau signage-nya terbaca jelas siang malam dengan kontras y
 6. Testing 24 jam, cek kelistrikan dan cahaya.
 7. Instalasi di lokasi, pasang dengan bracket tanam.
 8. Garansi satu tahun untuk kelistrikan dan fisik instalasi.
-
-## FAQ
-
-**Apa beda frontlit dan backlit?**
-
-Frontlit cahayanya keluar dari bagian depan huruf, jadi wajah akriliknya yang menyala. Backlit atau reverse memancar dari belakang, bagian dinding di belakang huruf yang terang, cocok untuk fasad gelap.
-
-**Berapa konsumsi listriknya?**
-
-Modul LED hemat. Contoh huruf setinggi 30 cm butuh sekitar 5-10 watt per huruf.
-
-**Bisa RGB?**
-
-Bisa. LED RGB dengan controller untuk warna yang berubah-ubah sesuai program.
-
-**Apakah harga sudah termasuk instalasi?**
-
-Harga per cm tinggi belum termasuk. Biaya pasang dihitung dari tinggi pemasangan dan susahnya akses lokasi. Tim survey dulu lalu kasih rinciannya.
-
-**Berapa lama pengerjaannya?**
-
-Standar 7-14 hari kerja tergantung jumlah huruf, versi pencahayaan, dan kerumitan. Kalau hurufnya banyak atau pakai RGB, bisa lebih lama.
-
-**Bisa dipasang di dinding bata, granit, atau kaca?**
-
-Bisa. Ada bracket dan sistem mounting yang disesuaikan jenis dinding. Untuk kaca, pakai bracket transparan atau sistem drilled hole biar tidak merusak tampilan.

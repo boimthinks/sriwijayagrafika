@@ -16,8 +16,26 @@ materials:
   - "Plat Stainless"
   - "Akrilik LED"
 imageUrl: "/img/layanan/pylon-totem.webp"
+heroAlt: "Pylon sign totem di depan gerbang gedung Palembang"
+titleSeo: "Jasa Pembuatan Pylon Sign & Totem Palembang, Bergaransi"
+metaDescription: "Jasa pembuatan pylon sign & totem Palembang untuk SPBU, hotel, kantor, dan instansi. Struktur besi baja, pondasi cakar ayam, LED. Mulai Rp 4,5 juta/unit."
+faqs:
+  - question: "Berapa tinggi maksimal pylon sign?"
+    answer: "Standar 3-12 meter. Untuk ketinggian khusus butuh survei dan izin tersendiri."
+  - question: "Apakah termasuk biaya pondasi?"
+    answer: "Tergantung paket. Ada paket lengkap dengan pondasi, atau hanya fabrikasi struktur bagian atas."
+  - question: "Berapa lama total pengerjaan?"
+    answer: "Standar 14-30 hari kerja, termasuk pengeringan pondasi beton."
+  - question: "Apakah perlu izin pemasangan?"
+    answer: "Untuk pylon di atas 4 meter atau yang berdiri di lahan publik, biasanya perlu izin reklame dari pemerintah daerah. Kami bantu urus bila dibutuhkan."
+  - question: "Apakah tiangnya bisa dibongkar pasang?"
+    answer: "Desain standar kami memakai pondasi cor tetap. Untuk kebutuhan sementara, tersedia sistem knock-down dengan blok beton tanpa cor."
+  - question: "Apakah ada garansi strukturnya?"
+    answer: "Struktur, kelistrikan, dan instalasi kami garansi 1 tahun. Untuk cuaca ekstrem, struktur dirancang dengan faktor keamanan tambahan."
+  - question: "Apakah melayani pemasangan luar kota Palembang?"
+    answer: "Ya, untuk seluruh Sumatera Selatan seperti Inderalaya, Sekayu, Muaraenim, dan Baturaja, dengan survei lokasi terlebih dahulu."
 hasCalculator: false
-order: 4
+order: 3
 ---
 
 ## Tentang Pylon Sign / Totem
@@ -43,6 +61,8 @@ Kami mengerjakan pylon dari yang kecil, sekitar 3 meter, sampai struktur besar d
 - Signage kampus dan sekolah.
 - Papan nama apartemen dan perumahan.
 
+Media ini paling pas dipasangkan dengan [billboard](/layanan/billboard) atau [neon box](/layanan/neon-box) sesuai kebutuhan area. Perbedaan pylon dengan neon box sudah kami bandingkan di artikel [pylon sign vs neon box](/blog/tips/pylon-sign-vs-neon-box), dan ketentuan izinnya ada di [panduan izin reklame Palembang](/blog/panduan/panduan-izin-reklame-palembang).
+
 ## Proses Pengerjaan
 
 1. Survey lokasi, ukur, cek kondisi tanah, dan urus izin bila perlu.
@@ -52,29 +72,3 @@ Kami mengerjakan pylon dari yang kecil, sekitar 3 meter, sampai struktur besar d
 5. Pasang cover dan visual, ACP, stainless, atau akrilik.
 6. Instalasi dan pencahayaan, pasang di lokasi lalu sambungkan listrik.
 7. Finishing dan garansi satu tahun.
-
-## FAQ
-
-**Berapa tinggi maksimal pylon sign?**
-
-Standar 3-12 meter. Untuk ketinggian khusus butuh survey dan izin tersendiri.
-
-**Apakah termasuk biaya pondasi?**
-
-Tergantung paket. Ada paket lengkap dengan pondasi, atau hanya fabrikasi struktur bagian atas.
-
-**Berapa lama total pengerjaan?**
-
-Standar 14-30 hari kerja, termasuk pengeringan pondasi beton.
-
-**Apakah perlu izin pemasangan?**
-
-Untuk pylon di atas 4 meter atau yang berdiri di lahan publik, biasanya perlu izin reklame dari pemerintah daerah. Kami bantu urus jika dibutuhkan.
-
-**Apakah tiangnya bisa dibongkar pasang?**
-
-Desain standar kami memakai pondasi cor tetap. Untuk kebutuhan sementara, bisa pakai sistem knock-down dengan blok beton tanpa cor.
-
-**Apakah ada garansi strukturnya?**
-
-Struktur, kelistrikan, dan instalasi kami garansi 1 tahun. Untuk cuaca ekstrem, struktur dirancang dengan faktor keamanan tambahan.

@@ -16,9 +16,25 @@ materials:
   - "Acrylic"
   - "Stiker Reflective"
 imageUrl: "/img/layanan/rambu-rambu.webp"
+heroAlt: "Rambu K3 keselamatan kerja di area pabrik Palembang"
+titleSeo: "Jasa Pembuatan Rambu K3 & Safety Sign Palembang"
+metaDescription: "Jasa pembuatan rambu K3 & safety sign Palembang standar Kemnaker/OSHA. Bahan reflektif Asahi/3M. Mulai Rp 125.000/pcs, melayani se-Sumatera Selatan."
+faqs:
+  - question: "Bisa custom ukuran?"
+    answer: "Bisa. Kami menerima pesanan sesuai ukuran yang dibutuhkan."
+  - question: "Berapa lama produksinya?"
+    answer: "Standar 3-7 hari kerja setelah desain disetujui."
+  - question: "Rambunya glow in the dark atau reflektif biasa?"
+    answer: "Keduanya tersedia. Tinggal pilih sesuai kebutuhan dan anggaran."
+  - question: "Apakah harga sudah termasuk biaya instalasi?"
+    answer: "Harga per pcs sudah termasuk bahan dan cetak. Biaya pasang dihitung terpisah tergantung jumlah dan lokasi. Untuk jumlah banyak, ada harga paket."
+  - question: "Apakah sudah sesuai standar Kemnaker?"
+    answer: "Ya. Desain mengacu pada Permenakertrans No. Per.04/MEN/1985 dan standar OSHA. Simbol dan warnanya mengikuti ketentuan."
+  - question: "Bisa pasang logo perusahaan?"
+    answer: "Bisa. Logo diletakkan di sudut rambu atau dibuat desain khusus tanpa mengganggu keterbacaan simbol K3."
 hasCalculator: true
 calculatorType: "rambu"
-order: 3
+order: 4
 ---
 
 ## Tentang Rambu K3 & Safety Sign
@@ -52,6 +68,8 @@ Bahan reflektif yang dipakai, Asahi atau 3M Scotchlite, membuat rambu tetap keba
 - Rambu proyek konstruksi: area proyek, galian, scaffolding.
 - Rambu jalan dan lalu lintas: perempatan, batas kecepatan, rambu parkir.
 
+Standar yang kami ikuti dan cara pemasangannya bisa dipelajari di artikel [standar Kemnaker rambu K3 pabrik](/blog/panduan/standar-kemnaker-rambu-k3-pabrik) dan [estimasi biaya rambu](/blog/panduan/estimasi-biaya-rambu-palembang). Untuk kebutuhan signage berskala besar, lihat juga layanan [pylon sign](/layanan/pylon-totem) atau [huruf timbul](/layanan/huruf-timbul) kami.
+
 ## Proses Pengerjaan
 
 1. Konsultasi kebutuhan, tentukan jenis, ukuran, dan material rambu.
@@ -60,29 +78,3 @@ Bahan reflektif yang dipakai, Asahi atau 3M Scotchlite, membuat rambu tetap keba
 4. Quality control, cek seberapa terang rambu memantulkan cahaya.
 5. Pemasangan di lokasi dengan tiang atau bracket.
 6. Garansi satu tahun untuk material dan instalasi.
-
-## FAQ
-
-**Bisa custom ukuran?**
-
-Bisa. Kami terima pesanan sesuai ukuran yang dibutuhkan.
-
-**Berapa lama produksinya?**
-
-Standar 3-7 hari kerja setelah desain disetujui.
-
-**Rambunya glow in the dark atau reflektif biasa?**
-
-Keduanya tersedia. Tinggal pilih sesuai kebutuhan dan anggaran.
-
-**Apakah harga sudah termasuk biaya instalasi?**
-
-Harga per pcs sudah termasuk bahan dan cetak. Biaya pasang dihitung terpisah tergantung jumlah dan lokasi. Untuk jumlah banyak, ada harga paket.
-
-**Apakah sudah sesuai standar Depnakertrans?**
-
-Ya. Desain mengacu pada Permenakertrans No. Per.04/MEN/1985 dan standar OSHA. Simbol dan warnanya mengikuti ketentuan.
-
-**Bisa pasang logo perusahaan?**
-
-Bisa. Logo diletakkan di sudut rambu atau dibuat desain khusus tanpa mengganggu keterbacaan simbol K3.

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Newspaper, Video, Globe, Award, ShieldCheck, Heart, Check, Play, ExternalLink } from 'lucide-react';
+import { Newspaper, Video, Globe, Award, ShieldCheck, Heart, Check, Play, ExternalLink, MessageCircle } from 'lucide-react';
 import { BUSINESS_INFO } from '@lib/data';
 
 interface Props {
@@ -143,12 +143,19 @@ export default function AboutAndMediaIsland({ mediaCoverages, videos, fullArticl
             {videos.map((vid) => (
               <div key={vid.id} className="bg-white rounded-3xl border border-neutral-100 shadow-sm overflow-hidden flex flex-col justify-between hover:border-neutral-200 transition-colors">
                 <div className="relative h-44 group">
-                   <img 
-                    src={`https://img.youtube.com/vi/${vid.id}/hqdefault.jpg`} 
-                    alt={vid.title} 
-                    className="w-full h-full object-cover" 
-                    loading="lazy"
-                   />
+                  {vid.url.includes('youtube.com/watch') ? (
+                    <img
+                      src={`https://img.youtube.com/vi/${vid.id}/hqdefault.jpg`}
+                      alt={vid.title}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-[#224da8] to-[#10285a] flex items-center justify-center">
+                      <div className="absolute inset-0 opacity-[0.08]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '20px 20px' }}></div>
+                      <MessageCircle className="w-14 h-14 text-[#ff6634]" strokeWidth={1.25} />
+                    </div>
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-tr from-[#224da8]/30 to-black/80 z-0"></div>
                   <a href={vid.url} target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-red-600 hover:bg-red-700 hover:scale-105 duration-200 flex items-center justify-center shadow-lg cursor-pointer z-10 transition-transform" aria-label={`Putar video: ${vid.title}`}>
                     <Play className="w-5 h-5 fill-white text-white ml-0.5" />

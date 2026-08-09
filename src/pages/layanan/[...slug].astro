@@ -6,7 +6,7 @@ import ServiceCard from '@components/ServiceCard.astro';
 import SidebarCTA from '@components/SidebarCTA.astro';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import { BUSINESS_INFO } from '@lib/data';
-import { Calculator, Phone, ArrowLeft, MessageCircle, Check, Package, Megaphone, ShieldAlert, PenTool, Boxes } from 'lucide-react';
+import { MessageCircle, Check, Package, Megaphone, ShieldAlert, PenTool, Boxes, ChevronDown, MapPin } from 'lucide-react';
 
 export async function getStaticPaths() {
   const services = await getCollection('layanan', ({ data }) => data.published);
@@ -56,14 +56,14 @@ const imageUrl = data.imageUrl
   ? new URL(data.imageUrl, Astro.site ?? 'https://sriwijayagrafika.com').toString()
   : null;
 
-const jasaWord = 'Jasa Pembuatan';
-const seoH1 = `${jasaWord} ${data.name} Murah di Palembang`;
+const seoTitle = data.titleSeo ?? `Jasa Pembuatan ${data.name} Murah di Palembang`;
+const seoDescription = data.metaDescription ?? data.description;
 
 const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   '@id': pageUrl + '#service',
-  name: seoH1,
+  name: seoTitle,
   description: data.description,
   serviceType: data.subcategory,
   provider: {
@@ -71,7 +71,17 @@ const serviceSchema = {
     '@id': 'https://sriwijayagrafika.com/#business',
     name: BUSINESS_INFO.name,
   },
-  areaServed: { '@type': 'City', name: 'Palembang' },
+  areaServed: [
+    { '@type': 'City', name: 'Palembang' },
+    { '@type': 'City', name: 'Inderalaya' },
+    { '@type': 'City', name: 'Sekayu' },
+    { '@type': 'City', name: 'Muaraenim' },
+    { '@type': 'City', name: 'Kayuagung' },
+    { '@type': 'City', name: 'Baturaja' },
+    { '@type': 'City', name: 'Prabumulih' },
+    { '@type': 'City', name: 'Lubuklinggau' },
+    { '@type': 'AdministrativeArea', name: 'Sumatera Selatan' }
+  ],
   offers: {
     '@type': 'Offer',
     priceCurrency: 'IDR',
@@ -85,20 +95,46 @@ const serviceSchema = {
   },
   ...(imageUrl ? { image: imageUrl } : {}),
 };
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    { '@type': 'ListItem', 'position': 1, 'name': 'Beranda', 'item': (Astro.site ?? 'https://sriwijayagrafika.com') + '/' },
+    { '@type': 'ListItem', 'position': 2, 'name': 'Layanan', 'item': (Astro.site ?? 'https://sriwijayagrafika.com') + '/layanan' },
+    { '@type': 'ListItem', 'position': 3, 'name': data.name, 'item': pageUrl }
+  ]
+};
+
+const faqSchema = data.faqs.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': data.faqs.map(f => ({
+    '@type': 'Question',
+    'name': f.question,
+    'acceptedAnswer': {
+      '@type': 'Answer',
+      'text': f.answer
+    }
+  }))
+} : null;
+
+const allSchemas: object[] = [serviceSchema, breadcrumbSchema];
+if (faqSchema) allSchemas.push(faqSchema);
 ---
 
 <Layout
-  title={seoH1}
-  description={data.description}
+  title={seoTitle}
+  description={seoDescription}
+  ogImage={data.imageUrl}
   keywords={[
-    `${jasaWord} ${data.name}`,
-    `${data.name} Murah`,
     `${data.name} Palembang`,
-    data.subcategory,
+    `${data.name} Murah`,
     'Advertising Palembang',
+    'Reklame Palembang',
     'Sriwijaya Grafika',
   ]}
-  structuredData={serviceSchema}
+  structuredData={allSchemas}
 >
   <Navbar current="services" />
 
@@ -113,7 +149,7 @@ const serviceSchema = {
               </span>
             </div>
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
-              {seoH1}
+              {seoTitle}
             </h1>
             <p class="text-sm md:text-base text-white/80 leading-relaxed max-w-2xl">
               {data.description}
@@ -137,7 +173,7 @@ const serviceSchema = {
           {data.imageUrl ? (
             <img
               src={data.imageUrl}
-              alt={data.name}
+              alt={data.heroAlt ?? `${data.name} di Palembang`}
               loading="eager"
               fetchpriority="high"
               decoding="async"
@@ -223,6 +259,41 @@ const serviceSchema = {
             <article class="prose-article max-w-none">
               <Content />
             </article>
+
+            {data.faqs.length > 0 && (
+              <div id="faq" class="mt-12 space-y-4">
+                <h2 class="text-xl font-extrabold text-neutral-800 tracking-tight">Pertanyaan yang Sering Diajukan</h2>
+                <div class="space-y-3">
+                  {data.faqs.map((f) => (
+                    <details class="group bg-neutral-50 rounded-2xl border border-neutral-100 open:bg-white open:shadow-sm transition-all">
+                      <summary class="flex items-center justify-between gap-4 px-5 py-4 cursor-pointer font-bold text-sm md:text-base text-neutral-800 list-none select-none">
+                        <span>{f.question}</span>
+                        <ChevronDown className="w-4 h-4 text-[#ff6634] flex-shrink-0 transition-transform duration-200 group-open:rotate-180" />
+                      </summary>
+                      <div class="px-5 pb-5 text-sm text-neutral-600 leading-relaxed">{f.answer}</div>
+                    </details>
+                  ))}
+                </div>
+
+                <div class="bg-gradient-to-br from-[#224da8] to-[#10285a] rounded-2xl p-6 text-white flex flex-col md:flex-row items-center justify-between gap-4">
+                  <div class="flex items-start gap-3">
+                    <MapPin className="w-5 h-5 text-[#ff6634] flex-shrink-0 mt-0.5" />
+                    <p class="text-sm text-white/90 leading-relaxed">
+                      Workshop: <strong class="text-white">Jl. Pertanian No.105, Talang Jambe, Sukarami, Palembang</strong>. Konsultasi dan survei lokasi gratis.
+                    </p>
+                  </div>
+                  <a
+                    href={waUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white text-sm font-bold shadow-md transition-all whitespace-nowrap"
+                  >
+                    <MessageCircle className="w-4 h-4" />
+                    <span>Tanya via WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            )}
 
             <div class="mt-12 pt-8 border-t border-neutral-100 flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
