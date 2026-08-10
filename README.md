@@ -1,398 +1,65 @@
-# Sriwijaya Grafika Palembang
+# Sriwijaya Grafika — Advertising, Reklame & Percetakan Palembang
 
-Website resmi **Sriwijaya Grafika Palembang** — penyedia jasa Advertising, Reklame, dan Percetakan profesional di Sumatera Selatan.
+Spesialis **signage dan advertising di Palembang**, Sumatera Selatan. Kami membuat dan memasang huruf timbul LED, neon box, papan nama toko, pylon/totem sign, rambu K3, serta melayani percetakan dan produk akrilik custom. Kunjungi website resmi kami di **[sriwijayagrafika.com](https://sriwijayagrafika.com)**.
 
-> Berdiri sejak 2008. Pengalaman **16+ tahun**. Garansi resmi 1 tahun. Memberdayakan disabilitas.
+> Berdiri sejak 2008. Pengalaman 16+ tahun. Garansi resmi 1 tahun untuk semua instalasi. Memproduksi sendiri di workshop Talang Jambe.
 
-Rewrite dari stack React + Vite + Express ke **Astro Static Site Generation (SSG)** — zero JS by default, deploy ke static host mana pun.
+---
 
-## Tech Stack
+## Tentang Kami
 
-| Layer | Tools |
+Sriwijaya Grafika adalah perusahaan advertising, reklame, dan percetakan yang berbasis di Palembang, Sumatera Selatan. Didirikan oleh **M. Edy Munandar**, yang telah menggeluti dunia advertising selama lebih dari 16 tahun termasuk melalui dua kali masa sulit yang justru menjadi titik bangkit untuk melayani pelanggan lebih baik lagi.
+
+Mulai dari toko kecil yang memesan satu huruf timbul hingga gedung instansi dan korporasi, semua kami layani dengan standar yang sama: kualitas material terjamin, pengerjaan presisi, dan pelayanan yang dekat dengan pelanggan.
+
+## Layanan Utama
+
+| Layanan | Deskripsi |
 | --- | --- |
-| Framework | [Astro 6.4](https://astro.build) — `output: 'static'`, multi-page SSG, islands architecture |
-| UI interaktif | [React 19](https://react.dev) — `client:load` / `client:visible` untuk komponen yang butuh state |
-| Styling | [Tailwind CSS v4](https://tailwindcss.com) — CSS-first `@theme {}` di `src/styles/global.css`, tanpa file config |
-| Bahasa | TypeScript strict, path alias `@/*`, `@components/*`, `@layouts/*`, `@lib/*`, `@data/*` |
-| Konten | [Astro Content Collections](https://docs.astro.build/en/guides/content-collections/) + Zod schema (`src/content.config.ts`) |
-| SEO | `@astrojs/sitemap` (auto), JSON-LD per halaman, OG image manual |
-| Feed | `@astrojs/rss` — endpoint `/blog/rss.xml` |
-| Icon | `lucide-react` (di-import dari file `.astro` maupun `.tsx`) |
-| Markdown parsing | `gray-matter` untuk file MD di `src/data/` |
+| **Huruf Timbul LED** | Stainless 304/201, akrilik LED, kuningan, dan galvanil. Presisi laser cutting, huruf menyala 24 jam |
+| **Neon Box** | Reklame storefront custom untuk cafe, butik, kantor, hingga brand nasional |
+| **Pylon / Totem Sign** | Penanda area komersial yang terlihat dari jarak jauh |
+| **Papan Nama Toko (PNT)** | Plang toko dan kantor dengan berbagai pilihan material |
+| **Rambu K3 / Safety Sign** | Rambu keselamatan sesuai standar untuk pabrik, gudang, dan area publik |
+| **Produk Akrilik Custom** | Display, box, name tag, trophy, dan ornamen akrilik lainnya |
+| **Jasa Cutting** | Laser plat, akrilik, plywood, ACP, dan stiker |
+| **Percetakan** | Nota, kwitansi, kop surat, kartu nama, brosur, buku, dan stempel |
 
-Site URL di-hardcode di `astro.config.mjs:8` — `https://sriwijayagrafika.com`. Tidak perlu `.env` untuk production swap.
+Detail setiap layanan dan estimasi harga bisa dilihat di halaman **[Layanan](https://sriwijayagrafika.com/layanan)**.
 
-## Quick Start
+## Mengapa Memilih Sriwijaya Grafika?
 
-```bash
-npm install
-npm run dev        # http://localhost:3000
-```
+- **Produksi sendiri, bukan makloon** — desain, laser cutting, fabrikasi, dan instalasi dalam satu tangan di workshop kami.
+- **Garansi 1 tahun penuh** — berlaku untuk kelistrikan dan pemasangan, termasuk proyek besar.
+- **Mockup 3D gratis** — Anda melihat hasilnya secara realistis sebelum produksi.
+- **Konsultasi dan survei lokasi gratis** — untuk wilayah Palembang dan Sumatera Selatan.
+- **Memberdayakan SDM lokal** — termasuk pegawai penyandang disabilitas di sekitar workshop.
 
-## Perintah
+## Klien yang Pernah Kami Layani
 
-```bash
-npm run dev        # astro dev --host 0.0.0.0 → http://localhost:3000
-npm run build      # static output → dist/
-npm run preview    # serve dist/ untuk sanity-check
-npm run check      # astro check (typecheck + a11y hints)
-```
+- Gedung **Walikota Palembang** — huruf timbul
+- **Kejati Sumsel** — huruf timbul
+- **SPBU Pertamina** dan **Super Indo** — neon box
+- **DPRD OKI** — huruf timbul cutting akrilik
+- **SMP Islam Bina Insani** dan **Riyadh Regency 3** — huruf timbul galvanis
+- Berbagai kafe, butik, dan toko di Palembang
 
-Catatan: `npm run check` saat ini memunculkan **142 pre-existing error di file `.tsx`** (pakai `class` alih-alih `className` di JSX). Build **tetap lulus** — ini repo-wide TS-strict mismatch yang disengaja tidak di-fix.
+## Liputan Media
 
-## Struktur Proyek
+- **Sriwijaya Post (Tribun Sumsel)** — "Cerita Pengusaha di Palembang Keluar dari Keterpurukan Saat Covid-19"
+- **Berita Sumsel** — "Puas Jatuh Bangun Rintis Usaha, Grafika Sriwijaya Bangun Kedekatan Emosional dengan Pelanggan"
+- **PAL-TV** — liputan langsung di lokasi workshop
 
-```
-src/
-├── content.config.ts                    # Zod schema: layanan, blog
-├── content/
-│   ├── layanan/                         # 31 file MD, satu per layanan
-│   │   ├── huruf-timbul.md
-│   │   ├── neon-box.md
-│   │   └── ... (29 lainnya)
-│   └── blog/                            # 9 artikel published (struktur flat, lihat catatan di §4)
-├── data/                                # Static data, di-parse saat build
-│   ├── data.ts                          # BUSINESS_INFO, dll
-│   ├── portfolio.md                     # Daftar portofolio (gray-matter)
-│   ├── (root) SUMBER-PENGETAHUAN.md      # SUMBER-PENGETAHUAN untuk AI Agent
-├── components/
-│   ├── *.astro                          # Server-rendered: Navbar, Footer, Hero, ServiceCard, BlogCard, FloatingWhatsApp, dll
-│   └── *.tsx                            # React islands: AboutAndMediaIsland, OrderHistory, dll
-├── layouts/
-│   └── Layout.astro                     # <head> + JSON-LD LocalBusiness base
-├── lib/
-│   ├── data.ts                          # Static business data
-│   ├── portfolio.ts                     # Parse portfolio.md → PortfolioItem[]
-│   ├── blog.ts                          # parseIndonesianDate, TOPIKS, AUTHOR_NAME, dll
-│   └── types.ts                         # Shared TypeScript types
-├── pages/
-│   ├── index.astro                      # Beranda
-│   ├── portofolio.astro                 # Galeri + lightbox
-│   ├── media.astro                      # Profil + liputan
-│   ├── sitemap.astro                    # Sitemap HTML manusia
-│   ├── 404.astro
-│   ├── layanan/
-│   │   ├── index.astro                  # Listing + filter
-│   │   └── [...slug].astro              # Detail layanan (dynamic)
-│   └── blog/
-│       ├── index.astro                  # Listing semua artikel
-│       ├── rss.xml.ts                   # RSS feed
-│       ├── [topik]/
-│       │   ├── index.astro              # Arsip per topik
-│       │   └── [slug].astro             # Detail artikel
-├── styles/
-│   └── global.css                       # Tailwind v4 + .prose-article + custom
-└── env.d.ts
-```
+## Hubungi Kami
 
-public/
-├── favicon.svg
-├── og-default.svg
-└── img/
-    ├── hero/                            # Hero images
-    ├── layanan/                         # <service-id>.webp (16:10)
-    ├── portfolio/                       # <portfolio-id>.<ext>
-    └── blog/                            # <article-id>.<ext> (16:9)
-```
-
-## Sistem Konten
-
-Website punya **3 sistem konten** yang terpisah. Masing-masing punya workflow berbeda.
-
-### 1. Layanan (`src/content/layanan/*.md`)
-
-**31 layanan** dikelompokkan jadi 2 kategori: `utama` (10 file) dan `secondary` (21 file).
-
-**Frontmatter schema** (lihat `src/content.config.ts:10`):
-
-| Field | Type | Wajib | Keterangan |
-| --- | --- | --- | --- |
-| `name` | string | ya | Nama tampilan, mis. `"Huruf Timbul (3D Letter)"` |
-| `description` | string | ya | 1-2 kalimat untuk card + meta |
-| `category` | enum | ya | `'utama'` atau `'secondary'` |
-| `subcategory` | string | ya | Mis. `"Advertising & Reklame"` |
-| `basePrice` | number | ya | Harga dasar (number, bukan string) |
-| `priceUnit` | string | ya | Mis. `"cm tinggi"`, `"per m²"` |
-| `features` | string[] | tidak | Bullets keunggulan |
-| `materials` | string[] | tidak | Pilihan material |
-| `hasCalculator` | boolean | tidak | Default `false`. Saat ini tidak dipakai UI. |
-| `calculatorType` | enum | tidak | `'huruf_timbul' \| 'neon_box' \| 'rambu' \| 'printing_standard'` |
-| `imageUrl` | string | tidak | Path `/img/layanan/<id>.webp` |
-| `order` | number | tidak | Default `99`. Sort ascending. |
-| `published` | boolean | tidak | Default `true`. Filter unpublished di listing. |
-
-**Body markdown** (Bahasa Indonesia): section `## Tentang`, `## Keunggulan`, `## Material/Tabel`, `## Aplikasi & Penggunaan`, `## Proses Pengerjaan`, `## FAQ`. Semua file telah diperkaya (Juni 2026) dengan Aplikasi & Penggunaan untuk layanan utama dan Proses Pengerjaan untuk layanan secondary, plus penambahan FAQ.
-
-**Cara menambah layanan baru:**
-
-1. Copy file `.md` terdekat (mis. `huruf-timbul.md`).
-2. Ubah frontmatter (`name`, `category`, dll) **+ filename** (filename = slug = URL segment).
-3. Tulis ulang body section dengan sudut pandang layanan baru.
-4. Taruh gambar di `public/img/layanan/<id>.webp`, tambahkan `imageUrl: "/img/layanan/<id>.webp"` di frontmatter.
-5. `ServiceCard.astro` dan halaman detail otomatis me-render card + hero image.
-
-**Slug/URL pattern:** `/layanan/<filename-without-.md>` — mis. `huruf-timbul.md` → `/layanan/huruf-timbul`.
-
-### 2. Portofolio (`src/data/portfolio.md`)
-
-**26 item portofolio** di-parse dari `src/data/portfolio.md` via `gray-matter`. Berbeda dari layanan — formatnya **flat 3-field item** (lihat "Constraint" historis).
-
-**Format file:**
-
-```markdown
----
-items:
-  - src: "/img/portfolio/neon-box-cafe-bujang.webp"
-    category: "neon-box"
-    caption: "Neon box toko Bujang — palembang"
-  - src: "/img/portfolio/huruf-timbul-pt-sinar-jaya.webp"
-    category: "huruf-timbul"
-    caption: "Huruf timbul stainless steel — PT Sinar Jaya"
----
-
-# Catatan Tambahan (opsional, di luar frontmatter)
-```
-
-**Field:**
-
-| Field | Keterangan |
+| Kontak | Detail |
 | --- | --- |
-| `src` | Path absolut dari `/public`, mis. `/img/portfolio/<id>.<ext>` |
-| `category` | Kategori layanan terkait, lihat `KNOWN_CATEGORIES` di `src/lib/portfolio.ts:18` |
-| `caption` | 1 kalimat deskriptif (lowercase, Bahasa Indonesia) |
+| **Alamat** | Jl. AMD Jl. Pertanian No.105, Talang Jambe, Kec. Sukarami, Kota Palembang, Sumatera Selatan 30155 |
+| **WhatsApp** | [0852-1511-1125](https://wa.me/6285215111125) |
+| **Website** | [sriwijayagrafika.com](https://sriwijayagrafika.com) |
 
-**Kategori yang dikenal** (auto-label via `deriveCategoryLabel()`):
+Konsultasi gratis, respon cepat. Kami melayani Palembang dan seluruh Sumatera Selatan: Inderalaya, Sekayu, Muaraenim, Kayuagung, Baturaja, Prabumulih, Lubuklinggau, Lahat, dan sekitarnya.
 
-`huruf-timbul` · `neon-box` · `pylon-totem` · `rambu-rambu` · `plang-toko-kantor` · `booth-event-desk` · `produk-akrilik` · `gantry-huruf-led` · `neon-flex` · `billboard`
-
-Kategori baru? Tambahkan ke `KNOWN_CATEGORIES` di `src/lib/portfolio.ts` agar label-nya proper-case. Kalau tidak, label di-derive otomatis.
-
-**Cara menambah portofolio baru:**
-
-1. Taruh gambar di `public/img/portfolio/<id>.<ext>` (jpg/png/webp, aspect ~4:3 disarankan untuk konsistensi grid).
-2. Buka `src/data/portfolio.md`, tambahkan 3 baris di `items:[]` (pakai `id` yang sama dengan filename tanpa extension).
-3. `PortfolioGrid.astro` (listing) + `index.astro` (homepage slider) otomatis me-render.
-4. Filter chip di `/portofolio` di-generate dari `getPortfolioCategories()` — kategori baru otomatis muncul.
-
-**Slug/URL pattern:** Tidak ada halaman detail per portofolio. Listing di `/portofolio` + slider di `/` (beranda, 8 item pertama).
-
-### 3. Blog (`src/content/blog/*.md`)
-
-Sistem **artikel long-form SEO** dengan URL nested per topik. **9 artikel published** per Februari 2026 (lihat `SUMBER-PENGETAHUAN.md` bagian 12.1 untuk daftar). Workflow penulisan ada di bagian 11 knowledge base.
-
-**Struktur file: flat, tanpa subfolder.** Semua MD disimpan langsung di `src/content/blog/<slug>.md` — field `topik` di frontmatter yang menentukan segmen URL, bukan struktur folder. Subfolder `src/content/blog/<topik>/<slug>.md` pernah dicoba tapi menyebabkan **ID conflict** di `getStaticPaths` (`Astro` membuat ID jadi `<topik>/<slug>`, lalu route `/blog/[topik]/[slug]` bentrok dengan path itu sendiri). Pakai flat, topik dari frontmatter.
-
-**URL pattern:**
-
-```
-/blog/                          # listing semua
-/blog/<topik>/                  # arsip per topik
-/blog/<topik>/<slug>/           # detail artikel
-/blog/rss.xml                   # RSS feed
-```
-
-**Topik yang dikenal** (lihat `TOPIKS` di `src/lib/blog.ts:59`):
-
-| Slug | Label Indonesia | Icon (lucide) |
-| --- | --- | --- |
-| `tips` | Tips & Trik | `Lightbulb` |
-| `studi-kasus` | Studi Kasus | `FileText` |
-| `berita` | Berita | `Newspaper` |
-| `panduan` | Panduan | `BookOpen` |
-| `press-release` | Press Release | `Megaphone` |
-
-**Frontmatter schema** (lihat `src/content.config.ts:29`):
-
-| Field | Type | Constraint | Wajib |
-| --- | --- | --- | --- |
-| `title` | string | maks **5 kata** | ya |
-| `titleSeo` | string | maks **12 kata** | ya |
-| `excerpt` | string | 20-300 char | ya |
-| `date` | string | format `"DD NamaBulan YYYY"`, mis. `"12 Desember 2025"` | ya |
-| `topik` | enum | salah satu dari 5 topik di atas | ya |
-| `imgurl` | string | path `/img/blog/<id>.<ext>` | ya |
-| `imgalt` | string | fallback ke `titleSeo` | tidak |
-| `pengantar` | string | 50-500 char | ya |
-| `kesimpulan` | string | 50-500 char | ya |
-| `published` | boolean | default `true`. Draft TIDAK di-render ke `dist/`. | tidak |
-
-**Body markdown** — HANYA berisi H2 sections + sub-content:
-
-```markdown
-## Section 1
-
-Paragraph...
-
-## Section 2
-
-- Bullet list
-- dengan **bold** dan _italic_
-
-## Section 3
-
-| Tabel | Juga | Bisa |
-| --- | --- | --- |
-| sel | sel | sel |
-```
-
-**Larangan body:**
-
-- Tidak boleh `#` (H1) — sudah di `titleSeo`
-- Tidak boleh paragraf pembuka/penutup — sudah di `pengantar`/`kesimpulan`
-- Tidak boleh tag/image — sudah di `imgurl`
-
-**Aturan lengkap + checklist 22 poin:** Lihat `SUMBER-PENGETAHUAN.md` bagian 11 (Aturan Menulis).
-
-**Cara menambah artikel baru:**
-
-1. Buka `SUMBER-PENGETAHUAN.md` bagian 11 — baca 11.1 sampai 11.11.
-2. Tulis artikel sesuai aturan (cek 22-poin checklist di 11.9).
-3. Taruh gambar di `public/img/blog/<id>.<ext>`.
-4. Simpan MD langsung di `src/content/blog/<slug>.md` (**flat, tanpa subfolder** — lihat catatan struktur di atas).
-5. Set `published: false` dulu untuk review, lalu `true` saat publish.
-6. Update Section 12.1 (topik yang sudah ditulis) di knowledge base.
-
-## Knowledge Base untuk AI Agent
-
-`SUMBER-PENGETAHUAN.md` adalah **knowledge base** yang berisi:
-
-1. **Identitas bisnis** — kontak, alamat, jam operasional, lisensi
-2. **Tentang kami** — sejarah, nilai, diferensiasi
-3. **Tagline** — koleksi copy yang disetujui
-4. **Layanan** — overview 31 layanan + cara pengelompokan
-5. **Portofolio** — guideline showcase + referensi `portfolio.md`
-6. **Liputan media** — daftar media yang pernah meliput
-7. **Wawancara klien** — voice-of-customer quotes
-8. **Kompetitor** — landscape kompetitif Palembang
-9. **Website aktif** — link terkait (Google Business, marketplace, dll)
-10. **Catatan AI Agent** — directives untuk AI assistant
-11. **Aturan Menulis** — workflow + checklist penulisan artikel blog
-12. **Insight & Lessons Learned** — topik yang sudah ditulis, open topics, FAQ klien, pelajaran
-
-Section 11 dan 12 adalah yang paling sering di-update — baca dulu sebelum nulis artikel baru.
-
-## Auto Link Internal
-
-Auto link otomatis mengubah keyword tertentu di **body blog** (bukan pengantar/kesimpulan/heading) menjadi link internal. Setiap keyword hanya di-link **1 kali** per artikel.
-
-**Konfigurasi:** `src/data/auto-link.md` — format `keyword: /url/tujuan`.
-
-**Cara kerja:** Client-side vanilla JS di `<div id="konten-body">` pada halaman detail blog (`[slug].astro`). Keyword dari `auto-link.md` di-embed sebagai JSON, lalu diproses oleh script yang mencari `<p>` pertama yang mengandung keyword tersebut dan mengubahnya menjadi `<a>`.
-
-**Menambah keyword baru:** edit `src/data/auto-link.md`, tambah baris, `npm run build`.
-
-| File | Peran |
-|---|---|
-| `src/data/auto-link.md` | Mapping keyword → URL |
-| `src/lib/auto-link.ts` | Parser + export `getKeywordEntries()` |
-| `src/pages/blog/[topik]/[slug].astro` | Integrasi client script |
-
-## Image Convention
-
-| Path | Aspect | Format |
-| --- | --- | --- |
-| `public/img/layanan/<id>.webp` | 16:10 | `.webp` (prefer), `.jpg` OK |
-| `public/img/portfolio/<id>.<ext>` | bebas (~4:3 disarankan) | `.webp` / `.jpg` / `.png` |
-| `public/img/blog/<id>.<ext>` | 16:9 | `.webp` / `.jpg` / `.png` |
-| `public/img/hero/*` | bebas | bebas |
-
-**Tanpa gambar?** Card/hero otomatis render gradient + icon lucide sesuai `subcategory` — UI tetap berfungsi penuh.
-
-## SEO & Schema JSON-LD
-
-Setiap halaman otomatis memuat JSON-LD via `<script type="application/ld+json">`:
-
-| Halaman | Schema |
-| --- | --- |
-| Semua | `LocalBusiness` (base, dari `Layout.astro`) |
-| `/` | + `WebSite`, `BreadcrumbList`, `ItemList` (layanan utama) |
-| `/layanan` | `CollectionPage` + `ItemList` layanan |
-| `/layanan/<slug>` | `Service` lengkap + `BreadcrumbList` |
-| `/portofolio` | `ImageGallery` + `ItemList` |
-| `/blog` | `CollectionPage` + `hasPart: Article[]` |
-| `/blog/<topik>` | `CollectionPage` per topik |
-| `/blog/<topik>/<slug>` | `Article` lengkap (headline, image, datePublished, author, publisher, articleSection, isPartOf) + `BreadcrumbList` |
-| `/media` | `NewsMediaOrganization` + list `NewsArticle` |
-
-Validasi setelah deploy: [Google Rich Results Test](https://search.google.com/test/rich-results).
-
-## Konvensi
-
-- **Bahasa Indonesia** untuk semua user-facing copy (heading, button, deskripsi, body MD, pesan WhatsApp).
-- **English** untuk schema/JSON-LD field name (mis. `Article.headline` bukan `Article.judul`).
-- **Tanpa emoji** di code atau output UI (kecuali user minta eksplisit).
-- **lucide-react** untuk semua icon — import di file `.astro` maupun `.tsx` (Astro bisa render React component).
-- **Tailwind v4** — pakai utility bracket form untuk inline value baru: `bg-[#224da8]`, `text-[#ff6634]`.
-- **Color tokens** di `src/styles/global.css` `@theme {}`: `--color-sriwijaya-blue`, `--color-sriwijaya-orange`. Tapi inline `bg-[#hexcode]` lebih sering dipakai di codebase.
-- **File `.astro`** untuk static, **file `.tsx`** untuk komponen interaktif (React island).
-- **Path alias** saat ini: `@/*` → `src/*`, plus `@components`, `@layouts`, `@lib`, `@data`.
-
-## Build & Deploy
-
-```bash
-npm run build      # output di ./dist
-npm run preview    # serve ./dist lokal
-```
-
-Output adalah HTML statis murni. Deploy ke static host mana pun:
-
-- **Vercel** / **Netlify** / **Cloudflare Pages** — `build: npm run build`, `output: dist`
-- **Nginx / Apache** — salin isi `dist/` ke document root
-- **GitHub Pages** — push `dist/` ke branch `gh-pages`
-
-Tidak perlu Node.js runtime di server, tidak ada env var, tidak ada database.
-
-## Lisensi
-
-Proprietary — © Sriwijaya Grafika Palembang. Semua Hak Cipta Dilindungi.
-
-## Floating WhatsApp Widget
-
-Komponen `src/components/FloatingWhatsApp.astro` menambahkan tombol WhatsApp mengambang di pojok kanan bawah semua halaman (di-include via `Layout.astro`). Muncul setelah 5 detik dengan bubble teks ajakan bertindak yang berotasi.
-
-### Perilaku
-
-1. Setelah 5 detik, bubble muncul dari icon WhatsApp (animasi scale 0.15 -> 1, 1s).
-2. Teks bertahan selama 4 detik.
-3. Bubble mengecil ke icon (animasi scale 1 -> 0.1, 0.6s).
-4. Jeda 3 detik (bubble tidak tampak).
-5. Bubble berikutnya muncul dengan teks acak dari 20 pilihan.
-6. Siklus berulang terus.
-
-### Mengubah teks bubble
-
-Buka `src/components/FloatingWhatsApp.astro`. Ada dua array `CTAS` (satu di frontmatter `---` untuk type safety, satu di `<script>` untuk runtime):
-
-```astro
 ---
-const CTAS = [
-  'Butuh rekomendasi signage untuk toko baru? Konsultasi gratis, yuk!',
-  'Mau lihat contoh huruf timbul LED? Kami punya portofolio lengkap.',
-  // ... tambah/edit teks di sini
-];
----
-```
 
-```js
-<script>
-  const CTAS = [
-    // ... array yang SAMA, ubah di sini juga
-  ];
-</script>
-```
-
-**Kedua array harus sinkron.** Editor yang baik (VS Code) bisa split-pane untuk edit bersamaan. Jumlah teks bisa >20 atau <20 — tidak ada batasan.
-
-## Changelog
-
-### 2026-06-05 — Konten layanan diperkaya + Floating WhatsApp
-
-- **Konten halaman layanan (`index.astro`)**:
-  - Section A (intro SEO), B (deskripsi advertising), C (deskripsi percetakan), D (trust & social proof).
-  - Urutan section diubah: heading -> card grid -> paragraf, agar user lihat layanan dulu sebelum teks.
-  - Section A dipindah ke bawah cards (sebelum trust section).
-- **31 file MD layanan diperkaya**:
-  - 9 utama: tambah section "Aplikasi & Penggunaan" + 3 FAQ.
-  - 22 secondary: tambah section "Proses Pengerjaan" + 3 FAQ.
-  - Fix karakter CJK di beberapa file.
-- **Floating WhatsApp widget**: komponen baru di semua halaman, 20 teks ajakan berotasi, animasi masuk/keluar dari icon, jeda 3 detik antar bubble.
+*Repositori ini berisi source code website resmi Sriwijaya Grafika. Untuk konten, layanan, dan informasi teknis proyek, lihat dokumentasi di dalam repositori.*
