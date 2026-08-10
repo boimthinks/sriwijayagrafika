@@ -127,7 +127,7 @@ if (faqSchema) allSchemas.push(faqSchema);
   title={seoTitle}
   description={seoDescription}
   ogImage={data.imageUrl}
-  keywords={[
+  keywords={data.keywords.length > 0 ? data.keywords : [
     `${data.name} Palembang`,
     `${data.name} Murah`,
     'Advertising Palembang',

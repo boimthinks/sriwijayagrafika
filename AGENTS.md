@@ -1,5 +1,16 @@
 # AGENTS.md — Sriwijaya Grafika (Astro SSG)
 
+## Aturan Komunikasi
+- **Bahasa**: Selalu gunakan Bahasa Indonesia dalam semua respon, pesan, dan percakapan tanpa terkecuali.
+
+## Akses Data
+- **SUMBER-PENGETAHUAN.md** (di root project) wajib dibaca untuk data fakta brand, layanan, portofolio, liputan media, aturan menulis, dan daftar artikel terbit.
+- **Data layanan**: `src/content/layanan/*.md`.
+- **Data blog**: `src/content/blog/*.md`.
+
+## Skill Penulisan
+- Gunakan skill **`penulis-ahli`** untuk menulis/mengedit artikel blog atau konten SEO. Skill ini menangani humanisasi (hapus pola AI), SEO/GEO (Google AI 2026), dan konten non-komoditas dalam satu pass, lalu otomatis membaca SUMBER-PENGETAHUAN.md.
+
 ## Stack (verified)
 
 - **Astro 6.4** static output, React 19 islands, Tailwind v4 (CSS-first `@theme {}` in `src/styles/global.css`).

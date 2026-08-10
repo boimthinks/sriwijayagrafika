@@ -21,6 +21,13 @@ imageUrl: "/img/layanan/huruf-timbul.webp"
 heroAlt: "Huruf timbul stainless LED di fasad toko dan kantor Palembang"
 titleSeo: "Jasa Pembuatan Huruf Timbul Palembang, Murah & Bergaransi 1 Tahun"
 metaDescription: "Jasa pembuatan huruf timbul Palembang murah & bergaransi. Bahan stainless 304, akrilik LED, kuningan, galvanil. Mulai Rp 12.000/cm, garansi 1 tahun, jangkauan Sumatera Selatan."
+keywords:
+  - "Huruf Timbul Palembang"
+  - "Jasa Pembuatan Huruf Timbul Palembang"
+  - "Huruf Timbul Akrilik LED Palembang"
+  - "Huruf Timbul Stainless Palembang"
+  - "Harga Huruf Timbul per cm Palembang"
+  - "Vendor Advertising Palembang"
 faqs:
   - question: "Berapa lama garansi huruf timbul?"
     answer: "Semua instalasi huruf timbul kami beri garansi 1 tahun penuh untuk kelistrikan dan fisik pemasangan luar ruang. Dengan material stainless 304, LED berkualitas, dan perawatan yang normal, umur pakai huruf timbul bisa mencapai 10 tahun atau lebih."
@@ -42,6 +49,10 @@ faqs:
     answer: "Ya. Kami melayani seluruh Sumatera Selatan: Inderalaya, Sekayu, Muaraenim, Kayuagung (OKI), Baturaja, Prabumulih, Lahat, dan sekitarnya. Konsultasi dan desain lewat WhatsApp, produk dikirim via ekspedisi, dan instalasi bisa diatur bersama tim kami."
   - question: "Bagaimana cara order huruf timbul?"
     answer: "Hubungi WhatsApp kami, sampaikan nama usaha, jumlah dan tinggi huruf, serta material yang diinginkan. Kami kirim mockup 3D gratis untuk disetujui sebelum produksi."
+  - question: "Apakah menerima jasa perbaikan atau maintenance huruf timbul lama?"
+    answer: "Ya, kami melayani perbaikan huruf timbul seperti penggantian modul LED yang mati, perbaikan sistem kelistrikan, pembersihan permukaan akrilik/stainless, hingga pengecatan ulang agar tampilan kembali seperti baru."
+  - question: "Bagaimana jika saya belum memiliki file desain (vektor) untuk huruf timbul?"
+    answer: "Tidak masalah. Tim desain kami siap membantu membuatkan layout dan mockup 3D berdasarkan konsep tulisan atau logo Anda sebelum diproduksi."
 hasCalculator: true
 calculatorType: "huruf_timbul"
 order: 1
@@ -54,6 +65,16 @@ Huruf timbul (3D letter) adalah media periklanan tiga dimensi yang menonjol kelu
 Di Palembang, huruf timbul paling efektif dipasang di lokasi-lokasi strategis yang ramai dilewati: area Jembatan Ampera, Jalan Jenderal Sudirman, Jalan Basuki Rahmat, Jalan Kolonel H Barlian, hingga koridor Jakabaring dan Demang Lebar Daun. Kalau dipadukan dengan lampu LED di dalam huruf, signage Anda tetap terbaca jelas selama 24 jam, termasuk malam hari saat kebanyakan toko lain terlihat gelap.
 
 Hasil akhirnya sederhana. Orang yang lewat langsung tahu itu bisnis Anda, dan yang masih melintas malam hari makin terbantu kalau hurufnya menyala. Kalau dibandingkan dengan sewa iklan yang terus dibayar dari bulan ke bulan, huruf timbul cukup dibayar sekali, lalu bekerja sendiri selama bertahun-tahun.
+
+## Mengapa Memilih Huruf Timbul dari Sriwijaya Grafika
+
+Sebagai bengkel advertising yang memproduksi sendiri di workshop Talang Jambe, kami menempatkan kualitas hasil dan kepuasan pelanggan sebagai prioritas utama. Beberapa alasan yang membuat ratusan klien mempercayakan papan nama mereka ke kami:
+
+1. **Pemotongan presisi laser CNC.** Setiap lekukan huruf, sudut, dan detail logo dipotong dengan mesin laser cutting otomatis, jadi hasilnya konsisten sesuai desain original Anda, toleransinya kecil.
+2. **Material kelas premium.** Kami memakai akrilik tahan UV, stainless steel grade 304/201 pilihan sesuai lokasi, serta plat galvanil dengan oven coating berkualitas.
+3. **Pencahayaan LED berkualitas.** Modul LED hemat energi dengan driver yang aman, terang, dan tidak gampang redup untuk pemakaian outdoor jangka panjang.
+4. **Harga langsung dari workshop tanpa perantara.** Seluruh pesanan diproduksi sendiri, sehingga harganya lebih kompetitif dibanding vendor yang menyerahkan ke bengkel lain (makloon).
+5. **Garansi produk dan pemasangan.** Kualitas pengelasan, perakitan, dan instalasi terjamin dengan dukungan garansi purna jual 1 tahun.
 
 ## Klasifikasi Material & Spesifikasi Teknis
 
@@ -81,13 +102,13 @@ Akrilik juga mudah dipotong presisi dengan laser untuk bentuk huruf dan logo cus
 
 Ringkasan perbandingan material:
 
-| Material | Karakteristik | Cocok Untuk | Mulai Harga |
-| --- | --- | --- | --- |
-| Stainless 304 | Mirror/hairline, tahan karat, premium | Hotel, bank, kantor, mall | Rp 15.000/cm |
-| Akrilik LED | Ringan, warna solid/susu, huruf menyala | Cafe, butik, toko retail | Rp 12.000/cm |
-| Akrilik non-LED | Ringan, warna solid, polos | Papan nama dalam ruangan | Rp 8.500/cm |
-| Galvanil | Finishing cat, ekonomis, anti karat | UMKM, ruko, kantor | Rp 7.500/cm |
-| Kuningan | Kesan klasik dan mewah | Hotel, gedung heritage | konsultasi |
+| Material | Karakteristik | Ketahanan Cuaca | Efek Pencahayaan | Cocok Untuk | Mulai Harga |
+| --- | --- | --- | --- | --- | --- |
+| Stainless 304 | Mirror/hairline, tahan karat, premium | Sangat tinggi | Halo backlit / spot | Hotel, bank, kantor, mall | Rp 15.000/cm |
+| Akrilik LED | Ringan, warna solid/susu, huruf menyala | Sangat baik | Tembus merata | Cafe, butik, toko retail | Rp 12.000/cm |
+| Akrilik non-LED | Ringan, warna solid, polos | Baik | Tanpa lampu | Papan nama dalam ruangan | Rp 8.500/cm |
+| Galvanil | Finishing cat, ekonomis, anti karat | Baik | Backlit / frontlit | UMKM, ruko, kantor | Rp 7.500/cm |
+| Kuningan & Tembaga | Kesan klasik dan mewah | Sangat tinggi | Warm accent / spotlight | Hotel, gedung heritage | konsultasi |
 
 Perbandingan detail antara akrilik dan galvanil setelah 6 bulan di outdoor Palembang bisa Anda baca di [uji akrilik vs galvanil](/blog/tips/uji-akrilik-vs-galvanil).
 
@@ -123,6 +144,27 @@ Variabel tambahan yang memengaruhi harga:
 
 Panduan lengkap menentukan ukuran huruf yang pas bisa dibaca di [cara menghitung ukuran huruf timbul](/blog/panduan/ukuran-huruf-timbul-palembang-terbaca-jelas), dan perbandingan anggaran di [panduan anggaran jasa advertising Palembang](/blog/panduan/panduan-anggaran-jasa-advertising-palembang).
 
+## Portofolio & Proyek Pemasangan di Palembang
+
+Sebagai vendor advertising yang sudah beroperasi sejak 2008, huruf timbul Sriwijaya Grafika sudah terpasang di berbagai titik di Sumatera Selatan. Di antaranya:
+
+- **Gedung Walikota Palembang dan Kejati Sumsel**: instalasi huruf timbul untuk kantor instansi resmi.
+- **PT Andalas Sakti Perkasa**: huruf timbul akrilik LED untuk gedung kantor korporat.
+- **DPRD Ogan Komering Ilir (OKI)**: huruf timbul cutting akrilik.
+- **SMP Islam Bina Insani dan Riyadh Regency 3**: huruf timbul galvanis.
+- **Cafe, resto, dan butik di kawasan Demang Lebar Daun, R. Sukamto, dan sekitar Jakabaring**: huruf timbul akrilik LED untuk storefront.
+
+Selain itu kami melayani pemasangan signages stainless untuk hotel, rumah sakit, dan papan nama instansi. Contoh proyek lain bisa dilihat di halaman [portofolio](/portofolio), sedangkan studi kasus signage korporat kami mulai dari brief sampai instalasi tersedia di [studi kasus PT Andalas Sakti](/blog/studi-kasus/signage-korporat-pt-andalas-sakti).
+
+## Cara Pemesanan Huruf Timbul
+
+Proses pemesanan di Sriwijaya Grafika sederhana dan terstruktur:
+
+1. **Konsultasi dan kirim desain.** Hubungi kami via WhatsApp, sampaikan nama usaha, dan kirim file desain (CDR, AI, PDF) atau konsep tulisan. Belum punya file? Tim desain kami yang bantu buatkan.
+2. **Survei dan estimasi biaya.** Tim teknis bisa datang langsung ke lokasi untuk pengukuran, lalu kami kirim penawaran harga resmi (quotation) beserta mockup 3D.
+3. **Proses produksi.** Setelah DP disetujui, material dipotong dengan laser CNC, dirakit, dicat (bila perlu), dan dipasangi sistem kelistrikan LED.
+4. **Pemasangan di lokasi.** Tim teknisi memasang huruf timbul di fasad, lobby, atau tiang sesuai standar keselamatan. Simulasi pengerjaan lengkap bisa dilihat di artikel [workshop Talang Jambe](/blog/kabar/workshop-talang-jambe-produksi).
+
 ## Pajak Reklame & Izin Pemasangan di Palembang
 
 Pemasangan huruf timbul di fasad bangunan yang terlihat dari ruang publik umumnya wajib memiliki **Izin Penyelenggaraan Reklame (IPR)** yang diterbitkan **DPMPTSP Kota Palembang**, serta membayar pajak reklame sesuai nilai strategis lokasi dan dimensi media.
@@ -146,4 +188,10 @@ Proyek huruf timbul akrilik LED untuk gedung kantor, dari brief sampai instalasi
 
 ## Hubungi Kami
 
-Konsultasi dan estimasi harga gratis via WhatsApp. Untuk pelanggan yang ingin survei langsung, workshop kami berlokasi di **Jl. Pertanian No.105, Talang Jambe, Kec. Sukarami, Kota Palembang**. Kami melayani pemesanan dari Palembang dan seluruh Sumatera Selatan: Inderalaya (Ogan Ilir), Sekayu (Musi Banyuasin), Muaraenim, Kayuagung (OKI), Baturaja (OKU), Prabumulih, Lubuklinggau, Lahat, dan sekitarnya.
+Konsultasi dan estimasi harga gratis via WhatsApp. Untuk survei langsung ke lokasi, workshop kami berlokasi di **Jl. Pertanian No.105, Talang Jambe, Kec. Sukarami, Kota Palembang** (kode pos 30155). Kontak yang bisa dihubungi:
+
+- **WhatsApp / Telepon Seluler:** 0852-1511-1125
+- **Telepon (Telkom):** (0711) 561-4793
+- **Email:** sriwijayagrafika@gmail.com
+
+Kami melayani pemesanan dari Palembang dan seluruh Sumatera Selatan: Inderalaya (Ogan Ilir), Sekayu (Musi Banyuasin), Muaraenim, Kayuagung (OKI), Baturaja (OKU), Prabumulih, Lubuklinggau, Lahat, dan sekitarnya.

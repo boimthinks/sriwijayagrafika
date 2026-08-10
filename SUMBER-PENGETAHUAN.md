@@ -1,6 +1,8 @@
-# Sriwijaya Grafika — Knowledge Base
+# SUMBER-PENGETAHUAN — Sriwijaya Grafika
 
 > File ini adalah **sumber kebenaran tunggal** untuk semua informasi tentang Sriwijaya Grafika. Digunakan oleh AI Agent untuk menulis artikel blog, materi marketing, dan konten SEO. **Semakin banyak artikel yang terbit, semakin banyak insight baru ditambahkan ke file ini.**
+>
+> Gunakan bersama skill **`penulis-ahli`** untuk seluruh penulisan artikel (humanizer + SEO/GEO + konten non-komoditas dalam satu pass).
 
 **Cara baca untuk AI Agent:**
 1. Mulai dari `## 1. Identitas Bisnis` untuk data diri singkat.
@@ -815,6 +817,12 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `beda-led-samsung-vs-palsu` | Cara membedakan LED Samsung asli vs palsu untuk neon box, cek chip, voltase, sertifikasi, dan biaya per tahun | 10 Juni 2026 | tips | Pertanyaan Provokatif |
 | `fungsi-signage-bisnis` | 5 fungsi signage untuk bisnis, identitas, informasi, promosi, branding, dan wayfinding, contoh proyek nyata di Palembang | 10 Juni 2026 | panduan | Fakta/Data |
 | `bahan-huruf-timbul-outdoor` | Panduan memilih bahan huruf timbul outdoor Palembang, perbandingan stainless 304 vs galvanil vs akrilik untuk iklim tropis | 11 Juni 2026 | panduan | Skenario Visual |
+| `panduan-izin-reklame-palembang` | Panduan izin reklame Palembang, syarat, biaya, dan timeline yang wajib Anda tahu | 9 Februari 2026 | panduan | Fakta/Data |
+| `otopsi-karat-stainless-201` | Stainless 201 vs 304 untuk huruf timbul, mengenali tanda karat di iklim tropis, pilih sesuai kebutuhan | 18 Juni 2026 | tips | Otopsi |
+| `panduan-anggaran-jasa-advertising-palembang` | Panduan anggaran jasa advertising Palembang untuk pemilik usaha baru, breakdown biaya per jenis produk | 15 Juni 2026 | panduan | Problem-First |
+| `pylon-sign-vs-neon-box` | Pylon sign vs neon box untuk bisnis di pinggir jalan raya Palembang, perbandingan visibilitas dan biaya | 13 Juni 2026 | panduan | Perbandingan |
+| `ukuran-huruf-timbul-palembang-terbaca-jelas` | Cara menentukan ukuran huruf timbul Palembang agar terbaca jelas, rumus jarak baca dan tinggi huruf | 16 Juni 2026 | panduan | Fakta/Data |
+| `rincian-harga-huruf-timbul-per-meter` | Rincian harga huruf timbul per cm dan per meter untuk stainless, akrilik LED, akrilik non-LED, galvanil, dan kuningan, lengkap contoh kalkulasi biaya | 10 Agustus 2026 | panduan | Problem-First |
 
 ### 12.2 Topik yang Masih Open (Ide Artikel Mendatang)
 
@@ -834,6 +842,17 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 - [x] **Cara bedakan LED asli Samsung vs palsu** — Teknis verifikasi LED untuk neon box. Artikel #14 `beda-led-samsung-vs-palsu` sudah terbit 10 Juni 2026
 - [ ] **Apa itu signage dan fungsinya untuk bisnis** — Edukasi dasar signage bagi pemilik UMKM yang belum familier dengan istilah signage. Artikel #15 `fungsi-signage-bisnis` sudah terbit 10 Juni 2026
 - [ ] **Total cost of ownership signage** — Template spreadsheet hitung biaya 5 tahun untuk berbagai jenis signage (dari artikel estimasi biaya)
+
+### 12.2b Rencana Artikel Support Halaman Huruf Timbul (Queue)
+
+*(Queue artikel pendukung untuk halaman `/layanan/huruf-timbul`, disusun 10 Agustus 2026. Prioritas menurun. Tiap artikel wajib interlink ke halaman layanan utama.)*
+
+- [x] **#1 Rincian harga huruf timbul per meter** — slug `rincian-harga-huruf-timbul-per-meter`, topik `panduan`. Rincian harga per cm & per meter dari workshop, kalkulasi 7 huruf × 40 cm untuk 4 material. DITULIS 10 Agustus 2026.
+- [ ] **#2 Neon box vs huruf timbul vs neon flex** — slug `neon-box-vs-huruf-timbul-vs-neon-flex`. Keputusan 3 pilihan signage toko, studi kasus Kedai Pempek Maris vs storefront kafe. Interlink ke `/layanan/huruf-timbul`, `/layanan/neon-box`, `/layanan/neon-flex`.
+- [ ] **#3 Garansi 1 tahun signage, apa saja yang tercover** — slug `garansi-signage-apa-saja-tercover`. Penjelasan teknis garansi (kelistrikan vs fisik vs alam), contoh klaim Gedung Walikota & Kejati Sumsel. Interlink ke FAQ garansi halaman huruf timbul.
+- [ ] **#4 Perawatan & perbaikan huruf timbul** — slug `perawatan-perbaikan-huruf-timbul`. Rutinitas perawatan & jasa perbaikan LED mati/stainless kusam dari pengalaman maintenance klien. Interlink ke FAQ maintenance.
+- [ ] **#5 Teknik pemasangan fasad, baut vs bonding** — slug `pasang-huruf-timbul-baut-atau-bonding`. Teknik pemasangan façade (baut tembus vs lem/bonding) & kapan pakai crane untuk fasad ruko Palembang. Interlink ke bagian Cara Pemesanan.
+- [ ] **#6 Izin IPR, contoh file teknis yang diminta DPMPTSP** — slug `contoh-file-teknis-ipr-huruf-timbul`. Dokumen teknis (foto rencana, dimensi) yang diminta DPMPTSP untuk huruf timbul. Interlink ke halaman izin & layanan.
 
 ### 12.3 FAQ dari Klien (Untuk Dijadikan Topik Artikel Baru)
 

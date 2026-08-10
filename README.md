@@ -54,7 +54,7 @@ src/
 ├── data/                                # Static data, di-parse saat build
 │   ├── data.ts                          # BUSINESS_INFO, dll
 │   ├── portfolio.md                     # Daftar portofolio (gray-matter)
-│   └── sriwijaya-grafika.md             # Knowledge base untuk AI Agent
+│   ├── (root) SUMBER-PENGETAHUAN.md      # SUMBER-PENGETAHUAN untuk AI Agent
 ├── components/
 │   ├── *.astro                          # Server-rendered: Navbar, Footer, Hero, ServiceCard, BlogCard, FloatingWhatsApp, dll
 │   └── *.tsx                            # React islands: AboutAndMediaIsland, OrderHistory, dll
@@ -178,7 +178,7 @@ Kategori baru? Tambahkan ke `KNOWN_CATEGORIES` di `src/lib/portfolio.ts` agar la
 
 ### 3. Blog (`src/content/blog/*.md`)
 
-Sistem **artikel long-form SEO** dengan URL nested per topik. **9 artikel published** per Februari 2026 (lihat `src/data/sriwijaya-grafika.md` bagian 12.1 untuk daftar). Workflow penulisan ada di bagian 11 knowledge base.
+Sistem **artikel long-form SEO** dengan URL nested per topik. **9 artikel published** per Februari 2026 (lihat `SUMBER-PENGETAHUAN.md` bagian 12.1 untuk daftar). Workflow penulisan ada di bagian 11 knowledge base.
 
 **Struktur file: flat, tanpa subfolder.** Semua MD disimpan langsung di `src/content/blog/<slug>.md` — field `topik` di frontmatter yang menentukan segmen URL, bukan struktur folder. Subfolder `src/content/blog/<topik>/<slug>.md` pernah dicoba tapi menyebabkan **ID conflict** di `getStaticPaths` (`Astro` membuat ID jadi `<topik>/<slug>`, lalu route `/blog/[topik]/[slug]` bentrok dengan path itu sendiri). Pakai flat, topik dari frontmatter.
 
@@ -241,11 +241,11 @@ Paragraph...
 - Tidak boleh paragraf pembuka/penutup — sudah di `pengantar`/`kesimpulan`
 - Tidak boleh tag/image — sudah di `imgurl`
 
-**Aturan lengkap + checklist 22 poin:** Lihat `src/data/sriwijaya-grafika.md` bagian 11 (Aturan Menulis).
+**Aturan lengkap + checklist 22 poin:** Lihat `SUMBER-PENGETAHUAN.md` bagian 11 (Aturan Menulis).
 
 **Cara menambah artikel baru:**
 
-1. Buka `src/data/sriwijaya-grafika.md` bagian 11 — baca 11.1 sampai 11.11.
+1. Buka `SUMBER-PENGETAHUAN.md` bagian 11 — baca 11.1 sampai 11.11.
 2. Tulis artikel sesuai aturan (cek 22-poin checklist di 11.9).
 3. Taruh gambar di `public/img/blog/<id>.<ext>`.
 4. Simpan MD langsung di `src/content/blog/<slug>.md` (**flat, tanpa subfolder** — lihat catatan struktur di atas).
@@ -254,7 +254,7 @@ Paragraph...
 
 ## Knowledge Base untuk AI Agent
 
-`src/data/sriwijaya-grafika.md` adalah **knowledge base** yang berisi:
+`SUMBER-PENGETAHUAN.md` adalah **knowledge base** yang berisi:
 
 1. **Identitas bisnis** — kontak, alamat, jam operasional, lisensi
 2. **Tentang kami** — sejarah, nilai, diferensiasi
