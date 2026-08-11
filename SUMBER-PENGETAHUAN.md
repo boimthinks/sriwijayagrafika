@@ -823,6 +823,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `pylon-sign-vs-neon-box` | Pylon sign vs neon box untuk bisnis di pinggir jalan raya Palembang, perbandingan visibilitas dan biaya | 13 Juni 2026 | panduan | Perbandingan |
 | `ukuran-huruf-timbul-palembang-terbaca-jelas` | Cara menentukan ukuran huruf timbul Palembang agar terbaca jelas, rumus jarak baca dan tinggi huruf | 16 Juni 2026 | panduan | Fakta/Data |
 | `rincian-harga-huruf-timbul-per-meter` | Rincian harga huruf timbul per cm dan per meter untuk stainless, akrilik LED, akrilik non-LED, galvanil, dan kuningan, lengkap contoh kalkulasi biaya | 10 Agustus 2026 | panduan | Problem-First |
+| `neon-box-vs-huruf-timbul-vs-neon-flex` | Perbandingan neon box vs huruf timbul vs neon flex untuk signage toko di Palembang, beda fungsi, harga, dan perawatan | 11 Agustus 2026 | panduan | Direct & Casual |
 
 ### 12.2 Topik yang Masih Open (Ide Artikel Mendatang)
 
@@ -848,7 +849,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 *(Queue artikel pendukung untuk halaman `/layanan/huruf-timbul`, disusun 10 Agustus 2026. Prioritas menurun. Tiap artikel wajib interlink ke halaman layanan utama.)*
 
 - [x] **#1 Rincian harga huruf timbul per meter** — slug `rincian-harga-huruf-timbul-per-meter`, topik `panduan`. Rincian harga per cm & per meter dari workshop, kalkulasi 7 huruf × 40 cm untuk 4 material. DITULIS 10 Agustus 2026.
-- [ ] **#2 Neon box vs huruf timbul vs neon flex** — slug `neon-box-vs-huruf-timbul-vs-neon-flex`. Keputusan 3 pilihan signage toko, studi kasus Kedai Pempek Maris vs storefront kafe. Interlink ke `/layanan/huruf-timbul`, `/layanan/neon-box`, `/layanan/neon-flex`.
+- [x] **#2 Neon box vs huruf timbul vs neon flex** — slug `neon-box-vs-huruf-timbul-vs-neon-flex`. Keputusan 3 pilihan signage toko, studi kasus Kedai Pempek Maris vs storefront kafe. Interlink ke `/layanan/huruf-timbul`, `/layanan/neon-box`, `/layanan/neon-flex`. DITULIS 11 Agustus 2026.
 - [ ] **#3 Garansi 1 tahun signage, apa saja yang tercover** — slug `garansi-signage-apa-saja-tercover`. Penjelasan teknis garansi (kelistrikan vs fisik vs alam), contoh klaim Gedung Walikota & Kejati Sumsel. Interlink ke FAQ garansi halaman huruf timbul.
 - [ ] **#4 Perawatan & perbaikan huruf timbul** — slug `perawatan-perbaikan-huruf-timbul`. Rutinitas perawatan & jasa perbaikan LED mati/stainless kusam dari pengalaman maintenance klien. Interlink ke FAQ maintenance.
 - [ ] **#5 Teknik pemasangan fasad, baut vs bonding** — slug `pasang-huruf-timbul-baut-atau-bonding`. Teknik pemasangan façade (baut tembus vs lem/bonding) & kapan pakai crane untuk fasad ruko Palembang. Interlink ke bagian Cara Pemesanan.
