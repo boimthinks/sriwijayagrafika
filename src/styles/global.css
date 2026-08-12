@@ -166,6 +166,9 @@ body {
   font-size: 0.875rem;
   border-collapse: collapse;
   margin: 1rem 0;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 .prose-article th, .prose-article td {
   border: 1px solid #e5e5e5;
