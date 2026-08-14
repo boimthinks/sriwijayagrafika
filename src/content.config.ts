@@ -58,6 +58,7 @@ const blog = defineCollection({
     }),
     topik: z.enum(['tips', 'studi-kasus', 'panduan', 'kabar']),
     imgurl: z.string().min(1, { message: 'imgurl wajib (feature image + og:image)' }),
+    imgPrompt: z.string().optional(),
     imgalt: z.string().optional(),
     pengantar: z.string().min(50).max(500),
     kesimpulan: z.string().min(50).max(500),

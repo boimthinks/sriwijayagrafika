@@ -11,6 +11,10 @@
 ## Skill Penulisan
 - Gunakan skill **`penulis-ahli`** untuk menulis/mengedit artikel blog atau konten SEO. Skill ini menangani humanisasi (hapus pola AI), SEO/GEO (Google AI 2026), dan konten non-komoditas dalam satu pass, lalu otomatis membaca SUMBER-PENGETAHUAN.md.
 - **Aturan imgPrompt**: Setiap penulisan artikel baru wajib menyertakan key `imgPrompt` di frontmatter. Isi `imgPrompt` harus memvisualisasikan isi artikel dalam gaya foto realistis (photorealistic) dengan menyertakan karakter Srifika yang sedang melakukan aksi, di dalam latar belakang dan suasana yang sesuai. Jangan deskripsikan identitas detail Srifika (seperti baju, jersey, dsb.) karena sudah otomatis terdefinisi oleh generator gambar eksternal.
+- **Mekanisme Rekomendasi Judul Artikel Support**: Setiap kali diminta memberikan saran judul artikel blog, AI **WAJIB**:
+    1. Membaca daftar judul yang sudah terbit di `src/content/blog/` untuk memeriksa apakah topik tersebut sudah pernah dibuat.
+    2. Menyusun rekomendasi judul artikel pendukung (*supporting articles* / *topical cluster*) yang memperkuat relevansi halaman layanan utama (`/layanan/*`).
+    3. Memberikan strategi internal link pendukung ke halaman layanan terkait untuk menghindari duplikasi konten dan memaksimalkan otoritas SEO.
 
 ## Stack (verified)
 

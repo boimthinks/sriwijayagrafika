@@ -465,6 +465,7 @@ excerpt: "20-300 char untuk meta description"   # 20-300 char
 date: "12 Desember 2025"                  # format "DD NamaBulan YYYY"
 topik: "tips"                             # enum: tips | studi-kasus | panduan | kabar
 imgurl: "/img/blog/huruf-timbul-tahan-lama.webp"   # WAJIB
+imgPrompt: "Photorealistic photo of Srifika inspects..." # Opsional di Zod, WAJIB diisi saat buat artikel baru
 imgalt: "Alt text untuk SEO & a11y"       # opsional, fallback ke titleSeo
 pengantar: "50-500 char paragraf pembuka"  # plain style, TANPA heading
 kesimpulan: "50-500 char paragraf penutup + CTA WhatsApp"  # plain style, TANPA heading
@@ -809,6 +810,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `workshop-talang-jambe-produksi` | Behind the scene workshop Talang Jambe, proses produksi huruf timbul dari laser cutting sampai finishing | 26 Januari 2026 | kabar | Skenario Visual |
 | `hitung-led-strip-neon-box` | Cara menghitung kebutuhan LED strip untuk neon box sesuai kapasitas listrik toko, contoh kasus 1x1 m | 2 Februari 2026 | tips | Fakta/Data |
 | `cutting-laser-akrilik` | Efisiensi Cutting Laser Akrilik, integrasi Laserindo Palembang untuk mempercepat produksi huruf timbul | 20 Juni 2026 | panduan | Problem-First |
+| `neon-box-bulat-dua-sisi` | Efektivitas Neon Box Bulat Dua Sisi untuk Menarik Pembeli Pejalan Kaki | 14 Agustus 2026 | panduan | Problem-First |
 | `16-tahun-sriwijaya-grafika` | Sriwijaya Grafika Palembang merayakan 16 tahun berkarya, kilas balik perjalanan dari workshop kecil Talang Jambe | 23 Februari 2026 | kabar | Direct & Casual |
 | `rawat-neon-box-agar-awet` | Cara merawat neon box agar awet 5 tahun, tips dari produsen, membersihkan debu, cek driver, dan tanda-tanda kerusakan dini | 5 Juni 2026 | tips | Pertanyaan Provokatif |
 | `pilih-vendor-advertising-palembang` | Tips memilih vendor advertising Palembang, hal yang sering terlewat seperti workshop, garansi, dan mockup 3D | 6 Juni 2026 | tips | Problem-First |
