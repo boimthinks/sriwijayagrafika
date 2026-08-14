@@ -178,65 +178,65 @@ const CTAS = [
     'Punya proyek reklame besar? Tim teknis kami siap survei lokasi gratis.',
     'Cari vendor reklame yang bisa desain sekaligus? Sriwijaya Grafika solusinya.',
     'Satu jam lagi mau order? Stempel jadi 15 menit, kartu nama 1 hari.',
-    'Udah liat portofolio kami? Klik WA, kita kirimkan contoh-contoh terbaru.',
+    'Udah lihat portofolio kami? Klik WA, kita kirimkan contoh-contoh terbaru.',
   ];
 
-  const bubble = document.getElementById('wa-bubble');
-  const textEl = document.getElementById('wa-bubble-text');
-  let currentIndex = -1;
   let scheduleTimeout: ReturnType<typeof setTimeout> | null = null;
 
   function pickRandomIndex() {
     let next = Math.floor(Math.random() * CTAS.length);
-    if (next === currentIndex && CTAS.length > 1) {
-      next = (next + 1) % CTAS.length;
+    while (next === -1 && CTAS.length > 1) {
+      next = Math.floor(Math.random() * CTAS.length);
     }
     return next;
   }
 
   function setText(index: number) {
-    if (textEl) {
-      textEl.textContent = CTAS[index];
-    }
+    const textEl = document.getElementById('wa-bubble-text');
+    if (textEl) textEl.textContent = CTAS[index];
   }
 
   function showBubble() {
+    const bubble = document.getElementById('wa-bubble');
     if (!bubble) return;
-    currentIndex = pickRandomIndex();
+    const currentIndex = pickRandomIndex();
     setText(currentIndex);
     bubble.classList.remove('hidden', 'exiting');
     bubble.classList.add('entering');
-
     if (scheduleTimeout) clearTimeout(scheduleTimeout);
     scheduleTimeout = setTimeout(hideBubble, 5000);
   }
 
   function hideBubble() {
+    const bubble = document.getElementById('wa-bubble');
     if (!bubble) return;
     bubble.classList.remove('entering');
     bubble.classList.add('exiting');
-
     if (scheduleTimeout) clearTimeout(scheduleTimeout);
     scheduleTimeout = setTimeout(finishExit, 600);
   }
 
   function finishExit() {
+    const bubble = document.getElementById('wa-bubble');
     if (!bubble) return;
     bubble.classList.remove('exiting');
     bubble.classList.add('hidden');
-
     if (scheduleTimeout) clearTimeout(scheduleTimeout);
     scheduleTimeout = setTimeout(showBubble, 3000);
   }
 
-  const button = document.getElementById('wa-button');
-
-  if (button) {
-    button.addEventListener('click', () => {
-      if (bubble) bubble.classList.remove('entering', 'exiting');
-      if (scheduleTimeout) clearTimeout(scheduleTimeout);
-    });
+  function init() {
+    const button = document.getElementById('wa-button');
+    if (button) {
+      button.onclick = () => {
+        const bubble = document.getElementById('wa-bubble');
+        if (bubble) bubble.classList.remove('entering', 'exiting');
+        if (scheduleTimeout) clearTimeout(scheduleTimeout);
+      };
+    }
+    if (scheduleTimeout) clearTimeout(scheduleTimeout);
+    scheduleTimeout = setTimeout(showBubble, 5000);
   }
 
-  setTimeout(showBubble, 5000);
+  document.addEventListener('astro:page-load', init);
 </script>

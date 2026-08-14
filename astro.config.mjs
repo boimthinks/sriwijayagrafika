@@ -7,6 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://sriwijayagrafika.com',
   output: 'static',
+  prefetch: true,
   build: {
     inlineStylesheets: 'always',
   },

@@ -66,25 +66,29 @@ const xShare = `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${enco
 </div>
 
 <script>
-  const buttons = document.querySelectorAll<HTMLButtonElement>('.js-copy-link');
-  buttons.forEach((btn) => {
-    btn.addEventListener('click', async () => {
-      const url = btn.dataset.shareUrl ?? '';
-      const label = btn.querySelector<HTMLSpanElement>('[data-copy-label]');
-      try {
-        await navigator.clipboard.writeText(url);
-        if (label) {
-          const original = label.textContent;
-          label.textContent = 'Tersalin!';
-          btn.classList.add('!bg-emerald-50', '!border-emerald-200', '!text-emerald-700');
-          setTimeout(() => {
-            if (label) label.textContent = original;
-            btn.classList.remove('!bg-emerald-50', '!border-emerald-200', '!text-emerald-700');
-          }, 1800);
+  function setupShareButtons() {
+    const buttons = document.querySelectorAll<HTMLButtonElement>('.js-copy-link');
+    buttons.forEach((btn) => {
+      btn.onclick = async () => {
+        const url = btn.dataset.shareUrl ?? '';
+        const label = btn.querySelector<HTMLSpanElement>('[data-copy-label]');
+        try {
+          await navigator.clipboard.writeText(url);
+          if (label) {
+            const original = label.textContent;
+            label.textContent = 'Tersalin!';
+            btn.classList.add('!bg-emerald-50', '!border-emerald-200', '!text-emerald-700');
+            setTimeout(() => {
+              if (label) label.textContent = original;
+              btn.classList.remove('!bg-emerald-50', '!border-emerald-200', '!text-emerald-700');
+            }, 1800);
+          }
+        } catch (err) {
+          if (label) label.textContent = 'Gagal';
         }
-      } catch (err) {
-        if (label) label.textContent = 'Gagal';
-      }
+      };
     });
-  });
+  }
+
+  document.addEventListener('astro:page-load', setupShareButtons);
 </script>

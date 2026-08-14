@@ -1,5 +1,6 @@
 ---
 import '@/styles/global.css';
+import { ClientRouter } from 'astro:transitions';
 import FloatingWhatsApp from '@components/FloatingWhatsApp.astro';
 import { BUSINESS_INFO } from '@lib/data';
 
@@ -98,6 +99,8 @@ if (structuredData) {
     {noindex && <meta name="robots" content="noindex, nofollow" />}
     <meta name="keywords" content={keywords.join(', ')} />
     <meta name="author" content={BUSINESS_INFO.name} />
+
+    <ClientRouter />
     <link rel="canonical" href={canonical} />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

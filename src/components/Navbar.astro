@@ -126,25 +126,29 @@ const isActive = (id: string) => current === id;
 </nav>
 
 <script>
-  const btn = document.getElementById('mobile-menu-btn');
-  const dialog = document.getElementById('mobile-menu-dialog');
-  const iconOpen = document.getElementById('mobile-menu-icon-open');
-  const iconClose = document.getElementById('mobile-menu-icon-close');
+  function setupMobileMenu() {
+    const btn = document.getElementById('mobile-menu-btn');
+    const dialog = document.getElementById('mobile-menu-dialog');
+    const iconOpen = document.getElementById('mobile-menu-icon-open');
+    const iconClose = document.getElementById('mobile-menu-icon-close');
 
-  if (btn && dialog && iconOpen && iconClose) {
-    btn.addEventListener('click', () => {
-      const isOpen = !dialog.classList.contains('hidden');
-      if (isOpen) {
-        dialog.classList.add('hidden');
-        iconOpen.classList.remove('hidden');
-        iconClose.classList.add('hidden');
-        btn.setAttribute('aria-expanded', 'false');
-      } else {
-        dialog.classList.remove('hidden');
-        iconOpen.classList.add('hidden');
-        iconClose.classList.remove('hidden');
-        btn.setAttribute('aria-expanded', 'true');
-      }
-    });
+    if (btn && dialog && iconOpen && iconClose) {
+      btn.onclick = () => {
+        const isOpen = !dialog.classList.contains('hidden');
+        if (isOpen) {
+          dialog.classList.add('hidden');
+          iconOpen.classList.remove('hidden');
+          iconClose.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+        } else {
+          dialog.classList.remove('hidden');
+          iconOpen.classList.add('hidden');
+          iconClose.classList.remove('hidden');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      };
+    }
   }
+
+  document.addEventListener('astro:page-load', setupMobileMenu);
 </script>

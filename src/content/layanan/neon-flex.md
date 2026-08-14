@@ -1,73 +1,73 @@
 ---
 name: "Neon Flex Custom"
-description: "Dekorasi tulisan/logo kekinian dengan LED Neon Flex yang lentur, dipasang di atas akrilik bening laser cut. Hemat energi, tidak panas, dan sangat estetik untuk cafe, resto, atau dekorasi interior kamar."
+description: "Dekorasi tulisan dan logo kekinian berbahan LED Neon Flex lentur yang terpasang di atas base akrilik bening pemotongan laser. Hemat energi, tidak panas, estetik, cocok untuk cafe, studio, dan interior toko."
 category: "utama"
 subcategory: "Advertising & Reklame"
-basePrice: 25000
+basePrice: 2500
 priceUnit: "cm panjang led"
 features:
-  - "Lampu Neon Flex Premium 12V"
-  - "Adaptor Berkualitas Tinggi"
-  - "Base Acrylic Bening Tebal 3-5mm"
-  - "Variasi Warna Sangat Lengkap"
+  - "LED Neon Flex Premium 12V Hemat Listrik"
+  - "Base Akrilik Bening Potong Laser Cut (3-5mm)"
+  - "Adaptor DC Heavy-Duty (Sertifikasi CE)"
+  - "Pilihan Warna Lengkap & Efek RGB / Dimmer"
+  - "Aman Dipegang (Voltage Rendah, Tidak Panas)"
 materials:
-  - "Neon Flex TPU"
-  - "Akrilik Laser Cut"
-  - "Adaptor DC 12V"
+  - "Pita Silicon Neon Flex TPU"
+  - "Akrilik Bening (Laser Cut)"
+  - "Adaptor DC 12V & Controller Dimmer"
 imageUrl: "/img/layanan/neon-flex.webp"
 heroAlt: "Neon flex LED custom tulisan di dinding cafe Palembang"
 titleSeo: "Jasa Pembuatan Neon Flex Palembang, Custom Tulisan & Logo"
-metaDescription: "Jasa pembuatan neon flex custom Palembang untuk cafe & dekorasi interior. LED 12V hemat, custom tulisan tangan. Mulai Rp 25.000/cm panjang."
+metaDescription: "Jasa pembuatan neon flex custom Palembang untuk cafe & dekorasi interior. LED 12V hemat, custom tulisan tangan. Mulai Rp 2.500/cm panjang, siap kirim se-Sumsel."
 faqs:
-  - question: "Apakah tahan air?"
-    answer: "Ada varian waterproof IP65 untuk outdoor atau area lembap. Untuk indoor, IP20 atau IP44 sudah cukup."
-  - question: "Berapa umur pakainya?"
-    answer: "Standar 30.000-50.000 jam, sekitar 5-10 tahun pemakaian normal."
-  - question: "Bisa custom tulisan tangan?"
-    answer: "Bisa. Cukup kirim contoh tulisan berupa foto atau gambar, kami buatkan layout-nya."
-  - question: "Apakah harga termasuk adaptor dan pemasangan?"
-    answer: "Harga per cm panjang sudah termasuk adaptor DC 12V standar. Instalasi di lokasi dipungut terpisah. Untuk pemasangan sederhana, bisa Anda pasang sendiri karena sistemnya plug and play."
-  - question: "Berapa lama produksinya?"
-    answer: "Standar 3-7 hari setelah desain disetujui. Kalau bentuknya rumit, 5-10 hari kerja."
-  - question: "Bisa menyala sebagian atau efek running text?"
-    answer: "Untuk efek berjalan atau animasi, kami pasang controller RGB yang bisa diprogram. Mati-hidup bergantian bisa diatur per segmen."
-  - question: "Apakah melayani pemasangan luar kota?"
-    answer: "Ya, seluruh Sumatera Selatan seperti Inderalaya, Sekayu, Muaraenim, dan Baturaja."
+  - question: "Apakah neon flex tahan air untuk dipasang outdoor?"
+    answer: "Untuk kebutuhan outdoor, kami menyediakan varian waterproof IP65 yang dilapisi silikon pelindung khusus. Varian standar IP20-IP44 sangat tepat untuk dekorasi interior."
+  - question: "Berapa lama umur pemakaian neon flex?"
+    answer: "Rata-rata 30.000 hingga 50.000 jam pemakaian (sekitar 5-8 tahun penggunaan harian normal). Jika ada segmen lampu mati, dapat diperbaiki atau diganti."
+  - question: "Apakah bisa membuat bentuk tulisan tangan atau logo brand kami?"
+    answer: "Sangat bisa. Kirimkan foto, gambar, atau file vektor tulisan/logo Anda. Tim kami akan menyesuaikan dengan lekukan fleksibel neon flex dan membuatkan mockup 3D gratis."
+  - question: "Apakah harga sudah termasuk adaptor dan garansi?"
+    answer: "Harga per cm panjang sudah termasuk akrilik base, perakitan, dan adaptor DC 12V. Kami memberikan garansi kelistrikan 6 bulan untuk setiap unit buatan kami."
+  - question: "Berapa lama proses pembuatan neon flex custom?"
+    answer: "Proses pengerjaan cepat, 3-7 hari kerja tergantung tingkat kerumitan desain. Untuk kebutuhan pesanan dalam jumlah banyak, jadwal bisa dikonsultasikan."
+  - question: "Apakah lampu neon flex membuat ruangan menjadi panas?"
+    answer: "Tidak. Neon flex berbasis teknologi LED tegangan rendah 12 Volt yang menghasilkan pencahayaan cerah tanpa memancarkan panas berlebih."
+  - question: "Apakah melayani pemasangan ke luar kota?"
+    answer: "Ya, kami melayani pemesanan dan pengiriman aman dengan packing kayu ke seluruh Sumatera Selatan, seperti Prabumulih, Lahat, Baturaja, dan Lubuklinggau."
 hasCalculator: false
 order: 7
 ---
 
-## Tentang Neon Flex
+## Neon Flex Custom untuk Dekorasi Kekinian
 
-Neon Flex adalah generasi baru dari lampu neon tabung. Bentuknya pita yang lentur dengan LED di dalamnya, jadi bisa dibengkokkan mengikuti outline tulisan tangan, logo, atau bentuk apa pun. Hasil akhirnya menyerupai neon klasik, tapi lebih aman, hemat listrik, dan tidak panas.
+Neon Flex adalah alternatif modern terbaik pengganti lampu neon kaca tradisional. Menggunakan pita silikon fleksibel berisikan modul LED hemat daya, neon flex bisa dibengkokkan secara presisi mengikuti kontur tulisan tangan, logo tempat usaha, hingga ornamen unik.
 
-Kami kerjakan dari desain tulisan atau logo, fabrikasi base akrilik, sampai instalasi Neon Flex di lokasi.
+Pemasangan neon flex di atas papan akrilik bening menghasilkan tampilan neon yang melayang (*floating neon effect*), menjadikannya elemen visual paling dicari untuk tempat usaha yang ingin tampil *Instagrammable*.
 
 ## Keunggulan Layanan Kami
 
-- Bentuk bebas, bisa nulis tulisan tangan, logo, atau ornamen apa saja.
-- Konsumsi listrik jauh di bawah neon model lama.
-- LED Neon Flex tidak bikin permukaan jadi panas.
-- Ringan, gampang ditempel, digantung, atau diikat.
-- Warna lengkap: merah, biru, kuning, hijau, pink, warm white, RGB, dan lainnya.
+- **Desain Tanpa Batas**: Bebas membuat nama cafe, quotes pemicu semangat, logo brand, hingga ilustrasi unik.
+- **Hemat Daya & Aman**: Beroperasi pada tegangan 12 Volt, hemat listrik, tidak memancarkan panas, dan aman dari risiko kaca pecah.
+- **Pilihan Warna Variatif**: Tersedia warna merah, biru, ice blue, hijau, kuning, warm white, pink, hingga varian RGB warna-warni.
+- **Base Akrilik Presisi**: Plat akrilik alas dipotong menggunakan mesin laser cutting sesuai pola (contour cut) agar hasil rapi.
+- **Siap Pasang (Plug & Play)**: Setiap pesanan sudah dilengkapi adaptor DC, kabel transparan, dan sekrup penahan (standoff bolt).
 
-## Aplikasi Umum
+## Aplikasi & Penggunaan
 
-- Signage cafe, resto, dan bar.
-- Dekorasi interior toko retail dan butik.
-- Wall decoration kamar, lobby, dan kantor.
-- Booth event dan dekorasi pesta pernikahan.
-- Backdrop foto di studio.
-- Quotes wall dan seni neon.
+Neon Flex cocok untuk mempercantik:
+- **Cafe, Resto & Bar**: Signage quotes kekinian, logo di atas bar, atau spot foto spot pelanggan.
+- **Interior Toko & Butik**: Branding spot kasir dan fasad kaca bagian dalam.
+- **Studio & Workspace**: Dekorasi background live streaming, podcast, atau ruang kreatif.
+- **Event & Pesta**: Signage latar belakang pernikahan, ulang tahun, dan backdrop foto booth.
+- **Dekorasi Rumah**: Lampu tidur custom, hiasan dinding ruang tamu, dan ruang game.
 
-Neon flex sering kami kombinasikan dengan [huruf timbul](/layanan/huruf-timbul) atau [channel letter](/layanan/gantry-huruf-led) untuk kesan yang lebih permanen di fasad. Proses produksinya sama-sama dikerjakan di workshop Talang Jambe, dan kualitas LED yang kami pilih bisa dicek di [beda LED Samsung vs palsu](/blog/tips/beda-led-samsung-vs-palsu) serta [kunjungan workshop](/blog/kabar/workshop-talang-jambe-produksi).
+Neon flex sangat ideal dikombinasikan dengan [huruf timbul](/layanan/huruf-timbul) atau [neon box](/layanan/neon-box) untuk memberikan kesan kontras dan atraktif pada identitas visual usaha Anda.
 
 ## Proses Pengerjaan
 
-1. Brief desain, diskusikan tulisan atau logo, ukuran, dan warna.
-2. Mockup, lihat dulu seperti apa di layout ruangan.
-3. Fabrikasi base, laser cut akrilik bening mengikuti outline.
-4. Instalasi LED, tempel Neon Flex mengikuti pola.
-5. Wiring, sambungkan ke adaptor DC 12V.
-6. Instalasi di lokasi, bor atau tempel di dinding.
-7. Testing dan garansi, QC pencahayaan dan garansi instalasi.
+1. **Konsultasi & Kirim Desain**: Kirim teks tulisan atau logo Anda via WhatsApp.
+2. **Pilihan Warna & Ukuran**: Penentuan panjang neon flex, warna lampu, dan ketebalan akrilik base.
+3. **Mockup 3D Visual**: Penampilan contoh desain neon flex beserta rincian penawaran harga.
+4. **Laser Cutting & Assembly**: Pemotongan base akrilik dan pemasangan pita neon flex secara presisi.
+5. **Quality Control & Testing**: Uji kelistrikan selama 12 jam untuk memastikan daya tahan lampu.
+6. **Pengemasan & Pengiriman**: Dipacking aman menggunakan bubble wrap tebal atau kranji kayu untuk dikirim ke lokasi Anda.
