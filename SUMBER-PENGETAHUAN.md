@@ -826,6 +826,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `ukuran-huruf-timbul-palembang-terbaca-jelas` | Cara menentukan ukuran huruf timbul Palembang agar terbaca jelas, rumus jarak baca dan tinggi huruf | 16 Juni 2026 | panduan | Fakta/Data |
 | `rincian-harga-huruf-timbul-per-meter` | Rincian harga huruf timbul per cm dan per meter untuk stainless, akrilik LED, akrilik non-LED, galvanil, dan kuningan, lengkap contoh kalkulasi biaya | 10 Agustus 2026 | panduan | Problem-First |
 | `neon-box-vs-huruf-timbul-vs-neon-flex` | Perbandingan neon box vs huruf timbul vs neon flex untuk signage toko di Palembang, beda fungsi, harga, dan perawatan | 11 Agustus 2026 | panduan | Direct & Casual |
+| `timeline-produksi-huruf-timbul` | Berapa lama proses produksi huruf timbul, estimasi waktu per tahap dari desain sampai pemasangan di Palembang | 16 Agustus 2026 | panduan | Problem-First |
 
 ### 12.2 Topik yang Masih Open (Ide Artikel Mendatang)
 
@@ -840,6 +841,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 - [ ] **Studi kasus SPBU Pertamina** — Detail neon box SPBU (jika ada foto close-up & spesifikasi)
 - [ ] **ROI signage** — Cara menghitung pengembalian investasi signage toko dalam 1 tahun
 - [ ] **Proses produksi** — Behind the scene produksi huruf timbul dari cutting laser sampai finishing
+- [x] **Timeline produksi** — Berapa lama proses produksi huruf timbul (desain sampai pasang). Artikel `timeline-produksi-huruf-timbul` terbit 16 Agustus 2026. Melengkapi artikel behind-the-scene workshop Talang Jambe dengan fokus estimasi waktu per tahap.
 - [ ] **Garansi 1 tahun** — Apa saja yang dicakup, apa yang tidak, dan mengapa penting
 - [ ] **Mitra Tuna Rungu** — Cerita di balik pemberdayaan SDM lokal (human interest piece)
 - [x] **Cara bedakan LED asli Samsung vs palsu** — Teknis verifikasi LED untuk neon box. Artikel #14 `beda-led-samsung-vs-palsu` sudah terbit 10 Juni 2026
