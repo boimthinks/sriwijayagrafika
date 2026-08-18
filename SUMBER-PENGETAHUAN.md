@@ -827,6 +827,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `rincian-harga-huruf-timbul-per-meter` | Rincian harga huruf timbul per cm dan per meter untuk stainless, akrilik LED, akrilik non-LED, galvanil, dan kuningan, lengkap contoh kalkulasi biaya | 10 Agustus 2026 | panduan | Problem-First |
 | `neon-box-vs-huruf-timbul-vs-neon-flex` | Perbandingan neon box vs huruf timbul vs neon flex untuk signage toko di Palembang, beda fungsi, harga, dan perawatan | 11 Agustus 2026 | panduan | Direct & Casual |
 | `timeline-produksi-huruf-timbul` | Berapa lama proses produksi huruf timbul, estimasi waktu per tahap dari desain sampai pemasangan di Palembang | 16 Agustus 2026 | panduan | Problem-First |
+| `otopsi-huruf-timbul-stainless` | Otopsi huruf timbul stainless, karat muncul di tahun ke-3, 5, dan 8, siklus hidup dan biaya perbaikan | 18 Agustus 2026 | tips | Fakta/Data |
 
 ### 12.2 Topik yang Masih Open (Ide Artikel Mendatang)
 
@@ -842,7 +843,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 - [ ] **ROI signage** — Cara menghitung pengembalian investasi signage toko dalam 1 tahun
 - [ ] **Proses produksi** — Behind the scene produksi huruf timbul dari cutting laser sampai finishing
 - [x] **Timeline produksi** — Berapa lama proses produksi huruf timbul (desain sampai pasang). Artikel `timeline-produksi-huruf-timbul` terbit 16 Agustus 2026. Melengkapi artikel behind-the-scene workshop Talang Jambe dengan fokus estimasi waktu per tahap.
-- [ ] **Garansi 1 tahun** — Apa saja yang dicakup, apa yang tidak, dan mengapa penting
+- [x] **Perawatan signage** — Siklus hidup huruf timbul stainless, karat di tahun ke-3 5 dan 8, biaya perbaikan face lift. Artikel `otopsi-huruf-timbul-stainless` terbit 18 Agustus 2026. Melengkapi topik material outdoor dari artikel `bahan-huruf-timbul-outdoor` dengan fokus lifecycle dan maintenance.
 - [ ] **Mitra Tuna Rungu** — Cerita di balik pemberdayaan SDM lokal (human interest piece)
 - [x] **Cara bedakan LED asli Samsung vs palsu** — Teknis verifikasi LED untuk neon box. Artikel #14 `beda-led-samsung-vs-palsu` sudah terbit 10 Juni 2026
 - [ ] **Apa itu signage dan fungsinya untuk bisnis** — Edukasi dasar signage bagi pemilik UMKM yang belum familier dengan istilah signage. Artikel #15 `fungsi-signage-bisnis` sudah terbit 10 Juni 2026
