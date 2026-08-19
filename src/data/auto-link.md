@@ -13,5 +13,6 @@ neon flex: /layanan/neon-flex
 booth: /layanan/booth-event-desk
 signage: /blog/panduan/fungsi-signage-bisnis
 Pylon sign: /layanan/pylon-totem
+billboard: /layanan/billboard
 Sriwijaya Grafika: /
 

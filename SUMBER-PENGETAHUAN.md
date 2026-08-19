@@ -828,8 +828,12 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `neon-box-vs-huruf-timbul-vs-neon-flex` | Perbandingan neon box vs huruf timbul vs neon flex untuk signage toko di Palembang, beda fungsi, harga, dan perawatan | 11 Agustus 2026 | panduan | Direct & Casual |
 | `timeline-produksi-huruf-timbul` | Berapa lama proses produksi huruf timbul, estimasi waktu per tahap dari desain sampai pemasangan di Palembang | 16 Agustus 2026 | panduan | Problem-First |
 | `otopsi-huruf-timbul-stainless` | Otopsi huruf timbul stainless, karat muncul di tahun ke-3, 5, dan 8, siklus hidup dan biaya perbaikan | 18 Agustus 2026 | tips | Fakta/Data |
+| `biaya-pembuatan-billboard-palembang` | Biaya pembuatan billboard Palembang, panduan fabrikasi, perizinan, dan optimasi pajak reklame | 19 Agustus 2026 | panduan | Problem-First |
 
-### 12.2 Topik yang Masih Open (Ide Artikel Mendatang)
+#- [x] **Total cost of ownership signage** — Template spreadsheet hitung biaya 5 tahun untuk berbagai jenis signage (dari artikel estimasi biaya)
+- [x] **Biaya pembuatan billboard Palembang** — Panduan fabrikasi, pajak reklame, dan perbandingan CapEx vs OpEx. Artikel #21 `biaya-pembuatan-billboard-palembang` terbit 19 Agustus 2026. Mendukung layanan billboard di `/layanan/billboard`.
+
+## 12.2 Topik yang Masih Open (Ide Artikel Mendatang)
 
 *(Diupdate berkala berdasarkan search intent, FAQ klien, dan gap di Bagian 11.6 template pembuka)*
 
@@ -849,7 +853,16 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 - [ ] **Apa itu signage dan fungsinya untuk bisnis** — Edukasi dasar signage bagi pemilik UMKM yang belum familier dengan istilah signage. Artikel #15 `fungsi-signage-bisnis` sudah terbit 10 Juni 2026
 - [ ] **Total cost of ownership signage** — Template spreadsheet hitung biaya 5 tahun untuk berbagai jenis signage (dari artikel estimasi biaya)
 
-### 12.2b Rencana Artikel Support Halaman Huruf Timbul (Queue)
+### 12.2b Rencana Artikel Support Halaman Billboard (Queue)
+
+*(Queue artikel pendukung untuk halaman `/layanan/billboard`, disusun 19 Agustus 2026. Prioritas menurun. Tiap artikel wajib interlink ke halaman layanan utama.)*
+
+- [x] **#1 Biaya pembuatan billboard Palembang** — slug `biaya-pembuatan-billboard-palembang`, topik `panduan`. Panduan fabrikasi, pajak reklame, NSR tabel, simulasi 4x6m, CapEx vs OpEx. DITULIS 19 Agustus 2026.
+- [ ] **#2 Perizinan IMBR DPMPTSP** — slug `izin-imbr-dpmptsp-palembang`. Langkah teknis pengurusan Izin Mendirikan Bangunan Reklame, dokumen yang diminta, timeline validasi. Interlink ke `/layanan/billboard` dan `/blog/panduan/panduan-izin-reklame-palembang`.
+- [ ] **#3 Strategi Desain Billboard Hemat Pajak** — slug `strategi-desain-billboard-hemat-pajak`. Use case konten non-produk untuk 4x6m di Banner Sudirman, simulasi penghematan 80% pajak, visual branding only.
+- [ ] **#4 Perbandingan 3x4m vs 4x6m vs 5x8m** — slug `perbandingan-dimensi-billboard-3x4-4x6-5x8`. Return on investment per m², audiens per jam, break-even point jangka panjang untuk developer properti. Interlink ke FAQ harga di `/layanan/billboard`.
+
+### 12.2c Rencana Artikel Support Halaman Huruf Timbul (Queue)
 
 *(Queue artikel pendukung untuk halaman `/layanan/huruf-timbul`, disusun 10 Agustus 2026. Prioritas menurun. Tiap artikel wajib interlink ke halaman layanan utama.)*
 
