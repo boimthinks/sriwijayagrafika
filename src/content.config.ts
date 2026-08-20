@@ -63,6 +63,14 @@ const blog = defineCollection({
     pengantar: z.string().min(50).max(500),
     kesimpulan: z.string().min(50).max(500),
     published: z.boolean().default(true),
+    faq: z
+      .array(
+        z.object({
+          question: z.string(),
+          answer: z.string(),
+        })
+      )
+      .default([]),
   }),
 });
 

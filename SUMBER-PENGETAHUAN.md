@@ -337,7 +337,8 @@ Cuplikan proyek yang sering dikutip di media & website:
 ### Setiap Artikel Baru Wajib:
 
 1. Tulis artikel lengkap (title, titleSeo, excerpt, body, pengantar, kesimpulan, date, topik, imgurl).
-2. Setelah publish, tambahkan **insight baru** ke file ini di bagian yang relevan (mis. data baru tentang material, feedback klien, dsb).
+2. Tambahkan FAQ (minimal 5 pertanyaan & jawaban) di frontmatter dengan key `faq` (array object `question` & `answer`).
+3. Setelah publish, tambahkan **insight baru** ke file ini di bagian yang relevan (mis. data baru tentang material, feedback klien, dsb).
 3. Update bagian `## 4. Layanan` atau `## 5. Portofolio` jika ada layanan/proyek baru.
 4. Jika ada FAQ baru dari klien, tambahkan ke `## 4. Layanan` MD file yang relevan, dan rangkum di sini.
 
@@ -828,7 +829,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `neon-box-vs-huruf-timbul-vs-neon-flex` | Perbandingan neon box vs huruf timbul vs neon flex untuk signage toko di Palembang, beda fungsi, harga, dan perawatan | 11 Agustus 2026 | panduan | Direct & Casual |
 | `timeline-produksi-huruf-timbul` | Berapa lama proses produksi huruf timbul, estimasi waktu per tahap dari desain sampai pemasangan di Palembang | 16 Agustus 2026 | panduan | Problem-First |
 | `otopsi-huruf-timbul-stainless` | Otopsi huruf timbul stainless, karat muncul di tahun ke-3, 5, dan 8, siklus hidup dan biaya perbaikan | 18 Agustus 2026 | tips | Fakta/Data |
-| `biaya-pembuatan-billboard-palembang` | Biaya pembuatan billboard Palembang, panduan fabrikasi, perizinan, dan optimasi pajak reklame | 19 Agustus 2026 | panduan | Problem-First |
+| `rencana-reklame-hemat-palembang` | Panduan rencana reklame hemat Palembang, hitung pajak 25%, harga billboard, dan strategi hemat pajak toko ritel | 20 Agustus 2026 | panduan | Pertanyaan Provokatif |
 
 #- [x] **Total cost of ownership signage** — Template spreadsheet hitung biaya 5 tahun untuk berbagai jenis signage (dari artikel estimasi biaya)
 - [x] **Biaya pembuatan billboard Palembang** — Panduan fabrikasi, pajak reklame, dan perbandingan CapEx vs OpEx. Artikel #21 `biaya-pembuatan-billboard-palembang` terbit 19 Agustus 2026. Mendukung layanan billboard di `/layanan/billboard`.

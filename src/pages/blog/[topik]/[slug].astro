@@ -8,7 +8,7 @@ import { getCollection, render, type CollectionEntry } from 'astro:content';
 import { BUSINESS_INFO } from '@lib/data';
 import { AUTHOR_NAME, TOPIK_LABELS, calcReadingTime, parseIndonesianDate, toIsoDate } from '@lib/blog';
 import { getKeywordEntries } from '@lib/auto-link';
-import { Calendar, Clock, User } from 'lucide-react';
+import { Calendar, Clock, User, ChevronDown } from 'lucide-react';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => data.published);
@@ -91,6 +91,22 @@ const breadcrumbSchema = {
     { '@type': 'ListItem', position: 4, name: data.title, item: pageUrl },
   ],
 };
+
+const faqSchema = data.faq && data.faq.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': data.faq.map(f => ({
+    '@type': 'Question',
+    'name': f.question,
+    'acceptedAnswer': {
+      '@type': 'Answer',
+      'text': f.answer
+    }
+  }))
+} : null;
+
+const allSchemas: object[] = [articleSchema, breadcrumbSchema];
+if (faqSchema) allSchemas.push(faqSchema);
 ---
 
 <Layout
@@ -105,7 +121,7 @@ const breadcrumbSchema = {
   ]}
   ogImage={data.imgurl}
   ogType="article"
-  structuredData={articleSchema}
+  structuredData={allSchemas}
 >
   <Navbar current="blog" />
 
@@ -193,6 +209,24 @@ const breadcrumbSchema = {
             
             </article>
 
+            {data.faq && data.faq.length > 0 && (
+              <div id="faq" class="mt-12 space-y-4">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-neutral-800 tracking-tight">Pertanyaan yang Sering Diajukan</h2>
+                <p class="text-sm text-neutral-500">Jawaban ringkas untuk kebutuhan Anda sebelum memutuskan pesan.</p>
+                <div class="space-y-3">
+                  {data.faq.map((f) => (
+                    <details class="group bg-neutral-50 rounded-2xl border border-neutral-100 open:bg-white open:shadow-sm transition-all">
+                      <summary class="flex items-center justify-between gap-4 px-5 py-4 cursor-pointer font-bold text-sm md:text-base text-neutral-800 list-none select-none">
+                        <span>{f.question}</span>
+                        <ChevronDown className="w-4 h-4 text-[#ff6634] flex-shrink-0 transition-transform duration-200 group-open:rotate-180" />
+                      </summary>
+                      <div class="px-5 pb-5 text-sm text-neutral-600 leading-relaxed">{f.answer}</div>
+                    </details>
+                  ))}
+                </div>
+              </div>
+            )}
+
             <div class="mt-12 mb-8 pt-8 border-t border-neutral-100 flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
                 <h3 class="text-lg font-extrabold text-neutral-800">Baca artikel lain</h3>
@@ -231,85 +265,93 @@ const breadcrumbSchema = {
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
     <script>
-      const article = document.querySelector('.prose-article');
-      const tocList = document.getElementById('toc-list');
-      const tocContainer = document.getElementById('toc-container');
+      document.addEventListener('astro:page-load', () => {
+        const tocList = document.getElementById('toc-list');
+        const tocContainer = document.getElementById('toc-container');
 
-      if (article && tocList && tocContainer) {
-        const headings = article.querySelectorAll('h2');
-        if (headings.length > 0) {
-          headings.forEach((h2, i) => {
-            if (!h2.id) {
-              h2.id = 'toc-' + i;
-            }
-            const li = document.createElement('li');
-            li.innerHTML =
-              '<a href="#' +
-              h2.id +
-              '" class="block text-xs text-neutral-500 hover:text-[#224da8] font-medium transition-colors py-1 border-l-2 border-transparent hover:border-[#224da8] pl-3 -ml-1">' +
-              h2.textContent +
-              '</a>';
-            tocList.appendChild(li);
-          });
+        if (!tocList || !tocContainer) return;
 
-          const links = tocList.querySelectorAll('a');
-          const observer = new IntersectionObserver(
-            (entries) => {
-              entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                  links.forEach((l) => {
-                    l.classList.remove('text-[#224da8]', 'border-[#224da8]');
-                    l.classList.add('text-neutral-500', 'border-transparent');
-                  });
-                  const active = tocList.querySelector('a[href="#' + entry.target.id + '"]');
-                  if (active) {
-                    active.classList.remove('text-neutral-500', 'border-transparent');
-                    active.classList.add('text-[#224da8]', 'border-[#224da8]');
-                  }
-                }
-              });
-            },
-            { rootMargin: '-80px 0px -60% 0px' }
-          );
+        const headings = document.querySelectorAll('#konten-body h2');
 
-          headings.forEach((h2) => observer.observe(h2));
-        } else {
+        if (headings.length === 0) {
           tocContainer.remove();
+          return;
         }
-      }
+
+        tocList.innerHTML = '';
+
+        headings.forEach((h2) => {
+          if (!h2.id) {
+            h2.id = 'toc-' + Array.from(headings).indexOf(h2);
+          }
+          const li = document.createElement('li');
+          li.innerHTML =
+            '<a href="#' +
+            h2.id +
+            '" class="block text-xs text-neutral-500 hover:text-[#224da8] font-medium transition-colors py-1 border-l-2 border-transparent hover:border-[#224da8] pl-3 -ml-1">' +
+            h2.textContent +
+            '</a>';
+          tocList.appendChild(li);
+        });
+
+        const links = tocList.querySelectorAll('a');
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                links.forEach((l) => {
+                  l.classList.remove('text-[#224da8]', 'border-[#224da8]');
+                  l.classList.add('text-neutral-500', 'border-transparent');
+                });
+                const active = tocList.querySelector('a[href="#' + entry.target.id + '"]');
+                if (active) {
+                  active.classList.remove('text-neutral-500', 'border-transparent');
+                  active.classList.add('text-[#224da8]', 'border-[#224da8]');
+                }
+              }
+            });
+          },
+          { rootMargin: '-80px 0px -60% 0px' }
+        );
+
+        headings.forEach((h2) => observer.observe(h2));
+      });
     </script>
 
     <script>
-      const kontenBody = document.getElementById('konten-body');
-      if (kontenBody) {
+      document.addEventListener('astro:page-load', () => {
+        const kontenBody = document.getElementById('konten-body');
+        if (!kontenBody) return;
+
         const raw = kontenBody.getAttribute('data-kata-kunci');
-        if (raw) {
-          try {
-            const entries = JSON.parse(raw);
-            if (Array.isArray(entries) && entries.length > 0) {
-              entries.sort((a, b) => b.keyword.length - a.keyword.length);
-              const used = new Set();
-              const paragraphs = kontenBody.querySelectorAll('p');
-              paragraphs.forEach((p) => {
-                let html = p.innerHTML;
-                for (const { keyword, url } of entries) {
-                  if (used.has(keyword.toLowerCase())) continue;
-                  const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                  const regex = new RegExp(`\\b${escaped}\\b`, 'i');
-                  if (regex.test(html)) {
-                    html = html.replace(regex, (m) => `<a href="${url}" class="text-[#224da8] hover:text-[#ff6634] underline underline-offset-2 transition-colors">${m}</a>`);
-                    used.add(keyword.toLowerCase());
-                  }
-                }
-                if (html !== p.innerHTML) {
-                  p.innerHTML = html;
-                }
-              });
+        if (!raw) return;
+
+        try {
+          const entries = JSON.parse(raw);
+          if (!Array.isArray(entries) || entries.length === 0) return;
+
+          entries.sort((a, b) => b.keyword.length - a.keyword.length);
+          const used = new Set();
+          const paragraphs = kontenBody.querySelectorAll('p');
+          paragraphs.forEach((p) => {
+            let html = p.innerHTML;
+            for (const { keyword, url } of entries) {
+              if (used.has(keyword.toLowerCase())) continue;
+              const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+              const regex = new RegExp(`\\b${escaped}\\b`, 'i');
+              if (regex.test(html)) {
+                html = html.replace(regex, (m) => `<a href="${url}" class="text-[#224da8] hover:text-[#ff6634] underline underline-offset-2 transition-colors">${m}</a>`);
+                used.add(keyword.toLowerCase());
+              }
             }
-          } catch (_) {}
-        }
+            if (html !== p.innerHTML) {
+              p.innerHTML = html;
+            }
+          });
+        } catch (_) {}
+
         kontenBody.removeAttribute('data-kata-kunci');
-      }
+      });
     </script>
   </main>
 

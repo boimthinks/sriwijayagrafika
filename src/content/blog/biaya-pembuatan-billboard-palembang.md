@@ -9,6 +9,19 @@ imgPrompt: "Photorealistic photo of Srifika inspecting a new billboard structure
 imgalt: "Srifika memeriksa struktur billboard baru di Palembang"
 pengantar: "Membangun billboard di Palembang bukan sekadar soal tiang dan visual. Ini adalah keputusan investasi jangka panjang yang menyangkut lokasi, kualitas struktur, perizinan, dan bahkan strategi pajak. Banyak pelaku usaha hanya fokus pada harga produksi, lalu bermasalah dengan biaya perawatan dan pajak yang membengkak di kemudian hari. Artikel ini memecah komponen biaya pembuatan billboard yang sebenarnya, lengkap dengan simulasi hitungan pajak agar anggaran Anda tetap terkendali."
 kesimpulan: "Investasi billboard akan memberi dampak maksimal ketika lokasi, struktur, dan kepatuhan administrasi berjalan bersamaan. Dengan strategi desain non-produk, potensi penghematan pajak di Palembang bisa mencapai 80%. Butuh konsultasi, mockup 3D gratis, atau bantuan pengurusan izin reklame? Hubungi Tim Sriwijaya Grafika di WhatsApp 0852-1511-1125. Kami melayani survei lokasi gratis di Palembang dan seluruh Sumatera Selatan."
+faq:
+  - question: "Berapa biaya produksi billboard di Palembang?"
+    answer: "Untuk dimensi populer, estimasi produksi visual dua sisi mulai dari Rp960.000 untuk baliho 3x4m, Rp1.600.000 untuk billboard 4x5m, Rp2.400.000 untuk 5x6m, hingga Rp3.200.000 untuk 5x8m, belum termasuk rangka dan jasa. Untuk billboard struktural berat dengan pondasi cakar ayam dan tiang pipa heavy-duty, estimasinya mulai dari Rp5.000.000/m² tergantung lokasi dan kerumitan medan."
+  - question: "Berapa tarif pajak reklame billboard di Palembang?"
+    answer: "Pajak reklame di Palembang ditetapkan 25% dari Nilai Sewa Reklame (NSR). Dasar hukumnya Perda No. 4 Tahun 2023 dan Perwali No. 18 Tahun 2013. NSR bergantung pada klasifikasi jalan dan jenis konten, jadi dua billboard dengan ukuran sama bisa menghasilkan pajak berbeda."
+  - question: "Bagaimana cara menghemat pajak billboard?"
+    answer: "Konten non-produk (murni branding tanpa harga atau gambar barang dagangan) menggunakan NSR yang jauh lebih rendah daripada konten produk. Contoh pada billboard 4x6m di Jl. Sudirman, strategi ini menghemat hingga 80% pajak per tahun, dari Rp273,75 juta menjadi Rp54,75 juta."
+  - question: "Lebih hemat mana, membangun billboard sendiri atau menyewa?"
+    answer: "Untuk komitmen di satu lokasi lebih dari 36 bulan, membangun sendiri (CapEx) lebih hemat karena break-even tercapai di tahun ketiga. Untuk kampanye taktis di bawah 24 bulan, menyewa (OpEx) memberi fleksibilitas pindah lokasi, tetapi biaya kumulatifnya lebih besar karena sudah termasuk margin agensi."
+  - question: "Di lokasi mana saja lokasi billboard paling strategis di Palembang?"
+    answer: "Kami sering merekomendasikan Jl. Jenderal Sudirman dan Jl. Kapten A. Rivai untuk target korporasi, Jl. Angkatan 45 dan Jl. POM IX untuk area niaga, serta Tugu KB Kertapati, Jl. MP Mangkunegara, dan Pasar 16 Ilir untuk jangkauan produk konsumsi harian."
+  - question: "Apa perbedaan billboard statis dan videotron?"
+    answer: "Billboard statis bekerja dengan lampu sorot hingga 400 watt, sewa mulai Rp15 juta hingga Rp90 juta per bulan, dan unggul untuk membangun merek 24 jam. Videotron digital memungkinkan pergantian pesan tanpa bongkar-pasang, dengan sewa harian Rp3 juta hingga Rp37,5 juta untuk varian P3.9, lebih cocok untuk promo musiman yang cepat berubah."
 published: true
 ---
 
