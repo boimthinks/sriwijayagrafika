@@ -830,6 +830,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `timeline-produksi-huruf-timbul` | Berapa lama proses produksi huruf timbul, estimasi waktu per tahap dari desain sampai pemasangan di Palembang | 16 Agustus 2026 | panduan | Problem-First |
 | `otopsi-huruf-timbul-stainless` | Otopsi huruf timbul stainless, karat muncul di tahun ke-3, 5, dan 8, siklus hidup dan biaya perbaikan | 18 Agustus 2026 | tips | Fakta/Data |
 | `rencana-reklame-hemat-palembang` | Panduan rencana reklame hemat Palembang, hitung pajak 25%, harga billboard, dan strategi hemat pajak toko ritel | 20 Agustus 2026 | panduan | Pertanyaan Provokatif |
+| `pasang-huruf-timbul-fasad-ruko` | Teknik pasang huruf timbul di fasad ruko, komparasi baut tembus bracket vs lem bonding sealant untuk ACP dan beton | 21 Agustus 2026 | tips | Skenario Visual |
 
 #- [x] **Total cost of ownership signage** — Template spreadsheet hitung biaya 5 tahun untuk berbagai jenis signage (dari artikel estimasi biaya)
 - [x] **Biaya pembuatan billboard Palembang** — Panduan fabrikasi, pajak reklame, dan perbandingan CapEx vs OpEx. Artikel #21 `biaya-pembuatan-billboard-palembang` terbit 19 Agustus 2026. Mendukung layanan billboard di `/layanan/billboard`.
@@ -871,7 +872,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 - [x] **#2 Neon box vs huruf timbul vs neon flex** — slug `neon-box-vs-huruf-timbul-vs-neon-flex`. Keputusan 3 pilihan signage toko, studi kasus Kedai Pempek Maris vs storefront kafe. Interlink ke `/layanan/huruf-timbul`, `/layanan/neon-box`, `/layanan/neon-flex`. DITULIS 11 Agustus 2026.
 - [ ] **#3 Garansi 1 tahun signage, apa saja yang tercover** — slug `garansi-signage-apa-saja-tercover`. Penjelasan teknis garansi (kelistrikan vs fisik vs alam), contoh klaim Gedung Walikota & Kejati Sumsel. Interlink ke FAQ garansi halaman huruf timbul.
 - [ ] **#4 Perawatan & perbaikan huruf timbul** — slug `perawatan-perbaikan-huruf-timbul`. Rutinitas perawatan & jasa perbaikan LED mati/stainless kusam dari pengalaman maintenance klien. Interlink ke FAQ maintenance.
-- [ ] **#5 Teknik pemasangan fasad, baut vs bonding** — slug `pasang-huruf-timbul-baut-atau-bonding`. Teknik pemasangan façade (baut tembus vs lem/bonding) & kapan pakai crane untuk fasad ruko Palembang. Interlink ke bagian Cara Pemesanan.
+- [x] **#5 Teknik pemasangan fasad, baut vs bonding** — slug `pasang-huruf-timbul-fasad-ruko`. Teknik pemasangan façade (baut tembus vs lem/bonding) & safety scaffolding untuk fasad ruko Palembang. Terbit 21 Agustus 2026, topik `tips`. Interlink ke bagian Cara Pemesanan.
 - [ ] **#6 Izin IPR, contoh file teknis yang diminta DPMPTSP** — slug `contoh-file-teknis-ipr-huruf-timbul`. Dokumen teknis (foto rencana, dimensi) yang diminta DPMPTSP untuk huruf timbul. Interlink ke halaman izin & layanan.
 
 ### 12.3 FAQ dari Klien (Untuk Dijadikan Topik Artikel Baru)
