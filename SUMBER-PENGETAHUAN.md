@@ -831,6 +831,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `otopsi-huruf-timbul-stainless` | Otopsi huruf timbul stainless, karat muncul di tahun ke-3, 5, dan 8, siklus hidup dan biaya perbaikan | 18 Agustus 2026 | tips | Fakta/Data |
 | `rencana-reklame-hemat-palembang` | Panduan rencana reklame hemat Palembang, hitung pajak 25%, harga billboard, dan strategi hemat pajak toko ritel | 20 Agustus 2026 | panduan | Pertanyaan Provokatif |
 | `pasang-huruf-timbul-fasad-ruko` | Teknik pasang huruf timbul di fasad ruko, komparasi baut tembus bracket vs lem bonding sealant untuk ACP dan beton | 21 Agustus 2026 | tips | Skenario Visual |
+| `tips-rangka-besi-plang-toko-tahan-angin` | Tips rangka besi plang toko tahan angin kencang Palembang, panduan hollow galvanis dan dynabolt | 24 Agustus 2026 | tips | Problem-First |
 
 #- [x] **Total cost of ownership signage** — Template spreadsheet hitung biaya 5 tahun untuk berbagai jenis signage (dari artikel estimasi biaya)
 - [x] **Biaya pembuatan billboard Palembang** — Panduan fabrikasi, pajak reklame, dan perbandingan CapEx vs OpEx. Artikel #21 `biaya-pembuatan-billboard-palembang` terbit 19 Agustus 2026. Mendukung layanan billboard di `/layanan/billboard`.
