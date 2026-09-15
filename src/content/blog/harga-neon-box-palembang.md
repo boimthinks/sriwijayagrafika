@@ -2,7 +2,7 @@
 title: "Harga Neon Box Palembang"
 titleSeo: "Estimasi Harga Neon Box Palembang per Meter, Material, dan Tips Bengkel"
 excerpt: "Estimasi harga neon box Palembang per meter persegi, pilihan material akrilik vs flexy, dan tips memilih bengkel reklame bergaransi 1 tahun."
-date: "25 Agustus 2026"
+date: "15 September 2026"
 topik: "panduan"
 imgurl: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKreAVtm0Mz-_hvhyBdHmJV31ljbIF8M6M9h8G2MOno-UhtHilngTbQf2PbMj5RWXaXxaDuwnXfegRqYfXzmEmYVvnuD7GE22IHrqo_mXuGx-EmxKQmRzInTGc7XdBAOuapuH5QIN6SJT-o7YbY-5b9uE6xDD0UdjNTEg0lA1Z-O3SRE-_iN2ggnTmcanE/s600/buat-pasang-neon-box-palembang_poco.webp"
 imgPrompt: "Photorealistic photo of Srifika holding a tape measure against an acrylic neon box face inside the Talang Jambe workshop in Palembang, LED modules glowing faintly, cutting tools and aluminum profiles on the workbench, warm afternoon light"
