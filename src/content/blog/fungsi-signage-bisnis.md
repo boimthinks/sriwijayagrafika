@@ -1,7 +1,7 @@
 ---
 title: "Fungsi Signage untuk Bisnis"
-titleSeo: "5 Fungsi Signage untuk Bisnis, dari Penunjuk Arah sampai Branding, Contoh Palembang"
-excerpt: "Signage bukan sekadar papan nama. Berikut 5 fungsi signage untuk bisnis: identitas, informasi, promosi, branding, dan penunjuk arah. Dilengkapi contoh nyata proyek di Palembang."
+titleSeo: "5 Fungsi Signage untuk Bisnis di Palembang"
+excerpt: "Signage bukan sekadar papan nama. Pelajari 5 fungsi signage untuk bisnis: identitas, informasi, promosi, branding, dan wayfinding. Contoh di Palembang."
 date: "10 Juni 2026"
 topik: "panduan"
 imgurl: "/img/layanan/neon-box.webp"

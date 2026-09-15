@@ -5,11 +5,11 @@ export const BUSINESS_INFO = {
   phone2: '',
   phone1Intl: '6285215111125',
   address: 'Jl. AMD Jl. Pertanian No.105, RT.029/RW.005, Talang Jambe, Kec. Sukarami, Kota Palembang, Sumatera Selatan 30155',
-  googleMapsUrl: 'https://maps.app.goo.gl/aCQkXuc5nS9Toju38',
+  googleMapsUrl: 'https://www.google.com/maps/place/Sriwijaya+Grafika+Advertising+%26+Printing/@-2.922115,104.685934,17z',
   googleMapsEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.629342502758!2d104.68593417589139!3d-2.9221155970542385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b733effffffff%3A0x6ded2fe9cb701449!2sSriwijaya%20Grafika%20Advertising%20%26%20Printing!5e0!3m2!1sid!2sid!4v1717253509932!5m2!1sid!2sid',
   socials: {
     instagram: 'https://www.instagram.com/sriwijayagrafika/',
-    facebookUtama: 'https://web.facebook.com/sriwijayagrafika',
+    facebookUtama: 'https://www.facebook.com/sriwijayagrafika',
     facebookSecondary: 'https://web.facebook.com/percetakanpalembang/',
     tiktok: 'https://www.tiktok.com/@sriwijayagrafika',
     shopee: 'https://shopee.co.id/sriwijaya_grafika',
