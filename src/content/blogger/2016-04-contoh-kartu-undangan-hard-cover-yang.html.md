@@ -6,7 +6,7 @@ slug: "2016-04-contoh-kartu-undangan-hard-cover-yang.html"
 metaDescription: ""
 ---
 
-Kami merupakan salah satu [percetakan di palembang](http://www.sriwijayagrafika.com/2016/01/percetakan-sriwijaya-grafika-palembang.html) yang menerima pesanan bermacam kartu undangan. Anda dapat membuat kartu undangan menggunakan desain sendiri ataupun meniru bentuk undangan yang sudah ada.  
+Kami merupakan salah satu [percetakan di palembang](https://sriwijayagrafika.com/2016/01/percetakan-sriwijaya-grafika-palembang.html) yang menerima pesanan bermacam kartu undangan. Anda dapat membuat kartu undangan menggunakan desain sendiri ataupun meniru bentuk undangan yang sudah ada.  
   
 Berikut ini salah satu contoh kartu undangan yang banyak dipakai karena bentuknya yang simple dan harganya yang cukup murah. Bagian depan dilengkapi dengan pita, sedangkan bagian dalam hanya terdiri dari satu halaman saja.  
   

@@ -6,7 +6,7 @@ slug: "2016-05-cetak-stiker-bahan-kertas-palembang.html"
 metaDescription: ""
 ---
 
-Selain menjual stiker printing bahan plastik/vinyl [sriwijaya grafika](http://www.sriwijayagrafika.com/) juga menerima pesanan pembuatan stiker bahan kertas. Stiker ini juga bisa di cetak gambar full color seperti stiker berbahan plastik, tetapi kurang cocok bila digunakan untuk diluar ruangan karena sifat dari stiker kertas ini mudah rusak bila terkena air atau hujan. Bila Anda membutuhkan stiker yang tahan air silahkan memakai stiker bahan plastik atau stiker vinyl.  
+Selain menjual stiker printing bahan plastik/vinyl [sriwijaya grafika](https://sriwijayagrafika.com/) juga menerima pesanan pembuatan stiker bahan kertas. Stiker ini juga bisa di cetak gambar full color seperti stiker berbahan plastik, tetapi kurang cocok bila digunakan untuk diluar ruangan karena sifat dari stiker kertas ini mudah rusak bila terkena air atau hujan. Bila Anda membutuhkan stiker yang tahan air silahkan memakai stiker bahan plastik atau stiker vinyl.  
   
 
 

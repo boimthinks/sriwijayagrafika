@@ -5,38 +5,43 @@ import Footer from '@components/Footer.astro';
 import SidebarCTA from '@components/SidebarCTA.astro';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import { BUSINESS_INFO } from '@lib/data';
-import { parseBloggerSlug, bloggerOldPath, bloggerDateLabel, bloggerIsoDate } from '@lib/blogger';
+import { parseBloggerSlug, bloggerOldPath, bloggerDateLabel, bloggerIsoDate, bloggerMetaDescription, relatedBloggerPosts } from '@lib/blogger';
 import { Archive, Calendar, MessageCircle, ArrowLeft, ArrowRight, Home } from 'lucide-react';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blogger', ({ data }) => data.published);
-  return posts
-    .filter((post) => post.data.title.trim().length > 0)
-    .flatMap((post) => {
-      const parsed = parseBloggerSlug(post.data.slug);
-      if (!parsed) return [];
-      return [
-        {
-          params: { year: parsed.year, month: parsed.month, slug: parsed.rest },
-          props: { post },
-        },
-      ];
-    });
+  const posts = (await getCollection('blogger', ({ data }) => data.published)).filter(
+    (post) => post.data.title.trim().length > 0
+  );
+  return posts.flatMap((post) => {
+    const parsed = parseBloggerSlug(post.data.slug);
+    if (!parsed) return [];
+    return [
+      {
+        params: { year: parsed.year, month: parsed.month, slug: parsed.rest },
+        props: { post, allPosts: posts },
+      },
+    ];
+  });
 }
 
 interface Props {
   post: CollectionEntry<'blogger'>;
+  allPosts: CollectionEntry<'blogger'>[];
 }
 
-const { post } = Astro.props;
+const { post, allPosts } = Astro.props;
 const { Content } = await render(post);
 const data = post.data;
 
 const dateLabel = bloggerDateLabel(data.date);
 const isoDate = bloggerIsoDate(data.date);
 const oldPath = bloggerOldPath(post);
-const pageUrl = new URL(oldPath, Astro.site ?? 'https://sriwijayagrafika.com').toString();
-const description = data.metaDescription.trim() || `Arsip artikel ${data.title} — Sriwijaya Grafika Palembang.`;
+// Canonical harus menunjuk ke URL aktual halaman ini (yang di-serve Netlify,
+// yaitu dengan trailing slash), BUKAN ke bloggerOldPath tanpa slash yang
+// memicu 301 redirect. Hal ini memperbaiki isu Ahrefs "Canonical points to redirect".
+const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://sriwijayagrafika.com').toString();
+const description = bloggerMetaDescription(post);
+const related = relatedBloggerPosts(post, allPosts, 4);
 
 const waMessage = `Halo Sriwijaya Grafika, saya menemukan artikel *${data.title}* di halaman arsip Anda. Saya ingin bertanya lebih lanjut. Terima kasih!`;
 
@@ -181,6 +186,27 @@ const articleSchema = {
                 <ArrowRight className="w-4 h-4" />
               </a>
             </div>
+
+            {related.length > 0 && (
+              <section class="mt-10">
+                <h2 class="text-lg font-extrabold text-neutral-800 tracking-tight mb-4">
+                  Artikel Arsip Terkait
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {related.map((r) => (
+                    <a
+                      href={bloggerOldPath(r)}
+                      class="group flex items-start gap-3 p-4 rounded-2xl border border-neutral-100 bg-white shadow-sm hover:shadow-md hover:border-[#224da8]/20 transition-all duration-300"
+                    >
+                      <Archive className="w-4 h-4 text-[#ff6634] flex-shrink-0 mt-0.5" />
+                      <span class="text-sm font-semibold text-neutral-800 group-hover:text-[#224da8] transition-colors leading-snug line-clamp-2">
+                        {r.data.title}
+                      </span>
+                    </a>
+                  ))}
+                </div>
+              </section>
+            )}
           </div>
         </div>
       </div>

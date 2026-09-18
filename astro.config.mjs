@@ -11,7 +11,25 @@ export default defineConfig({
   build: {
     inlineStylesheets: 'always',
   },
-  integrations: [react(), sitemap()],
+  integrations: [
+    react(),
+    sitemap({
+      // Jangan masukkan halaman noindex ke sitemap XML (perbaiki isu Ahrefs
+      // "Noindex page in sitemap" / "Non-canonical page in sitemap").
+      // Argumen `page` adalah URL lengkap, jadi ekstrak pathname dulu.
+      filter: (page) => {
+        let pathname = page;
+        try {
+          pathname = new URL(page).pathname;
+        } catch {
+          /* biarkan apa adanya */
+        }
+        return !['/sitemap', '/kebijakan-privasi', '/syarat-ketentuan', '/404'].includes(
+          pathname.replace(/\/+$/, '')
+        );
+      },
+    }),
+  ],
   vite: {
     plugins: [tailwindcss()],
   },

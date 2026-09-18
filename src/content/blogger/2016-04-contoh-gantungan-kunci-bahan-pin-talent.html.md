@@ -17,7 +17,7 @@ Gantungan kunci bahan pin talent juga kami sebut dengan nama gantungan kunci bah
 [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiemosSuFiiunRU9c_9gJNeOrnIbf6VdYgl6P9aypqttqlNvFve_GWrvglNtKnkLaaajSJBLSvO4M1nq-w3eG7djAK1pXr2wKsig0jGcSjOLBOPisN30e5Dz4bWbuoAtuA-q0nNwj9G7pCj/s320/terma+pesanan+gantungan+kunci.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiemosSuFiiunRU9c_9gJNeOrnIbf6VdYgl6P9aypqttqlNvFve_GWrvglNtKnkLaaajSJBLSvO4M1nq-w3eG7djAK1pXr2wKsig0jGcSjOLBOPisN30e5Dz4bWbuoAtuA-q0nNwj9G7pCj/s1600/terma+pesanan+gantungan+kunci.jpg)
 
   
-Selain menerima pesanan gantungan kunci bahan pin talent kami juga menjual [gantungan kunci bahan stenlis](http://www.sriwijayagrafika.com/2016/04/gantungan-kunci-bahan-stenlis.html) dan akrilik. Untuk informasi lebih lanjut silahkan hubungi kami.  
+Selain menerima pesanan gantungan kunci bahan pin talent kami juga menjual [gantungan kunci bahan stenlis](https://sriwijayagrafika.com/2016/04/gantungan-kunci-bahan-stenlis.html) dan akrilik. Untuk informasi lebih lanjut silahkan hubungi kami.  
   
 **Percetakan sriwijaya grafika palembang.**  
 Jl. Pertanian No.105 Rt. 29 Rw.05 kel. Talang Jambe, Kec. Sukarami Palembang.  

@@ -90,7 +90,7 @@ const serviceSchema = {
       '@type': 'UnitPriceSpecification',
       price: data.basePrice,
       priceCurrency: 'IDR',
-      referenceUnit: data.priceUnit,
+      unitText: data.priceUnit,
     },
   },
   ...(imageUrl ? { image: imageUrl } : {}),

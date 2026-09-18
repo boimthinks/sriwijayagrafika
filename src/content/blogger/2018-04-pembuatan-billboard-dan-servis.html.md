@@ -21,7 +21,7 @@ Tlp : (0711) - 561 4793  (Telkom), Fax : (0711) - 571 5213
 [![Sriwijaya grafika - advertising palembang melayani jasa pembuatan billboard](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSpprxyjTRdVQop70gQbLJBvGYkWzyKFhl2D2LYkLPa9jeZrS1gpXNM4gYY-qdfXg5s9DdNxrFo4LwmdLyIjR3vRHkHoMSZRwX6BJo3Off-lr8XDzMbhz1QUSUrJvYhHrDBPXE9NLRxzKm/s1600/billboard+oppo+-+sriwijaya+grafika.jpeg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSpprxyjTRdVQop70gQbLJBvGYkWzyKFhl2D2LYkLPa9jeZrS1gpXNM4gYY-qdfXg5s9DdNxrFo4LwmdLyIjR3vRHkHoMSZRwX6BJo3Off-lr8XDzMbhz1QUSUrJvYhHrDBPXE9NLRxzKm/s1600/billboard+oppo+-+sriwijaya+grafika.jpeg)
 
   
-Sriwijaya grafika adalah salah satu [advertising palembang](http://www.sriwijayagrafika.com/) yang melayani jasa pembuatan billboard baru dan juga melayani jasa servis billboard untuk wilayah palembang dan sekitarnya. Billboard merupakan salah satu jenis reklame media promosi yang berukuran besar. Umumnya billboard menggunakan bahan flexi untuk bagian gambarnya, dan billboard biasanya dipasang pada lokasi yang tinggi dengan rangka konstruksi permanen (rangka tetap).  
+Sriwijaya grafika adalah salah satu [advertising palembang](https://sriwijayagrafika.com/) yang melayani jasa pembuatan billboard baru dan juga melayani jasa servis billboard untuk wilayah palembang dan sekitarnya. Billboard merupakan salah satu jenis reklame media promosi yang berukuran besar. Umumnya billboard menggunakan bahan flexi untuk bagian gambarnya, dan billboard biasanya dipasang pada lokasi yang tinggi dengan rangka konstruksi permanen (rangka tetap).  
   
 
 

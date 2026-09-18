@@ -6,7 +6,7 @@ slug: "2016-05-papan-struktur-organisasi.html"
 metaDescription: ""
 ---
 
-Kami menerima pesanan papan struktur organisasi yang terbuat dari bahan aluminium composite panel (ACP) dan juga bahan plywood (multipleks). Untuk penawaran produk lainnya silahkan lihat di blog [sriwijaya grafika](http://www.sriwijayagrafika.com/) _(klik)_  
+Kami menerima pesanan papan struktur organisasi yang terbuat dari bahan aluminium composite panel (ACP) dan juga bahan plywood (multipleks). Untuk penawaran produk lainnya silahkan lihat di blog [sriwijaya grafika](https://sriwijayagrafika.com/) _(klik)_  
   
 
 

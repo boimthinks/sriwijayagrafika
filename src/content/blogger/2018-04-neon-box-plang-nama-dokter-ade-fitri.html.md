@@ -6,7 +6,7 @@ slug: "2018-04-neon-box-plang-nama-dokter-ade-fitri.html"
 metaDescription: ""
 ---
 
-Terima kasih dokter Ade fitri handayani lubis untuk orderan neon box nya. semoga tempat prakteknya selalu ramai pasien. [Neon box](http://www.sriwijayagrafika.com/2016/09/neon-box-palembang-tempat-pembuatan.html) tempat prakter dokter Ade fitri handayani dibuat menggunakan rangka besi hollow dan tiang pipa besi, untuk bahan visualnya menggunakan bahan backlite printing.  
+Terima kasih dokter Ade fitri handayani lubis untuk orderan neon box nya. semoga tempat prakteknya selalu ramai pasien. [Neon box](https://sriwijayagrafika.com/2016/09/neon-box-palembang-tempat-pembuatan.html) tempat prakter dokter Ade fitri handayani dibuat menggunakan rangka besi hollow dan tiang pipa besi, untuk bahan visualnya menggunakan bahan backlite printing.  
   
 
 
@@ -20,7 +20,7 @@ Ukuran neon box praktek dokter pada umumnya dipesan dengan ukuran tidak terlalu 
 [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9gp8g_QUmzjyrJePf_LXH7Z9r-QYxZgAZBUT-_wq72nd-bnM96aZeDbw49QbEWFjxtLWQUFj8irw3m33QWqQC1H_dj0EiUSk30bmD34GyndIdMGyJYAulo2HgNExNk21bt2YsIIMo6wcG/s320/WhatsApp+Image+2018-04-19+at+17.04.29.jpeg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9gp8g_QUmzjyrJePf_LXH7Z9r-QYxZgAZBUT-_wq72nd-bnM96aZeDbw49QbEWFjxtLWQUFj8irw3m33QWqQC1H_dj0EiUSk30bmD34GyndIdMGyJYAulo2HgNExNk21bt2YsIIMo6wcG/s1600/WhatsApp+Image+2018-04-19+at+17.04.29.jpeg)
 
   
-Neon box praktek dokter yang umumnya dibuat oleh [advertising kota palembang](http://www.sriwijayagrafika.com/), selain menggunakan bahan visual backlite printing seperti yang telah dipesan oleh dokter Ade fitri handayani lubis, bagian visual neon box dokter juga banyak dipesan menggunakan bahan akrilik dengan tulisan yang terbuat dari stiker cutting, dan ada juga yang menggunakan bahan visual backlite dengan tulisan stiker cutting.  
+Neon box praktek dokter yang umumnya dibuat oleh [advertising kota palembang](https://sriwijayagrafika.com/), selain menggunakan bahan visual backlite printing seperti yang telah dipesan oleh dokter Ade fitri handayani lubis, bagian visual neon box dokter juga banyak dipesan menggunakan bahan akrilik dengan tulisan yang terbuat dari stiker cutting, dan ada juga yang menggunakan bahan visual backlite dengan tulisan stiker cutting.  
   
 Bahan visual backlite printing, akrilik + stiker cutting maupun backlite + stiker cutting, masing-masing memiliki keunggulan tersendiri, baik dari segi harga, penampilan, dan keawetan visual neon box nya (lamanya waktu masa pakai). Meskipun menggunakan bahan visual dengan jenis yang berbeda, neon box pada umumnya tetap memakai bagian rangka yang terbuat dari jenis bahan yang sama, baik rangka bagian dalam maupun bagian tiang neon box nya.  
   

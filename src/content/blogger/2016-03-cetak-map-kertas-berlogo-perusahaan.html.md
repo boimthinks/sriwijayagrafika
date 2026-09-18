@@ -13,7 +13,7 @@ Kami menerima pesanan untuk pembuatan map kertas berlogo perusahaan Anda dengan 
 [![Cetak map berlogo perusahaan - percetakan dipalembang](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDfGaMrGHcG-bt-wBpBOqoheVFLgSYsiZp5f6-942WMDm1H26bf0tB3DD0b0idW8gpHSeWx5XUH2kW772wGljFk8R3rk0ItX-XOxXTQHNwW1-gUNfQXVZtgjzhhXXcVA80DpbahC2WLI3I/s320/IMG_1834.JPG)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDfGaMrGHcG-bt-wBpBOqoheVFLgSYsiZp5f6-942WMDm1H26bf0tB3DD0b0idW8gpHSeWx5XUH2kW772wGljFk8R3rk0ItX-XOxXTQHNwW1-gUNfQXVZtgjzhhXXcVA80DpbahC2WLI3I/s1600/IMG_1834.JPG)
 
   
-Dengan memakai map berlogo perusahaan untuk keperluan kerja tentu saja akan membuat perusahaan Anda terlihat lebih profesional. Selain cetak map kami juga menerima pesanan untuk cetak kop surat, amplop, buku nota, surat jalan, tanda terima, dan lain sebagainya. Kami juga menerima pesanan untuk pembuatan plang merk, neon box, [huruf timbul](http://www.sriwijayagrafika.com/2017/07/huruf-timbul-palembang-murah-berkualitas.html), serta produk advertising lainnya.  
+Dengan memakai map berlogo perusahaan untuk keperluan kerja tentu saja akan membuat perusahaan Anda terlihat lebih profesional. Selain cetak map kami juga menerima pesanan untuk cetak kop surat, amplop, buku nota, surat jalan, tanda terima, dan lain sebagainya. Kami juga menerima pesanan untuk pembuatan plang merk, neon box, [huruf timbul](https://sriwijayagrafika.com/2017/07/huruf-timbul-palembang-murah-berkualitas.html), serta produk advertising lainnya.  
   
 Untuk informasi lebih lanjut silahkan menghubungi percetakan _Sriwijaya grafika palembang._  
   

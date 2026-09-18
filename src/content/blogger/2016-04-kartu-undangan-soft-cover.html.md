@@ -8,7 +8,7 @@ metaDescription: ""
 
 Kartu undangan pernikahan soft cover hingga kini masih sangat diminati dan banyak dipakai. Bentuk yang beragam, harga yang lebih murah dan waktu pengerjaan yang lebih cepat merupakan beberapa  alasan yang membuat kartu undangan soft cover lebih diminati bila dibandingkan dengan kartu undangan hard cover ataupun semi hard cover.  
   
-Undangan soft cover dapat dibuat dari bahan blanko (undangan kosong) dan juga dari bahan kertas yang dijual per plano seperti kertas konstruk, jasmin, semboja dan lain sebagainya. Percetakan [sriwijaya grafika](http://www.sriwijayagrafika.com/) adalah salah satu percetakan dipalembang yang melayani jasa pembuatan kartu undangan pernikahan, khitanan, aqiqah, undangan perusahaan / kantor, dan kartu undangan untuk keperluan lainnya.   
+Undangan soft cover dapat dibuat dari bahan blanko (undangan kosong) dan juga dari bahan kertas yang dijual per plano seperti kertas konstruk, jasmin, semboja dan lain sebagainya. Percetakan [sriwijaya grafika](https://sriwijayagrafika.com/) adalah salah satu percetakan dipalembang yang melayani jasa pembuatan kartu undangan pernikahan, khitanan, aqiqah, undangan perusahaan / kantor, dan kartu undangan untuk keperluan lainnya.   
   
 
 

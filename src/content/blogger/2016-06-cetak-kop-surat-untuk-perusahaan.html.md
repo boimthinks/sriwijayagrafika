@@ -18,7 +18,7 @@ Sriwijaya grafika juga melayani jasa pembuatan produk seperti neon box, huruf ti
   
 _Jangan ragu untuk menghubungi kami...!!_  
   
-[**Percetakan sriwijaya grafika palembang**.](http://sriwijayagrafika.com/)  
+[**Percetakan sriwijaya grafika palembang**.](https://sriwijayagrafika.com/)  
 Jl. Pertanian No.105 Rt. 29 Rw.05 kel. Talang Jambe, Kec. Sukarami Palembang.  
 Tlp :  (0711) 561-4793 (Telkom)  
 Hp/WA : 0851 00888748 (As/Telkomsel)  

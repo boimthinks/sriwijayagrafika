@@ -16,7 +16,7 @@ Angka yang terdapat pada HSE performance board terbuat dari bahan akrilik yang d
 [![Sign board HSE Performance ](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKrHBNQjiVFp70lVl2tn9lxgoeqzQfQ_Z1E6YaUGC-rYLkY2cgYkxe-VC5a8mpErjreA_qmMuq0dW_P_bZO3vEu24W8r-G95p2ala4pU3vf31rVeaLSQhl3yfIm7H0eyLxQxm8Z9CwKac2/s320/Graphic1.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKrHBNQjiVFp70lVl2tn9lxgoeqzQfQ_Z1E6YaUGC-rYLkY2cgYkxe-VC5a8mpErjreA_qmMuq0dW_P_bZO3vEu24W8r-G95p2ala4pU3vf31rVeaLSQhl3yfIm7H0eyLxQxm8Z9CwKac2/s1600/Graphic1.jpg)
 
   
-Kami merupakan salah satu [percetakan dipalembang](http://www.sriwijayagrafika.com/) yang menerima pesanan HSE Performance Board dan produk lainnya seperti rambu-rambu lalu lintas, rambu keselamatan dan lain-lain.  
+Kami merupakan salah satu [percetakan dipalembang](https://sriwijayagrafika.com/) yang menerima pesanan HSE Performance Board dan produk lainnya seperti rambu-rambu lalu lintas, rambu keselamatan dan lain-lain.  
   
 **Percetakan sriwijaya grafika palembang.**  
 Jl. Pertanian No.105 Rt. 29 Rw.05 kel. Talang Jambe, Kec. Sukarami Palembang.  

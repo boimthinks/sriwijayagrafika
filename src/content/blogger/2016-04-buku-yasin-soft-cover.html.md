@@ -6,7 +6,7 @@ slug: "2016-04-buku-yasin-soft-cover.html"
 metaDescription: ""
 ---
 
-Bila Anda membutuhkan jasa percetakan untuk membuat buku yasin jangan ragu untuk menghubungi kami. _Sriwijaya grafika_ melayani jasa cetak [yasin hard cover](http://www.sriwijayagrafika.com/2016/03/cetak-buku-yasin-palembang.html) dan soft cover.  Dibawah ini merupakan dokumentasi terkait dengan pembuatan buku yasin soft cover.  
+Bila Anda membutuhkan jasa percetakan untuk membuat buku yasin jangan ragu untuk menghubungi kami. _Sriwijaya grafika_ melayani jasa cetak [yasin hard cover](https://sriwijayagrafika.com/2016/03/cetak-buku-yasin-palembang.html) dan soft cover.  Dibawah ini merupakan dokumentasi terkait dengan pembuatan buku yasin soft cover.  
   
 
 

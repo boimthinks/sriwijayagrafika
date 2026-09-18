@@ -6,7 +6,7 @@ slug: "2017-08-terima-pesanan-neon-box-palembang-dan.html"
 metaDescription: ""
 ---
 
-Kami melayanai pesanan neon box sekaligus pemasangannya untuk wilayah kota palembang dan sekitarnya. Saat ini sriwijaya grafika telah banyak melayani pelanggan yang berasal dari luar palembang yang diantaranya berasal dari daerah prabumulih, muara enim, indralaya (ogan ilir), kayu agung, lahat, linggau, baturaja, sekayu, betung, pangkalan balai, dan masih banyak pelanggan kami yang berada didaerah lainnya. Selain melayani [jasa pembuatan neon box](http://www.sriwijayagrafika.com/) kami juga menerima pesanan huruf timbul, rambu rambu, papan nama toko dan berbagai produk advertising lainnya.  
+Kami melayanai pesanan neon box sekaligus pemasangannya untuk wilayah kota palembang dan sekitarnya. Saat ini sriwijaya grafika telah banyak melayani pelanggan yang berasal dari luar palembang yang diantaranya berasal dari daerah prabumulih, muara enim, indralaya (ogan ilir), kayu agung, lahat, linggau, baturaja, sekayu, betung, pangkalan balai, dan masih banyak pelanggan kami yang berada didaerah lainnya. Selain melayani [jasa pembuatan neon box](https://sriwijayagrafika.com/) kami juga menerima pesanan huruf timbul, rambu rambu, papan nama toko dan berbagai produk advertising lainnya.  
   
 
 
@@ -16,7 +16,7 @@ Kami melayanai pesanan neon box sekaligus pemasangannya untuk wilayah kota palem
 _Kami siap melayani anda.._  
 Tak perlu ragu,  Anda dapat menghubungi kami lewat telepon, sms, whatsapp, email dan facebook sriwijaya grafika.  
   
-Selain melayani pembuatan reklame kami juga menerima pesanan produk percetakan seperti cetak kalender, buku, [cetak nota](http://www.sriwijayagrafika.com/2017/08/cetak-nota-kwitansi-formulir-dll.html), yasin, kwitansi, formulir, brosur, kotak nasi / kotak makanan ringan, kardus kemasan dan makanan seperti kardus pempek, dan sebagainya. Kami menjamin kualitas dan ketepatan waktu dalam mengerjakan pesanan yang anda percayakan kepada kami.  
+Selain melayani pembuatan reklame kami juga menerima pesanan produk percetakan seperti cetak kalender, buku, [cetak nota](https://sriwijayagrafika.com/2017/08/cetak-nota-kwitansi-formulir-dll.html), yasin, kwitansi, formulir, brosur, kotak nasi / kotak makanan ringan, kardus kemasan dan makanan seperti kardus pempek, dan sebagainya. Kami menjamin kualitas dan ketepatan waktu dalam mengerjakan pesanan yang anda percayakan kepada kami.  
 
 
 ##  Kontak dan Alamat :

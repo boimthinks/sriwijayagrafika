@@ -8,7 +8,7 @@ metaDescription: "Percetakan palembang, cetak nota murah di palembang. Sriwijaya
 
 Cetak nota Palembang \- sriwijaya grafika | **Nota** penjualan digunakan oleh hampir semua perusahaan perdagangan ataupun jasa. Nota dapat dijadikan sebagai bukti transaksi yang sah yang biasanya didapatkan saat melakukan transaksi pembelian. Nota juga sangat berfungsi sebagai alat perekam data yang dapat digunakan sebagai dasar untuk melakukan pekerjaan administrasi misalnya saat membuat laporan transaksi suatu perusahaan.  
   
-Banyak sekali fungsi nota lainnya yang tentu saja berguna bagi perusahaan. Nota umumnya terbuat dari bahan kertas dengan rangkap copy atau salinan dimana jumlah lembar rangkapnya dapat di sesuaikan dengan kebutuhan.  _(Baca artikel kami sebelumnya) :_[cetak nota palembang](http://www.sriwijayagrafika.com/2017/08/cetak-nota-kwitansi-formulir-dll.html) __  
+Banyak sekali fungsi nota lainnya yang tentu saja berguna bagi perusahaan. Nota umumnya terbuat dari bahan kertas dengan rangkap copy atau salinan dimana jumlah lembar rangkapnya dapat di sesuaikan dengan kebutuhan.  _(Baca artikel kami sebelumnya) :_[cetak nota palembang](https://sriwijayagrafika.com/2017/08/cetak-nota-kwitansi-formulir-dll.html) __  
   
 
 
@@ -17,7 +17,7 @@ Banyak sekali fungsi nota lainnya yang tentu saja berguna bagi perusahaan. Nota 
   
 Saat ini nota yang banyak dipakai oleh perusahaan biasanya terbuat dari bahan kertas NCR (Non Carbon Required). salah satu alasan kertas NCR lebih disukai karena kepraktisannya saat digunakan, dimana kertas NCR secara otomatis dapat menyalin tulisan yang dibuat pada lembar bagian atas atau lembar pertama ke bagian lembar berikutnya yang membuat kita tidak perlu menuliskan berulang-ulang sehingga akan sangat menghemat waktu. Kertas NCR tidak memerlukan kertas karbon lagi saat digunakan, karena di bahan kertas NCR sudah terdapat suatu bahan khusus yang berfungsi sebagai pengganti kertas karbon.  
   
-Nota dicetak dalam bentuk lembaran-lembaran yang kemudian di jilid menjadi bentuk buku. Hampir disetiap [percetakan palembang](http://www.sriwijayagrafika.com/) menerima pesanan pembuatan nota. Kertas nota tersedia dengan bermacam warna. Contoh warna kertas nota yang banyak digunakan adalah putih, merah/pink, kuning, hijau dan biru. Nota penjualan dapat dipesan dengan berbagai ukuran sesuai kebutuhan Anda.  
+Nota dicetak dalam bentuk lembaran-lembaran yang kemudian di jilid menjadi bentuk buku. Hampir disetiap [percetakan palembang](https://sriwijayagrafika.com/) menerima pesanan pembuatan nota. Kertas nota tersedia dengan bermacam warna. Contoh warna kertas nota yang banyak digunakan adalah putih, merah/pink, kuning, hijau dan biru. Nota penjualan dapat dipesan dengan berbagai ukuran sesuai kebutuhan Anda.  
   
 Sriwijaya grafika adalah salah satu percetakan di palembang yang menerima pesanan nota penjualan. Selain nota, sriwijaya grafika juga menerima pesanan pembuatan kebutuhan kantor lainnya yang berhubungan dengan bisnis percetakan, adapun diantaranya adalah cetak kwitansi, cetak kop surat, surat jalan, tanda terima barang, dan lain sebagainya.  
 

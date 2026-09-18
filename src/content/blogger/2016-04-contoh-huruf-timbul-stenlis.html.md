@@ -8,7 +8,7 @@ metaDescription: ""
 
 Plat stenlis dapat dijadikan sebagai bahan baku untuk membuat merk timbul, memiliki kualitas yang sangat baik karena lebih tahan terhadap perubahan cuaca dan tidak mudah berkarat. Bahan stenlis dapat dibentuk menjadi logo ataupun huruf timbul yang dapat digunakan untuk didalam ruangan maupun diluar ruangan.  
   
-Berikut ini merupakan foto contoh [huruf timbul stenlis](http://www.sriwijayagrafika.com/2016/03/huruf-timbul-bahan-akrilik-stenlis.html) yang dibuat oleh percetakan sriwijaya grafika palembang.  
+Berikut ini merupakan foto contoh [huruf timbul stenlis](https://sriwijayagrafika.com/2016/03/huruf-timbul-bahan-akrilik-stenlis.html) yang dibuat oleh percetakan sriwijaya grafika palembang.  
   
 
 

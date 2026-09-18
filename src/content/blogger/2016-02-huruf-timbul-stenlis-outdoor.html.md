@@ -8,7 +8,7 @@ metaDescription: ""
 
 Huruf timbul stenlis outdoor , lokasi pemasangan di gerbang sekolah islam terpadu SMPIT-SMAIT Alfurqon Jl. HBR. Motik Km 8 Palembang.  
   
-Untuk informasi mengenai pembuatan huruf timbul bahan stenlis, akrilik dan bahan lainnya silahkan hubungi kami, atau klik disini : [huruf timbul palembang](http://www.sriwijayagrafika.com/2016/03/huruf-timbul-bahan-akrilik-stenlis.html)  
+Untuk informasi mengenai pembuatan huruf timbul bahan stenlis, akrilik dan bahan lainnya silahkan hubungi kami, atau klik disini : [huruf timbul palembang](https://sriwijayagrafika.com/2016/03/huruf-timbul-bahan-akrilik-stenlis.html)  
   
 Dokumentasi:  
 

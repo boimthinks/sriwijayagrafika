@@ -6,7 +6,7 @@ slug: "2016-04-cetak-buku-percetakan-di-palembang.html"
 metaDescription: ""
 ---
 
-Sriwijaya Grafika - [Percetakan palembang](http://www.sriwijayagrafika.com/2016/01/percetakan-sriwijaya-grafika-palembang.html).  
+Sriwijaya Grafika - [Percetakan palembang](https://sriwijayagrafika.com/2016/01/percetakan-sriwijaya-grafika-palembang.html).  
 Kami melayani jasa pembuatan buku untuk berbagai keperluan, misalnya buku panduan, buku penghubung siswa, buku saku, dan lain-lain. Harga buku yang dipesan ditentukan berdasarkan jumlah pesanan, ukuran buku, jumlah halaman, bahan kertas yang dipakai dan lain-lain.  
   
 

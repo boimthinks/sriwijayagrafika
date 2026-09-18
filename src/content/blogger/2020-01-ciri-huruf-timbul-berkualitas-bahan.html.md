@@ -10,7 +10,7 @@ Jenis reklame _huruf timbul_ saat ini telah banyak digunakan oleh perusahaan-per
   
 Logo perusahaan yang unik dan menarik adalah logo yang mudah di ingat orang sehingga ini menjadi daya tarik tersendiri. Banyak perusahaan-perusahaan besar memiliki logo perusahaan yang sangat simpel namun elegan. Pada umumnya logo-logo milik perusahaan besar di desain supaya tetap bisa terlihat baik waktu diaplikasikan menjadi sebuah papan merk atau _reklame_ dengan menggunakan bahan dan jenis apa saja.  
   
-Salah satu jenis reklame yang biasanya banyak dipakai perusahaan besar diantaranya adalah [huruf timbul](http://www.sriwijayagrafika.com/2017/07/huruf-timbul-palembang-murah-berkualitas.html). Pada umumya logo perusahaan yang telah di desain secara serius akan terlihat sangat bagus waktu diaplikasikan menjadi huruf timbul. Sriwijaya grafika merupakan salah satu advertising dipalembang yang telah banyak membuat huruf timbul berbagai jenis yang dipesan oleh berbagai perusahaan. Pada postingan artikel kali ini sriwijaya grafika mencoba berbagi sedikit info tentang bahan baku huruf timbul dan ciri-ciri huruf timbul yang berkualitas baik.   
+Salah satu jenis reklame yang biasanya banyak dipakai perusahaan besar diantaranya adalah [huruf timbul](https://sriwijayagrafika.com/2017/07/huruf-timbul-palembang-murah-berkualitas.html). Pada umumya logo perusahaan yang telah di desain secara serius akan terlihat sangat bagus waktu diaplikasikan menjadi huruf timbul. Sriwijaya grafika merupakan salah satu advertising dipalembang yang telah banyak membuat huruf timbul berbagai jenis yang dipesan oleh berbagai perusahaan. Pada postingan artikel kali ini sriwijaya grafika mencoba berbagi sedikit info tentang bahan baku huruf timbul dan ciri-ciri huruf timbul yang berkualitas baik.   
 
 
   
@@ -21,7 +21,7 @@ Salah satu jenis reklame yang biasanya banyak dipakai perusahaan besar diantaran
   
 
 
-Dalam artikel ini mungkin hanya sedikit informasi yang diberikan, namun sedapat mungkin kami akan berusaha untuk konsisten berbagi informasi terkait huruf timbul ataupun informasi lain terkait jenis reklame lainnya. Silahkan klik disini " [sriwijaya grafika](http://www.sriwijayagrafika.com/) " untuk melihat postingan berbagai artikel lainnya terkait produk advertising dan percetakan yang telah kami buat sebelumnya. 
+Dalam artikel ini mungkin hanya sedikit informasi yang diberikan, namun sedapat mungkin kami akan berusaha untuk konsisten berbagi informasi terkait huruf timbul ataupun informasi lain terkait jenis reklame lainnya. Silahkan klik disini " [sriwijaya grafika](https://sriwijayagrafika.com/) " untuk melihat postingan berbagai artikel lainnya terkait produk advertising dan percetakan yang telah kami buat sebelumnya. 
 
 ###  Jenis-jenis bahan baku huruf timbul
 

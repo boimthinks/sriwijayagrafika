@@ -6,7 +6,7 @@ slug: "2016-01-stiker-murah-di-palembang-print-dan.html"
 metaDescription: ""
 ---
 
-Sriwijaya grafika merupakan salah satu [**percetakan di palembang**](http://www.sriwijayagrafika.com/2016/01/percetakan-sriwijaya-grafika-palembang.html) yang melayani jasa pembuatan stiker.  
+Sriwijaya grafika merupakan salah satu [**percetakan di palembang**](https://sriwijayagrafika.com/2016/01/percetakan-sriwijaya-grafika-palembang.html) yang melayani jasa pembuatan stiker.  
 Bila dilihat dari proses pembuatannya ada tiga macam jenis produk stiker yang kami tawarkan, yaitu stiker printing, stiker print + cutting, dan stiker cutting.  
 
 
@@ -26,7 +26,7 @@ Bila dilihat dari proses pembuatannya ada tiga macam jenis produk stiker yang ka
 
 [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBOOSVgdybGGEz_Pk4ESaKmwbZPNEyp6xCPLXCFuc93N7HCY7zwXLd0dxhxQiKjPa5blnxbbgpyu0-ZTgbryZuwEwO4J5-TESHgPvnfp9PzS4eMZoK27-efy-5kil3nySVw3QMVQNrA-56/s320/IMG_20140429_114042_1.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBOOSVgdybGGEz_Pk4ESaKmwbZPNEyp6xCPLXCFuc93N7HCY7zwXLd0dxhxQiKjPa5blnxbbgpyu0-ZTgbryZuwEwO4J5-TESHgPvnfp9PzS4eMZoK27-efy-5kil3nySVw3QMVQNrA-56/s1600/IMG_20140429_114042_1.jpg)
 
-Untuk pemesanan stiker dapat menghubungi percetakan [_sriwijaya grafika_](http://www.sriwijayagrafika.com/) melalui nomor telepon yang tercantum.   
+Untuk pemesanan stiker dapat menghubungi percetakan [_sriwijaya grafika_](https://sriwijayagrafika.com/) melalui nomor telepon yang tercantum.   
 
 
 

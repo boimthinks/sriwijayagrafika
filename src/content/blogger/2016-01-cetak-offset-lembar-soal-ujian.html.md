@@ -12,7 +12,7 @@ Percetakan sriwijaya grafika palembang melayani pesanan untuk mencetak lembar so
 [![cetak lembar soal ujian siswa](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7n9Y9CV4ZB71oOeK2BxgfXcYT8fr7AD_KNozdj7-LGVN6XwXNIeMJ4obziPjSncnMRM9juUrHBcgkFFXLeM7zEn1_NrzMk8p3PlAPapd3L5jPmIeGbYzT4rO2Tmsw4cQ7TAUj76pCHlcU/s320/soal+ujian.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7n9Y9CV4ZB71oOeK2BxgfXcYT8fr7AD_KNozdj7-LGVN6XwXNIeMJ4obziPjSncnMRM9juUrHBcgkFFXLeM7zEn1_NrzMk8p3PlAPapd3L5jPmIeGbYzT4rO2Tmsw4cQ7TAUj76pCHlcU/s1600/soal+ujian.jpg)
 
   
-Selain lembar soal ujian, [_sriwijaya grafika_](http://www.sriwijayagrafika.com/) juga menerima pesanan untuk pembuatan berbagai keperluan lainnya yang digunakan untuk sekolah ataupun universitas, misalnya buku raport, tanda bukti pembayaran iuran sekolah, map, dan lain-lain.  
+Selain lembar soal ujian, [_sriwijaya grafika_](https://sriwijayagrafika.com/) juga menerima pesanan untuk pembuatan berbagai keperluan lainnya yang digunakan untuk sekolah ataupun universitas, misalnya buku raport, tanda bukti pembayaran iuran sekolah, map, dan lain-lain.  
   
 
 

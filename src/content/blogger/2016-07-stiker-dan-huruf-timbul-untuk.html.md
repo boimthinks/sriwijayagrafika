@@ -13,7 +13,7 @@ Setelah selesai dibuat, untuk rak counter atau toko biasanya masih perlu diberik
 [![Huruf timbul gedung mall](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbsaANjBDvEjRvG37ezcpCRFSOCiQdI9wQxWlDOJIbKZn9WcrDvZFAa0grc4ROfhfIcRZWTYNKoDctPd-_seTRF0gu6hbwKT1YyakySXS6i67Ic7ynjTVHmp-_LF5fgARoF1sMF7yGQvqd/s320/IMG_20150309_133223.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbsaANjBDvEjRvG37ezcpCRFSOCiQdI9wQxWlDOJIbKZn9WcrDvZFAa0grc4ROfhfIcRZWTYNKoDctPd-_seTRF0gu6hbwKT1YyakySXS6i67Ic7ynjTVHmp-_LF5fgARoF1sMF7yGQvqd/s1600/IMG_20150309_133223.jpg)
 
   
-Huruf timbul bahan akrilik yang memakai lampu LED banyak dipakai oleh pemilik toko atau penyewa gedung mall, karena selain dapat memperindah penampilan toko juga terkadang merupakan suatu standar penampilan toko yang ditentukan oleh pihak pengelolah gedung mall. Untuk melihat contoh silahkan klik disini: [Huruf timbul palembang](http://www.sriwijayagrafika.com/2016/03/huruf-timbul-bahan-akrilik-stenlis.html)  
+Huruf timbul bahan akrilik yang memakai lampu LED banyak dipakai oleh pemilik toko atau penyewa gedung mall, karena selain dapat memperindah penampilan toko juga terkadang merupakan suatu standar penampilan toko yang ditentukan oleh pihak pengelolah gedung mall. Untuk melihat contoh silahkan klik disini: [Huruf timbul palembang](https://sriwijayagrafika.com/2016/03/huruf-timbul-bahan-akrilik-stenlis.html)  
   
 
 
@@ -22,7 +22,7 @@ Huruf timbul bahan akrilik yang memakai lampu LED banyak dipakai oleh pemilik to
   
 Bila Anda sedang membutuhkan jasa pembuatan huruf timbul dan stiker untuk toko Anda silahkan hubungi kami.  
   
-Untuk mendapatkan informasi terkait dengan produk neon box silahkan baca disini : [neon box palembang](http://www.sriwijayagrafika.com/2016/09/neon-box-palembang-tempat-pembuatan.html)  
+Untuk mendapatkan informasi terkait dengan produk neon box silahkan baca disini : [neon box palembang](https://sriwijayagrafika.com/2016/09/neon-box-palembang-tempat-pembuatan.html)  
   
 **Percetakan sriwijaya grafika palembang**.  
 Jl. Pertanian No.105 Rt. 29 Rw.05 kel. Talang Jambe, Kec. Sukarami Palembang.  

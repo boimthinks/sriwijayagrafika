@@ -13,7 +13,7 @@ Berikut ini contoh papan merk yang bisa digeser atau dipindahkan. Papan merk yan
 [![Papan merk atau plang merk yang bisa dipindahkan atau digeser](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJa6kSnx81bj9gd15JvOqImQJ_rY3QgHfUma5VO-5d-7yjBy8SU2Bpgb9CLbQ2g8ToD9QqPziLdvoKcwLVusuNNG53M8TViinVsl4hkHIJe5krY-fWKt_H6n7wLmKPTgPqMC5HKcYO49p0/s320/IMG_1646.JPG)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJa6kSnx81bj9gd15JvOqImQJ_rY3QgHfUma5VO-5d-7yjBy8SU2Bpgb9CLbQ2g8ToD9QqPziLdvoKcwLVusuNNG53M8TViinVsl4hkHIJe5krY-fWKt_H6n7wLmKPTgPqMC5HKcYO49p0/s1600/IMG_1646.JPG)
 
   
-Selain menerima pesanan papan merk yang berkualitas kami juga melayani pembuatan produk advertising lainnya seperti neon box, [huruf timbul](http://www.sriwijayagrafika.com/2016/03/huruf-timbul-bahan-akrilik-stenlis.html), rambu-rambu dan lain-lain.  
+Selain menerima pesanan papan merk yang berkualitas kami juga melayani pembuatan produk advertising lainnya seperti neon box, [huruf timbul](https://sriwijayagrafika.com/2016/03/huruf-timbul-bahan-akrilik-stenlis.html), rambu-rambu dan lain-lain.  
   
 Untuk informasi lebih lanjut silahkan hubungi kami :  
 _Percetakan sriwijaya grafika palembang.  

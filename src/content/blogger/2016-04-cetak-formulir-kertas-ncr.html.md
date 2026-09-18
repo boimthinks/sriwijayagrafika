@@ -6,7 +6,7 @@ slug: "2016-04-cetak-formulir-kertas-ncr.html"
 metaDescription: ""
 ---
 
-[Percetakan palembang](http://www.sriwijayagrafika.com/2016/01/percetakan-sriwijaya-grafika-palembang.html) \- Ada beberapa jenis kertas yang biasa dipakai untuk pembuatan formulir. Salah satunya yang paling banyak dipakai adalah jenis kertas NCR. Selain digunakan sebagai bahan pembuatan formulir, kertas NCR juga banyak dipakai untuk membuat buku nota, faktur, dan sebagainya.  
+[Percetakan palembang](https://sriwijayagrafika.com/2016/01/percetakan-sriwijaya-grafika-palembang.html) \- Ada beberapa jenis kertas yang biasa dipakai untuk pembuatan formulir. Salah satunya yang paling banyak dipakai adalah jenis kertas NCR. Selain digunakan sebagai bahan pembuatan formulir, kertas NCR juga banyak dipakai untuk membuat buku nota, faktur, dan sebagainya.  
   
 NCR adalah singkatan dari _Non Carbon Required Paper_ atau dapat diartikan sebagai kertas yang tidak memerlukan carbon. Kertas NCR umumnya digunakan untuk membuat produk percetakan seperti formulir yang memerlukan lembar salinan/copy. Dengan memakai jenis kertas ini tentu saja akan membuat proses _copy_ lebih praktis daripada mengunakan kertas carbon, karena kertas NCR memang dirancang untuk menjadikan tulisan yang kita buat diatas kertas dapat langsung tersalin dari lembar pertama ke lembar berikutnya.  
   

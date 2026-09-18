@@ -8,7 +8,7 @@ metaDescription: ""
 
 Sriwijaya grafika adalah salah satu home industri di kota palembang yang bergerak dibidang percetakan dan jasa pembuatan produk advertising. Kami menerima semua jenis pesanan produk yang berkaitan dengan usaha yang sedang kami jalani saat ini.  
   
-Informasi mengenai sriwijaya grafika silahkan baca disini : [Percetakan palembang ](http://www.sriwijayagrafika.com/2016/01/percetakan-sriwijaya-grafika-palembang.html)  
+Informasi mengenai sriwijaya grafika silahkan baca disini : [Percetakan palembang ](https://sriwijayagrafika.com/2016/01/percetakan-sriwijaya-grafika-palembang.html)  
   
 
 

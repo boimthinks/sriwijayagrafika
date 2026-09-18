@@ -8,7 +8,7 @@ metaDescription: ""
 
 **Huruf timbul** yang terbuat dari bahan akrilik atau acrylic banyak diminati karena berkesan mewah dan terdapat banyak pilihan warna. Selain dapat menggunakan bahan akrilik yang memiliki warna asli dari pabriknya kita juga dapat membuat huruf timbul dengan warna sendiri yang kita sukai, caranya yaitu dengan mewarnai bahan akrilik menggunakan stiker ataupun cat duco.  
   
-Baca info lainnya _(Klik)_ : [Pembuat huruf timbul dipalembang](http://www.sriwijayagrafika.com/2016/03/huruf-timbul-bahan-akrilik-stenlis.html). Sriwijaya grafika merupakan pabrik huruf timbul di kota palembang yang telah memiliki pengalaman dalam pembuatan semua jenis huruf timbul. Bahan huruf yang di produksi terbuat dari akrilik, plat besi dan plat stenlis, untuk huruf timbul yang menggunakan bahan lainnya silahkan hubungi kami.  
+Baca info lainnya _(Klik)_ : [Pembuat huruf timbul dipalembang](https://sriwijayagrafika.com/2016/03/huruf-timbul-bahan-akrilik-stenlis.html). Sriwijaya grafika merupakan pabrik huruf timbul di kota palembang yang telah memiliki pengalaman dalam pembuatan semua jenis huruf timbul. Bahan huruf yang di produksi terbuat dari akrilik, plat besi dan plat stenlis, untuk huruf timbul yang menggunakan bahan lainnya silahkan hubungi kami.  
   
 
 

@@ -9,7 +9,7 @@ metaDescription: ""
 Huruf timbul stenlis yang dipasangkan dengan lampu LED dibagian belakangnya memang lebih terlihat bagus dan elegan bila dibandingkan dengan huruf timbul stenlis yang tidak memakai lampu. Tampak seperti yang ada didalam foto dibawah ini, saat lampu dinyalakan huruf timbulnya terlihat lebih menawan ^_^  
   
 Klik disini untuk melihat foto huruf timbul lainnya :    
-[Huruf timbul palembang](http://www.sriwijayagrafika.com/2016/03/huruf-timbul-bahan-akrilik-stenlis.html)  
+[Huruf timbul palembang](https://sriwijayagrafika.com/2016/03/huruf-timbul-bahan-akrilik-stenlis.html)  
   
 
 

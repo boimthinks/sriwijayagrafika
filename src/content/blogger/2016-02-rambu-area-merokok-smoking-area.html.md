@@ -11,7 +11,7 @@ Rambu area merokok atau smoking area dibuat memakai plat alumunium, plat besi, a
 ---  
 Rambu area merokok|   
   
-Contoh rambu area merokok pada foto diatas dibuat menggunakan bahan aklirik warna putih, untuk bagian yang berwarna hijau dibuat menggunakan stiker yang dibentuk menggunakan mesin cutting stiker. Untuk informasi lainnya mengenai safety sign silahkan klik disini : [safety sign palembang](http://www.sriwijayagrafika.com/2016/01/jasa-pembuatan-safety-sign-atau-rambu.html)  
+Contoh rambu area merokok pada foto diatas dibuat menggunakan bahan aklirik warna putih, untuk bagian yang berwarna hijau dibuat menggunakan stiker yang dibentuk menggunakan mesin cutting stiker. Untuk informasi lainnya mengenai safety sign silahkan klik disini : [safety sign palembang](https://sriwijayagrafika.com/2016/01/jasa-pembuatan-safety-sign-atau-rambu.html)  
   
 Bila Anda ingin memesan rambu area merokok atau safety sign lainnya silahkan hubungi sriwijaya grafika palembang. Ukuran panjang dan lebar rambu dapat disesuaikan dengan kebutuhan Anda. Untuk informasi mengenai harga produk dapat kami berikan setelah mengetahui ukuran dan spesifikasi barang yang akan dipesan.  
   
