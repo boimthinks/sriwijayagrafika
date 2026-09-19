@@ -34,7 +34,7 @@ collections:
     fields:
       - { name: title, label: "Judul (maks 5 kata)", widget: string, required: true }
       - { name: titleSeo, label: "Title SEO (maks 12 kata)", widget: string }
-      - { name: excerpt, label: "Excerpt (20-300 karakter)", widget: text, required: true, minlength: 20, maxlength: 300 }
+      - { name: excerpt, label: "Excerpt (Ringkasan)", widget: text, required: true }
       - name: date
         label: "Tanggal Terbit"
         widget: datetime
@@ -44,8 +44,8 @@ collections:
         required: true
       - { name: topik, label: "Topik", widget: select, options: [tips, studi-kasus, panduan, kabar], required: true }
       - { name: imgurl, label: "Gambar Utama", widget: image, required: true, hint: "Upload ke folder img/blog, mis. blog-nama-artikel.webp" }
-      - { name: pengantar, label: "Pengantar (50-500 karakter)", widget: text, required: true, minlength: 50, maxlength: 500 }
-      - { name: kesimpulan, label: "Kesimpulan (50-500 karakter)", widget: text, required: true, minlength: 50, maxlength: 500 }
+      - { name: pengantar, label: "Pengantar", widget: text, required: true }
+      - { name: kesimpulan, label: "Kesimpulan", widget: text, required: true }
       - name: faq
         label: "FAQ"
         widget: list

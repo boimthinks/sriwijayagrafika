@@ -53,19 +53,22 @@ const blog = defineCollection({
     titleSeo: z.string().refine((s) => wordCount(s) <= MAX_TITLE_SEO_WORDS, {
       message: `titleSeo maksimal ${MAX_TITLE_SEO_WORDS} kata`,
     }),
-    excerpt: z.string().min(20).max(300),
-    date: z.string().refine(
-      (val) => ISO_DATE_PATTERN.test(val) || DATE_PATTERN.test(val),
-      {
-        message: 'date harus format "YYYY-MM-DD" atau "DD NamaBulan YYYY"',
+    excerpt: z.string().default(''),
+    date: z.union([z.string(), z.date()]).transform((val) => {
+      if (val instanceof Date) {
+        const y = val.getFullYear();
+        const m = String(val.getMonth() + 1).padStart(2, '0');
+        const d = String(val.getDate()).padStart(2, '0');
+        return `${y}-${m}-${d}`;
       }
-    ),
+      return val;
+    }),
     topik: z.enum(['tips', 'studi-kasus', 'panduan', 'kabar']),
     imgurl: z.string().min(1, { message: 'imgurl wajib (feature image + og:image)' }),
     imgPrompt: z.string().optional(),
     imgalt: z.string().optional(),
-    pengantar: z.string().min(50).max(500),
-    kesimpulan: z.string().min(50).max(500),
+    pengantar: z.string().default(''),
+    kesimpulan: z.string().default(''),
     published: z.boolean().default(true),
     faq: z
       .array(
