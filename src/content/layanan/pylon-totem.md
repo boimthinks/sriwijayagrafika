@@ -37,8 +37,8 @@ faqs:
     answer: "Ya, kami melayani proyek pylon sign di seluruh Sumatera Selatan seperti Baturaja, Prabumulih, Muara Enim, Lahat, dan Lubuklinggau. Survei lokasi wajib dilakukan untuk memastikan keamanan struktur."
 hasCalculator: false
 order: 3
+published: true
 ---
-
 ## Solusi Pylon Sign & Totem Profesional
 
 Pylon sign atau totem adalah papan nama vertikal besar yang berdiri sendiri (free-standing) di area luar. Media ini adalah solusi terbaik untuk menandai gerbang masuk utama, area parkir, atau tepi jalan bagi bisnis berskala menengah ke atas. Pylon sign memastikan brand Anda tetap terlihat dominan dari jarak ratusan meter, siang maupun malam.

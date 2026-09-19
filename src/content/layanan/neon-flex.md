@@ -36,8 +36,8 @@ faqs:
     answer: "Ya, kami melayani pemesanan dan pengiriman aman dengan packing kayu ke seluruh Sumatera Selatan, seperti Prabumulih, Lahat, Baturaja, dan Lubuklinggau."
 hasCalculator: false
 order: 7
+published: true
 ---
-
 ## Neon Flex Custom untuk Dekorasi Kekinian
 
 Neon Flex adalah alternatif modern terbaik pengganti lampu neon kaca tradisional. Menggunakan pita silikon fleksibel berisikan modul LED hemat daya, neon flex bisa dibengkokkan secara presisi mengikuti kontur tulisan tangan, logo tempat usaha, hingga ornamen unik.

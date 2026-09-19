@@ -40,8 +40,8 @@ faqs:
 hasCalculator: true
 calculatorType: "neon_box"
 order: 2
+published: true
 ---
-
 ## Tempat Pembuatan Neon Box Terpercaya di Palembang
 
 Sedang mencari **tempat pembuatan neon box di Palembang** yang berkualitas, tahan cuaca, dan harganya masuk akal? **Sriwijaya Grafika** hadir sebagai mitra tempat pembuatan reklame dan signage terpercaya di Sumatera Selatan sejak 2008.

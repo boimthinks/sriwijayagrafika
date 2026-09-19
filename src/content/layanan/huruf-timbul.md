@@ -56,8 +56,8 @@ faqs:
 hasCalculator: true
 calculatorType: "huruf_timbul"
 order: 1
+published: true
 ---
-
 ## Pentingnya Huruf Timbul untuk Branding
 
 Huruf timbul (3D letter) adalah media periklanan tiga dimensi yang menonjol keluar dari permukaan fasad, lobby, atau dinding toko. Bentuknya yang menimbulkan kedalaman membuat kesan langsung lebih profesional dan eksklusif dibanding plang datar (flat letter). Itulah kenapa huruf timbul jadi pilihan utama untuk storefront premium, kantor, hotel, bank, restoran, dan instansi pemerintah.

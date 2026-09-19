@@ -34,8 +34,8 @@ faqs:
     answer: "Ya. Kami melayani pemasangan billboard di seluruh Sumatera Selatan, termasuk Prabumulih, Lubuklinggau, Baturaja, Muara Enim, hingga Lahat, dengan survei lokasi terlebih dahulu."
 hasCalculator: false
 order: 5
+published: true
 ---
-
 ## Solusi Billboard & Baliho Profesional
 
 Billboard adalah papan reklame raksasa luar ruang yang menjadi pilihan utama untuk kampanye *brand awareness* masif. Dengan ukuran mulai dari 4x8 meter hingga 10x20 meter, billboard memastikan pesan Anda dilihat oleh ribuan pengendara dan pejalan kaki setiap harinya.

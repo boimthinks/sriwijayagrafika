@@ -37,8 +37,8 @@ faqs:
     answer: "Ya, kami siap mengemas dan mengirimkan booth portable ke seluruh kabupaten/kota di Sumatera Selatan menggunakan layanan kurir/ekspedisi."
 hasCalculator: false
 order: 9
+published: true
 ---
-
 ## Solusi Booth & Event Desk Portable
 
 Event Desk atau Booth Portable adalah meja promosi jinjing yang dirancang khusus untuk kemudahan mobilitas pameran, bazaar, expo, dan aktivasi brand. Keunggulan utamanya adalah sistem perakitan *knock-down* yang sangat praktis: dapat dirakit dan dibongkar kurang dari 5 menit tanpa menggunakan alat bantu (tanpa obeng/kunci).

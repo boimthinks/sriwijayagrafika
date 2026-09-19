@@ -38,8 +38,8 @@ faqs:
 hasCalculator: true
 calculatorType: "huruf_timbul"
 order: 10
+published: true
 ---
-
 ## Huruf LED untuk Identitas Fasad Modern
 
 Huruf LED (channel letter) adalah huruf timbul dengan sistem pencahayaan terintegrasi di dalam badan huruf. Inilah pilihan paling populer untuk storefront brand modern karena tiga keunggulan utamanya: (1) visibilitas maksimal di malam hari, (2) umur pakai lampu panjang, dan (3) konsumsi listrik hemat.

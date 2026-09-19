@@ -36,8 +36,8 @@ faqs:
 hasCalculator: true
 calculatorType: "rambu"
 order: 4
+published: true
 ---
-
 ## Solusi Rambu K3 & Safety Sign Industri
 
 Rambu keselamatan kerja (K3) dan safety sign adalah elemen wajib dalam standar keselamatan kerja di area industri, pabrik, lokasi proyek konstruksi, dan gedung perkantoran. Penggunaan rambu yang jelas dan sesuai standar baku terbukti efektif mencegah risiko kecelakaan kerja serta memenuhi audit keselamatan (K3LH / Kemenaker).
