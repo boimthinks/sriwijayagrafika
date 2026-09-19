@@ -6,12 +6,7 @@ backend:
   name: github
   repo: boimthinks/sriwijayagrafika
   branch: main
-  # Untuk lokal (localhost:3000) — pakai site_url = dev server.
-  # Untuk produksi nanti ganti ke https://sriwijayagrafika.com.
-  site_url: http://localhost:3000
-  auth_type: pkce
-  auth_scope: repo
-  app_id: "Ov23likHwGLo4QiWJ1TG"
+  site_domain: sriwijayagrafika.com
 
 media_folder: "public/img"
 public_folder: "/img"
