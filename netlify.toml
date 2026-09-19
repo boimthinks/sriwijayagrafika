@@ -1,0 +1,8 @@
+# Konfigurasi Netlify — Sriwijaya Grafika
+# Otomatisasi deploy HANYA jika dipicu oleh Build Hook (tombol "Deploy ke Live" di CMS).
+# Commit Git push biasa (saat editor save artikel) akan di-ignore agar hemat kuota menit build.
+
+[build]
+  publish = "dist"
+  command = "npm run build"
+  ignore = "[ -z \"$INCOMING_HOOK_TITLE\" ] && exit 0 || exit 1"
