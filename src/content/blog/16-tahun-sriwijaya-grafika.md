@@ -1,13 +1,26 @@
 ---
-title: "16 Tahun Sriwijaya Grafika"
-titleSeo: "Sriwijaya Grafika Palembang: 16 Tahun Menjadi Mitra UMKM, Hotel, dan Korporat"
-excerpt: "16 tahun berkarya, ratusan proyek signage untuk UMKM, hotel, korporat, dan instansi. Kilas balik dan komitmen ke depan dari workshop Talang Jambe."
-date: "23 Februari 2026"
-topik: "kabar"
-imgurl: "/img/blog/16-tahun-sriwijaya-grafika.webp"
-imgalt: "Sriwijaya Grafika Palembang merayakan 16 tahun berkarya di industri signage dan advertising"
-pengantar: "Enam belas tahun bukan waktu yang singkat untuk bisnis apa pun, apalagi di industri signage yang penuh fluktuasi. Artikel ini bukan press release formal yang penuh jargon, tapi ungkapan terima kasih kami kepada semua klien, tim, dan partner yang sudah percaya selama 16 tahun. Kilas balik singkat, kondisi workshop hari ini, dan komitmen kami untuk 16 tahun ke depan."
-kesimpulan: "16 tahun adalah perjalanan panjang, dan kami tahu ini bukan akhir. Masih banyak UMKM, hotel, dan korporat di Palembang dan Sumatera Selatan yang butuh signage jujur, harga jelas, dan purna jual yang bisa diandalkan. Workshop kami di Talang Jambe tetap buka untuk diskusi, survey lokasi, dan konsultasi gratis. Hubungi WhatsApp 0852-1511-1125 untuk appointment. Terima kasih untuk 16 tahun kepercayaan Anda."
+title: 16 Tahun Sriwijaya Grafika
+titleSeo: Sriwijaya Grafika Palembang 16 Tahun Menjadi Mitra UMKM, Hotel, dan Korporat
+excerpt: 16 tahun berkarya, ratusan proyek signage untuk UMKM, hotel, korporat,
+  dan instansi. Kilas balik dan komitmen ke depan dari workshop Talang Jambe.
+date: 23 Februari 2026
+topik: kabar
+imgurl: /img/blog/16-tahun-sriwijaya-grafika.webp
+imgalt: Sriwijaya Grafika Palembang merayakan 16 tahun berkarya di industri
+  signage dan advertising
+imgPrompt: tes
+pengantar: Enam belas tahun bukan waktu yang singkat untuk bisnis apa pun,
+  apalagi di industri signage yang penuh fluktuasi. Artikel ini bukan press
+  release formal yang penuh jargon, tapi ungkapan terima kasih kami kepada semua
+  klien, tim, dan partner yang sudah percaya selama 16 tahun. Kilas balik
+  singkat, kondisi workshop hari ini, dan komitmen kami untuk 16 tahun ke depan.
+kesimpulan: 16 tahun adalah perjalanan panjang, dan kami tahu ini bukan akhir.
+  Masih banyak UMKM, hotel, dan korporat di Palembang dan Sumatera Selatan yang
+  butuh signage jujur, harga jelas, dan purna jual yang bisa diandalkan.
+  Workshop kami di Talang Jambe tetap buka untuk diskusi, survey lokasi, dan
+  konsultasi gratis. Hubungi WhatsApp 0852-1511-1125 untuk appointment. Terima
+  kasih untuk 16 tahun kepercayaan Anda.
+published: true
 ---
 
 ## Palembang, 16 Tahun Lalu
