@@ -2,7 +2,7 @@
 title: "PT Andalas Sakti"
 titleSeo: "Studi Kasus Signage Korporat PT Andalas Sakti, Huruf Timbul Akrilik Gedung Kantor"
 excerpt: "Studi kasus signage korporat PT Andalas Sakti Perkasa, huruf timbul akrilik untuk gedung kantor, dari brief sampai instalasi 14 hari."
-date: "19 Januari 2026"
+date: "2026-01-19"
 topik: "studi-kasus"
 imgurl: "/img/blog/signage-korporat-pt-andalas-sakti.webp"
 imgalt: "Huruf timbul akrilik PT Andalas Sakti Perkasa di gedung kantor Palembang"

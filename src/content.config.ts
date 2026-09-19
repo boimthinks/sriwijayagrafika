@@ -4,6 +4,7 @@ import { glob } from 'astro/loaders';
 const MAX_TITLE_WORDS = 5;
 const MAX_TITLE_SEO_WORDS = 12;
 const DATE_PATTERN = /^(\d{1,2})\s+(Januari|Februari|Maret|April|Mei|Juni|Juli|Agustus|September|Oktober|November|Desember)\s+(\d{4})$/i;
+const ISO_DATE_PATTERN = /^\d{4}-\d{2}-\d{2}/;
 
 const wordCount = (s: string) => s.trim().split(/\s+/).filter(Boolean).length;
 
@@ -53,9 +54,12 @@ const blog = defineCollection({
       message: `titleSeo maksimal ${MAX_TITLE_SEO_WORDS} kata`,
     }),
     excerpt: z.string().min(20).max(300),
-    date: z.string().regex(DATE_PATTERN, {
-      message: 'date harus format "DD NamaBulan YYYY", contoh "12 Desember 2025"',
-    }),
+    date: z.string().refine(
+      (val) => ISO_DATE_PATTERN.test(val) || DATE_PATTERN.test(val),
+      {
+        message: 'date harus format "YYYY-MM-DD" atau "DD NamaBulan YYYY"',
+      }
+    ),
     topik: z.enum(['tips', 'studi-kasus', 'panduan', 'kabar']),
     imgurl: z.string().min(1, { message: 'imgurl wajib (feature image + og:image)' }),
     imgPrompt: z.string().optional(),

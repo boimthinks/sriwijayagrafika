@@ -2,7 +2,7 @@
 title: "Neon Box Cafe"
 titleSeo: "Studi Kasus Neon Box Cafe Pempek, Naik 40% Kunjungan Usai Signage Baru"
 excerpt: "Kedai Pempek Maris naik 40% kunjungan 3 bulan setelah ganti neon box baru. Studi kasus signage UMKM yang bekerja."
-date: "22 Desember 2025"
+date: "2025-12-22"
 topik: "studi-kasus"
 imgurl: "/img/portfolio/neon-box-kedai-temon.webp"
 imgalt: "Neon box Kedai Pempek Maris Palembang hasil produksi Sriwijaya Grafika"

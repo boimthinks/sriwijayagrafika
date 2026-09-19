@@ -3,7 +3,7 @@ title: 16 Tahun Sriwijaya Grafika
 titleSeo: Sriwijaya Grafika Palembang 16 Tahun Menjadi Mitra UMKM, Hotel, dan Korporat
 excerpt: 16 tahun berkarya, ratusan proyek signage untuk UMKM, hotel, korporat,
   dan instansi. Kilas balik dan komitmen ke depan dari workshop Talang Jambe.
-date: 23 Februari 2026
+date: "2026-02-23"
 topik: kabar
 imgurl: /img/blog/16-tahun-sriwijaya-grafika.webp
 imgalt: Sriwijaya Grafika Palembang merayakan 16 tahun berkarya di industri

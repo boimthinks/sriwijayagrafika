@@ -2,7 +2,7 @@
 title: "Rawat Neon Box agar Awet"
 titleSeo: "Cara Merawat Neon Box agar Awet 5 Tahun, Tips dari Produsen"
 excerpt: "Neon box mati total dalam 2 tahun? Cek penyebabnya: debu, panas, dan kelembapan. Panduan perawatan dari produsen signage Palembang dengan garansi 1 tahun."
-date: "5 Juni 2026"
+date: "2026-06-05"
 topik: "tips"
 imgurl: "/img/blog/rawat-neon-box-agar-awet.webp"
 imgalt: "Ilustrasi perawatan neon box agar awet 5 tahun, tips dari produsen signage Palembang"

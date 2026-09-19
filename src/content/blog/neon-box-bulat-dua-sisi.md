@@ -2,7 +2,7 @@
 title: "Neon Box Bulat Dua Sisi"
 titleSeo: "Efektivitas Neon Box Bulat Dua Sisi untuk Menarik Pembeli Pejalan Kaki"
 excerpt: "Kenapa neon box bulat dua sisi lebih efektif memikat pejalan kaki dan pengendara? Simak analisis sudut pandang, rangka bracket, dan material outdoor."
-date: "14 Agustus 2026"
+date: "2026-08-14"
 topik: "panduan"
 imgurl: "/img/blog/neon-box-bulat-dua-sisi.webp"
 imgPrompt: "Photorealistic photo of Srifika showing a sleek, modern, round double-sided neon box sign hanging in front of a cozy cafe facade on a sunny street in Palembang, warm lighting, architectural details, high quality."

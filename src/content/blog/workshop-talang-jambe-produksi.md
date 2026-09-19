@@ -2,7 +2,7 @@
 title: "Workshop Talang Jambe"
 titleSeo: "Behind the Scene Workshop Talang Jambe, Proses Produksi Huruf Timbul Laser Cutting"
 excerpt: "Masuk ke dalam workshop Sriwijaya Grafika Talang Jambe. Proses produksi huruf timbul dari laser cutting sampai finishing, dijelaskan langkah demi langkah."
-date: "26 Januari 2026"
+date: "2026-01-26"
 topik: "kabar"
 imgurl: "/img/blog/workshop-talang-jambe-produksi.webp"
 imgalt: "Suasana workshop Sriwijaya Grafika di Talang Jambe dengan mesin laser cutting dan huruf timbul yang sedang diproduksi"

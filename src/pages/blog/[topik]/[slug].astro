@@ -6,7 +6,7 @@ import BlogCard from '@components/BlogCard.astro';
 import SidebarCTA from '@components/SidebarCTA.astro';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import { BUSINESS_INFO } from '@lib/data';
-import { AUTHOR_NAME, TOPIK_LABELS, calcReadingTime, parseIndonesianDate, toIsoDate } from '@lib/blog';
+import { AUTHOR_NAME, TOPIK_LABELS, calcReadingTime, parseIndonesianDate, toIsoDate, formatIndonesianDate } from '@lib/blog';
 import { getKeywordEntries } from '@lib/auto-link';
 import { Calendar, Clock, User, ChevronDown } from 'lucide-react';
 
@@ -149,7 +149,7 @@ if (faqSchema) allSchemas.push(faqSchema);
           </span>
           <span class="inline-flex items-center gap-1.5">
             <Calendar className="w-3.5 h-3.5" />
-            {data.date}
+            {formatIndonesianDate(data.date)}
           </span>
           <span class="inline-flex items-center gap-1.5">
             <Clock className="w-3.5 h-3.5" />

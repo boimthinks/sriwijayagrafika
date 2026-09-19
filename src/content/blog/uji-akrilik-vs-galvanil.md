@@ -2,7 +2,7 @@
 title: "Akrilik vs Galvanil"
 titleSeo: "Uji 6 Bulan, Akrilik vs Galvanil untuk Huruf Timbul Tropis Lembap Palembang"
 excerpt: "Aki vs galvanil untuk huruf timbul, mana yang lebih awet 5 tahun di iklim Palembang? Uji 6 bulan dari workshop kami."
-date: "12 Januari 2026"
+date: "2026-01-12"
 topik: "tips"
 imgurl: "/img/blog/akrilik-galvanil.webp"
 imgalt: "Perbandingan huruf timbul akrilik dan galvanil setelah 6 bulan di outdoor Palembang"

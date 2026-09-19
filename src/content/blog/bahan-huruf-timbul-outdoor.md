@@ -2,7 +2,7 @@
 title: "Bahan Huruf Timbul Outdoor"
 titleSeo: "Panduan Memilih Bahan Huruf Timbul Outdoor, Stainless 304 vs Galvanil vs Akrilik"
 excerpt: "Stainless 304 anti karat tapi mahal, akrilik ringan, galvanil terjangkau. Panduan memilih bahan huruf timbul outdoor dari produsen signage Palembang."
-date: "11 Juni 2026"
+date: "2026-06-11"
 topik: "panduan"
 imgurl: "/img/portfolio/huruf_timbul_acrylic_indah_cake_bakery.webp"
 imgalt: "Perbandingan tiga bahan huruf timbul outdoor, stainless 304 vs galvanil vs akrilik untuk signage Palembang"

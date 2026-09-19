@@ -2,7 +2,7 @@
 title: "Izin Reklame Palembang"
 titleSeo: "Panduan Izin Reklame Palembang, Syarat, Biaya, dan Timeline yang Wajib Anda Tahu"
 excerpt: "Syarat, biaya, dan timeline izin reklame di Palembang. Panduan lengkap agarsignage Anda tidak kena bongkar Satpol PP."
-date: "9 Februari 2026"
+date: "2026-02-09"
 topik: "panduan"
 imgurl: "/img/blog/panduan-izin-reklame-palembang.webp"
 imgalt: "Contoh neon box dan signage toko di Palembang dengan izin reklame yang lengkap"

@@ -13,13 +13,30 @@ const MONTHS_ID: Record<string, number> = {
   desember: 11,
 };
 
+const MONTHS_ID_REV = [
+  'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni',
+  'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'
+];
+
 export function parseIndonesianDate(str: string): Date {
-  const parts = str.toLowerCase().trim().split(/\s+/);
+  const trimmed = str.trim();
+  // Jika format ISO YYYY-MM-DD atau timestamp
+  if (/^\d{4}-\d{2}-\d{2}/.test(trimmed)) {
+    const [y, m, d] = trimmed.substring(0, 10).split('-').map(Number);
+    return new Date(y, m - 1, d);
+  }
+  const parts = trimmed.toLowerCase().split(/\s+/);
   const [dayStr, monthName, yearStr] = parts;
   const day = parseInt(dayStr ?? '', 10);
   const month = MONTHS_ID[monthName ?? ''] ?? 0;
   const year = parseInt(yearStr ?? '', 10);
   return new Date(year, month, day);
+}
+
+export function formatIndonesianDate(date: Date | string): string {
+  const d = typeof date === 'string' ? parseIndonesianDate(date) : date;
+  if (isNaN(d.getTime())) return String(date);
+  return `${d.getDate()} ${MONTHS_ID_REV[d.getMonth()]} ${d.getFullYear()}`;
 }
 
 export function toIsoDate(date: Date): string {

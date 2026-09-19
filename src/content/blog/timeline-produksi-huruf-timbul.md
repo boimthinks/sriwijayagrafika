@@ -2,7 +2,7 @@
 title: "Timeline Produksi Huruf Timbul"
 titleSeo: "Berapa Lama Proses Produksi Huruf Timbul, dari Desain sampai Pemasangan di Palembang"
 excerpt: "Berapa lama proses pembuatan huruf timbul Palembang? Simak rincian estimasi waktu per tahap dari konsultasi, fabrikasi, hingga instalasi lokasi."
-date: "16 Agustus 2026"
+date: "2026-08-16"
 topik: "panduan"
 imgurl: "/img/blog/timeline-produksi-huruf-timbul.webp"
 imgPrompt: "Photorealistic photo of Srifika inspecting a production schedule board and finished stainless steel 3D letters at the workshop in Palembang."

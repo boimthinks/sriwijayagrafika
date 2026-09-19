@@ -2,7 +2,7 @@
 title: "Desain Papan Nama Toko"
 titleSeo: "Desain Papan Nama Toko yang Laku, 5 Kesalahan Umum di Palembang"
 excerpt: "5 kesalahan desain papan nama toko yang bikin plang tidak laku. Simak font, warna, material, ukuran, dan pencahayaan sebelum pesan plang."
-date: "12 Agustus 2026"
+date: "2026-08-12"
 topik: "tips"
 imgurl: "/img/portfolio/papan-nama-toko-sukses-mandiri.webp"
 imgalt: "Papan nama toko elektronik Sukses Mandiri buatan Sriwijaya Grafika Palembang"

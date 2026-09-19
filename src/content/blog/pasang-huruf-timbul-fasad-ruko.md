@@ -2,7 +2,7 @@
 title: "Pasang Huruf Timbul Fasad Ruko"
 titleSeo: "Teknik Pasang Huruf Timbul Fasad Ruko, Baut Tembus atau Lem Khusus"
 excerpt: "Panduan teknik pemasangan huruf timbul di fasad ruko Palembang. Komparasi metode baut tembus bracket vs lem sealant bonding untuk ACP dan beton."
-date: "21 Agustus 2026"
+date: "2026-08-21"
 topik: "tips"
 imgurl: "/img/blog/pasang-huruf-timbul-fasad-ruko.webp"
 imgPrompt: "Photorealistic photo of Srifika inspecting stainless acrylic LED channel letters mounted on a modern shopfront facade in Palembang using heavy duty bracket mounts"

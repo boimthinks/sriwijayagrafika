@@ -2,7 +2,7 @@
 title: "Reklame Murah vs Premium"
 titleSeo: "Selisih Harga Reklame Palembang Murah vs Premium, Apakah Setimpal"
 excerpt: "Perbandingan reklame murah vs premium di Palembang. Selisih material, LED, frame, dan biaya perawatan 5 tahun."
-date: "7 Juni 2026"
+date: "2026-06-07"
 topik: "panduan"
 imgurl: "/img/portfolio/neon-box-spbu-pertamina.webp"
 imgalt: "Neon box SPBU Pertamina contoh reklame premium produksi Sriwijaya Grafika Palembang"

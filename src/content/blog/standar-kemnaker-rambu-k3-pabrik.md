@@ -2,7 +2,7 @@
 title: "Standar Kemnaker K3"
 titleSeo: "Standar Kemnaker Rambu K3 Pabrik, Checklist 12 Poin yang Sering Diabaikan"
 excerpt: "12 poin wajib standar Kemnaker untuk rambu K3 pabrik yang sering diabaikan kontraktor. Checklist visual + rekomendasi material."
-date: "29 Desember 2025"
+date: "2025-12-29"
 topik: "panduan"
 imgurl: "/img/portfolio/rambu-k3-jalur-evakuasi.webp"
 imgalt: "Contoh rambu K3 standar Kemnaker untuk area pabrik, hasil produksi Sriwijaya Grafika"

@@ -2,7 +2,7 @@
 title: "Beda LED Samsung vs Palsu"
 titleSeo: "Membedakan LED Samsung Asli dan Palsu untuk Neon Box, Cek 3 Titik"
 excerpt: "LED Samsung palsu beredar luas di Palembang. Cek 3 titik verifikasi: chip, driver, dan sertifikasi. Panduan dari produsen signage."
-date: "9 Juni 2026"
+date: "2026-06-09"
 topik: "tips"
 imgurl: "/img/blog/beda-led-samsung-vs-palsu.webp"
 imgalt: "Perbandingan LED Samsung asli vs palsu untuk neon box, cara cek chip dan driver"

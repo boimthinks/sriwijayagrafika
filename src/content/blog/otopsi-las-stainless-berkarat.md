@@ -2,7 +2,7 @@
 title: "Sambungan Las Stainless Berkarat"
 titleSeo: "Otopsi Sambungan Las Stainless, Mengapa Huruf Timbul Berkarat Setelah 2 Tahun"
 excerpt: "Sambungan las adalah titik terlemah huruf timbul stainless. Pelajari mengapa korosi muncul 2 tahun setelah pasang dan cara mengatasinya."
-date: "15 Desember 2025"
+date: "2025-12-15"
 topik: "tips"
 imgurl: "/img/blog/otopsi-las-stainless-berkarat.webp"
 imgalt: "Perbandingan huruf timbul stainless 201 vs 304 setelah 2 tahun outdoor Palembang"

@@ -2,7 +2,7 @@
 title: "Hitung LED Strip"
 titleSeo: "Cara Menghitung Kebutuhan LED Strip untuk Neon Box Sesuai Kapasitas Listrik Toko"
 excerpt: "Cara hitung kebutuhan LED strip untuk neon box agar cahaya merata dan listrik tidak bengkak. Rumus + contoh kasus 1x1 meter."
-date: "2 Februari 2026"
+date: "2026-02-02"
 topik: "tips"
 imgurl: "/img/portfolio/neon-box-super-indo.webp"
 imgalt: "Perhitungan kebutuhan LED strip untuk neon box ukuran 1x1 meter"

@@ -2,7 +2,7 @@
 title: "Biaya Pembuatan Billboard Palembang"
 titleSeo: "Biaya Pembuatan Billboard Palembang, Panduan Investasi dan Pajak Reklame Lengkap"
 excerpt: "Bingung menentukan estimasi biaya pembuatan billboard di Palembang? Simak panduan lengkap perencanaan biaya fabrikasi, strategi pajak reklame, hingga pilihan investasi yang tepat."
-date: "19 Agustus 2026"
+date: "2026-08-19"
 topik: "panduan"
 imgurl: "/img/blog/biaya-pembuatan-billboard-palembang.webp"
 imgPrompt: "Photorealistic photo of Srifika inspecting a new billboard structure in Palembang at dusk, detailed iron pipes and foundation, sunset background"

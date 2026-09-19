@@ -2,7 +2,7 @@
 title: "Estimasi Biaya Rambu Palembang"
 titleSeo: "Estimasi Biaya Pengadaan Rambu Palembang untuk Gudang dan Area Publik"
 excerpt: "Estimasi biaya rambu K3 dan safety sign di Palembang per jenis, ukuran, dan material. Lengkap biaya pemasangan dan tips hemat."
-date: "8 Juni 2026"
+date: "2026-06-08"
 topik: "panduan"
 imgurl: "/img/portfolio/rambu-k3-jalur-evakuasi.webp"
 imgalt: "Rambu K3 jalur evakuasi standar Kemnaker buatan Sriwijaya Grafika Palembang"

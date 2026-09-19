@@ -2,7 +2,7 @@
 title: "Pilih Vendor Advertising Palembang"
 titleSeo: "Pilih Jasa Advertising Palembang, Hal yang Sering Terlewat Pemilik Toko"
 excerpt: "Tips memilih vendor advertising Palembang. Cek kualitas workshop, garansi, mockup 3D, dan konsultasi gratis sebelum pesan signage."
-date: "6 Juni 2026"
+date: "2026-06-06"
 topik: "tips"
 imgurl: "/img/portfolio/huruf-timbul-akrilik-gemini.webp"
 imgalt: "Contoh huruf timbul akrilik LED gemini buatan Sriwijaya Grafika Palembang"

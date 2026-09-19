@@ -2,7 +2,7 @@
 title: "Besi Plang Toko Tahan Angin"
 titleSeo: "Tips Rangka Besi Plang Toko Tahan Angin Kencang Palembang"
 excerpt: "Panduan memilih ketebalan hollow galvanis, racikan angkur bracket, dan ukuran papan nama toko agar tidak patah diterpa angin kencang di Palembang."
-date: "24 Agustus 2026"
+date: "2026-08-24"
 topik: "tips"
 imgurl: "/img/blog/tips-rangka-besi-plang-toko-tahan-angin.webp"
 imgPrompt: "Photorealistic close-up view of Srifika inspecting the welded joints and heavy-duty galvanized hollow steel frame of a shop sign on a commercial building facade in Palembang during windy weather."
