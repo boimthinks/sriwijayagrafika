@@ -1,27 +1,61 @@
 ---
-title: "Advertising Murah di Palembang"
-titleSeo: "Advertising Murah di Palembang, Hitung Harga per Meter dan Pajaknya"
-excerpt: "Cari advertising murah di Palembang? Simak rincian harga per meter, pajak reklame 25%, dan syarat media bebas pajak. Konsultasi gratis."
-date: "20 Agustus 2026"
-topik: "panduan"
-imgurl: "/img/blog/advertising-murah-palembang.webp"
-imgPrompt: "Photorealistic photo of Srifika measuring a billboard frame with a tape measure in front of a store in Palembang, warm morning light, tools and aluminum profiles nearby"
-imgalt: "Pekerja Sriwijaya Grafika mengukur frame reklame di depan toko Palembang"
-pengantar: "Mencari advertising murah di Palembang sering berakhir pada pertanyaan yang sama, berapa biaya produksinya dan berapa pajaknya. Sebagian calon pelanggan hanya membandingkan harga cetak, lalu kaget saat tagihan pajak reklame muncul di kemudian hari. Artikel ini memecah empat jenis media yang paling sering kami produksi di workshop Talang Jambe, lengkap dengan angka per meter, tarif pajak 25 persen, dan syarat media bebas pajak sesuai aturan UU HKPD."
-kesimpulan: "Anggaran advertising murah di Palembang bukan cuma soal nominal produksi, tapi juga kepatuhan pajak dan pemilihan media yang sesuai usia kampanye. Hitung pajak sejak awal, manfaatkan jalur bebas pajak untuk papan identitas, dan konsultasikan desain sebelum produksi. Butuh bantuan hitung anggaran atau mockup 3D gratis. Hubungi Tim Sriwijaya Grafika di WhatsApp 0852-1511-1125, kami melayani survei lokasi gratis di Palembang dan Sumatera Selatan."
+title: Advertising Murah di Palembang
+titleSeo: Advertising Murah di Palembang, Cara Hitung Harga per Meter dan Pajaknya
+excerpt: Cari advertising murah di Palembang? Simak rincian harga per meter,
+  pajak reklame 25%, dan syarat media bebas pajak. Konsultasi gratis.
+date: 20 Agustus 2026
+topik: panduan
+imgurl: /img/blog/advertising-murah-palembang.webp
+imgalt: Pekerja Sriwijaya Grafika mengukur frame reklame di depan toko Palembang
+imgPrompt: Photorealistic photo of Srifika measuring a billboard frame with a
+  tape measure in front of a store in Palembang, warm morning light, tools and
+  aluminum profiles nearby
+pengantar: Mencari advertising murah di Palembang sering berakhir pada
+  pertanyaan yang sama, berapa biaya produksinya dan berapa pajaknya. Sebagian
+  calon pelanggan hanya membandingkan harga cetak, lalu kaget saat tagihan pajak
+  reklame muncul di kemudian hari. Artikel ini memecah empat jenis media yang
+  paling sering kami produksi di workshop Talang Jambe, lengkap dengan angka per
+  meter, tarif pajak 25 persen, dan syarat media bebas pajak sesuai aturan UU
+  HKPD.
+kesimpulan: Anggaran advertising murah di Palembang bukan cuma soal nominal
+  produksi, tapi juga kepatuhan pajak dan pemilihan media yang sesuai usia
+  kampanye. Hitung pajak sejak awal, manfaatkan jalur bebas pajak untuk papan
+  identitas, dan konsultasikan desain sebelum produksi. Butuh bantuan hitung
+  anggaran atau mockup 3D gratis. Hubungi Tim Sriwijaya Grafika di WhatsApp
+  0852-1511-1125, kami melayani survei lokasi gratis di Palembang dan Sumatera
+  Selatan.
 faq:
-  - question: "Berapa harga advertising murah di Palembang per meter persegi?"
-    answer: "Tergantung jenis media. Cetak spanduk atau banner mulai Rp16.000 hingga Rp35.000 per meter. Papan nama toko atau billboard rangka besi sekitar Rp450.000 hingga Rp750.000 per meter. Neon box lengkap lampu Rp1.250.000 hingga Rp1.600.000 per meter. Huruf timbul dihitung per sentimeter, sekitar Rp8.000 hingga Rp15.000 tergantung bahan dan spesifikasi."
-  - question: "Berapa tarif pajak reklame di Palembang?"
-    answer: "Tarif umum pajak reklame di Palembang sebesar 25 persen dari Nilai Sewa Reklame (NSR). Pengelolaannya oleh Badan Pendapatan Daerah (BPD), sedangkan perizinan titik dan pemasangan melalui DPMPTSP Kota Palembang."
-  - question: "Apakah neon box kena pajak reklame?"
-    answer: "Ya. Perhitungan umum untuk neon box adalah pajak sama dengan panjang dikali lebar dikali durasi hari dikali NSR harian dikali 25 persen. Besaran NSR dipengaruhi lokasi penempatan dan jenis konten yang ditampilkan."
-  - question: "Ukuran reklame berapa yang bebas pajak di Palembang?"
-    answer: "Papan nama pengenal usaha atau profesi maksimal 1 meter persegi umumnya dikecualikan dari objek pajak, selama dipasang melekat di area atau halaman tempat usaha, hanya satu buah, memuat identitas murni tanpa promosi pihak lain, dan ketinggian maksimal 15 meter dari permukaan tanah."
-  - question: "Bagaimana cara mengurus izin reklame di Palembang?"
-    answer: "Pengajuan izin titik atau pemasangan reklame baru bisa dilakukan secara daring melalui kanal pelayanan perizinan Mal Pelayanan Publik Palembang. Siapkan KTP, desain atau foto visual reklame, ukuran dimensi, dan surat lokasi penempatan. Pemasangan tanpa izin berisiko dibongkar paksa oleh tim penegak perda."
-  - question: "Media advertising apa yang paling hemat untuk usaha kecil?"
-    answer: "Untuk usaha baru, urutan yang paling hemat adalah spanduk untuk promosi musiman, papan nama toko untuk identitas harian, lalu neon box atau huruf timbul saat arus kas stabil. Pilih media sesuai usia kampanye dan jaga konten papan identitas tetap sederhana agar tetap masuk jalur bebas pajak."
+  - question: Berapa harga advertising murah di Palembang per meter persegi?
+    answer: Tergantung jenis media. Cetak spanduk atau banner mulai Rp16.000 hingga
+      Rp35.000 per meter. Papan nama toko atau billboard rangka besi sekitar
+      Rp450.000 hingga Rp750.000 per meter. Neon box lengkap lampu Rp1.250.000
+      hingga Rp1.600.000 per meter. Huruf timbul dihitung per sentimeter,
+      sekitar Rp8.000 hingga Rp15.000 tergantung bahan dan spesifikasi.
+  - question: Berapa tarif pajak reklame di Palembang?
+    answer: Tarif umum pajak reklame di Palembang sebesar 25 persen dari Nilai Sewa
+      Reklame (NSR). Pengelolaannya oleh Badan Pendapatan Daerah (BPD),
+      sedangkan perizinan titik dan pemasangan melalui DPMPTSP Kota Palembang.
+  - question: Apakah neon box kena pajak reklame?
+    answer: Ya. Perhitungan umum untuk neon box adalah pajak sama dengan panjang
+      dikali lebar dikali durasi hari dikali NSR harian dikali 25 persen.
+      Besaran NSR dipengaruhi lokasi penempatan dan jenis konten yang
+      ditampilkan.
+  - question: Ukuran reklame berapa yang bebas pajak di Palembang?
+    answer: Papan nama pengenal usaha atau profesi maksimal 1 meter persegi umumnya
+      dikecualikan dari objek pajak, selama dipasang melekat di area atau
+      halaman tempat usaha, hanya satu buah, memuat identitas murni tanpa
+      promosi pihak lain, dan ketinggian maksimal 15 meter dari permukaan tanah.
+  - question: Bagaimana cara mengurus izin reklame di Palembang?
+    answer: Pengajuan izin titik atau pemasangan reklame baru bisa dilakukan secara
+      daring melalui kanal pelayanan perizinan Mal Pelayanan Publik Palembang.
+      Siapkan KTP, desain atau foto visual reklame, ukuran dimensi, dan surat
+      lokasi penempatan. Pemasangan tanpa izin berisiko dibongkar paksa oleh tim
+      penegak perda.
+  - question: Media advertising apa yang paling hemat untuk usaha kecil?
+    answer: Untuk usaha baru, urutan yang paling hemat adalah spanduk untuk promosi
+      musiman, papan nama toko untuk identitas harian, lalu neon box atau huruf
+      timbul saat arus kas stabil. Pilih media sesuai usia kampanye dan jaga
+      konten papan identitas tetap sederhana agar tetap masuk jalur bebas pajak.
 published: true
 ---
 
