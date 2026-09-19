@@ -119,6 +119,14 @@ Static-only. Any host that serves `dist/` works. Build = `npm run build`, output
 
 ## Progress (recent session work)
 
+- **Decap CMS v3 Terintegrasi Penuh (Lokal & Live)**: Panel CMS terpasang di `/admin/` (`public/admin/index.html` + `config.yml`). Mendukung pengelolaan konten:
+  1. `blog`: Tulis, edit, upload gambar, auto-sort descending by ISO date, auto-populate `imgalt` from `titleSeo`.
+  2. `layanan`: Edit layanan dengan format string list untuk fitur, material, keywords.
+  3. `portofolio`: Kelola galeri foto secara visual di `src/data/portfolio.md`.
+  4. `pengaturan`: Kelola data `src/data/site.md` untuk Nama Website, Tagline, Hero (Gambar Desktop/Mobile, Teks, Tombol, Statistik), 3 Kolom Credentials, serta Banner & SEO halaman Layanan, Portofolio, Blog, dan Kontak.
+  - **Otentikasi**: Terhubung ke Netlify GitHub OAuth Gateway (`site_domain: sriwijayagrafika.com`).
+  - **Tombol "🚀 Deploy ke Live" + Netlify Build Hook**: Diatur dengan perintah ignore di `netlify.toml` (`[ -z "$INCOMING_HOOK_TITLE" ] && exit 0 || exit 1`) sehingga commit/save biasa tidak menghabiskan kuota 300 menit Netlify, dan build hanya berjalan saat tombol deploy ditekan.
+  - **Dokumentasi Pengembang**: Panduan arsitektur lengkap tersimpan di `DOKUMENTASI-CMS-DEVELOPER.md` dan panduan editor di `INSTRUKSI-CMS-UNTUK-TEMAN.md`.
 - **Blogger arsip dihidupkan kembali di URL lama**: `blogger` content collection ter-register di `content.config.ts` (80 artikel aktif, dump dari Blogspot lama). Detail di `/2016/01/...html` → `/2020/05/...html` via `src/pages/[year]/[month]/[slug].html.astro` + helper `src/lib/blogger.ts`. Halaman index di `/arsip` (grup per tahun), ter-link di Footer & sitemap. Tujuan: Google masih meng-index URL lama `/YYYY/MM/<slug>.html` sejak era Blogspot; sekarang URL itu serve 200 (bukan 404) + tagline "Arsip Artikel Lama" + CTA. File cache tidak perlu dikonfigurasi, validasi sudah lewat `astro check` dan build.
 - **katalog → layanan rename**: file `katalog.astro` → `layanan.astro`; title/schema/navbar/current state updated (`current: 'services'`). URL is now `/layanan`.
 - **Layanan migrated to content collection**: 31 service files in `src/content/layanan/*.md` (10 `category: utama` + 21 `secondary`); schema in `src/content.config.ts`; listing + detail pages in `src/pages/layanan/`. `PRIMARY_SERVICES` / `SECONDARY_SERVICES` / `ALL_PRODUCTS` exports removed from `src/lib/data.ts`.
