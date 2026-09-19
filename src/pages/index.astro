@@ -12,6 +12,7 @@ import { getCollection } from 'astro:content';
 import { BUSINESS_INFO, GENERAL_DESCRIPTION } from '@lib/data';
 import { PORTFOLIO_ITEMS } from '@lib/portfolio';
 import { calcReadingTime, parseIndonesianDate } from '@lib/blog';
+import { SITE_SETTINGS } from '@lib/site';
 
 const allServices = (await getCollection('layanan', ({ data }) => data.published)).sort(
   (a, b) => a.data.order - b.data.order
@@ -33,7 +34,7 @@ const homeSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   '@id': 'https://sriwijayagrafika.com/#website',
-  name: BUSINESS_INFO.name,
+  name: SITE_SETTINGS.siteName,
   url: 'https://sriwijayagrafika.com',
   description: GENERAL_DESCRIPTION.slice(0, 160),
   inLanguage: 'id-ID',
@@ -49,8 +50,8 @@ const breadcrumbs = {
 ---
 
 <Layout
-  title="Sriwijaya Grafika Palembang | Jasa Huruf Timbul, Neon Box & Reklame Termurah"
-  description="Sriwijaya Grafika Palembang - Jasa advertising, huruf timbul LED, neon box, papan nama toko, dan rambu K3. Garansi resmi 1 tahun. Hubungi WhatsApp 0852-1511-1125."
+  title={`${SITE_SETTINGS.siteName} Palembang | Jasa Huruf Timbul, Neon Box & Reklame Termurah`}
+  description={`${SITE_SETTINGS.siteName} Palembang - Jasa advertising, huruf timbul LED, neon box, papan nama toko, dan rambu K3. Garansi resmi 1 tahun. Hubungi WhatsApp 0852-1511-1125.`}
   keywords={[
     'Advertising Palembang',
     'Huruf Timbul Palembang',

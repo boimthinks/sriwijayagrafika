@@ -37,4 +37,9 @@ export default defineConfig({
     port: 3000,
     host: true,
   },
+  // Redirect /admin ke /admin/index.html agar panel CMS Decap
+  // tersedia saat diakses tanpa trailing slash.
+  redirects: {
+    '/admin': '/admin/index.html',
+  },
 });

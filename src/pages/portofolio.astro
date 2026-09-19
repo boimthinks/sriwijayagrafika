@@ -5,11 +5,13 @@ import Footer from '@components/Footer.astro';
 import PortfolioGrid from '@components/PortfolioGrid.astro';
 import { PORTFOLIO_ITEMS, getPortfolioCategories } from '@lib/portfolio';
 import { BUSINESS_INFO } from '@lib/data';
+import { SITE_SETTINGS } from '@lib/site';
 
+const page = SITE_SETTINGS.pages.portofolio;
 const items = PORTFOLIO_ITEMS;
 const categories = getPortfolioCategories();
 
-const whatsappHref = `https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya ingin berkonsultasi mengenai portofolio Anda.')}`;
+const whatsappHref = page.ctaUrl || `https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya ingin berkonsultasi mengenai portofolio Anda.')}`;
 const whatsappDisplay = BUSINESS_INFO.phone1.replace(/(\d{4})(\d{4})(\d{4})/, '$1-$2-$3');
 
 const portfolioSchema = {
@@ -24,8 +26,8 @@ const portfolioSchema = {
 ---
 
 <Layout
-  title="Galeri Portofolio | Hasil Karya Reklame & Huruf Timbul Palembang"
-  description="Lihat portofolio lengkap Sriwijaya Grafika: huruf timbul stainless, akrilik LED, neon box, pylon sign, rambu K3, dan booth event dari berbagai brand ternama di Palembang."
+  title={page.title}
+  description={page.description}
   keywords={[
     'Portofolio Advertising Palembang',
     'Huruf Timbul Stainless',
@@ -42,11 +44,10 @@ const portfolioSchema = {
     <section class="bg-gradient-to-br from-[#224da8] to-[#10285a] text-white py-22 md:py-28 lg:py-32">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
         <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
-          Portofolio Unggulan
+          {page.heading || 'Portofolio Unggulan'}
         </h1>
         <p class="text-sm sm:text-base text-white/80 max-w-2xl mx-auto leading-relaxed">
-          Hasil pengerjaan papan nama reklame, huruf LED timbul akrilik, totem sign instansi, dan rambu
-          bersertifikasi K3 di gedung pemerintahan serta tenant ritel Palembang.
+          {page.intro || 'Hasil pengerjaan papan nama reklame, huruf LED timbul akrilik, totem sign instansi, dan rambu bersertifikasi K3 di gedung pemerintahan serta tenant ritel Palembang.'}
         </p>
         <a
           href={whatsappHref}
@@ -54,7 +55,7 @@ const portfolioSchema = {
           rel="noopener noreferrer"
           class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white text-sm font-bold shadow-md transition-all"
         >
-          Hubungi via WhatsApp
+          {page.ctaText || 'Hubungi via WhatsApp'}
         </a>
       </div>
     </section>

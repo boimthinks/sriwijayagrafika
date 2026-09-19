@@ -6,6 +6,9 @@ import BlogCard from '@components/BlogCard.astro';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import { BUSINESS_INFO } from '@lib/data';
 import { calcReadingTime, parseIndonesianDate, TOPIK_LABELS } from '@lib/blog';
+import { SITE_SETTINGS } from '@lib/site';
+
+const page = SITE_SETTINGS.pages.blog;
 
 const allPosts = (await getCollection('blog', ({ data }) => data.published)).sort(
   (a, b) => parseIndonesianDate(b.data.date).getTime() - parseIndonesianDate(a.data.date).getTime()
@@ -53,8 +56,8 @@ const blogSchema = {
 ---
 
 <Layout
-  title="Blog & Tips Advertising Palembang | Sriwijaya Grafika"
-  description="Tips, studi kasus, sorotan, dan panduan seputar huruf timbul, neon box, papan nama, dan rambu K3 Palembang. Update mingguan dari tim Sriwijaya Grafika."
+  title={page.title}
+  description={page.description}
   keywords={[
     'Blog Advertising Palembang',
     'Tips Huruf Timbul',
@@ -70,19 +73,18 @@ const blogSchema = {
     <section class="bg-gradient-to-br from-[#224da8] to-[#10285a] text-white py-22 md:py-28 lg:py-32">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
         <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
-          Artikel tentang Signage &amp; Advertising
+          {page.heading || 'Artikel tentang Signage & Advertising'}
         </h1>
         <p class="text-sm sm:text-base text-white/80 max-w-2xl mx-auto leading-relaxed">
-          Informasi terkait produk signage &amp; advertising.<br />
-          Huruf timbul, rambu-rambu, neon box, papan nama toko dan kantor serta solusi branding bisnis di Palembang.
+          {page.intro || 'Informasi terkait produk signage & advertising. Huruf timbul, rambu-rambu, neon box, papan nama toko dan kantor serta solusi branding bisnis di Palembang.'}
         </p>
         <a
-          href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya ingin berkonsultasi mengenai kebutuhan signage/reklame custom.')}`}
+          href={page.ctaUrl || `https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya ingin berkonsultasi mengenai kebutuhan signage/reklame custom.')}`}
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white text-sm font-bold shadow-md transition-all"
         >
-          Hubungi via WhatsApp
+          {page.ctaText || 'Hubungi via WhatsApp'}
         </a>
       </div>
     </section>

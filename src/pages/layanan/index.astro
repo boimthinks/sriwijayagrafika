@@ -5,7 +5,10 @@ import Footer from '@components/Footer.astro';
 import ServiceCard from '@components/ServiceCard.astro';
 import { getCollection } from 'astro:content';
 import { BUSINESS_INFO, MEDIA_COVERAGES, VIDEOS } from '@lib/data';
+import { SITE_SETTINGS } from '@lib/site';
 import { Factory, ShieldCheck, PenTool, CheckCircle, Users, BadgeCheck, Newspaper, ExternalLink } from 'lucide-react';
+
+const page = SITE_SETTINGS.pages.layanan;
 
 const services = (await getCollection('layanan', ({ data }) => data.published)).sort(
   (a, b) => a.data.order - b.data.order
@@ -39,9 +42,9 @@ const mediaLinks = [
 ---
 
 <Layout
-  title="Jasa Advertising Palembang: Huruf Timbul & Neon Box Bergaransi"
-  titleSeo="Jasa Advertising Palembang: Huruf Timbul, Neon Box & Reklame Bergaransi 1 Tahun"
-  description="Daftar lengkap layanan advertising Palembang: huruf timbul LED, neon box, papan nama toko, rambu K3, billboard, neon flex, pylon totem. Setiap layanan punya halaman detail."
+  title={page.title}
+  titleSeo={page.title}
+  description={page.description}
   keywords={[
     'Layanan Advertising Palembang',
     'Harga Huruf Timbul',
@@ -58,18 +61,18 @@ const mediaLinks = [
     <section class="bg-gradient-to-br from-[#224da8] to-[#10285a] text-white py-22 md:py-28 lg:py-32">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
         <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
-          Pilih &amp; Rancang Media Promosi Bisnis Anda
+          {page.heading || 'Pilih & Rancang Media Promosi Bisnis Anda'}
         </h1>
         <p class="text-sm sm:text-base text-white/80 max-w-2xl mx-auto leading-relaxed">
-          Dari plang nama toko hingga billboard raksasa, rancang perkiraan harga secara transparan. Pemasangan reklame luar ruangan dilindungi garansi 1 tahun resmi.
+          {page.intro || 'Dari plang nama toko hingga billboard raksasa, rancang perkiraan harga secara transparan. Pemasangan reklame luar ruangan dilindungi garansi 1 tahun resmi.'}
         </p>
         <a
-          href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya ingin berkonsultasi mengenai kebutuhan signage/reklame custom.')}`}
+          href={page.ctaUrl || `https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya ingin berkonsultasi mengenai kebutuhan signage/reklame custom.')}`}
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white text-sm font-bold shadow-md transition-all"
         >
-          Hubungi via WhatsApp
+          {page.ctaText || 'Hubungi via WhatsApp'}
         </a>
       </div>
     </section>

@@ -1,0 +1,229 @@
+# Decap CMS configuration — Sriwijaya Grafika
+# Editor: buka /admin (online) atau http://localhost:3000/admin (lokal) -> login GitHub -> edit.
+# Save = commit ke GitHub (branch main) -> Netlify auto-rebuild -> live dalam 1-2 menit.
+
+backend:
+  name: github
+  repo: boimthinks/sriwijayagrafika
+  branch: main
+  # Untuk lokal (localhost:3000) — pakai site_url = dev server.
+  # Untuk produksi nanti ganti ke https://sriwijayagrafika.com.
+  site_url: http://localhost:3000
+  auth_type: pkce
+  auth_scope: repo
+  app_id: "Ov23likHwGLo4QiWJ1TG"
+
+media_folder: "public/img"
+public_folder: "/img"
+publish_mode: simple
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: "blog"
+    label: "Blog Artikel"
+    label_singular: "Artikel Blog"
+    folder: "src/content/blog"
+    slug: "{{slug}}"
+    create: true
+    preview_path: "blog/{{topik}}/{{slug}}"
+    fields:
+      - { name: title, label: "Judul (maks 5 kata)", widget: string, required: true }
+      - { name: titleSeo, label: "Title SEO (maks 12 kata)", widget: string }
+      - { name: excerpt, label: "Excerpt (20-300 karakter)", widget: text, required: true, minlength: 20, maxlength: 300 }
+      - name: date
+        label: "Tanggal Terbit"
+        widget: string
+        required: true
+        hint: 'Format WAJIB: "DD NamaBulan YYYY" — contoh: 26 Januari 2026 (huruf kapital awal bulan).'
+      - { name: topik, label: "Topik", widget: select, options: [tips, studi-kasus, panduan, kabar], required: true }
+      - { name: imgurl, label: "Gambar Utama", widget: image, required: true, hint: "Upload ke folder img/blog, mis. blog-nama-artikel.webp" }
+      - { name: imgalt, label: "Alt Gambar", widget: string }
+      - { name: imgPrompt, label: "Prompt Gambar (opsional)", widget: string }
+      - { name: pengantar, label: "Pengantar (50-500 karakter)", widget: text, required: true, minlength: 50, maxlength: 500 }
+      - { name: kesimpulan, label: "Kesimpulan (50-500 karakter)", widget: text, required: true, minlength: 50, maxlength: 500 }
+      - name: faq
+        label: "FAQ"
+        widget: list
+        summary: "{{fields.question}}"
+        fields:
+          - { name: question, label: "Pertanyaan", widget: string }
+          - { name: answer, label: "Jawaban", widget: text }
+      - { name: published, label: "Publish (tampilkan di web)?", widget: boolean, default: true }
+      - { name: body, label: "Isi Artikel (Markdown)", widget: markdown }
+
+  - name: "layanan"
+    label: "Layanan"
+    label_singular: "Layanan"
+    folder: "src/content/layanan"
+    slug: "{{slug}}"
+    create: true
+    preview_path: "layanan/{{slug}}"
+    fields:
+      - { name: name, label: "Nama Layanan", widget: string, required: true }
+      - { name: description, label: "Deskripsi Singkat", widget: text, required: true }
+      - { name: category, label: "Kategori", widget: select, options: [utama, secondary], required: true }
+      - { name: subcategory, label: "Subkategori", widget: string }
+      - { name: basePrice, label: "Harga Dasar", widget: number }
+      - { name: priceUnit, label: "Satuan Harga", widget: string }
+      - name: features
+        label: "Fitur"
+        widget: list
+        summary: "{{fields.item}}"
+        fields:
+          - { name: item, label: "Fitur", widget: string }
+      - name: materials
+        label: "Material"
+        widget: list
+        summary: "{{fields.item}}"
+        fields:
+          - { name: item, label: "Material", widget: string }
+      - { name: hasCalculator, label: "Ada Kalkulator?", widget: boolean, default: false }
+      - { name: calculatorType, label: "Tipe Kalkulator", widget: select, required: false, options: [huruf_timbul, neon_box, rambu, printing_standard] }
+      - { name: imageUrl, label: "Gambar Layanan", widget: image, hint: "Upload ke img/layanan, mis. layanan-nama.webp" }
+      - { name: heroAlt, label: "Alt Hero", widget: string }
+      - { name: titleSeo, label: "Title SEO", widget: string }
+      - { name: metaDescription, label: "Meta Description", widget: text }
+      - name: faqs
+        label: "FAQ"
+        widget: list
+        summary: "{{fields.question}}"
+        fields:
+          - { name: question, label: "Pertanyaan", widget: string }
+          - { name: answer, label: "Jawaban", widget: text }
+      - name: keywords
+        label: "Keywords"
+        widget: list
+        summary: "{{fields.item}}"
+        field: { name: item, label: "Keyword", widget: string }
+      - { name: order, label: "Urutan Tampilan", widget: number, default: 99 }
+      - { name: published, label: "Publish (tampilkan di web)?", widget: boolean, default: true }
+      - { name: body, label: "Isi Konten (Markdown)", widget: markdown }
+
+  - name: "portofolio"
+    label: "Portofolio"
+    label_singular: "Portofolio"
+    files:
+      - name: "portfolio-data"
+        label: "Daftar Galeri Portofolio"
+        file: "src/data/portfolio.md"
+        fields:
+          - name: items
+            label: "Item Galeri (urutan = urutan tampil)"
+            widget: list
+            summary: "{{fields.caption}}"
+            fields:
+              - { name: src, label: "Gambar", widget: image, required: true }
+              - name: category
+                label: "Kategori"
+                widget: select
+                required: true
+                options:
+                  - { label: "Huruf Timbul LED", value: huruf-timbul }
+                  - { label: "Neon Box", value: neon-box }
+                  - { label: "Pylon / Totem", value: pylon-totem }
+                  - { label: "Rambu K3", value: rambu-rambu }
+                  - { label: "Plang Toko / Kantor", value: plang-toko-kantor }
+                  - { label: "Booth Event", value: booth-event-desk }
+                  - { label: "Produk Akrilik", value: produk-akrilik }
+                  - { label: "Gantry Huruf LED", value: gantry-huruf-led }
+                  - { label: "Neon Flex", value: neon-flex }
+                  - { label: "Billboard", value: billboard }
+                  - { label: "Papan Nama", value: papan-nama }
+              - { name: caption, label: "Caption", widget: string, required: true }
+
+  - name: "pengaturan"
+    label: "Pengaturan Situs"
+    files:
+      - name: "site-settings"
+        label: "Identitas, Hero & Halaman"
+        file: "src/data/site.md"
+        fields:
+          - name: siteName
+            label: "Nama Website"
+            widget: string
+            default: "Sriwijaya Grafika"
+          - name: tagline
+            label: "Tagline Website"
+            widget: string
+            default: "Spesialis Signage & Advertising di Palembang"
+
+          # Section Hero
+          - name: hero
+            label: "Bagian Hero (Homepage)"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge Kecil Hero", widget: string }
+              - { name: title, label: "Judul Utama Hero", widget: string }
+              - { name: subtitle, label: "Deskripsi / Paragraf Hero", widget: text }
+              - { name: imageDesktop, label: "Gambar Hero (Desktop)", widget: image }
+              - { name: imageMobile, label: "Gambar Hero (Mobile)", widget: image }
+              - { name: ctaText, label: "Teks Tombol Hero", widget: string }
+              - { name: ctaUrl, label: "URL Tombol Hero", widget: string }
+              - name: stats
+                label: "3 Kotak Statistik Hero"
+                widget: list
+                summary: "{{fields.value}} - {{fields.label}}"
+                fields:
+                  - { name: value, label: "Angka / Nilai (mis. 16+, 1 Thn, Free)", widget: string }
+                  - { name: label, label: "Label Keterangan", widget: string }
+
+          # Section Credentials (3 kolom di bawah hero)
+          - name: credentials
+            label: "3 Kolom di Bawah Hero (Keunggulan / Garansi)"
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { name: title, label: "Judul", widget: string }
+              - { name: description, label: "Deskripsi Singkat", widget: text }
+
+          # Pengaturan Tiap Halaman
+          - name: pages
+            label: "Pengaturan Tiap Halaman"
+            widget: object
+            fields:
+              - name: layanan
+                label: "Halaman Layanan (/layanan)"
+                widget: object
+                fields:
+                  - { name: title, label: "SEO Title", widget: string }
+                  - { name: description, label: "SEO Meta Description", widget: text }
+                  - { name: heading, label: "Judul Banner Atas", widget: string }
+                  - { name: intro, label: "Teks Intro Banner", widget: text }
+                  - { name: ctaText, label: "Teks Tombol WhatsApp", widget: string }
+                  - { name: ctaUrl, label: "Link Tombol WhatsApp", widget: string }
+
+              - name: portofolio
+                label: "Halaman Portofolio (/portofolio)"
+                widget: object
+                fields:
+                  - { name: title, label: "SEO Title", widget: string }
+                  - { name: description, label: "SEO Meta Description", widget: text }
+                  - { name: heading, label: "Judul Banner Atas", widget: string }
+                  - { name: intro, label: "Teks Intro Banner", widget: text }
+                  - { name: ctaText, label: "Teks Tombol WhatsApp", widget: string }
+                  - { name: ctaUrl, label: "Link Tombol WhatsApp", widget: string }
+
+              - name: blog
+                label: "Halaman Blog (/blog)"
+                widget: object
+                fields:
+                  - { name: title, label: "SEO Title", widget: string }
+                  - { name: description, label: "SEO Meta Description", widget: text }
+                  - { name: heading, label: "Judul Banner Atas", widget: string }
+                  - { name: intro, label: "Teks Intro Banner", widget: text }
+                  - { name: ctaText, label: "Teks Tombol WhatsApp", widget: string }
+                  - { name: ctaUrl, label: "Link Tombol WhatsApp", widget: string }
+
+              - name: kontak
+                label: "Halaman Kontak (/kontak)"
+                widget: object
+                fields:
+                  - { name: title, label: "SEO Title", widget: string }
+                  - { name: description, label: "SEO Meta Description", widget: text }
+                  - { name: badge, label: "Badge Kecil Banner", widget: string }
+                  - { name: heading, label: "Judul Banner Atas", widget: string }
+                  - { name: intro, label: "Teks Intro Banner", widget: text }

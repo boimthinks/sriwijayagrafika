@@ -4,7 +4,9 @@ import Navbar from '@components/Navbar.astro';
 import Footer from '@components/Footer.astro';
 import { Phone, MapPin, Clock, MessageCircle, Send, Instagram, Facebook, ShoppingBag, Globe, ArrowRight, ExternalLink, ShieldCheck } from 'lucide-react';
 import { BUSINESS_INFO } from '@lib/data';
+import { SITE_SETTINGS } from '@lib/site';
 
+const page = SITE_SETTINGS.pages.kontak;
 const waUrl = `https://wa.me/${BUSINESS_INFO.phone1Intl}`;
 
 const contactSchema = {
@@ -35,8 +37,8 @@ const contactSchema = {
 ---
 
 <Layout
-  title="Hubungi Kami | Sriwijaya Grafika Palembang"
-  description="Hubungi Sriwijaya Grafika Palembang untuk konsultasi gratis, estimasi harga, dan mockup 3D. WA 0852-1511-1125. Workshop di Talang Jambe, Sukarami."
+  title={page.title}
+  description={page.description}
   keywords={['Kontak Sriwijaya Grafika', 'Alamat Workshop Palembang', 'Konsultasi Advertising Palembang', 'WhatsApp Sriwijaya Grafika', 'Hubungi Advertising Palembang']}
   structuredData={contactSchema}
 >
@@ -53,13 +55,13 @@ const contactSchema = {
         <div class="max-w-2xl">
           <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-xs font-medium text-white/80 mb-6">
             <Send className="w-3.5 h-3.5" />
-            <span>Konsultasi Gratis, Tanpa Komitmen</span>
+            <span>{page.badge || 'Konsultasi Gratis, Tanpa Komitmen'}</span>
           </div>
           <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.1] mb-4">
-            Hubungi <span class="text-[#ff6634]">Kami</span>
+            {page.heading || 'Hubungi Kami'}
           </h1>
           <p class="text-lg md:text-xl text-white/80 leading-relaxed max-w-xl">
-            Siap bantu wujudkan media promosi impian Anda. Respon cepat, konsultasi gratis, dan mockup 3D tanpa biaya.
+            {page.intro || 'Siap bantu wujudkan media promosi impian Anda. Respon cepat, konsultasi gratis, dan mockup 3D tanpa biaya.'}
           </p>
         </div>
       </div>

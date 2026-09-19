@@ -1,6 +1,7 @@
 ---
 import { Phone, Menu, X, ShieldCheck } from 'lucide-react';
 import { BUSINESS_INFO } from '@lib/data';
+import { SITE_SETTINGS } from '@lib/site';
 
 interface Props {
    current?: 'home' | 'services' | 'portfolio' | 'blog' | 'contact';
@@ -41,7 +42,7 @@ const isActive = (id: string) => current === id;
             SRIWIJAYA <span class="text-[#c2410c]">GRAFIKA</span>
           </span>
           <span class="hidden md:block text-[10px] font-mono tracking-wider text-neutral-600 font-bold">
-            Spesialis Signage &amp; Advertising di Palembang
+            {SITE_SETTINGS.tagline}
           </span>
         </div>
       </a>

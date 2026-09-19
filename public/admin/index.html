@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CMS Sriwijaya Grafika</title>
+    <style>
+      /* Floating Deploy Button */
+      .netlify-deploy-container {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 999999;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+      .netlify-deploy-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background-color: #224da8;
+        color: white;
+        border: none;
+        padding: 12px 18px;
+        border-radius: 9999px;
+        font-weight: 700;
+        font-size: 14px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .netlify-deploy-btn:hover {
+        background-color: #183c84;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      }
+      .netlify-deploy-btn:disabled {
+        background-color: #94a3b8;
+        cursor: not-allowed;
+        transform: none;
+      }
+      .deploy-status {
+        position: absolute;
+        bottom: 54px;
+        right: 0;
+        width: 280px;
+        background: #1e293b;
+        color: #f8fafc;
+        padding: 10px 14px;
+        border-radius: 8px;
+        font-size: 12px;
+        line-height: 1.4;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Floating Deploy Button -->
+    <div class="netlify-deploy-container">
+      <div id="deployStatus" class="deploy-status"></div>
+      <button id="deployBtn" class="netlify-deploy-btn" type="button" title="Deploy perubahan ke live website">
+        <span>🚀</span>
+        <span id="deployBtnText">Deploy ke Live</span>
+      </button>
+    </div>
+
+    <!-- Decap CMS (v3) dari CDN. Nama global: window.CMS atau window.DecapCMS. -->
+    <script src="https://unpkg.com/decap-cms@^3.3.3/dist/decap-cms.js"></script>
+    <script>
+      // Handler Deploy Build Hook
+      const BUILD_HOOK_URL = 'https://api.netlify.com/build_hooks/6aadfa58353144d31d69e4bc';
+      const deployBtn = document.getElementById('deployBtn');
+      const deployBtnText = document.getElementById('deployBtnText');
+      const deployStatus = document.getElementById('deployStatus');
+
+      function showStatus(message, isSuccess = true, duration = 6000) {
+        deployStatus.style.display = 'block';
+        deployStatus.style.borderLeft = isSuccess ? '4px solid #22c55e' : '4px solid #ef4444';
+        deployStatus.innerText = message;
+        setTimeout(() => {
+          deployStatus.style.display = 'none';
+        }, duration);
+      }
+
+      deployBtn.addEventListener('click', async () => {
+        const confirmed = confirm('Mulai proses deploy ke Netlify sekarang?\n\nPastikan semua perubahan (artikel/layanan/portofolio) sudah Anda simpan.');
+        if (!confirmed) return;
+
+        deployBtn.disabled = true;
+        deployBtnText.innerText = 'Memicu Deploy...';
+
+        try {
+          const res = await fetch(BUILD_HOOK_URL, { method: 'POST' });
+          if (res.ok) {
+            deployBtnText.innerText = 'Deploy Dipicu!';
+            showStatus('Permintaan deploy berhasil dikirim ke Netlify! Website akan terupdate otomatis dalam 1-2 menit.', true);
+          } else {
+            throw new Error(`Status ${res.status}`);
+          }
+        } catch (err) {
+          deployBtnText.innerText = 'Gagal';
+          showStatus('Gagal memicu build hook Netlify. Silakan cek koneksi atau coba lagi nanti.', false);
+        } finally {
+          setTimeout(() => {
+            deployBtn.disabled = false;
+            deployBtnText.innerText = 'Deploy ke Live';
+          }, 4000);
+        }
+      });
+
+      // Decap CMS hooks
+      function registerCmsHooks(cms) {
+        if (!cms || typeof cms.registerHook !== 'function') return;
+
+        cms.registerHook('prePublish', 'blog', (entry) => {
+          entry.data.publishedAt = new Date().toISOString();
+          return entry;
+        });
+      }
+
+      if (window.CMS) {
+        registerCmsHooks(window.CMS);
+      } else {
+        document.addEventListener('CMSLoad', function (e) {
+          registerCmsHooks(e.detail.CMS);
+        });
+      }
+    </script>
+  </body>
+</html>
