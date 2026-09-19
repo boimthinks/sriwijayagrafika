@@ -64,18 +64,8 @@ collections:
       - { name: subcategory, label: "Subkategori", widget: string }
       - { name: basePrice, label: "Harga Dasar", widget: number }
       - { name: priceUnit, label: "Satuan Harga", widget: string }
-      - name: features
-        label: "Fitur"
-        widget: list
-        summary: "{{fields.item}}"
-        fields:
-          - { name: item, label: "Fitur", widget: string }
-      - name: materials
-        label: "Material"
-        widget: list
-        summary: "{{fields.item}}"
-        fields:
-          - { name: item, label: "Material", widget: string }
+      - { name: features, label: "Fitur", widget: list }
+      - { name: materials, label: "Material", widget: list }
       - { name: hasCalculator, label: "Ada Kalkulator?", widget: boolean, default: false }
       - { name: calculatorType, label: "Tipe Kalkulator", widget: select, required: false, options: [huruf_timbul, neon_box, rambu, printing_standard] }
       - { name: imageUrl, label: "Gambar Layanan", widget: image, hint: "Upload ke img/layanan, mis. layanan-nama.webp" }
@@ -89,11 +79,7 @@ collections:
         fields:
           - { name: question, label: "Pertanyaan", widget: string }
           - { name: answer, label: "Jawaban", widget: text }
-      - name: keywords
-        label: "Keywords"
-        widget: list
-        summary: "{{fields.item}}"
-        field: { name: item, label: "Keyword", widget: string }
+      - { name: keywords, label: "Keywords", widget: list }
       - { name: order, label: "Urutan Tampilan", widget: number, default: 99 }
       - { name: published, label: "Publish (tampilkan di web)?", widget: boolean, default: true }
       - { name: body, label: "Isi Konten (Markdown)", widget: markdown }

@@ -67,6 +67,34 @@
     <!-- Decap CMS (v3) dari CDN. Nama global: window.CMS atau window.DecapCMS. -->
     <script src="https://unpkg.com/decap-cms@^3.3.3/dist/decap-cms.js"></script>
     <script>
+      // Kustomisasi UI Decap CMS (Ganti kata 'Publish' -> 'Save', sembunyikan 'duplicate')
+      function customizeDecapUI(cms) {
+        if (!cms) return;
+
+        try {
+          const en = cms.getLocale ? cms.getLocale('en') : null;
+          if (en && en.editor && en.editor.editorToolbar) {
+            en.editor.editorToolbar.publish = 'Save';
+            en.editor.editorToolbar.publishing = 'Menyimpan...';
+            en.editor.editorToolbar.publishNow = 'Save Sekarang';
+            en.editor.editorToolbar.publishAndCreateNew = 'Save & Buat Baru';
+          }
+        } catch (e) {
+          console.warn('Locale customize warning:', e);
+        }
+      }
+
+      // Observer untuk menyembunyikan tombol "Publish and duplicate"
+      const hideDuplicateObserver = new MutationObserver(() => {
+        document.querySelectorAll('button, a, div[role="menuitem"], li').forEach((el) => {
+          const text = (el.innerText || el.textContent || '').trim().toLowerCase();
+          if (text.includes('duplicate') || text.includes('duplikat')) {
+            el.style.display = 'none';
+          }
+        });
+      });
+      hideDuplicateObserver.observe(document.body, { childList: true, subtree: true });
+
       // Handler Deploy Build Hook
       const BUILD_HOOK_URL = 'https://api.netlify.com/build_hooks/6aadfa58353144d31d69e4bc';
       const deployBtn = document.getElementById('deployBtn');
@@ -119,10 +147,13 @@
       }
 
       if (window.CMS) {
+        customizeDecapUI(window.CMS);
         registerCmsHooks(window.CMS);
       } else {
         document.addEventListener('CMSLoad', function (e) {
-          registerCmsHooks(e.detail.CMS);
+          const cms = e.detail?.CMS || window.CMS;
+          customizeDecapUI(cms);
+          registerCmsHooks(cms);
         });
       }
     </script>
