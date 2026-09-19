@@ -36,13 +36,13 @@ collections:
         hint: 'Format WAJIB: "DD NamaBulan YYYY" — contoh: 26 Januari 2026 (huruf kapital awal bulan).'
       - { name: topik, label: "Topik", widget: select, options: [tips, studi-kasus, panduan, kabar], required: true }
       - { name: imgurl, label: "Gambar Utama", widget: image, required: true, hint: "Upload ke folder img/blog, mis. blog-nama-artikel.webp" }
-      - { name: imgalt, label: "Alt Gambar", widget: string }
-      - { name: imgPrompt, label: "Prompt Gambar (opsional)", widget: string }
+      - { name: imgalt, label: "Alt Gambar", widget: string, required: false }
       - { name: pengantar, label: "Pengantar (50-500 karakter)", widget: text, required: true, minlength: 50, maxlength: 500 }
       - { name: kesimpulan, label: "Kesimpulan (50-500 karakter)", widget: text, required: true, minlength: 50, maxlength: 500 }
       - name: faq
         label: "FAQ"
         widget: list
+        required: false
         summary: "{{fields.question}}"
         fields:
           - { name: question, label: "Pertanyaan", widget: string }
@@ -68,10 +68,10 @@ collections:
       - { name: materials, label: "Material", widget: list, required: false }
       - { name: hasCalculator, label: "Ada Kalkulator?", widget: boolean, default: false, required: false }
       - { name: calculatorType, label: "Tipe Kalkulator", widget: select, required: false, options: [huruf_timbul, neon_box, rambu, printing_standard] }
-      - { name: imageUrl, label: "Gambar Layanan", widget: image, hint: "Upload ke img/layanan, mis. layanan-nama.webp" }
-      - { name: heroAlt, label: "Alt Hero", widget: string }
-      - { name: titleSeo, label: "Title SEO", widget: string }
-      - { name: metaDescription, label: "Meta Description", widget: text }
+      - { name: imageUrl, label: "Gambar Layanan", widget: image, required: false, hint: "Upload ke img/layanan, mis. layanan-nama.webp" }
+      - { name: heroAlt, label: "Alt Hero", widget: string, required: false }
+      - { name: titleSeo, label: "Title SEO", widget: string, required: false }
+      - { name: metaDescription, label: "Meta Description", widget: text, required: false }
       - name: faqs
         label: "FAQ"
         widget: list
@@ -83,7 +83,7 @@ collections:
       - { name: keywords, label: "Keywords", widget: list, required: false }
       - { name: order, label: "Urutan Tampilan", widget: number, default: 99 }
       - { name: published, label: "Publish (tampilkan di web)?", widget: boolean, default: true, required: false }
-      - { name: body, label: "Isi Konten (Markdown)", widget: markdown }
+      - { name: body, label: "Isi Konten (Markdown)", widget: markdown, required: false }
 
   - name: "portofolio"
     label: "Portofolio"
