@@ -136,14 +136,31 @@
         }
       });
 
-      // Decap CMS hooks
+      // Decap CMS hooks & event listeners
       function registerCmsHooks(cms) {
-        if (!cms || typeof cms.registerHook !== 'function') return;
+        if (!cms) return;
 
-        cms.registerHook('prePublish', 'blog', (entry) => {
-          entry.data.publishedAt = new Date().toISOString();
-          return entry;
-        });
+        // Otomatis isi imgalt dengan titleSeo saat simpan jika belum ada
+        if (typeof cms.registerEventListener === 'function') {
+          cms.registerEventListener({
+            name: 'preSave',
+            handler: ({ entry }) => {
+              try {
+                let data = entry.get('data');
+                if (data) {
+                  const titleSeo = data.get('titleSeo');
+                  const imgalt = data.get('imgalt');
+                  if (titleSeo && (!imgalt || !String(imgalt).trim())) {
+                    data = data.set('imgalt', titleSeo);
+                  }
+                  return data;
+                }
+              } catch (e) {
+                console.warn('preSave auto-imgalt warning:', e);
+              }
+            },
+          });
+        }
       }
 
       if (window.CMS) {

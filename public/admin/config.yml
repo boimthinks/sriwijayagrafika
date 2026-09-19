@@ -36,7 +36,6 @@ collections:
         hint: 'Format WAJIB: "DD NamaBulan YYYY" — contoh: 26 Januari 2026 (huruf kapital awal bulan).'
       - { name: topik, label: "Topik", widget: select, options: [tips, studi-kasus, panduan, kabar], required: true }
       - { name: imgurl, label: "Gambar Utama", widget: image, required: true, hint: "Upload ke folder img/blog, mis. blog-nama-artikel.webp" }
-      - { name: imgalt, label: "Alt Gambar", widget: string, required: false }
       - { name: pengantar, label: "Pengantar (50-500 karakter)", widget: text, required: true, minlength: 50, maxlength: 500 }
       - { name: kesimpulan, label: "Kesimpulan (50-500 karakter)", widget: text, required: true, minlength: 50, maxlength: 500 }
       - name: faq
