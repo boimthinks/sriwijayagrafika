@@ -1,15 +1,15 @@
 ---
-title: Advertising Murah di Palembang
-titleSeo: Advertising Murah di Palembang, Cara Hitung Harga per Meter dan Pajaknya
+titleSeo: Advertising Murah di Palembang, Cara Hitung Pajak Reklame
 excerpt: Cari advertising murah di Palembang? Simak rincian harga per meter,
   pajak reklame 25%, dan syarat media bebas pajak. Konsultasi gratis.
-date: "2026-08-20"
-topik: panduan
-imgurl: /img/blog/advertising-murah-palembang.webp
 imgalt: Pekerja Sriwijaya Grafika mengukur frame reklame di depan toko Palembang
 imgPrompt: Photorealistic photo of Srifika measuring a billboard frame with a
   tape measure in front of a store in Palembang, warm morning light, tools and
   aluminum profiles nearby
+title: Advertising Murah di Palembang
+date: 2026-08-20
+topik: panduan
+imgurl: /img/blog/advertising-murah-palembang.webp
 pengantar: Mencari advertising murah di Palembang sering berakhir pada
   pertanyaan yang sama, berapa biaya produksinya dan berapa pajaknya. Sebagian
   calon pelanggan hanya membandingkan harga cetak, lalu kaget saat tagihan pajak
