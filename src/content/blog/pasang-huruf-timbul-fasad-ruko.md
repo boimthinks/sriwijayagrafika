@@ -1,26 +1,53 @@
 ---
-title: "Pasang Huruf Timbul Fasad Ruko"
-titleSeo: "Teknik Pasang Huruf Timbul Fasad Ruko, Baut Tembus atau Lem Khusus"
-excerpt: "Panduan teknik pemasangan huruf timbul di fasad ruko Palembang. Komparasi metode baut tembus bracket vs lem sealant bonding untuk ACP dan beton."
-date: "2026-08-21"
-topik: "tips"
-imgurl: "/img/blog/pasang-huruf-timbul-fasad-ruko.webp"
-imgPrompt: "Photorealistic photo of Srifika inspecting stainless acrylic LED channel letters mounted on a modern shopfront facade in Palembang using heavy duty bracket mounts"
-imgalt: "Teknik pasang huruf timbul fasad ruko Palembang"
-pengantar: "Memasang huruf timbul di fasad ruko bertingkat butuh perhitungan kekuatan konstruksi yang matang. Pilihan antara metode baut tembus bracket atau lem bonding sangat menentukan ketahanan signage saat diterpa angin kencang dan cuaca ekstrem Palembang."
-kesimpulan: "Pilihan teknik pemasangan huruf timbul harus menyesuaikan material latar fasad ruko dan bobot signage. Hubungi tim Sriwijaya Grafika via WhatsApp 0852-1511-1125 untuk konsultasi teknik instalasi gratis, survey lokasi di Palembang, dan mockup 3D."
-published: true
+titleSeo: Cara Pasang Huruf Timbul Fasad Ruko, Baut Tembus atau Lem Khusus
+excerpt: Panduan teknik pemasangan huruf timbul di fasad ruko Palembang.
+  Komparasi metode baut tembus bracket vs lem sealant bonding untuk ACP dan
+  beton.
+imgalt: Teknik pasang huruf timbul fasad ruko Palembang
+imgPrompt: Photorealistic photo of Srifika inspecting stainless acrylic LED
+  channel letters mounted on a modern shopfront facade in Palembang using heavy
+  duty bracket mounts
+title: Pasang Huruf Timbul Fasad Ruko
+date: 2026-08-21
+topik: tips
+imgurl: /img/blog/pasang-huruf-timbul-fasad-ruko.webp
+pengantar: Memasang huruf timbul di fasad ruko bertingkat butuh perhitungan
+  kekuatan konstruksi yang matang. Pilihan antara metode baut tembus bracket
+  atau lem bonding sangat menentukan ketahanan signage saat diterpa angin
+  kencang dan cuaca ekstrem Palembang.
+kesimpulan: Pilihan teknik pemasangan huruf timbul harus menyesuaikan material
+  latar fasad ruko dan bobot signage. Hubungi tim Sriwijaya Grafika via WhatsApp
+  0852-1511-1125 untuk konsultasi teknik instalasi gratis, survey lokasi di
+  Palembang, dan mockup 3D.
 faq:
-  - question: "Apakah lem sealant saja cukup untuk menahan huruf timbul di fasad ruko?"
-    answer: "Lem sealant khusus silikon netral hanya cocok untuk huruf timbul berukuran kecil di bawah 25 cm yang terpasang pada media halus seperti akrilik atau kaca. Untuk outdoor fasad ruko dengan ukuran di atas 30 cm, wajib menggunakan bantuan baut tanam atau pin spaser besi siku agar tidak roboh saat diterpa angin kencang."
-  - question: "Bagaimana cara agar pemasangan baut pada fasad ACP tidak bocor saat hujan?"
-    answer: "Setiap titik bor pada panel ACP harus disuntik dengan sealant silikon netral berbasis netral kuret sebelum dan sesudah baut dynabolt atau screw dimasukkan. Langkah ini mencegah air merembes ke bagian dalam struktur rangka hollow di belakang ACP."
-  - question: "Berapa lama proses pemasangan huruf timbul untuk fasad ruko 2 lantai?"
-    answer: "Proses pemasangan fisik di lokasi biasanya memakan waktu 4 hingga 8 jam bergantung pada ketinggian fasad, tingkat kesulitan akses, serta jumlah titik lampu LED yang harus disambung ke instalasi listrik utama."
-  - question: "Apakah perlu menggunakan perancah scaffolding saat pasang huruf timbul di lantai 2 ruko?"
-    answer: "Ya, untuk menjaga keamanan teknisi dan presisi posisi huruf, perancah besi scaffolding atau tangga lipat heavyduty wajib digunakan. Penggunaan scaffolding memastikan garis horizontal huruf terpasang lurus presisi dengan bantuan waterpass."
-  - question: "Berapa jarak spasi huruf dari dinding fasad yang ideal untuk lampu LED backlit?"
-    answer: "Jarak spasi ideal untuk efek lampu halo light atau backlit adalah 3 hingga 5 cm dari permukaan fasad ruko. Spasi ini dibuat menggunakan pin kaki stik stainless agar pendaran cahaya di belakang huruf menyebar sempurna."
+  - question: Apakah lem sealant saja cukup untuk menahan huruf timbul di fasad ruko?
+    answer: Lem sealant khusus silikon netral hanya cocok untuk huruf timbul
+      berukuran kecil di bawah 25 cm yang terpasang pada media halus seperti
+      akrilik atau kaca. Untuk outdoor fasad ruko dengan ukuran di atas 30 cm,
+      wajib menggunakan bantuan baut tanam atau pin spaser besi siku agar tidak
+      roboh saat diterpa angin kencang.
+  - question: Bagaimana cara agar pemasangan baut pada fasad ACP tidak bocor saat hujan?
+    answer: Setiap titik bor pada panel ACP harus disuntik dengan sealant silikon
+      netral berbasis netral kuret sebelum dan sesudah baut dynabolt atau screw
+      dimasukkan. Langkah ini mencegah air merembes ke bagian dalam struktur
+      rangka hollow di belakang ACP.
+  - question: Berapa lama proses pemasangan huruf timbul untuk fasad ruko 2 lantai?
+    answer: Proses pemasangan fisik di lokasi biasanya memakan waktu 4 hingga 8 jam
+      bergantung pada ketinggian fasad, tingkat kesulitan akses, serta jumlah
+      titik lampu LED yang harus disambung ke instalasi listrik utama.
+  - question: Apakah perlu menggunakan perancah scaffolding saat pasang huruf timbul
+      di lantai 2 ruko?
+    answer: Ya, untuk menjaga keamanan teknisi dan presisi posisi huruf, perancah
+      besi scaffolding atau tangga lipat heavyduty wajib digunakan. Penggunaan
+      scaffolding memastikan garis horizontal huruf terpasang lurus presisi
+      dengan bantuan waterpass.
+  - question: Berapa jarak spasi huruf dari dinding fasad yang ideal untuk lampu LED
+      backlit?
+    answer: Jarak spasi ideal untuk efek lampu halo light atau backlit adalah 3
+      hingga 5 cm dari permukaan fasad ruko. Spasi ini dibuat menggunakan pin
+      kaki stik stainless agar pendaran cahaya di belakang huruf menyebar
+      sempurna.
+published: true
 ---
 
 ## Karakteristik Fasad Ruko dan Tantangan Pemasangan
