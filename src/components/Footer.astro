@@ -1,6 +1,7 @@
 ---
 import { Phone, MapPin, Instagram, Facebook, ShoppingBag, ArrowRight, ShieldCheck, Layout, FileText, Mail, Scale } from 'lucide-react';
 import { BUSINESS_INFO } from '@lib/data';
+import GoogleSourcePreferences from '@components/GoogleSourcePreferences.astro';
 
 const currentYear = new Date().getFullYear();
 ---
@@ -145,6 +146,9 @@ const currentYear = new Date().getFullYear();
               <ArrowRight className="w-3.5 h-3.5" />
             </a>
           </div>
+        </div>
+        <div class="mt-4">
+          <GoogleSourcePreferences variant="dark" />
         </div>
       </div>
     </div>

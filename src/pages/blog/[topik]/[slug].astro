@@ -4,6 +4,7 @@ import Navbar from '@components/Navbar.astro';
 import Footer from '@components/Footer.astro';
 import BlogCard from '@components/BlogCard.astro';
 import SidebarCTA from '@components/SidebarCTA.astro';
+import GoogleSourcePreferences from '@components/GoogleSourcePreferences.astro';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import { BUSINESS_INFO } from '@lib/data';
 import { AUTHOR_NAME, TOPIK_LABELS, calcReadingTime, parseIndonesianDate, toIsoDate, formatIndonesianDate } from '@lib/blog';
@@ -206,7 +207,10 @@ if (faqSchema) allSchemas.push(faqSchema);
               <p>
                 {data.kesimpulan}
               </p>
-            
+              <div class="mt-6">
+                <GoogleSourcePreferences variant="light" />
+              </div>
+             
             </article>
 
             {data.faq && data.faq.length > 0 && (

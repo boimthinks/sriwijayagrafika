@@ -1,0 +1,95 @@
+---
+// src/components/GoogleSourcePreferences.astro
+interface Props {
+  variant?: 'light' | 'dark';
+  className?: string;
+}
+
+const { variant = 'light', className = '' } = Astro.props;
+---
+
+<div class={`google-source-preferences-wrapper ${className}`}>
+  <button
+    type="button"
+    class={`btn-google-pref ${variant === 'dark' ? 'btn-google-pref-dark' : 'btn-google-pref-light'}`}
+    data-google-source-btn
+  >
+    <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
+    </svg>
+    <span>Tambahkan Sriwijaya Grafika sebagai Referensi di Google</span>
+  </button>
+</div>
+
+<script>
+  function setupGoogleSourceBtn() {
+    const buttons = document.querySelectorAll('[data-google-source-btn]');
+    buttons.forEach((btn) => {
+      if (btn.getAttribute('data-listener-attached')) return;
+      btn.setAttribute('data-listener-attached', 'true');
+      btn.addEventListener('click', () => {
+        const domain = 'https://sriwijayagrafika.com';
+        const win = window as any;
+        if (win.google && win.google.news && win.google.news.sourcePreferences) {
+          try {
+            win.google.news.sourcePreferences.showDialog({
+              forceReload: true,
+              sourceUrl: domain,
+            });
+            return;
+          } catch (_) {}
+        }
+        window.open(`https://www.google.com/preferences/source?q=${domain}`, '_blank', 'noopener,noreferrer');
+      });
+    });
+  }
+
+  setupGoogleSourceBtn();
+  document.addEventListener('astro:page-load', setupGoogleSourceBtn);
+</script>
+
+<style>
+  .btn-google-pref {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  .btn-google-pref-light {
+    background: #224da8;
+    color: #ffffff;
+    border: 1.5px solid #224da8;
+    box-shadow: 0 1px 2px rgba(34, 77, 168, 0.08);
+  }
+
+  .btn-google-pref-light:hover {
+    background: #ff6634;
+    border-color: #ff6634;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(255, 102, 52, 0.25);
+    transform: translateY(-1px);
+  }
+
+  .btn-google-pref-dark {
+    background: #224da8;
+    color: #ffffff;
+    border: 1px solid #224da8;
+  }
+
+  .btn-google-pref-dark:hover {
+    background: #ff6634;
+    border-color: #ff6634;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 102, 52, 0.3);
+  }
+</style>
