@@ -833,6 +833,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `pasang-huruf-timbul-fasad-ruko` | Teknik pasang huruf timbul di fasad ruko, komparasi baut tembus bracket vs lem bonding sealant untuk ACP dan beton | 21 Agustus 2026 | tips | Skenario Visual |
 | `tips-rangka-besi-plang-toko-tahan-angin` | Tips rangka besi plang toko tahan angin kencang Palembang, panduan hollow galvanis dan dynabolt | 24 Agustus 2026 | tips | Problem-First |
 | `papan-nama-per-jenis-usaha` | Papan nama klinik, bengkel, dan kantor, apa saja yang beda secara teknis, material, pencahayaan, dan info wajib per jenis usaha | 27 September 2026 | panduan | Problem-First |
+| `papan-hse-performance-board-palembang` | Jual papan HSE performance board murah Palembang bahan ACP tahan cuaca untuk audit SMK3 | 6 Oktober 2026 | panduan | Problem-First |
 
 ### 12.2d Rencana Artikel Support Halaman Plang Toko & Papan Nama Kantor (Queue)
 

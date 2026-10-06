@@ -115,7 +115,52 @@ src/
 
 ## Deployment
 
-Static-only. Any host that serves `dist/` works. Build = `npm run build`, output dir = `dist`. Sitemap at `/sitemap-index.xml` is auto-generated.
+Static-only. Build = `npm run build`, output dir = `dist`. Sitemap at `/sitemap-index.xml` is auto-generated. Deploy production: **Netlify** (site `sriwijayagrafika.com`, publish `dist/`).
+
+### Tiga mekanisme deploy (penting, sering terlewat)
+
+| Pemicu | Pemanggil | Hasil |
+| --- | --- | --- |
+| Push GitHub biasa | Owner via AI Agent | **Build dibatalkan** (`ignore` di `netlify.toml`) |
+| Tombol "Deploy ke Live" di `/admin/` | Teman non-teknis | Build jalan (build hook) |
+| `npm run deploy` | Owner via AI Agent | Build jalan (build hook, sama dengan tombol CMS) |
+
+`netlify.toml` punya baris:
+
+```
+ignore = "[ -z \"$INCOMING_HOOK_TITLE\" ] && exit 0 || exit 1"
+```
+
+Artinya **hanya build yang dipicu build hook yang jalan**. Push GitHub biasa selalu dibatalkan dengan pesan `Deploy canceled ... Canceled build due to no content change`. Ini **bukan error** — ini perilaku yang disengaja untuk hemat kuota 300 menit build/bulan (kebijakan owner). Jangan "memperbaiki" dengan menghapus baris `ignore` tanpa diminta owner.
+
+### Alur owner (via AI Agent, tanpa CMS)
+
+Owner **tidak** memakai `/admin/`. Semua commit, push, dan deploy lewat AI Agent. Urutan wajib:
+
+```bash
+npm run build                                   # WAJIB, verifikasi dulu sebelum commit
+git add <file> yang relevan                     # JANGAN git add -A, ada file lain milik owner
+git commit -m "<pesan ringkas gaya repo>"
+git push -u origin main
+npm run deploy                                  # trigger build hook
+```
+
+Verifikasi setelah deploy (jangan hanya-andalkan exit code):
+
+```bash
+curl -s "https://api.netlify.com/api/v1/sites/sriwijayagrafika.com/deploys?per_page=3" | python3 -c "
+import json,sys
+for x in json.load(sys.stdin)[:3]: print(x['created_at'],'|',x['state'])"
+```
+
+`state: ready` = sukses. Lalu smoke test URL yang relevan, mis. `curl -sI https://sriwijayagrafika.com/blog/panduan/<slug>/` → expect `200`.
+
+### Build hook
+
+- URL: `https://api.netlify.com/build_hooks/6aadfa58353144d31d69e4bc`
+- Dipakai oleh script `npm run deploy` (`package.json`) dan tombol di `public/admin/index.html`.
+- **Token ini publik** (terbaca di `public/admin/index.html` yang di-serve ke publik). Pakai build hook untuk hemat kuota, jangan pakai Netlify Personal Access Token untuk Needs status check.
+- Kalau `npm run deploy` mengembalikan `HTTP 200` tapi deploy tidak muncul, cek `INCOMING_HOOK_TITLE` masih kosong di `netlify.toml` (typo `\"` akan membuat filter tidak pernah lolos).
 
 ## Progress (recent session work)
 
