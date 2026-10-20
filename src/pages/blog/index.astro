@@ -5,7 +5,7 @@ import Footer from '@components/Footer.astro';
 import BlogCard from '@components/BlogCard.astro';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import { BUSINESS_INFO } from '@lib/data';
-import { calcReadingTime, parseIndonesianDate, TOPIK_LABELS } from '@lib/blog';
+import { calcReadingTime, parseIndonesianDate, TOPIK_LABELS, TOPIKS } from '@lib/blog';
 import { SITE_SETTINGS } from '@lib/site';
 
 const page = SITE_SETTINGS.pages.blog;
@@ -28,8 +28,7 @@ const counts: Record<string, number> = {};
 for (const { post } of postsWithMeta) {
   counts[post.data.topik] = (counts[post.data.topik] ?? 0) + 1;
 }
-const topikOrder = ['tips', 'studi-kasus', 'panduan', 'kabar'] as const;
-const availableTopiks = topikOrder.filter((t) => (counts[t] ?? 0) > 0);
+const availableTopiks = TOPIKS.filter((t) => (counts[t] ?? 0) > 0);
 
 const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://sriwijayagrafika.com').toString();
 

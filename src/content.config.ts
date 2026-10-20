@@ -63,7 +63,7 @@ const blog = defineCollection({
       }
       return val;
     }),
-    topik: z.enum(['tips', 'studi-kasus', 'panduan', 'kabar']),
+    topik: z.enum(['tips', 'studi-kasus', 'panduan', 'kabar', 'teknis']),
     imgurl: z.string().min(1, { message: 'imgurl wajib (feature image + og:image)' }),
     imgPrompt: z.string().optional(),
     imgalt: z.string().optional(),

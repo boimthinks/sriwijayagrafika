@@ -9,7 +9,7 @@ imgPrompt: Photorealistic photo of Srifika inspecting stainless acrylic LED
   duty bracket mounts
 title: Pasang Huruf Timbul Fasad Ruko
 date: 2026-08-21
-topik: tips
+topik: teknis
 imgurl: /img/blog/pasang-huruf-timbul-fasad-ruko.webp
 pengantar: Memasang huruf timbul di fasad ruko bertingkat butuh perhitungan
   kekuatan konstruksi yang matang. Pilihan antara metode baut tembus bracket

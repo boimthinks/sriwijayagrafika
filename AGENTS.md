@@ -5,11 +5,18 @@
 
 ## Akses Data
 - **SUMBER-PENGETAHUAN.md** (di root project) wajib dibaca untuk data fakta brand, layanan, portofolio, liputan media, aturan menulis, dan daftar artikel terbit.
+- **RENCANA-ARTIKEL-HARIAN.md** (di root project) berisi antrean topik harian (1 hari 1 artikel) untuk optimasi ranking halaman pilar Google.
 - **Data layanan**: `src/content/layanan/*.md`.
 - **Data blog**: `src/content/blog/*.md`.
 
 ## Skill Penulisan
 - Gunakan skill **`penulis-ahli`** untuk menulis/mengedit artikel blog atau konten SEO. Skill ini menangani humanisasi (hapus pola AI), SEO/GEO (Google AI 2026), dan konten non-komoditas dalam satu pass, lalu otomatis membaca SUMBER-PENGETAHUAN.md.
+- **Alur Pertanyaan "Buat artikel apa kita hari ini?"**:
+  - Jika pengguna bertanya seperti "buat artikel apa kita hari ini?" atau "artikel apa hari ini?", AI **WAJIB** membaca `RENCANA-ARTIKEL-HARIAN.md`.
+  - Ambil antrean artikel pertama yang statusnya masih `[ ] Belum Ditulis`.
+  - Jelaskan secara ringkas kepada pengguna rincian target artikel tersebut (Hari ke berapa, Target pilar, Judul kartu, Title SEO, Target Keyword, dan Strategi internal link).
+  - Tanyakan konfirmasi kepada pengguna untuk mulai mengeksekusi penulisan dengan skill `penulis-ahli`.
+  - Setelah artikel selesai ditulis dan disimpan ke `src/content/blog/<slug>.md`, perbarui status artikel tersebut di `RENCANA-ARTIKEL-HARIAN.md` menjadi `[x] Selesai` beserta tanggalnya.
 - **Aturan imgPrompt**: Setiap penulisan artikel baru wajib menyertakan key `imgPrompt` di frontmatter. Isi `imgPrompt` harus memvisualisasikan isi artikel dalam gaya foto realistis (photorealistic) dengan menyertakan karakter Srifika yang sedang melakukan aksi, di dalam latar belakang dan suasana yang sesuai. Jangan deskripsikan identitas detail Srifika (seperti baju, jersey, dsb.) karena sudah otomatis terdefinisi oleh generator gambar eksternal.
 - **Mekanisme Rekomendasi Judul Artikel Support**: Setiap kali diminta memberikan saran judul artikel blog, AI **WAJIB**:
     1. Membaca daftar judul yang sudah terbit di `src/content/blog/` untuk memeriksa apakah topik tersebut sudah pernah dibuat.

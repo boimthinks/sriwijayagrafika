@@ -42,7 +42,7 @@ collections:
         date_format: "DD MMMM YYYY"
         time_format: false
         required: true
-      - { name: topik, label: "Topik", widget: select, options: [tips, studi-kasus, panduan, kabar], required: true }
+      - { name: topik, label: "Topik", widget: select, options: [tips, studi-kasus, panduan, kabar, teknis], required: true }
       - { name: imgurl, label: "Gambar Utama", widget: image, required: true, hint: "Upload ke folder img/blog, mis. blog-nama-artikel.webp" }
       - { name: pengantar, label: "Pengantar", widget: text, required: true }
       - { name: kesimpulan, label: "Kesimpulan", widget: text, required: true }

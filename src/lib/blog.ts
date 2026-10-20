@@ -70,9 +70,10 @@ export const TOPIK_LABELS: Record<string, string> = {
   'studi-kasus': 'Studi Kasus',
   'panduan': 'Panduan',
   'kabar': 'Kabar',
+  'teknis': 'Teknis',
 };
 
-export const TOPIKS = ['tips', 'studi-kasus', 'panduan', 'kabar'] as const;
+export const TOPIKS = ['tips', 'studi-kasus', 'panduan', 'kabar', 'teknis'] as const;
 
 export type Topik = (typeof TOPIKS)[number];
 

@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import { Calendar, BookOpen, ImageOff, PenTool, Newspaper, FileText, Megaphone, Lightbulb, Tag } from 'lucide-react';
+import { Calendar, BookOpen, ImageOff, PenTool, Newspaper, FileText, Megaphone, Lightbulb, Tag, Wrench } from 'lucide-react';
 import { TOPIK_LABELS, formatIndonesianDate } from '@lib/blog';
 
 interface Props {
@@ -17,6 +17,7 @@ const TOPIK_ICONS: Record<string, typeof Megaphone> = {
   'studi-kasus': FileText,
   'panduan': BookOpen,
   'kabar': Megaphone,
+  'teknis': Wrench,
 };
 const TopikIcon = TOPIK_ICONS[data.topik] ?? Tag;
 
