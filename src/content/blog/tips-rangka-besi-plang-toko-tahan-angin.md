@@ -19,7 +19,7 @@ faq:
 
 ## Risiko Utama Papan Nama Toko Tanpa Hitungan Angin
 
-Memasang [plang toko](/layanan/plang-toko-kantor) di fasad bangunan outdoor menghadapkan struktur besi pada beban angin vertikal maupun horizontal. Hambatan angin pada bidang plat aluminium atau banner flexi yang tertutup rapat menciptakan efek layar terkembang.
+Memasang [plang toko](/layanan/plang-toko-kantor/) di fasad bangunan outdoor menghadapkan struktur besi pada beban angin vertikal maupun horizontal. Hambatan angin pada bidang plat aluminium atau banner flexi yang tertutup rapat menciptakan efek layar terkembang.
 
 Jika rangka besi terlalu tipis atau titik pengelasan tidak merata, tekanan angin kencang akan memicu kelelahan logam (*metal fatigue*). Sambungan bracket yang hanya diikat dynabolt kecil ke dinding bata mudah terlepas dan membahayakan pejalan kaki di bawahnya.
 
@@ -51,4 +51,4 @@ Teknisi kami di Talang Jambe selalu melakukan pembersihan terak las secara telit
 
 Memastikan plang nama toko berdiri kokoh bukan hanya urusan estetika bisnis, tetapi juga tanggung jawab keselamatan umum. Kami di Sriwijaya Grafika memberikan konsultasi gratis dan rancangan fisik papan nama yang disesuaikan dengan kondisi angin di lokasi toko Anda.
 
-Hubungi tim kami melalui WhatsApp di **0852-1511-1125** atau kunjungi workshop kami di Talang Jambe Palembang untuk memesan [plang toko & papan nama kantor](/layanan/plang-toko-kantor) dengan spesifikasi rangka besi tahan cuaca bergaransi.
+Hubungi tim kami melalui WhatsApp di **0852-1511-1125** atau kunjungi workshop kami di Talang Jambe Palembang untuk memesan [plang toko & papan nama kantor](/layanan/plang-toko-kantor/) dengan spesifikasi rangka besi tahan cuaca bergaransi.

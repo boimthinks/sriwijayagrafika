@@ -87,7 +87,7 @@ Stainless adalah pilihan paling premium untuk kesan modern dan tahan lama. Kami 
 - **Mirror (mengkilap):** permukaan seperti cermin, memantulkan cahaya, memberi kesan mewah. Cocok untuk hotel, bank, mall, dan gedung korporat.
 - **Hairline (serat rambut):** permukaan dengan goresan halus searah, tidak menyilaukan, lebih mudah dirawat. Pilihan favorit untuk fasad kantor dan instansi.
 
-Untuk pemakaian luar ruang di iklim tropis Palembang yang lembap dan sering hujan, kami menyarankan **stainless SS 304** yang tahan karat maksimal. Stainless grade 201 justru pilihan yang paling sering dipakai pelanggan kami karena harganya jauh lebih terjangkau. Untuk pemasangan yang jarang kena hujan, misalnya di area yang terlindungi atau di bawah kanopi, grade ini sudah lebih dari cukup. Kalau hurufnya berdiri langsung di ruang terbuka dan selalu kena lembap, baru kami sarankan naik ke 304. Jadi pilihannya kami sesuaikan dengan anggaran dan di mana hurufnya akan dipasang, tidak memaksakan satu grade. Lihat hasil uji material kami di artikel [otopsi karat stainless](/blog/tips/otopsi-las-stainless-berkarat).
+Untuk pemakaian luar ruang di iklim tropis Palembang yang lembap dan sering hujan, kami menyarankan **stainless SS 304** yang tahan karat maksimal. Stainless grade 201 justru pilihan yang paling sering dipakai pelanggan kami karena harganya jauh lebih terjangkau. Untuk pemasangan yang jarang kena hujan, misalnya di area yang terlindungi atau di bawah kanopi, grade ini sudah lebih dari cukup. Kalau hurufnya berdiri langsung di ruang terbuka dan selalu kena lembap, baru kami sarankan naik ke 304. Jadi pilihannya kami sesuaikan dengan anggaran dan di mana hurufnya akan dipasang, tidak memaksakan satu grade. Lihat hasil uji material kami di artikel [otopsi karat stainless](/blog/tips/otopsi-las-stainless-berkarat/).
 
 ### Akrilik (Mika)
 
@@ -110,7 +110,7 @@ Ringkasan perbandingan material:
 | Galvanil | Finishing cat, ekonomis, anti karat | Baik | Backlit / frontlit | UMKM, ruko, kantor | Rp 7.500/cm |
 | Kuningan & Tembaga | Kesan klasik dan mewah | Sangat tinggi | Warm accent / spotlight | Hotel, gedung heritage | konsultasi |
 
-Perbandingan detail antara akrilik dan galvanil setelah 6 bulan di outdoor Palembang bisa Anda baca di [uji akrilik vs galvanil](/blog/tips/uji-akrilik-vs-galvanil).
+Perbandingan detail antara akrilik dan galvanil setelah 6 bulan di outdoor Palembang bisa Anda baca di [uji akrilik vs galvanil](/blog/tips/uji-akrilik-vs-galvanil/).
 
 ## Proses Produksi Berbasis Teknologi Modern
 
@@ -123,7 +123,7 @@ Kami memproduksi huruf timbul sendiri di workshop Talang Jambe, bukan meneruskan
 5. **Quality control:** verifikasi ukuran, finishing, kelistrikan, dan kesesuaian dengan mockup sebelum dikirim.
 6. **Instalasi di lokasi:** tim teknisi bersertifikat memasang di fasad, lobby, atau tiang sesuai standar keselamatan.
 
-Alur produksinya kami jelaskan lebih rinci dalam artikel [workshop Talang Jambe](/blog/kabar/workshop-talang-jambe-produksi), kalau Anda ingin mendalaminya.
+Alur produksinya kami jelaskan lebih rinci dalam artikel [workshop Talang Jambe](/blog/kabar/workshop-talang-jambe-produksi/), kalau Anda ingin mendalaminya.
 
 ## Panduan Harga & Kalkulasi Biaya
 
@@ -142,7 +142,7 @@ Variabel tambahan yang memengaruhi harga:
 - **Jenis pencahayaan:** LED backlit (huruf menyala) berbeda biaya dengan frontlit (cahaya dari depan) atau tanpa lampu.
 - **Biaya instalasi:** dihitung setelah survey lokasi, termasuk akses (crane/scaffolding untuk gedung tinggi).
 
-Panduan lengkap menentukan ukuran huruf yang pas bisa dibaca di [cara menghitung ukuran huruf timbul](/blog/panduan/ukuran-huruf-timbul-palembang-terbaca-jelas), dan perbandingan anggaran di [panduan anggaran jasa advertising Palembang](/blog/panduan/panduan-anggaran-jasa-advertising-palembang).
+Panduan lengkap menentukan ukuran huruf yang pas bisa dibaca di [cara menghitung ukuran huruf timbul](/blog/panduan/ukuran-huruf-timbul-palembang-terbaca-jelas/), dan perbandingan anggaran di [panduan anggaran jasa advertising Palembang](/blog/panduan/panduan-anggaran-jasa-advertising-palembang/).
 
 ## Portofolio & Proyek Pemasangan di Palembang
 
@@ -154,7 +154,7 @@ Sebagai vendor advertising yang sudah beroperasi sejak 2008, huruf timbul Sriwij
 - **SMP Islam Bina Insani dan Riyadh Regency 3**: huruf timbul galvanis.
 - **Cafe, resto, dan butik di kawasan Demang Lebar Daun, R. Sukamto, dan sekitar Jakabaring**: huruf timbul akrilik LED untuk storefront.
 
-Selain itu kami melayani pemasangan signages stainless untuk hotel, rumah sakit, dan papan nama instansi. Contoh proyek lain bisa dilihat di halaman [portofolio](/portofolio), sedangkan studi kasus signage korporat kami mulai dari brief sampai instalasi tersedia di [studi kasus PT Andalas Sakti](/blog/studi-kasus/signage-korporat-pt-andalas-sakti).
+Selain itu kami melayani pemasangan signages stainless untuk hotel, rumah sakit, dan papan nama instansi. Contoh proyek lain bisa dilihat di halaman [portofolio](/portofolio/), sedangkan studi kasus signage korporat kami mulai dari brief sampai instalasi tersedia di [studi kasus PT Andalas Sakti](/blog/studi-kasus/signage-korporat-pt-andalas-sakti/).
 
 ## Cara Pemesanan Huruf Timbul
 
@@ -163,7 +163,7 @@ Proses pemesanan di Sriwijaya Grafika sederhana dan terstruktur:
 1. **Konsultasi dan kirim desain.** Hubungi kami via WhatsApp, sampaikan nama usaha, dan kirim file desain (CDR, AI, PDF) atau konsep tulisan. Belum punya file? Tim desain kami yang bantu buatkan.
 2. **Survei dan estimasi biaya.** Tim teknis bisa datang langsung ke lokasi untuk pengukuran, lalu kami kirim penawaran harga resmi (quotation) beserta mockup 3D.
 3. **Proses produksi.** Setelah DP disetujui, material dipotong dengan laser CNC, dirakit, dicat (bila perlu), dan dipasangi sistem kelistrikan LED.
-4. **Pemasangan di lokasi.** Tim teknisi memasang huruf timbul di fasad, lobby, atau tiang sesuai standar keselamatan. Simulasi pengerjaan lengkap bisa dilihat di artikel [workshop Talang Jambe](/blog/kabar/workshop-talang-jambe-produksi).
+4. **Pemasangan di lokasi.** Tim teknisi memasang huruf timbul di fasad, lobby, atau tiang sesuai standar keselamatan. Simulasi pengerjaan lengkap bisa dilihat di artikel [workshop Talang Jambe](/blog/kabar/workshop-talang-jambe-produksi/).
 
 ## Pajak Reklame & Izin Pemasangan di Palembang
 
@@ -171,7 +171,7 @@ Pemasangan huruf timbul di fasad bangunan yang terlihat dari ruang publik umumny
 
 Mengurus izin bukan sekadar formalitas. Reklame tanpa IPR berisiko disegel atau dibongkar oleh **Satpol PP**, dan Anda tetap menanggung biaya produksi plus pajak yang tertunggak. Lebih baik diurus sejak awal sebelum produksi, supaya jadwal pemasangan tidak tertunda.
 
-Kami membantu pengurusan izin dan pengurusan pajak reklame sebagai layanan tambahan, termasuk konsultasi dokumen yang dibutuhkan. Persyaratan dokumen dan langkah-langkahnya dijelaskan dalam [panduan izin reklame Palembang](/blog/panduan/panduan-izin-reklame-palembang).
+Kami membantu pengurusan izin dan pengurusan pajak reklame sebagai layanan tambahan, termasuk konsultasi dokumen yang dibutuhkan. Persyaratan dokumen dan langkah-langkahnya dijelaskan dalam [panduan izin reklame Palembang](/blog/panduan/panduan-izin-reklame-palembang/).
 
 ## Mengapa Memilih Sriwijaya Grafika?
 
@@ -184,7 +184,7 @@ Sriwijaya Grafika sudah melayani jasa advertising dan reklame sejak 2008, dengan
 - **Garansi 1 tahun penuh:** termasuk untuk proyek besar seperti Gedung Walikota Palembang, Kejati Sumsel, dan beberapa mall di Palembang.
 - **Portofolio terverifikasi:** diliput Sriwijaya Post (Tribun Sumsel), Berita Sumsel, dan PAL-TV.
 
-Proyek huruf timbul akrilik LED untuk gedung kantor, dari brief sampai instalasi, bisa Anda lihat di [studi kasus signage korporat PT Andalas Sakti](/blog/studi-kasus/signage-korporat-pt-andalas-sakti).
+Proyek huruf timbul akrilik LED untuk gedung kantor, dari brief sampai instalasi, bisa Anda lihat di [studi kasus signage korporat PT Andalas Sakti](/blog/studi-kasus/signage-korporat-pt-andalas-sakti/).
 
 ## Hubungi Kami
 

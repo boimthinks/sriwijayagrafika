@@ -9,7 +9,7 @@ interface Props {
 
 const { service, variant = 'default' } = Astro.props;
 const data = service.data;
-const href = `/layanan/${service.id}`;
+const href = `/layanan/${service.id}/`;
 
 const SUBCATEGORY_ICONS: Record<string, typeof Megaphone> = {
   'Advertising & Reklame': Megaphone,

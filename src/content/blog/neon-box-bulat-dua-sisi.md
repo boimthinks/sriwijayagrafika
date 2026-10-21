@@ -63,4 +63,4 @@ Menentukan diameter neon box bulat harus disesuaikan dengan lebar trotoar dan ke
 
 Pastikan bagian terbawah bracket dan box berada di ketinggian minimal 2,5 meter dari permukaan trotoar jalan untuk mencegah benturan dengan pejalan kaki yang membawa payung atau kendaraan pengangkut barang yang parkir di pinggir jalan.
 
-Untuk kebutuhan kustomisasi bentuk, ukuran, dan pencahayaan khusus toko Anda, layanan [pembuatan neon box](/layanan/neon-box) dari Sriwijaya Grafika menyediakan fasilitas mockup 3D serta garansi resmi 1 tahun penuh untuk seluruh komponen kelistrikan dan konstruksi.
+Untuk kebutuhan kustomisasi bentuk, ukuran, dan pencahayaan khusus toko Anda, layanan [pembuatan neon box](/layanan/neon-box/) dari Sriwijaya Grafika menyediakan fasilitas mockup 3D serta garansi resmi 1 tahun penuh untuk seluruh komponen kelistrikan dan konstruksi.

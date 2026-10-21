@@ -61,7 +61,7 @@ Event Desk ini sangat praktis untuk:
 - **Usaha Kuliner Portable**: Booth jualan minuman boba, kopi kekinian, pempek, atau camilan ringan.
 - **Pelayanan Publik & Informasi**: Meja informasi pendaftaran acara, tiket, dan customer service sementara.
 
-Event desk ini sering dikombinasikan dengan [plang toko](/layanan/plang-toko-kantor) atau banner promosi lainnya. Untuk panduan anggaran acara promosi, Anda bisa membaca artikel [anggaran jasa advertising](/blog/panduan/panduan-anggaran-jasa-advertising-palembang).
+Event desk ini sering dikombinasikan dengan [plang toko](/layanan/plang-toko-kantor/) atau banner promosi lainnya. Untuk panduan anggaran acara promosi, Anda bisa membaca artikel [anggaran jasa advertising](/blog/panduan/panduan-anggaran-jasa-advertising-palembang/).
 
 ## Proses Pengerjaan
 

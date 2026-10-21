@@ -100,8 +100,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   'itemListElement': [
-    { '@type': 'ListItem', 'position': 1, 'name': 'Beranda', 'item': (Astro.site ?? 'https://sriwijayagrafika.com') + '/' },
-    { '@type': 'ListItem', 'position': 2, 'name': 'Layanan', 'item': (Astro.site ?? 'https://sriwijayagrafika.com') + '/layanan' },
+    { '@type': 'ListItem', 'position': 1, 'name': 'Beranda', 'item': new URL('/', Astro.site ?? 'https://sriwijayagrafika.com').toString() },
+    { '@type': 'ListItem', 'position': 2, 'name': 'Layanan', 'item': new URL('/layanan/', Astro.site ?? 'https://sriwijayagrafika.com').toString() },
     { '@type': 'ListItem', 'position': 3, 'name': data.name, 'item': pageUrl }
   ]
 };
@@ -302,7 +302,7 @@ if (faqSchema) allSchemas.push(faqSchema);
                 <p class="text-xs text-neutral-500 mt-1">Lihat katalog lengkap kami untuk produk signage dan reklame.</p>
               </div>
               <a
-                href="/layanan"
+                href="/layanan/"
                 class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white border border-neutral-200 hover:bg-neutral-50 text-neutral-700 text-sm font-bold transition-all"
               >
                 Lihat Layanan Lain

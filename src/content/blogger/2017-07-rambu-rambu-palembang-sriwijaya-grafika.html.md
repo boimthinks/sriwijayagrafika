@@ -3,8 +3,7 @@ title: "Rambu rambu - Palembang | Sriwijaya grafika"
 date: 2017-07-28T22:04:00Z
 labels: [Rambu K3, Rambu - Rambu, Advertising palembang, Rambu Lalu Lintas / Rambu Jalan, Safety Sign]
 slug: "2017-07-rambu-rambu-palembang-sriwijaya-grafika.html"
-metaDescription: "Rambu rambu palembang murah. Rambu jalan, rambu parkir, safety sign atau rambu keselamatan kerja (K3) serta bermacam rambu lainnya. Bahan Alumunium, ACP dan
-akrilik."
+metaDescription: "Rambu rambu palembang murah. Rambu jalan, rambu parkir, safety sign atau rambu keselamatan kerja (K3) serta bermacam rambu lainnya. Bahan Alumunium, ACP dan akrilik."
 ---
 
 Sriwijaya grafika palembang menerima pesanan rambu rambu jalan, rambu parkir, Safety Sign atau yang dikenal juga dengan nama rambu kesehatan dan keselamatan kerja (K3). Kami mengerjakan semua pesanan di workshop kami sendiri mulai dari proses awal hingga selesai.  

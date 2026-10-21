@@ -88,7 +88,7 @@ export default function OrderHistory() {
 
         <div class="pt-2 text-[11px] text-neutral-500 flex items-center gap-1.5">
           <Sparkles class="w-3.5 h-3.5 text-[#ff6634]" />
-          <span>Mau desain lebih lanjut? Buka <a href="/layanan" class="font-bold text-[#224da8] hover:underline">Layanan</a> untuk menambah item.</span>
+          <span>Mau desain lebih lanjut? Buka <a href="/layanan/" class="font-bold text-[#224da8] hover:underline">Layanan</a> untuk menambah item.</span>
         </div>
       </div>
     </section>

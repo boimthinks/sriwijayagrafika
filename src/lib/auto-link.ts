@@ -20,8 +20,13 @@ function loadKeywords(): KeywordEntry[] {
     const colonIndex = trimmed.indexOf(':');
     if (colonIndex === -1) continue;
 
-    const keyword = trimmed.slice(0, colonIndex).trim();
-    const url = trimmed.slice(colonIndex + 1).trim();
+    let keyword = trimmed.slice(0, colonIndex).trim();
+    let url = trimmed.slice(colonIndex + 1).trim();
+
+    // Pastikan link internal selalu memiliki trailing slash agar tidak memicu 301 redirect
+    if (url.startsWith('/') && !url.endsWith('/') && !url.includes('#') && !url.includes('.')) {
+      url += '/';
+    }
 
     if (keyword && url) {
       entries.push({ keyword, url });

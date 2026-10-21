@@ -18,9 +18,11 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi kali
    - Judul Kartu (`title`) & `titleSeo`
    - Keyword & Intensi
    - Rencana Internal Link
-4. Gunakan skill **`penulis-ahli`** untuk menulis artikel sesuai standar project (humanizer + SEO/GEO 2026 + non-komoditas + schema Zod blog).
-5. Buat file artikel di `src/content/blog/<slug>.md`.
-6. Tandai checkbox status menjadi `[x]` dan catat tanggal selesainya.
+4. Minta konfirmasi pengguna untuk mulai memproses.
+5. Jalankan riset kata kunci, pemetaan entitas semantik, dan outline E-E-A-T menggunakan skill **`pakar-entity-seo`**.
+6. Teruskan hasil riset tersebut ke skill **`penulis-ahli`** untuk menulis artikel sesuai standar project (humanizer + SEO/GEO 2026 + non-komoditas + schema Zod blog).
+7. Buat file artikel di `src/content/blog/<slug>.md`.
+8. Tandai checkbox status menjadi `[x]` dan catat tanggal selesainya.
 
 ---
 
@@ -44,10 +46,10 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi kali
 ---
 
 ### Hari 2 — Penguat Rambu K3 (Grade Stiker Tambang & Perkebunan Sumsel)
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (21 Oktober 2026)
 - **Target Halaman Pilar:** `/layanan/rambu-rambu`
 - **Topik:** `panduan`
-- **Slug Usulan:** `standar-stiker-rambu-tambang-sumsel`
+- **Slug File:** `standar-stiker-rambu-tambang-sumsel`
 - **Judul Kartu (`title`, maks 5 kata):** Standar Stiker Rambu Tambang Sumsel
 - **Title SEO (`titleSeo`, maks 12 kata):** Perbedaan Grade Stiker Rambu K3 Area Tambang Batubara Sumsel
 - **Target Keyword:**

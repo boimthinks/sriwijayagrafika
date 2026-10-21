@@ -10,7 +10,7 @@ hero:
   imageDesktop: /img/hero/hero.webp
   imageMobile: /img/hero/hero_mobile.webp
   ctaText: Hubungi Kami
-  ctaUrl: /kontak
+  ctaUrl: /kontak/
   stats:
     - value: 16+
       label: Tahun Dedikasi

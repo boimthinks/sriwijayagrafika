@@ -10,11 +10,11 @@ interface Props {
 const { current = 'home' } = Astro.props;
 
 const menuItems = [
-   { id: 'home', label: 'Beranda', href: '/' },
-   { id: 'services', label: 'Layanan', href: '/layanan' },
-   { id: 'portfolio', label: 'Galeri Portofolio', href: '/portofolio' },
-    { id: 'blog', label: 'Blog', href: '/blog' },
-    { id: 'contact', label: 'Kontak', href: '/kontak' },
+    { id: 'home', label: 'Beranda', href: '/' },
+    { id: 'services', label: 'Layanan', href: '/layanan/' },
+    { id: 'portfolio', label: 'Galeri Portofolio', href: '/portofolio/' },
+    { id: 'blog', label: 'Blog', href: '/blog/' },
+    { id: 'contact', label: 'Kontak', href: '/kontak/' },
   ] as const;
 
 const isActive = (id: string) => current === id;

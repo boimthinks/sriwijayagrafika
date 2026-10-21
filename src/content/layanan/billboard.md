@@ -60,7 +60,7 @@ Billboard kami cocok untuk:
 - Reklame jaringan toko retail dan franchise.
 - Penanda lokasi kawasan industri.
 
-Untuk media luar ruang berukuran sedang atau lebih ekonomis, Anda bisa mempertimbangkan layanan [pylon sign](/layanan/pylon-totem) atau [neon box](/layanan/neon-box). Syarat dan alur izin reklame dapat dipelajari di artikel [panduan izin reklame Palembang](/blog/panduan/panduan-izin-reklame-palembang).
+Untuk media luar ruang berukuran sedang atau lebih ekonomis, Anda bisa mempertimbangkan layanan [pylon sign](/layanan/pylon-totem/) atau [neon box](/layanan/neon-box/). Syarat dan alur izin reklame dapat dipelajari di artikel [panduan izin reklame Palembang](/blog/panduan/panduan-izin-reklame-palembang/).
 
 ## Proses Pengerjaan
 

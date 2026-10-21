@@ -76,7 +76,7 @@ Plang nama ini sangat fleksibel dan tepat dipasang di:
 - **Kantor & Instansi**: Kantor cabang, kantor notary/PPAT, koperasi, dan lembaga bimbingan belajar.
 - **Lembaga & Komunitas**: Sekolah, tempat ibadah, yayasan sosial, dan posko ormas.
 
-Jika Anda ingin tampilan fasad yang lebih eksklusif dan menyala 24 jam, Anda bisa mempertimbangkan layanan [neon box](/layanan/neon-box) atau [huruf timbul](/layanan/huruf-timbul).
+Jika Anda ingin tampilan fasad yang lebih eksklusif dan menyala 24 jam, Anda bisa mempertimbangkan layanan [neon box](/layanan/neon-box/) atau [huruf timbul](/layanan/huruf-timbul/).
 
 ## Proses Pengerjaan
 

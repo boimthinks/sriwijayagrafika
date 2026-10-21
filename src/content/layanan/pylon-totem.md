@@ -63,7 +63,7 @@ Pylon sign merupakan investasi identitas visual yang tepat untuk:
 - **Totem Sekolah & Kampus**: Identitas institusi pendidikan di jalan utama.
 - **Signage Perumahan & Apartemen**: Penanda gerbang utama cluster.
 
-Pylon sign sering dikombinasikan dengan [billboard](/layanan/billboard) untuk media promosi tambahan atau [neon box](/layanan/neon-box) untuk detail fasilitas. Ketentuan mengenai perizinan reklame ini dapat Anda pelajari di [panduan izin reklame Palembang](/blog/panduan/panduan-izin-reklame-palembang).
+Pylon sign sering dikombinasikan dengan [billboard](/layanan/billboard/) untuk media promosi tambahan atau [neon box](/layanan/neon-box/) untuk detail fasilitas. Ketentuan mengenai perizinan reklame ini dapat Anda pelajari di [panduan izin reklame Palembang](/blog/panduan/panduan-izin-reklame-palembang/).
 
 ## Proses Pengerjaan
 

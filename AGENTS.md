@@ -9,13 +9,16 @@
 - **Data layanan**: `src/content/layanan/*.md`.
 - **Data blog**: `src/content/blog/*.md`.
 
-## Skill Penulisan
-- Gunakan skill **`penulis-ahli`** untuk menulis/mengedit artikel blog atau konten SEO. Skill ini menangani humanisasi (hapus pola AI), SEO/GEO (Google AI 2026), dan konten non-komoditas dalam satu pass, lalu otomatis membaca SUMBER-PENGETAHUAN.md.
+## Skill Riset & Penulisan
+- **Alur Kolaborasi Dua Skill**:
+  1. **Riset & Arsitektur Konten**: Gunakan skill **`pakar-entity-seo`** untuk mengekstrak keyword, memetakan entitas semantik (Knowledge Graph / Schema.org), dan menyusun outline E-E-A-T berbasis konteks lokal Sumsel/Palembang sebelum penulisan.
+  2. **Penulisan Final**: Gunakan skill **`penulis-ahli`** yang menerima input hasil riset dari `pakar-entity-seo` untuk menghasilkan artikel akhir (humanizer, SEO/GEO 2026, konten non-komoditas, dan validasi frontmatter Zod).
 - **Alur Pertanyaan "Buat artikel apa kita hari ini?"**:
   - Jika pengguna bertanya seperti "buat artikel apa kita hari ini?" atau "artikel apa hari ini?", AI **WAJIB** membaca `RENCANA-ARTIKEL-HARIAN.md`.
   - Ambil antrean artikel pertama yang statusnya masih `[ ] Belum Ditulis`.
   - Jelaskan secara ringkas kepada pengguna rincian target artikel tersebut (Hari ke berapa, Target pilar, Judul kartu, Title SEO, Target Keyword, dan Strategi internal link).
-  - Tanyakan konfirmasi kepada pengguna untuk mulai mengeksekusi penulisan dengan skill `penulis-ahli`.
+  - Tanyakan konfirmasi kepada pengguna untuk memulai proses.
+  - Setelah dikonfirmasi, lakukan riset kata kunci dan pemetaan entitas dengan skill **`pakar-entity-seo`**, kemudian teruskan hasilnya ke skill **`penulis-ahli`** untuk menulis artikel lengkap.
   - Setelah artikel selesai ditulis dan disimpan ke `src/content/blog/<slug>.md`, perbarui status artikel tersebut di `RENCANA-ARTIKEL-HARIAN.md` menjadi `[x] Selesai` beserta tanggalnya.
 - **Aturan imgPrompt**: Setiap penulisan artikel baru wajib menyertakan key `imgPrompt` di frontmatter. Isi `imgPrompt` harus memvisualisasikan isi artikel dalam gaya foto realistis (photorealistic) dengan menyertakan karakter Srifika yang sedang melakukan aksi, di dalam latar belakang dan suasana yang sesuai. Jangan deskripsikan identitas detail Srifika (seperti baju, jersey, dsb.) karena sudah otomatis terdefinisi oleh generator gambar eksternal.
 - **Mekanisme Rekomendasi Judul Artikel Support**: Setiap kali diminta memberikan saran judul artikel blog, AI **WAJIB**:

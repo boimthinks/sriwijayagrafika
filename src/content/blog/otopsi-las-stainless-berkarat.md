@@ -88,6 +88,6 @@ Terakhir, minta garansi tertulis. Vendor yang yakin dengan kualitas lasnya akan 
 
 Untuk huruf timbul stainless 304 di Sriwijaya Grafika, harga standar mulai Rp 12.000 per cm tinggi huruf dengan finishing mirror atau hairline tanpa LED. Tambahan LED internal frontlit sekitar Rp 3.500 sampai Rp 5.000 per cm. Harga ini sudah termasuk material 304, pengelasan TIG dengan argon, pickling dan passivation, serta garansi instalasi 1 tahun.
 
-Detail material dan pilihan lain bisa Anda cek di halaman [huruf timbul](/layanan/huruf-timbul) kami, termasuk pilihan akrilik, kuningan, dan galvanil untuk berbagai kebutuhan dan budget.
+Detail material dan pilihan lain bisa Anda cek di halaman [huruf timbul](/layanan/huruf-timbul/) kami, termasuk pilihan akrilik, kuningan, dan galvanil untuk berbagai kebutuhan dan budget.
 
 Garansi kami mencakup kerusakan kelistrikan dan fisik pada instalasi luar ruang selama 1 tahun penuh. Untuk material 304 dengan teknik las yang benar, umur pakai yang kami amati di Palembang 8 sampai 12 tahun untuk outdoor penuh, dan 15 tahun lebih untuk semi-outdoor di bawah atap.

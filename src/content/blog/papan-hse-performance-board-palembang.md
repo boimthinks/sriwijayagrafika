@@ -74,7 +74,7 @@ Biaya pembuatan papan informasi K3 bervariasi bergantung pada ukuran bidang, spe
 | Rangka Penguat Belakang | Hollow Besi Galvanis 30x30 mm Cat Zinkromate | 1 Unit | 600.000 |
 | Total Perkiraan Unit Dasar | Siap Pasang Dinding (Tanpa Tiang Tanam) | 1 Unit | 3.100.000 |
 
-Tarif di atas merupakan perkiraan workshop lokal per 2026 dan dapat disesuaikan apabila klien membutuhkan tiang pipa galvanis ganda ukuran dua inci untuk instalasi berdiri mandiri di atas tanah. Informasi pilihan rambu penunjang lainnya dapat dilihat di halaman [rambu K3](/layanan/rambu-rambu).
+Tarif di atas merupakan perkiraan workshop lokal per 2026 dan dapat disesuaikan apabila klien membutuhkan tiang pipa galvanis ganda ukuran dua inci untuk instalasi berdiri mandiri di atas tanah. Informasi pilihan rambu penunjang lainnya dapat dilihat di halaman [rambu K3](/layanan/rambu-rambu/).
 
 ## Panduan Pemasangan dan Titik Penempatan Strategis
 

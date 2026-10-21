@@ -7,7 +7,7 @@ topik: "studi-kasus"
 imgurl: "/img/portfolio/neon-box-kedai-temon.webp"
 imgalt: "Neon box Kedai Pempek Maris Palembang hasil produksi Sriwijaya Grafika"
 pengantar: "Kalau Anda pegang bisnis kuliner di Palembang dan sedang cari contoh signage yang benar-benar bekerja untuk meningkatkan kunjungan, artikel ini pas untuk Anda. Di bawah ini kami buka studi kasus Kedai Pempek Maris, neon box sederhana yang ikut mendongkrak 40% kunjungan setelah re-opening outlet kedua mereka. Bukan sekadar testimoni, tapi rincian brief, solusi, dan hasil yang bisa Anda pelajari untuk bisnis Anda sendiri."
-kesimpulan: "Signage yang menyala 24 jam adalah marketing yang tidak pernah tidur. Untuk Kedai Pempek Maris, investasi neon box kembali berkali-kali lipat dalam 3 bulan pertama. Kalau Anda pertimbangkan neon box untuk cafe, restoran, atau toko retail, halaman [neon box](/layanan/neon-box) kami punya rincian material, harga, dan proses produksi. Mau diskusi desain atau butuh survey lokasi? Tim kami siap via WhatsApp 0852-1511-1125, konsultasi gratis, mockup 3D, dan survey area Palembang."
+kesimpulan: "Signage yang menyala 24 jam adalah marketing yang tidak pernah tidur. Untuk Kedai Pempek Maris, investasi neon box kembali berkali-kali lipat dalam 3 bulan pertama. Kalau Anda pertimbangkan neon box untuk cafe, restoran, atau toko retail, halaman [neon box](/layanan/neon-box/) kami punya rincian material, harga, dan proses produksi. Mau diskusi desain atau butuh survey lokasi? Tim kami siap via WhatsApp 0852-1511-1125, konsultasi gratis, mockup 3D, dan survey area Palembang."
 published: true
 ---
 
@@ -73,6 +73,6 @@ Konsistensi brand di signage fisik juga penting. Logo dan warna yang sama antara
 
 Untuk neon box single-side ukuran 1,5 × 2 meter dengan spesifikasi seperti kasus di atas, range investasi di workshop kami mulai Rp 1,5 juta per meter persegi, belum termasuk instalasi dan aksesoris tambahan. Harga final sangat tergantung pada kompleksitas desain, jenis material cover, dan kondisi lokasi pemasangan.
 
-Detail lengkap material, pilihan frame, dan contoh aplikasi bisa Anda cek di halaman [neon box](/layanan/neon-box) kami. Ada juga referensi proyek lain seperti neon box SPBU Pertamina dan Super Indo yang sudah kami kerjakan.
+Detail lengkap material, pilihan frame, dan contoh aplikasi bisa Anda cek di halaman [neon box](/layanan/neon-box/) kami. Ada juga referensi proyek lain seperti neon box SPBU Pertamina dan Super Indo yang sudah kami kerjakan.
 
 Kalau Anda ingin diskusi desain untuk outlet, cafe, atau toko, kami terbuka untuk survey lokasi gratis di area Palembang. Untuk luar kota, kami bisa komunikasi via WhatsApp dulu untuk gambaran awal.

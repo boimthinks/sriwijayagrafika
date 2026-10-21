@@ -63,7 +63,7 @@ Pilihan pencahayaan utama yang tersedia: **Frontlit** (cahaya menyala di wajah h
 - Logo di fasad mall dan ruko modern.
 - Huruf dekoratif interior untuk lobby premium.
 
-Pengerjaan channel letter dilakukan di workshop Talang Jambe dengan standar material yang konsisten dengan layanan [huruf timbul](/layanan/huruf-timbul). Untuk pemahaman lebih dalam tentang pemilihan LED, simak artikel kami soal [perbedaan modul LED Samsung dan tiruan](/blog/tips/beda-led-samsung-vs-palsu).
+Pengerjaan channel letter dilakukan di workshop Talang Jambe dengan standar material yang konsisten dengan layanan [huruf timbul](/layanan/huruf-timbul/). Untuk pemahaman lebih dalam tentang pemilihan LED, simak artikel kami soal [perbedaan modul LED Samsung dan tiruan](/blog/tips/beda-led-samsung-vs-palsu/).
 
 ## Proses Pengerjaan
 

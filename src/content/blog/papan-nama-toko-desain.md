@@ -63,4 +63,4 @@ Kalau Anda masih ragu, mulai dari konsultasi desain. Tim kami biasa berdiskusi d
 
 Harga plang toko dihitung per meter persegi, mulai dari Rp 350.000 untuk frame hollow dengan visual cutting stiker atau printing. Harga naik tergantung ukuran, bahan penutup, dan jenis visual. Untuk area Kota Palembang, pemasangan gratis.
 
-Untuk plang yang lebih menonjol, pertimbangkan upgrade ke [huruf timbul LED](/layanan/huruf-timbul) atau [neon box](/layanan/neon-box). Detail, spesifikasi, dan FAQ plang toko tersedia di halaman layanan [plang toko dan kantor](/layanan/plang-toko-kantor), dan perbandingan harga signage jangka panjang bisa Anda baca di artikel [reklame murah vs premium](/blog/panduan/selisih-harga-reklame-murah-vs-premium).
+Untuk plang yang lebih menonjol, pertimbangkan upgrade ke [huruf timbul LED](/layanan/huruf-timbul/) atau [neon box](/layanan/neon-box/). Detail, spesifikasi, dan FAQ plang toko tersedia di halaman layanan [plang toko dan kantor](/layanan/plang-toko-kantor/), dan perbandingan harga signage jangka panjang bisa Anda baca di artikel [reklame murah vs premium](/blog/panduan/selisih-harga-reklame-murah-vs-premium/).

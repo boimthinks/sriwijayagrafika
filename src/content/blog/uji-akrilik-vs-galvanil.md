@@ -99,4 +99,4 @@ Huruf timbul stainless 304 (untuk referensi premium) mulai Rp 15.000 per cm ting
 
 Harga di atas belum termasuk instalasi di lokasi tinggi, bracket struktural khusus, atau pengiriman ke luar Palembang. Untuk project spesifik, kami biasanya kirim quotation detail setelah diskusi desain dan survey lokasi.
 
-Detail lengkap material, finishing, dan FAQ huruf timbul bisa Anda cek di [halaman huruf timbul](/layanan/huruf-timbul) kami. Atau langsung diskusi dengan tim kami via WhatsApp 0852-1511-1125. Kami terbuka untuk diskusi material dan budget untuk signage Anda.
+Detail lengkap material, finishing, dan FAQ huruf timbul bisa Anda cek di [halaman huruf timbul](/layanan/huruf-timbul/) kami. Atau langsung diskusi dengan tim kami via WhatsApp 0852-1511-1125. Kami terbuka untuk diskusi material dan budget untuk signage Anda.

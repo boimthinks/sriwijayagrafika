@@ -7,7 +7,7 @@ topik: "studi-kasus"
 imgurl: "/img/blog/signage-korporat-pt-andalas-sakti.webp"
 imgalt: "Huruf timbul akrilik PT Andalas Sakti Perkasa di gedung kantor Palembang"
 pengantar: "Anda pikir signage korporat itu hanya soal logo besar di depan gedung? Coba tanya ke tim procurement yang sudah tiga kali ganti vendor dalam dua tahun. Huruf berkarat, LED mati sebagian, finishing mengelupas, vendor tidak responsif saat klaim garansi. Artikel ini cerita dari klien korporat kami yang akhirnya memutuskan pindah ke workshop dengan pendekatan berbeda. Hasilnya bukan hanya signage yang terlihat bagus, tapi sistem yang bisa di-maintain dan dipertanggungjawabkan ke manajemen."
-kesimpulan: "Signage korporat adalah investasi yang harus dipikirkan serius. Untuk gedung kantor, showroom, atau fasilitas publik, pemilihan material dan kualitas pengerjaan adalah faktor penentu umur pakai dan citra perusahaan. Kalau Anda pertimbangkan signage untuk gedung korporat, halaman [huruf timbul](/layanan/huruf-timbul) kami punya rincian material. Mau diskusi kebutuhan signage korporat? Tim kami terbuka untuk presentasi dan survey lokasi. Hubungi WhatsApp 0852-1511-1125 untuk area Palembang."
+kesimpulan: "Signage korporat adalah investasi yang harus dipikirkan serius. Untuk gedung kantor, showroom, atau fasilitas publik, pemilihan material dan kualitas pengerjaan adalah faktor penentu umur pakai dan citra perusahaan. Kalau Anda pertimbangkan signage untuk gedung korporat, halaman [huruf timbul](/layanan/huruf-timbul/) kami punya rincian material. Mau diskusi kebutuhan signage korporat? Tim kami terbuka untuk presentasi dan survey lokasi. Hubungi WhatsApp 0852-1511-1125 untuk area Palembang."
 published: true
 ---
 
@@ -85,4 +85,4 @@ Untuk facade 1-3 kata dengan tinggi 60-80 cm, budget mulai Rp 8-15 juta sudah te
 
 Yang paling menentukan biaya: jumlah huruf, tinggi huruf, jenis akrilik (grade signage vs general), dan kompleksitas instalasi. Untuk gedung tinggi yang butuh crane atau scaffolding, biaya instalasi bisa mencapai 30-40% dari total project.
 
-Detail material dan pilihan finishing bisa dicek di [halaman huruf timbul](/layanan/huruf-timbul) kami. Untuk diskusi kebutuhan signage korporat Anda, tim kami terbuka untuk presentasi dan survey lokasi. Silakan hubungi WhatsApp 0852-1511-1125.
+Detail material dan pilihan finishing bisa dicek di [halaman huruf timbul](/layanan/huruf-timbul/) kami. Untuk diskusi kebutuhan signage korporat Anda, tim kami terbuka untuk presentasi dan survey lokasi. Silakan hubungi WhatsApp 0852-1511-1125.

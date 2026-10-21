@@ -84,7 +84,7 @@ const breadcrumbSchema = {
           <ol class="flex flex-wrap items-center justify-center gap-1.5">
             <li><a href="/" class="hover:text-white transition-colors">Beranda</a></li>
             <li aria-hidden="true">/</li>
-            <li><a href="/blog" class="hover:text-white transition-colors">Blog</a></li>
+            <li><a href="/blog/" class="hover:text-white transition-colors">Blog</a></li>
             <li aria-hidden="true">/</li>
             <li class="text-white">{topikLabel}</li>
           </ol>
@@ -106,7 +106,7 @@ const breadcrumbSchema = {
         <div class="max-w-md mx-auto px-4 text-center space-y-3">
           <p class="text-base font-bold text-neutral-700">Belum ada artikel di kategori ini.</p>
           <p class="text-xs text-neutral-500 leading-relaxed">
-            Silakan kembali ke <a href="/blog" class="text-[#224da8] font-bold hover:underline">halaman blog</a> untuk melihat topik lain.
+            Silakan kembali ke <a href="/blog/" class="text-[#224da8] font-bold hover:underline">halaman blog</a> untuk melihat topik lain.
           </p>
           <a
             href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya ingin berkonsultasi mengenai kebutuhan signage.')}`}
@@ -153,7 +153,7 @@ const breadcrumbSchema = {
           ))}
         </div>
         <a
-          href="/blog"
+          href="/blog/"
           class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#224da8] hover:bg-[#1a3d87] text-white text-xs font-bold shadow-md transition-all"
         >
           Kembali ke Blog

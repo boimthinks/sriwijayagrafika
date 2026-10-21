@@ -61,7 +61,7 @@ Neon Flex cocok untuk mempercantik:
 - **Event & Pesta**: Signage latar belakang pernikahan, ulang tahun, dan backdrop foto booth.
 - **Dekorasi Rumah**: Lampu tidur custom, hiasan dinding ruang tamu, dan ruang game.
 
-Neon flex sangat ideal dikombinasikan dengan [huruf timbul](/layanan/huruf-timbul) atau [neon box](/layanan/neon-box) untuk memberikan kesan kontras dan atraktif pada identitas visual usaha Anda.
+Neon flex sangat ideal dikombinasikan dengan [huruf timbul](/layanan/huruf-timbul/) atau [neon box](/layanan/neon-box/) untuk memberikan kesan kontras dan atraktif pada identitas visual usaha Anda.
 
 ## Proses Pengerjaan
 

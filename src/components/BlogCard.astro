@@ -10,7 +10,7 @@ interface Props {
 
 const { post, readingTime } = Astro.props;
 const data = post.data;
-const href = `/blog/${data.topik}/${post.id}`;
+const href = `/blog/${data.topik}/${post.id}/`;
 
 const TOPIK_ICONS: Record<string, typeof Megaphone> = {
   'tips': Lightbulb,

@@ -61,7 +61,7 @@ Sriwijaya Grafika melayani pembuatan rambu K3 berkualitas tinggi dari bahan plat
 5. **Rambu Pemadam Kebakaran**: Latar merah (misal: Lokasi APAR, Hidran Kebakaran).
 6. **Rambu Proyek & Lalu Lintas Kawasan**: Rambu jalan internal pabrik, batas kecepatan, dan instruksi galian proyek.
 
-Detail lengkap mengenai aturan pemasangan rambu ini dapat dipelajari di artikel [standar Kemnaker rambu K3 pabrik](/blog/panduan/standar-kemnaker-rambu-k3-pabrik) dan rincian harga pengadaan di [estimasi biaya rambu Palembang](/blog/panduan/estimasi-biaya-rambu-palembang).
+Detail lengkap mengenai aturan pemasangan rambu ini dapat dipelajari di artikel [standar Kemnaker rambu K3 pabrik](/blog/panduan/standar-kemnaker-rambu-k3-pabrik/) dan rincian harga pengadaan di [estimasi biaya rambu Palembang](/blog/panduan/estimasi-biaya-rambu-palembang/).
 
 ## Proses Pengerjaan
 

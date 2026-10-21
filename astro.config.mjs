@@ -8,6 +8,7 @@ export default defineConfig({
   site: 'https://sriwijayagrafika.com',
   output: 'static',
   prefetch: true,
+  trailingSlash: 'always',
   build: {
     inlineStylesheets: 'always',
   },

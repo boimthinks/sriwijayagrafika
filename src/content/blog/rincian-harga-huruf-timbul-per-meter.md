@@ -94,4 +94,4 @@ Rincian di artikel ini cukup untuk patokan awal. Tapi angka final butuh konteks 
 
 Pertama, siapkan nama usaha, jumlah karakter, tinggi huruf, dan material yang diinginkan. Kedua, kirim lewat WhatsApp 0852-1511-1125. Ketiga, kalau lokasinya di Palembang, tim kami bisa datang survei gratis dan memberi quotation resmi.
 
-Konsultasi tidak dipungut biaya, dan mockup 3D disertakan sebelum produksi. Dengan begitu Anda tidak menebak-nebak berapa biaya yang harus disiapkan. Detail lengkap layanan dan FAQ harga bisa dicek di halaman [huruf timbul](/layanan/huruf-timbul).
+Konsultasi tidak dipungut biaya, dan mockup 3D disertakan sebelum produksi. Dengan begitu Anda tidak menebak-nebak berapa biaya yang harus disiapkan. Detail lengkap layanan dan FAQ harga bisa dicek di halaman [huruf timbul](/layanan/huruf-timbul/).

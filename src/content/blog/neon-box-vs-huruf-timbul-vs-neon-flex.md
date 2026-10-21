@@ -46,7 +46,7 @@ Huruf timbul adalah huruf yang dibentuk menonjol keluar dari permukaan fasad, da
 
 Harga dihitung dari tinggi huruf dikali harga per cm dikali jumlah karakter. Mulai Rp 7.500 per cm untuk galvanil, Rp 12.000 untuk akrilik LED, sampai Rp 15.000 untuk stainless 304. Untuk enam karakter setinggi 40 cm, estimasinya 40 x Rp 12.000 x 6, sekitar Rp 2.880.000 sebelum biaya instalasi.
 
-Keunggulan yang paling kami tekankan adalah kesan premium. Gesekan stainless mirror atau akrilik bening yang rapi membuat toko terlihat profesional, bukan sekadar ramai. Karena itu huruf timbul jadi pilihan gedung Walikota Palembang, Kejati Sumsel, dan kantor korporat seperti PT Andalas Sakti Perkasa. Detail material dan perawatannya bisa dibaca di [halaman layanan huruf timbul](/layanan/huruf-timbul).
+Keunggulan yang paling kami tekankan adalah kesan premium. Gesekan stainless mirror atau akrilik bening yang rapi membuat toko terlihat profesional, bukan sekadar ramai. Karena itu huruf timbul jadi pilihan gedung Walikota Palembang, Kejati Sumsel, dan kantor korporat seperti PT Andalas Sakti Perkasa. Detail material dan perawatannya bisa dibaca di [halaman layanan huruf timbul](/layanan/huruf-timbul/).
 
 Kekurangannya, huruf timbul tidak cocok untuk menampilkan informasi yang sering berubah. Namanya saja huruf, jadi fungsinya untuk identitas yang permanen.
 
