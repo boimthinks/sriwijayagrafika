@@ -62,10 +62,10 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi kali
 ---
 
 ### Hari 3 — Penguat Huruf Timbul (Regulasi & Izin Reklame Fasad Ruko)
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (22 Oktober 2026)
 - **Target Halaman Pilar:** `/layanan/huruf-timbul`
 - **Topik:** `panduan`
-- **Slug Usulan:** `izin-reklame-huruf-timbul-fasad-palembang`
+- **Slug File:** `izin-reklame-huruf-timbul-fasad-palembang`
 - **Judul Kartu (`title`, maks 5 kata):** Syarat Izin Reklame Huruf Timbul
 - **Title SEO (`titleSeo`, maks 12 kata):** Prosedur Izin Reklame Huruf Timbul Fasad Ruko di Palembang
 - **Target Keyword:**
