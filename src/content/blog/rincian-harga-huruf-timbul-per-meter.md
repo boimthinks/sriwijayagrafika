@@ -36,7 +36,7 @@ Harga per cm yang kami pakai di workshop Talang Jambe dimulai dari angka berikut
 
 Kenapa stainless 304 lebih mahal dari akrilik? Bedanya di material mentah. Plat stainless grade 304 tahan karat di iklim lembap Palembang dan butuh proses las TIG. Akrilik lebih ringan dan mudah dipotong laser. Bedanya lumayan terasa di kalkulasi akhir.
 
-Kalau masih ragu pilih akrilik atau galvanil, kami pernah menguji keduanya selama 6 bulan di outdoor Palembang. Hasil lengkapnya ada di artikel [uji akrilik vs galvanil](/blog/tips/uji-akrilik-vs-galvanil).
+Kalau masih ragu pilih akrilik atau galvanil, kami pernah menguji keduanya selama 6 bulan di outdoor Palembang. Hasil lengkapnya ada di artikel [uji akrilik vs galvanil](/blog/tips/uji-akrilik-vs-galvanil/).
 
 ## Harga Huruf Timbul per Meter
 
@@ -66,7 +66,7 @@ Supaya lebih terbayang, mari kita hitung sebuah tulisan 7 karakter setinggi 40 c
 
 Selisih galvanil dan stainless untuk kasus ini sekitar Rp 2,1 juta. Di awal memang terlihat jauh. Tapi stainless 304 nyaris tidak butuh perawatan, sementara cat galvanil bisa kusam setelah beberapa tahun di luar ruangan. Pertimbangan jangka panjang ini sering jadi penentu pilihan.
 
-Kami pernah membedah langsung kenapa huruf timbul stainless bisa berkarat dan yang tidak. Baca di [otopsi las stainless berkarat](/blog/tips/otopsi-las-stainless-berkarat) kalau Anda mau tahu detailnya.
+Kami pernah membedah langsung kenapa huruf timbul stainless bisa berkarat dan yang tidak. Baca di [otopsi las stainless berkarat](/blog/teknis/otopsi-las-stainless-berkarat/) kalau Anda mau tahu detailnya.
 
 ## Faktor yang Membuat Harga Bisa Lebih Mahal
 
@@ -78,7 +78,7 @@ Angka di atas adalah patokan dasar. Beberapa hal berikut bisa menaikkan biaya, d
 
 **Jenis pencahayaan.** LED backlit (cahaya dari dalam huruf) berbeda biaya dengan frontlit (cahaya dari depan) atau tanpa lampu sama sekali.
 
-**Biaya instalasi.** Dihitung setelah survei lokasi. Gedung tinggi butuh crane atau scaffolding, dan itu masuk ke total anggaran. Penjelasan lengkap cara membaca biaya total bisa dilihat di [panduan anggaran jasa advertising Palembang](/blog/panduan/panduan-anggaran-jasa-advertising-palembang).
+**Biaya instalasi.** Dihitung setelah survei lokasi. Gedung tinggi butuh crane atau scaffolding, dan itu masuk ke total anggaran. Penjelasan lengkap cara membaca biaya total bisa dilihat di [panduan anggaran jasa advertising Palembang](/blog/panduan/panduan-anggaran-jasa-advertising-palembang/).
 
 ## Estimasi Biaya Berdasarkan Lokasi Pemasangan
 
@@ -86,7 +86,7 @@ Tinggi huruf yang ideal ikut menentukan harga. Tulisan 30 cm untuk kafe di area 
 
 Sebagai patokan lokasi, huruf timbul setinggi 20-40 cm sudah cukup untuk etalase toko atau kafe di area Demang Lebar Daun dan Jakabaring. Untuk fasad kantor di Jalan Sudirman atau Basuki Rahmat yang jarak pandangnya jauh, biasanya butuh 60-100 cm. Gedung instansi bisa memakai 1,5 sampai 2 meter.
 
-Cara menentukan ukuran yang pas mengikuti jarak baca sudah kami tulis lengkap di [cara menghitung ukuran huruf timbul](/blog/panduan/ukuran-huruf-timbul-palembang-terbaca-jelas). Ukuran dan harga selalu berjalan beriringan.
+Cara menentukan ukuran yang pas mengikuti jarak baca sudah kami tulis lengkap di [cara menghitung ukuran huruf timbul](/blog/panduan/ukuran-huruf-timbul-palembang-terbaca-jelas/). Ukuran dan harga selalu berjalan beriringan.
 
 ## Cara Mendapatkan Estimasi Harga yang Akurat
 

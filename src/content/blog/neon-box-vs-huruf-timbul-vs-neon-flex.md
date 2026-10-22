@@ -36,7 +36,7 @@ Keunggulan utamanya terletak pada fleksibilitas visual. Anda bisa menampilkan lo
 
 Konsumsi listriknya juga jinak. Untuk ukuran 1x1 meter, kira-kira hanya 30-50 watt per malam, karena kami memakai LED Samsung yang umurnya sampai 50.000 jam. Frame aluminium atau stainless membuatnya tahan karat di iklim Palembang yang lembap.
 
-Kelemahannya, neon box terlihat flat dan tidak menonjol keluar dari dinding. Di jalan yang ramai dengan banyak neon box lain, ia bisa tenggelam. Contoh nyata keberhasilannya bisa Anda lihat di [studi kasus Kedai Pempek Maris](/blog/studi-kasus/neon-box-cafe-pempek).
+Kelemahannya, neon box terlihat flat dan tidak menonjol keluar dari dinding. Di jalan yang ramai dengan banyak neon box lain, ia bisa tenggelam. Contoh nyata keberhasilannya bisa Anda lihat di [studi kasus Kedai Pempek Maris](/blog/studi-kasus/neon-box-cafe-pempek/).
 
 ## Huruf Timbul, Kesan Tiga Dimensi yang Lebih Mahal
 
@@ -79,10 +79,10 @@ Ambil contoh fasad ruko lebar 4 meter dengan nama usaha 5 karakter. Berikut pato
 - **Huruf timbul akrilik LED tinggi 30 cm**, 30 x Rp 12.000 x 5, sekitar Rp 1.800.000.
 - **Neon flex tulisan 5 karakter**, estimasi 3 meter LED, sekitar Rp 750.000.
 
-Bedanya tidak terlalu jauh di antara neon box dan huruf timbul untuk ukuran begini. Pertimbangan terakhir kembali ke kesan yang ingin Anda bangun. Panduan lebih detail soal anggaran bisa dibaca di [panduan anggaran jasa advertising Palembang](/blog/panduan/panduan-anggaran-jasa-advertising-palembang).
+Bedanya tidak terlalu jauh di antara neon box dan huruf timbul untuk ukuran begini. Pertimbangan terakhir kembali ke kesan yang ingin Anda bangun. Panduan lebih detail soal anggaran bisa dibaca di [panduan anggaran jasa advertising Palembang](/blog/panduan/panduan-anggaran-jasa-advertising-palembang/).
 
 ## Mockup 3D Sebelum Anda Memutuskan
 
 Ketiga pilihan di atas bisa dilihat dulu dari jauh, karena kami menyediakan mockup 3D gratis. Kami foto fasad toko Anda, lalu tempelkan desain neon box, huruf timbul, atau neon flex secara digital. Anda bisa membandingkan tiga skenario dalam satu tempat, sebelum mengeluarkan rupiah.
 
-Perawatan dan umur pakai ketiganya juga dibahas terpisah, di [tips merawat neon box](/blog/tips/rawat-neon-box-agar-awet) dan [cara menghitung kebutuhan LED](/blog/tips/hitung-led-strip-neon-box). Bagi usaha yang area pemasangannya di pinggir jalan besar, baca juga perbandingan [pylon sign vs neon box](/blog/tips/pylon-sign-vs-neon-box) untuk opsi keempat yang tidak kalah layak dipertimbangkan.
+Perawatan dan umur pakai ketiganya juga dibahas terpisah, di [tips merawat neon box](/blog/tips/rawat-neon-box-agar-awet/) dan [cara menghitung kebutuhan LED](/blog/teknis/hitung-led-strip-neon-box/). Bagi usaha yang area pemasangannya di pinggir jalan besar, baca juga perbandingan [pylon sign vs neon box](/blog/tips/pylon-sign-vs-neon-box/) untuk opsi keempat yang tidak kalah layak dipertimbangkan.

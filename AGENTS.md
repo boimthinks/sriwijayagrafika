@@ -21,6 +21,15 @@
   - Setelah dikonfirmasi, lakukan riset kata kunci dan pemetaan entitas dengan skill **`pakar-entity-seo`**, kemudian teruskan hasilnya ke skill **`penulis-ahli`** untuk menulis artikel lengkap.
   - Setelah artikel selesai ditulis dan disimpan ke `src/content/blog/<slug>.md`, perbarui status artikel tersebut di `RENCANA-ARTIKEL-HARIAN.md` menjadi `[x] Selesai` beserta tanggalnya.
 - **Aturan imgPrompt**: Setiap penulisan artikel baru wajib menyertakan key `imgPrompt` di frontmatter. Isi `imgPrompt` harus memvisualisasikan isi artikel dalam gaya foto realistis (photorealistic) dengan menyertakan karakter Srifika yang sedang melakukan aksi, di dalam latar belakang dan suasana yang sesuai. Jangan deskripsikan identitas detail Srifika (seperti baju, jersey, dsb.) karena sudah otomatis terdefinisi oleh generator gambar eksternal.
+- **Mekanisme Wajib Validasi Link & Anchor Text (Anti-404 & Trailing Slash)**:
+  - Setiap kali artikel blog selesai ditulis atau diedit, AI **WAJIB** menjalankan audit link otomatis sebelum commit:
+    ```bash
+    node scripts/check-links.js src/content/blog/<slug>.md   # periksa artikel yang baru ditulis
+    npm run check:links                                      # periksa seluruh artikel blog
+    ```
+  - **Aturan Trailing Slash**: Seluruh tautan internal (baik ke `/layanan/*` maupun `/blog/*`) **WAJIB** memiliki *trailing slash* (`/`) di akhir URL (contoh: `/layanan/huruf-timbul/`, bukan `/layanan/huruf-timbul`), selaras dengan setting `trailingSlash: 'always'` di `astro.config.mjs`.
+  - **Aturan Validitas URL (Anti-404)**: Tautan internal dilarang keras mengarah ke URL 404. Untuk link antar-artikel blog, wajib menyertakan kategori topik (`/blog/<topik>/<slug>/`, contoh: `/blog/teknis/standar-trafo-led-huruf-timbul-outdoor/`), BUKAN format usang `/blog/<slug>/`.
+  - **Kualitas Anchor Text**: Anchor text tidak boleh kosong atau menggunakan kata generik seperti "klik disini" / "link ini". Gunakan anchor text berbasis keyword alami yang kaya konteks.
 - **Mekanisme Rekomendasi Judul Artikel Support**: Setiap kali diminta memberikan saran judul artikel blog, AI **WAJIB**:
     1. Membaca daftar judul yang sudah terbit di `src/content/blog/` untuk memeriksa apakah topik tersebut sudah pernah dibuat.
     2. Menyusun rekomendasi judul artikel pendukung (*supporting articles* / *topical cluster*) yang memperkuat relevansi halaman layanan utama (`/layanan/*`).

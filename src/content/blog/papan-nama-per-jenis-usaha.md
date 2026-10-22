@@ -47,7 +47,7 @@ Karena itu papan nama klinik yang kami buat biasanya menyusun informasi dari ata
 
 Untuk pencahayaannya, pilihan paling sering adalah light box dengan cahaya datang dari depan, dan dinyalakan hampir 24 jam. Modul LED untuk area luar yang kami pakai bertipe IP65, artinya tahan air dan percikan. Kalau klinik Anda tidak punya sumber listrik nonstop di depan papan, lampu bisa disambungkan ke MCB kecil di panel dekat lokasi.
 
-Satu hal yang kami ingatkan berkali-kali. Untuk klinik dan praktik dokter, daftar informasi seperti nomor izin operasional dan nama dokter sebaiknya dikonfirmasi lebih dulu ke dinas kesehatan setempat. Persyaratan tiap jenis klinik tidak sama, dan lebih baik dipastikan sebelum desain dicetak daripada cetak dua kali. Alur pengurusan izin reklame secara umum bisa dibaca di [panduan izin reklame Palembang](/blog/panduan/panduan-izin-reklame-palembang).
+Satu hal yang kami ingatkan berkali-kali. Untuk klinik dan praktik dokter, daftar informasi seperti nomor izin operasional dan nama dokter sebaiknya dikonfirmasi lebih dulu ke dinas kesehatan setempat. Persyaratan tiap jenis klinik tidak sama, dan lebih baik dipastikan sebelum desain dicetak daripada cetak dua kali. Alur pengurusan izin reklame secara umum bisa dibaca di [panduan izin reklame Palembang](/blog/panduan/panduan-izin-reklame-palembang/).
 
 ## Papan nama bengkel yang kena oli dan thinner
 
@@ -55,7 +55,7 @@ Bengkel punya kebiasaan yang berbeda. Yang mengenai permukaan plang bukan hujan,
 
 Permukaan atas papan yang kena matahari penuh membuat vinil mengeras, lalu tepinya mulai terangkat. Bagian yang paling sering rusak justru kolom nomor telepon dan daftar layanan, karena di situlah tangan berminyak sering menyentuh.
 
-Untuk kondisi seperti itu, plat galvanis dengan cat duco dan lapisan clear coat memberi umur pakai yang lebih panjang. Kalau perlu diperbaiki, cukup ditambal dengan cat, bukan mengganti seluruh papan. Detail kekuatan angkurnya ada di artikel [rangka besi plang toko tahan angin](/blog/tips/tips-rangka-besi-plang-toko-tahan-angin).
+Untuk kondisi seperti itu, plat galvanis dengan cat duco dan lapisan clear coat memberi umur pakai yang lebih panjang. Kalau perlu diperbaiki, cukup ditambal dengan cat, bukan mengganti seluruh papan. Detail kekuatan angkurnya ada di artikel [rangka besi plang toko tahan angin](/blog/teknis/tips-rangka-besi-plang-toko-tahan-angin/).
 
 Dari sisi keterbacaan, papan nama bengkel sebaiknya diletakkan setinggi mata orang yang sedang berhenti, bukan terlalu tinggi. Kalau posisinya di pinggir jalan yang lalu lintasannya padat, ukuran huruf besar dan kontras tinggi jauh lebih penting daripada dekorasi. Untuk pencahayaan, banyak bengkel memilih floodlight luar yang menyala sejak sore, ditambah light box di atasnya sebagai lapisan kedua.
 
@@ -65,7 +65,7 @@ Informasi di papan bengkel juga lebih banyak daripada toko biasa. Nama usaha, je
 
 Kantor tidak hanya soal informasi di luar. Papan nama di luar berdiri sebagai pernyataan bahwa perusahaan ini ada dan layak dipercaya rekanan, sementara di dalam biasanya ada papan nama resepsionis atau partisi dengan standar visual yang sama.
 
-Karena dua sisi itu sering dibaca sebagai satu kesatuan, material dan warnanya dipilih supaya konsisten. Huruf dengan face stainless atau akrilik yang sama dipakai untuk luar dan dalam, supaya tamu yang baru melihat papan resepsionis langsung tahu bahwa itu perusahaan yang sama dengan yang mereka lihat dari jalan. Untuk pemakaian luar, pilihan materialnya bisa dibaca di [panduan bahan huruf timbul untuk area outdoor](/blog/panduan/bahan-huruf-timbul-outdoor), terutama soal perbedaan stainless dan galvanil di iklim lembap.
+Karena dua sisi itu sering dibaca sebagai satu kesatuan, material dan warnanya dipilih supaya konsisten. Huruf dengan face stainless atau akrilik yang sama dipakai untuk luar dan dalam, supaya tamu yang baru melihat papan resepsionis langsung tahu bahwa itu perusahaan yang sama dengan yang mereka lihat dari jalan. Untuk pemakaian luar, pilihan materialnya bisa dibaca di [panduan bahan huruf timbul untuk area outdoor](/blog/panduan/bahan-huruf-timbul-outdoor/), terutama soal perbedaan stainless dan galvanil di iklim lembap.
 
 Pencahayaannya biasanya backlit atau halo, yaitu lampu terpasang di belakang huruf sehingga cahaya menyebar ke dinding dan memberi kesan lembut. Untuk lobby, kami memakai warm white sekitar 3000 sampai 4000K. Cool white terlihat terlalu klinis untuk ruang tunggu. Warm white membuat huruf terlihat lebih tebal dan tidak mencolok.
 
@@ -91,9 +91,9 @@ Ada tiga kerusakan yang paling sering kami terima dari pelanggan. Mengenali geja
 
 **Akrilik yang mulai kekuningan.** Akrilik yang menguning biasanya terjadi pada papan yang posisinya menghadap matahari atau lampu depan yang menyala terus. Mengganti seluruh papan adalah pilihan termahal, karena yang perlu diganti sebenarnya hanya visualnya.
 
-**Baut angkur yang berkarat sampai huruf lepas.** Ini yang paling berbahaya, karena huruf yang jatuh ke trotoar bisa melukai orang. Penyebabnya biasanya dynabolt murah yang hanya berlapis zinc tipis, lalu lapuk di tempat yang sering terkena air hujan dan debu. Solusinya sederhana, baut dari stainless atau galvanis tebal, plus pemeriksaan berkala. Detail teknik pemasangannya ada di [panduan pasang huruf timbul di fasad ruko](/blog/tips/pasang-huruf-timbul-fasad-ruko).
+**Baut angkur yang berkarat sampai huruf lepas.** Ini yang paling berbahaya, karena huruf yang jatuh ke trotoar bisa melukai orang. Penyebabnya biasanya dynabolt murah yang hanya berlapis zinc tipis, lalu lapuk di tempat yang sering terkena air hujan dan debu. Solusinya sederhana, baut dari stainless atau galvanis tebal, plus pemeriksaan berkala. Detail teknik pemasangannya ada di [panduan pasang huruf timbul di fasad ruko](/blog/teknis/pasang-huruf-timbul-fasad-ruko/).
 
-**Lampu yang mati sebagian.** Lampu papan yang menyala redup atau mati di beberapa huruf biasanya bukan karena modulnya rusak, melainkan karena driver yang sudah bekerja terlalu lama. Penyebab dan cara memeriksanya sudah kami bahas terpisah di [artikel penyebab neon box redup](/blog/tips/penyebab-neon-box-redup-driver-led-rusak), termasuk cara membedakan LED asli dan palsu.
+**Lampu yang mati sebagian.** Lampu papan yang menyala redup atau mati di beberapa huruf biasanya bukan karena modulnya rusak, melainkan karena driver yang sudah bekerja terlalu lama. Penyebab dan cara memeriksanya sudah kami bahas terpisah di [artikel penyebab neon box redup](/blog/teknis/penyebab-neon-box-redup-driver-led-rusak/), termasuk cara membedakan LED asli dan palsu.
 
 ## Lima pemeriksaan sebelum papan nama diserahterimakan
 
