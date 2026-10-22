@@ -44,7 +44,7 @@ Memasang papan nama toko pada Kawasan Kendali Ketat memiliki batasan teknis yang
 * Seluruh sisi samping, bawah, atas, dan belakang rangka besi penyangga wajib dibungkus atau ditutup rapat menggunakan plat penutup rapi agar rangka tidak terlihat telanjang dari arah jalan.
 * Papan nama diwajibkan menggunakan naskah Bahasa Indonesia yang baik dan benar. Jika nama usaha memuat istilah bahasa asing, tulisan bahasa asing harus diletakkan pada posisi bawah dengan ukuran huruf yang proporsional.
 
-Pilihan terbaik untuk fasad ruko di jalan protokol adalah [layanan huruf timbul Palembang](/layanan/huruf-timbul) dengan bahan akrilik lampu menyala depan atau stainless backlit, karena langsung memenuhi ketentuan estetika kawasan kendali ketat tanpa melanggar garis sempadan.
+Pilihan terbaik untuk fasad ruko di jalan protokol adalah [layanan huruf timbul Palembang](/layanan/huruf-timbul/) dengan bahan akrilik lampu menyala depan atau stainless backlit, karena langsung memenuhi ketentuan estetika kawasan kendali ketat tanpa melanggar garis sempadan.
 
 ## Berkas Administrasi dan Gambar Sketsa Persyaratan DPMPTSP
 
@@ -81,7 +81,7 @@ Membedakan instalasi yang aman dari razia dengan instalasi yang rawan dibongkar 
 | **Posisi pada Fasad** | Menempel rapi di dinding konsul ruko tanpa menutupi jendela lantai dua | Menutup jendela ventilasi ruko atau menjorok melewati batas kanopi |
 | **Luas Bidang Nama Usaha** | Di bawah 10 m² untuk bebas izin, atau di atas 10 m² dengan IPR resmi | Ukuran raksasa melebihi 10 m² tanpa izin dan tanpa stiker lunas pajak |
 | **Rangka Konstruksi** | Rangka besi hollow terbungkus rapat plat penutup di semua sisi | Rangka siku besi terbuka berkarat yang terlihat kumuh dari bawah |
-| **Kelistrikan dan Kabel** | Memakai modul LED aman dengan [standar trafo LED outdoor](/blog/standar-trafo-led-huruf-timbul-outdoor) IP67 rapi | Kabel serabut telanjang bergelantungan dan trafo basah rawan korslet |
+| **Kelistrikan dan Kabel** | Memakai modul LED aman dengan [standar trafo LED outdoor](/blog/teknis/standar-trafo-led-huruf-timbul-outdoor/) IP67 rapi | Kabel serabut telanjang bergelantungan dan trafo basah rawan korslet |
 | **Status Sponsor Komersial** | Murni nama toko sendiri atau merek sponsor yang sudah bayar pajak | Memajang logo produk luar tanpa membayar pajak reklame sponsor |
 
 ## Peran Gambar Kerja Presisi dari Bengkel Reklame Berpengalaman
