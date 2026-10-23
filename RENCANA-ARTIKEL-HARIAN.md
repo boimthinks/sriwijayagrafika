@@ -78,7 +78,7 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi kali
 ---
 
 ### Hari 4 — Penguat Rambu K3 (Rambu Evakuasi & Keselamatan Gedung)
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (23 Oktober 2026)
 - **Target Halaman Pilar:** `/layanan/rambu-rambu`
 - **Topik:** `panduan`
 - **Slug Usulan:** `standar-rambu-evakuasi-glow-in-the-dark-gedung`
