@@ -55,6 +55,7 @@ npm run check      # astro check (typecheck + a11y hints). 142 pre-existing erro
 
 ## Git & GitHub
 
+- **KEBIJAKAN COMMIT, PUSH & DEPLOY (WAJIB)**: AI **DILARANG KERAS** melakukan `git commit`, `git push`, ataupun memicu trigger deploy (`npm run deploy` / build hook) jika **TIDAK ADA INSTRUKSI EKSPLISIT** dari pengguna. Biarkan perubahan berada di working directory / local staging sampai pengguna memberi perintah commit/deploy.
 - **Active remote**: `https://github.com/boimthinks/sriwijayagrafika.git` (akun `boimthinks`, BUKAN akun default `jaguarjack7777` yang dipakai di repo lain).
 - **Local commit identity** (only applies to THIS repo, stored in `.git/config`, not global):
   - `user.name = boimthinks`

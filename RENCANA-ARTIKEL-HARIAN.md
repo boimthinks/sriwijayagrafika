@@ -94,12 +94,12 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi kali
 ---
 
 ### Hari 5 — Penguat Huruf Timbul (Segmen Interior & Lobby Kantor)
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (24 Oktober 2026)
 - **Target Halaman Pilar:** `/layanan/huruf-timbul`
 - **Topik:** `tips`
-- **Slug Usulan:** `huruf-timbul-meja-resepsionis-lobby-kantor`
-- **Judul Kartu (`title`, maks 5 kata):** Huruf Timbul Lobby Kantor Elegan
-- **Title SEO (`titleSeo`, maks 12 kata):** Pilihan Huruf Timbul Meja Resepsionis dan Lobby Kantor Palembang
+- **Slug File:** `huruf-timbul-meja-resepsionis-lobby-kantor`
+- **Judul Kartu (`title`, maks 5 kata):** Huruf Timbul Meja Resepsionis
+- **Title SEO (`titleSeo`, maks 12 kata):** Pilihan Huruf Timbul Meja Resepsionis Lobby Palembang
 - **Target Keyword:**
   - *Primary:* huruf timbul lobby kantor palembang
   - *Secondary:* tulisan timbul resepsionis akrilik, huruf timbul stainless gold hairline interior
