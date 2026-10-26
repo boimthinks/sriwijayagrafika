@@ -110,10 +110,10 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi kali
 ---
 
 ### Hari 6 — Penguat Rambu K3 (Kepatuhan Audit Sertifikasi SMK3)
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (26 Oktober 2026)
 - **Target Halaman Pilar:** `/layanan/rambu-rambu`
 - **Topik:** `panduan`
-- **Slug Usulan:** `daftar-rambu-k3-wajib-audit-smk3`
+- **Slug File:** `daftar-rambu-k3-wajib-audit-smk3`
 - **Judul Kartu (`title`, maks 5 kata):** Checklist Rambu Wajib Audit SMK3
 - **Title SEO (`titleSeo`, maks 12 kata):** Daftar Rambu K3 Wajib untuk Lolos Audit SMK3 Sektor Industri
 - **Target Keyword:**
