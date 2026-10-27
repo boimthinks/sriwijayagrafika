@@ -84,7 +84,7 @@ Pemasangan neon box sangat cocok untuk berbagai jenis usaha dan fasilitas publik
 - **Kantor & Perbankan**: Plang nama kantor cabang bank, BPR, koperasi, dan agen ekspedisi.
 - **Instansi & Sekolah**: Signage petunjuk jalan, nama instansi pemerintah, dan lembaga pendidikan.
 
-Pengerjaan ini sering kami kombinasikan dengan layanan [huruf timbul](/layanan/huruf-timbul/), [pylon sign](/layanan/pylon-totem/), dan [plang toko](/layanan/plang-toko-kantor/) untuk menciptakan identitas visual yang solid. Baca juga artikel edukasi kami tentang [tips merawat neon box](/blog/tips/rawat-neon-box-agar-awet/) dan [cara menghitung LED strip neon box](/blog/tips/hitung-led-strip-neon-box/).
+Pengerjaan ini sering kami kombinasikan dengan layanan [huruf timbul](/layanan/huruf-timbul/), [pylon sign](/layanan/pylon-totem/), dan [plang toko](/layanan/plang-toko-kantor/) untuk menciptakan identitas visual yang solid. Baca juga artikel edukasi kami tentang [tips merawat neon box](/blog/tips/rawat-neon-box-agar-awet/) dan [cara menghitung LED strip neon box](/blog/teknis/hitung-led-strip-neon-box/).
 
 ## Alamat Workshop & Area Layanan
 

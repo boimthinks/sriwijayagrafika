@@ -1,7 +1,7 @@
 ---
 title: "Mengenal Stainless 201 dan 304"
 titleSeo: "Stainless 201 vs 304 untuk Huruf Timbul, Pilih Sesuai Kebutuhan"
-slug: "stainless-201-vs-304"
+slug: "otopsi-karat-stainless-201"
 excerpt: "Stainless 201 dan 304 sering dianggap musuh satu sama lain, padahal keduanya punya pasar masing-masing. Kenali keunggulan, harga, dan kapan material yang satu lebih pas dipakai."
 date: "2026-06-18"
 topik: "teknis"

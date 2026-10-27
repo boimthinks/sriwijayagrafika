@@ -46,7 +46,7 @@ for (const file of blogFiles) {
   const filePath = path.join(BLOG_DIR, file);
   const rawContent = fs.readFileSync(filePath, 'utf-8');
   const { data } = matter(rawContent);
-  const slug = path.basename(file, '.md');
+  const slug = data.slug || path.basename(file, '.md');
   const topik = data.topik;
 
   if (topik) {
@@ -211,9 +211,13 @@ function main() {
     }
     filesToScan = [resolvedPath];
   } else {
-    filesToScan = blogFiles
+    const blogScan = blogFiles
       .filter((f) => f.endsWith('.md'))
       .map((f) => path.join(BLOG_DIR, f));
+    const layananScan = layananFiles
+      .filter((f) => f.endsWith('.md'))
+      .map((f) => path.join(LAYANAN_DIR, f));
+    filesToScan = [...blogScan, ...layananScan];
   }
 
   console.log(`\n\x1b[36m🔍 Menjalankan Pemeriksaan Link & Anchor Text (${filesToScan.length} file)...\x1b[0m\n`);

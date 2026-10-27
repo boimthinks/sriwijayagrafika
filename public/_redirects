@@ -1,0 +1,15 @@
+# Netlify Redirects — Sriwijaya Grafika
+
+/blog/teknis/stainless-201-vs-304/  /blog/teknis/otopsi-karat-stainless-201/  301
+/blog/tips/stainless-201-vs-304/    /blog/teknis/otopsi-karat-stainless-201/  301
+/blog/tips/stainless-201-vs-304     /blog/teknis/otopsi-karat-stainless-201/  301
+/blog/teknis/stainless-201-vs-304  /blog/teknis/otopsi-karat-stainless-201/  301
+
+/blog/tips/beda-led-samsung-vs-palsu/  /blog/teknis/beda-led-samsung-vs-palsu/  301
+/blog/tips/beda-led-samsung-vs-palsu   /blog/teknis/beda-led-samsung-vs-palsu/  301
+
+/blog/tips/otopsi-las-stainless-berkarat/  /blog/teknis/otopsi-las-stainless-berkarat/  301
+/blog/tips/otopsi-las-stainless-berkarat   /blog/teknis/otopsi-las-stainless-berkarat/  301
+
+/blog/tips/hitung-led-strip-neon-box/  /blog/teknis/hitung-led-strip-neon-box/  301
+/blog/tips/hitung-led-strip-neon-box   /blog/teknis/hitung-led-strip-neon-box/  301

@@ -126,12 +126,12 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi kali
 ---
 
 ### Hari 7 — Penguat Huruf Timbul (Perawatan & Servis Lampu LED)
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (27 Oktober 2026)
 - **Target Halaman Pilar:** `/layanan/huruf-timbul`
 - **Topik:** `tips`
-- **Slug Usulan:** `cara-merawat-dan-membersihkan-huruf-timbul`
+- **Slug File:** `cara-merawat-dan-membersihkan-huruf-timbul`
 - **Judul Kartu (`title`, maks 5 kata):** Cara Rawat Huruf Timbul Kusam
-- **Title SEO (`titleSeo`, maks 12 kata):** Cara Membersihkan Huruf Timbul Akrilik dan Stainless Akibat Cuaca Palembang
+- **Title SEO (`titleSeo`, maks 12 kata):** Cara Membersihkan Huruf Timbul Akrilik Stainless Palembang
 - **Target Keyword:**
   - *Primary:* cara membersihkan huruf timbul outdoor
   - *Secondary:* servis huruf timbul led redup palembang, perawatan huruf timbul stainless kusam
