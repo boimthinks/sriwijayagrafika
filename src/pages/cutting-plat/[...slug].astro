@@ -1,0 +1,406 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Navbar from '@components/Navbar.astro';
+import Footer from '@components/Footer.astro';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import { BUSINESS_INFO } from '@lib/data';
+import { 
+  Cpu, 
+  MapPin, 
+  Calendar, 
+  Clock, 
+  ArrowLeft, 
+  MessageCircle, 
+  CheckCircle2, 
+  Truck, 
+  FileCode2, 
+  Phone, 
+  HelpCircle,
+  Share2
+} from 'lucide-react';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('cutting', ({ data }) => data.published);
+  return entries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+interface Props {
+  entry: CollectionEntry<'cutting'>;
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const data = entry.data;
+
+const siteUrl = Astro.site?.toString() || 'https://sriwijayagrafika.com';
+const pageUrl = new URL(Astro.url.pathname, siteUrl).toString();
+const pilarUrl = new URL('/cutting-plat/', siteUrl).toString();
+const artikelHubUrl = new URL('/cutting-plat/artikel/', siteUrl).toString();
+const fullImageUrl = data.imgurl ? (data.imgurl.startsWith('http') ? data.imgurl : new URL(data.imgurl, siteUrl).toString()) : undefined;
+
+// Ambil konten lain untuk cross-linking rekomendasi (dipilah sesuai tipe konten)
+const allCutting = await getCollection('cutting', ({ data }) => data.published);
+const relatedCutting = allCutting
+  .filter((item) => item.id !== entry.id && item.data.tipe === data.tipe)
+  .slice(0, 5);
+
+// Estimasi reading time (200 kata per menit)
+const wordCount = (data.pengantar + ' ' + entry.body + ' ' + data.kesimpulan)
+  .trim()
+  .split(/\s+/)
+  .filter(Boolean).length;
+const readingTimeMin = Math.max(1, Math.ceil(wordCount / 200));
+
+const waMessage = `Halo Sriwijaya Grafika, saya membaca halaman *${data.titleSeo}* (${pageUrl}).\n\nSaya ingin konsultasi pengerjaan potong / laser cutting untuk kebutuhan saya. Boleh info estimasi biaya dan format file?`;
+const waUrl = `https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent(waMessage)}`;
+
+// Struktur Breadcrumb Schema sesuai hierarki
+const breadcrumbItems = [
+  {
+    '@type': 'ListItem',
+    position: 1,
+    name: 'Beranda',
+    item: new URL('/', siteUrl).toString(),
+  },
+  {
+    '@type': 'ListItem',
+    position: 2,
+    name: 'Cutting Plat',
+    item: pilarUrl,
+  },
+];
+
+if (data.tipe === 'artikel') {
+  breadcrumbItems.push({
+    '@type': 'ListItem',
+    position: 3,
+    name: 'Artikel & Panduan',
+    item: artikelHubUrl,
+  });
+  breadcrumbItems.push({
+    '@type': 'ListItem',
+    position: 4,
+    name: data.title,
+    item: pageUrl,
+  });
+} else {
+  breadcrumbItems.push({
+    '@type': 'ListItem',
+    position: 3,
+    name: data.title,
+    item: pageUrl,
+  });
+}
+
+const structuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': `${pageUrl}#article`,
+    headline: data.titleSeo,
+    description: data.excerpt || data.pengantar,
+    ...(fullImageUrl ? { image: [fullImageUrl] } : {}),
+    datePublished: data.date,
+    dateModified: data.date,
+    inLanguage: 'id-ID',
+    wordCount: wordCount,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': pageUrl,
+    },
+    author: {
+      '@type': 'Organization',
+      name: 'Tim Sriwijaya Grafika',
+      url: 'https://sriwijayagrafika.com/',
+    },
+    publisher: {
+      '@type': 'LocalBusiness',
+      '@id': 'https://sriwijayagrafika.com/#business',
+      name: BUSINESS_INFO.name,
+      url: 'https://sriwijayagrafika.com/',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://sriwijayagrafika.com/favicon.svg',
+      },
+    },
+    isPartOf: {
+      '@type': 'WebPage',
+      url: pilarUrl,
+      name: 'Jasa Cutting Plat & Laser CNC Sriwijaya Grafika',
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbItems,
+  },
+  ...(data.faq && data.faq.length > 0 ? [{
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: data.faq.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: f.answer,
+      },
+    })),
+  }] : []),
+];
+---
+
+<Layout
+  title={`${data.titleSeo} | Sriwijaya Grafika`}
+  description={data.excerpt || data.pengantar}
+  canonicalUrl={pageUrl}
+  ogImage={data.imgurl}
+  ogType={data.tipe === 'artikel' ? 'article' : 'website'}
+  keywords={[
+    data.title,
+    data.daerah ? `laser cutting ${data.daerah}` : '',
+    data.daerah ? `jasa potong ACP ${data.daerah}` : '',
+    'jasa laser cutting Palembang',
+    'cutting plat motif',
+    'CNC router Sumatera Selatan',
+  ].filter(Boolean)}
+  structuredData={structuredData}
+>
+  <Navbar />
+
+  <main class="min-h-screen bg-neutral-50 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Breadcrumb Navigasi -->
+      <nav class="flex items-center space-x-2 text-xs text-neutral-500 mb-6 font-mono">
+        <a href="/" class="hover:text-[#224da8] transition-colors">Beranda</a>
+        <span>/</span>
+        <a href="/cutting-plat/" class="hover:text-[#224da8] transition-colors">Cutting Plat</a>
+        <span>/</span>
+        {data.tipe === 'artikel' && (
+          <>
+            <a href="/cutting-plat/artikel/" class="hover:text-[#224da8] transition-colors">Artikel &amp; Panduan</a>
+            <span>/</span>
+          </>
+        )}
+        <span class="text-neutral-800 font-bold truncate max-w-xs sm:max-w-md">{data.title}</span>
+      </nav>
+
+      <!-- Grid 2 Kolom (Sesuai Standar Emas Astro Autopilot) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+        <!-- Kolom Kiri: Konten Utama -->
+        <article class="lg:col-span-8 bg-white rounded-3xl p-6 sm:p-10 border border-neutral-200/80 shadow-sm space-y-8">
+          <!-- Article Header -->
+          <header class="space-y-4 border-b border-neutral-100 pb-6">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-3 py-1 rounded-full text-xs font-bold uppercase font-mono bg-blue-50 text-[#224da8] border border-blue-100">
+                {data.kategori}
+              </span>
+              {data.daerah && (
+                <span class="px-3 py-1 rounded-full text-xs font-bold uppercase font-mono bg-orange-50 text-[#ff6634] border border-orange-100 flex items-center gap-1">
+                  <MapPin className="w-3 h-3" />
+                  <span>Area: {data.daerah}</span>
+                </span>
+              )}
+              <span class="text-xs text-neutral-400 font-mono flex items-center gap-1 ml-auto">
+                <Clock className="w-3.5 h-3.5" />
+                <span>{readingTimeMin} mnt baca</span>
+              </span>
+            </div>
+
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-neutral-900 tracking-tight leading-tight">
+              {data.titleSeo}
+            </h1>
+
+            <div class="flex items-center gap-4 text-xs text-neutral-500 font-mono">
+              <span>Oleh: <strong>Tim Sriwijaya Grafika</strong></span>
+              <span>&bull;</span>
+              <span class="flex items-center gap-1">
+                <Calendar className="w-3.5 h-3.5 text-neutral-400" />
+                <span>{data.date}</span>
+              </span>
+            </div>
+          </header>
+
+          <!-- Featured Image (Bila ada) -->
+          {data.imgurl && (
+            <div class="rounded-2xl overflow-hidden border border-neutral-100 bg-neutral-100 aspect-[4/3] relative">
+              <img
+                src={data.imgurl}
+                alt={data.imgalt || data.titleSeo}
+                class="w-full h-full object-cover"
+                loading="eager"
+              />
+            </div>
+          )}
+
+          <!-- Pengantar Lead Paragraph -->
+          {data.pengantar && (
+            <div class="p-5 rounded-2xl bg-blue-50/60 border-l-4 border-[#224da8] text-sm sm:text-base text-neutral-800 font-medium leading-relaxed">
+              {data.pengantar}
+            </div>
+          )}
+
+          <!-- Markdown Content Body -->
+          <div class="prose-article text-neutral-700 leading-relaxed">
+            <Content />
+          </div>
+
+          <!-- Kesimpulan -->
+          {data.kesimpulan && (
+            <div class="p-6 rounded-2xl bg-orange-50/60 border border-orange-100 text-sm sm:text-base text-neutral-800 leading-relaxed space-y-2">
+              <span class="text-xs font-mono uppercase font-bold text-[#ff6634] block">Catatan Rekomendasi</span>
+              <p>{data.kesimpulan}</p>
+            </div>
+          )}
+
+          <!-- FAQ Accordion (Jika ada) -->
+          {data.faq && data.faq.length > 0 && (
+            <section class="border-t border-neutral-100 pt-8 space-y-4" id="faq-section">
+              <div class="flex items-center gap-2 mb-2">
+                <HelpCircle className="w-5 h-5 text-[#224da8]" />
+                <h2 class="text-xl font-extrabold text-neutral-900 tracking-tight">
+                  Pertanyaan Sering Diajukan (FAQ)
+                </h2>
+              </div>
+
+              <div class="space-y-3">
+                {data.faq.map((item, idx) => (
+                  <div class="p-4 rounded-xl bg-neutral-50 border border-neutral-200/80 space-y-1.5">
+                    <h3 class="text-sm font-bold text-[#224da8] flex items-start gap-2">
+                      <span class="text-[#ff6634] font-mono">Q{idx + 1}:</span>
+                      <span>{item.question}</span>
+                    </h3>
+                    <p class="text-xs text-neutral-600 leading-relaxed pl-6">
+                      {item.answer}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          <!-- Back to Hub & Cross Links -->
+          <div class="border-t border-neutral-100 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <a
+              href="/cutting-plat/"
+              class="inline-flex items-center gap-2 text-xs font-bold text-[#224da8] hover:text-[#ff6634] transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              <span>Kembali ke Halaman Utama Cutting Plat</span>
+            </a>
+
+            <a
+              href={waUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white text-xs font-bold transition-all shadow-md shadow-orange-500/20"
+            >
+              <MessageCircle className="w-4 h-4" />
+              <span>Konsultasikan Kebutuhan Ini</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Kolom Kanan: Sticky Conversion Sidebar -->
+        <aside class="lg:col-span-4 space-y-6 lg:sticky lg:top-24">
+          <!-- CTA Card WhatsApp -->
+          <div class="rounded-3xl p-6 bg-gradient-to-br from-[#10285a] to-[#224da8] text-white shadow-xl space-y-5 border border-blue-900/40">
+            <div class="inline-flex p-2 rounded-xl bg-white/10 text-[#ff6634]">
+              <FileCode2 className="w-6 h-6" />
+            </div>
+
+            <div class="space-y-2">
+              <span class="text-[10px] font-mono uppercase tracking-wider text-[#ff6634] font-bold block">
+                LAYANAN CEPAT &bull; FAST RESPONSE
+              </span>
+              <h3 class="text-lg font-extrabold text-white leading-snug">
+                Punya Kebutuhan Cutting di {data.daerah || 'Sumatera Selatan'}?
+              </h3>
+              <p class="text-xs text-white/80 leading-relaxed">
+                Kirim file DXF, DWG, CDR atau sketsa ukuran Anda. Kami hitung estimasi biaya potong dan opsi pengiriman ke lokasi Anda.
+              </p>
+            </div>
+
+            <a
+              href={waUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white font-extrabold text-xs shadow-lg shadow-orange-500/30 transition-all transform hover:-translate-y-0.5"
+            >
+              <MessageCircle className="w-4 h-4" />
+              <span>Chat WhatsApp: 0852-1511-1125</span>
+            </a>
+
+            <div class="pt-3 border-t border-white/15 space-y-2 text-[11px] text-white/75">
+              <div class="flex items-center gap-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
+                <span>Konsultasi Teknis &amp; Review Desain Gratis</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
+                <span>Bisa Pakai Bahan Sendiri / Bawa Bahan</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
+                <span>Pengiriman Cepat via Travel / Cargo Se-Sumsel</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Info Bengkel & Pengiriman -->
+          <div class="rounded-3xl p-6 bg-white border border-neutral-200/80 shadow-sm space-y-4">
+            <h4 class="text-xs font-mono uppercase font-bold text-neutral-800 tracking-wider flex items-center gap-2">
+              <Truck className="w-4 h-4 text-[#224da8]" />
+              <span>Logistik &amp; Workshop</span>
+            </h4>
+
+            <p class="text-xs text-neutral-600 leading-relaxed">
+              Workshop kami berbasis di Sukarami, Palembang. Setiap hari kami mengirimkan pesanan plat potong, ACP, dan ornamen ke berbagai pool travel antarkota dan cargo di Palembang untuk diteruskan ke seluruh penjuru Sumsel.
+            </p>
+
+            <div class="p-3 rounded-xl bg-neutral-50 border border-neutral-100 text-[11px] space-y-1">
+              <span class="font-bold text-neutral-800 block">Alamat Workshop:</span>
+              <p class="text-neutral-600 leading-snug">{BUSINESS_INFO.address}</p>
+            </div>
+          </div>
+
+          <!-- Tautan Halaman Terkait Sesuai Tipe -->
+          {relatedCutting.length > 0 && (
+            <div class="rounded-3xl p-6 bg-white border border-neutral-200/80 shadow-sm space-y-3">
+              <h4 class="text-xs font-mono uppercase font-bold text-neutral-800 tracking-wider">
+                {data.tipe === 'daerah' ? 'Jangkauan Daerah Lainnya' : 'Artikel & Panduan Lainnya'}
+              </h4>
+              <ul class="space-y-2.5 text-xs">
+                {relatedCutting.map((rel) => (
+                  <li>
+                    <a
+                      href={`/cutting-plat/${rel.id}/`}
+                      class="text-neutral-600 hover:text-[#224da8] font-medium leading-snug block transition-colors"
+                    >
+                      &bull; {rel.data.titleSeo || rel.data.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              {data.tipe === 'artikel' && (
+                <div class="pt-2 border-t border-neutral-100">
+                  <a
+                    href="/cutting-plat/artikel/"
+                    class="text-xs font-bold text-[#ff6634] hover:underline flex items-center justify-between"
+                  >
+                    <span>Lihat Semua Artikel Cutting</span>
+                    <ArrowLeft className="w-3.5 h-3.5 rotate-180" />
+                  </a>
+                </div>
+              )}
+            </div>
+          )}
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

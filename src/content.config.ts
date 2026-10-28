@@ -81,4 +81,39 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { layanan, blog, blogger };
+const cutting = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/cutting' }),
+  schema: z.object({
+    title: z.string(),
+    titleSeo: z.string(),
+    tipe: z.enum(['daerah', 'artikel']).default('artikel'),
+    excerpt: z.string().default(''),
+    date: z.union([z.string(), z.date()]).transform((val) => {
+      if (val instanceof Date) {
+        const y = val.getFullYear();
+        const m = String(val.getMonth() + 1).padStart(2, '0');
+        const d = String(val.getDate()).padStart(2, '0');
+        return `${y}-${m}-${d}`;
+      }
+      return val;
+    }),
+    daerah: z.string().optional(),
+    jarak: z.string().optional(),
+    kategori: z.enum(['fiber-laser', 'cnc-router', 'laser-co2', 'acp', 'plat-motif', 'umum']).default('umum'),
+    imgurl: z.string().default('/img/layanan/huruf-timbul.webp'),
+    imgalt: z.string().optional(),
+    pengantar: z.string().default(''),
+    kesimpulan: z.string().default(''),
+    published: z.boolean().default(true),
+    faq: z
+      .array(
+        z.object({
+          question: z.string(),
+          answer: z.string(),
+        })
+      )
+      .default([]),
+  }),
+});
+
+export const collections = { layanan, blog, blogger, cutting };

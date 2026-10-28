@@ -5,30 +5,47 @@
 
 ## Akses Data
 - **SUMBER-PENGETAHUAN.md** (di root project) wajib dibaca untuk data fakta brand, layanan, portofolio, liputan media, aturan menulis, dan daftar artikel terbit.
-- **RENCANA-ARTIKEL-HARIAN.md** (di root project) berisi antrean topik harian (1 hari 1 artikel) untuk optimasi ranking halaman pilar Google.
+- **RENCANA-ARTIKEL-HARIAN.md** (di root project) berisi antrean topik harian pilar reklame utama (Huruf Timbul, Neon Box, Rambu K3, Billboard).
+- **RENCANA-ARTIKEL-CUTTING.md** (di root project) berisi antrean topik harian pilar workshop Cutting Plat & Laser CNC (Fiber Laser Logam, CNC Router ACP/Kayu, Plat Motif Pagar, Laser CO2 Akrilik, dan Target Daerah Sumsel).
+- **KEYWORD-CUTTING-PLAT.md** (di root project) berisi bank kata kunci lengkap untuk jasa cutting plat & CNC.
+- **HARGA-CUTTING-PLAT.md** (di root project) berisi struktur tarif, batas ketebalan, dan parameter biaya cutting.
 - **Data layanan**: `src/content/layanan/*.md`.
-- **Data blog**: `src/content/blog/*.md`.
+- **Data blog**: `src/content/blog/**/*.md`.
+- **Data cutting**: `src/content/cutting/*.md`.
 
 ## Skill Riset & Penulisan
 - **Alur Kolaborasi Dua Skill**:
   1. **Riset & Arsitektur Konten**: Gunakan skill **`pakar-entity-seo`** untuk mengekstrak keyword, memetakan entitas semantik (Knowledge Graph / Schema.org), dan menyusun outline E-E-A-T berbasis konteks lokal Sumsel/Palembang sebelum penulisan.
   2. **Penulisan Final**: Gunakan skill **`penulis-ahli`** yang menerima input hasil riset dari `pakar-entity-seo` untuk menghasilkan artikel akhir (humanizer, SEO/GEO 2026, konten non-komoditas, dan validasi frontmatter Zod).
 - **Alur Pertanyaan "Buat artikel apa kita hari ini?"**:
-  - Jika pengguna bertanya seperti "buat artikel apa kita hari ini?" atau "artikel apa hari ini?", AI **WAJIB** membaca `RENCANA-ARTIKEL-HARIAN.md`.
-  - Ambil antrean artikel pertama yang statusnya masih `[ ] Belum Ditulis`.
-  - Jelaskan secara ringkas kepada pengguna rincian target artikel tersebut (Hari ke berapa, Target pilar, Judul kartu, Title SEO, Target Keyword, dan Strategi internal link).
-  - Tanyakan konfirmasi kepada pengguna untuk memulai proses.
-  - Setelah dikonfirmasi, lakukan riset kata kunci dan pemetaan entitas dengan skill **`pakar-entity-seo`**, kemudian teruskan hasilnya ke skill **`penulis-ahli`** untuk menulis artikel lengkap.
-  - Setelah artikel selesai ditulis dan disimpan ke `src/content/blog/<slug>.md`, perbarui status artikel tersebut di `RENCANA-ARTIKEL-HARIAN.md` menjadi `[x] Selesai` beserta tanggalnya.
+  - Jika pengguna bertanya seperti "buat artikel apa kita hari ini?", "artikel apa hari ini?", atau "jadwal artikel hari ini", AI **WAJIB** membaca KEDUA file rencana artikel:
+    1. `RENCANA-ARTIKEL-HARIAN.md` (Pilar Reklame: Huruf Timbul, Neon Box, Rambu K3)
+    2. `RENCANA-ARTIKEL-CUTTING.md` (Pilar Fabrikasi: Fiber Laser Plat, CNC Router ACP, Pagar Motif, Akrilik)
+  - Ambil antrean teratas yang statusnya masih `[ ] Belum Ditulis` dari masing-masing file tersebut, lalu sajikan **2 Pilihan Rekomendasi Seimbang** kepada pengguna:
+    - **Pilihan 1 (Pilar Reklame Sriwijaya Grafika)**: Target pilar (misal `/layanan/huruf-timbul/` atau `/layanan/rambu-rambu/`), Judul Kartu, Title SEO, Target Keyword, dan Lokasi output (`src/content/blog/<topik>/<slug>.md`).
+    - **Pilihan 2 (Pilar Cutting Plat & CNC Laser)**: Target pilar (`/cutting-plat/`), Kategori Mesin/Material (misal Fiber Laser, CNC Router ACP, Plat Motif), Judul Kartu, Title SEO, Target Keyword, dan Lokasi output (`src/content/cutting/<slug>.md`).
+  - Berikan ringkasan singkat dan tanyakan pengguna: *"Mau memproses artikel Reklame (Pilihan 1) atau artikel Cutting Plat (Pilihan 2) hari ini?"* (Pengguna juga bebas memilih keduanya atau menentukan topik lain).
+  - Setelah pengguna memilih:
+    - Jalankan riset kata kunci dan pemetaan entitas dengan skill **`pakar-entity-seo`**.
+    - Buat artikel final dengan skill **`penulis-ahli`**.
+    - Simpan file di lokasi yang tepat:
+      - Jika artikel Reklame: simpan di `src/content/blog/<topik>/<slug>.md`, lalu perbarui status di `RENCANA-ARTIKEL-HARIAN.md` menjadi `[x] Selesai`.
+      - Jika artikel Cutting Plat: simpan di `src/content/cutting/<slug>.md` (dengan `tipe: "artikel"` dan gambar rasio 4:3), lalu perbarui status di `RENCANA-ARTIKEL-CUTTING.md` menjadi `[x] Selesai`.
+    - Jalankan audit validasi link otomatis:
+      ```bash
+      node scripts/check-links.js src/content/blog/<topik>/<slug>.md   # jika blog reklame
+      node scripts/check-links.js src/content/cutting/<slug>.md         # jika cutting plat
+      npm run check:links
+      ```
 - **Aturan imgPrompt**: Setiap penulisan artikel baru wajib menyertakan key `imgPrompt` di frontmatter. Isi `imgPrompt` harus memvisualisasikan isi artikel dalam gaya foto realistis (photorealistic) dengan menyertakan karakter Srifika yang sedang melakukan aksi, di dalam latar belakang dan suasana yang sesuai. Jangan deskripsikan identitas detail Srifika (seperti baju, jersey, dsb.) karena sudah otomatis terdefinisi oleh generator gambar eksternal.
 - **Mekanisme Wajib Validasi Link & Anchor Text (Anti-404 & Trailing Slash)**:
   - Setiap kali artikel blog selesai ditulis atau diedit, AI **WAJIB** menjalankan audit link otomatis sebelum commit:
     ```bash
-    node scripts/check-links.js src/content/blog/<slug>.md   # periksa artikel yang baru ditulis
-    npm run check:links                                      # periksa seluruh artikel blog
+    node scripts/check-links.js src/content/blog/<topik>/<slug>.md   # periksa artikel yang baru ditulis
+    npm run check:links                                              # periksa seluruh artikel blog
     ```
-  - **Aturan Trailing Slash**: Seluruh tautan internal (baik ke `/layanan/*` maupun `/blog/*`) **WAJIB** memiliki *trailing slash* (`/`) di akhir URL (contoh: `/layanan/huruf-timbul/`, bukan `/layanan/huruf-timbul`), selaras dengan setting `trailingSlash: 'always'` di `astro.config.mjs`.
-  - **Aturan Validitas URL (Anti-404)**: Tautan internal dilarang keras mengarah ke URL 404. Untuk link antar-artikel blog, wajib menyertakan kategori topik (`/blog/<topik>/<slug>/`, contoh: `/blog/teknis/standar-trafo-led-huruf-timbul-outdoor/`), BUKAN format usang `/blog/<slug>/`.
+  - **Aturan Trailing Slash**: Seluruh tautan internal (baik ke `/layanan/*`, `/cutting-plat/*`, maupun `/blog/*`) **WAJIB** memiliki *trailing slash* (`/`) di akhir URL (contoh: `/layanan/huruf-timbul/` atau `/cutting-plat/`, bukan tanpa slash), selaras dengan setting `trailingSlash: 'always'` di `astro.config.mjs`.
+  - **Aturan Validitas URL (Anti-404)**: Tautan internal dilarang keras mengarah ke URL 404. Untuk link antar-artikel blog, wajib menyertakan kategori topik (`/blog/<topik>/<slug>/`), BUKAN format usang `/blog/<slug>/`. Untuk link cutting plat gunakan `/cutting-plat/<slug>/`.
   - **Kualitas Anchor Text**: Anchor text tidak boleh kosong atau menggunakan kata generik seperti "klik disini" / "link ini". Gunakan anchor text berbasis keyword alami yang kaya konteks.
 - **Mekanisme Rekomendasi Judul Artikel Support**: Setiap kali diminta memberikan saran judul artikel blog, AI **WAJIB**:
     1. Membaca daftar judul yang sudah terbit di `src/content/blog/` untuk memeriksa apakah topik tersebut sudah pernah dibuat.

@@ -6,6 +6,7 @@ import matter from 'gray-matter';
 const ROOT_DIR = process.cwd();
 const BLOG_DIR = path.join(ROOT_DIR, 'src', 'content', 'blog');
 const LAYANAN_DIR = path.join(ROOT_DIR, 'src', 'content', 'layanan');
+const CUTTING_DIR = path.join(ROOT_DIR, 'src', 'content', 'cutting');
 
 // Daftar halaman statis yang sah di situs
 const STATIC_ROUTES = new Set([
@@ -26,6 +27,8 @@ const STATIC_ROUTES = new Set([
   '/blog/kabar/',
   '/blog/teknis/',
   '/blog/rss.xml',
+  '/cutting-plat/',
+  '/cutting-plat/artikel/',
 ]);
 
 // 1. Kumpulkan semua rute layanan yang sah
@@ -56,11 +59,20 @@ for (const file of blogFiles) {
   }
 }
 
+// 3. Kumpulkan semua rute cutting plat yang sah
+const cuttingFiles = fs.existsSync(CUTTING_DIR) ? fs.readdirSync(CUTTING_DIR) : [];
+const CUTTING_ROUTES = new Set(
+  cuttingFiles
+    .filter((f) => f.endsWith('.md'))
+    .map((f) => `/cutting-plat/${path.basename(f, '.md')}/`)
+);
+
 // Gabungan semua rute internal valid
 const ALL_VALID_ROUTES = new Set([
   ...STATIC_ROUTES,
   ...LAYANAN_ROUTES,
   ...BLOG_ROUTES,
+  ...CUTTING_ROUTES,
 ]);
 
 // Helper untuk membersihkan URL internal

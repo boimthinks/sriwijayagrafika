@@ -1,31 +1,46 @@
 # Sriwijaya Grafika
 
-> Pusat Layanan Percetakan, Advertising, dan Branding Media Luar Ruang Terpercaya di Palembang & Sumatera Selatan.
+> Pusat Percetakan, Reklame Advertising, dan Workshop Fabrikasi Cutting Plat & CNC Laser Terlengkap di Palembang & Sumatera Selatan.
 
-Sriwijaya Grafika melayani pembuatan reklame, huruf timbul, neon box, pylon sign, plang toko, booth pameran, serta berbagai kebutuhan cetak promosi berkualitas tinggi.
+Sriwijaya Grafika (berdiri lebih dari 16 tahun, dipimpin oleh M. Edy Munandar) adalah perusahaan workshop advertising, reklame luar ruang, dan pusat jasa potong laser industri logam dan non-logam di Palembang, Sumatera Selatan. Melayani kebutuhan korporat, instansi pemerintah, BUMN, perbankan, kontraktor, arsitek, bengkel las, hingga pemilik bisnis UMKM.
 
-## Layanan Utama
+## Layanan Reklame & Signage Utama
 
-- [Semua Layanan](/layanan): Katalog lengkap layanan percetakan & advertising Sriwijaya Grafika.
-- [Huruf Timbul](/layanan/huruf-timbul): Pembuatan huruf timbul akrilik, stainless, kuningan, dan galvanis LED.
-- [Neon Box](/layanan/neon-box): Neon box akrilik & backlite custom bentuk (persegi, bulat, unik).
-- [Pylon Sign / Totem](/layanan/pylon-totem): Pylon totem outdoor untuk SPBU, kantor, hotel, dan gedung.
-- [Plang Toko & Kantor](/layanan/plang-toko-kantor): Plang papan nama toko & kantor rangka besi anti angin.
-- [Neon Flex Custom](/layanan/neon-flex): Neon flex dekoratif estetis untuk kafe, resto, dan interior.
-- [Gantry & Huruf LED Large Format](/layanan/gantry-huruf-led): Huruf LED ukuran besar & gantry sign luar ruang.
-- [Billboard & Reklame Baliho](/layanan/billboard): Konstruksi & cetak billboard baliho jalan raya.
-- [Booth Event & Desk](/layanan/booth-event-desk): Booth pameran, event desk portable, dan pop-up display.
-- [Rambu & Signage](/layanan/rambu-rambu): Rambu K3, penunjuk arah, dan safety sign.
+- [Semua Layanan Reklame](/layanan/): Katalog lengkap layanan percetakan, signage & advertising Sriwijaya Grafika.
+- [Huruf Timbul LED](/layanan/huruf-timbul/): Pembuatan huruf timbul akrilik, stainless steel hairline/mirror, kuningan, dan galvanis finishing cat oven.
+- [Neon Box](/layanan/neon-box/): Neon box akrilik custom bentuk, backlite Korea/Jerman rangka besi hollow, hemat listrik modul LED Samsung.
+- [Pylon Sign / Totem](/layanan/pylon-totem/): Konstruksi pylon sign totem outdoor kokoh tahan angin kencang untuk SPBU, kantor, hotel, dan gedung perbankan.
+- [Plang Toko & Kantor](/layanan/plang-toko-kantor/): Plang nama toko, ruko, instansi, dan plang papan proyek rangka besi anti-karat.
+- [Neon Flex Custom](/layanan/neon-flex/): Signage dekoratif neon flex estetis untuk kafe, restoran, butik, dan interior modern.
+- [Gantry & Huruf LED Large Format](/layanan/gantry-huruf-led/): Huruf timbul raksasa dan gantry sign luar ruang skala infrastruktur publik.
+- [Billboard & Reklame Baliho](/layanan/billboard/): Pembangunan rangka pipa besi, pondasi cakar ayam, cetak visual, dan pengurusan pajak reklame.
+- [Booth Event & Desk](/layanan/booth-event-desk/): Booth pameran dagang, event desk portable, dan counter display promosi.
+- [Rambu K3 & Safety Sign](/layanan/rambu-rambu/): Rambu standar K3 industri, jalur evakuasi glow in the dark, dan penunjuk arah jalan pabrik/kawasan tambang.
 
-## Informasi & Konten
+## Workshop Cutting Plat & CNC Laser
 
-- [Blog & Tips](/blog): Panduan, tips memilih bahan reklame, studi kasus, dan informasi percetakan.
-- [Portofolio](/portofolio): Dokumentasi proyek & hasil pekerjaan yang telah diselesaikan.
-- [Liputan Media](/media): Pemberitaan, liputan pers, dan ulasan tentang Sriwijaya Grafika.
-- [Arsip Artikel](/arsip): Arsip publikasi lama Sriwijaya Grafika.
+- [Workshop Cutting Plat & CNC Hub](/cutting-plat/): Pusat jasa potong CNC Fiber Laser Plat Logam, CNC Router ACP/Kayu, Laser CO2 Akrilik, dan Mesin Tekuk Otomatis tanpa perantara di Palembang.
+- [Indeks Artikel & Panduan Cutting](/cutting-plat/artikel/): Kumpulan panduan teknis, komparasi efisiensi biaya, toleransi ketebalan potong, dan tutorial persiapan file gambar.
+- [Motif Pagar Laser Cutting](/cutting-plat/motif-pagar-laser-cutting/): Jasa potong plat ornamen pagar rumah minimalis, railing tangga, balkon, dan motif Songket khas Palembang.
+- [Standar Format File DXF & CDR](/cutting-plat/standar-format-file-dxf-laser-cutting/): Standar teknis penyiapan file vektor 1:1, clean curves, dan anti-double line untuk pemotongan mesin CNC.
+- [Laser Fiber vs Plasma Cutting](/cutting-plat/perbandingan-biaya-laser-fiber-vs-plasma-cutting/): Analisis komparasi akurasi, slag terak, efisiensi listrik, dan perbandingan harga jasa potong logam.
+- [Jasa Potong ACP Prabumulih](/cutting-plat/jasa-potong-acp-prabumulih/): Layanan pemotongan dan grooving 90 derajat panel ACP Seven/Marks untuk fasad toko komersial dan ruko.
 
-## Halaman Tambahan
+## Jangkauan Layanan Sumatera Selatan
 
-- [Kontak & Lokasi](/kontak): Alamat workshop, peta lokasi, dan saluran komunikasi WhatsApp/telepon.
-- [Kebijakan Privasi](/kebijakan-privasi): Kebijakan privasi penggunaan situs.
-- [Syarat & Ketentuan](/syarat-ketentuan): Syarat dan ketentuan layanan.
+- [Cutting Plat Prabumulih](/cutting-plat/prabumulih/): Jasa potong laser plat besi, stainless steel, dan panel ACP untuk Kota Prabumulih.
+- [Cutting Plat Muara Enim](/cutting-plat/muara-enim/): Layanan pemotongan plat logam tebal, panel kisi-kisi mesin, dan fasad kawasan industri tambang Muara Enim & Tanjung Enim.
+- [Cutting Plat Lahat](/cutting-plat/lahat/): Solusi ornamen pagar motif daun, partisi ruangan, dan plat dekoratif perumahan/villa di Lahat.
+- [Cutting Plat Sekayu](/cutting-plat/sekayu/): Pembuatan panel ornamen ACP kantor dinas Pemkab Muba, gerbang, dan signage ruko Sekayu.
+- [Cutting Plat PALI](/cutting-plat/pali/): Layanan cutting plat besi dan huruf toko untuk wilayah Talang Ubi dan Pendopo PALI.
+- [Cutting Plat Indralaya](/cutting-plat/indralaya/): Pemotongan akrilik kampus, display seminar Unsri, plakat, dan plat ornamen Ogan Ilir.
+- [Cutting Plat Betung](/cutting-plat/betung/): Workshop potong plat, CNC router panel kayu/ACP, dan signage ruko Betung & Banyuasin.
+- [Cutting Plat Lubuklinggau](/cutting-plat/lubuklinggau/): Fabrikasi plat tebal, stainless fasad toko, dan signage hotel Kota Lubuklinggau.
+
+## Informasi, Portofolio & Kontak
+
+- [Blog & Artikel Teknis](/blog/): Artikel mendalam tentang material advertising, kelistrikan trafo, standar rambu K3, dan tips perawatan reklame.
+- [Galeri Portofolio Proyek](/portofolio/): Dokumentasi ratusan proyek reklame dan cutting yang terpasang di gedung instansi, mall, dan hotel.
+- [Liputan Media Pers](/media/): Liputan media nasional, stasiun TV, dan profil wirausaha tangguh Sriwijaya Grafika.
+- [Halaman Kontak & Workshop](/kontak/): Alamat bengkel Jl. AMD Pertanian No.105 Talang Jambe Palembang, WhatsApp 0852-1511-1125.
+- [Dokumentasi Lengkap (LLMs Full)](/llms-full.txt): File konteks lengkap yang memuat profil bisnis, spesifikasi mesin, tarif jasa potong, dan parameter teknis.

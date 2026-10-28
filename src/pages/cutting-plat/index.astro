@@ -1,0 +1,781 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Navbar from '@components/Navbar.astro';
+import Footer from '@components/Footer.astro';
+import { getCollection } from 'astro:content';
+import { BUSINESS_INFO } from '@lib/data';
+import { 
+  Cpu, 
+  Layers, 
+  Sparkles, 
+  Truck, 
+  ShieldCheck, 
+  FileCode2, 
+  ArrowRight, 
+  CheckCircle2, 
+  Phone, 
+  MessageCircle, 
+  ChevronRight, 
+  Maximize2, 
+  Clock, 
+  MapPin,
+  HelpCircle
+} from 'lucide-react';
+
+const title = 'Jasa Laser Cutting Plat Besi, CNC Router & Potong ACP Palembang | Sriwijaya Grafika';
+const description = 'Pusat bengkel laser cutting plat besi, stainless steel, CNC router ACP, multiplek, MDF dan potong akrilik di Palembang. Melayani order kontraktor & bengkel las se-Sumatera Selatan.';
+const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://sriwijayagrafika.com').toString();
+
+// Ambil data cutting yang sudah terbit, pisahkan antara target daerah dan artikel
+const allCutting = await getCollection('cutting', ({ data }) => data.published);
+
+// 1. Koleksi khusus target daerah (tipe: daerah)
+const targetDaerahList = allCutting
+  .filter((item) => item.data.tipe === 'daerah')
+  .sort((a, b) => (a.data.daerah || a.data.title).localeCompare(b.data.daerah || b.data.title));
+
+// 2. Koleksi khusus artikel & panduan teknis (tipe: artikel)
+const articleList = allCutting
+  .filter((item) => item.data.tipe === 'artikel')
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+const waGeneralMsg = 'Halo Sriwijaya Grafika, saya ingin konsultasi jasa cutting plat / CNC router. Mau tanya estimasi biaya dan pengiriman file desain.';
+const waGeneralUrl = `https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent(waGeneralMsg)}`;
+
+const faqs = [
+  {
+    q: 'Format file apa saja yang bisa diproses untuk cutting laser & CNC router?',
+    a: 'Kami menerima file vektor presisi seperti DXF, DWG (AutoCAD), CDR (CorelDRAW versi X7 ke bawah), AI (Adobe Illustrator), atau EPS. Jika Anda hanya memiliki sketsa tangan atau foto contoh, tim desainer teknis kami dapat membantu menggambar ulang ke format DXF dengan biaya desain yang sangat terjangkau.'
+  },
+  {
+    q: 'Apakah bisa membawa plat besi atau material sendiri?',
+    a: 'Bisa! Kami melayani sistem "Jasa Potong Saja" di mana Anda membawa material plat besi, stainless, ACP, multiplek, atau akrilik sendiri ke workshop kami di Sukarami Palembang. Namun, kami juga menyediakan material lengkap siap potong dengan harga grosir untuk menghemat waktu Anda.'
+  },
+  {
+    q: 'Berapa ketebalan maksimal plat besi & stainless yang bisa dipotong mesin fiber laser?',
+    a: 'Mesin Fiber Laser berkekuatan tinggi di workshop kami mampu memotong plat besi (carbon steel / mild steel) hingga ketebalan 16 mm dan stainless steel 201/304 hingga ketebalan 6 mm dengan hasil potongan halus tanpa gerigi (burr-free).'
+  },
+  {
+    q: 'Bagaimana prosedur pemesanan untuk pelanggan di luar Kota Palembang (Prabumulih, Lahat, Sekayu, dll)?',
+    a: 'Sangat praktis tanpa perlu datang ke Palembang. Anda cukup mengirimkan file desain atau ukuran melalui WhatsApp. Setelah spesifikasi dan pembayaran disepakati, proses cutting langsung dijalankan. Barang yang selesai kami packing kayu / kardus bubble tebal, lalu kami kirimkan via travel antarkota (sampai hari yang sama) atau ekspedisi cargo terpercaya (ALS, Indah Logistik, Dakota, J&T Cargo).'
+  },
+  {
+    q: 'Apakah ada batas minimal order pemotongan?',
+    a: 'Tidak ada batas minimal order yang kaku. Kami melayani order satuan untuk kebutuhan prototype/pribadi (seperti nomor rumah plat besi, plakat akrilik custom) hingga pesanan volume besar untuk proyek fasad gedung bertingkat dan kebutuhan bengkel las.'
+  },
+  {
+    q: 'Berapa lama estimasi pengerjaan jasa cutting?',
+    a: 'Untuk file yang sudah siap cetak (DXF/CDR), pengerjaan standar berkisar antara 1 hingga 3 hari kerja tergantung volume antrean dan ketebalan material. Untuk order darurat/urgent proyek, silakan konfirmasikan terlebih dahulu ke admin kami.'
+  }
+];
+
+const structuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${pageUrl}#service`,
+    name: 'Jasa Laser Cutting Plat Besi, CNC Router & Potong ACP Palembang',
+    description: description,
+    serviceType: 'Laser Cutting and CNC Routing Fabrication',
+    provider: {
+      '@type': 'LocalBusiness',
+      '@id': 'https://sriwijayagrafika.com/#business',
+      name: BUSINESS_INFO.name,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: BUSINESS_INFO.address,
+        addressLocality: 'Palembang',
+        addressRegion: 'Sumatera Selatan',
+        postalCode: '30155',
+        addressCountry: 'ID'
+      },
+      telephone: '+62' + BUSINESS_INFO.phone1.substring(1)
+    },
+    areaServed: [
+      { '@type': 'City', name: 'Palembang' },
+      { '@type': 'City', name: 'Prabumulih' },
+      { '@type': 'City', name: 'Lahat' },
+      { '@type': 'City', name: 'Muara Enim' },
+      { '@type': 'City', name: 'Sekayu' },
+      { '@type': 'City', name: 'Lubuklinggau' },
+      { '@type': 'AdministrativeArea', name: 'PALI' },
+      { '@type': 'AdministrativeArea', name: 'Ogan Ilir' },
+      { '@type': 'AdministrativeArea', name: 'Banyuasin' },
+      { '@type': 'AdministrativeArea', name: 'Sumatera Selatan' }
+    ]
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Beranda',
+        item: 'https://sriwijayagrafika.com/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Jasa Cutting Plat & Laser CNC',
+        item: pageUrl
+      }
+    ]
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.a
+      }
+    }))
+  }
+];
+---
+
+<Layout
+  title={title}
+  description={description}
+  canonicalUrl={pageUrl}
+  keywords={[
+    'jasa laser cutting Palembang',
+    'laser cutting plat besi',
+    'jasa potong plat',
+    'laser cutting stainless',
+    'jasa CNC router Palembang',
+    'jasa potong ACP',
+    'cutting plat motif pagar',
+    'laser cutting akrilik Palembang',
+    'jasa laser cutting Prabumulih',
+    'jasa cutting plat Muara Enim',
+    'jasa laser cutting Lahat',
+    'jasa CNC router Sekayu',
+    'jasa laser cutting Sumatera Selatan'
+  ]}
+  structuredData={structuredData}
+>
+  <Navbar />
+
+  <main class="min-h-screen bg-neutral-50">
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-[#10285a] via-[#1a3d82] to-[#224da8] text-white pt-16 pb-20 overflow-hidden">
+      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Breadcrumb Header -->
+        <nav class="flex items-center space-x-2 text-xs text-white/70 mb-6 font-mono">
+          <a href="/" class="hover:text-white transition-colors">Beranda</a>
+          <span>/</span>
+          <span class="text-[#ff6634] font-bold">Cutting Plat & Laser CNC</span>
+        </nav>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[#ff6634] text-xs font-bold tracking-wide uppercase">
+              <Sparkles className="w-4 h-4 text-[#ff6634]" />
+              <span>Workshop Fabrikasi Laser &amp; CNC Presisi Tinggi</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white">
+              Jasa Laser Cutting Plat Besi, CNC Router &amp; Potong ACP Palembang
+            </h1>
+
+            <p class="text-base sm:text-lg text-white/85 leading-relaxed">
+              Solusi fabrikasi potong logam dan non-logam berskala industri untuk arsitek, kontraktor, interior designer, dan bengkel las. Melayani pemotongan presisi plat besi, stainless steel, ACP fasad, multiplek, MDF, dan akrilik untuk pengiriman ke seluruh kabupaten/kota di Sumatera Selatan.
+            </p>
+
+            <!-- Value Props Badges -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+              <div class="p-3 rounded-xl bg-white/10 backdrop-blur-md border border-white/15">
+                <span class="block text-xl font-extrabold text-[#ff6634] font-mono">0.1 mm</span>
+                <span class="text-[11px] text-white/80">Akurasi &amp; Presisi</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/10 backdrop-blur-md border border-white/15">
+                <span class="block text-xl font-extrabold text-[#ff6634] font-mono">122x244</span>
+                <span class="text-[11px] text-white/80">Meja Potong Full Sheet</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/10 backdrop-blur-md border border-white/15">
+                <span class="block text-xl font-extrabold text-[#ff6634] font-mono">DXF/CDR</span>
+                <span class="text-[11px] text-white/80">Format Vektor Lengkap</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/10 backdrop-blur-md border border-white/15">
+                <span class="block text-xl font-extrabold text-[#ff6634] font-mono">Se-Sumsel</span>
+                <span class="text-[11px] text-white/80">Ekspedisi &amp; Travel</span>
+              </div>
+            </div>
+
+            <!-- CTAs -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+              <a
+                href={waGeneralUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white font-bold text-sm shadow-lg shadow-orange-500/25 transition-all transform hover:-translate-y-0.5"
+              >
+                <MessageCircle className="w-5 h-5" />
+                <span>Kirim File &amp; Hitung Biaya via WhatsApp</span>
+              </a>
+              <a
+                href="#mesin-kapabilitas"
+                class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white/15 hover:bg-white/20 text-white font-semibold text-sm border border-white/25 transition-all"
+              >
+                <span>Lihat Kapabilitas Mesin</span>
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5">
+            <div class="rounded-2xl p-6 bg-white/10 backdrop-blur-lg border border-white/20 shadow-2xl space-y-4">
+              <div class="flex items-center gap-3 border-b border-white/15 pb-4">
+                <div class="p-2.5 rounded-xl bg-[#ff6634] text-white">
+                  <FileCode2 className="w-6 h-6" />
+                </div>
+                <div>
+                  <h2 class="text-sm font-extrabold text-white">Alur Cepat Konsultasi &amp; Order</h2>
+                  <p class="text-xs text-white/70">Langsung dari smartphone Anda</p>
+                </div>
+              </div>
+
+              <ol class="space-y-3 text-xs text-white/85">
+                <li class="flex items-start gap-2.5">
+                  <span class="flex-shrink-0 w-5 h-5 rounded-full bg-[#ff6634] text-white flex items-center justify-center font-bold text-[10px]">1</span>
+                  <span><strong>Kirim File:</strong> Lampirkan file format .DXF, .DWG, .CDR, atau foto sketsa ukuran ke WhatsApp kami.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="flex-shrink-0 w-5 h-5 rounded-full bg-[#ff6634] text-white flex items-center justify-center font-bold text-[10px]">2</span>
+                  <span><strong>Kalkulasi Menit/Lembar:</strong> Tim kami menghitung panjang garis potong &amp; estimasi kebutuhan bahan.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="flex-shrink-0 w-5 h-5 rounded-full bg-[#ff6634] text-white flex items-center justify-center font-bold text-[10px]">3</span>
+                  <span><strong>Eksekusi Fabrikasi:</strong> Proses potong presisi tinggi dengan mesin Fiber Laser / CNC Router.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="flex-shrink-0 w-5 h-5 rounded-full bg-[#ff6634] text-white flex items-center justify-center font-bold text-[10px]">4</span>
+                  <span><strong>Packing &amp; Kirim:</strong> Pengambilan di workshop Sukarami atau kirim via travel/cargo ke alamat Anda di Sumsel.</span>
+                </li>
+              </ol>
+
+              <div class="pt-2">
+                <div class="p-3 rounded-xl bg-black/20 border border-white/10 flex items-center justify-between">
+                  <span class="text-[11px] text-white/80">Workshop Sukarami, Palembang</span>
+                  <span class="text-[10px] font-mono text-[#ff6634] font-bold">Buka Senin - Sabtu</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 Lini Mesin Utama -->
+    <section id="mesin-kapabilitas" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs uppercase font-mono tracking-widest text-[#ff6634] font-bold block mb-2">
+          TEKNOLOGI FABRIKASI MODERN
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight">
+          3 Lini Mesin Industri untuk Segala Kebutuhan Material
+        </h2>
+        <p class="text-sm text-neutral-600 mt-2">
+          Kami mengoperasikan mesin industri berkecepatan tinggi dengan toleransi mikron untuk menjamin kehalusan potongan dan efisiensi waktu pengerjaan proyek Anda.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Mesin 1: Fiber Laser Logam -->
+        <div class="bg-white rounded-2xl p-6 border border-neutral-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="relative aspect-[16/10] rounded-xl overflow-hidden bg-neutral-100 border border-neutral-100">
+              <img
+                src="/img/cutting-plat/mesin-potong-laser-fiber_poco.webp"
+                alt="Mesin CNC Fiber Laser Cutting Plat Logam Sriwijaya Grafika Palembang"
+                class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-blue-50 text-[#224da8] flex items-center justify-center flex-shrink-0">
+                <Cpu className="w-5 h-5" />
+              </div>
+              <div>
+                <span class="text-[10px] font-mono uppercase text-blue-600 font-bold block">Kategori Logam</span>
+                <h3 class="text-base font-extrabold text-neutral-900">CNC Fiber Laser Cutting</h3>
+              </div>
+            </div>
+
+            <p class="text-xs text-neutral-600 leading-relaxed">
+              Teknologi sinar laser terfokus berdaya tinggi untuk memotong berbagai jenis plat logam tanpa distorsi panas berlebih. Menghasilkan potongan bersih tanpa terak kasar (dross-free).
+            </p>
+            <div class="space-y-2 border-t border-neutral-100 pt-3">
+              <span class="text-[11px] font-bold text-neutral-800 block">Material &amp; Ketebalan:</span>
+              <ul class="text-xs text-neutral-600 space-y-1.5">
+                <li class="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+                  <span>Plat Besi (Carbon/Mild Steel) s/d 16 mm</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+                  <span>Stainless Steel 201 / 304 s/d 6 mm</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+                  <span>Plat Galvanis &amp; Aluminium s/d 4 mm</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+                  <span>Plat Bordes &amp; Komponen Bengkel Las</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-neutral-100">
+            <a href={waGeneralUrl} target="_blank" class="text-xs font-bold text-[#224da8] hover:text-[#ff6634] flex items-center justify-between">
+              <span>Konsultasi Plat Logam</span>
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Mesin 2: CNC Router Heavy Duty -->
+        <div class="bg-white rounded-2xl p-6 border border-neutral-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="relative aspect-[16/10] rounded-xl overflow-hidden bg-neutral-100 border border-neutral-100">
+              <img
+                src="/img/cutting-plat/mesin-potong-CNC-router_poco.webp"
+                alt="Mesin CNC Router Heavy Duty Potong ACP dan Kayu Sriwijaya Grafika Palembang"
+                class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-orange-50 text-[#ff6634] flex items-center justify-center flex-shrink-0">
+                <Layers className="w-5 h-5" />
+              </div>
+              <div>
+                <span class="text-[10px] font-mono uppercase text-[#ff6634] font-bold block">Kategori Lembaran Panel</span>
+                <h3 class="text-base font-extrabold text-neutral-900">CNC Router Heavy Duty</h3>
+              </div>
+            </div>
+
+            <p class="text-xs text-neutral-600 leading-relaxed">
+              Mesin router spesialis pemotongan dan grafir panel lembaran besar ukuran standar 122 x 244 cm. Menggunakan spindle bertenaga tinggi dan mata pisau carbide presisi tinggi.
+            </p>
+            <div class="space-y-2 border-t border-neutral-100 pt-3">
+              <span class="text-[11px] font-bold text-neutral-800 block">Material &amp; Aplikasi:</span>
+              <ul class="text-xs text-neutral-600 space-y-1.5">
+                <li class="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+                  <span>ACP (Aluminium Composite Panel) 3mm &amp; 4mm</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+                  <span>Multiplek, Plywood, Triplek s/d 18 mm</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+                  <span>MDF Board, HMR Hijau, Wood Plastic (WPC)</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+                  <span>PVC Foam Board &amp; Panel Dinding Interior</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-neutral-100">
+            <a href={waGeneralUrl} target="_blank" class="text-xs font-bold text-[#ff6634] hover:text-[#224da8] flex items-center justify-between">
+              <span>Konsultasi Potong ACP / Kayu</span>
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Mesin 3: Laser CO2 Akrilik -->
+        <div class="bg-white rounded-2xl p-6 border border-neutral-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="relative aspect-[16/10] rounded-xl overflow-hidden bg-neutral-100 border border-neutral-100">
+              <img
+                src="/img/cutting-plat/mesin-potong-laser-CO2_poco.webp"
+                alt="Mesin Laser CO2 Potong dan Grafir Akrilik Presisi Sriwijaya Grafika Palembang"
+                class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                <Sparkles className="w-5 h-5" />
+              </div>
+              <div>
+                <span class="text-[10px] font-mono uppercase text-emerald-600 font-bold block">Kategori Non-Logam &amp; Display</span>
+                <h3 class="text-base font-extrabold text-neutral-900">Laser CO2 High-Precision</h3>
+              </div>
+            </div>
+
+            <p class="text-xs text-neutral-600 leading-relaxed">
+              Pemotongan dan ukir/grafir material akrilik serta material non-logam berpresisi detail. Memberikan tepian potong bening mengkilap alami tanpa memerlukan pemolesan manual.
+            </p>
+            <div class="space-y-2 border-t border-neutral-100 pt-3">
+              <span class="text-[11px] font-bold text-neutral-800 block">Material &amp; Hasil Akhir:</span>
+              <ul class="text-xs text-neutral-600 space-y-1.5">
+                <li class="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+                  <span>Akrilik Bening, Susu, Hitam &amp; Warna (2-20 mm)</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+                  <span>Huruf Timbul Signage &amp; Box Neon Display</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+                  <span>Grafir Plakat Akrilik, Souvenir &amp; Trophy</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+                  <span>Nomor Rumah, Signage Meja &amp; Name Tag</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-neutral-100">
+            <a href={waGeneralUrl} target="_blank" class="text-xs font-bold text-emerald-700 hover:text-[#ff6634] flex items-center justify-between">
+              <span>Konsultasi Akrilik &amp; Grafir</span>
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aplikasi Produk Populer -->
+    <section class="py-16 bg-white border-y border-neutral-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <span class="text-xs uppercase font-mono tracking-widest text-[#ff6634] font-bold block mb-1">
+              APLIKASI &amp; PRODUK HASIL KERJA
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight">
+              Pilihan Favorit Klien Kami di Sumatera Selatan
+            </h2>
+          </div>
+          <p class="text-xs sm:text-sm text-neutral-500 max-w-md">
+            Mulai dari proyek fasad ruko komersial, perumahan mewah, hingga kebutuhan industri manufaktur &amp; tambang.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="p-5 rounded-2xl bg-neutral-50 border border-neutral-200/80 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-[#224da8]/10 text-[#224da8] flex items-center justify-center font-bold font-mono">01</div>
+            <h3 class="text-base font-extrabold text-neutral-900">Pagar &amp; Railing Motif</h3>
+            <p class="text-xs text-neutral-600 leading-relaxed">
+              Pemotongan plat besi tebal 2mm - 4mm dengan motif minimalis modern, kaligrafi Islam, atau ornamen ukiran songket Palembang untuk pintu gerbang, pagar rumah, dan railing balkon.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-neutral-50 border border-neutral-200/80 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-[#ff6634]/10 text-[#ff6634] flex items-center justify-center font-bold font-mono">02</div>
+            <h3 class="text-base font-extrabold text-neutral-900">ACP Fasad Gedung</h3>
+            <p class="text-xs text-neutral-600 leading-relaxed">
+              Jasa potong panel ACP, perforasi lubang motif arsitektural, dan pelengkungan sudut fasad ruko untuk tampilan eksterior modern tahan cuaca ekstrem Sumatera.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-neutral-50 border border-neutral-200/80 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center font-bold font-mono">03</div>
+            <h3 class="text-base font-extrabold text-neutral-900">Partisi &amp; Sekat Ruangan</h3>
+            <p class="text-xs text-neutral-600 leading-relaxed">
+              Penyekat ruangan berbahan plat besi, MDF, atau PVC foam board. Ideal untuk interior kantor korporasi, mihrab masjid, cafe aesthetic, dan ruang pertemuan.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-neutral-50 border border-neutral-200/80 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-700 flex items-center justify-center font-bold font-mono">04</div>
+            <h3 class="text-base font-extrabold text-neutral-900">Signage &amp; Logo Plat Besi</h3>
+            <p class="text-xs text-neutral-600 leading-relaxed">
+              Potong logo korporat, tulisan huruf timbul plat, dan signage nama kantor dengan tingkat kepresisian lekukan huruf yang sempurna sesuai panduan brandbook.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wilayah Layanan Sumatera Selatan (Silo Hub) -->
+    <section class="py-16 bg-neutral-100/70" id="wilayah-sumsel">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-xs uppercase font-mono tracking-widest text-[#224da8] font-bold block mb-2">
+            JANGKAUAN LOGISTIK TERPADU
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight">
+            Melayani Bengkel Las &amp; Kontraktor se-Sumatera Selatan
+          </h2>
+          <p class="text-sm text-neutral-600 mt-2">
+            Pusat produksi kami berada di Sukarami, Palembang. Dengan kemitraan travel antarkota dan ekspedisi cargo terpercaya, pesanan plat potong Anda dikirim aman sampai ke kota tujuan.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {targetDaerahList.map((area) => (
+            <a
+              href={`/cutting-plat/${area.id}/`}
+              class="group bg-white p-5 rounded-2xl border border-neutral-200/80 hover:border-[#224da8] shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
+            >
+              <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="p-2 rounded-lg bg-neutral-100 text-[#224da8] group-hover:bg-[#224da8] group-hover:text-white transition-colors">
+                    <MapPin className="w-4 h-4" />
+                  </span>
+                  {area.data.jarak && (
+                    <span class="text-[10px] font-mono text-neutral-500 bg-neutral-100 px-2 py-0.5 rounded-full">{area.data.jarak}</span>
+                  )}
+                </div>
+                <h3 class="text-sm font-extrabold text-neutral-900 group-hover:text-[#224da8] transition-colors">
+                  {area.data.daerah || area.data.title}
+                </h3>
+                <p class="text-xs text-neutral-500 line-clamp-2 leading-relaxed">
+                  {area.data.excerpt || area.data.pengantar}
+                </p>
+              </div>
+
+              <div class="mt-4 pt-3 border-t border-neutral-100 flex items-center justify-between text-xs font-bold text-[#ff6634]">
+                <span>Lihat Layanan Daerah</span>
+                <ChevronRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div class="mt-8 p-4 rounded-2xl bg-white border border-neutral-200 text-center">
+          <p class="text-xs text-neutral-600">
+            Wilayah Anda belum tercantum? Kami juga melayani pengiriman ke <strong>Baturaja (OKU), Kayuagung (OKI), Pagar Alam, Tebing Tinggi (Empat Lawang), Musi Rawas, hingga Muratara</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hub Artikel Terkini Cutting Plat (tipe: artikel) -->
+    {articleList.length > 0 && (
+      <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+          <div>
+            <span class="text-xs uppercase font-mono tracking-widest text-[#ff6634] font-bold block mb-1">
+              RUBRIK EDUKASI &amp; TEKNIS
+            </span>
+            <h2 class="text-2xl font-extrabold text-neutral-900 tracking-tight">
+              Artikel &amp; Panduan Spesialis Cutting Plat
+            </h2>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-xs text-neutral-500 font-mono">
+              {articleList.length} Artikel Tersedia
+            </span>
+            <a
+              href="/cutting-plat/artikel/"
+              class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#224da8] hover:bg-[#10285a] text-white text-xs font-bold transition-colors"
+            >
+              <span>Lihat Semua Artikel</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {articleList.slice(0, 6).map((art) => (
+            <article class="group bg-white rounded-2xl border border-neutral-200 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+              <div>
+                <a href={`/cutting-plat/${art.id}/`} class="block relative aspect-[4/3] w-full overflow-hidden bg-neutral-100">
+                  <img
+                    src={art.data.imgurl || '/img/cutting-plat/mesin-potong-laser-fiber_poco.webp'}
+                    alt={art.data.imgalt || art.data.titleSeo || art.data.title}
+                    loading="lazy"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div class="absolute top-3 left-3 flex items-center gap-1.5">
+                    <span class="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase font-mono bg-neutral-900/80 backdrop-blur-md text-white border border-white/20">
+                      {art.data.kategori}
+                    </span>
+                    {art.data.daerah && (
+                      <span class="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase font-mono bg-[#ff6634]/90 backdrop-blur-md text-white border border-white/20">
+                        {art.data.daerah}
+                      </span>
+                    )}
+                  </div>
+                </a>
+
+                <div class="p-6 space-y-3">
+                  <h3 class="text-base font-extrabold text-neutral-900 group-hover:text-[#224da8] transition-colors leading-snug">
+                    <a href={`/cutting-plat/${art.id}/`}>
+                      {art.data.titleSeo || art.data.title}
+                    </a>
+                  </h3>
+                  <p class="text-xs text-neutral-600 line-clamp-3 leading-relaxed">
+                    {art.data.excerpt || art.data.pengantar}
+                  </p>
+                </div>
+              </div>
+
+              <div class="p-6 pt-0 border-t border-neutral-100 flex items-center justify-between text-xs text-neutral-500 font-mono">
+                <span>{art.data.date}</span>
+                <a href={`/cutting-plat/${art.id}/`} class="font-bold text-[#ff6634] hover:underline flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
+                  <span>Baca Selengkapnya</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Tabel Spesifikasi & Parameter Teknis -->
+    <section class="py-16 bg-white border-y border-neutral-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-8">
+          <span class="text-xs uppercase font-mono tracking-widest text-[#224da8] font-bold block mb-1">
+            TABEL SPESIFIKASI TEKNIS
+          </span>
+          <h2 class="text-2xl font-extrabold text-neutral-900 tracking-tight">
+            Panduan Ketebalan &amp; Mesin Potong Material
+          </h2>
+          <p class="text-xs sm:text-sm text-neutral-500 mt-1">
+            Gunakan tabel acuan ini untuk merencanakan ketebalan plat dan material sebelum mengirimkan file kerja.
+          </p>
+        </div>
+
+        <div class="overflow-x-auto rounded-2xl border border-neutral-200 shadow-sm">
+          <table class="w-full text-left text-xs text-neutral-700">
+            <thead class="bg-neutral-100 text-neutral-900 font-bold border-b border-neutral-200 font-mono uppercase text-[11px]">
+              <tr>
+                <th class="p-4">Jenis Material</th>
+                <th class="p-4">Tipe Mesin</th>
+                <th class="p-4">Maks. Tebal</th>
+                <th class="p-4">Toleransi</th>
+                <th class="p-4">Format File Rekomendasi</th>
+                <th class="p-4">Opsi Bahan</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-neutral-200 bg-white">
+              <tr class="hover:bg-neutral-50">
+                <td class="p-4 font-bold text-neutral-900">Plat Besi Hitam (SPHC/Carbon)</td>
+                <td class="p-4">Fiber Laser</td>
+                <td class="p-4 font-mono font-bold text-[#ff6634]">16.0 mm</td>
+                <td class="p-4 font-mono">&plusmn; 0.1 mm</td>
+                <td class="p-4 font-mono">DXF, DWG</td>
+                <td class="p-4">Bawa Sendiri / Dari Workshop</td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="p-4 font-bold text-neutral-900">Stainless Steel (201 / 304)</td>
+                <td class="p-4">Fiber Laser (N2 Cut)</td>
+                <td class="p-4 font-mono font-bold text-[#ff6634]">6.0 mm</td>
+                <td class="p-4 font-mono">&plusmn; 0.08 mm</td>
+                <td class="p-4 font-mono">DXF, DWG</td>
+                <td class="p-4">Bawa Sendiri / Dari Workshop</td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="p-4 font-bold text-neutral-900">Plat Aluminium &amp; Bordes</td>
+                <td class="p-4">Fiber Laser / CNC Router</td>
+                <td class="p-4 font-mono font-bold text-[#ff6634]">4.0 mm</td>
+                <td class="p-4 font-mono">&plusmn; 0.1 mm</td>
+                <td class="p-4 font-mono">DXF, DWG</td>
+                <td class="p-4">Bawa Sendiri / Dari Workshop</td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="p-4 font-bold text-neutral-900">ACP (Aluminium Composite Panel)</td>
+                <td class="p-4">CNC Router Spindle</td>
+                <td class="p-4 font-mono font-bold text-[#ff6634]">4.0 mm (Full Sheet)</td>
+                <td class="p-4 font-mono">&plusmn; 0.15 mm</td>
+                <td class="p-4 font-mono">CDR, DXF, AI</td>
+                <td class="p-4">Seven, Marks, Alucobond, dll</td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="p-4 font-bold text-neutral-900">Multiplek, Plywood, MDF, HMR</td>
+                <td class="p-4">CNC Router Heavy Duty</td>
+                <td class="p-4 font-mono font-bold text-[#ff6634]">18.0 mm</td>
+                <td class="p-4 font-mono">&plusmn; 0.2 mm</td>
+                <td class="p-4 font-mono">CDR, DXF</td>
+                <td class="p-4">Bawa Sendiri / Dari Workshop</td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="p-4 font-bold text-neutral-900">Akrilik Bening / Warna / Susu</td>
+                <td class="p-4">Laser CO2 High Speed</td>
+                <td class="p-4 font-mono font-bold text-[#ff6634]">20.0 mm</td>
+                <td class="p-4 font-mono">&plusmn; 0.05 mm</td>
+                <td class="p-4 font-mono">CDR, AI, DXF</td>
+                <td class="p-4">Marga Cipta / Astariglas / Lokal</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <span class="text-xs uppercase font-mono tracking-widest text-[#ff6634] font-bold block mb-2">
+          FAQ &bull; PERTANYAAN UMUM
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight">
+          Hal yang Kerap Ditanyakan Klien
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        {faqs.map((faq, idx) => (
+          <div class="p-5 rounded-2xl bg-white border border-neutral-200/80 shadow-sm space-y-2">
+            <h3 class="text-sm font-extrabold text-[#224da8] flex items-start gap-2.5">
+              <span class="text-[#ff6634] font-mono">0{idx + 1}.</span>
+              <span>{faq.q}</span>
+            </h3>
+            <p class="text-xs text-neutral-600 leading-relaxed pl-6">
+              {faq.a}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Bottom Conversion CTA -->
+    <section class="bg-gradient-to-r from-[#224da8] to-[#10285a] text-white py-14">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+        <span class="inline-block px-3 py-1 rounded-full bg-white/10 border border-white/20 text-[#ff6634] text-xs font-bold uppercase tracking-wider font-mono">
+          KONSULTASI &bull; ESTIMASI BIAYA &bull; FILE CHECK
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight">
+          Punya Desain atau Gambar Kerja yang Ingin Dipotong?
+        </h2>
+        <p class="text-sm sm:text-base text-white/80 max-w-2xl mx-auto leading-relaxed">
+          Kirimkan file Anda via WhatsApp sekarang. Tim engineering Sriwijaya Grafika siap melakukan review ketebalan bahan, estimasi waktu, dan total biaya tanpa biaya konsultasi.
+        </p>
+        <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href={waGeneralUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white font-extrabold text-sm shadow-xl shadow-orange-500/20 transition-all transform hover:-translate-y-0.5"
+          >
+            <MessageCircle className="w-5 h-5" />
+            <span>Chat WhatsApp: 0852-1511-1125</span>
+          </a>
+          <a
+            href="#wilayah-sumsel"
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-sm border border-white/20 transition-all"
+          >
+            <Truck className="w-4 h-4" />
+            <span>Cek Layanan Pengiriman Daerah</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

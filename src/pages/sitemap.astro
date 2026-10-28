@@ -2,6 +2,11 @@
 import Layout from '@layouts/Layout.astro';
 import Navbar from '@components/Navbar.astro';
 import Footer from '@components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const cuttingEntries = await getCollection('cutting', (entry) => entry.data.published !== false);
+const cuttingArticles = cuttingEntries.filter((e) => e.data.tipe === 'artikel');
+const cuttingDaerah = cuttingEntries.filter((e) => e.data.tipe === 'daerah');
 ---
 
 <Layout
@@ -21,6 +26,42 @@ import Footer from '@components/Footer.astro';
       </li>
       <li>
         <a class="text-[#224da8] font-bold hover:underline" href="/layanan/">/layanan/ &mdash; Layanan</a>
+      </li>
+      <li>
+        <a class="text-[#224da8] font-bold hover:underline" href="/cutting-plat/">/cutting-plat/ &mdash; Workshop Cutting Plat &amp; Laser CNC</a>
+        <ul class="ml-4 mt-1.5 space-y-1 text-xs text-neutral-600">
+          <li>
+            <a class="text-[#224da8] font-medium hover:underline" href="/cutting-plat/artikel/">/cutting-plat/artikel/ &mdash; Kumpulan Artikel &amp; Panduan Cutting</a>
+          </li>
+          {cuttingArticles.length > 0 && (
+            <li class="pt-1">
+              <span class="font-semibold text-neutral-700">Artikel &amp; Panduan Spesialisasi:</span>
+              <ul class="ml-3 mt-0.5 space-y-0.5 text-neutral-500">
+                {cuttingArticles.map((art) => (
+                  <li>
+                    <a class="hover:underline hover:text-[#224da8]" href={`/cutting-plat/${art.id}/`}>
+                      /cutting-plat/{art.id}/ &mdash; {art.data.titleSeo || art.data.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          )}
+          {cuttingDaerah.length > 0 && (
+            <li class="pt-1">
+              <span class="font-semibold text-neutral-700">Area Layanan Sumatera Selatan:</span>
+              <ul class="ml-3 mt-0.5 space-y-0.5 text-neutral-500">
+                {cuttingDaerah.map((d) => (
+                  <li>
+                    <a class="hover:underline hover:text-[#224da8]" href={`/cutting-plat/${d.id}/`}>
+                      /cutting-plat/{d.id}/ &mdash; {d.data.titleSeo || d.data.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          )}
+        </ul>
       </li>
       <li>
         <a class="text-[#224da8] font-bold hover:underline" href="/portofolio/">/portofolio/ &mdash; Galeri Portofolio</a>
