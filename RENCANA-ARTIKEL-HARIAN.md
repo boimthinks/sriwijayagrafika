@@ -142,12 +142,12 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi kali
 ---
 
 ### Hari 8 — Penguat Rambu K3 (Lalu Lintas Kawasan Pabrik & Proyek)
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (29 Oktober 2026)
 - **Target Halaman Pilar:** `/layanan/rambu-rambu`
 - **Topik:** `tips`
-- **Slug Usulan:** `standar-rambu-k3-lalu-lintas-kawasan-pabrik`
-- **Judul Kartu (`title`, maks 5 kata):** Rambu K3 Area Proyek Konstruksi
-- **Title SEO (`titleSeo`, maks 12 kata):** Standar Pemasangan Rambu K3 dan Batas Kecepatan di Area Kawasan Pabrik
+- **Slug File:** `standar-rambu-k3-lalu-lintas-kawasan-pabrik`
+- **Judul Kartu (`title`, maks 5 kata):** Rambu K3 Kawasan Pabrik
+- **Title SEO (`titleSeo`, maks 12 kata):** Standar Rambu K3 Lalu Lintas Kawasan Pabrik Palembang
 - **Target Keyword:**
   - *Primary:* rambu lalu lintas kawasan pabrik palembang
   - *Secondary:* rambu batas kecepatan jalan pabrik, rambu k3 proyek konstruksi

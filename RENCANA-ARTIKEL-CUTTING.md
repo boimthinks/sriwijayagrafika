@@ -53,11 +53,11 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi seru
 ## Daftar Antrean Artikel Baru (tipe: "artikel")
 
 ### Artikel 1 — Ketebalan Plat Pagar (Fiber Laser Logam)
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (29 Oktober 2026)
 - **Kategori Mesin:** `fiber-laser` / `plat-motif`
 - **Slug File:** `ketebalan-plat-besi-pagar-laser-cutting`
 - **Judul Kartu (`title`, maks 5 kata):** Ketebalan Plat Pagar Laser
-- **Title SEO (`titleSeo`, maks 12 kata):** Panduan Memilih Ketebalan Plat Besi Pagar Laser Cutting Agar Kokoh
+- **Title SEO (`titleSeo`, maks 12 kata):** Panduan Ketebalan Plat Besi Pagar Laser Cutting Palembang
 - **Target Keyword:**
   - *Primary:* plat laser cutting pagar, ketebalan plat besi laser
   - *Secondary:* jasa cutting pagar besi, plat pagar tidak melengkung
