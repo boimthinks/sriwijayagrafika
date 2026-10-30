@@ -101,6 +101,7 @@ const cutting = defineCollection({
     jarak: z.string().optional(),
     kategori: z.enum(['fiber-laser', 'cnc-router', 'laser-co2', 'acp', 'plat-motif', 'umum']).default('umum'),
     imgurl: z.string().default('/img/layanan/huruf-timbul.webp'),
+    imgPrompt: z.string().optional(),
     imgalt: z.string().optional(),
     pengantar: z.string().default(''),
     kesimpulan: z.string().default(''),

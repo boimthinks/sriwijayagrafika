@@ -834,12 +834,13 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `tips-rangka-besi-plang-toko-tahan-angin` | Tips rangka besi plang toko tahan angin kencang Palembang, panduan hollow galvanis dan dynabolt | 24 Agustus 2026 | tips | Problem-First |
 | `papan-nama-per-jenis-usaha` | Papan nama klinik, bengkel, dan kantor, apa saja yang beda secara teknis, material, pencahayaan, dan info wajib per jenis usaha | 27 September 2026 | panduan | Problem-First |
 | `papan-hse-performance-board-palembang` | Jual papan HSE performance board murah Palembang bahan ACP tahan cuaca untuk audit SMK3 | 6 Oktober 2026 | panduan | Problem-First |
+| `harga-papan-nama-toko-palembang` | Rincian biaya dan harga papan nama toko di Palembang, kalkulasi rangka hollow, plat aluminium, dan simulasi RAB | 30 Oktober 2026 | panduan | Problem-First |
 
 ### 12.2d Rencana Artikel Support Halaman Plang Toko & Papan Nama Kantor (Queue)
 
 *(Queue artikel pendukung untuk halaman `/layanan/plang-toko-kantor`, disusun 27 September 2026. Prioritas menurun. Tiap artikel wajib interlink ke halaman layanan utama.)*
 
-- [ ] **#1 Harga papan nama toko Palembang** — slug `harga-papan-nama-toko-palembang`, topik `panduan`. Breakdown biaya per m² dari workshop: hollow per lm, plat, visual, bingkai, angkur, jasa pasang. Simulasi 2x1 m dan 4x2 m. Menjawab langsung FAQ harga di `/layanan/plang-toko-kantor`. Interlink ke `selisih-harga-reklame-murah-vs-premium` dan `panduan-anggaran-jasa-advertising-palembang`.
+- [x] **#1 Harga papan nama toko Palembang** — slug `harga-papan-nama-toko-palembang`, topik `panduan`. Breakdown biaya per m² dari workshop: hollow per lm, plat, visual, bingkai, angkur, jasa pasang. Simulasi 2x1 m dan 4x2 m. Menjawab langsung FAQ harga di `/layanan/plang-toko-kantor`. DITULIS 30 Oktober 2026.
 - [ ] **#2 Ukuran ideal papan nama toko** — slug `ukuran-ideal-papan-nama-toko`, topik `panduan`. Proporsi plang vs tinggi plafon, jarak baca dari jalan, beda ukuran toko pinggir jalan vs ruko dalam kota. Interlink ke `ukuran-huruf-timbul-palembang-terbaca-jelas` dan `pasang-huruf-timbul-fasad-ruko`.
 - [ ] **#3 Ganti stiker papan nama tanpa bongkar rangka** — slug `ganti-stiker-papan-nama-toko`, topik `panduan`. Celah after-sales (pola `rawat-neon-box-agar-awet`): kapan stiker perlu diganti, biaya per m², contoh kasus ganti nama usaha. Interlink ke `/layanan/plang-toko-kantor` FAQ "visual bisa diganti".
 - [ ] **#4 Plang toko dua sisi dengan tiang** — slug `plang-toko-dua-sisi-tiang`, topik `panduan`. Projinkel, tinggi tiang, uji berat papan vs kekuatan tiang, perbandingan plang tempel dinding vs gantung tiang vs letterbox. Interlink ke `tips-rangka-besi-plang-toko-tahan-angin` dan `panduan-izin-reklame-palembang`.

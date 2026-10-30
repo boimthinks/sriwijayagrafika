@@ -69,7 +69,7 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi seru
 ---
 
 ### Artikel 2 — Stainless 304 vs 201 untuk Laser Eksterior
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (30 Oktober 2026)
 - **Kategori Mesin:** `fiber-laser`
 - **Slug File:** `laser-cutting-plat-stainless-304-vs-201`
 - **Judul Kartu (`title`, maks 5 kata):** Laser Stainless 304 vs 201
