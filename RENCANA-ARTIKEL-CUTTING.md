@@ -85,7 +85,7 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi seru
 ---
 
 ### Artikel 3 — Kalkulasi Biaya Jasa Potong Plat (RAB & Meter Lari)
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (31 Oktober 2026)
 - **Kategori Mesin:** `fiber-laser`
 - **Slug File:** `cara-hitung-biaya-laser-cutting-plat-besi`
 - **Judul Kartu (`title`, maks 5 kata):** Hitung Biaya Potong Laser
