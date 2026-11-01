@@ -35,7 +35,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   server: {
-    port: 3000,
+    port: 4321,
     host: true,
   },
   // Redirect /admin ke /admin/index.html agar panel CMS Decap

@@ -62,7 +62,7 @@
 ## Commands
 
 ```bash
-npm run dev        # astro dev --host 0.0.0.0  → http://localhost:3000
+npm run dev        # astro dev --host 0.0.0.0  → http://localhost:4321
 npm run build      # static output → dist/
 npm run preview    # serve dist/ for sanity check
 npm run check      # astro check (typecheck + a11y hints). 142 pre-existing errors in .tsx files — see "Gotchas"

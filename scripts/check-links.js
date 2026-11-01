@@ -79,7 +79,7 @@ const ALL_VALID_ROUTES = new Set([
 function normalizeInternalUrl(rawUrl) {
   let url = rawUrl.trim();
   // Tangani absolute domain lokal/produksi
-  url = url.replace(/^https?:\/\/(localhost:3000|sriwijayagrafika\.com)/, '');
+  url = url.replace(/^https?:\/\/(localhost:(?:3000|4321)|sriwijayagrafika\.com)/, '');
   // Pisahkan query atau hash fragment untuk pengecekan path
   const [cleanPath] = url.split(/[?#]/);
   return { cleanPath, fullUrl: url };
@@ -139,7 +139,8 @@ function checkMarkdownFile(filePath) {
     const isInternal =
       url.startsWith('/') ||
       url.includes('sriwijayagrafika.com') ||
-      url.includes('localhost:3000');
+      url.includes('localhost:3000') ||
+      url.includes('localhost:4321');
 
     if (isInternal) {
       const { cleanPath } = normalizeInternalUrl(url);

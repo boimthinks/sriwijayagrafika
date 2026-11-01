@@ -100,7 +100,7 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi seru
 ---
 
 ### Artikel 4 — Pagar Motif Songket Khas Palembang
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (1 November 2026)
 - **Kategori Mesin:** `plat-motif`
 - **Slug File:** `jasa-laser-cutting-motif-songket-palembang`
 - **Judul Kartu (`title`, maks 5 kata):** Pagar Motif Songket Palembang
