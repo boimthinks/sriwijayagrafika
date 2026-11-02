@@ -7,7 +7,8 @@ import { BUSINESS_INFO } from '@lib/data';
 import { SITE_SETTINGS } from '@lib/site';
 
 const page = SITE_SETTINGS.pages.kontak;
-const waUrl = `https://wa.me/${BUSINESS_INFO.phone1Intl}`;
+const waMsg = 'Halo admin sriwijayagrafika.com, saya ingin berkonsultasi mengenai kebutuhan reklame/advertising.';
+const waUrl = `https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent(waMsg)}`;
 
 const contactSchema = {
   '@context': 'https://schema.org',

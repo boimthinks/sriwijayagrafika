@@ -54,7 +54,7 @@ const wordCount = (data.pengantar + ' ' + entry.body + ' ' + data.kesimpulan)
   .filter(Boolean).length;
 const readingTimeMin = Math.max(1, Math.ceil(wordCount / 200));
 
-const waMessage = `Halo Sriwijaya Grafika, saya membaca halaman *${data.titleSeo}* (${pageUrl}).\n\nSaya ingin konsultasi pengerjaan potong / laser cutting untuk kebutuhan saya. Boleh info estimasi biaya dan format file?`;
+const waMessage = `Halo admin sriwijayagrafika.com, saya membaca halaman *${data.titleSeo}* (${pageUrl}).\n\nSaya ingin konsultasi pengerjaan potong / laser cutting untuk kebutuhan saya. Boleh info estimasi biaya dan format file?`;
 const waUrl = `https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent(waMessage)}`;
 
 // Struktur Breadcrumb Schema sesuai hierarki

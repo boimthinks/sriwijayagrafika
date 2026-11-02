@@ -40,7 +40,7 @@ pages:
       secara transparan. Pemasangan reklame luar ruangan dilindungi garansi 1
       tahun resmi.
     ctaText: Hubungi via WhatsApp
-    ctaUrl: https://wa.me/6285215111125?text=Halo%20Sriwijaya%20Grafika%2C%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20signage%2Freklame%20custom.
+    ctaUrl: https://wa.me/6285215111125?text=Halo%20admin%20sriwijayagrafika.com%2C%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20signage%2Freklame%20custom.
   portofolio:
     title: Galeri Portofolio | Hasil Karya Reklame & Huruf Timbul Palembang
     description: "Lihat portofolio lengkap Sriwijaya Grafika: huruf timbul
@@ -51,7 +51,7 @@ pages:
       instansi, dan rambu bersertifikasi K3 di gedung pemerintahan serta tenant
       ritel Palembang.
     ctaText: Hubungi via WhatsApp
-    ctaUrl: https://wa.me/6285215111125?text=Halo%20Sriwijaya%20Grafika%2C%20saya%20tertarik%20membuat%20proyek%20signage%2Freklame.
+    ctaUrl: https://wa.me/6285215111125?text=Halo%20admin%20sriwijayagrafika.com%2C%20saya%20tertarik%20dengan%20portofolio%20Anda%20dan%20ingin%20membuat%20proyek%20signage%2Freklame.
   blog:
     title: Blog & Tips Advertising Palembang | Sriwijaya Grafika
     description: Tips, studi kasus, sorotan, dan panduan seputar huruf timbul, neon
@@ -63,7 +63,7 @@ pages:
 
       Huruf timbul, rambu-rambu, neon box, papan nama toko dan kantor serta solusi branding bisnis di Palembang.
     ctaText: Hubungi via WhatsApp
-    ctaUrl: https://wa.me/6285215111125?text=Halo%20Sriwijaya%20Grafika%2C%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20signage%2Freklame%20custom.
+    ctaUrl: https://wa.me/6285215111125?text=Halo%20admin%20sriwijayagrafika.com%2C%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20signage%2Freklame%20custom.
   kontak:
     title: Hubungi Kami | Sriwijaya Grafika Palembang
     description: Hubungi Sriwijaya Grafika Palembang untuk konsultasi gratis,

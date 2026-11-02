@@ -115,7 +115,7 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi seru
 ---
 
 ### Artikel 5 — Ornamen Fasad & Pagar Muara Enim
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (2 November 2026)
 - **Kategori Mesin:** `plat-motif` / `daerah`
 - **Slug File:** `jasa-cutting-plat-ornamen-muara-enim`
 - **Judul Kartu (`title`, maks 5 kata):** Laser Cutting Fasad Muara Enim

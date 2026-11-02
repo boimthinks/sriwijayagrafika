@@ -39,7 +39,7 @@ const articleList = allCutting
   .filter((item) => item.data.tipe === 'artikel')
   .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
 
-const waGeneralMsg = 'Halo Sriwijaya Grafika, saya ingin konsultasi jasa cutting plat / CNC router. Mau tanya estimasi biaya dan pengiriman file desain.';
+const waGeneralMsg = 'Halo admin sriwijayagrafika.com, saya ingin konsultasi jasa cutting plat / CNC router. Mau tanya estimasi biaya dan pengiriman file desain.';
 const waGeneralUrl = `https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent(waGeneralMsg)}`;
 
 const faqs = [

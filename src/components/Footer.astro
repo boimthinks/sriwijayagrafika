@@ -38,7 +38,14 @@ const currentYear = new Date().getFullYear();
           </div>
           <div class="flex items-center gap-2.5 text-neutral-300 font-bold font-mono">
             <Phone className="w-5 h-5 text-[#ff6634] flex-shrink-0" />
-            <span>WA: 0852-1511-1125</span>
+            <a
+              href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo admin sriwijayagrafika.com, saya ingin berkonsultasi mengenai pemesanan media promosi / reklame.')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-[#ff6634] transition-colors"
+            >
+              WA: 0852-1511-1125
+            </a>
           </div>
         </div>
 

@@ -22,7 +22,7 @@ const grouped = allPosts.reduce<Record<string, Posts>>((acc, post) => {
 }, {});
 const years = Object.keys(grouped).sort((a, b) => Number(b) - Number(a));
 
-const waLink = `https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya melihat halaman arsip artikel di website Anda dan ingin bertanya.')}`;
+const waLink = `https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo admin sriwijayagrafika.com, saya melihat halaman arsip artikel di website sriwijayagrafika.com dan ingin bertanya.')}`;
 ---
 
 <Layout

@@ -11,7 +11,7 @@ const page = SITE_SETTINGS.pages.portofolio;
 const items = PORTFOLIO_ITEMS;
 const categories = getPortfolioCategories();
 
-const whatsappHref = page.ctaUrl || `https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya ingin berkonsultasi mengenai portofolio Anda.')}`;
+const whatsappHref = page.ctaUrl || `https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo admin sriwijayagrafika.com, saya tertarik dengan portofolio Anda dan ingin berkonsultasi mengenai proyek signage/reklame.')}`;
 const whatsappDisplay = BUSINESS_INFO.phone1.replace(/(\d{4})(\d{4})(\d{4})/, '$1-$2-$3');
 
 const portfolioSchema = {
@@ -68,7 +68,7 @@ const portfolioSchema = {
             Tambahkan item di <code class="px-1.5 py-0.5 rounded bg-neutral-100">src/data/portfolio.md</code>.
           </p>
           <a
-            href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya ingin berkonsultasi mengenai portofolio Anda.')}`}
+            href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo admin sriwijayagrafika.com, saya tertarik dengan portofolio Anda dan ingin berkonsultasi mengenai proyek signage/reklame.')}`}
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white text-xs font-bold shadow-md transition-all"
@@ -96,7 +96,7 @@ const portfolioSchema = {
           instalasi 1 tahun.
         </p>
         <a
-          href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo Sriwijaya Grafika, saya tertarik membuat proyek signage/reklame.')}`}
+          href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent('Halo admin sriwijayagrafika.com, saya tertarik membuat proyek signage/reklame.')}`}
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#ff6634] hover:bg-[#e4511f] text-white text-sm font-bold shadow-md transition-all"
@@ -117,11 +117,18 @@ const portfolioSchema = {
   const img = document.getElementById('pf-lightbox-img') as HTMLImageElement | null;
   const catEl = document.getElementById('pf-lightbox-category');
   const capEl = document.getElementById('pf-lightbox-caption');
+  const waBtn = document.getElementById('pf-lightbox-wa') as HTMLAnchorElement | null;
   const prevBtn = document.getElementById('pf-prev');
   const nextBtn = document.getElementById('pf-next');
 
   let currentIndex = -1;
   let visibleItems: HTMLElement[] = [];
+
+  const updateWaLink = (caption: string) => {
+    if (!waBtn) return;
+    const msg = `Halo admin sriwijayagrafika.com, saya tertarik dengan contoh portofolio: "${caption}". Boleh info estimasi harga pengerjaan seperti ini?`;
+    waBtn.href = `https://wa.me/6285215111125?text=${encodeURIComponent(msg)}`;
+  };
 
   const collectVisible = () => {
     if (!grid) return [];
@@ -135,10 +142,12 @@ const portfolioSchema = {
     visibleItems = collectVisible();
     currentIndex = visibleItems.indexOf(btn);
 
+    const caption = btn.dataset.caption ?? '';
     img.src = btn.dataset.imageSrc ?? '';
-    img.alt = btn.dataset.caption ?? '';
+    img.alt = caption;
     catEl.textContent = btn.dataset.categoryLabel ?? '';
-    capEl.textContent = btn.dataset.caption ?? '';
+    capEl.textContent = caption;
+    updateWaLink(caption);
 
     dialog.showModal();
   };
@@ -150,10 +159,12 @@ const portfolioSchema = {
     if (next) {
       currentIndex = newIndex;
       if (img && catEl && capEl) {
+        const caption = next.dataset.caption ?? '';
         img.src = next.dataset.imageSrc ?? '';
-        img.alt = next.dataset.caption ?? '';
+        img.alt = caption;
         catEl.textContent = next.dataset.categoryLabel ?? '';
-        capEl.textContent = next.dataset.caption ?? '';
+        capEl.textContent = caption;
+        updateWaLink(caption);
       }
     }
   };

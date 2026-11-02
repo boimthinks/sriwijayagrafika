@@ -134,7 +134,7 @@ export default function CalculatorModal({ product, onClose }: Props) {
       window.dispatchEvent(new CustomEvent('sg-cart-updated'));
     } catch {}
 
-    const formattedMessage = `Halo Sriwijaya Grafika, saya ingin bertanya dan memesan layanan media promosi melalui Website Resmi.\n\n*DATA PEMESAN:*\n- Nama: ${custName}\n- No. WA: ${custPhone}\n- Alamat: ${custAddress || '-'}\n- Membutuhkan Jasa Pasang di Palembang: ${installNeeded ? 'Ya' : 'Tidak'}\n\n*RINCIAN KEBUTUHAN PRODUK:*\n${detailString}\n- Catatan Khusus: ${notes || '-'}\n\n*ESTIMASI PENAWARAN HARGA BARANG:* Rp ${calculatedPrice.toLocaleString('id-ID')}\n\n_(Mohon konfirmasi ketersediaan pengerjaan, lama produksi, dan survei lokasi jika dibutuhkan. Terima kasih!)_`;
+    const formattedMessage = `Halo admin sriwijayagrafika.com, saya ingin memesan layanan media promosi dari website sriwijayagrafika.com.\n\n*DATA PEMESAN:*\n- Nama: ${custName}\n- No. WA: ${custPhone}\n- Alamat: ${custAddress || '-'}\n- Membutuhkan Jasa Pasang di Palembang: ${installNeeded ? 'Ya' : 'Tidak'}\n\n*RINCIAN KEBUTUHAN PRODUK:*\n${detailString}\n- Catatan Khusus: ${notes || '-'}\n\n*ESTIMASI PENAWARAN HARGA BARANG:* Rp ${calculatedPrice.toLocaleString('id-ID')}\n\n_(Mohon konfirmasi ketersediaan pengerjaan, lama produksi, dan survei lokasi jika dibutuhkan. Terima kasih!)_`;
 
     const encodedText = encodeURIComponent(formattedMessage);
     const waUrl = `https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodedText}`;

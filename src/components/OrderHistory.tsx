@@ -73,7 +73,7 @@ export default function OrderHistory() {
                   Rp {item.estimatedPrice.toLocaleString('id-ID')}
                 </span>
                 <a
-                  href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent(`Halo Sriwijaya Grafika, saya ingin mengulang penawaran desain tersimpan dari website:\n\n*LAYANAN:* ${item.productName}\n- Estimasi lama proses/harga: Rp ${item.estimatedPrice.toLocaleString('id-ID')}`)}`}
+                  href={`https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent(`Halo admin sriwijayagrafika.com, saya ingin melanjutkan estimasi tersimpan dari website sriwijayagrafika.com:\n\n*LAYANAN:* ${item.productName}\n- Estimasi biaya: Rp ${item.estimatedPrice.toLocaleString('id-ID')}`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   class="inline-flex items-center gap-1 py-1.5 px-3 bg-[#ff6634] hover:bg-[#e4511f] text-white font-bold rounded-lg text-[10px]"

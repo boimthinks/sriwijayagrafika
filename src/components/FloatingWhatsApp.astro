@@ -1,7 +1,9 @@
 ---
-const phoneIntl = '+6285215111125';
+import { BUSINESS_INFO } from '@lib/data';
+
+const phoneIntl = BUSINESS_INFO.phone1Intl;
 const waUrl = `https://wa.me/${phoneIntl}`;
-const encodedText = encodeURIComponent('Halo Sriwijaya Grafika, saya ingin konsultasi.');
+const encodedText = encodeURIComponent('Halo admin sriwijayagrafika.com, saya ingin berkonsultasi mengenai pembuatan signage / reklame.');
 const defaultHref = `${waUrl}?text=${encodedText}`;
 
 const CTAS = [
