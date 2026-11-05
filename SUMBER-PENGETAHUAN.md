@@ -839,6 +839,8 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `ganti-stiker-papan-nama-toko` | Panduan ganti stiker visual papan nama toko tanpa bongkar rangka di Palembang, hemat CapEx dan teknik pembersihan lem | 1 November 2026 | panduan | Problem-First |
 | `plang-toko-dua-sisi-tiang` | Panduan pasang plang toko dua sisi dengan tiang besi kokoh di Palembang, konstruksi pipa galvanis, cor pondasi tapak, dan uji angin | 2 November 2026 | panduan | Problem-First |
 | `jasa-cutting-plat-ornamen-muara-enim` | Jasa cutting plat ornamen fasad dan pagar di Muara Enim presisi CNC fiber laser, secondary skin mess tambang dan pengiriman kargo travel | 2 November 2026 | artikel-cutting | Problem-First |
+| `izin-imbr-dpmptsp-palembang` | Panduan syarat dan pengurusan izin IMBR billboard di DPMPTSP Kota Palembang, audit struktur tiang, GSB, dan gambar arsitektur | 5 November 2026 | panduan | Problem-First |
+| `laser-cutting-partisi-masjid-kaligrafi-arab` | Jasa laser cutting partisi masjid dan ornamen kaligrafi Arab di Palembang, sekat shaf sholat, mihrab, dan finishing gold duco | 5 November 2026 | artikel-cutting | Problem-First |
 
 ### 12.2d Rencana Artikel Support Halaman Plang Toko & Papan Nama Kantor (Queue)
 
@@ -883,7 +885,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 *(Queue artikel pendukung untuk halaman `/layanan/billboard`, disusun 19 Agustus 2026. Prioritas menurun. Tiap artikel wajib interlink ke halaman layanan utama.)*
 
 - [x] **#1 Biaya pembuatan billboard Palembang** — slug `biaya-pembuatan-billboard-palembang`, topik `panduan`. Panduan fabrikasi, pajak reklame, NSR tabel, simulasi 4x6m, CapEx vs OpEx. DITULIS 19 Agustus 2026.
-- [ ] **#2 Perizinan IMBR DPMPTSP** — slug `izin-imbr-dpmptsp-palembang`. Langkah teknis pengurusan Izin Mendirikan Bangunan Reklame, dokumen yang diminta, timeline validasi. Interlink ke `/layanan/billboard` dan `/blog/panduan/panduan-izin-reklame-palembang`.
+- [x] **#2 Perizinan IMBR DPMPTSP** — slug `izin-imbr-dpmptsp-palembang`, topik `panduan`. Langkah teknis pengurusan Izin Mendirikan Bangunan Reklame, dokumen yang diminta, timeline validasi. Interlink ke `/layanan/billboard/` dan `/blog/panduan/panduan-izin-reklame-palembang/`. DITULIS 5 November 2026.
 - [ ] **#3 Strategi Desain Billboard Hemat Pajak** — slug `strategi-desain-billboard-hemat-pajak`. Use case konten non-produk untuk 4x6m di Banner Sudirman, simulasi penghematan 80% pajak, visual branding only.
 - [ ] **#4 Perbandingan 3x4m vs 4x6m vs 5x8m** — slug `perbandingan-dimensi-billboard-3x4-4x6-5x8`. Return on investment per m², audiens per jam, break-even point jangka panjang untuk developer properti. Interlink ke FAQ harga di `/layanan/billboard`.
 

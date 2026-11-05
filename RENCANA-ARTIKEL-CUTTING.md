@@ -130,7 +130,7 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi seru
 ---
 
 ### Artikel 6 — Partisi Ruangan & Mihrab Masjid Kaligrafi
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (5 November 2026)
 - **Kategori Mesin:** `plat-motif`
 - **Slug File:** `laser-cutting-partisi-masjid-kaligrafi-arab`
 - **Judul Kartu (`title`, maks 5 kata):** Partisi Ruangan Motif Islami
