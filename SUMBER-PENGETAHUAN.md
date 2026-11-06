@@ -841,6 +841,8 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `jasa-cutting-plat-ornamen-muara-enim` | Jasa cutting plat ornamen fasad dan pagar di Muara Enim presisi CNC fiber laser, secondary skin mess tambang dan pengiriman kargo travel | 2 November 2026 | artikel-cutting | Problem-First |
 | `izin-imbr-dpmptsp-palembang` | Panduan syarat dan pengurusan izin IMBR billboard di DPMPTSP Kota Palembang, audit struktur tiang, GSB, dan gambar arsitektur | 5 November 2026 | panduan | Problem-First |
 | `laser-cutting-partisi-masjid-kaligrafi-arab` | Jasa laser cutting partisi masjid dan ornamen kaligrafi Arab di Palembang, sekat shaf sholat, mihrab, dan finishing gold duco | 5 November 2026 | artikel-cutting | Problem-First |
+| `jasa-grooving-dan-potong-acp-fasad-ruko` | Jasa potong dan grooving ACP 90 derajat fasad ruko, kedalaman alur aman, sambungan modul anti retak, dan kebutuhan lembar per bidang fasad | 6 November 2026 | artikel-cutting | Problem-First |
+| `jasa-cnc-router-multiplek-hmr-mdf-interior` | Jasa CNC router multiplek, HMR, dan MDF interior Palembang, perbandingan bahan untuk area lembap, mata pisau per material, dan tarif per keping | 6 November 2026 | artikel-cutting | Problem-First |
 
 ### 12.2d Rencana Artikel Support Halaman Plang Toko & Papan Nama Kantor (Queue)
 

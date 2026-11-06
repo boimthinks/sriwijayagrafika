@@ -145,7 +145,7 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi seru
 ---
 
 ### Artikel 7 — Teknik Grooving & Potong ACP Fasad Ruko
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (6 November 2026)
 - **Kategori Mesin:** `acp`
 - **Slug File:** `jasa-grooving-dan-potong-acp-fasad-ruko`
 - **Judul Kartu (`title`, maks 5 kata):** Teknik Grooving Fasad ACP
@@ -175,7 +175,7 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi seru
 ---
 
 ### Artikel 9 — CNC Router Multiplek, HMR & MDF Interior
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (6 November 2026)
 - **Kategori Mesin:** `cnc-router`
 - **Slug File:** `jasa-cnc-router-multiplek-hmr-mdf-interior`
 - **Judul Kartu (`title`, maks 5 kata):** CNC Router Multiplek & MDF
