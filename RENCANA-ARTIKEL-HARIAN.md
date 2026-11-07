@@ -154,3 +154,20 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi kali
   - *Semantic / LSI:* rambu prioritas forklift, tiang tanam pipa galvanis 2 inch, pondasi cor angkur, visibilitas sopir truk tronton
 - **Strategi Internal Link:**
   - Mengajak kontraktor dan pengelola kawasan memesan rambu lalu lintas internal komplit di `[halaman layanan rambu K3](/layanan/rambu-rambu)`.
+
+---
+
+### Hari 9 — Penguat Neon Box (Modul LED Outdoor & Kelistrikan Tahan Cuaca)
+- **Status:** [x] Selesai (7 November 2026)
+- **Target Halaman Pilar:** `/layanan/neon-box`
+- **Topik:** `panduan`
+- **Slug File:** `panduan-memilih-modul-led-neon-box-awet`
+- **Judul Kartu (`title`, maks 5 kata):** Modul LED Neon Box
+- **Title SEO (`titleSeo`, maks 12 kata):** Cara Memilih Modul LED Neon Box Tahan Cuaca Ekstrem Palembang
+- **Target Keyword:**
+  - *Primary:* modul led neon box outdoor palembang, lampu led neon box tahan lama
+  - *Secondary:* trafo rainproof led neon box 12v, led mata 3 neon box palembang
+  - *Semantic / LSI:* proteksi IP68 injection moulding, lensa cembung wide beam angle 160 derajat, load rule 80 persen trafo, ring circuit paralel anti drop tegangan
+- **Strategi Internal Link:**
+  - Menghubungkan kebutuhan pengadaan neon box ke `[jasa pembuatan neon box Palembang](/layanan/neon-box/)`.
+  - Tautan silang ke panduan `[standar trafo LED tahan hujan outdoor](/blog/teknis/standar-trafo-led-huruf-timbul-outdoor/)` dan `[desain plang toko dua sisi tiang](/blog/panduan/plang-toko-dua-sisi-tiang/)`.
