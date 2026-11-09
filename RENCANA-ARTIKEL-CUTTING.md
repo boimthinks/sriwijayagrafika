@@ -160,7 +160,7 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi seru
 ---
 
 ### Artikel 8 — Potong ACP Gedung Kantor & Fasad Sekayu
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (9 November 2026)
 - **Kategori Mesin:** `acp` / `daerah`
 - **Slug File:** `jasa-cnc-router-acp-gedung-sekayu`
 - **Judul Kartu (`title`, maks 5 kata):** Potong ACP Fasad Sekayu

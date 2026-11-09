@@ -171,3 +171,21 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi kali
 - **Strategi Internal Link:**
   - Menghubungkan kebutuhan pengadaan neon box ke `[jasa pembuatan neon box Palembang](/layanan/neon-box/)`.
   - Tautan silang ke panduan `[standar trafo LED tahan hujan outdoor](/blog/teknis/standar-trafo-led-huruf-timbul-outdoor/)` dan `[desain plang toko dua sisi tiang](/blog/panduan/plang-toko-dua-sisi-tiang/)`.
+
+---
+
+### Hari 10 — Penguat Huruf Timbul & Reklame (Cakupan Garansi 1 Tahun)
+- **Status:** [x] Selesai (9 November 2026)
+- **Target Halaman Pilar:** `/layanan/huruf-timbul`
+- **Topik:** `panduan`
+- **Slug File:** `garansi-signage-apa-saja-tercover`
+- **Judul Kartu (`title`, maks 5 kata):** Garansi Signage 1 Tahun
+- **Title SEO (`titleSeo`, maks 12 kata):** Garansi 1 Tahun Huruf Timbul Palembang yang Tercover Vendor
+- **Target Keyword:**
+  - *Primary:* garansi huruf timbul palembang, garansi signage reklame palembang
+  - *Secondary:* klaim garansi lampu led huruf timbul, servis reklame palembang
+  - *Semantic / LSI:* trafo short circuit, modul LED mati sebagian, bracket karat, garansi kelistrikan vs fisik, portofolio kantor dinas & BUMN
+- **Strategi Internal Link:**
+  - Tautan ke `/layanan/huruf-timbul/`.
+  - Tautan silang ke `/blog/teknis/standar-trafo-led-huruf-timbul-outdoor/` dan `/blog/tips/cara-merawat-dan-membersihkan-huruf-timbul/`.
+

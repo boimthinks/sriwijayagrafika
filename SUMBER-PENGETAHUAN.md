@@ -843,6 +843,8 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `laser-cutting-partisi-masjid-kaligrafi-arab` | Jasa laser cutting partisi masjid dan ornamen kaligrafi Arab di Palembang, sekat shaf sholat, mihrab, dan finishing gold duco | 5 November 2026 | artikel-cutting | Problem-First |
 | `jasa-grooving-dan-potong-acp-fasad-ruko` | Jasa potong dan grooving ACP 90 derajat fasad ruko, kedalaman alur aman, sambungan modul anti retak, dan kebutuhan lembar per bidang fasad | 6 November 2026 | artikel-cutting | Problem-First |
 | `jasa-cnc-router-multiplek-hmr-mdf-interior` | Jasa CNC router multiplek, HMR, dan MDF interior Palembang, perbandingan bahan untuk area lembap, mata pisau per material, dan tarif per keping | 6 November 2026 | artikel-cutting | Problem-First |
+| `garansi-signage-apa-saja-tercover` | Panduan cakupan garansi 1 tahun huruf timbul dan reklame di Palembang, trafo outdoor, modul LED, braket fisik, dan batas force majeure | 9 November 2026 | panduan | Problem-First |
+| `jasa-cnc-router-acp-gedung-sekayu` | Jasa CNC router ACP gedung kantor dan ruko di Sekayu Musi Banyuasin, presisi grooving 90 derajat, ornamen fasad, dan logistik Palembang ke Sekayu | 9 November 2026 | artikel-cutting | Problem-First |
 
 ### 12.2d Rencana Artikel Support Halaman Plang Toko & Papan Nama Kantor (Queue)
 
@@ -897,7 +899,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 
 - [x] **#1 Rincian harga huruf timbul per meter** — slug `rincian-harga-huruf-timbul-per-meter`, topik `panduan`. Rincian harga per cm & per meter dari workshop, kalkulasi 7 huruf × 40 cm untuk 4 material. DITULIS 10 Agustus 2026.
 - [x] **#2 Neon box vs huruf timbul vs neon flex** — slug `neon-box-vs-huruf-timbul-vs-neon-flex`. Keputusan 3 pilihan signage toko, studi kasus Kedai Pempek Maris vs storefront kafe. Interlink ke `/layanan/huruf-timbul`, `/layanan/neon-box`, `/layanan/neon-flex`. DITULIS 11 Agustus 2026.
-- [ ] **#3 Garansi 1 tahun signage, apa saja yang tercover** — slug `garansi-signage-apa-saja-tercover`. Penjelasan teknis garansi (kelistrikan vs fisik vs alam), contoh klaim Gedung Walikota & Kejati Sumsel. Interlink ke FAQ garansi halaman huruf timbul.
+- [x] **#3 Garansi 1 tahun signage, apa saja yang tercover** — slug `garansi-signage-apa-saja-tercover`, topik `panduan`. Penjelasan teknis garansi (kelistrikan vs fisik vs alam), batasan force majeure, dan alur klaim workshop Talang Jambe. DITULIS 9 November 2026.
 - [ ] **#4 Perawatan & perbaikan huruf timbul** — slug `perawatan-perbaikan-huruf-timbul`. Rutinitas perawatan & jasa perbaikan LED mati/stainless kusam dari pengalaman maintenance klien. Interlink ke FAQ maintenance.
 - [x] **#5 Teknik pemasangan fasad, baut vs bonding** — slug `pasang-huruf-timbul-fasad-ruko`. Teknik pemasangan façade (baut tembus vs lem/bonding) & safety scaffolding untuk fasad ruko Palembang. Terbit 21 Agustus 2026, topik `tips`. Interlink ke bagian Cara Pemesanan.
 - [ ] **#6 Izin IPR, contoh file teknis yang diminta DPMPTSP** — slug `contoh-file-teknis-ipr-huruf-timbul`. Dokumen teknis (foto rencana, dimensi) yang diminta DPMPTSP untuk huruf timbul. Interlink ke halaman izin & layanan.
