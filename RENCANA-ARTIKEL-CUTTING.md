@@ -190,11 +190,11 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi seru
 ---
 
 ### Artikel 10 — Laser Cutting Akrilik Presisi untuk Huruf Timbul & Neon Box
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (10 November 2026)
 - **Kategori Mesin:** `laser-co2`
 - **Slug File:** `jasa-laser-cutting-akrilik-reklame-palembang`
 - **Judul Kartu (`title`, maks 5 kata):** Cutting Akrilik Huruf Timbul
-- **Title SEO (`titleSeo`, maks 12 kata):** Jasa Potong Laser Akrilik Presisi Bening dan Warna untuk Reklame
+- **Title SEO (`titleSeo`, maks 12 kata):** Jasa Potong Laser Akrilik Presisi Bening dan Warna Reklame
 - **Target Keyword:**
   - *Primary:* jasa laser cutting akrilik, jasa potong akrilik
   - *Secondary:* laser cutting akrilik untuk neon box, potong akrilik custom
