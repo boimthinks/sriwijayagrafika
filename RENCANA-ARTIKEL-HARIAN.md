@@ -189,3 +189,20 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi kali
   - Tautan ke `/layanan/huruf-timbul/`.
   - Tautan silang ke `/blog/teknis/standar-trafo-led-huruf-timbul-outdoor/` dan `/blog/tips/cara-merawat-dan-membersihkan-huruf-timbul/`.
 
+---
+
+### Hari 11 — Penguat Rambu K3 (Bahan Kimia & Gudang B3)
+- **Status:** [x] Selesai (11 November 2026)
+- **Target Halaman Pilar:** `/layanan/rambu-rambu/`
+- **Topik:** `panduan`
+- **Slug File:** `rambu-bahan-kimia-gudang-b3-palembang`
+- **Judul Kartu (`title`, maks 5 kata):** Rambu Bahan Kimia Gudang B3
+- **Title SEO (`titleSeo`, maks 12 kata):** Rambu K3 Bahan Kimia Berbahaya untuk Gudang B3 Palembang
+- **Target Keyword:**
+  - *Primary:* rambu k3 bahan kimia palembang, rambu gudang b3
+  - *Secondary:* label ghs jeriken solvent, safety sign bahan kimia berbahaya, rambu korosif pabrik karet sumsel
+  - *Semantic / LSI:* piktogram GHS, Kepmenaker 187/MEN/1999, PP 74 Tahun 2001, segregasi oksidator dan asam formiat, overlaminate polyester, eyewash dan spill kit station
+- **Strategi Internal Link:**
+  - Tautan ke `/layanan/rambu-rambu/` sebagai pilar utama.
+  - Tautan silang ke `/blog/panduan/daftar-rambu-k3-wajib-audit-smk3/`, `/blog/panduan/standar-kemnaker-rambu-k3-pabrik/`, `/blog/panduan/estimasi-biaya-rambu-palembang/`, dan `/blog/panduan/standar-stiker-rambu-tambang-sumsel/`.
+
