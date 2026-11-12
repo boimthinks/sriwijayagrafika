@@ -205,7 +205,7 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi seru
 ---
 
 ### Artikel 11 — Laser Cutting Akrilik Kampus & Instansi Indralaya
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (12 November 2026)
 - **Kategori Mesin:** `laser-co2` / `daerah`
 - **Slug File:** `jasa-cutting-akrilik-display-kampus-indralaya`
 - **Judul Kartu (`title`, maks 5 kata):** Laser Akrilik Indralaya
@@ -215,7 +215,8 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi seru
   - *Secondary:* potong logo custom, akrilik signage
   - *Semantic / LSI:* laboratorium Unsri, plakat wisuda seminar, signage meja kantor Tanjung Senai
 - **Strategi Internal Link:**
-  - Tautan ke `/cutting-plat/indralaya/` dan `/layanan/produk-akrilik/`.
+  - Tautan ke `/cutting-plat/indralaya/` dan `/cutting-plat/jasa-laser-cutting-akrilik-reklame-palembang/`.
+  - Catatan: halaman `/layanan/produk-akrilik/` tidak tersedia, gunakan `/layanan/huruf-timbul/` dan `/layanan/plang-toko-kantor/`.
 
 ---
 
