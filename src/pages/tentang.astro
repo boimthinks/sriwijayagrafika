@@ -1,0 +1,605 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Navbar from '@components/Navbar.astro';
+import Footer from '@components/Footer.astro';
+import { BUSINESS_INFO } from '@lib/data';
+import {
+  Phone,
+  MapPin,
+  Clock,
+  MessageCircle,
+  Mail,
+  ArrowRight,
+  ExternalLink,
+  ShieldCheck,
+  Award,
+  Users,
+  Wrench,
+  Building2,
+  FileCheck2,
+  Instagram,
+  Facebook,
+  ShoppingBag,
+  Globe,
+  Hammer,
+} from 'lucide-react';
+
+const siteUrl = 'https://sriwijayagrafika.com';
+
+const waMsg =
+  'Halo admin sriwijayagrafika.com, saya ingin berkonsultasi mengenai kebutuhan signage/reklame untuk usaha saya.';
+const waUrl = `https://wa.me/${BUSINESS_INFO.phone1Intl}?text=${encodeURIComponent(waMsg)}`;
+
+const stats = [
+  { value: '2006', label: 'Tahun Berdiri', note: 'CV Sriwijaya Grafika, Talang Jambe, Palembang' },
+  { value: '16+', label: 'Tahun Pengalaman', note: 'Bidang advertising, reklame, dan percetakan' },
+  { value: '1 Thn', label: 'Garansi Penuh', note: 'Untuk setiap instalasi huruf timbul dan reklame' },
+  { value: '31+', label: 'Jenis Layanan', note: 'Signage, reklame, percetakan, sampai cutting CNC' },
+];
+
+const coreExpertise = [
+  {
+    icon: Hammer,
+    title: 'Huruf Timbul dan Tulisan Timbul LED',
+    body: 'Produk unggulan kami. Dibuat dari plat stainless, akrilik, galvanis, sampai kuningan, lengkap dengan modul LED, cutting laser, serta dudukan paku rivet atau skrup.',
+  },
+  {
+    icon: Building2,
+    title: 'Neon Box dan Papan Nama Toko',
+    body: 'Konstruksi plat galvalum dengan akrilik atau backlite, list siku aluminium, dan hollow besi sebagai rangka. Bentuk kotak, bulat, atau mengikuti logo usaha Anda.',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Rambu K3, Safety Sign, dan Rambu Evakuasi',
+    body: 'Penandaan untuk pabrik, gudang, kantor, dan area publik, dikerjakan sesuai standar K3 yang berlaku, lengkap dengan piktogram dan petunjuk arah yang jelas.',
+  },
+  {
+    icon: Wrench,
+    title: 'Cutting Laser, CNC Router, dan Plat',
+    body: 'Fabrikasi internal untuk akrilik, plywood, ACP, dan plat logam, dipakai untuk ornamen fasad, partisi, dan cutting huruf custom.',
+  },
+];
+
+const legalitas = [
+  { label: 'Nama Perusahaan', value: 'CV. Sriwijaya Grafika' },
+  { label: 'Status Perusahaan', value: 'Pusat' },
+  { label: 'Surat Izin Usaha Perdagangan (SIUP) Menengah', value: '511.3/SIUP/1001/DPMPTSP-PPK/2017' },
+  { label: 'Tanda Daftar Perusahaan (TDP)', value: '060634623189' },
+  { label: 'Nomor Pokok Wajib Pajak (NPWP)', value: '82.200.035.2-307.000' },
+  { label: 'Alamat', value: 'Jl. Pertanian No. 105, Talang Jambe, Kec. Sukarami, Kota Palembang' },
+  { label: 'Telepon', value: '0711-5614793' },
+  { label: 'Email', value: 'sriwijayagrafika@gmail.com' },
+];
+
+const clients = [
+  'Gedung Walikota Palembang',
+  'Kejati Sumsel',
+  'DPRD Ogan Komering Ilir',
+  'SPBU Pertamina',
+  'Super Indo',
+  'The Arista Hotel Palembang',
+  'Charitas Hospital',
+  'Medco Energi Indonesia',
+  'Indomaret',
+  'Center Park',
+  'SMP Islam Bina Insani',
+  'PT Pupuk Sriwijaya',
+];
+
+const galleryImages = [
+  { src: '/img/portfolio/huruf-timbul-akrilik-gemini.webp', alt: 'Huruf timbul akrilik LED Gemini', caption: 'Huruf Timbul Akrilik LED Gemini' },
+  { src: '/img/portfolio/neon-box-spbu-pertamina.webp', alt: 'Neon box SPBU Pertamina', caption: 'Neon Box SPBU Pertamina' },
+  { src: '/img/portfolio/totem-sign-pupuk-sriwijaya.webp', alt: 'Totem sign PT Pupuk Sriwijaya', caption: 'Totem Sign PT Pupuk Sriwijaya' },
+  { src: '/img/portfolio/rambu-k3-jalur-evakuasi.webp', alt: 'Rambu K3 jalur evakuasi', caption: 'Rambu K3 Jalur Evakuasi' },
+];
+
+const aboutPageSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'AboutPage',
+      '@id': `${siteUrl}/tentang/#aboutpage`,
+      url: `${siteUrl}/tentang/`,
+      name: 'Tentang Kami - Sriwijaya Grafika Palembang',
+      description:
+        'Profil resmi Sriwijaya Grafika, spesialis signage dan advertising di Palembang sejak 2006, dengan garansi 1 tahun dan produksi sendiri di workshop Talang Jambe.',
+      inLanguage: 'id-ID',
+      isPartOf: {
+        '@type': 'WebSite',
+        '@id': `${siteUrl}/#website`,
+        name: BUSINESS_INFO.name,
+        url: siteUrl,
+      },
+      about: { '@id': `${siteUrl}/#organization` },
+      mainEntity: { '@id': `${siteUrl}/#organization` },
+    },
+    {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: BUSINESS_INFO.name,
+      legalName: 'CV. Sriwijaya Grafika',
+      alternateName: 'Sriwijaya Grafika Advertising & Printing',
+      url: siteUrl,
+      description:
+        'Perusahaan advertising, reklame, dan percetakan di Palembang sejak 2006. Produksi huruf timbul LED, neon box, papan nama toko, rambu K3, dan cutting CNC.',
+      foundingDate: '2006',
+      telephone: ['+6285215111125', '+627115614793'],
+      email: 'sriwijayagrafika@gmail.com',
+      priceRange: '$$',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Jl. Pertanian No.105, RT.029/RW.005, Talang Jambe',
+        addressLocality: 'Kota Palembang',
+        addressRegion: 'Sumatera Selatan',
+        postalCode: '30155',
+        addressCountry: 'ID',
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: -2.922115,
+        longitude: 104.685934,
+      },
+      openingHoursSpecification: [
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          opens: '08:00',
+          closes: '17:00',
+        },
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: 'Saturday',
+          opens: '08:00',
+          closes: '14:00',
+        },
+      ],
+      sameAs: [
+        BUSINESS_INFO.socials.instagram,
+        BUSINESS_INFO.socials.facebookUtama,
+        BUSINESS_INFO.socials.facebookSecondary,
+        BUSINESS_INFO.socials.tiktok,
+        BUSINESS_INFO.socials.shopee,
+        'https://sriwijayagrafika.co.id/',
+        'https://www.reklamepalembang.com/',
+        'https://www.percetakanpalembang.com/',
+      ],
+      founder: {
+        '@type': 'Person',
+        name: 'M. Edy Munandar',
+        jobTitle: 'Owner dan Pendiri',
+      },
+      knowsAbout: [
+        'Huruf timbul LED',
+        'Neon box dan backlite',
+        'Papan nama toko dan plang',
+        'Rambu K3 dan safety sign',
+        'Percetakan dan offset digital',
+        'Cutting laser dan CNC router',
+      ],
+      areaServed: {
+        '@type': 'AdministrativeArea',
+        name: 'Palembang dan Sumatera Selatan',
+      },
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${siteUrl}/#website`,
+      url: siteUrl,
+      name: BUSINESS_INFO.name,
+      publisher: { '@id': `${siteUrl}/#organization` },
+    },
+  ],
+};
+---
+
+<Layout
+  title="Tentang Kami | Sriwijaya Grafika Palembang, Spesialis Signage"
+  description="Profil resmi Sriwijaya Grafika Palembang: CV Sriwijaya Grafika sejak 2006, huruf timbul LED, neon box, papan nama toko, rambu K3, garansi 1 tahun, serta legalitas SIUP dan NPWP."
+  keywords={[
+    'Tentang Sriwijaya Grafika',
+    'Tentang Kami Advertising Palembang',
+    'CV Sriwijaya Grafika',
+    'Profil Perusahaan Reklame Palembang',
+    'Workshop Huruf Timbul Talang Jambe',
+  ]}
+  structuredData={aboutPageSchema}
+>
+  <Navbar current="about" />
+
+  <main class="flex-1">
+    <!-- Hero -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-[#224da8] via-[#1a3d8f] to-[#10285a] text-white">
+      <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-[#ff6634]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4"></div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-[#ff6634]/5 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
+        <nav aria-label="Breadcrumb" class="mb-6">
+          <ol class="flex items-center gap-2 text-xs text-white/60">
+            <li><a href="/" class="hover:text-white transition-colors">Beranda</a></li>
+            <li aria-hidden="true">/</li>
+            <li class="text-white/90 font-semibold">Tentang</li>
+          </ol>
+        </nav>
+        <div class="max-w-3xl">
+          <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-xs font-medium text-white/80 mb-5">
+            <Award className="w-3.5 h-3.5" />
+            <span>Spesialis Signage dan Advertising di Palembang sejak 2006</span>
+          </span>
+          <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight leading-[1.15] mb-5">
+            Tentang Sriwijaya Grafika, Pembuat Lettering dan Reklame di Talang Jambe
+          </h1>
+          <p class="text-base md:text-lg text-white/80 leading-relaxed">
+            Sriwijaya Grafika adalah CV percetakan dan advertising yang berdiri sejak 2006 di
+            Talang Jambe, Palembang. Huruf timbul, neon box, papan nama toko, rambu K3, sampai
+            job cutting CNC dikerjakan oleh tim internal kami sendiri, dengan garansi satu tahun
+            penuh untuk setiap instalasi.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3 mt-8">
+            <a
+              href={waUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#25d366] hover:bg-[#1da851] text-white font-bold text-sm shadow-lg transition-all"
+            >
+              <MessageCircle className="w-4 h-4" />
+              <span>Konsultasi Gratis via WhatsApp</span>
+            </a>
+            <a
+              href="/portofolio/"
+              class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-sm border border-white/20 transition-all"
+            >
+              <span>Lihat Hasil Karya</span>
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistik -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {stats.map((s) => (
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-neutral-100">
+            <p class="text-3xl font-extrabold text-[#224da8] tracking-tight">{s.value}</p>
+            <p class="text-sm font-bold text-neutral-800 mt-1">{s.label}</p>
+            <p class="text-xs text-neutral-500 mt-1.5 leading-relaxed">{s.note}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Kisah Berdiri -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-7">
+          <span class="text-[11px] font-bold font-mono uppercase tracking-widest text-[#ff6634]">Kisah Berdiri</span>
+          <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight text-neutral-800 mt-3 mb-5">
+            Mulai dari Percetakan Biasa, Bangkit Setelah Dua Kali Bangkrut
+          </h2>
+          <div class="space-y-4 text-[15px] leading-relaxed text-neutral-600">
+            <p>
+              <strong class="text-neutral-800">M. Edy Munandar</strong> membangun usaha ini dari
+              nol, dari percetakan biasa di Talang Jambe. Belum ada mesin laser, belum ada mockup
+              3D seperti sekarang. Yang ada hanya ketekunan dan satu keyakinan sederhana: satu
+              huruf timbul yang dipasang rapi, satu pelanggan yang kembali memesan.
+            </p>
+            <p>
+              Sepanjang perjalanannya Edy sempat bangkrut dua kali. Kondisi itu tidak menjatuhkan
+              usaha, justru menjadi dorongan untuk bangkit dengan cara yang lebih rapi: mesin
+              cutting dan laser sendiri, alur produksi yang tercatat, dan standar garansi yang
+              jelas untuk pelanggan.
+            </p>
+            <p>
+              Sudut pandang itu tetap sama sampai hari ini. Menjaga satu pelanggan dengan kepuasan
+              jauh lebih sulit daripada mencari seratus pelanggan baru, dan itu yang kami pegang
+              sampai sekarang.
+            </p>
+          </div>
+          <div class="mt-7 border-l-4 border-[#ff6634] bg-white rounded-r-xl p-5 shadow-sm">
+            <p class="text-sm italic text-neutral-700 leading-relaxed">
+              "Dari nol usaha ini saya bangun dari percetakan biasa. Bukan hanya dengan pelanggan
+              yang besar, pemesan satu huruf timbul kami layani, dan tetap membangun kedekatan.
+              Kami bukan hanya menjual karya kami. Kami ingin menciptakan dan membangun kedekatan
+              dengan mereka."
+            </p>
+            <p class="text-xs font-bold text-neutral-500 mt-3 font-mono">M. Edy Munandar, Owner</p>
+          </div>
+        </div>
+
+        <aside class="lg:col-span-5">
+          <div class="bg-white rounded-2xl p-7 shadow-lg border border-neutral-100">
+            <h3 class="text-lg font-extrabold text-neutral-800 mb-5">Visi dan Misi</h3>
+            <div class="space-y-5">
+              <div class="flex gap-3">
+                <div class="w-10 h-10 rounded-xl bg-[#224da8]/10 text-[#224da8] flex items-center justify-center flex-shrink-0">
+                  <Award className="w-5 h-5" />
+                </div>
+                <div>
+                  <p class="text-xs font-bold font-mono uppercase tracking-wider text-neutral-400">Visi</p>
+                  <p class="text-sm text-neutral-700 mt-1 leading-relaxed">
+                    Menjadi salah satu perusahaan yang selalu dipercaya dalam setiap perdagangan jasa.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <div class="w-10 h-10 rounded-xl bg-[#ff6634]/10 text-[#ff6634] flex items-center justify-center flex-shrink-0">
+                  <Users className="w-5 h-5" />
+                </div>
+                <div>
+                  <p class="text-xs font-bold font-mono uppercase tracking-wider text-neutral-400">Misi</p>
+                  <p class="text-sm text-neutral-700 mt-1 leading-relaxed">
+                    Memberikan pelayanan terbaik yang saling menguntungkan, serta menjaga hubungan
+                    kerja sama secara kekeluargaan.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                  <ShieldCheck className="w-5 h-5" />
+                </div>
+                <div>
+                  <p class="text-xs font-bold font-mono uppercase tracking-wider text-neutral-400">Komitmen</p>
+                  <p class="text-sm text-neutral-700 mt-1 leading-relaxed">
+                    Mutu produk dan kepuasan pelanggan tetap nomor satu, termasuk saat orderan
+                    sedang sepi. Garansi satu tahun berlaku untuk setiap instalasi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-7 shadow-lg border border-neutral-100 mt-5">
+            <h3 class="text-lg font-extrabold text-neutral-800 mb-4">Legalitas Perusahaan</h3>
+            <dl class="space-y-3 text-sm">
+              {legalitas.map((l) => (
+                <div class="border-b border-neutral-100 pb-2.5 last:border-0">
+                  <dt class="text-xs font-semibold text-neutral-400 font-mono">{l.label}</dt>
+                  <dd class="text-neutral-700 mt-0.5 font-medium">{l.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Keahlian -->
+    <section class="bg-white border-y border-neutral-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+        <span class="text-[11px] font-bold font-mono uppercase tracking-widest text-[#ff6634]">Bidang Keahlian</span>
+        <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight text-neutral-800 mt-3 mb-3 max-w-3xl">
+          Empat Area yang Kami Kuasai Secara Mendalam
+        </h2>
+        <p class="text-[15px] text-neutral-600 max-w-3xl mb-10 leading-relaxed">
+          Kami tidak menjadi generalis tanpa batas. Fokusnya tetap pada kerja fabrikasi lettering
+          dan media promosi yang butuh ketelitian tinggi, mulai dari pemilihan bahan sampai
+          pemasangan di dinding atau fasad gedung.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {coreExpertise.map((e) => (
+            <div class="flex gap-4 p-6 rounded-2xl border border-neutral-100 bg-neutral-50/60">
+              <div class="w-11 h-11 rounded-xl bg-[#224da8]/10 text-[#224da8] flex items-center justify-center flex-shrink-0">
+                <e.icon className="w-5 h-5" />
+              </div>
+              <div>
+                <h3 class="font-bold text-neutral-800 mb-1.5">{e.title}</h3>
+                <p class="text-sm text-neutral-600 leading-relaxed">{e.body}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Kapabilitas Fisik dan Klien -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-5">
+          <span class="text-[11px] font-bold font-mono uppercase tracking-widest text-[#ff6634]">Bukti Nyata</span>
+          <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight text-neutral-800 mt-3 mb-4">
+            Dikerjakan Langsung oleh Tim Internal, Bukan Perantara
+          </h2>
+          <p class="text-[15px] text-neutral-600 leading-relaxed mb-5">
+            Kami punya workshop dan peralatan sendiri di Talang Jambe, mulai dari mesin cutting
+            laser, CNC router, sampai perakitan rangka hollow besi dan neon box. Artinya tidak
+            ada rantai produksi pihak ketiga yang membuat hasilnya meleset dari briefing Anda.
+          </p>
+          <p class="text-[15px] text-neutral-600 leading-relaxed mb-6">
+            Sebelum produksi, tim kami menyiapkan mockup 3D dan estimasi harga terbuka, jadi Anda
+            tahu persis apa yang akan dipasang di fasad bangunan.
+          </p>
+          <div class="grid grid-cols-2 gap-3 mb-7">
+            <div class="bg-white rounded-xl p-4 border border-neutral-100 shadow-sm">
+              <p class="text-xs font-mono font-bold text-neutral-400 uppercase tracking-wider">Workshop</p>
+              <p class="text-sm font-bold text-neutral-800 mt-1">Talang Jambe, Sukarami</p>
+            </div>
+            <div class="bg-white rounded-xl p-4 border border-neutral-100 shadow-sm">
+              <p class="text-xs font-mono font-bold text-neutral-400 uppercase tracking-wider">Mesin</p>
+              <p class="text-sm font-bold text-neutral-800 mt-1">Laser, CNC Router, Rangka</p>
+            </div>
+          </div>
+          <p class="text-xs font-bold font-mono uppercase tracking-wider text-neutral-400 mb-3">
+            Klien yang pernah dilayani
+          </p>
+          <div class="flex flex-wrap gap-2">
+            {clients.map((c) => (
+              <span class="px-3 py-1.5 rounded-lg bg-white border border-neutral-200 text-xs font-semibold text-neutral-600">
+                {c}
+              </span>
+            ))}
+          </div>
+        </div>
+        <div class="lg:col-span-7 grid grid-cols-2 gap-4">
+          {galleryImages.map((img) => (
+            <figure class="rounded-2xl overflow-hidden border border-neutral-100 bg-white shadow-sm">
+              <img src={img.src} alt={img.alt} loading="lazy" class="w-full aspect-[4/3] object-cover" />
+              <figcaption class="px-4 py-3 text-xs font-semibold text-neutral-600">{img.caption}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Kebijakan Redaksi -->
+    <section class="bg-white border-y border-neutral-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center">
+        <div class="w-12 h-12 rounded-xl bg-[#224da8]/10 text-[#224da8] flex items-center justify-center mx-auto mb-5">
+          <FileCheck2 className="w-6 h-6" />
+        </div>
+        <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight text-neutral-800 mb-4">
+          Kebijakan Redaksi dan Tanggung Jawab Informasi di Website Ini
+        </h2>
+        <p class="text-[15px] text-neutral-600 leading-relaxed mb-4">
+          Setiap panduan tarif, tips teknis, dan penjelasan produk di website ini ditulis serta
+          ditinjau oleh tim operasional Sriwijaya Grafika yang bekerja langsung di workshop. Tidak
+          ada artikel opini yang dibuat tanpa dasar lapangan.
+        </p>
+        <p class="text-[15px] text-neutral-600 leading-relaxed mb-4">
+          Harga dan spesifikasi material kami perbarui berkala mengikuti kondisi pasar dan
+          ketersediaan bahan. Angka pada halaman layanan bersifat estimasi atau mulai dari harga
+          terendah, dan nilai final bergantung pada ukuran, bahan, serta tingkat kerapian.
+        </p>
+        <p class="text-[15px] text-neutral-600 leading-relaxed">
+          Jika Anda menemukan informasi yang kurang tepat di halaman ini, laporkan lewat
+          WhatsApp resmi 0852-1511-1125 atau email sriwijayagrafika@gmail.com. Tim kami akan
+          memeriksa dan memperbaiki data yang keliru pada pembaruan berikutnya.
+        </p>
+      </div>
+    </section>
+
+    <!-- Transparansi Operasional -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+      <span class="text-[11px] font-bold font-mono uppercase tracking-widest text-[#ff6634]">Transparansi</span>
+      <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight text-neutral-800 mt-3 mb-8">
+        Alamat, Jam Kerja, dan Kanal Resmi Kami
+      </h2>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-neutral-100">
+          <div class="w-11 h-11 rounded-xl bg-[#224da8]/10 text-[#224da8] flex items-center justify-center mb-4">
+            <MapPin className="w-5 h-5" />
+          </div>
+          <h3 class="font-bold text-neutral-800 mb-1">Alamat Workshop</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed mb-3">{BUSINESS_INFO.address}</p>
+          <a
+            href={BUSINESS_INFO.googleMapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-xs font-bold text-[#224da8] flex items-center gap-1 hover:underline"
+          >
+            <span>Buka di Google Maps</span>
+            <ExternalLink className="w-3 h-3" />
+          </a>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-neutral-100">
+          <div class="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
+            <Clock className="w-5 h-5" />
+          </div>
+          <h3 class="font-bold text-neutral-800 mb-3">Jam Operasional</h3>
+          <div class="space-y-2 text-sm">
+            <div class="flex justify-between">
+              <span class="text-neutral-600">Senin - Jumat</span>
+              <span class="font-semibold text-neutral-800">08:00 - 17:00</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-neutral-600">Sabtu</span>
+              <span class="font-semibold text-neutral-800">08:00 - 14:00</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-neutral-500">Minggu / hari besar</span>
+              <span class="font-semibold text-neutral-500">Libur</span>
+            </div>
+          </div>
+          <p class="text-xs text-neutral-400 mt-4 leading-relaxed">
+            Konsultasi WhatsApp tetap kami terima di luar jam operasional dan akan dijawab pada jam
+            kerja berikutnya.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-neutral-100">
+          <div class="w-11 h-11 rounded-xl bg-[#ff6634]/10 text-[#ff6634] flex items-center justify-center mb-4">
+            <Globe className="w-5 h-5" />
+          </div>
+          <h3 class="font-bold text-neutral-800 mb-3">Kanal Resmi</h3>
+          <a
+            href={`https://wa.me/${BUSINESS_INFO.phone1Intl}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 text-sm font-semibold text-neutral-700 hover:text-[#25d366] transition-colors mb-2"
+          >
+            <MessageCircle className="w-4 h-4 text-[#25d366]" />
+            <span>WhatsApp 0852-1511-1125</span>
+          </a>
+          <a
+            href="tel:+627115614793"
+            class="flex items-center gap-2 text-sm font-semibold text-neutral-700 hover:text-[#224da8] transition-colors mb-2"
+          >
+            <Phone className="w-4 h-4 text-[#224da8]" />
+            <span>Kantor (0711) 5614793</span>
+          </a>
+          <a
+            href="mailto:sriwijayagrafika@gmail.com"
+            class="flex items-center gap-2 text-sm font-semibold text-neutral-700 hover:text-[#224da8] transition-colors mb-4"
+          >
+            <Mail className="w-4 h-4 text-[#224da8]" />
+            <span>sriwijayagrafika@gmail.com</span>
+          </a>
+          <div class="flex items-center gap-2">
+            <a href={BUSINESS_INFO.socials.instagram} target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-neutral-100 hover:bg-pink-100 hover:text-pink-600 transition-all text-neutral-500" title="Instagram" aria-label="Instagram">
+              <Instagram className="w-4 h-4" />
+            </a>
+            <a href={BUSINESS_INFO.socials.facebookUtama} target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-neutral-100 hover:bg-blue-100 hover:text-blue-600 transition-all text-neutral-500" title="Facebook" aria-label="Facebook">
+              <Facebook className="w-4 h-4" />
+            </a>
+            <a href={BUSINESS_INFO.socials.tiktok} target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-neutral-100 hover:bg-neutral-800 hover:text-white transition-all text-neutral-500" title="TikTok" aria-label="TikTok">
+              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.59 4.23.95 1.2 2.27 2 3.76 2.37v3.59c-1.75-.17-3.41-.88-4.75-2.02-.13-.11-.27-.23-.42-.36-.02.1-.04.18-.04.26v6.94c.03 2.14-1 4.19-2.78 5.37-1.78 1.18-4.08 1.41-6.07.61-2-1-3.39-2.95-3.69-5.18-.3-2.22.68-4.43 2.5-5.69 1.83-1.26 4.28-1.42 6.27-.41v3.54c-.95-.49-2.09-.54-3.08-.13-.99.41-1.72 1.25-1.97 2.29-.25 1.04-.02 2.15.62 3 .64.85 1.63 1.39 2.7 1.45 1.07.06 1.12-.34 1.82-1.5z" />
+              </svg>
+            </a>
+            <a href={BUSINESS_INFO.socials.shopee} target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-neutral-100 hover:bg-orange-100 hover:text-orange-600 transition-all text-neutral-500" title="Shopee" aria-label="Shopee">
+              <ShoppingBag className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-gradient-to-r from-[#224da8] to-[#10285a] text-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">
+          Ceritakan Kebutuhan <span class="text-[#ff6634]">Signage</span> Anda
+        </h2>
+        <p class="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
+          Kirim foto lokasi atau denah fasad lewat WhatsApp. Tim kami akan membantu menentukan
+          bahan, ukuran, dan estimasi biaya yang masuk akal untuk anggaran usaha Anda.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href={waUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-[#25d366] hover:bg-[#1da851] text-white font-bold text-sm transition-all shadow-xl"
+          >
+            <MessageCircle className="w-5 h-5" />
+            <span>Chat WhatsApp Sekarang</span>
+          </a>
+          <a
+            href="/kontak/"
+            class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-sm transition-all border border-white/20"
+          >
+            <span>Lihat Halaman Kontak</span>
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
+        <p class="text-xs text-white/50 mt-6">
+          Konsultasi gratis, mockup 3D, dan garansi 1 tahun untuk setiap instalasi.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

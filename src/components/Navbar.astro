@@ -4,7 +4,7 @@ import { BUSINESS_INFO } from '@lib/data';
 import { SITE_SETTINGS } from '@lib/site';
 
 interface Props {
-   current?: 'home' | 'services' | 'portfolio' | 'blog' | 'contact';
+   current?: 'home' | 'services' | 'portfolio' | 'blog' | 'about' | 'contact';
  }
 
 const { current = 'home' } = Astro.props;
@@ -12,8 +12,9 @@ const { current = 'home' } = Astro.props;
 const menuItems = [
     { id: 'home', label: 'Beranda', href: '/' },
     { id: 'services', label: 'Layanan', href: '/layanan/' },
-    { id: 'portfolio', label: 'Galeri Portofolio', href: '/portofolio/' },
+    { id: 'portfolio', label: 'Portofolio', href: '/portofolio/' },
     { id: 'blog', label: 'Blog', href: '/blog/' },
+    { id: 'about', label: 'Tentang', href: '/tentang/' },
     { id: 'contact', label: 'Kontak', href: '/kontak/' },
   ] as const;
 

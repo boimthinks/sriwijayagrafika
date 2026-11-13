@@ -201,6 +201,8 @@ for x in json.load(sys.stdin)[:3]: print(x['created_at'],'|',x['state'])"
 
 ## Progress (recent session work)
 
+- **Halaman Tentang Kami (`/tentang/`)**: `src/pages/tentang.astro` dibuat mengikuti 10 fungsi E-E-A-T (identitas dan legalitas CV, profil pendiri M. Edy Munandar, keahlian inti, pengalaman, rekam jejak klien, visi-misi, bukti workshop, kebijakan redaksi, transparansi operasional, CTA). JSON-LD `AboutPage` + `Organization` (legalName, founder, sameAs, knowsAbout, jam buka) terhubung ke node `#organization` dan `#website`. Navbar diubah menjadi Beranda / Layanan / Portofolio / Blog / Tentang / Kontak (`current: 'about'`), plus tautan di Footer dan sitemap HTML.
+
 - **Decap CMS v3 Terintegrasi Penuh (Lokal & Live)**: Panel CMS terpasang di `/admin/` (`public/admin/index.html` + `config.yml`). Mendukung pengelolaan konten:
   1. `blog`: Tulis, edit, upload gambar, auto-sort descending by ISO date, auto-populate `imgalt` from `titleSeo`.
   2. `layanan`: Edit layanan dengan format string list untuk fitur, material, keywords.

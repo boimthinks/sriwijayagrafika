@@ -1,5 +1,5 @@
 ---
-import { Phone, MapPin, Instagram, Facebook, ShoppingBag, ArrowRight, ShieldCheck, Layout, FileText, Mail, Scale } from 'lucide-react';
+import { Phone, MapPin, Instagram, Facebook, ShoppingBag, ArrowRight, ShieldCheck, Layout, FileText, Mail, Scale, Building2 } from 'lucide-react';
 import { BUSINESS_INFO } from '@lib/data';
 import GoogleSourcePreferences from '@components/GoogleSourcePreferences.astro';
 
@@ -108,6 +108,12 @@ const currentYear = new Date().getFullYear();
                 <path d="M4 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4zm1-5h14v-2H5v2zm0-4h14v-2H5v2zm0-6v2h14V7H5z" />
               </svg>
               <span>Blog</span>
+            </a>
+          </li>
+          <li>
+            <a href="/tentang/" class="flex items-center gap-2 text-neutral-400 hover:text-white transition-colors">
+              <Building2 className="w-3.5 h-3.5 text-neutral-500 flex-shrink-0" />
+              <span>Tentang Kami</span>
             </a>
           </li>
           <li>
