@@ -206,3 +206,88 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi kali
   - Tautan ke `/layanan/rambu-rambu/` sebagai pilar utama.
   - Tautan silang ke `/blog/panduan/daftar-rambu-k3-wajib-audit-smk3/`, `/blog/panduan/standar-kemnaker-rambu-k3-pabrik/`, `/blog/panduan/estimasi-biaya-rambu-palembang/`, dan `/blog/panduan/standar-stiker-rambu-tambang-sumsel/`.
 
+---
+
+### Hari 12 — Penguat Pylon / Totem Sign (Pondasi & Keamanan Struktur)
+- **Status:** [x] Selesai (16 November 2026)
+- **Target Halaman Pilar:** `/layanan/pylon-totem/`
+- **Topik:** `panduan`
+- **Slug File:** `standar-pondasi-dan-struktur-pylon-sign-palembang`
+- **Judul Kartu (`title`, maks 5 kata):** Pondasi Pylon Sign Aman
+- **Title SEO (`titleSeo`, maks 12 kata):** Standar Pondasi dan Struktur Pylon Sign Aman di Palembang
+- **Target Keyword:**
+  - *Primary:* pylon sign palembang, pondasi pylon sign
+  - *Secondary:* totem sign spbu palembang, struktur tiang reklame baja
+  - *Semantic / LSI:* cakar ayam pondasi beton, beban angin fasad, pipa baja heavy-duty, izin reklame pylon
+- **Strategi Internal Link:**
+  - Anchor alami ke `[jasa pembuatan pylon sign & totem Palembang](/layanan/pylon-totem/)`.
+  - Tautan silang ke artikel izin reklame fasad (`/blog/panduan/izin-reklame-huruf-timbul-fasad-palembang/`) jika relevan konteks perizinan luar ruang.
+
+---
+
+### Hari 13 — Penguat Plang Toko & Papan Nama Kantor (Material & Visibilitas)
+- **Status:** [ ] Belum Ditulis
+- **Target Halaman Pilar:** `/layanan/plang-toko-kantor/`
+- **Topik:** `tips`
+- **Slug Usulan:** `tips-memilih-plang-toko-awet-dan-terbaca`
+- **Judul Kartu (`title`, maks 5 kata):** Plang Toko Awet Terbaca
+- **Title SEO (`titleSeo`, maks 12 kata):** Tips Memilih Plang Toko Awet dan Mudah Terbaca di Palembang
+- **Target Keyword:**
+  - *Primary:* plang toko palembang, papan nama toko palembang
+  - *Secondary:* papan nama kantor palembang, plang toko bahan aluminium
+  - *Semantic / LSI:* rangka hollow galvanis, stiker Oracal outdoor, kontras warna fasad, jarak baca kendaraan
+- **Strategi Internal Link:**
+  - Tautan ke `[jasa pembuatan plang toko & papan nama kantor](/layanan/plang-toko-kantor/)`.
+  - Tautan silang ke `/layanan/neon-box/` atau `/layanan/huruf-timbul/` sebagai opsi upgrade visibilitas malam.
+
+---
+
+### Hari 14 — Penguat Huruf LED Frontlit / Backlit (Efek Cahaya & Aplikasi)
+- **Status:** [ ] Belum Ditulis
+- **Target Halaman Pilar:** `/layanan/gantry-huruf-led/`
+- **Topik:** `panduan`
+- **Slug Usulan:** `perbedaan-huruf-led-frontlit-backlit-rgb`
+- **Judul Kartu (`title`, maks 5 kata):** Bedanya Frontlit Backlit LED
+- **Title SEO (`titleSeo`, maks 12 kata):** Perbedaan Huruf LED Frontlit Backlit dan RGB untuk Fasad Toko
+- **Target Keyword:**
+  - *Primary:* huruf led palembang, huruf led frontlit backlit
+  - *Secondary:* channel letter led palembang, huruf timbul led rgb
+  - *Semantic / LSI:* halo effect backlit, akrilik opal diffuser, modul LED waterproof, konsumsi daya driver
+- **Strategi Internal Link:**
+  - Tautan ke `[jasa pembuatan huruf LED frontlit/backlit](/layanan/gantry-huruf-led/)`.
+  - Tautan silang ke `/layanan/huruf-timbul/` dan artikel teknis trafo/LED terkait.
+
+---
+
+### Hari 15 — Penguat Neon Flex (Indoor Dekoratif vs Outdoor)
+- **Status:** [ ] Belum Ditulis
+- **Target Halaman Pilar:** `/layanan/neon-flex/`
+- **Topik:** `panduan`
+- **Slug Usulan:** `panduan-neon-flex-indoor-outdoor-palembang`
+- **Judul Kartu (`title`, maks 5 kata):** Neon Flex Indoor Outdoor
+- **Title SEO (`titleSeo`, maks 12 kata):** Panduan Neon Flex Indoor dan Outdoor Tahan Cuaca Palembang
+- **Target Keyword:**
+  - *Primary:* neon flex palembang, jasa neon flex palembang
+  - *Secondary:* neon flex outdoor tahan hujan, neon sign cafe palembang
+  - *Semantic / LSI:* IP rating neon flex, adaptor/power supply, mounting acrylic backing, perawatan debu & panas
+- **Strategi Internal Link:**
+  - Tautan ke `[jasa pembuatan neon flex Palembang](/layanan/neon-flex/)`.
+  - Tautan silang ke `/layanan/neon-box/` (perbandingan karakter cahaya/signage).
+
+---
+
+### Hari 16 — Penguat Booth Event & Desk (Branding Portable untuk Pameran)
+- **Status:** [ ] Belum Ditulis
+- **Target Halaman Pilar:** `/layanan/booth-event-desk/`
+- **Topik:** `tips`
+- **Slug Usulan:** `tips-desain-booth-event-desk-menarik-pameran`
+- **Judul Kartu (`title`, maks 5 kata):** Booth Event Desk Menarik
+- **Title SEO (`titleSeo`, maks 12 kata):** Tips Desain Booth Event Desk Menarik untuk Pameran Palembang
+- **Target Keyword:**
+  - *Primary:* booth event desk palembang, booth pameran palembang
+  - *Secondary:* meja promosi event portable, backdrop booth custom
+  - *Semantic / LSI:* branding visual jarak dekat, material ringan knock-down, pencahayaan spotlight booth, area interaksi pengunjung
+- **Strategi Internal Link:**
+  - Tautan ke `[jasa pembuatan booth event & desk](/layanan/booth-event-desk/)`.
+  - Tautan silang ke `/layanan/plang-toko-kantor/` atau material cetak pendukung jika relevan.
+
