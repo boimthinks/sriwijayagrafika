@@ -847,6 +847,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `jasa-cnc-router-acp-gedung-sekayu` | Jasa CNC router ACP gedung kantor dan ruko di Sekayu Musi Banyuasin, presisi grooving 90 derajat, ornamen fasad, dan logistik Palembang ke Sekayu | 9 November 2026 | artikel-cutting | Problem-First |
 | `rambu-bahan-kimia-gudang-b3-palembang` | Rambu K3 bahan kimia untuk gudang B3 Palembang, piktogram GHS, ukuran label per volume wadah, segregasi rak, dan material tahan solvent | 11 November 2026 | panduan | Problem-First |
 | `jasa-cutting-akrilik-display-kampus-indralaya` | Jasa potong akrilik dan plakat grafir laser untuk kampus Unsri, display laboratorium, dan kantor Tanjung Senai Indralaya, plus parameter grafir dan pengiriman via Tol Palindra | 12 November 2026 | artikel-cutting | Problem-First |
+| `jasa-plat-perforasi-custom-secondary-skin` | Plat perforasi motif custom untuk secondary skin fasad, tabel open area ratio (grid vs staggered vs slot), pilihan material galvanis/SPHC/stainless, backframe anti gelepar, dan simulasi biaya potong 15 m² | 17 November 2026 | artikel-cutting | Problem-First |
 
 ### 12.2d Rencana Artikel Support Halaman Plang Toko & Papan Nama Kantor (Queue)
 

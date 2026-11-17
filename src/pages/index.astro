@@ -6,6 +6,7 @@ import Hero from '@components/Hero.astro';
 import Credentials from '@components/Credentials.astro';
 import OrderHistory from '@components/OrderHistory';
 import ServiceCard from '@components/ServiceCard.astro';
+import CuttingLaserCard from '@components/CuttingLaserCard.astro';
 import BlogCard from '@components/BlogCard.astro';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { getCollection } from 'astro:content';
@@ -86,6 +87,7 @@ const breadcrumbs = {
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {primaryFeatured.map((service) => <ServiceCard service={service} />)}
+          <CuttingLaserCard class="md:col-span-2 lg:col-span-3" />
         </div>
       </div>
     </section>

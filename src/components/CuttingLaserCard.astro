@@ -1,0 +1,85 @@
+---
+import { ArrowRight, Cpu, Layers, Sparkles } from 'lucide-react';
+
+interface Props {
+  href?: string;
+  imageUrl?: string;
+  imageAlt?: string;
+  title?: string;
+  description?: string;
+  highlights?: string[];
+  ctaText?: string;
+  class?: string;
+}
+
+const {
+  href = '/cutting-plat/',
+  imageUrl = '/img/cutting-plat/mesin-potong-laser-fiber_poco.webp',
+  imageAlt = 'Mesin fiber laser cutting plat besi di workshop Sriwijaya Grafika Palembang',
+  title = 'Jasa Cutting Laser, CNC Router & Potong ACP',
+  description = 'Layanan fabrikasi presisi di workshop Sukarami Palembang: fiber laser plat besi hingga 16 mm, stainless 201/304 hingga 6 mm, CNC router ACP/multiplek/MDF, serta laser CO2 untuk akrilik dan ornamen. Melayani bengkel las, kontraktor, dan proyek fasad se-Sumatera Selatan.',
+  highlights = [
+    'Fiber Laser Plat & Stainless',
+    'CNC Router ACP, Multiplek, MDF',
+    'Laser CO2 Akrilik & Ornamen',
+  ],
+  ctaText = 'Lihat Layanan Cutting Plat',
+  class: className = '',
+} = Astro.props;
+
+const HIGHLIGHT_ICONS = [Cpu, Layers, Sparkles];
+---
+
+<a
+  href={href}
+  id="service-card-cutting-laser"
+  class={`group bg-white rounded-3xl border border-neutral-100 shadow-sm hover:shadow-md hover:border-neutral-200/80 overflow-hidden transition-all duration-300 relative flex flex-col md:flex-row ${className}`}
+  data-category="fabrikasi"
+  data-subcategory="Fabrikasi & Laser CNC"
+>
+  <span class="absolute top-0 left-0 w-0.5 h-full bg-[#ff6634] scale-y-0 group-hover:scale-y-100 transition-transform duration-800 origin-top z-20" aria-hidden="true"></span>
+
+  <div class="relative w-full md:w-2/5 aspect-[16/10] md:aspect-auto md:min-h-[19rem] overflow-hidden bg-neutral-100 shrink-0">
+    <img
+      src={imageUrl}
+      alt={imageAlt}
+      loading="lazy"
+      class="w-full h-full object-cover transition-transform duration-800 group-hover:scale-105 absolute inset-0"
+    />
+    <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#10285a]/85 backdrop-blur text-white text-[9px] font-mono font-bold uppercase tracking-wider">
+      Workshop Sendiri
+    </span>
+  </div>
+
+  <div class="p-5 md:p-7 flex flex-col justify-center flex-1">
+    <div class="mb-4">
+      <span class="px-2.5 py-1 text-[10px] font-bold text-[#224da8] bg-[#224da8]/5 rounded-md font-mono uppercase tracking-wide">
+        Fabrikasi &amp; Laser CNC
+      </span>
+    </div>
+
+    <h3 class="text-base md:text-xl font-extrabold text-neutral-800 leading-snug">
+      {title}
+    </h3>
+    <p class="text-xs md:text-sm text-neutral-500 mt-2.5 leading-relaxed max-w-xl">
+      {description}
+    </p>
+
+    <div class="mt-4 pt-4 border-t border-dashed border-neutral-100 flex flex-wrap gap-x-4 gap-y-2">
+      {highlights.map((item, idx) => {
+        const Icon = HIGHLIGHT_ICONS[idx % HIGHLIGHT_ICONS.length];
+        return (
+          <div class="flex items-center gap-1.5 text-[11px] text-neutral-600 font-medium">
+            <Icon className="w-3.5 h-3.5 text-emerald-500" strokeWidth={1.75} />
+            <span>{item}</span>
+          </div>
+        );
+      })}
+    </div>
+
+    <div class="mt-5 inline-flex items-center gap-2 text-xs font-bold text-[#224da8] group-hover:text-[#ff6634] transition-colors">
+      {ctaText}
+      <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" strokeWidth={2} />
+    </div>
+  </div>
+</a>

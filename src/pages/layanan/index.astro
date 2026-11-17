@@ -3,7 +3,8 @@ import Layout from '@layouts/Layout.astro';
 import Navbar from '@components/Navbar.astro';
 import Footer from '@components/Footer.astro';
 import ServiceCard from '@components/ServiceCard.astro';
-import { getCollection } from 'astro:content';
+import CuttingLaserCard from '@components/CuttingLaserCard.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import { BUSINESS_INFO, MEDIA_COVERAGES, VIDEOS } from '@lib/data';
 import { SITE_SETTINGS } from '@lib/site';
 import { Factory, ShieldCheck, PenTool, CheckCircle, Users, BadgeCheck, Newspaper, ExternalLink } from 'lucide-react';
@@ -16,6 +17,51 @@ const services = (await getCollection('layanan', ({ data }) => data.published)).
 
 const primary = services.filter((s) => s.data.category === 'utama');
 
+// Urutan kartu sesuai permintaan pemilik: 3 kolom per baris, dengan kartu
+// lebar penuh "Jasa Cutting Laser" di baris ketiga.
+const CARD_ORDER = [
+  'huruf-timbul',
+  'neon-box',
+  'pylon-totem',
+  'rambu-rambu',
+  'billboard',
+  'plang-toko-kantor',
+  // baris 3: CuttingLaserCard (lebar penuh) -> /cutting-plat/
+  'neon-flex',
+  'booth-event-desk',
+  'gantry-huruf-led',
+];
+
+const primaryById = new Map(primary.map((s) => [s.id, s]));
+const orderedPrimary = CARD_ORDER.map((id) => primaryById.get(id)).filter(
+  (s): s is CollectionEntry<'layanan'> => Boolean(s)
+);
+// Jaring pengaman: layanan utama baru yang belum terdaftar di CARD_ORDER tetap tampil di akhir.
+const unlistedPrimary = primary.filter((s) => !CARD_ORDER.includes(s.id));
+const finalPrimary = [...orderedPrimary, ...unlistedPrimary];
+
+const ROW_ONE = finalPrimary.slice(0, 3);
+const ROW_TWO = finalPrimary.slice(3, 6);
+const ROW_THREE = finalPrimary.slice(6);
+
+const CUTTING_SERVICE_SCHEMA = {
+  '@type': 'ListItem',
+  url: '/cutting-plat/',
+  name: 'Jasa Cutting Laser, CNC Router & Potong ACP',
+  description:
+    'Jasa fiber laser cutting plat besi dan stainless, CNC router ACP/multiplek/MDF, serta laser CO2 akrilik di workshop Sukarami Palembang.',
+};
+
+const schemaListItems = [
+  ...finalPrimary.map((s) => ({
+    '@type': 'ListItem',
+    url: `/layanan/${s.id}/`,
+    name: s.data.name,
+    description: s.data.description,
+  })),
+];
+schemaListItems.splice(6, 0, CUTTING_SERVICE_SCHEMA);
+
 const servicesSchema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
@@ -23,13 +69,10 @@ const servicesSchema = {
   name: 'Layanan Sriwijaya Grafika',
   description:
     'Daftar lengkap layanan advertising dan reklame Sriwijaya Grafika Palembang.',
-  numberOfItems: services.length,
-  itemListElement: services.map((s, idx) => ({
-    '@type': 'ListItem',
+  numberOfItems: schemaListItems.length,
+  itemListElement: schemaListItems.map((item, idx) => ({
+    ...item,
     position: idx + 1,
-    url: `/layanan/${s.id}`,
-    name: s.data.name,
-    description: s.data.description,
   })),
 };
 
@@ -80,10 +123,13 @@ const mediaLinks = [
     <section class="py-12 md:py-16 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-8">
-          <h2 class="text-2xl md:text-3xl font-extrabold text-neutral-800 tracking-tight">Advertising &amp; Reklame</h2>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-neutral-800 tracking-tight">Advertising, Reklame &amp; Fabrikasi Laser</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {primary.map((service) => <ServiceCard service={service} />)}
+          {ROW_ONE.map((service) => <ServiceCard service={service} />)}
+          {ROW_TWO.map((service) => <ServiceCard service={service} />)}
+          <CuttingLaserCard class="md:col-span-2 lg:col-span-3" />
+          {ROW_THREE.map((service) => <ServiceCard service={service} />)}
         </div>
           <div class="mt-10 space-y-2">
             <p class="text-sm text-neutral-600 max-w-7xl leading-relaxed">

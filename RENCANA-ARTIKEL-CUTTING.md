@@ -221,11 +221,11 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi seru
 ---
 
 ### Artikel 12 — Plat Perforasi & Secondary Skin Arsitektur
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (17 November 2026)
 - **Kategori Mesin:** `plat-motif`
 - **Slug File:** `jasa-plat-perforasi-custom-secondary-skin`
 - **Judul Kartu (`title`, maks 5 kata):** Plat Perforasi Motif Custom
-- **Title SEO (`titleSeo`, maks 12 kata):** Jasa Pembuatan Plat Perforasi Lubang Motif Custom untuk Arsitektur
+- **Title SEO (`titleSeo`, maks 12 kata):** Jasa Plat Perforasi Custom untuk Secondary Skin Fasad
 - **Target Keyword:**
   - *Primary:* plat perforasi motif custom, secondary skin motif
   - *Secondary:* panel fasad bangunan, plat dekoratif custom
