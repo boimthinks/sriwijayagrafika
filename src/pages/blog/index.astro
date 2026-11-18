@@ -177,7 +177,7 @@ const blogSchema = {
 </Layout>
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
+  function setupBlogFilter() {
     const grid = document.getElementById('blog-grid');
     if (!grid) return;
 
@@ -224,5 +224,10 @@ const blogSchema = {
         applyFilter(button.dataset.filter ?? 'all');
       });
     });
-  });
+  }
+
+  // astro:page-load fires on initial load AND after every Astro ClientRouter
+  // view transition swap, so the filter keeps working however the user
+  // navigates to /blog/.
+  document.addEventListener('astro:page-load', setupBlogFilter);
 </script>

@@ -220,6 +220,23 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi seru
 
 ---
 
+### Artikel 13 — Jasa Potong Bahan Sendiri / Tanpa Bahan (Intent Transaksional)
+- **Status:** [x] Selesai (18 November 2026)
+- **Kategori Mesin:** `fiber-laser` / `laser-co2` / `cnc-router`
+- **Slug File:** `jasa-potong-bahan-sendiri-tanpa-bahan-palembang`
+- **Judul Kartu (`title`, maks 5 kata):** Jasa Potong Bahan Sendiri
+- **Title SEO (`titleSeo`, maks 12 kata):** Jasa Laser Cutting Tanpa Bahan Bawa Bahan Sendiri Palembang
+- **Target Keyword:**
+  - *Primary:* jasa laser cutting tanpa bahan, jasa potong akrilik bahan sendiri
+  - *Secondary:* jasa cutting plat tanpa bahan Palembang, harga cutting tanpa bahan, jasa laser cutting file DXF/CDR
+  - *Semantic / LSI:* jasa potong sesuai desain, nesting konfirmasi penempatan pola, risiko bahan berisiko (akrilik ekstrusi retak, plat melengkung), tarif per m2 / per keping / per menit
+- **Strategi Internal Link:**
+  - Tautan ke `/cutting-plat/standar-format-file-dxf-laser-cutting/` dan `/cutting-plat/cara-hitung-biaya-laser-cutting-plat-besi/`.
+  - Tautan ke `/layanan/huruf-timbul/` dan `/layanan/neon-box/` (opsi lanjut rakit jadi signage).
+- **Output:** `src/content/cutting/jasa-potong-bahan-sendiri-tanpa-bahan-palembang.md`
+
+---
+
 ### Artikel 12 — Plat Perforasi & Secondary Skin Arsitektur
 - **Status:** [x] Selesai (17 November 2026)
 - **Kategori Mesin:** `plat-motif`
