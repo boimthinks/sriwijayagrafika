@@ -41,6 +41,7 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi seru
 - [x] Selesai: `indralaya.md` (Indralaya Ogan Ilir)
 - [x] Selesai: `betung.md` (Betung Banyuasin)
 - [x] Selesai: `lubuklinggau.md` (Kota Lubuklinggau)
+- [x] Selesai: `kayuagung.md` (Kayuagung, Ogan Komering Ilir) — 20 November 2026
 
 ### Artikel Spesialisasi Awal (tipe: "artikel")
 - [x] Selesai: `jasa-potong-acp-prabumulih.md` (Potong ACP Prabumulih Presisi CNC Router)

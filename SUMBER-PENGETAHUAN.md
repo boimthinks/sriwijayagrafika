@@ -848,6 +848,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `rambu-bahan-kimia-gudang-b3-palembang` | Rambu K3 bahan kimia untuk gudang B3 Palembang, piktogram GHS, ukuran label per volume wadah, segregasi rak, dan material tahan solvent | 11 November 2026 | panduan | Problem-First |
 | `jasa-cutting-akrilik-display-kampus-indralaya` | Jasa potong akrilik dan plakat grafir laser untuk kampus Unsri, display laboratorium, dan kantor Tanjung Senai Indralaya, plus parameter grafir dan pengiriman via Tol Palindra | 12 November 2026 | artikel-cutting | Problem-First |
 | `jasa-plat-perforasi-custom-secondary-skin` | Plat perforasi motif custom untuk secondary skin fasad, tabel open area ratio (grid vs staggered vs slot), pilihan material galvanis/SPHC/stainless, backframe anti gelepar, dan simulasi biaya potong 15 m² | 17 November 2026 | artikel-cutting | Problem-First |
+| `kayuagung` (halaman daerah, tipe: daerah) | Jasa laser cutting plat & CNC router Kayuagung OKI, pemilihan material SPHC/galvanis/stainless 304 sesuai kondisi rawa (75% wilayah OKI) dan udara asin pesisir timur, simulasi biaya potong, logistik Tol Kapalbetung 42,5 km | 20 November 2026 | halaman-daerah | Problem-First |
 
 ### 12.2d Rencana Artikel Support Halaman Plang Toko & Papan Nama Kantor (Queue)
 
