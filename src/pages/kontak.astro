@@ -30,8 +30,7 @@ const contactSchema = {
       addressCountry: 'ID',
     },
     openingHoursSpecification: [
-      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:00', closes: '17:00' },
-      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '08:00', closes: '14:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '08:00', closes: '17:00' },
     ],
   },
 };
@@ -137,12 +136,8 @@ const contactSchema = {
           </div>
           <div class="space-y-3 text-sm">
             <div class="flex justify-between items-center py-2 border-b border-neutral-100">
-              <span class="text-neutral-600">Senin - Jumat</span>
+              <span class="text-neutral-600">Senin - Sabtu</span>
               <span class="font-semibold text-neutral-800">08:00 - 17:00</span>
-            </div>
-            <div class="flex justify-between items-center py-2 border-b border-neutral-100">
-              <span class="text-neutral-600">Sabtu</span>
-              <span class="font-semibold text-neutral-800">08:00 - 14:00</span>
             </div>
             <div class="flex justify-between items-center py-2">
               <span class="text-neutral-400">Minggu / Hari Besar</span>

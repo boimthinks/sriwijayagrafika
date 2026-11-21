@@ -142,15 +142,9 @@ const aboutPageSchema = {
       openingHoursSpecification: [
         {
           '@type': 'OpeningHoursSpecification',
-          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
           opens: '08:00',
           closes: '17:00',
-        },
-        {
-          '@type': 'OpeningHoursSpecification',
-          dayOfWeek: 'Saturday',
-          opens: '08:00',
-          closes: '14:00',
         },
       ],
       sameAs: [
@@ -500,15 +494,11 @@ const aboutPageSchema = {
           <h3 class="font-bold text-neutral-800 mb-3">Jam Operasional</h3>
           <div class="space-y-2 text-sm">
             <div class="flex justify-between">
-              <span class="text-neutral-600">Senin - Jumat</span>
+              <span class="text-neutral-600">Senin - Sabtu</span>
               <span class="font-semibold text-neutral-800">08:00 - 17:00</span>
             </div>
             <div class="flex justify-between">
-              <span class="text-neutral-600">Sabtu</span>
-              <span class="font-semibold text-neutral-800">08:00 - 14:00</span>
-            </div>
-            <div class="flex justify-between">
-              <span class="text-neutral-500">Minggu / hari besar</span>
+              <span class="text-neutral-500">Minggu / Hari Besar</span>
               <span class="font-semibold text-neutral-500">Libur</span>
             </div>
           </div>
