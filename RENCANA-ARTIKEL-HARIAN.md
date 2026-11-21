@@ -226,7 +226,7 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi kali
 ---
 
 ### Hari 13 — Penguat Plang Toko & Papan Nama Kantor (Material & Visibilitas)
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (22 November 2026)
 - **Target Halaman Pilar:** `/layanan/plang-toko-kantor/`
 - **Topik:** `tips`
 - **Slug Usulan:** `tips-memilih-plang-toko-awet-dan-terbaca`

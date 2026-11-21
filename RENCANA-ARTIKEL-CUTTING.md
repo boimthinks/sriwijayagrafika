@@ -53,6 +53,21 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi seru
 
 ## Daftar Antrean Artikel Baru (tipe: "artikel")
 
+### Artikel 14 — Laser Fiber vs Laser CO2 (Pemilihan Mesin per Bahan)
+- **Status:** [x] Selesai (22 November 2026)
+- **Kategori Mesin:** `fiber-laser` / `laser-co2`
+- **Slug File:** `laser-fiber-vs-laser-co2-perbedaan-bahan`
+- **Judul Kartu (`title`, maks 5 kata):** Laser Fiber vs Laser CO2
+- **Title SEO (`titleSeo`, maks 12 kata):** Perbedaan Mesin Laser Fiber dan Laser CO2 untuk Potong Bahan
+- **Target Keyword:**
+  - *Primary:* perbedaan laser fiber dan laser co2, jasa laser cutting logam dan non logam
+  - *Secondary:* laser cutting akrilik vs plat logam, mesin laser untuk stainless dan akrilik
+  - *Semantic / LSI:* panjang gelombang 1064 nm vs 10.600 nm, tarif per m2 fiber vs per menit CO2, PVC tidak boleh laser, gas bantu nitrogen
+- **Strategi Internal Link:**
+  - Tautan ke `/cutting-plat/cara-hitung-biaya-laser-cutting-plat-besi/` dan `/cutting-plat/standar-format-file-dxf-laser-cutting/`.
+  - Tautan ke `/layanan/huruf-timbul/` sebagai lanjutan rakit signage.
+- **Output:** `src/content/cutting/laser-fiber-vs-laser-co2-perbedaan-bahan.md`
+
 ### Artikel 1 — Ketebalan Plat Pagar (Fiber Laser Logam)
 - **Status:** [x] Selesai (29 Oktober 2026)
 - **Kategori Mesin:** `fiber-laser` / `plat-motif`

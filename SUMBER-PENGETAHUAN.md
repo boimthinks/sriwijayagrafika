@@ -8,7 +8,7 @@
 1. Mulai dari `## 1. Identitas Bisnis` untuk data diri singkat.
 2. Lanjut `## 2. Tentang Kami` untuk narasi brand.
 3. `## 3. Tagline` siap copy-paste untuk heading/CTA.
-4. `## 4. Layanan` untuk rujukan fitur & material.
+4. `## 4. Layanan` untuk rujukan fitur & material. Sub-bagian **Spesifikasi Jasa Cutting Plat Logam** memuat data baku ukuran plat logam **120 x 240 cm** — wajib dipakai konsisten, **khusus plat logam**, jangan diterapkan ke akrilik/ACP/kayu.
 5. `## 5. Portofolio` (file terpisah) untuk contoh proyek nyata.
 6. `## 6. Liputan Media` untuk kutipan & social proof.
 7. `## 7. Wawancara & Konten Penuh` untuk narasi panjang owner.
@@ -118,6 +118,34 @@ Tagline di bawah ini siap copy-paste untuk heading, CTA, atau caption media sosi
 ### Kategori Percetakan & Penunjang (21 layanan)
 
 Kartu nama, kop surat, stempel, brosur, buku yasin, cetak nota/kwitansi/undangan/amplop, stiker, sablon kaos, mug custom, goodie bag, pin, gantungan kunci, pena promosi, map hardcover, papan struktur, scaffold tag, dll.
+
+### Spesifikasi Jasa Cutting Plat Logam (Rujukan Teknis)
+
+> **Data baku dari owner, wajib dipakai konsisten di semua artikel cutting plat logam.** Jangan mengarang ukuran lain tanpa konfirmasi. Ukuran ini **khusus plat logam** (stainless, alumunium, plat besi, galvanis) — bukan untuk akrilik, ACP, multiplek, MDF, atau PVC.
+
+| Item | Spesifikasi |
+|---|---|
+| **Ukuran plat logam standar** | **120 x 240 cm** (1,2 x 2,4 meter) |
+| Luas per lembar | 2,88 m² |
+| Material yang dicakup | Stainless steel, alumunium, plat besi, plat galvanis |
+| Proses potong | Laser fiber (CNC fiber laser) |
+| Tarif acuan | Harga jasa potong dihitung **per m²** dari luas bidang kerja (lihat `HARGA-CUTTING-PLAT.md`) |
+
+**Contoh penerapan (untuk perhitungan di artikel):**
+
+- 1 lembar plat logam 120 x 240 cm = 2,88 m² → biaya potong = 2,88 x tarif per m² sesuai ketebalan & material.
+- Panel 60 x 120 cm = 0,72 m² → **4 panel per lembar** (2 kolom x 2 baris), sisa pemakaian 100%.
+- Panel 120 x 120 cm = 1,44 m² → **2 panel per lembar**, tanpa sisa.
+- Panel 100 x 200 cm = 2 m² → hanya **1 panel per lembar** dengan sisa 0,88 m², jadi lebih hemat kalau desain dipecah ke modul yang mengikuti grid 120 x 240 cm.
+
+**Catatan penting untuk penulisan:**
+
+1. **Selalu tulis "120 x 240 cm"** saat menyebut ukuran plat logam standar layanan cutting. Ini angka dari owner dan selaras dengan artikel `jasa-laser-cutting-motif-songket-palembang` (modul 120 x 240 cm) serta `jasa-cutting-plat-ornamen-muara-enim`.
+2. **Jangan mencampur aduk** dengan angka **122 x 244 cm**. Angka itu adalah ukuran **lembaran ACP / multiplek / MDF di pasaran** dan area kerja meja CNC router untuk bahan non-logam — bukan ukuran plat logam. Kalau perlu menyebut keduanya dalam satu artikel, jelaskan perbedaannya secara eksplisit agar tidak membingungkan pembaca dan tidak merusak konsistensi data.
+3. **Jangan memakai "120 x 240 cm" untuk akrilik, ACP, multiplek, MDF, atau PVC.** Untuk bahan-bahan itu tetap ikuti ukuran lembaran pasaran masing-masing.
+4. Ukuran 120 x 240 cm adalah **bidang kerja maksimal per lembar**. Untuk kebutuhan lebih besar, panel disambung (sambungan modul) atau dipecah menjadi beberapa lembar.
+5. Saat membahas **nesting/optimasi bahan plat**, selalu tekankan bahwa menyusun pola di grid 120 x 240 cm bisa menekan waste hingga di bawah 10% — ini argumen jual yang sudah dipakai di artikel cutting yang terbit.
+6. **Sudut pandang non-komoditas** yang bisa diangkat dari angka ini: mengapa ukuran plat logam menentukan harga akhir, kenapa desain yang mengikuti grid plat lebih murah, dan bagaimana kontraktor bisa menghemat dengan menyusun modul.
 
 ### Klien Besar yang Pernah Dilayani (untuk social proof)
 
@@ -849,6 +877,8 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 | `jasa-cutting-akrilik-display-kampus-indralaya` | Jasa potong akrilik dan plakat grafir laser untuk kampus Unsri, display laboratorium, dan kantor Tanjung Senai Indralaya, plus parameter grafir dan pengiriman via Tol Palindra | 12 November 2026 | artikel-cutting | Problem-First |
 | `jasa-plat-perforasi-custom-secondary-skin` | Plat perforasi motif custom untuk secondary skin fasad, tabel open area ratio (grid vs staggered vs slot), pilihan material galvanis/SPHC/stainless, backframe anti gelepar, dan simulasi biaya potong 15 m² | 17 November 2026 | artikel-cutting | Problem-First |
 | `kayuagung` (halaman daerah, tipe: daerah) | Jasa laser cutting plat & CNC router Kayuagung OKI, pemilihan material SPHC/galvanis/stainless 304 sesuai kondisi rawa (75% wilayah OKI) dan udara asin pesisir timur, simulasi biaya potong, logistik Tol Kapalbetung 42,5 km | 20 November 2026 | halaman-daerah | Problem-First |
+| `tips-memilih-plang-toko-awet-dan-terbaca` | Tips memilih plang toko awet dan mudah terbaca di Palembang, tabel pemetaan bahan vs posisi pemasangan (vinyl/ACP/akrilik/huruf timbul), rumus jarak baca 2,5-4 m per cm tinggi huruf, finishing anti pudar, checklist vendor 5 poin | 22 November 2026 | tips | Problem-First |
+| `laser-fiber-vs-laser-co2-perbedaan-bahan` (artikel cutting) | Perbedaan mesin laser fiber dan laser CO2 untuk potong bahan, fisika panjang gelombang 1,06 vs 10,6 mikron, matriks bahan vs mesin, alasan tarif fiber per m2 vs CO2 per menit, larangan PVC di laser, checklist vendor | 22 November 2026 | artikel-cutting | Problem-First |
 
 ### 12.2d Rencana Artikel Support Halaman Plang Toko & Papan Nama Kantor (Queue)
 
@@ -887,6 +917,7 @@ Gunakan secara natural & bervariasi di sepanjang artikel:
 - [x] **Cara bedakan LED asli Samsung vs palsu** — Teknis verifikasi LED untuk neon box. Artikel #14 `beda-led-samsung-vs-palsu` sudah terbit 10 Juni 2026
 - [ ] **Apa itu signage dan fungsinya untuk bisnis** — Edukasi dasar signage bagi pemilik UMKM yang belum familier dengan istilah signage. Artikel #15 `fungsi-signage-bisnis` sudah terbit 10 Juni 2026
 - [ ] **Total cost of ownership signage** — Template spreadsheet hitung biaya 5 tahun untuk berbagai jenis signage (dari artikel estimasi biaya)
+- [ ] **Ukuran plat logam 120 x 240 cm dan pengaruhnya ke harga cutting** — slug `ukuran-plat-logam-120x240-pengaruh-harga-cutting`, topik `panduan`. Sudut pandang non-komoditas: mengapa ukuran plat logam standar menentukan harga akhir, kenapa desain yang mengikuti grid 120 x 240 cm lebih murah, simulasi 4 modul panel (60x120, 120x120, 100x200) dan waste-nya, cara menghitung lembar kebutuhan dari luas bidang ornamen/pagar/fasad. Data baku ada di `## 4. Layanan & Produk → Spesifikasi Jasa Cutting Plat Logam`. Interlink ke `cara-hitung-biaya-laser-cutting-plat-besi`, `jasa-plat-perforasi-custom-secondary-skin`, `laser-cutting-plat-stainless-304-vs-201`, dan `/cutting-plat/`.
 
 ### 12.2b Rencana Artikel Support Halaman Billboard (Queue)
 
