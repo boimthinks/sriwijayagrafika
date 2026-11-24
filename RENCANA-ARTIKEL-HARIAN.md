@@ -243,10 +243,10 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi kali
 ---
 
 ### Hari 14 — Penguat Huruf LED Frontlit / Backlit (Efek Cahaya & Aplikasi)
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (24 November 2026)
 - **Target Halaman Pilar:** `/layanan/gantry-huruf-led/`
 - **Topik:** `panduan`
-- **Slug Usulan:** `perbedaan-huruf-led-frontlit-backlit-rgb`
+- **Slug File:** `perbedaan-huruf-led-frontlit-backlit-rgb`
 - **Judul Kartu (`title`, maks 5 kata):** Bedanya Frontlit Backlit LED
 - **Title SEO (`titleSeo`, maks 12 kata):** Perbedaan Huruf LED Frontlit Backlit dan RGB untuk Fasad Toko
 - **Target Keyword:**
@@ -256,6 +256,7 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi kali
 - **Strategi Internal Link:**
   - Tautan ke `[jasa pembuatan huruf LED frontlit/backlit](/layanan/gantry-huruf-led/)`.
   - Tautan silang ke `/layanan/huruf-timbul/` dan artikel teknis trafo/LED terkait.
+- **Catatan Diferensiasi:** topik ini nyaris bertabrakan dengan artikel terbit `perbandingan-huruf-timbul-menyala-depan-vs-backlit-samping-fasad` (15 Agustus 2026). Artikel baru dibedakan ke sisi teknis kelistrikan, akrilik opal, controller RGB, biaya listrik bulanan, dan tabel kesesuaian fasad, bukan perbandingan estetika. Keduanya saling ditautkan.
 
 ---
 

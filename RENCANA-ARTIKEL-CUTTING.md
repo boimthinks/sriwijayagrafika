@@ -265,3 +265,19 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi seru
   - *Semantic / LSI:* shading penahan panas, lubang staggered vs round, fasad cafe industrial, plat galvanis 1.5mm
 - **Strategi Internal Link:**
   - Tautan ke `/cutting-plat/motif-pagar-laser-cutting/` dan `/layanan/plang-toko-kantor/`.
+
+---
+
+### Artikel 15 — Cutting Plat Suku Cadang & Bracket Mesin (Topik Baru)
+- **Status:** [x] Selesai (24 November 2026)
+- **Kategori Mesin:** `fiber-laser`
+- **Slug File:** `jasa-cutting-plat-suku-cadang-bracket-mesin`
+- **Judul Kartu (`title`, maks 5 kata):** Cutting Plat Suku Cadang
+- **Title SEO (`titleSeo`, maks 12 kata):** Jasa Cutting Plat Bracket Mesin dan Suku Cadang di Palembang
+- **Target Keyword:**
+  - *Primary:* jasa cutting plat suku cadang, laser cutting bracket mesin
+  - *Secondary:* jasa cutting plat bracket mesin palembang, jasa potong plat dudukan bearing, potong ulang part mesin custom
+  - *Semantic / LSI:* toleransi lubang baut dan allowance penyetelan, plat SPHC 2-3 mm vs 6 mm untuk beban getaran, galvanis tepi potong zinc rich, stainless 304 area bahan kimia, simulasi 48 bracket per lembar 120 x 240 cm
+- **Strategi Internal Link:**
+  - Tautan ke `/cutting-plat/`, `/cutting-plat/cara-hitung-biaya-laser-cutting-plat-besi/`, `/cutting-plat/standar-format-file-dxf-laser-cutting/`, `/cutting-plat/jasa-potong-bahan-sendiri-tanpa-bahan-palembang/`, `/cutting-plat/laser-cutting-plat-stainless-304-vs-201/`.
+- **Output:** `src/content/cutting/jasa-cutting-plat-suku-cadang-bracket-mesin.md`
