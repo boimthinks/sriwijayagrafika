@@ -7,12 +7,12 @@ import SidebarCTA from '@components/SidebarCTA.astro';
 import GoogleSourcePreferences from '@components/GoogleSourcePreferences.astro';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import { BUSINESS_INFO } from '@lib/data';
-import { AUTHOR_NAME, TOPIK_LABELS, calcReadingTime, parseIndonesianDate, toIsoDate, formatIndonesianDate } from '@lib/blog';
+import { AUTHOR_NAME, TOPIK_LABELS, calcReadingTime, parseIndonesianDate, toIsoDate, formatIndonesianDate, getPublishedPosts, sortPostsDesc } from '@lib/blog';
 import { getKeywordEntries } from '@lib/auto-link';
 import { Calendar, Clock, User, ChevronDown } from 'lucide-react';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog', ({ data }) => data.published);
+  const posts = await getPublishedPosts();
   return posts.map((post) => ({
     params: { topik: post.data.topik, slug: post.id },
     props: { post },
@@ -27,9 +27,7 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 const data = post.data;
 
-const allPosts = (await getCollection('blog', ({ data }) => data.published)).sort(
-  (a, b) => parseIndonesianDate(b.data.date).getTime() - parseIndonesianDate(a.data.date).getTime()
-);
+const allPosts = sortPostsDesc(await getPublishedPosts());
 
 const relatedPosts = allPosts
   .filter((p) => p.id !== post.id && p.data.topik === data.topik)

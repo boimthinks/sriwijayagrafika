@@ -5,14 +5,12 @@ import Footer from '@components/Footer.astro';
 import BlogCard from '@components/BlogCard.astro';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import { BUSINESS_INFO } from '@lib/data';
-import { calcReadingTime, parseIndonesianDate, TOPIK_LABELS, TOPIKS } from '@lib/blog';
+import { calcReadingTime, getPublishedPosts, parseIndonesianDate, sortPostsDesc, TOPIK_LABELS, TOPIKS } from '@lib/blog';
 import { SITE_SETTINGS } from '@lib/site';
 
 const page = SITE_SETTINGS.pages.blog;
 
-const allPosts = (await getCollection('blog', ({ data }) => data.published)).sort(
-  (a, b) => parseIndonesianDate(b.data.date).getTime() - parseIndonesianDate(a.data.date).getTime()
-);
+const allPosts = sortPostsDesc(await getPublishedPosts());
 
 const postsWithMeta = await Promise.all(
   allPosts.map(async (post) => {

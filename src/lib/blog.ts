@@ -1,3 +1,35 @@
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+export type BlogPost = CollectionEntry<'blog'>;
+
+/**
+ * Ambil artikel blog yang layak tayang.
+ *
+ * Aturannya:
+ *   - published: false -> tidak dibangun, tidak tayang
+ *   - draft: true      -> tidak dibangun, tidak tayang
+ *   - selain itu       -> dibangun dan ikut terdeploy
+ *
+ * Tanggal TIDAK dipakai untuk menyaring. Tanggal hanya label yang tampil di
+ * halaman. Kapan artikel benar-benar tayang ditentukan oleh kapan status draft
+ * dilepas lalu situs di-deploy, sehingga tanggalnya selalu tanggal sungguhan.
+ *
+ * Semua halaman yang menampilkan artikel WAJIB memakai helper ini, bukan
+ * getCollection('blog') langsung, supaya tidak ada draft yang bocor ke build.
+ */
+export async function getPublishedPosts(): Promise<BlogPost[]> {
+  return getCollection('blog', ({ data }) => !data.draft && data.published);
+}
+
+/** Urutkan artikel dari tanggal terbaru ke terlama. */
+export function sortPostsDesc(posts: BlogPost[]): BlogPost[] {
+  return [...posts].sort((a, b) => {
+    const da = parseIndonesianDate(a.data.date)?.getTime() ?? 0;
+    const db = parseIndonesianDate(b.data.date)?.getTime() ?? 0;
+    return db - da;
+  });
+}
+
 const MONTHS_ID: Record<string, number> = {
   januari: 0,
   februari: 1,

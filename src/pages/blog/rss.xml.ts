@@ -1,12 +1,9 @@
 import rss from '@astrojs/rss';
-import { getCollection } from 'astro:content';
 import { BUSINESS_INFO } from '@lib/data';
-import { AUTHOR_NAME, TOPIK_LABELS, parseIndonesianDate } from '@lib/blog';
+import { AUTHOR_NAME, TOPIK_LABELS, parseIndonesianDate, getPublishedPosts, sortPostsDesc } from '@lib/blog';
 
 export async function GET(context: { site: URL | undefined }) {
-  const posts = (await getCollection('blog', ({ data }) => data.published)).sort(
-    (a, b) => parseIndonesianDate(b.data.date).getTime() - parseIndonesianDate(a.data.date).getTime()
-  );
+  const posts = sortPostsDesc(await getPublishedPosts());
 
   return rss({
     title: `${BUSINESS_INFO.name} — Blog & Tips Advertising Palembang`,

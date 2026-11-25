@@ -261,7 +261,7 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi kali
 ---
 
 ### Hari 15 — Penguat Neon Flex (Indoor Dekoratif vs Outdoor)
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (digabung ke Hari 17)
 - **Target Halaman Pilar:** `/layanan/neon-flex/`
 - **Topik:** `panduan`
 - **Slug Usulan:** `panduan-neon-flex-indoor-outdoor-palembang`
@@ -278,7 +278,7 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi kali
 ---
 
 ### Hari 16 — Penguat Booth Event & Desk (Branding Portable untuk Pameran)
-- **Status:** [ ] Belum Ditulis
+- **Status:** [x] Selesai (digabung ke Hari 18)
 - **Target Halaman Pilar:** `/layanan/booth-event-desk/`
 - **Topik:** `tips`
 - **Slug Usulan:** `tips-desain-booth-event-desk-menarik-pameran`
@@ -292,3 +292,90 @@ Saat pengguna bertanya: **"buat artikel apa kita hari ini?"** (atau variasi kali
   - Tautan ke `[jasa pembuatan booth event & desk](/layanan/booth-event-desk/)`.
   - Tautan silang ke `/layanan/plang-toko-kantor/` atau material cetak pendukung jika relevan.
 
+### Hari 17 — Neon Flex Outdoor Palembang, Apa yang Tidak Tahan Cuaca
+- **Status:** [x] Selesai
+- **Target Halaman Pilar:** `/layanan/neon-flex/`
+- **Topik:** `panduan`
+- **Slug:** `neon-flex-indoor-outdoor-tidak-tahan-cuaca-palembang`
+- **Judul Kartu (`title`, maks 5 kata):** Neon Flex Outdoor Palembang
+- **Title SEO (`titleSeo`, maks 12 kata):** Neon Flex Indoor vs Outdoor, Apa yang Tidak Tahan Cuaca Palembang
+- **Target Keyword:**
+  - *Primary:* neon flex palembang, neon flex outdoor tahan hujan
+  - *Secondary:* IP rating neon flex, neon sign cafe palembang
+  - *Semantic / LSI:* adaptor power supply, acrylic backing, segel silikon, perawatan debu dan panas
+- **Sudut Non-Komoditas:** otopsi neon flex gagal di Palembang. Adaptor tanpa ventilasi, segel silikon yang menguning, backing akrilik yang memutih setelah satu musim hujan.
+- **Strategi Internal Link:**
+  - Tautan ke `[jasa pembuatan neon flex Palembang](/layanan/neon-flex/)`.
+  - Tautan silang ke `/layanan/neon-box/` dan `/blog/neon-box-vs-huruf-timbul-vs-neon-flex/`.
+
+---
+
+### Hari 18 — Kesalahan Booth Event Desk yang Baru Ketahuan di Hari Pameran
+- **Status:** [x] Selesai
+- **Target Halaman Pilar:** `/layanan/booth-event-desk/`
+- **Topik:** `tips`
+- **Slug:** `kesalahan-booth-event-desk-hari-pameran-palembang`
+- **Judul Kartu (`title`, maks 5 kata):** Booth Pameran Gagal Pasang
+- **Title SEO (`titleSeo`, maks 12 kata):** Kesalahan Booth Event Desk yang Baru Ketahuan di Hari Pameran
+- **Target Keyword:**
+  - *Primary:* booth event desk palembang, booth pameran palembang
+  - *Secondary:* meja promosi portable, backdrop booth custom
+  - *Semantic / LSI:* modul knock-down, batas waktu bongkar pasang, penahan angin backdrop, titik listrik booth
+- **Sudut Non-Komoditas:** enam kegagalan lapangan yang tidak pernah muncul di panduan desain, mulai dari modul yang tidak muat lift sampai backdrop yang rubuh kena angin.
+- **Strategi Internal Link:**
+  - Tautan ke `[jasa pembuatan booth event & desk](/layanan/booth-event-desk/)`.
+  - Tautan silang ke `/layanan/plang-toko-kantor/` dan `/blog/fungsi-signage-bisnis/`.
+
+---
+
+### Hari 19 — Kapan Pylon Sign Palembang Butuh Pondasi Cakar Ayam
+- **Status:** [x] Selesai
+- **Target Halaman Pilar:** `/layanan/pylon-totem/`
+- **Topik:** `teknis`
+- **Slug:** `kapan-pylon-sign-butuh-pondasi-cakar-ayam-palembang`
+- **Judul Kartu (`title`, maks 5 kata):** Pondasi Pylon Sign Palembang
+- **Title SEO (`titleSeo`, maks 12 kata):** Kapan Pylon Sign Palembang Butuh Pondasi Cakar Ayam
+- **Target Keyword:**
+  - *Primary:* pylon sign palembang, pondasi pylon sign
+  - *Secondary:* totem sign tahan angin, tiang pylon sign
+  - *Semantic / LSI:* pondasi telapak, cakar ayam, daya dukung tanah, beban angin, tanah bekas rawa
+- **Sudut Non-Komoditas:** melengkapi artikel pondasi sebelumnya dari sudut berbeda. Kapan cukup telapak, kapan wajib cakar ayam, dan bagaimana tanah bekas rawa Seberang Ilir mengubah hitungan.
+- **Strategi Internal Link:**
+  - Tautan ke `[jasa pembuatan pylon sign Palembang](/layanan/pylon-totem/)`.
+  - Tautan silang ke `/blog/standar-pondasi-dan-struktur-pylon-sign-palembang/` dan `/blog/pylon-sign-vs-neon-box/`.
+
+---
+
+### Hari 20 — Akrilik Retak dan Kusam, Kesalahan Membersihkan Display
+- **Status:** [x] Selesai
+- **Target Halaman Pilar:** `/layanan/` (file `produk-akrilik.md` belum tersedia di repo)
+- **Topik:** `teknis`
+- **Slug:** `akrilik-retak-kusam-kesalahan-membersihkan-palembang`
+- **Judul Kartu (`title`, maks 5 kata):** Akrilik Rusak Karena Dibersihkan
+- **Title SEO (`titleSeo`, maks 12 kata):** Akrilik Retak dan Kusam, Kesalahan Membersihkan Display Palembang
+- **Target Keyword:**
+  - *Primary:* produk akrilik custom palembang, display akrilik palembang
+  - *Secondary:* name tag akrilik, akrilik kusam
+  - *Semantic / LSI:* alkohol isopropil, kanebo kering, akrilik kastem, titik leleh akrilik
+- **Sudut Non-Komoditas:** otopsi barang yang dikembalikan pelanggan. Retak karena alkohol, kusam karena kanebo kering, melengkung karena panas di dalam mobil.
+- **Strategi Internal Link:**
+  - Tautan ke `/layanan/` dan `[plang toko dan kantor](/layanan/plang-toko-kantor/)`.
+  - Tautan silang ke `/cutting-plat/` dan `/blog/cutting-laser-akrilik/`.
+
+---
+
+### Hari 21 — Gantry Huruf LED Melengkung, Beban Angin atau Rangka Salah
+- **Status:** [x] Selesai
+- **Target Halaman Pilar:** `/layanan/gantry-huruf-led/`
+- **Topik:** `teknis`
+- **Slug:** `gantry-huruf-led-melengkung-beban-angin-rangka`
+- **Judul Kartu (`title`, maks 5 kata):** Gantry Huruf LED Melengkung
+- **Title SEO (`titleSeo`, maks 12 kata):** Gantry Huruf LED Melengkung, Beban Angin atau Rangka Salah
+- **Target Keyword:**
+  - *Primary:* gantry huruf led palembang, huruf led gerbang pabrik
+  - *Secondary:* gantry sign tahan angin, rangka gantry huruf timbul
+  - *Semantic / LSI:* bentang bebas, profil hollow, sambungan las, drainase rangka
+- **Sudut Non-Komoditas:** membedah kasus gantry yang melendut di atas gerbang pabrik Tanjung Api-api. Bentang terlalu panjang, profil kurang, dan titik las yang menahan air.
+- **Strategi Internal Link:**
+  - Tautan ke `[huruf LED gantry Palembang](/layanan/gantry-huruf-led/)`.
+  - Tautan silang ke `/layanan/huruf-timbul/`, `/blog/standar-trafo-led-huruf-timbul-outdoor/`, dan `/blog/tips-rangka-besi-plang-toko-tahan-angin/`.

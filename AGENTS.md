@@ -38,6 +38,12 @@
       npm run check:links
       ```
 - **Aturan imgPrompt**: Setiap penulisan artikel baru wajib menyertakan key `imgPrompt` di frontmatter. Isi `imgPrompt` harus memvisualisasikan isi artikel dalam gaya foto realistis (photorealistic) dengan menyertakan karakter Srifika yang sedang melakukan aksi, di dalam latar belakang dan suasana yang sesuai. Jangan deskripsikan identitas detail Srifika (seperti baju, jersey, dsb.) karena sudah otomatis terdefinisi oleh generator gambar eksternal.
+- **Placeholder wajib di imgPrompt**: Karakter Srifika dan latar workshop disebut dengan placeholder, bukan deskripsi bebas.
+  - `##srifika##` untuk karakter, diganti `@srifika` di Google Flow.
+  - `##workshop##` untuk latar workshop, diganti gambar referensi workshop di Google Flow.
+  - Jangan menulis "Srifika" sebagai nama biasa dan jangan mendeskripsikan suasana workshop secara rinci. Cukup sebut perannya, contoh: `Photorealistic photo of ##srifika## inspecting huruf timbul in ##workshop##, Palembang`.
+  - Placeholder dibiarkan apa adanya di frontmatter dan di `_workflow/inbox-gambar/ANTREAN.md`.
+  - Periksa dengan `python3 _workflow/gambar.py cek --site sriwijayagrafika.com`. Perintah `gambar.py prompt` menolak prompt yang belum memuat kedua placeholder.
 - **Mekanisme Wajib Validasi Link & Anchor Text (Anti-404 & Trailing Slash)**:
   - Setiap kali artikel blog selesai ditulis atau diedit, AI **WAJIB** menjalankan audit link otomatis sebelum commit:
     ```bash
@@ -254,7 +260,14 @@ All planned single-page sections will follow the **same pattern as layanan**. Wh
   - `imgalt` (string, optional) — fallback ke `titleSeo` kalau kosong
   - `pengantar` (string, 50–500 char) — lead paragraph dirender sebelum body, plain style
   - `kesimpulan` (string, 50–500 char) — closing paragraph dirender setelah body, plain style
-  - `published` (boolean, default `true`) — `getStaticPaths` di `[...slug].astro` filter `published: true` (draft TIDAK di-generate)
+  - `published` (boolean, default `true`) — filter dasar: `published: false` tidak dibangun
+  - `draft` (boolean, default `false`) — `draft: true` tidak dibangun. Dipakai untuk artikel yang sudah ditulis tetapi belum waktunya tayang
+- **Aturan draft dan tanggal terbit (WAJIB)**: Artikel baru ditulis dengan `draft: true`. Semua halaman yang menampilkan artikel **WAJIB** memakai helper `getPublishedPosts()` dan `sortPostsDesc()` dari `src/lib/blog.ts`, bukan `getCollection('blog')` langsung, supaya draft tidak bocor ke build, sitemap, RSS, beranda, atau daftar topik. Tanggal (`date`) hanya label dan tidak dipakai menyaring. Artikel diterbitkan satu per hari lewat:
+  ```bash
+  python3 _workflow/terbit.py daftar --site sriwijayagrafika.com
+  python3 _workflow/terbit.py terbit --site sriwijayagrafika.com
+  ```
+  Perintah ini menyetel `draft: false` dan `date` ke **tanggal hari ini**, bukan tanggal rencana. Jadi kalau sehari terlewat, artikel yang tertunda tetap bertanggal hari saat benar-benar diterbitkan. Jangan mengubah `draft` manual.
 - **Author**: hard-coded `AUTHOR_NAME = 'Tim Sriwijaya Grafika'` di `src/lib/blog.ts` (tidak ada field `author` di frontmatter, tapi `Article` JSON-LD sertakan sebagai `author: { @type: 'Organization', name: 'Tim Sriwijaya Grafika' }`).
 - **Reading time**: auto-calc via `calcReadingTime(pengantar, body, kesimpulan)` — strip markdown, count words, bagi 200 wpm. Ditampilkan di BlogCard footer + slug page meta bar.
 - **Body structure**: HANYA berisi H2 sections (`## Judul Section`) + sub-content. **TIDAK boleh** ada `#` H1 (sudah di `titleSeo`), paragraph pembuka/penutup (sudah di `pengantar`/`kesimpulan`), atau tags/image di body.

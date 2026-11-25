@@ -12,7 +12,7 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { getCollection } from 'astro:content';
 import { BUSINESS_INFO, GENERAL_DESCRIPTION } from '@lib/data';
 import { PORTFOLIO_ITEMS } from '@lib/portfolio';
-import { calcReadingTime, parseIndonesianDate } from '@lib/blog';
+import { calcReadingTime, getPublishedPosts, sortPostsDesc } from '@lib/blog';
 import { SITE_SETTINGS } from '@lib/site';
 
 const allServices = (await getCollection('layanan', ({ data }) => data.published)).sort(
@@ -23,9 +23,7 @@ const totalServices = allServices.length;
 
 const portfolioSlide = PORTFOLIO_ITEMS.slice(0, 8);
 
-const allBlogPosts = (await getCollection('blog', ({ data }) => data.published)).sort(
-  (a, b) => parseIndonesianDate(b.data.date).getTime() - parseIndonesianDate(a.data.date).getTime()
-);
+const allBlogPosts = sortPostsDesc(await getPublishedPosts());
 const blogFeatured = allBlogPosts.slice(0, 9).map((post) => ({
   post,
   readingTime: calcReadingTime(post.data.pengantar, post.body ?? '', post.data.kesimpulan),

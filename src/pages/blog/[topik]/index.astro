@@ -5,7 +5,7 @@ import Footer from '@components/Footer.astro';
 import BlogCard from '@components/BlogCard.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { BUSINESS_INFO } from '@lib/data';
-import { calcReadingTime, parseIndonesianDate, TOPIK_LABELS, TOPIKS } from '@lib/blog';
+import { calcReadingTime, getPublishedPosts, parseIndonesianDate, sortPostsDesc, TOPIK_LABELS, TOPIKS } from '@lib/blog';
 
 export async function getStaticPaths() {
   return TOPIKS.map((topik) => ({ params: { topik } }));
@@ -21,8 +21,8 @@ if (!(TOPIKS as readonly string[]).includes(topik)) {
   return Astro.redirect('/404');
 }
 
-const allPostsForTopik = (await getCollection('blog', ({ data }) => data.published && data.topik === topik)).sort(
-  (a, b) => parseIndonesianDate(b.data.date).getTime() - parseIndonesianDate(a.data.date).getTime()
+const allPostsForTopik = sortPostsDesc(
+  (await getPublishedPosts()).filter((p) => p.data.topik === topik)
 );
 
 const postsWithMeta = allPostsForTopik.map((post) => ({

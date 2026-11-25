@@ -70,6 +70,7 @@ const blog = defineCollection({
     pengantar: z.string().default(''),
     kesimpulan: z.string().default(''),
     published: z.boolean().default(true),
+    draft: z.boolean().default(false),
     faq: z
       .array(
         z.object({
