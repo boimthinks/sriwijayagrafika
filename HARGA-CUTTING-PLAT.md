@@ -3,6 +3,32 @@
 
 ---
 
+## 0. UKURAN PLAT LOGAM STANDAR
+
+| Item | Spesifikasi |
+| :--- | :--- |
+| Ukuran plat logam | **120 x 240 cm** (1,2 x 2,4 m) |
+| Luas per lembar | **2,88 m²** |
+| Material | Stainless steel, alumunium, plat besi, plat galvanis |
+| Proses | Potong laser fiber |
+
+*\*Khusus plat logam. Akrilik, ACP, multiplek, MDF, dan PVC mengikuti ukuran lembaran pasaran masing-masing.*
+
+*\*Jasa potong logam dihitung per m² luas bidang kerja. 1 lembar plat = 2,88 m², jadi biaya potong 1 lembar = 2,88 x tarif per m² sesuai ketebalan & material.*
+
+**Grid pemakaian yang efisien:**
+
+| Ukuran panel | Luas | Panel per lembar 120 x 240 | Sisa |
+| :--- | :--- | :--- | :--- |
+| 60 x 120 cm | 0,72 m² | 4 panel | 0 |
+| 120 x 120 cm | 1,44 m² | 2 panel | 0 |
+| 120 x 240 cm | 2,88 m² | 1 panel | 0 |
+| 100 x 200 cm | 2,00 m² | 1 panel | 0,88 m² |
+
+*\*Catatan: 122 x 244 cm adalah ukuran lembaran ACP / multiplek / MDF di pasaran dan area kerja meja CNC router untuk bahan non-logam — bukan ukuran plat logam.*
+
+---
+
 ## 1. JASA POTONG LASER FIBER (PLAT)
 
 ### Jasa Potong Stainless Steel

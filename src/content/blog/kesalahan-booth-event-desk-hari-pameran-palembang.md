@@ -2,8 +2,8 @@
 title: "Booth Pameran Gagal Pasang"
 titleSeo: "Kesalahan Booth Event Desk yang Baru Ketahuan di Hari Pameran"
 excerpt: "Booth pameran di Palembang jarang gagal karena desainnya. Biasanya modul tidak muat lift, backdrop rubuh kena angin, atau listrik kurang satu titik."
-date: "2026-11-27"
-draft: true
+date: "2026-11-26"
+draft: false
 topik: "tips"
 imgurl: "/img/blog/kesalahan-booth-event-desk-hari-pameran-palembang.webp"
 imgPrompt: "Photorealistic photo of ##srifika## kneeling on the concrete floor of ##workshop##, running a full trial assembly of a modular knock-down event booth desk, panels laid out around with number stickers on the inner faces, a cordless screwdriver and a printed assembly sheet beside, half-built backdrop standing behind, fluorescent workshop lighting, realistic documentary photography, natural colors"
