@@ -2,8 +2,8 @@
 title: "Pondasi Pylon Sign Palembang"
 titleSeo: "Kapan Pylon Sign Palembang Butuh Pondasi Cakar Ayam"
 excerpt: "Pylon 4 meter di tanah bekas rawa bisa butuh pondasi lebih berat daripada pylon 8 meter di tanah padat. Ini yang menentukan pilihan cakar ayam atau telapak."
-date: "2026-11-28"
-draft: true
+date: "2026-11-27"
+draft: false
 topik: "teknis"
 imgurl: "/img/blog/kapan-pylon-sign-butuh-pondasi-cakar-ayam-palembang.webp"
 imgPrompt: "Photorealistic photo of ##srifika## crouching beside a steel rebar cage and anchor bolt template for a pylon sign foundation inside ##workshop##, measuring the bolt spacing with a tape measure against a rolled engineering drawing, a bucket of sand sample and a soil probe on the floor nearby, morning light from the open workshop door, realistic construction documentary photography, shallow depth of field"
