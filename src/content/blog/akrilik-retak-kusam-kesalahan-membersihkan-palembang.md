@@ -2,8 +2,8 @@
 title: "Akrilik Rusak Karena Dibersihkan"
 titleSeo: "Akrilik Retak dan Kusam, Kesalahan Membersihkan Display Palembang"
 excerpt: "Display akrilik jarang rusak karena dipakai. Biasanya retak karena alkohol, kusam karena kanebo kering, atau melengkung karena tertinggal di mobil."
-date: "2026-11-29"
-draft: true
+date: "2026-11-28"
+draft: false
 topik: "teknis"
 imgurl: "/img/blog/akrilik-retak-kusam-kesalahan-membersihkan-palembang.webp"
 imgPrompt: "Photorealistic close-up photo of ##srifika## holding a cracked clear acrylic display stand under a workshop lamp in ##workshop##, examining fine hairline crazing at the edge with a magnifier, a spray bottle of soapy water and a microfiber cloth on the workbench beside stacked acrylic sheets and blank name tags, warm workshop lighting, realistic documentary photography, shallow depth of field"
